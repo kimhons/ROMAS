@@ -1,0 +1,377 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip_to_content
+[Oncology_Medical_Physics][Oncology_Medical_Physics]
+  Main Menu
+    * Practice_Tests
+          o Sample_Quiz_(No_Login_Required)
+          o ABR_Part_1_Practice_Tests
+          o ABR_Part_2_Practice_Tests
+          o ABR_Part_3:_Therapy_Oral_Exam
+          o ABR_Radiation_Oncology_Qualifying_Exam_Tests
+    * Radiation_Physics
+          o Basic_Radiation_Physics
+                # Introduction_to_Radiation
+                # Radiation_Interactions
+                # Radioactive_Decay_Modes
+                # Decay_Statistics
+          o Math,_Statistics,_and_Informatics
+                # Counting_Statistics
+                # Accuracy,_Precision,_and_Error
+                # Diagnostic_Probabilities
+                # Informatics
+          o Radiation_Measurement
+                # Quantifying_Radiation
+                # Identifying_Radionuclides
+                # Bragg-Gray_Cavity_Theory
+                # Detection_Efficiency_and_Dead_Time
+          o Common_Dosimeters
+                # Ionization_Chamber_Design_and_Operation
+                # Geiger_Counters
+                # Diode_Detectors
+                # Film_Dosimeters
+                # Luminescent_Dosimeters
+                # MOSFET_Detectors
+                # Neutron_Detectors
+                # Plastic_Scintillators
+          o Radiobiology
+                # Principles_of_Radiobiology
+                # Biological_Responses_to_Radiation
+                # Statistical_Radiobiology
+          o Radiation_Dose_Distributions
+                # Photon_Dose_Distributions
+                # Electron_Dose_Distributions
+    * Medical_Imaging
+          o General_Medical_Imaging_Topics
+                # Kilovoltage_X-ray_Generation
+                # Image_Quality_Metrics
+                # Shielding_for_Imaging_Systems
+          o Computed_Tomography
+                # CT_Design_and_Operation
+                # CT_Dosimetry
+                # CT_Artifacts
+          o Magnetic_Resonance_Imaging
+                # MRI_Design_and_Operation
+                # MRI_Contrast_Weighting
+                # MRI_Artifacts
+          o Nuclear_Medical_Physics
+                # Radiopharmaceuticals
+                # Medical_Radionuclide_Production
+                # MIRD_Internal_Dosimetry
+                # Scintillation_Camera_Design_and_Operation
+                # Nuclear_Tomographic_Imaging
+          o Ultrasound
+                # The_Physics_of_Sound
+                # Ultrasound_Design_and_Operation
+                # Ultrasound_Image_Quality
+                # Ultrasound_Artifacts
+    * Radiation_Therapy
+          o Clinical_Linear_Accelerators
+                # Introduction_to_Clinical_Linear_Accelerators
+                # Linac_Subsystem_Design
+                # NCRP-151:_Linac_Vault_Shielding
+                # TG-51:_Linac_Dosimetry
+                # Small_Field_Dosimetry
+                # TG-21:_Historical_Linac_Dosimetry
+                # TG-142:_Linac_Quality_Assurance
+          o Alternative_Treatment_Machines
+                # Cobalt-60_Teletherapy_Machine
+                # Cyclotrons
+                # Van_De_Graaff_Accelerators
+          o Simulation_and_Imaging
+                # Respiratory_Motion_Management
+                # Image_Registration
+                # Determining_Target_Margins
+          o External_Beam_Treatment_Planning
+                # Basic_Photon_Treatment_Planning
+                # Monitor_Unit_Hand_Calculations
+                # Introduction_to_Treatment_Planning_Systems
+                # Dose_Calculation_Algorithms
+                # TPS_Optimization_Algorithms
+                # Treatment_Planning_System_Commissioning_and_Quality_Assurance
+                # IMRT_Quality_Assurance
+          o Disease_Specific_Radiotherapy
+                # Total_Body_Irradiation
+                # Total_Skin_Electron_Therapy
+                # Radiobiology_of_Radiosurgery
+                # Stereotactic_Radiosurgery
+                # Stereotactic_Body_Radiation_Therapy
+          o Brachytherapy
+                # Low_Dose_Rate_Brachytherapy
+                # High_Dose_Rate_Brachytherapy
+                # Breast_Brachytherapy
+                # Gynecological_Brachytherapy
+                # Hepatic_Brachytherapy
+                # Intravascular_Brachytherapy
+                # Ocular_Brachytherapy
+                # Prostate_Brachytherapy
+                # Superficial_Brachytherapy
+                # Thyroid_I-131_Therapy
+                # Brachytherapy_Dosimetry
+                # Brachytherapy_Quality_Assurance
+          o Safety_and_Regulations
+                # Nuclear_Regulations,_NRC_10_CFR
+                # Radiation_Limits:_NCRP-116
+    * Log_In
+[Unknown INPUT type]
+****** Total Skin Electron Therapy ******
+***** Overview *****
+As presented in AAPM TG-30, the goal of total Total Skin Electron Therapy
+(TSET) is âto treat virtually the entire body surface to a limited depth and
+to a uniform dose using electrons with a low X-ray background.â TSET is most
+commonly prescribed in the treatment of Mycosis Fungoides and is highly
+effective. Although the common treatment techniques were developed in the early
+1950s, they see continued use today because of their safety and efficacy.
+*** Downloads ***
+AAPM_TG-30:_Total_Skin_Electron_Therapy_-_Technique_and_Dosimetry (External
+link)
+AAPM_TG-25:_Clinical_Electron-Beam_Dosimetry (External link)
+***** Mycosis Fungoides *****
+Mycosis Fungoides (MF), sometimes called Sezary syndrome, is a low grade non-
+Hodgkin T-cell lymphoma of the skin. In advanced stages MF may involve the
+lymph nodes, blood, and visceral organs.
+    * Typical Age at diagnosis: 45-69 years.
+    * Incidence: Approximately 3 in 10.
+    * Disease progression:
+          o Begins as a scaly red rash in areas not exposed to the sun.
+          o Path Phase is marked by small areas of raised bumps and hardened
+            lesions.
+          o In Tumor Phase MF presents itself as raised tumors on the skin.
+[Stages_of_mycosis_fungoides._Disease_being_with_small_lesions_which_aggregate
+into_plaques_or_patches._In_the_later_stages,_tumors_form_on_the_skin.][Stages
+of_mycosis_fungoides._Disease_being_with_small_lesions_which_aggregate_into
+plaques_or_patches._In_the_later_stages,_tumors_form_on_the_skin.]
+**** Treatment Options ****
+Treatment options are dependent upon the extend of disease requiring either
+local control or treatment of extensive disease.
+*** Local control options ***
+    * Topical Corticosteroids or Chemotherapy
+    * UV photon therapy
+    * Local Radiation: electron or orthovoltage X-ray
+          o Typical prescription: 20-30Gy in 1.2-2Gy/fraction
+*** Extensive disease options ***
+    * Total skin electron therapy (TSET)
+          o Typical prescription: 30-36Gy surface doseÂ  over 6-10 weeks
+          o Highly effective treatment option with complete response rates of
+            95% for T1 to 75% for T4.
+***** Total Skin Electron Therapy Treatments *****
+**** Treatment Parameters Per Guidelines ****
+Prescriptions
+    * Standard course: Deliver at least 26Gy to a depth of 4mm over 6-10
+      weeks.2This requires 31-36Gy surface dose.
+    * Shorter course: 12Gy in 3 weeks.
+Field Parameters
+    * Energy: 3-7MeV (at patient), 4-10MeV (at beam window)1
+    * SSD: 3-8 meters
+    * Field size at patient: 200cm by 80cm1
+Field Inhomogeneity or Uniformity
+    * EORTC Consensus:
+          o <10% dose inhomogeneity to air at treatment distance2.
+    * AAPM TG-30:
+          o Â± 8% vertically over central 160cm
+          o Â± 4% horizontally over central 80cm
+Penetration and dose fall off
+    * EORTC Consensus:
+          o 80% isodose line must be at least 4mm from skin surface
+          o 20% isodose line should be <20mm from skin surface
+    * AAPM TG-30:
+          o 50% isodose line should be 5-15mm
+Maximum Dose
+    * 120%, may require shielding to achieve2
+Photon contamination
+    * EORTC Consensus
+          o Total dose to marrow from photons should be <0.7Gy
+    * AAPM TG-30
+          o <4% (1.6Gy)
+Sources
+1. AAPM Task Group 30. Total Skin Electron Therapy: Technique and Dosimetry.
+AAPM; 1987:58.
+2. Total skin electron radiation in the management of mycosis fungoides:
+Consensus of the European Organization for Research and Treatment of Cancer
+(EORTC) Cutaneous Lymphoma Project Group. J Am Acad Dermatol. 2002 Sep;47(3):
+364-70.
+**** Six Dual Field (Stanford) Technique ****
+The stanford TSET technique uses 6 dual-fields. Each dual-field consists of one
+field angled up at about 20 degrees and another angled down at about 20 degrees
+such that the up and down fields match at the 50% isodose line at height of
+isocenter. A source-to-surface distance of 3-7 meters is usually sufficient to
+cover the patient with a uniform field size of 200cm by 80cm.
+*** Important Field Points ***
+    * Angling the fieldâs central axis above the head and below the feet
+      reduced Bremsstrahlung X-ray contamination.
+          o Bremsstrahlung X-rays are predominantly forward directed.
+          o Angles of approximately 20 degrees relative to horizontal.
+    * Because manyÂ electrons enter the body obliquely, electrons penetrate
+      less deeply than the 2cm per MeV in water approximation.
+    * Field energy at accelerator must be 1-2MeV higher than at the patient
+      surface because electrons loose approximately 1MeV of energy every 4
+      meters in air.
+[Illustration_of_the_dual-field_TSET_treatment_technique.][Illustration_of_the
+dual-field_TSET_treatment_technique.]
+**** Patient Setup ****
+The Stanford technique utilizes 6 dual field patient positions which are
+delivered in sets of 3 fields on sequential days. Use ofÂ 6 positions improves
+uniformity over a 4 field technique and is less complex than an 8 field or
+continuous rotation technique.
+*** Important Setup Points ***
+    * Patient is elevated off floor to reduce floor scatter dose.
+    * AÂ scattererÂ is a Lucite (acrylic) panel about 1cm thick placed 20cm in
+      front of the patient during treatment.
+          o The scatterer induces large angle scattering near the patient which
+            improves dose uniformity but also reduces penetration and leads to
+            less steep dose fall off.
+*** Use of Boosts ***
+    * Boost are used to cover areas underdosed by the TSET delivery. Such areas
+      include:
+          o Inframammary region
+          o Perianal region
+          o Inner buttocks and thighs
+          o Perineum
+    * Thick cutaneous tumors may also require a boost due to their depth.
+          o Boost may be delivered by electron or orthovoltage (~120kV) photon
+            fields.
+          o Boost fields should assure a surface dose of at least 50% of
+            prescription dose.
+          o Boosts improve progression-free survival by approximately 10-20%.
+[Illustration_of_patient_positioning_in_stanford_6_dual_field_total_skin
+electron_therapy.][Illustration_of_patient_positioning_in_stanford_6_dual_field
+total_skin_electron_therapy.]
+[Left_to_right:_Fingernail_shields,_toes_shield,_and_eye_shields.][Left_to
+right:_Fingernail_shields,_toes_shield,_and_eye_shields.]
+Left to right: Fingernail shields, toes shield, and eye shields.
+*** Patient Shielding ***
+    * Areas to be shielded
+          o Eyes must be shielded to <15% of prescription dose at surface.
+                # To prevent back scatter from increasing eyelid dose, eye
+                  shields may be coated with paraffin.
+          o Fingers
+          o Tops of feet
+    * A common shield thickness of lead for 4 MeV electrons is 2mm.
+          o Eye shields are likely to be thinner as they are placed under the
+            eye lid.
+**** Potential Adverse Effects ****
+Adverse Effect                                 Incidence Rate
+Erythema                                       100%1
+Complete temporary alopecia (hair loss)        100%1
+Temporary Nail Statis                          100%1
+Edema of hands and feet                        <50%1
+Anhidrosis (reduced ability to perspire),      <3% each1
+Parotiditis, and gynecomastia (in males)
+Chronic nail dystrophy, chronic xerosis,       <1% each1
+permanent alopecia
+Mortality due to TSET                          0%1
+Immunosupression is common making infection an Common in advanced MF patients.2
+important cause of marbidity and mortality2
+Sources
+1. Total skin electron radiation in the management of mycosis fungoides:
+Consensus of the European Organization for Research and Treatment of Cancer
+(EORTC) Cutaneous Lymphoma Project Group. J Am Acad Dermatol. 2002 Sep;47(3):
+364-70.
+2. L. Gunderson L, E. Tepper J. Clinical Radiation Oncology. Elservier Health
+Sciences; 2007.
+**** Alternatives to the Stanford Technique ****
+Several alternative treatment methods exist including the 4 dual-field and 8
+dual-field techniques. Continuous rotation, in which the patient is placed on a
+rotating platform, is also sometimes used. Pendulum Arc,Â in which the
+treatment head is continually rotated in a 50 degree arc, is sometimes used to
+avoid the match line inherent in all dual-field techniques.
+***** TSET Dosimetry *****
+Calibration pointÂ is positioned along the center of the treatment plane at the
+height of linac isocenter (sees figure above) at depth of maximum dose.
+Calibration point doseÂ is the dose measured at theÂ calibration pointÂ for a
+single dual-field (i.e. two fields angled at approximately +20Â° and -20Â°).
+Calibration point dose output factorÂ (not defined in TG-30)Â is the
+calibration point dose per MU of each treatment beam in the dual field. Unit:
+cGy/MU. (E.g. If the superior and inferior field each deliver 100MU and
+theÂ calibration point doseÂ is measured as 4cGy, theÂ calibration point dose
+output factorÂ is 4cGy/100MU = 0.04cGy/MU.)
+Treatment skin doseÂ is defined as mean dose along a circle near the surface of
+a cylindrical polystyrene phantom 30cm in diameter and 30cm high which has been
+irradiated by all six dual fields.
+B factorÂ is a factor that relates theÂ calibration point doseÂ to
+theÂ treatment skin dose.Â B factorsÂ are typically between 2.5 and 3.1 because
+theÂ calibration pointÂ receives dose contribution from approximately 3 fields.
+**** Monitor Unit Calculation ****
+Monitor units for a TSET deliver may be calculated as in the below equation.
+The total MU delivered for all fields will be 6 times the MUsingle field.
+**** Common TSET Dosimeters ****
+    * Parallel-Plate Ion Chambers
+          o Required by TG-30 and TG-51 for calibration of absorbed dose.
+          o Measurement of depth dose.
+                # Measures ionization which must be converted to dose.
+    * Diode detectors
+          o Provide good spatial resolution and do not require significant
+            correction between ionization measurement and absorbed dose.
+    * Film
+          o Useful for measuringÂ treatment skin doseÂ across entire plane
+          o May be useful in depth dose
+    * Thermoluminescent dosimeters
+          o Useful for patient dose monitoring
+***** Navigation *****
+**** Previous_Page ****
+Total Body Irradiation
+Jump_to_Chapter
+**** Main_Page ****
+Disease Specific Radiotherapy
+Table of Contents
+Jump_to_Chapter
+**** Next_Page ****
+Radiobiology of Radiosurgery
+Jump_to_Chapter
+**** Not a Member? ****
+Sign up today to get access to hundreds of ABR style practice questions.
+Join_Today!
+
+**** Contact Form ****
+Let us know what's on your mind.
+Your name Please enter your name. [fl-name             ]
+Your email Please enter a valid email. [Unknown INPUT type]
+Send
+Message failed. Please try again.
+Thanks for your message! Weâll be in touch soon.
+
+Additional Information
+Contact_Information
+Image_Use_and_Copyright
+Legal_Disclaimer
+Â© 2017-2024 OncologyMedicalPhysics.com | support@oncologymedicalphysics.com
+
+Scroll_To_Top

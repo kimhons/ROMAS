@@ -1,0 +1,3850 @@
+AAPM REPORT NO. 17
+
+THE PHYSICAL ASPECTS OF
+TOTAL AND HALF BODY
+PHOTON IRRADIATION
+
+Published for the
+American Association of Physicists in Medicine
+by the American Institute of Physics
+
+AAPM REPORT NO. 17
+
+THE PHYSICAL ASPECTS OF
+TOTAL AND HALF BODY
+PHOTON IRRADIATION
+A REPORT OF TASK GROUP 29
+RADIATION THERAPY COMMlTTEE
+AMERICAN ASSOCIATION OF
+PHYSICISTS IN MEDICINE
+
+J. Van Dyk, Chairman
+J. M. Galvin
+G. P. Glasgow
+E. B. Podgorsak
+
+June 1986
+
+Published for the
+American Association of Physicists in Medicine
+by the American institute of Physics
+
+Further copies of this report may be obtained from
+
+Executive Officer
+American Association of Physicists in Medicine
+335 E. 45 Street
+New York. NY 10017
+
+Library of Congress Catalog Card Number: 86-72634
+International Standard Book Number: 0-88318-513-X
+International Standard SeriaI Number: 0271-7344
+Copyright © 1986 by the American Association
+of Physicists in Medicine
+All rights reserved. No part of this publication may be
+reproduced, stored in a retrieval system, or transmitted
+in any form or by any means (electronic, mechanical,
+photocopying, recording, or otherwise) without the
+prior written permission of the publisher.
+Published by the American Institute of Physics, Inc.,
+335 East 45 Street, New York, New York 10017
+Printed in the United States of America
+
+The Physical Aspects of Total and Half Body
+Photon Irradiation
+1.
+
+2.
+
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+1.1 General Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2 Clinical Indications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.3 Intent of this report . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+Irradiation Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+2.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 Dedicated facilities with multiple sources . . . . . . . . . . . . . . .
+2.3 Dedicated facilities with dual sources . . . . . . . . . . . . . . . . . . .
+2.4 Dedicated facilities with single sources . . . . . . . . . . . . . . . . .
+2.5 Conventional units modified for large field treatments . . .
+2.6 Conventional treatment units . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.7 Multiple fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.8 Selecting a large field technique . . . . . . . . . . . . . . . . . . . . . . . .
+2.9 Back-up technique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+3
+4
+4
+5
+6
+6
+7
+7
+7
+9
+
+3.
+
+Basic Phantom Dosimetry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+4.
+
+Patient Dosimetry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.1 Prescription of dose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2 Effects of contour variation and finite patient size . . . . .
+4 . 2 . 1 Incident contour variation . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.2 Lack of lateral scatter . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.3 Lack of backscatter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3 Methods of compensating for contour variation . . . . . . . . . . . .
+4.3.1 Tissue equivalent bolus . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3.2 Missing tissue compensators . . . . . . . . . . . . . . . . . . . . . . .
+4.4 Inhomogeneities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.4.1 Methods of lung dose determination . . . . . . . . . . . . . . . .
+4.4.2 Methods of bone dose determination . . . . . . . . . . . . . . . .
+4.4.3 Methods of compensating for inhomogeneities . . . . . . .
+4.5 Dose distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.6 Anthropomorphic phantom measurements . . . . . . . . . . . . . . . . . . . . .
+4.7 In vivo m e a s u r e m e n t s . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+20
+22
+22
+23
+24
+25
+25
+25
+27
+28
+30
+33
+34
+34
+37
+
+5.
+
+Special Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.1 Junctions for HBI techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.2 Shielding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.3 Port filming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+40
+40
+42
+43
+
+6.
+
+Summary of Recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+45
+
+3 . 1 I n t r o d u c t i o n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.2 Dosimetry phantoms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.3 Dosimeters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3 . 4 D o s e c a l i b r a t i o n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.5 Central ray data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.6 Inverse square test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.7 Output factors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.8 Beam profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.9 Attenuation data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+Acknowledgements
+
+The review of the manuscript and the valuable comments by the
+Therapy Committee and the following
+members o f t h e R a d i a t i o n
+individuals is greatly appreciated: J.J. Battista, B. Bjarngard, A.
+Dutreix, W. Hanson, W. Lutz, R. Mackie, U. Quast, M. Woo.
+
+1
+
+I. Introduction
+1.1 General Considerations
+
+In recent years, there has been a revived interest in the use of
+very large radiation fields for the treatment of a variety of
+malignant diseases. T h e a b i l i t y t o p r o v i d e t h e s e v e r y l a r g e f i e l d s
+and the corresponding delivery of a specified dose of radiation have
+been
+challenging for the medical radiation
+p h y s i c i s t3 3 , 7 8 , 1 0 0 .
+Because of the constraints of radiotherapy apparatus, the techniques
+associated with total and half body radiotherapy have been as varied
+as the number of radiation oncologists using them. The treatments are
+complicated by uncertainties in absolute dosimetry as well as large
+dose variations across the target volume, m a k i n g i t v e r y d i f f i c u l t t o
+assess clinical efficacy when comparing results from various treatment
+centers. F u r t h e r m o r e , t h e a c t u a l d o s e d e l i v e r e d t o t h e p a t i e n t i s
+often limited by normal tissue tolerance. Ideally, accurate dose
+response data should be available so the clinician can optimize the
+therapeutic effect while minimizing normal tissue complications.
+In
+principle, this information can be derived by assessing how patients
+In practice such information is difficult to
+respond to therapy.
+obtain. Herring36n o t e d t h a t i n s t i t u t i o n s w i t h a l a r g e n u m b e r o f
+patients generally treat with a small dose range while the collecting
+of patient data from different institutions is confounded by a lack of
+uniformity of
+clinical
+dose prescription, dose delivery and
+evaluation.
+Multi-institutional clinical trials are designed to
+minimize these variations; however, patient selection and adherence to
+therapy protocols remain ongoing problems. One thing is sure: the
+techniques and dosimetry of radiation treatments are more controllable
+than many of the other variables associated with clinical trials. It
+is, therefore, imperative that the medical physicist should provide an
+accurate control of
+radiation
+such that
+the
+dose
+delivery
+uncertainties i n t a r g e t a n d n o r m a l t i s s u e d o s e s d o n o t b e c o m e t h e
+limiting factors in evaluating clinical trials nor, for that matter,
+in individual patient treatments.
+This raises the question: with what accuracy must the dose be
+delivered?
+The International Commission of Radiation Units and
+m e a s u r e m e n t s ( I C R U )40 has recommended an overall accuracy in dose
+delivery of ±5% based on an analysis of dose response data and an
+evaluation of errors in dose delivery.
+Recent half body and total
+b o d y i r r a d i a t i o n d a t a4 8 , 9 7 indicate that a 5% change in l u n g d o s e
+could result in 20% change in the incidence of radiation pneumonitis,
+a complication which is usually fatal for whole lung irradiation. With
+such sharp dose response effects , a ±5% accuracy may be insufficient.
+However, if the prescribed dose is well below the onset of normal
+tissue toxicity or if the normal tissue dose is limited locally then
+perhaps the ±5% suggested accuracy can be relaxed.
+The APARA
+p r i n c i p l e9 9 ( A s
+Precise As Readily Achievable, t e c h n i c a l a n d
+biological factors being taken into account) should be applied
+especially for very large field irradiation.
+In any case a statement
+o f t a r g e t o r n o r m a l t i s s u e d o s e s h o u l d a l w a y s i n c l u d e a statement
+about the associated uncertainties in dose delivery. Both pieces of
+information are needed in any clinical evaluation.
+
+2
+
+1.2 Clinical Indications
+
+Total and half body radiotherapy have been administered for a
+large variety of c l i n i c a l s i t u a t i o n s e a c h w i t h d i f f e r e n t p r e s c r i b e d
+The following summarizes some of the
+dose-fractionation schemes.
+clinical needs for large field radiotherapy.
+a) High dose total body irradiation. High dose total body irradiation
+(TBI) with megavoltage photon beams is frequently used to destroy the
+bone marrow and leukemic cells, to immunosuppress the patient prior to
+Aplastic
+receiving a bone marrow
+t r a n s p l a n t 92 ( B M T ) , o r b o t h .
+a n e m i a 3,93 , and a number of leukemias 92 and lymphomas57,70 , respond to
+43
+treatment.
+Ewing’s
+sarcoma ,
+non-Hodgkin’s
+this
+advanced
+l y m p h o m a 57,70 , oat cell carcinoma of the bronchus 57 a n d l y m p h o s a r c o m a7
+have also been treated by TBI as an adjuvant. Usually this treatment
+regimen is combined with a comprehensive chemotherapy program prior to
+Total doses ranging from 300 to
+the TBI and bone marrow transplant.
+1000 cGy have been given in a single fraction.
+In recent years,
+increased usage has been made of doses ranging from 1000 to 1400 cGy
+g i v e n i n s e v e r a l f r a c t i o n s p e r d a y f o r s e v e r a l d a y s20,68 . T h i s w i d e
+d i s p a r i t y i n d o s e a n d f r a c t i o n a t i o n , the technical complexity of TBI
+and the variation in chemotherapy programs complicate the
+techniques,
+interpretation o f r a d i a t i o n r e s p o n s e
+to TBI.
+High degrees of
+pulmonary toxicity are associated with a number of these treatment
+48
+regimens and appear to be related to lung dose . There is some
+e v i d e n c e t h a t t h i s p u l m o n a r y t o x i c i t y 3 as well as bone marrow cell
+k i l l i n g 1 7 , 2 0 i s d o s e r a t e d e p e n d e n t . Presently, some institutions use
+f r a c t i o n a t i o n s c h e m e s6 8 , 8 1 to reduce pulmonary complications while
+maintaining a
+high
+immunosuppressive
+effect,
+whereas
+other
+77
+institutions are using a lower dose, single treatment for the same
+purpose.
+Low dose TBI with megavoltage
+b) Low dose total body irradiation.
+photons giving about 10 to 15 cGy per day for 10 to 15 days is used
+47
+for treatment of lymphocytic leukemias ,
+l y m p h o m a s39 o r n e u r o blastoma 1 4. The lower doses reduce the risk of serious complications.
+However, p r e c i s e d o s e r e s p o n s e d a t a a r e n o t a v a i l a b l e ; h e n c e , a
+detailed understanding of the associated dosimetry is a prerequisite.
+c) Half body irradiation. The last 10 years have demonstrated a
+dramatic increase in the use of high dose half body irradiation (HBI)
+f o r t h e p a l l i a t i o n o f w i d e l y d i s s e m i n a t e d m e t a s t a t i c d i s e a s e 24,25 .
+This technique has become so successful that it is being used in a
+number of clinical trials as an adjuvant form of primary therapy for
+Ewing’s sarcoma44 and bronchogenic carcinoma 67,94 . Lower HBI has also
+been used for ovarian ablation in metastatic breast cancer 2 6. The aim
+of the half body technique is to give a sufficiently high dose to
+alleviate the effects of symptomatic disease while at the same time
+maintaining a sufficiently low dose to minimize complications.
+The
+narrow range of therapeutic r a t i o s d i c t a t e a c c u r a t e d o s i m e t r y a n d
+precise dose delivery.
+d) Total lymphoid irradiation.
+Total lymphoid irradiation (TLI) has
+been shown to be a powerful immunosuppressive agent and, therefore,
+has been suggested as an adjunctive therapy for organ transplantation
+and a number of autoimmune diseases35 such as rheumatoid arthritis,
+aplastic anemia, multiple sclerosis and systemic lupus erythematosus.
+
+3
+
+Total lymphoid irradiation using 3600 cGy in 16 fractions has produced
+f a v o r a b l e r e s u l t s f o r p a t i e n t s w i t h r h e u m a t o i d a r t h r i t i s 8 5. At this
+time the precise role of TLI is not clearly understood. Similar to
+TBI and HBI, accurate dose-response data can only be derived from a
+precise knowledge of the delivered dose.
+However, T L I h a s t h e
+additional problem of complicated shielding and very irregularly
+shaped fields.
+While all the above clinical uses of total and half body
+irradiation are presently in vogue, the dosimetric concerns outlined
+in this report are relevant for any clinical situation requiring large
+field radiotherapy.
+1.3 Intent of this report
+The desire for uniformity of dose delivery and dose prescription
+for very large field radiotherapy
+has resulted in a number of
+w o r k s h o p s9,61,63,88,90 ,
+conferences and
+attended by physicists,
+radiobiologists and clinicians.
+These conferences have consistently
+indicated a
+w i d e d i s p a r i t y i n treatment techniques and
+dose
+Standardization of
+reporting delivered doses was
+prescription.
+considered essential if biological and clinical parameters are to be
+understood.
+However, none of the conferences came to a consensus as
+to dosimetric procedures.
+The intent of this report is:
+a) to review methods of producing the very large fields needed
+for TBI, HBI and other large field procedures,
+b) to make recommendations regarding dosimetric measurements
+that are required prior to initiating such procedures,
+c) to consider the practical
+problems of specifying and
+delivering a c o n t r o l l e d r a d i a t i o n d o s e f o r s u c h l a r g e
+fields.
+Unfortunately,
+we must leave unanswered many
+interesting
+radiobiological questions about dose, dose rate, fractionation and the
+equivalence
+possible
+between
+different
+regimens.
+treatment
+Improvement in dosimetry and a s t a n d a r d i z a t i o n o f t e c h n i q u e w i l l ,
+certainly help the medical physicist along with
+however,
+his
+colleagues in radiation oncology and radiobiology answer some of these
+questions.
+
+4
+
+2. Irradiation Methods
+2.1 Introduction
+
+B e f o r e instituting large field radiotherapy procedures, medical
+decisions must be made about the total dose to be given to the
+patient, the dose rate, t h e d e s i r e d d e g r e e o f d o s e u n i f o r m i t y , t h e
+duration of treatment per fraction, the total number of fractions and
+the total treatment time. At times, some of these parameters may have
+to be compromised because of the limitations in the available therapy
+equipment.
+Much
+of t h e e a r l y c l i n i c a l e x p e r i e n c e w i t h T B I a n d H B I
+procedures was gained at centers with facilities specifically designed
+f o r l a r g e f i e l d i r r a d i a t i o n s . With the increased use of large field
+r a d i o t h e r a p y t o t r e a t a v a r i e t y o f d i s e a s e s , many patients are now
+being treated with conventional units. Current methods of large field
+irradiation can therefore be broadly divided into three categories:
+a ) d e d i c a t e d f a c i l i t i e s s p e c i f i c a l l y d e s i g n e d f o r treatment with
+large fields.
+b) facilities designed for conventional radiotherapy treatments but
+modified to produce very large fields.
+for
+conventional
+c) facilities designed
+treatments but using
+unconventional geometries to provide the desired field sizes.
+One of the first dedicated TBI facilities in North America was
+described by Heublein 37 in 1932. In a lead lined ward, with four beds
+at one end and a Coolidge “deep therapy” tube at the other end, four
+patients could be simultaneously irradiated. The beds were about 5 m
+and 7 m from the tube, which was operated continuously for 20 hours at
+185 kVp, 3 mA, with a 2 mm Cu filter. Exposure rates ranged from 0.68
+‘R’/h to 1.26 ‘R’/h and doses were prescribed as a percentage of
+an erythema dose 3 7, which was about 750 ‘R’ (‘R’ represents the unit
+of exposure as determined at that time).
+2.2 Dedicated facilities with multiple sources
+Numerous facilities have been designed s i n c e 1 9 3 2 f o r t o t a l b o d y
+irradiation. W e b s t e r 103 reviewed the physical considerations for the
+design of irradiators that would produce a relatively uniform (±10%)
+total body dose. He concluded that the following characteristics are
+d e s i r a b l e : 1 ) s m a l l r o o m s i z e t o m i n i m i z e c o s t , shielding,
+and
+building space; 2) sources distributed above and below the patient; 3)
+a minimum number of sources to reduce cost and maintenance and 4)
+simple procedure for control of exposure. After reviewing the design
+and dosimetry of single, dual, four, six and eight source irradiation
+f a c i l i t i e s , he concluded that a minimum of four radiation sources
+would be necessary to uniformly irradiate the entire body (Figure la).
+Jacobs and Pape42 describe a total body irradiation chamber similar to
+a “four poster bed”, used at the City of Hope Medical Center in the
+early 1960’s. Four rods were housed at each end of the treatment bed
+with each rod containing two 300 Ci caesium-137 sources separated 2 m
+from each other. The source rods retracted into the floor to turn the
+s o u r c e s “ o f f ” a n d l e a d f i l t e r s w e r e used to obtain variable dose
+rates.
+Several multiple source irradiators were constructed at U.S.
+Government sponsored research laboratories in the 1950’s and 1960’s
+mostly for animal studies. The Naval Medical Research Institute16
+
+5
+
+unit consisted of 60 cobalt-60 slugs that could be positioned around
+an animal or a patient. Brucer 5 described the original eight source
+(ORINS).
+at Oak Ridge Institute of Nuclear
+Studies
+facility
+Subsequently, three separate multiple source irradiators with-exposure
+rates from 1.5 R/min to 40 R/min containing 5 to 8 cobalt-60 or
+caesium-137 sources were used at the ORINS in the mid 1960’s and early
+1 9 7 0 ’ s t o s t u d y r a d i a t i o n effects in mammals and to assess the
+radiation risks to astronauts during extended space exploration 2.
+Dedicated facility with dual sources
+Dedicated multiple source irradiation rooms obviously are too
+e x p e n s i v e f o r m o s t m e d i c a l f a c i l i t i e s . H e n c e , S a h l e r 79 d e v e l o p e d a
+This facility consists of a
+dual source cobalt irradiator in 1959.
+conventional rotating cobalt unit plus an industrial large field
+2.3
+
+a) Four sources
+
+b) Two horizontal beams
+
+c) Two vertical beams
+
+d) Single source, short SSD
+
+e) Source scans horizontally
+
+f) Patient moves horizontally
+
+g) Head rotation
+
+h) Direct horizontal, long SSD
+
+i) Half body, direct and
+oblique fields
+
+j) Half body, adjacent
+direct fields
+
+Figure 1.
+
+Different methods of total and half body irradiation.
+
+6
+
+c o b a l t i r r a d i a t o r . These two units could be arranged to produce a
+parallel opposed field at about 3 m from the patient for low dose rate
+TBI (Figure lb). However, the collimators of the conventional cobalt
+unit had to be removed for TBI in order. to-.--obtain a large field.
+Surmont et a1.86 performed TBI in the 1960’s at the Institut Gustave
+Roussy using twin opposed cobalt-60 sources separated by a movable
+concrete wall. Two track mounted, mobile, parallel opposed cobalt-60
+sources, with specially designed collimators, are used by Thomas et
+a 1 .91 f o r T B I i n t h e i r b o n e m a r r o w t r a n s p l a n t p r o g r a m a t t h e F r e d
+Hutchinson Cancer Research Center in Seattle, Washington and by the
+Munich Cooperative Group 53 for BMT (Figure lb). The dosimetry of the
+dual sources in Seattle has been reviewed by Lam et a1. 5 5. The dual,
+parallel opposed cobalt source method of TBI is appealing because of
+the reproducibility of the set up, the constant, but low dose rate
+achievable with the sources, and the relative dose uniformity provided
+by the technique.
+L u t z e t a l .5 8 , 5 9
+have described a unique dual source large
+field and TBI facility using ceiling and floor mounted parallel
+Each machine can
+opposed 4 MeV linear accelerators (Figure 1c).
+travel vertically and the source-to-source distances can be varied
+from 240 cm to 410 cm. The field size is variable with a maximum of
+75 cm x 210 cm.
+A flattening filter was designed to improve beam
+uniformity and dose rates are variable from 4 to 225 cGy/min 5 8.
+
+2.4 Dedicated facilities with single sources
+
+Investigators at the Princess Margaret Hospital in Toronto
+designed and constructed a special single source, large field,
+c o b a l t - 6 0 i r r a d i a t o r5 6 i n 1 9 7 7 ( F i g u r e 1 d ) . Field sizes of 50 x 160
+c m2 can be obtained at 90 cm from the source (i.e. 83 x 265 cm 2 at 150
+cm). Special flattening filters were designed to account for the dose
+variation across the beam due to inverse square effects. In the long
+independently so that patients
+axis, t h e t w o c o l l i m a t o r s m o v e
+receiving half body treatments can be treated with one collimator
+closed to the central ray. When both the upper and lower half body
+are to be treated with a six week time interval, t h e n s e t t i n g t h e
+central ray to the umbilicus for both treatments yields a uniform dose
+distribution in the junction region. With a high activity cobalt-60
+source of nearly 10,000 Ci, high dose treatments can be given with
+short treatment times (approximately 50 cGy/min).
+A special lead
+attenuator has been designed and installed near the source to allow
+for low dose rate treatments if desired.
+
+2.5
+
+Conventional units modified for large field treatments
+
+Large field treatment techniques based on conventional equipment
+can be categorized as e i t h e r m o v i n g o r stationary. Cunningham and
+Wright11 describe a ceiling track mounted Picker C-3000 cobalt-60
+teletherapy unit with a specially designed collimator; the source
+could scan the length of a patient positioned at about 120 cm SSD
+(Figure 1e). M o r e r e c e n t l y , Q u a s t75 d e s c r i b e d a s i m i l a r m e t h o d i n
+which the patient is moved on a mobile couch beneath a fixed cobalt-60
+s o u r c e ( F i g u r e 1 f ) . E n g l e r e t a l . 1 9 developed an arc TBI technique
+using a 42 MV betatron, and Pla et a1. 7 1 modified a column mounted 4
+MV linac to sweep over a patient (Figure 1g).
+A similar technique
+using
+an isocentric cobalt unit fitted with automatic
+arcing
+facilities and a specially designed curved couch has been described by
+
+Mulvey et a1.6 6.
+
+7
+
+Recently,
+P e t e r s a n d H e r e r6 9 h a v e d e s c r i b e d a v e r y s i m p l e
+procedure for removing the collimating system from a widely used
+cobalt-60 therapy unit. In less than fifteen minutes this unit could
+be modified to handle large field stationary treatment procedures.
+T h e d o s i m e t r i c d a t a a r e s i m i l a r t o t h o s e obtained on the dedicated
+single source unit of the Princess Margaret Hospital and the treatment
+procedures are identical.
+2.6 Conventional treatment units
+There are numerous reports on the dosimetry of unmodified x ray
+or cobalt stationary sources a t b o t h r e l a t i v e l y s h o r t
+t r e a t m e n t d i s t a n c e s 1,6,7,23,28,31,32,34,36,49,50.54,63,64,65,68,81,87 .
+Depending on the maximum field size attainable, patients have been
+treated laterally, usually in a seated or reclining position, or
+usually while l y i n g o n t h e i r side on a
+anteriorly/posteriorly,
+stretcher (Figure 1h). Most of these treatments have been at a “low”
+dose rate, usually less than 10 cGy/min, dictated by the geometry of
+the treatment set-up, although in some instances dose rates have also
+been purposely reduced t o t h e s e l o w l e v e l s f o r r a d i o b i o l o g i c a l
+reasons. Varying the dose rate has been made easier by the advent of
+linacs, where outputs can be changed electronically. Most recently,
+the trend has been to use the higher dose rates available with the
+linacs combined with multiple fraction treatments as opposed to the
+s i n g l e f r a c t i o n , l o w d o s e r a t e t r e a t m e n t g i v e n i n t h e p a s t 1,68,81 .
+
+2.7 Multiple fields
+
+Although the application of multiple adjacent fields is another
+p o s s i b i l i t y f o r T B 18 , its use is rare since adjacent fields provide
+the additional dosimetric problems associated with field junctions as
+well as the concern about cells circulating through the body and
+t h e r e f o r e p o t e n t i a l l y r e c e i v i n g a r e d u c e d d o s e . For HBI, however,
+when both halves of the body are to be irradiated adjacent fields are
+used since the treatment of the upper and lower halves are generally
+separated by a time interval of 4 to 6 weeks. A single oblique field
+(Figure 1i) or two adjacent fields with the beams pointing vertically
+down (Figure 1j) can be used to treat the lower half body. A reduced
+dose variation can be achieved when fields are abutted on the skin
+surface by relocating the junction for the PA fields compared to the
+junction for the AP fields for the adjacent lower half body fields.
+
+2.8
+
+Selecting a large field technique
+
+Those wishing to implement large field radiotherapy in a clinic
+may c h o o s e a ) t o d e s i g n a “ d e d i c a t e d ” u n i t , b ) t o d e v e l o p a s p e c i a l
+treatment method such as sweeping beam, a moving couch, or modified
+collimator or, c) simply to use an existing therapy unit within its
+geometric constraints.
+P r a c t i c a l l y , the choice will depend on the
+equipment available; its workload with conventional treatments and its
+subsequent availability for l a r g e f i e l d r a d i o t h e r a p y ; t h e n u m b e r o f
+p a t i e n t s t o b e t r e a t e d a n d t h e f r e q u e n c y o f t h e i r t r e a t m e n t s ; and,
+perhaps most important, the resources available for development of a
+technique.
+Because these parameters are unique to
+each
+good
+radiotherapy department, it i s b e y o n d t h e s c o p e o f t h i s r e p o r t t o
+state which is the best method of treatment.
+However, there are a number of physical parameters that should
+be considered and optimized for each individual institution. The most
+
+8
+
+common options relate to a) t h e e n e r g y o f r a d i a t i o n , b) treatment
+d i s t a n c e , c ) choice of antero-posterior (AP) treatments, lateral
+treatments or a combination of these, a n d d ) d o s e r a t e . Figure 2
+shows the ratio of the peak dose to the midline dose on the central
+ray as a function of patient thickness for parallel-opposed radiation
+fields.
+Data are graphed for 3 energies, cobalt-60, 6 MV x rays and
+25 MV x rays, and a field size of 50 x 50 cm 2 a t a n u m b e r o f d i f f e r e n t
+SSD’s. T h e h o r i z o n t a l shaded region indicates a d o s e u n i f o r m i t y
+within 15%. For AP treatments, adult patient diameters usually range
+between 18 and 26 cm. The shaded region A represents these patient
+diameters and the 15% dose uniformity.
+The effects of tissue
+inhomogeneities and the effects of dose build-up near the surface are
+n o t c o n s i d e r e d . Only cobalt-60 at an SSD of 80 cm falls outside of
+this dose uniformity for patient diameters greater than 25 cm. Hence,
+f o r m o s t l a r g e f i e l d t e c h n i q u e s , AP treatments will provide better
+than 15% uniformity even for cobalt-60 radiation. The lateral opposed
+beam procedure can be represented by shaded region B, where lateral
+patient diameters are assumed to range between 38 and 50 cm. Only 25
+MV x rays at a distance of 300 cm will yield a dose uniformity within
+15% for a 50 cm diameter patient.
+Lower e n e r g i e s a n d s h o r t e r
+treatment distances will result in a greater dose variation. It
+is
+clear that the use of cobalt-60 with lateral opposed beams will tend
+t o p r o d u c e q u i t e l a r g e d o s e v a r i a t i o n s . Several conclusions can be
+
+Figure 2: Ratio of peak dose to midplane dose on the central
+ray versus patient thickness.
+The horizontal shaded region
+represents a 15% spread in this ratio. Cross hatched region A
+represents the typical range of adult patient diameters in the
+anterior-posterior direction while cross hatched region B
+represents the range of adult patient diameters in the lateral
+direction.
+
+9
+
+drawn from these data:
+1) the higher the energy, the lower the dose variation (excluding the
+the effects of the build-up region and tissue inhomogeneities).
+2) the larger the treatment distance, the lower the. dose variation.
+3) the larger the patient diameter, the larger the dose variation.
+4) AP/PA treatments will yield a variation not larger than 15%
+for most megavoltage energies and distances.
+5) Lateral opposed beams will usually give a greater dose variation
+compared to AP/PA treatments especially for adult patients.
+For
+pediatric cases or higher energy x-ray beams, a ±15% uniformity
+might be achievable with bilateral fields.
+Reducing the allowable dose variation to 10% will place even greater
+constraints on the choice of energy and the use of lateral opposed
+fields for adult patients may not yield the desired 10% uniformity.
+These conclusions have only considered the effect of maximum patient
+thickness. T h e v a r i a t i o n i n p a t i e n t t h i c k n e s s a t d i f f e r e n t l e v e l s i n
+the body will add to this dose variation and will be considered in
+Section 4.2.1.
+If high energy x rays from a linear accelerator are used, some
+consideration should be given to the effects of the low dose in the
+build-up region.
+There are presently no data indicating clinical
+problems because of this effect, but the dose in the build-up region
+15
+can be increased by the addition of a b e a m s p o i l e r such as a plate
+o f p l a s t i c near the skin surface. The choice of the material, i t s
+thickness and location will be dependent on the dose criteria
+recommended by the clinicians.
+Some clinical protocols require low dose rate treatment at the
+rate of 5 to 10 cGy/min. For cobalt-60 machines, reduced dose rates
+can be achieved by placing absorbing materials across the beam and
+performing careful measurements under the absorber to account for the
+effects of both attenuation and scatter from the absorber. For linear
+accelerators the beam operating conditions may have to be adjusted to
+pulse
+repetition
+reduce the beam current or
+frequency. If
+c o n v e n t i o n a l d o s e rates are desired then the dose rate on a linear
+accelerator may have to be adjusted upward to account for the effects
+of
+inverse-square fall-off as a result of the long
+distance
+treatments. In either case, dosimetry measurements should be performed
+under the operating conditions to insure accurate dose delivery.
+Radiotherapy rooms are not usually designed to provide the long
+distances that may be required for large field treatments. Therefore,
+it is worth emphasizing to designers of radiotherapy departments that
+at least one treatment room (probably the one with the highest energy
+machine) s h o u l d b e d e s i g n e d t o a c c o m m o d a t e l a r g e f i e l d
+therapy
+radiotherapy.
+2.9 Rack-up technique
+S o m e c l i n i c a l p r o c e d u r e s , such as BMT, r e q u i r e l a r g e f i e l d
+i r r a d i a t i o n a t a specified time within a comprehensive drug and
+radiation treatment protocol.
+Because the large field irradiation
+cannot be delayed, a back-up method of treatment should be considered
+either within the same i n s t i t u t i o n o r at another near-by radiation
+therapy department. This is especially true if linacs a r e u s e d s i n c e
+these tend to have a greater down time compared to cobalt-60
+irradiators.
+
+10
+
+3. Basic phantom dosimetry
+3.1 Introduction
+Once a decision is made on t h e m e t h o d - o f t h e l a r g e f i e l d
+treatment procedure for a particular institution, a number of basic
+dosimetric parameters should be measured using appropriate phantoms.
+The diversity in the production of large fields used for TBI and HBI
+techniques means that the dosimetric data required will vary from one
+i n s t i t u t i o n t o a n o t h e r . The following sections discuss the types of
+measurements that should be performed and the corresponding special
+This report attempts t o d e a l w i t h t h e m o s t g e n e r a l
+concerns.
+situation where both the field size and distance may vary depending on
+the specific needs of the patient. Some institutions may require only
+one set-up geometry. In that case, the number of measurements can be
+reduced although the general principles discussed below will s t i l l
+apply. F o r s o m e i n s t i t u t i o n s , t h e e x p e r t i s e i s a v a i l a b l e t o p e r f o r m
+reasonable checks at the extended treatment distance to verify that
+conventional data might be applicable to their new treatment geometry.
+Once the appropriate checks have been made and a sufficient accuracy
+can be achieved, these institutions may wish to proceed with their
+data for conventional treatments but with appropriate corrections for
+the new geometry.
+The general approach recommended here is
+process as outlined in Figure 3.
+
+to use a three step
+
+Step 1. Determine an absolute calibration of the radiation beam using
+the large field geometry and the largest phantom available. For many
+institutions,
+this will correspond to using the same phantom that is
+used for conventional calibration procedures.
+Step 2. Correct this dose such that it represents both: (a) the dose
+that would be obtained for a phantom that covers the entire beam, and
+full
+(b) the dose that would be obtained for a deep phantom i.e.
+scattering conditions.
+Step 3: For patient treatments, corrections should be made for patient
+dimensions both in terms of the area of the patient intersecting the
+This will allow
+radiation beam as well as patient thickness.
+adjustments
+to be made for the extremely large variations t h a t a r e
+possible when comparing young pediatric cases to adult patients.
+The following sections address the special dosimetric concerns in
+each of the three steps listed above.
+3.2
+
+Dosimetry phantoms
+As indicated by the report from AAPM Task Group 21 89 ( T G 2 1 ) ,
+water is the recommended material for dosimetry phantoms. TG21 does
+indicate that polystyrene and acrylic plastics can also be used;
+however, t h e d o s e c a l i b r a t i o n i s t o b e r e f e r e n c e d t o w a t e r . The
+transfer of dose in plastic to dose in water for X or gamma r a y s i s
+a c c o m p l i s h e d b y a p p l i c a t i o n o f the
+r a t i o o f the average. mass
+energy-absorption coefficients of water to that of plastic.
+Although
+this parameter changes slowly with beam energy, large radiation fields
+c a n p r o d u c e a h u g e amount of multiple scatter i n l a r g e p h a n t o m s
+resulting in noticeable changes in these ratios. An example of this
+
+11
+
+i s shown in Figure 4, where photon energy spectra for c o b a l t - 6 0 a s
+calculated by Bruce and Johns 4 are compared for 10 x 10 cm 2 field and
+an infinite field size both at a depth of 10 cm in water. Johns and
+C u n n i n g h a m 45 have indicated that the average mass energy absorption
+coefficient ratios of water to medium for cobalt-60 change by about
+0.5% when comparing these ratios for primary radiation alone versus
+p r i m a r y p l u s s c a t t e r f o r a 1 0 x 1 0 c m 2 field at a depth of 10 cm. In
+changing from 10 x 10 cm 2 to an infinite field size the ratios change
+by a further 1.1% and increasing the depth to 20 cm can result in an
+a d d i t i o n a l c h a n g e o f 1 % ( s e e T a b l e 1 ) 1 0. With uncertainties in the
+determination of very large field spectra, it is clear that the least
+error will be produced if water is used as phantom material for large
+field dosimetry.
+However, the data of Table 1 can be used if
+measurements are made in other phantom materials.
+For x ray beams from high energy accelerators, the relative
+changes in these mass energy absorption coefficient ratios are smaller
+primarily due to: a) slower variation in mass energy absorption
+coefficients as a function of energy at these higher energies, and b)
+
+F i g u r e 3 : Procedures involved in dose delivery for
+half body irradiation.
+
+total and
+
+12
+
+Figure 4: Calculated spectral distributions for cobalt-60 gamma
+2
+rays in a water phantom at a depth of 10 cm for a 10 x 10 cm
+Curves are adapted from
+field and an infinite field size.
+reference 4. Note that t h e p r i m a r y c o b a l t - 6 0 p h o t o n s a r e n o t
+shown.
+smaller variation in energy spectra at different depths compared with
+the primary spectrum since t h e a t t e n u a t i o n o f p r i m a r y p h o t o n s i s
+compensated by the production of scattered photons. Typical examples
+of mass energy absorption coefficient ratios for the high energy beams
+are also given in Table 1.
+T G 2 189 further recommends that the dimensions of a dosimetry
+phantom should provide a 5 cm margin on all four sides of the largest
+f i e l d s i z e to be employed and a depth sufficient to provide maximum
+backscatter at the point at which the dose determination is made. For
+conventional field sizes, 10 cm of phantom material beyond the
+dosimeter depth is considered to be adequate although it has been
+could underestimate the dose by
+1-2%
+for
+shown
+that
+this
+c o b a l t - 6 0 2 7 , 7 2 , 9 5 , 6 a n d 1 0 M v x r a y 7 2 fields, with equivalent squares
+from 30 x 30 cm 2 to 70 x 70 cm 2 . For 25 Mv x rays, 10 cm of water
+behind the measurement point provides full scatter to within 0.5% 2 7.
+For TBI, phantoms which provide a 5 cm margin on all sides of the
+field and 10 cm beyond the maximum dosimeter depth could be as large
+as 200 x 50 x 40 cm 3 . A water phantom of these dimensions weighs 400
+kg. Obviously, a phantom of this size and weight is not practical for
+routine use.
+It is recommended that the minimum phantom size for calibration
+purposes be 30 x 30 x 30 cm 3 a n d t h a t w h e n e v e r p o s s i b l e a d d i t i o n a l
+
+13
+
+Table 1
+Patios of average mass e n e r g y a b s o r p t i o n c o e f f i c i e n t s f o r v a r i o u s
+energies, depths and field sizes. The numbers in brackets are for the
+primary beam spectra. Data are from reference 10.
+
+Depth
+(cm)
+
+Field
+Radius
+(cm)
+2.8
+5.6
+50
+50
+
+PolyLucite
+styrene
+1.111
+1.032
+1.029
+cobalt-60
+0
+1.113
+1.035
+10
+1.030
+1.122
+1.044
+1.036
+5
+1.135
+20
+1.059
+1.045
+(1.111)
+(1.032)
+(1.029)
+======================================================================
+1.115
+1.035
+1.031
+6 MV
+0
+2.8
+1.116
+1.036
+1.031
+10
+5.6
+1.123
+1.043
+1.036
+5
+50
+1.132
+1.053
+1.041
+20
+50
+(1.112)
+(1.035)
+(1.030)
+======================================================================
+1.122
+1.049
+1.038
+12 MV
+0
+2.8
+1.123
+1.049
+1.038
+10
+5.6
+1.128
+1.055
+1.042
+20
+50
+(1.120)
+(1.049)
+(1.039)
+======================================================================
+1.128
+1.059
+1.044
+0
+2.8
+1.128
+1.059
+1.044
+18 MV
+10
+5.6
+1.132
+1.062
+1.047
+20
+50
+(1.125)
+(1.059)
+(1.044)
+=======================================================================
+2.8
+1.126
+1.058
+1.043
+0
+5.6
+1.128
+1.059
+1.044
+26 MV
+10
+1.133
+(thick target) 20
+50
+1.064
+1.047
+(1.124)
+(1.058)
+(1.044)
+----------------------------------------------------------------------2.8
+1.129
+1.065
+1.047
+0
+5.6
+1.131
+1.066
+1.048
+26 MV
+10
+50
+1.140
+1.074
+1.053
+(thin target) 20
+(1.129)
+(1.067)
+(1.049)
+========================================================================
+2.8
+1.141
+1.085
+1.058
+0
+5.6
+1.140
+1.085
+1.058
+45 MV
+10
+50
+1.142
+1.086
+1.059
+20
+(1.137)
+(1.085)
+(1.059)
+Beam
+
+Carbon
+
+14
+Table 2: Multiplicative correction factors to adjust data measured in
+limited phantom sizes to data representing infinite phantom
+conditions (based on references 72 and 95).
+
+Table 3:
+
+Multiplicative correction factors to adjust data measured in limited phantom
+thicknesses to data representing infinitely thick phantom conditions.
+
+15
+
+phantom material be placed around this minimum phantom size to achieve
+f u l l s c a t t e r i n g c o n d i t i o n s . The determination of dose in phantoms of
+limited dimensions will have to be corrected to obtain data for full
+scattering conditions. This can be done by using the multiplicative
+correction factors given in Tables 2 and 3 to adjust data measured in
+limited phantom sizes to data representing full phantom conditions.
+For example, if measurements are performed in a 30 x 30 cm 2 p h a n t o m
+(effectively infinitely thick) but the field size is 50 x 50 cm2 t h e n
+the measurements should be multiplied by the factors listed in Table 2
+under a field size of 50 x
+5 0 c m2 t o y i e l d d a t a t h a t a r e
+representative of a full phantom covered by the total beam.
+For
+cobalt-60 at a depth of 10 cm in water, t h i s r e p r e s e n t s a f a c t o r o f
+95
+1.043. These data were derived from measurements by Van Dyk et al.
+f o r c o b a l t - 6 0 a n d b y P o d g o r s a k e t a l . 72 f o r c o b a l t - 6 0 a n d h i g h e r
+energies. For cobalt-60 the Van Dyk and Podgorsak data agreed within
+1% except for the larger depths a n d l a r g e r f i e l d s i z e s ( i . e . depth =
+20 cm and field size = 40 x 40 to 75 x 75 cm 2 ) where the results
+agreed within 3%.
+T h e d a t a b y P o d g o r s a k e t a l . 72 a l s o s h o w t h a t u s i n g t h e a r e a
+o v e r p e r i m e t e r r u l e f o r e q u i v a l e n t square determination provides a
+good approximation for converting long rectangular fields (or long
+rectangular phantoms or
+patients) to
+their equivalent square
+counterparts, i.e.
+Side of equivalent square =
+
+(1)
+
+where a and b are the lengths of the long and short s i d e s o f t h e
+rectangular field or phantom, whichever is smaller in area.
+Table 3 shows correction factors to make adjustments for
+measurements in phantoms that are not infinitely deep. For example, if
+for cobalt-60 radiation, measurements are made in a phantom that is 25
+cm thick and the field size is 30 x 30 cm 2 at a depth of measurement
+of 20 cm, then the measurement should be multiplied by 1.020 to yield
+a result equivalent to an infinitely thick phantom. The data in this
+t a b l e a r e d e r i v e d f r o m V a n D y k e t a l . 9 5 a n d Podgorsak et al.7 2 f o r
+cobalt-60 and from Podgorsak et al. 72 for 6 and 10 MV x rays.
+3.3 Dosimeters
+A s s u g g e s t e d b y T G 2 1 8 9, t h e p r i m a r y m e t h o d o f d o s i m e t r y
+considered will be the use of an ionization chamber with a calibration
+factor directly traceable to a national standards laboratory. Because
+of the large fields under consideration, long lengths of cables may be
+e x p o s e d t o i o n i z i n g r a d i a t i o n . Hence, special attention should be
+given to ensure that the stem and cable effects are low. Radiation
+induced cable currents are known to be directly proportional to the
+length of cable irradiated 8 4. F u r t h e r m o r e , R a w l i n s o n7 6 has shown that
+cables irradiated in high energy x ray beams (e.g. 25 MV) demonstrate
+a net removal of charge due to dose build-up within the cable. This
+radiation induced current was found to be approximately 1 to 2% of the
+ionization current for a 1 cc ionization chamber when 1 meter of cable
+w a s i r r a d i a t e d . Ionization chambers with smaller volumes (e.g.
+0.1
+c m3) w i l l d e m o n s t r a t e p r o p o r t i o n a t e l y l a r g e r c a b l e e f f e c t s . This
+e f f e c t was found to increase with lower surface dose. T h e r a d i a t i o n
+induced cable current could be reduced by a factor of 20 by placing
+full build-up material over the cable. The irradiation of cables in
+
+16
+
+cobalt-60 beams demonstrated much smaller effects. To minimize these
+76
+c a b l e e f f e c t s , the following precautions should be taken :
+1) The cable lengths irradiated should be kept minimal.
+2) The cable should be covered with build-up material to ensure full
+electronic equilibrium within the cable.
+3) Very small volume ionization chambers should be avoided.
+Large radiation fields in a phantom tend to produce a large, low
+energy component in the photon spectrum for cobalt-60 as shown in
+Figure 4. T h e r e f o r e , i t i s i m p o r t a n t that the chamber response is
+quite energy independent.
+A sample calculation has shown t h a t a n
+i o n i z a t i o n chamber w i t h c a l i b r a t i o n f a c t o r s v a r y i n g b e t w e e n 0 . 9 8 0
+R/scale division for cobalt-60 gamma rays to 0.900 R/scale division
+for a beam with an HVL of 0.5 mm of copper (i.e., equlvalent
+monoenergetic energy o f 6 0 k e V ) s h o u l d , i n f a c t , h a v e a c a l i b r a t i o n
+factor of 0.970 R/scale division f o r t h e i n f i n i t e f i e l d s p e c t r u m o f
+F i g u r e 4 . This was determined from the following weighted averaging
+procedure:
+(2)
+w h e r e Feff = e f f e c t i v e c a l i b r a t i o n f a c t o r f o r l a r g e f i e l d s p e c t r u m .
+= calibration factor for energy E i.
+Fi
+= number of photons for energy E i.
+Ni
+= energy of energy interval i.
+Ei
+Clearly, i o n i z a t i o n chambers w i t h a l a r g e r v a r i a t i o n i n e n e r g y
+response will show a greater than 1% deviation when comparing “in air”
+cobalt-60 measurements to large field phantom calibrations whereas
+chambers with a reduced variation in energy response will show a lower
+than 1% deviation.
+For surface dose measurements and for relative measurements in the
+build-up region, a thin parallel plate ionization chamber is preferred
+since the volume averaging over rapidly varying dose gradients will be
+reduced. Thermoluminescent dosimeters (TLD) can also be used for such
+measurements.
+3.4 Dose calibration
+The dose calibration should be performed using the principles and
+methodology of AAPM TG21 89. The following discussion outlines some of
+the special concerns for the large field calibration procedures.
+The calibration is best made under geometric and phantom
+conditions that most nearly represent the actual treatment geometry.
+The depth of calibration should be as specified by Table X1 of the
+T G 2 1 p r o t o c o l8 9. The field size should correspond either to the field
+size that will be used for all treatments or to some reference field
+which is representative of large field treatments. Further changes in
+field size must then be related to this reference field size.
+Recent data by Cunningham et al. 1 0 have shown that the average
+mass energy absorption coefficient ratios are dependent on the photon
+spectrum at a depth in a medium.
+This variation becomes more
+pronounced with large field sizes and lower energies such as cobalt-60
+gamma rays.
+Table 1 shows data taken directly from Cunningham et
+a l .10 and should be used in conjunction with large field absorbed dose
+calibrations as recommended by the AAPM TG21 protocol.
+
+17
+
+Large field treatment techniques are often given at long
+distances from the source compared to conventional procedures. As a
+result, the treatments are usually performed close to treatment room
+walls or near the floor resulting in a “dose rate to a small mass Of
+tissue” which exceeds the values calculated from the inverse square
+law because of scatter contribution from the walls or the floor to the
+m e a s u r i n g c h a m b e r9 5. This is especially true for cobalt-60 units and
+lower e n e r g y l i n a c s .
+I t i s t h e r e f o r e recommended that " in a i r "
+calibrations not be performed.
+When using linear a c c e l e r a t o r s a n d l o w d o s e r a t e s , i t i s
+important to check the constancy of the monitor ionization chamber
+over
+long
+since
+the machine operating conditions can change
+irradiation times.
+3.5 Central ray data
+As indicated in the previous section, in-air measurements tend to
+be confounded by scatter from the walls and floor of the treatment
+room.
+F o r t h i s r e a s o n it is recommended that central ray data
+requiring in-air measurements such as tissue-air ratios (TAR) should
+b e a v o i d e d . Hence, only quantities, such as percentage depth doses,
+t i s s u e - p h a n t o m r a t i o s o r tissue-maximum ratios, based on phantom
+measurements in the selected geometry should be used. Some dose ratio
+parameters, such as tissue-air ratios, tissue-maximum ratios and
+considered to be distance
+tissue-phantom ratios, are
+normally
+However, there is evidence 1 that extreme deviations from
+independent.
+conventional treatment distances results in distance-dependent changes
+in these quantities. Furthermore, the conversion of percentage depth
+dose data from one distance to another using the Mayneord factor may
+also be in error by 2 to 6% 5 4. T h e r e f o r e , c e n t r a l r a y m e a s u r e m e n t s
+should be performed for the large field treatment geometry.
+A cylindrical chamber is normally used in a water phantom beyond
+the depth of maximum dose for measurements along the central ray.
+In
+the build-up region, parallel plate chambers should be used.
+However,
+some parallel plate chambers are not waterproof; hence, measurements
+may have to be made in plastic phantoms. The depth of measurement in
+the plastic phantom will have to be scaled to derive an equivalent
+depth in water using the procedure recommended by TG21. The dose in
+the build-up region is strongly dependent on the treatment geometry
+(field size, SSD) and any intervening attenuating materials; hence,
+measurements should be made under these conditions.
+3.6 Inverse square test
+Inverse square law measurements are generally performed in air
+a n d a r e , t h e r e f o r e , a f f e c t e d b y s c a t t e r from t h e c o l l i m a t o r s , t h e
+f l o o r a n d t h e w a l l s 9 5. The application of the variation in output as
+a function of distance measured in air, to phantom geometries, unless
+appropriately checked, should be avoided.
+Phantom geometries will
+t e n d t o r e m o v e some of the radiation scattered from the floor and
+walls.
+In section 3.4, it was recommended that the dose calibration
+be performed at a distance representative of the treatment geometry.
+The inverse square law need only b e t e s t e d f o r t h e v a r i a t i o n s f r o m
+this calibration geometry as might be encountered in the clinical
+situation. If there are s i z e a b l e d i f f e r e n c e s ( i . e .
+>2%) from the
+inverse square calculation, then dose calibrations should be performed
+
+18
+
+at a number of appropriate treatment distances ( i . e .
+inverse square deviations will always be less than 2%).
+
+such that
+
+3.7
+
+Output factors
+Output factors measured in air may be confounded by the problems
+discussed in the previous sections. If only one treatment geometry is
+used then the dose calibration is needed only for this geometry and
+relative output factors are not needed. I f a r a n g e o f f i e l d s i z e s a r e
+to be used, then instead of measuring output factors in air, it is
+recommended that dose calibrations be determined in phantom for a
+number o f f i e l d s i z e s . The output for intermediate geometries can be
+determined by interpolation.
+It should be noted that i f b e a m a t t e n u a t i o n d e v i c e s , s u c h a s
+shielding trays, are to be used routinely then the output as a
+function of field size should be made with these devices in place. As
+indicated in section 3.9, beam attenuation materials produce scattered
+radiation which is dependent on the geometrical arrangement including
+the
+field dimensions. Output factors have been shown to change by
+13% depending on intervening filter materia1 7 8 , 1 0 0.
+3.8
+
+Beam profiles
+In addition to measuring percentage depth doses, tissue-phantom
+r a t i o s o r t i s s u e - m a x i m u m r a t i o s a l o n g t h e c e n t r a l r a y , the same
+quantity should also be measured along several rays which intercept
+t h e l o n g a n d s h o r t f i e l d a x e s a n d a r e p a r a l l e l to the central ray.
+The measurements should be normalized to the central ray normalization
+point. These data give dose profiles at any desired depth in the
+phantom along the two beam axes. When linear accelerators are used
+with the collimator rotated such that the patient lies along the field
+diagonal, there may be a large dose decrease towards the field corners
+since the beam flattening filters usually have circular symmetry and
+are often designed to flatten the field along the two principal planes
+For such situations, o r f o r
+b u t n o t a l o n g t h e d i a g o n a l s 6 5 , 8 7.
+specially designed large field irradiators, it may be n e c e s s a r y t o
+d e s i g n s p e c i a l f i l t e r s t o a c h i e v e a n a d e q u a t e f l a t n e s s 1 , 5 6. I t
+should be recognized that for linear accelerators, the energy spectrum
+of the photon beam may vary as a function of distance from the central
+ray.
+Hence, the dose profiles measured at shallow depths will not
+necessarily have the same shapes as those at larger depths.
+I d e a l l y , dose profiles would be measured at various depths in a
+full water phantom.
+Practically this may be very difficult and
+plastic phantoms of limited dimensions may have to be used. In this
+case, the ionization chamber should be located near the center of the
+plastic phantom and the total phantom should be moved across the beam.
+A l t h o u g h t h i s t e c h n i q u e w i l l y i e l d s o m e i n d i c a t i o n o f the dose
+variation across the radiation beam, differences as large as 5% have
+been noted when comparing an “in air” profile to a full phantom
+p r o f i l e e s p e c i a l l y t o w a r d s t h e b e a m e d g e s7 5. A 30 x 30 x 30 cm 3
+phantom s h o u l d p r o v i d e b e a m p r o f i l e s w i t h i n 3 % o f f u l l p h a n t o m
+measurements 52.
+3.9
+
+Attenuation data
+Attenuating materials may be used for a variety of r e a s o n s i n
+large field treatments: e.g.
+shields, compensators, and attenuators
+
+19
+
+for fractional dose reduction to specified organs. Measurements and
+calculation of attenuation coefficients or half-value layers (HVL) are
+generally performed under narrow beam conditions. However, for broad
+
+Figure 5: Attenuation coefficients versus side of square field
+for lead in a cobalt-60 beam.
+Source-detector distance = 130
+cm.
+Source-absorber distance = 90 cm. F i e l d s i z e i s d e f i n e d
+at 130 cm. Data is adapted from Reference 102.
+beams, m e a s u r e m e n t s a n d c a l c u l a t i o n s b y V a n D y k 102 indicate that
+attenuation coefficients determined under typical clinical geometries
+can vary from narrow beam data by 16% for energies between cobalt-60
+gamma rays and 25 MV x rays.
+Sample data are shown in Figure 5 for
+cobalt-60 gamma rays along with the geometric parameters. A s a f i r s t
+approximation,
+these data indicate
+that broad beam attenuation
+coefficients vary linearly with the side of square field. Hence, to
+determine broad beam coefficients, attenuation curves for three
+different field sizes under treatment conditions are sufficient to
+produce a r a n g e o f c o e f f i c i e n t s . These measurements are necessary
+especially if clinical situations require much attenuating material in
+a l a r g e p o r t i o n o f t h e f i e l d . Note that the broad beam attenuation
+c o e f f i c i e n t t o b e u s e d w i l l b e d e p e n d e n t on the maximum scattering
+angle, Q, as shown in the inset of Figure 5. The maximum scattering
+angle will be determined from t h e a b s o r b e r size if the absorber is
+smaller than the radiation field, or the size of the radiation f i e l d
+interacting with the absorber if the absorber covers the total beam.
+For linear accelerators there is an additional problem that the
+attenuation coefficient changes as the point of interest moves away
+from the central ray due to a change in the primary beam photon
+spectrum 60. This may require attenuation coefficient measurements as
+described above to be performed at various distances from the central
+ray.
+This is particularly important if attenuating materials will be
+u s e d c l i n i c a l l y t o r e d u c e t h e d o s e to organs located away from the
+central ray.
+
+20
+
+4. Patient dosimetry
+4.1 Prescription of dose
+
+The problem of dose prescription when delivering TBI or HBI doses
+For most
+is closely related. to the problem of dose description.
+conventional radiation therapy treatment situations, the homogeneity
+o f t h e r e s u l t i n g d o s e d i s t r i b u t i o n i s s u f f i c i e n t t o u s e a single
+number to describe the dose 4 1.
+This shorthand representation of the
+dose is acceptable so long as it is adequately defined for clear
+interpretation; e.g.
+minimum target absorbed dose, mean target
+absorbed dose, isocenter dose, etc. An example is the use of mantle
+fields to treat Hodgkin’s disease where the use of a single number to
+prescribe or describe the dose is common practice because the
+treatment technique is relatively standard (the patient positioned
+Since the
+supine and prone for extended distance AP/PA fields).
+treatment conditions are well understood, the dose distribution from
+one
+institution to the next is similar and predictable. By
+comparison, there is no standard treatment technique for TBI, HBI or
+other large field treatments. As a result, significant differences in
+the dose distributions exist with different treatment methods. Two
+institutions can prescribe the same dose to some selected point; but,
+if different treatment techniques are used, the dose to other points
+can vary considerably. Figure 6 shows the difference in the dose for
+AP/PA total body fields as compared to bilateral fields for the same
+point dose prescription for 6 MV x rays on a humanoid phantom*. The
+neck region receives a 35% higher dose depending on the treatment
+dose
+technique.
+Clearly, TBI and HBI need more comprehensive
+prescription and reporting procedures.
+Various techniques for prescribing the dose for TBI have been
+r e p o r t e d 29,51.
+One method uses a calculation of the integral dose to
+d e t e r m i n e t h e “ a v e r a g e ” d o s e 9. Besides the obvious disadvantage of
+having to perform a difficult and tedious dose calculation, this
+approach does not identify high and low dose regions. Another method
+suggests the use of a “limited average” including areas of high and
+low dose. This method suffers from the problem that these differences
+can cancel and leave the average unchanged. A third method prescribes
+a minimum tumour dose at the midpoint of the maximum separation.
+Although this gives a minimum dose for all patients, it does not tell
+us where this minimum dose occurs. A fourth approach uses a single
+point prescription, but also specifies limits for the highest and
+lowest dose acceptable for any point in the body. In addition, dose
+l i m i t s a r e s e t f o r c e r t a i n s p e c i f i c tissues such as the lungs. Using
+this technique, a typical prescription might read:
+The dose to the midpoint at the level of the umbilicus
+i s 8 0 0 c G y . All points in the body must fall within
+the limits 840 cGy and 720 cGy (+5% and -10%). The
+dose to more than half the lung volume must not exceed
+800 cGy.
+The dose rate at the prescribed point must
+not exceed 10 cGy/min.
+This example of a TBI prescription uses the midpoint at the level of
+For patients
+the umbilicus as a convenient prescription position.
+treated with the legs slightly bent, the central ray of the beam can
+* Alderson-Rando
+
+Figure 6(a):
+Relative dose for AP/PA total body fields using 6 MV
+x rays on a humanoid phantom. The closed circles represent the dose
+measured at the center of the phantom section. The open circles show
+the maximum dose for that particular section. Normalization is at
+the level of the umbilicus. The “air dose” is the highest dose
+p o s s i b l e a s m e a s u r e d a t t h e n o r m a l i z a t i o n p o i n t w i t h j u s t the
+thickness of material needed for electron equilibrium.
+
+Figure 6(b): Same as Figure 6(a) except that bilateral 6 M V f i e l d s
+are used. Notice that compensation must be used for the head and neck
+region in order to bring the inhomogeneity within approximately 15%.
+
+22
+
+be positioned at this location to provide symmetric coverage of the
+head and feet.
+Another advantage for using this level for dose
+p r e s c r i p t i o n i s t h a t t h i s r e g i o n o f the body does not exhibit large
+Thus,
+contour variations and does not contain low density tissues.
+The dose rate should be
+the dose calculation is straightforward.
+specifically
+quoted at the prescription point since for some
+techniques the maximum dose r a t e c o u l d b e h i g h e r b y a s m u c h a s a
+f a c t o r o f 2 . If moving beams are used to cover the target volume,
+then both an instantaneous and average dose rate should be quoted.
+This prescription allows f l e x i b i l i t y i n t h e a d o p t i n g o f a
+treatment geometry.
+Institutions performing TBI or HBI may use
+different field arrangements and set up geometries as long as dose
+limits included in the prescription are followed. Bose distribution
+modifiers, such as bolus or compensators, may be required to meet the
+Figure 6b shows that the bilateral field arrangement
+prescription.
+would exceed the limits of the prescription.
+The doses in the region
+of the head, neck and mouth are excessive. On the other hand, the
+AP/PA technique s e e m s s a t i s f a c t o r y .
+It is also possible to apply
+compensators (see section 4.3.2) to reduce the dose to the head, neck,
+and mouth when using the lateral field technique. Either a change to
+AP/PA fields or addition of compensators would sufficiently modify the
+dose so that the prescription can be met.
+The above discussion illustrates the importance of developing and
+adhering to a comprehensive dose prescription for TBI and other large
+f i e l d t r e a t m e n t s . This is particularly important when total dose and
+dose fractionation are being modified in an attempt to cure the
+disease while avoiding radiation induced complications.
+4.2 Effects of contour variation and finite patient size
+Basic central ray data are
+usually
+measured under full
+c o n d i t i o n s . I f , however, measurements are made in
+scattering
+phantoms which are smaller than the radiation beam then corrections
+will have to be made to provide full scattering conditions a s p e r
+S e c t i o n 3 . 2 . I n g e n e r a l , p a t i e n t s do not provide full scatter and
+adjustments may have to be made for their finite dimensions.
+The effects of finite patient size can essentially be divided
+into 3 components. In the first instance the variation in patient
+contour on the incident side of the radiation beam will affect the
+primary and scatter dose conditions at a depth. The second effect
+considers the lack of lateral scatter in patients that are effectively
+smaller than the overall dimensions of the radiation beam. The third
+effect deals with finite thickness of the patient on the exit side of
+the beam. These effects will now be consider& in greater detail.
+4.2.1 Incident contour variation
+The effect of contour variation occurring on the incident side of
+the radiation beam has been a standard dosimetry problem since the
+early days of radiotherapy. Contour variations cause changes in both
+the primary and scatter dose at a specified point within the patient.
+This effect is easily handled by contour correction procedures
+available in most commercial treatment planning computer programs.
+ICRU Report 24 40 has considered a number of procedures for performing
+relatively simple manual calculations. The ratio of tissue-air ratio
+
+23
+
+method (or the ratio of tissue-phantom ratio method) is considered the
+method of choice as long as large field data are available since it
+does consider the effect of field size and depth and it is effectively
+independent of SSD.
+The effective SSD method is similar in that it
+allows for beam dimensions and depth but its actual application is
+somewhat more cumbersome. The isodose shift method is not recommended
+since the shift factors are only approximate and do not consider the
+effects of field size, depth nor distance.
+4.2.2 Lack of lateral scatter
+Few authors have considered the effect in the dose distribution
+of field sizes that are larger than the patient. The data of Section
+3.2 (specifically Table 2) gives an indication of the effects of
+finite phantoms.
+Faw and Glenn2 1, f o r T B I d o s i m e t r y , p e r f o r m e d
+measurements in phantoms with cross-sectional areas ranging between 10
+x 10 and 122 x 122 cm 2 and field sizes between 10 x 10 and 135 x 135
+c m2. Their TAR data for limited phantom sizes and cobalt-60 radiation
+are compared in Table 4 to the data o f V a n D y k e t a l . 9 5 u s i n g f i e l d
+sizes equivalent to these phantom sizes. The mean difference between
+the two sets of data is about 1% with the maximum difference being 4%.
+T h e c o n c l u s i o n b y F a w a n d G l e n n 21 was that “the relative dose, i.e.
+percent depth dose or tissue-air ratio, a t a s p e c i f i c p o i n t , i s a
+function of the field size or the phantom size whichever is smaller”.
+This conclusion is confirmed by the data of Table 4.
+Table 4
+Comparison of cobalt-60 tissue-air ratios for limited phantoms
+irradiated in a large field a and for limited field sizes in
+a large phantomb. (The latter are shown in brackets).
+Phantom (field) size
+Depth
+
+10 x 10
+
+20 x 20
+
+30 x 30
+
+50 x 50
+
+122 x 122
+
+0.6
+
+1.05
+(1.03)
+
+1.07
+(1.05)
+
+1.07
+(1.07)
+
+1.07
+(1.08)
+
+1.07
+(1.09)*
+
+5.0
+
+0.91
+(0.90)
+
+0.97
+(0.95)
+
+1.00
+(0.98)
+
+1.02
+(1.00)
+
+1.02
+(1.02)*
+
+10.0
+
+0.71
+(0.71)
+
+0.80
+(0.80)
+
+0.85
+(0.83)
+
+0.89
+(0.87)
+
+0.89
+(0.89)*
+
+15.0
+
+0.54
+(0.55)
+
+0.64
+(0.64)
+
+0.69
+(0.69)
+
+0.76
+(0.73)
+
+0.77
+(0.75)*
+
+Faw and Glen
+Van Dyk et al
+extrapolated
+
+(Ref. 21)
+(Ref. 95)
+
+a.
+b.
+*
+
+Another approach to this problem is to use the conventional
+methodology of irregular field calculations. The outer dimensions of
+the patient, from a beams eye point of view, can be used to represent
+the outside borders of the radiation beam. These dimensions can then
+
+24
+
+be entered into an irregular field calculation program to provide
+percentage depth dose and absolute dose rates at a series of
+specified points.
+If computerized calculations are
+performed,
+extreme care should be taken to verify that the basic radiation data
+(such as TAR’s, TPR’ percentage depth doses) stored in the computer
+to perform these calculations are accurate for large field sizes.
+Linear extrapolation from small t o l a r g e f i e l d s c a n r e s u l t i n l a r g e
+errors in dose determination. Furthermore, the method of calculating
+the dose near the beam edge should be scrutinized to ensure that the
+points of dose calculation are not affected by penumbral effects in
+the calculation program.
+This methodology of i r r e g u l a r f i e l d d o s e c a l c u l a t i o n s h a s b e e n
+simplified for manual calculation purposes by Quast 7 5. He divides the
+change of scatter dose as a function of field size into steps of
+equal r e l a t i v e d o s e increase. E a c h r e s u l t i n g f i e l d s i z e s t e p i s
+called a “beam zone” and corresponds to an increase in phantom size
+delivering the same scatter dose increase to a central p o i n t . B y
+placing a transparency of these beam zones over a patient topogram,
+all zones covering the patient can be counted and the effective
+scatter can be determined.
+4.2.3
+
+Lack of backscatter
+The dose at a point in a patient is determined by the number of
+primary and scattered photons interacting in a small volume ( i . e .
+w i t h i n t h e e l e c t r o n r a n g e ) about the measurement point.
+When
+measurements
+are made for basic central ray data, the phantom s i z e s
+are such that the maximum multiple photon s c a t t e r i s a c h i e v e d . B y
+reducing the thickness of the phantom, the multiple photon scatter
+component will be reduced. The degree to which the dose is reduced
+is dependent on the distance the measurement point is from the e x i t
+s u r f a c e , t h e f i e l d s i z e a n d t h e e n e r g y o f radiation. Measurements
+for cobalt-60 indicate that, for
+a 30 x 30 cm 2 f i e l d ,
+full
+b a c k s c a t t e r i s a c h i e v e d w i t h 3 0 c m o f tissue equivalent material
+b e h i n d t h e p o i n t o f m e a s u r e m e n t 2 7 , 7 2 , 9 5. For large cobalt-60 fields,
+and at a distance of 0.5 cm from the exit surface, the dose could be
+reduced by
+as much as 9% due to this lack of total multiple photon
+s c a t t e r 7 2 , 8 5 (see Table 3).
+At the exit surface, there is the additional concern of lack of
+electronic equilibrium. The dose at 0.002 cm from the exit surface
+has been shown to be 82-84% of the full scatter dose for a 30 x 30
+c m2 cobalt-60 field and the corresponding value for 25 MV x rays is
+For cobalt-60 the dose to the skin increases rapidly as
+9 0 %2 7.
+backscatter material up to a thickness of 0.5 cm is added. This rise
+i s mainly due to additional backscattered electrons.
+Further
+a d d i t i o n o f b a c k s c a t t e r material increases t h e c o n t r i b u t i o n o f
+scattered photons until full multiple scattering is achieved.
+The
+reduction of backscattered
+photons at 0.5 cm from the exit surface
+f o r c o b a l t - 6 0 r a d i a t i o n 7 2 , 9 5 and 6 and 10 MV x rays
+corresponds
+approximately to the peak s c a t t e r f a c t o r .
+For AP treatments, the
+couch will result in some backscatter such that electron equilibrium
+will be retained. W h e t h e r f u l l p h o t o n s c a t t e r w i l l b e r e t a i n e d i s
+dependent on the couch material and its thickness.
+This possible lack of full scatter is especially important f o r
+in vivo dosimetry (see Section
+4.7).
+If measurements are made at
+
+25
+
+entrance and exit surfaces to establish midplane doses using full
+phantom data, corrections will have to be made in the exit surface
+measurements for the lack of full scatter at this position.
+4.3 Methods of compensating for contour variation4.3.1 Tissue-equivalent bolus
+The simplest method to compensate for tissue curvature is to use
+tissue-equivalent bolus material placed directly on the skin. Rice
+flour and sodium bicarbonate is often used in small bags and placed on
+the patient as needed. However, the density of this material is not
+quite tissue-equivalent (lower by about 13% based on CT scan data) and
+control of thickness is very difficult.
+Alternatively, a
+the
+provides
+excellent
+semi-flexible material such as
+Superflab*
+tissue-equivalence and, since it is produced in predetermined slab
+thicknesses allows for good control over thickness.
+The use of bolus is easy and useful only if the loss of skin
+Otherwise missing tissue compensators
+sparing is not of concern.
+should be used.
+4.3.2 Missing tissue compensators
+The
+use of missing tissue compensators for large field
+radiotherapy is more difficult compared with conventional therapy
+fields for two reasons. First, the long treatment distance needed to
+obtain large field sizes require the mounting of the absorbing
+material on the face of the treatment head at a considerable distance
+from the patient, or placing it at some intermediate position distant
+from the treatment unit. Neither approach is suited to easy indexing
+of the compensator relative to reference marks on the patient’s skin.
+Second, since immobilization of TBI or HBI patients is not a common
+For these reasons
+practice, p a t i e n t m o v e m e n t c a n b e a p r o b l e m .
+compensation for contour variations can be handled. by applying a
+simple one-dimensional compensator constructed of lead or copper
+s t r i p s2 8 , 5 0 .
+Figure 7 illustrates how this compensation technique
+might be used. Two simple one dimensional compensators of two steps
+each are shown.
+One is positioned for the head and neck, and the
+other for the legs and feet.
+The advantage of using this type of
+compensator is that the positioning is critical for only one border if
+For
+the compensator
+rigidly
+controlled.
+patient posture is
+arrangement shown in the Figure, only the edge position where the
+shoulder projects out from the neck is important.
+Since the two
+pieces of head compensator are rigidly attached, aligning the one edge
+automatically brings the other to the correct location. Careful
+positioning of the leg compensator is less of a problem as the
+thickness changes much more gradually in going from the hips to the
+feet.
+Figure 6b demonstrates the importance of accurately placing the
+compensator edge at the patient’s shoulder.
+If the absorber is
+shifted superiorly, an overdose to the neck of approximately 40% can
+occur. On the other hand, if the compensator is moved toward the
+f e e t , it will shield the shoulders which are the widest part of the
+body and already produce the lowest dose. The contour change from the
+neck to the shoulder is very rapid and positioning must be maintained
+* Mick Radio-Nuclear Instruments, Inc., Bronx, N.Y.
+
+26
+
+within a tolerance of l-2 cm.
+matter.
+
+In practice,
+
+this
+
+is not a simple
+
+Various
+investigators28150 have described techniques for
+calculating the thickness for missing tissue compensators for TBI. One
+simple method involves a comparison of the tissue-phantom ratio (TPR)
+for different parts of the body. For example, the TPR for the head is
+compared to the TPR for the trunk to find the amount of attenuation
+needed to bring the midline dose in the head into agreement with the
+midline dose in the abdomen.
+The decrease in the photon
+intensity necessary to obtain
+homogeneity for the two sections is approximated by using the ratio of
+tissue-phantom ratios (TPR) as follows:
+(3)
+
+w h e r e Io and I are the photon intensities before and after adding the
+compensator, TPRT( AT, dT) and TPRH( AH, dH) are the tissue-phantom ratios
+for the trunk and head having corresponding areas AT and AR and
+
+Figure 7: Simple one-dimensional compensator used for lateral
+field irradiation technique.
+The compensator corrects for
+tissue variations along one line only. The numbers shown in
+this figure are direct dose measurements.
+The numbers in
+parenthesis are calculated from the entrance and exit surface
+measurements.
+
+27
+
+The correction factor,
+m i d l i n e d e p t h s d T a n d dH r e s p e c t i v e l y .
+C p r o f i l e , accounts for the variation in the beam intensity as function
+o f the distance from the central ray. (The central ray is positioned
+The compensator thickness is
+at the level of the- umbilicus for TBI).
+calculated using:
+(4)
+where µB is the broad beam linear attenuation coefficient s p e c i f i c t o
+this geometry (see section 3.9) and t is the thickness of the absorber
+n e e d e d 1 0 2.
+4.4 Inhomogeneities
+Basic dosimetric measurements are generally performed in water
+phantoms. A s a f i r s t a p p r o x i m a t i o n , patient calculations are often
+For
+performed assuming that patient tissues are water equivalent.
+muscle and fatty tissues this is a g o o d approximation; however, for
+bone and lung tissue this could result in very large dose errors.
+Practical treatment planning dose calculation programs allow for
+c o r r e c t i o n s t o a d o s e d i s t r i b u t i o n b y a p p l y i n g a n inhomogeneity
+correction factor to the
+water-like
+calculations.
+I C R U 4 0 has
+d e s c r i b e d a n u m b e r o f s u c h inhomogeneity correction procedures.
+However, m o s t o f these procedures were developed and tested for
+conventional field sizes. Data by Van Dyk et al. 96 indicate that many
+such procedures produce inaccurate results (by as much as ±12% in the
+middle of lung) when the field sizes are extended beyond 30 x 30 cm 2
+These data are summarized in Table 5. A more recent review of tissue
+inhomogeneity corrections f o r p h o t o n b e a m s h a s b e e n p r o d u c e d b y
+Cunningham13. The more sophisticated calculation algorithms such as
+the “equivalent TAR method” provide good accuracy to better than 3% if
+CT scan information is used as basic patient data even for very large
+f i e l d s i z e s9 6.
+Several factors
+considered in
+field
+should be
+large
+inhomogeneity corrections. First, i f t h e c o r r e c t i o n a l g o r i t h m i s n o t
+field size dependent, then it is bound to be in error for large field
+sizes.
+Second, any tissue-air ratio method taken to the power of the
+density tends to underestimate the correction factor for large field
+s i z e s9 6 , 1 0 4 . A detailed review by Wong 1 0 4 of the modified Batho power
+law method gives a descriptive analysis of the reasons why it breaks
+down.
+M o r e r e c e n t l y , E l - K h a t i b e t a l . 18 h a v e s h o w n t h a t T P R ’ s o r
+TMR’s taken to a power of this density provide much better results
+than using TAR’s.
+Third, methods such as the ratio of TAR’s or
+effective SSD provide reasonably good results assuming that TAR or PDD
+data are available for the large fields in use. Finally, the more
+sophisticated equivalent TAR method allows for effects of scatter
+changes due to density variations even in the third dimension.
+It
+should be noted that none of the above correction methods takes into
+account the problem of electron disequilibrium. Indeed, the problem
+of electron disequilibrium is not considered to be an important effect
+for lungs in large fields. However, if lung shields are used in high
+energy photon beams (>6 MV)
+electrons generated in the
+then
+non-shielded regions can travel long distances in the low density lung
+tissues. This has the net effect of enlarging the effective penumbra
+
+28
+
+Table 5
+Dose correction factors for lung in the anatomical phantom
+using different calculation methods with 50 x 60 cm 2 cobalt-60
+radiation fields.
+(Average lung density = 0.37, overlying
+tissue = 3.5 cm). Data from Reference 96.
+
+at the edge of the shielded region resulting in a higher lung dose and
+a lower target dose.
+4.4.1.
+
+Methods of lung dose determination
+The
+most important parameter in providing
+inhomogeneity
+corrections is the geometric outline of the inhomogeneities
+actual
+density of the inhomogeneity is also required but its
+t o l e r a n c e s a r e n o t a s s t r i n g e n t f o r t h e s a m e e r r o r l e v e l s 1 0 1.
+Marinello et al.62 s y s t e m a t i c a l l y e v a l u a t e d t h e f a c t o r s i n f l u e n c i n g
+lung dose calculations specifically for TBI with cobalt-60 gamma rays.
+They concluded the following. (1) The lung inhomogeneity correction
+factor is independent of the height of the patient. Once a certain
+amount (6 ax) of scattering material is added superior and inferior to
+a simulated lung phantom, no further variation in correction factor is
+observed.
+(2) The correction factor in the middle of lung is
+independent of lung height in the superior-inferior direction. Only
+for very young children and for lung heights of about 10 cm did the
+correction factors increase by approximately 2%. (3) Similar to the
+96
+conclusion by Van Dyk et al. , a simple ratio of TAR method should
+p r o v i d e inhomogeneity c o r r e c t i o n s t o t h e m i d d l e o f l u n g t h a t a r e
+accurate to 3%.
+The following five methods of determining lung doses are listed
+in order of decreasing complexity as well as decreasing accuracy.
+a) CT data and pixel based dose calculations. By performing CT scans
+of patients who are to be irradiated, precise patient specific
+anatomic and density information will be obtained. I f t h e s e p i x e l
+based data can be entered into the treatment planning computer and
+used directly for dose calculation purposes an accuracy of ±3%
+can be achieved9 6.
+
+29
+
+those
+For
+b) CT data for contours and average density data.
+institutions which do not have a treatment planning system capable
+of using the CT pixel data directly, it is still possible to use CT
+scans to determine the outlines of the external-contour of the
+patient as well as major internal structures such as lungs. In
+this case an average uniform density will have to be assumed for
+the lungs. The most accurate method of density determination will
+be to use the “track cursor” in the CT scanner console or an
+automatic contouring procedure, t o o u t l i n e t h e l u n g s o t h a t a n
+average lung density specific to that particular lung will be
+o b t a i n e d 1 0 1. Lacking this possibility, an average density related
+98
+to the patient’s age can be used. It has been observed that the
+average density of lung decreases linearly with age, the average
+density at 5 and 80 years being 0.35 and 0.19 g/cm 3, respectively.
+Using this average age related density as well as the CT derived
+contour data as input, dose calculations will be accurate to ±5%
+for 67% of the patients with normal lungs although 33% of patients
+with normal lungs as well as most patients with diseased lungs
+could have calculated lung doses in error by more than 5% 1 0 1.
+c) Transmission measurements. The use of a small cobalt-60 beam or a
+higher energy x ray beam with a detector behind the patient will
+allow the determination of an equivalent unit density thickness of
+22
+the patient at specific points through-out the lung region .
+This equivalent thickness as well as the actual physical thickness
+will allow a dose correction factor to be determined specific to
+t h a t p a t i e n t9 6. The only practical problem is the determination of
+a suitable location for the transmission measurement.
+d) Radiographs. An even simpler but less accurate method is to take
+lateral radiographs of the thorax for AP/PA treatments or AP
+radiographs for lateral treatments to determine the total lung
+thickness. A n a g e r e l a t e d a v e r a g e d e n s i t y 98 can then be used to
+determine an effective calculation depth.
+e) Nomograph relating dose correction factor and patient thickness.
+In a paper evaluating the response of lung to radiation absorbed
+d o s e 9 7, twenty three patients had CT scans performed for dose
+calculation purposes. W h e n t h e d o s e c o r r e c t i o n f a c t o r s f o r t h e
+middle of lung for cobalt-60 gamma rays were plotted as a function
+of patient thickness, 80% of the data points fell within 1.5% of a
+s t r a i g h t l i n e . The maximum deviation for normal lungs was 3.5%.
+Diseased lungs showed. much larger deviations. Table 6 summarizes
+these results for cobalt-60 radiation.
+Additional higher energy
+data were derived by first converting these dose correction factors
+to an equivalent depth and then determining the dose correction
+factor for higher energy x rays. Lacking any detailed patient
+anatomic data, other than the patient thickness, a dose correction
+factor can be determined by using the data of Table 6.
+Although
+this procedure is better than not making any correction, large
+errors could occur for diseased lungs.
+
+30
+
+Table 6
+Dose correction factors adjusting for low-density lung tissues
+versus patient thickness.
+Patient thickness
+(cm)
+12
+16
+20
+24
+28
+
+Lung dose correction factor
+cobalt-60
+6 MV
+25 MV
+1.02
+1.04
+1.04
+1.06
+1.09
+1.09
+1.09
+1.14
+1.13
+1.12
+1.19
+1.17
+1.14
+1.24
+1.21
+
+4.4.2 Methods of bone dose determination
+The factors affecting the dose to bone have not been considered
+i n a s much detail as the dose to lung since it has been assumed
+that the overall changes in the dose distributions as a result of bone
+inhomogeneities are not nearly as great as the changes due to large
+the majority of TBI
+However,
+volumes of low density lung tissues.
+procedures are performed for hematological diseases and, therefore,
+t h e d o s e t o b l o o d f o r m i n g o r g a n s , s u c h a s b o n e , is particularly
+important.
+To consider the dose to bone, i t s h o u l d b e n o t e d t h a t l o c a l
+e n e r g y a b s o r p t i o n o f r a d i a t i o n i s a t w o - s t a g e p r o c e s s 4 6. F i r s t ,
+e l e c t r o n s a r e s e t i n m o t i o n b y t h e i n t e r a c t i o n o f p h o t o n s . Second,
+electrons travel through the medium and deposit their energy by
+ionization along their paths.
+(The first is kerma, the second is
+absorbed dose). Assuming that electronic equilibrium exists, and that
+the absorbed dose to water is known, the latter can be converted to a
+dose to bone by
+(5)
+w h e r e D b o n e a n d D water a r e t h e d o s e t o b o n e a n d w a t e r , r e s p e c t i v e l y ,
+and
+
+is the ratio formed by averaging the mass energy
+
+absorption coefficients for bone and water over the photon spectrum at
+that point.
+Examples of
+
+are
+
+shown in Table 7 for compact
+
+bone
+
+( ρ = 1 . 6 5 g / c m3 ) f o r p r i m a r y b e a m s p e c t r a a s w e l l a s s p e c t r a
+generated by Monte Carlo calculations at a depth of 20 cm and a field
+radius of 50 cm. I t i s c l e a r f r o m t h i s t a b l e t h a t , p e r g r a m , t h e
+dose to bone is very much dependent on the spectrum of photons at the
+location of bone. F o r c o b a l t - 6 0 r a d i a t i o n t h e c a l c u l a t e d d o s e t o
+bone can differ by 19% depending on whether an in air primary
+cobalt-60 spectrum is used or whether a phantom spectrum at a depth
+Of 20 cm and field radius of 50 cm is used. In reality, the dose to
+bone will likely be anywhere between these two extremes. For high
+energy x rays the differences in calculated dose to bone for “in air”
+
+31
+
+The dose delivered to bone
+and “in phantom” spectra decreases.
+approaches the dose delivered to muscle tissue as the energy is
+increased to 12 MV.
+The data for 26 MV indicate that there is a
+strong dependence on photon spectrum even for the same nominal
+energy. Clearly, an accurate statement of dose to bone will require
+a knowledge of the spectrum at the location of bone. T h e d a t a b y
+Cunningham et al.1 0 can be used to make a first approximation.
+Table 7
+Ratios of mass energy absorption coefficients for various
+are
+photon
+spectra.
+These ratios for tissue to water
+essentially the same for the primary beam spectrum and the
+Data are
+spectrum at depth of 20 cm and field radius of 50 cm.
+from Reference 10.
+
+Photon
+spectrum
+
+Primary
+spectrum
+"in air"
+
+Spectrum “in
+phantom” (depth
+of 20 cm, radius
+of 50 cm)
+
+% difference
+between primary
+and phantom
+spectrum for
+one.
+
+cobalt-60
+
+.991
+
+0.954
+
+1.134
+
+19
+
+6 MV
+
+.991
+
+0.959
+
+1.089
+
+14
+
+12 M V
+
+.990
+
+0.979
+
+1.025
+
+5
+
+18 M V
+
+.989
+
+0.993
+
+1.029
+
+4
+
+26 M V
+(thin target)
+
+.990
+
+1.005
+
+1.072
+
+7
+
+26 MV
+(thick target)
+
+.990
+
+0.991
+
+1.046
+
+6
+
+45 M V
+
+.989
+
+1.027
+
+1.048
+
+2
+
+For lower energy photons (orthovoltage range) t h e e l e c t r o n
+tracks are so short that the absorbed dose takes place where the
+photons i n t e r a c t . At higher energies where the electron tracks are
+longer, the energy is carried away from the site of interaction and
+the absorbed dose may be deposited at a different location. Because
+of the size of bone and the differences in atomic numbers of bone,
+bone marrow and soft tissues, a lack of electronic equilibrium will
+exist in the interface region.
+When the electron tracks are long
+compared to the thickness of bone, the dose to bone is calculated by
+
+32
+
+(6)
+
+where
+
+is the ratio of averaged stopping powers
+
+(averaged over
+
+both the spectrum of photon energies and the resulting spectrum of
+electron energies).
+Johns and Cunningham4 6 have calculated the dose to bone for
+cobalt-60 radiation as s h o w n i n F i g u r e 8 u s i n g t h e p r i m a r y b e a m
+In this case the dose to bone is about 5% less than the
+spectrum.
+dose to muscle tissue. For a large field and a large depth the dose
+
+Figure 8: Relative kerma or dose versus depth for a composite
+This calculation was performed for a
+muscle-bone phantom.
+For a cobalt-60 spectrum for
+primary cobalt-60 beam spectrum.
+a 50 cm field radius at a depth of 20 cm the dose to bone would
+be 19% higher than shown while the dose to tissue would remain
+the same. This Figure was adapted from Reference 45, Page 260.
+
+33
+
+to bone could be 12% higher than muscle tissue as shown by the data of
+Table 7.
+The problems of: (1) the difficulty in determination of the
+photon spectrum at the position of bony structures within a patient,
+(2) the complicated anatomical relationship between bone, bone marrow,
+blood forming cells and soft tissues, and (3) the difficulty in
+calculating the dose i n i n t e r f a c e r e g i o n s , l e a v e a g r e a t d e a l o f
+uncertainty in the determination of dose to bone and the corresponding
+research into these
+blood forming cells.
+Clearly,
+additional
+questions is required.
+4.4.3 Methods of compensating for inhomogeneities
+When a prescribed tumor dose is well above the lung tolerance,
+the dose to lung will have to be reduced to minimize the probability
+of lung complications. A variety of methods can be used to reduce the
+dose to lung.
+The following summarizes several alternatives in order
+of decreasing complexity and decreasing accuracy.
+a)
+
+Lung compensators based on dose calculations using CT scan data.
+The use of CT data for dose calculations can be applied to provide
+the
+corrections for tissue inhomogeneities.
+With
+accurate
+availability of accurate dose calculations, t h e p r o d u c t i o n o f
+compensators to correct for dose variation as a result of both
+surface contour effects and tissue inhomogeneities is a relatively
+although time
+consuming next step. By
+performing
+easy
+calculations on a number of different planes using appropriate CT
+scans, a three dimensional compensator can be produced such that a
+uniform dose is applied to lung and other tissues. This procedure
+could be extended one step further to produce a uniform but lower
+dose to lungs compared to the dose to all other tissues.
+
+b)
+
+Once the maximum dose to
+Constant thickness lung attenuators.
+lung has been determined, constant thickness attenuating material
+can be placed in the beam to reduce the maximum dose to lung to
+The shape of these attenuators can be
+the desired level.
+determined from simulator or diagnostic x ray films or from
+therapy beam verification (port) films. T h e a t t e n u a t o r s c a n b e
+made to cover the total lung r e g i o n o n l y o r , i f t h e m e d i a s t i n a l
+dose is not a serious concern, they could be made rectangular in
+shape to cover most of the thorax.
+Of course, a constant
+thickness attenuator allows an overall reduction in lung dose but
+does little to decrease the dose variation throughout the lung
+volume.
+In some institutions, t h e s e a t t e n u a t o r s a r e p l a c e d
+d i r e c t l y o n t h e s k i n s u r f a c e 7 1. I t i s , t h e n , e s s e n t i a l t h a t t h e
+surface dose be measured to avoid increased skin dose due to
+absorber-tissue
+interface effects.
+For some energies these
+effects can be minimized by placing a couple of mm of tissue
+equivalent plastic between the absorber and the skin.
+
+c)
+
+Lung blocks for part of the treatment. The simplest procedure to
+reduce the dose to the lung is to use standard shielding blocks
+for a fraction of the total treatment time. Hence, if the lung
+dose is to be reduced by 20%, then a shielding block could be
+placed above the lung for the appropriate length of time. The
+transmission of radiation through the blocks and the scatter from
+
+34
+
+the high dose regions should not be neglected in determining the
+fraction of time the block should be in place. The positioning of
+such blocks should be determined radiographically.
+Again this
+procedure -allows for an overall reduction in lung dose but does
+nothing to reduce the variation throughout the lung volume.
+4.5 Dose distributions
+various problems in
+Previous s e c t i o n s h a v e
+discussed the
+delivering a uniform dose to the patient. T h e e f f e c t s o f m a n y o f
+these parameters can be evaluated by looking at a series of typical
+dose distributions for a number of different treatment conditions
+calculated in the thorax region of an “average” male patient. The
+homogeneous water-like
+distributions
+were calculated using the
+scatter-air ratio methodology developed by Cunningham 12. Inhomogeneity
+corrections were made using the equivalent TAR method as derived by
+Cunningham 83.
+This
+Sontag and
+method
+corrects
+for tissue
+inhomogeneities as w e l l a s f o r t h e l a c k o f b a c k s c a t t e r a n d s i d e
+scatter for non-infinite phantoms. The accuracy of the inhomogeneity
+c o r r e c t i o n m e t h o d s h a s b e e n t e s t e d s p e c i f i c a l l y f o r large field
+treatments and found to be within ±3% for cobalt-60 to 25 MV x rays 9 6.
+CT scans were used to derive the external patient contour as well
+as the internal densities.
+Figure 9 i l l u s t r a t e s t h e
+resultant
+distributions for cobalt-60 radiation.
+Parts (a), (b) and (c) show
+distributions for AP treatments with an SSD of 150 cm.
+Part (a)
+includes an external contour correction but assumes the patient is
+water equivalent. This would be representative of the abdominal area
+where inhomogeneities have relatively
+little effect.
+Part (b)
+demonstrates a distribution for the situation with full bolus (or full
+compensation) such that
+the
+essentially
+patient
+simulates a
+rectangular volume of tissue. In part (c), inhomogeneity corrections
+are included for the full bolus situation.
+In each figure, an
+approximate percent v a r i a t i o n t h r o u g h o u t t h i s d o s e d i s t r i b u t i o n i s
+indicated. It is clear that the use of full bolus ( o r c o m p e n s a t i o n )
+reduces the dose variation in a homogeneous calculation but that lung
+inhomogeneities produce a
+large
+increase
+in dose.
+The same
+distributions were also calculated for lateral opposed fields with an
+extended SSD of 300 cm. In each case, the dose variation increases by
+about a factor of 2. Figure 10 shows an identical set of calculations
+for 25 MV x rays. In most instances, the dose variation is reduced by
+a factor of 2 compared to the cobalt-60 calculations. These data are
+consistent with the central axis data shown in Figure 2. Clearly, the
+provide
+construction
+of individualized lung compensators would
+improved dose uniformity throughout the lung volume.
+4.6 Anthropomorphic phantom measurements
+Phantom measurements are helpful for understanding the complex
+When
+d o s e d i s t r i b u t i o n s characteristic of TBI or HBI techniques.
+tissue inhomogeneities occupy a portion of a large treatment field,
+dose correction routines may be inaccurate. The use of a “standard
+man” or “standard woman” anthropomorphic phantom provides a check for
+the
+calculated
+Measurements
+with
+values.
+closely
+spaced
+thermoluminescent dosimeters (TLD’s) are most useful for half-body or
+total body treatment using AP/PA fields with the patient supine and
+prone on (or near) the treatment room floor. The patient’s anatomy
+does not distort for this positioning, and the phantom construction is
+
+35
+
+Figure 9:
+Dose distributions for large parallel opposed fields of
+cobalt-60 radiation.
+
+36
+
+Figure 10: Dose distributions for large parallel opposed fields of 25
+MV x-radiation.
+
+37
+
+representative. For patients treated on their side with horizontally
+d i r e c t e d AP/PA fields, radiographs and CT scans show a significant
+change of the lung geometry. Also, changes of the surface contour can
+be observed for heavy patients. In order to simulate patients
+positioned supine and treated with bilateral fields, some absorbing
+material must be placed alongside the phantom to account f o r a r m
+absorption. It is difficult to duplicate the shape of the upper arms
+i n t h e r e g i o n o f t h e s h o u l d e r i n t h i s w a y . T h e a t t e n u a t i o n o f the
+beam by the arms is important since the arms can be used to shield the
+lungs although the reproduction of arm positioning for both CT
+If lung attenuators are to
+scanning and treatment is very difficult.
+be used for lateral fields it may be better to position one arm over
+the head such that a more reproducible lung geometry is maintained.
+A number of cooperative group studies have adopted protocols for
+treating children with TBI. Unfortunately, this pediatric population
+varies considerably in size and weight. Therefore, it is not feasible
+to construct a “standard” child phantom.
+However, i t i s p o s s i b l e t o
+use a modular water phantom which approximates the s h a p e o f t h e
+2
+29
+b o d y . This technique uses a number of small (15 cm x 15 cm ) water
+The depth of the water in each
+containers placed side-by-side.
+c o n t a i n e r i s v a r i e d t o c o r r e s p o n d t o c h a n g e s in patient thickness.
+This type of phantom has been used to check the amount of absorbing
+material needed to compensate f o r v a r i a t i o n s o f p a t i e n t c o n t o u r a n d
+for verifying the calculation of prescribed dose.
+4.1
+
+In vivo measurements
+Limitations of the available input data and inherent problems
+with the calculation schemes, make accurate determination of TBI dose
+distributions very difficult using most computer-generated treatment
+planning systems.
+Furthermore, variations in patient position can
+alter the distributions dramatically. For this reason it is desirable
+to have an in vivo measurement technique available.
+One convenient
+finding midline doses employs entrance and
+exit
+method
+for
+thermoluminescent dosimeters (TLD’s).
+However, this approach must be
+used with care in order to obtain acceptable results. Measurements on
+a single patient could yield less accurate midline doses than those
+determined by calculation. Systematic errors can result if the effects
+of lack of scatter o n t h e e x i t s u r f a c e a r e n o t c o n s i d e r e d ( s e e
+Sections 3.2 and 4.2.3). Averaging the appropriate data derived from
+a large number of patients can be useful.
+Entrance and exit
+dosimeters, for example, can be used to monitor the midline dose to
+the lung. By averaging over a number of patients and separating into
+broad ranges of patient size, correction factors can be generated f o r
+predicting the lung dose for any situation. However, this methodology
+should be carefully verified with phantom experiments.
+Various steps can be taken to minimize the errors associated with
+this approach. For instance, for the pediatric population of patients
+(thicknesses less than 20 cm), a simple average of the entrance and
+e x i t v a l u e s will give a dose which is 1 to 2% lower than t h e t r u e
+midline value. For thicker patients the shape of the depth dose curve
+must be taken into account. Usually, the dosimeters are surrounded
+with a build-up thickness of material to provide full electronic
+equilibrium.
+The dosimeters can be placed at the center of small
+plastic cylinders which have been cut along the major axis so that one
+
+38
+
+surface is flat. These cylinders can be taped to the patient with the
+flat surface toward the skin.
+For higher energy beams (6 MV or
+greater) it is possible to provide only partial build-up thickness in
+order to reduce the size of the equilibrium cap. In this case, the
+reading must be corrected before it is used to predict the midline
+Another problem with the use of entrance and exit
+dose value.
+dosimeters is the accurate placement of the exit dose measuring
+A g a i n u s i n g m e a s u r e m e n t s o f l u n g d o s e a s a n example,
+device.
+e r r o n e o u s l y l o w r e a d i n g s w i l l r e s u l t i f t h e e x i t d o s i m e t e r i s not
+properly placed and lies in the “shadow” of the diaphragmatic dome or
+mediastinal structures. I t i s f o r t h i s r e a s o n t h a t p o r t f i l m i n g i s
+suggested as a means of checking the dosimeter position. Entrance and
+exit measurements have also been used to predict the dose for areas
+where the diameters of body parts vary significantly. For instance,
+this technique has been used to monitor the dose for the areas of the
+Figure 7 shows entrance and exit
+head, neck, shoulders and legs.
+measurements obtained
+for the purpose of checking
+compensator
+thicknesses.
+A simple average has been used to predict the midline
+Notice that some midline values have been measured directly;
+value.
+e.g., the dose in the mouth, i n t h e r e c t u m , between the legs and
+between the feet. For lateral treatments, dosimeters placed near the
+axillae can offer useful estimates of the lateral dose uniformity as
+well as an indication of lung dose.
+Q u a s t74 i n r e v i e w i n g t h e d i s c u s s i o n o n in vivo d o s i m e t r y a t t h e
+meeting of Leiden in 1982, indicated some potential problems with i n
+T a b l e 8 i s s i m i l a r t o t h a t o f Q u a s t7 4
+vivo r a d i a t i o n d e t e c t o r s .
+although different in detail and summarizes some of these concerns.
+Ionization chambers generally have unwieldy cables and a high voltage.
+Although the energy response can be a concern, newer chamber models
+to low energies.
+exhibit a uniform response down
+For pulsed
+radiations from high energy accelerators, corrections may have to be
+made for ion recombination. These corrections will not necessarily be
+the same as those used for conventional treatment geometries.
+Body
+temperatures can effect the ionization chamber readings although the
+effect is difficult to assess.
+For open chambers,
+instantaneous
+temperature correction factors change by 5% as the ionization chamber
+temperature increases from 22°C to 37°C.
+Although semiconductor
+diodes have smaller cables, t h e y t e n d t o b e e n e r g y d e p e n d e n t .
+Furthermore,
+the response of diodes is dependent on the total dose
+Thermoluminescent dosimeters (TLD) have the
+received by the diode.
+advantage of being very small and, therefore, can be placed inside of
+body cavities. Although they might demonstrate a supralinear effect
+as a function of dose, proper care in calibration of TLD response with
+However, the energy response of
+dose should account for this effect.
+TLD can be a greater concern. A simple calculation for lithium
+flouride (LiF) using equation (2) of Section 3.3 indicates a 4%
+difference in response comparing the primary cobalt-60 spectrum to the
+large field spectrum of Figure 4.
+The LiF energy response data were
+t a k e n f r o m P o r t a 1 7 3. Most other thermoluminescent materials except
+for lithium borate, demonstrate a much larger energy response and
+therefore will be much more sensitive to variations in the photon
+Although TLD
+has
+the
+advantage of
+spectra.
+small spatial
+requirements, its major disadvantage is the time required for readout
+and dose determination.
+
+39
+
+Table 8
+Problems with detectors for in vivo dosimetry
+
+no concern
+0
+mild concern
+X
+XX moderate concern
+XXX serious concern
+
+40
+
+5. Special Considerations
+5.1 Junctions for HBI techniques
+The problem of matching adjacent fields with a resultant uniform
+dose distribution is even more acute for large fields than it is for
+conventional field sizes due to the large divergence of the beam edge
+and the large patient volumes in the junction region. One means of
+minimizing the problem has been indicated by Leung et al. 5 6. In their
+large field irradiator, the collimators along the longitudinal axis of
+move independently.
+Closing one
+the patient were designed to
+collimator to the central ray allows for a non-divergent beam edge.
+This can then be located at the junction for both the upper and lower
+halves resulting in uniform distribution. However, most institutions
+do not have such a specially-designed dedicated facility. Therefore,
+methods of minimizing dose inhomogeneity in the junction region must
+be found.
+There are several considerations in dealing with junctions for
+half body irradiation.
+The first is a radiobiological question.
+Usually an upper and lower half body are given as single fractions
+with a time interval of about 6 weeks. What is the biological effect
+Although a clear
+of summing two doses with a six week interval?
+answer to this question is not available, it can be stated that a
+s p e c i f i e d d o s e g i v e n i n t w o f r a c t i o n s o v e r six weeks will have a
+smaller biological effect than if the same dose were given in a single
+fraction. Hence, a higher dose might be allowable in the junction
+region.
+The second question r e l a t e s t o t i s s u e s a t r i s k i n t h e
+junction region. Normally the junction is taken at the level of the
+umbilicus. The intestines and spinal cord appear to be the tissues at
+r i s k . For the doses usually given, there may be a short term acute
+response for intestines but there does not appear to be a long term
+permanent toxic response. With these considerations, it appears that
+a higher dose might be allowable in the junction region compared to
+the rest of the target volume.
+The standard method of matching two pairs of parallel opposed
+fields requires that a gap, S, be calculated at the skin surface
+between the adjacent fields to account for beam divergence:
+
+where S1 represents the distance between the beam edge at the surface
+to the beam edge at depth d for field 1.
+W 1 is the width of field 1 at the surface.
+S S D1 is the source-to-surface distance for field 1.
+S 2, W2 a n d S S D2 are the analogous quantities for field 2.
+A sample distribution using a gap to match beam edges at midplane
+is shown in Figure 11(a) for cobalt-60 radiation at an SSD of 150 cm,
+p a t i e n t s e p a r a t i o n o f 2 2 c m a n d f i e l d s i z e s o f 6 0 x 5 0 c m 2 . With a
+
+41
+
+uniform dose at the midplane (-133%) an under dosage results towards
+the skin surfaces (-110%). However, without any gap, the distribution
+of Figure 11(b) indicates a maximum dose of more than -215% compared
+to a midplane dose of -140%. Which of
+these distributions is
+acceptable is dependent on the clinical situation.
+The following
+should be kept in mind when matching fields. First, beam penumbras
+should be reasonably large (2-5 cm) in the junction region. Small
+penumbras will cause high hot spots or low cold spots if there is any
+mismatch of the field edges.
+Second, the penumbras of the two
+matching fields should have similar shapes i.e.
+matching a small
+penumbra from one field with a large penumbra of the other will result
+in a dosage non-uniformity. Third, the light field and the 50% dose
+level should be coincident.
+Any deviation should be accounted for
+when matching fields.
+A practical consideration is the marking of the patient such that
+a good junction match can be produced with a 6 week time interval. One
+method is to tattoo a small dot on the patient on both lateral sides
+at the mid-plane level using the divergent light field as a reference.
+These tattoos will be readily recognizable for the second treatment
+and the edge of the light field can again be used but now on the
+o p p o s i t e h a l f o f t h e p a t i e n t . For obsese patients such lateral marks
+are not very reproducible and more stable reference points may have to
+be used.
+
+Figure 11: Dose distributions i n t h e j u n c t i o n r e g i o n f o r t w o
+half body fields for cobalt-60 radiation with an SSD of 150
+cm. Patient thickness is 22 cm and the field size is 60 x 50
+c m2. (a) Field edges are matched at the patient midplane.
+(b) Field edges are matched at the skin surface.
+
+42
+
+5.2 Shielding
+It is sometimes necessary to shield certain organs for patients
+receiving TBI, HBI or TLI. For example, patients who have been given
+large doses of Adriamycin prior t o t h e i r - s e l e c t i o n f o r b o n e m a r r o w
+transplantation and TBI, may require complete protection of the heart.
+Adriamycin sensitizes heart tissue and limits the total body dose
+unless regional shielding is used. A l s o , a t l e a s t o n e i n s t i t u t i o n8 0
+has used full shielding blocks for protection of the lungs. In both
+such cases electron boost fields may be needed to fill in the rib
+areas surrounding these organs s i n c e t h e b o n e - m a r r o w c o n t a i n i n g
+portions of the chest wall are part of the target volume.
+Shielding of organs is
+usually
+straightforward for those
+institutions using specially designed TBI machines since the overall
+geometry for these units is similar to that used for treating
+H o d g k i n ’ s p a t i e n t s w i t h a m a n t l e f i e l d i . e . AP/PA f i e l d s w i t h t h e
+patient supine and prone using a treatment distance of approximately 2
+For those institutions using a standard treatment unit with
+meters.
+the beam directed toward a distant wall (4 to 5 meters away) control
+of the block positioning is much more difficult. The problems are
+similar to those described in
+section
+4.3.2 for the use of
+compensators.
+
+Figure 12: X r a y p o r t f i l m f o r p a t i e n t t r e a t e d l a t e r a l l y .
+Notice the block shielding the heart.
+
+43
+
+The steps used to fashion and mount a heart block can be used as
+For protection of this
+an illustration of the shielding procedure.
+organ, e s p e c i a l l y f o r l a t e r a l f i e l d s w h e r e a r a d i o g r a p h i s n o t
+particularly helpful, i t i s n e c e s s a r y - t o d e t e r m i n e t h e b l o c k s i z e
+using transverse CT scans. These scans also provide the thickness of
+the chest wall as required for selection of the electron energy needed
+to boost the chest wall. Figure 12 shows a block covering the heart
+for a lateral field technique. The dimensions taken from the CT scans
+were reduced to account for placement of the block at a small distance
+(approximately 20 cm) from the patient.
+The block was placed on a
+Styrofoam base and secured to a small table positioned next t o t h e
+patient support couch. T h e m a s k f o r t h e e l e c t r o n b o o s t f i e l d i s c u t
+to agree with the size of the projected photon field block on the
+p a t i e n t ’ s s k i n . O b v i o u s l y , f o r the block positioning to be accurate,
+frequent port filming is essential.
+5.3 Port filming
+There are two applications for port filming of large field
+patients. F i r s t , p o r t f i l m s a r e h e l p f u l f o r g u a r a n t e e i n g t h a t t h e
+f u l l p a t i e n t i s w i t h i n t h e u s e f u l p o r t i o n o f the radiation beam.
+Second, the positioning of shielding blocks, compensators and exit
+dosimeters can be checked.
+Since many centers performing TBI are forced to use fields of less
+than adequate size due to restrictive treatment room dimensions, the
+legs must be drawn up and the head bent forward in order to fit within
+the beam. F i g u r e 1 3 i l l u s t r a t e s t h e t r o u b l e s o m e a r e a s f o r a t y p i c a l
+treatment geometry.
+Under the conditions shown, port filming of the
+head and feet is essential especially for those treatment units where
+a circular primary collimator restricts the use of the beam diagonal.
+A simple method for determining the field coverage uses a few
+single-point film densitometer readings in the areas of the head and
+feet. It should be recognized that a non-coincidence of the x ray
+field relative to the light localizing field of as little as 3 mm at
+an isocenter of 80 cm will project to 1.5 cm at an extended treatment
+distance of 400 cm. A similar magnification of the entire penumbra
+region w i l l o c c u r . Thus, underdosing can easily occur for the large
+treatment distances used for TBI.
+Figure 13 shows a typical port film for checking the placement of
+compensators and exit dosimeters. The leg compensator can be seen as
+a line projecting across the upper thigh.
+Though the edge of the
+one-dimensional compensator used for the head was just visible on the
+original x rays, it cannot be detected on the print shown. However,
+it is possible to tape a piece of lead solder along the compensator
+edge for better visualization. It is also possible to use markers to
+indicate the position of dosimeters placed on the patient’s skin or
+within cavities.
+The port film shown in
+Figure 13 also contains additional
+information in that the image (actually a set of two films) provides a
+record of the amount of lung shielded by the arms. There is no
+s t a n d a r d f o r a r m p o s i t i o n i n g for TBI. E s p e c i a l l y f o r t h e AP/PA
+technique, a wide variation in
+approach
+has been noted.
+These
+variations
+can lead to considerable differences in
+the
+dose
+d i s t r i b u t i o n f o r t h e t h o r a x r e g i o n , so that the port film represents
+an important patient record.
+
+44
+
+Figure 13: X ray port film for patient of Figure 12. Notice
+the edge of the leg compensator cutting across the upper part
+of the legs.
+Also note the outline of the lungs and the
+shielding of this organ by the arms.
+
+45
+
+6.0 Summary of Recommendations
+
+1. Choice of irradiation method
+a) For the energy range between cobalt-60 and 25 MV x rays,
+the higher energies will give
+a more uniform. dose
+distribution (not considering the build-up region).
+b) AP/PA p a r a l l e l o p p o s e d f i e l d s a r e p r e f e r r e d a l t h o u g h u n d e r
+pediatric cases, higher energies,, a
+some conditions (e.g.
+±10% uniformity can be achieved with bilateral fields.
+c) If the build-up region is of concern, beam spoilers or
+For parallel opposed
+electron filters should be employed.
+fields,
+the contribution of exit dose should not be
+neglected.
+2. Basic phantom dosimetry
+a) Phantoms
+i) Water is the material of choice.
+ii) Minimum phantom size should be 30 x 30 x 30 cm 3. L a r g e r
+phantoms a r e p r e f e r r e d a n d c a n b e o b t a i n e d b y p l a c i n g
+water equivalent phantom materials about the minimum
+phantom size.
+i i i ) Plastic phantoms will need corrections to convert to water
+as per TG21.
+iv) Smaller phantoms will need corrections for the lack
+These corrections are dependent on
+of full scatter.
+phantom size, field size and energy.
+b ) Dosimeters
+i ) Dosimeter response should be energy independent.
+ii) Stem and cable effects should be checked and must be
+minimal.
+c) Dose calibration
+i ) In-air measurements s h o u l d b e a v o i d e d f o r t h e d o s e
+calibration.
+ii) Use procedures as recommended by TG21 with the following
+changes :
+A. Distance and field sizes should be representative of
+large field geometry.
+B. Large field chamber factors should be applied.
+C. A water or plastic phantom no smaller than 30 x 30 x 30
+For
+cm3 should be used. Larger phantoms are preferred.
+plastic phantoms appropriate corrections must be made to
+determine the dose to water.
+D. The measurements should be corrected to provide results
+representative of full scattering conditions.
+E. If trays for shielding or compensators or if beam spoilers
+are used routinely, then these should be in position when
+the dose calibration is performed.
+d) Central ray data
+i ) “ I n p h a n t o m ” d o s e r a t i o s , such as percent depth doses,
+tissue-phantom ratios or tissue-maximum ratios should be
+determined. If
+limited phantom
+sizes
+are
+used,
+corrections should be made for the lack of full scatter.
+ii) Use cylindrical chamber at depth.
+iii) Use parallel plate chamber in build-up region.
+e) Inverse square test
+i ) Inverse square s h o u l d b e t e s t e d o v e r t h e r a n g e o f
+possible treatment distances that may be used for large
+field treatment.
+
+46
+
+ii)
+
+3.
+
+If deviations from the inverse square law are greater
+than 2% then dose calibrations should be performed at
+a number of distances.
+
+Output factors
+i) Output factors measured “in air” should be avoided unless
+additional s c a t t e r f r o m t h e
+floor or walls can be
+accounted for.
+i i ) If a range o f f i e l d s i z e s a r e t o b e u s e d , t h e n d o s e
+calibrations should be performed for a number of field
+sizes.
+i i i ) If trays or filters are used routinely, then these should
+be in position for each field size.
+
+4. Beam profiles
+i) Dose ratios as measured on the central ray should also be
+measured along several lines which intercept the long and
+short field axes and are parallel to the central ray.
+This will provide dose profiles at any depth along the
+principal planes assuming all the data are normalized to a
+reading at some depth along the central ray.
+i i ) Flattening filters may have to be designed to provide a
+sufficient beam homogeneity.
+5.
+
+Attenuation data
+i) Attenuation coefficients should be measured for at least
+three field sizes under treatment conditions. A plot of
+broad beam attenuation coefficient versus side of square
+field will allow interpolation for any field size.
+ii) The broad beam coefficient to be used for treatment
+will depend on the size of the a b s o r b e r o r
+calculations
+the field size if the absorber covers the entire beam.
+
+6.
+
+Dose prescription
+i) The dose should be prescribed to one point.
+i i ) Dose limits should be specified.
+iii) The dose limit to critical organs may have to be specified
+separately.
+iv) The therapy unit dose rate as well as the total duration
+of the treatment may need to be specified depending on the
+clinical requirements.
+
+7.
+
+Corrections for patient size
+i ) Equivalent patient dimensions should be determined and
+central ray data for full scattering conditions should be
+corrected to account for the patient dimensions both in
+the lateral and depth directions.
+i i ) Contour corrections should be made using methods that are
+r a t i o o f tissue-air
+field size dependent i.e.
+ratio
+method or ratio of tissue-phantom ratio method.
+i i i ) For treatment time or monitor unit calculations either the
+field size or the patient size should be used depending on
+which one is smaller.
+iv) T h e l a c k o f b a c k s c a t t e r can result in noticeable dose
+The
+reduction especially for small patient thicknesses.
+u s e o f bolus o r b a c k s c a t t e r i n g m a t e r i a l w i l l h e l p t o
+reduce this effect.
+
+47
+
+8.
+
+Compensators for missing tissue
+i ) T h e u s e o f t i s s u e e q u i v a l e n t bolus is the easiest if the
+loss of skin sparing is not a problem.
+ii) If skin sparing is to be maintained compensators-should be
+built.
+
+9.
+
+Inhomogeneities: Lung
+critical,
+inhomogeneity
+i) When the dose to lung is
+corrections should be made.
+a) For manual calculations, m e t h o d s w h i c h a r e f i e l d
+size dependent should be used i.e. r a t i o o f T A R ’ s
+or ratio of TPR’s (the power-law method should not
+be used with TAR’s since it is in error for large
+fields).
+i i ) Inhomogeneity corrections should be made using CT data to
+provide anatomical information.
+a) The best is to perform pixel based calculations.
+b) Alternately, an average density can be assumed.
+c) Without CT, transmission measurements can provide
+equivalent thickness data.
+d) Radiographs combined with an assumption about average
+equivalent
+density
+will provide an estimate of
+thickness.
+e) The simple relation between dose correction factor
+and patient thickness can be used if no other
+information is available.
+
+10.
+
+Inhomogeneities: Bone
+i) The dose to bone can be calculated from equation (5) for
+lower energy photons in section 4.4.2 using the data of
+Table 7 or equation (6) for higher energy photons.
+
+11.
+
+Methods of compensating for lung tissues
+i) Produce three dimensional compensator from full dose
+distributions with inhomogeneity corrections.
+ii) Use constant thickness lung attenuator.
+iii) Use shields for part of the treatment time.
+
+12.
+
+Anthropomorphic phantom measurements
+i) TLD measurements should be performed in anthropomorphic
+phantoms using the treatment techniques and doses that are
+r e p r e s e n t a t i v e o f p a t i e n t t r e a t m e n t s . The TLD response
+should be calibrated such that absolute doses can be
+determined.
+
+13.
+
+In vivo measurements
+i) The treatment technique should be verified by performing
+TLD measurements on several representative patients. The
+TLD response should be calibrated to determine absolute
+doses. T o o b t a i n a n i n d i c a t i o n o f t h e d o s e a t d m a x, t h e
+dosimeters should have
+sufficient
+tissue equivalent
+material such that full build-up is achieved.
+Exit
+dosimeter readings s h o u l d b e c o r r e c t e d f o r t h e l a c k o f
+backscatter if they are to be used for determination of
+midplane doses.
+
+48
+
+REFERENCES
+1.
+
+Utilization of a high
+Aget,
+H., Van Dyk, J., Leung, P.M.K.
+e n e r g y p h o t o n b e a m f o r w h o l e b o d y i r r a d i a t i o n . R a d i o l . 123,
+747-751, 1977.
+
+2.
+
+Stokes, T.R., Lushbaugh, C.C. Proceedings of the
+Beck, W.L.,
+National Symposium on Natural and Man-made Radiation in space.
+NASA TMX - 2440, 1971.
+
+3.
+
+Bortin, M.M., Gale, R.P., Rimm A.A. For the Advisory Committee
+of the
+International
+Bone
+Marrow
+Transplant
+Registry.
+Allogeneic bone marrow transplantation for 144 patients with
+severe aplastic anemia. JAMA 245, 1132-1139, 1981.
+
+4.
+
+Bruce, W.R., Johns, H.E.
+atomic number materials.
+
+5.
+
+Brucer, M . A total body irradiator..
+Isotopes. 10, 99-105, 1961.
+
+6.
+
+Cassady, J.R., Order, S., Camitta, B., Marck, A . M o d i f i c a t i o n
+of gastro-intestinal symptoms following irradiation by low dose
+rate technique. I n t . J . R a d i a t . Oncol. Biol. Phys. 1, 15-20,
+1976.
+
+7.
+
+C h a f f e y , J . T . , R o s e n t h a l , D . S . , M o l o n e y , W . C . , Hellman, S .
+Total body irradiation as treatment for lymphosarcoma. I n t . J .
+Radiat. Oncol. Biol. Phys. 1, 399-405, 1976.
+
+8.
+
+Christ, G.
+The dosimetry of total body irradiation at the
+University of Tubingen. J. Eur. Radiother. 3, 211-212, 1982.
+
+9.
+
+Conference on Dosimetry of Total Body Irradiation by External
+Photon Beams.
+Oak Ridge Associated Universities.
+February
+C l o u t i e r , R . J . , O ' F o g h l u d h a , F . , C o m a s , F . V . (Eds)
+1967.
+Document CONF-670219, Health and Safety (TID-4500).
+Published
+by Oak Ridge Associated Universities.
+
+10.
+
+Cunningham, J.R., Woo, M., Rogers, D.W.O., Bielajew, A.F.
+The
+dependence of mass energy absorption coefficient ratios on beam
+size in a phantom. Medical Physics 13, 496-502, 1986.
+
+11.
+
+Cunningham, J.R., Wright, D.J. A simple facility for whole-body
+irradiation. Radiol. 78, 941-949, 1962
+
+12.
+
+Cunningham, J.R., S c a t t e r - a i r r a t i o s . P h y s . M e d . B i o l . 1 7 ,
+42-51, 1972.
+
+13.
+
+Cunningham J.R. Tissue inhomogeneity corrections in photon-beam
+treatment planning. In: Progress in Medical Radiation Physics
+Vol. 1, Orton, C.G. (Ed.) Plenum Publishing Corp. 103-131, 1982.
+
+14.
+
+D'Angio, G . J . , E v a n s , A . E .
+Cyclic
+low-dose total body
+irradiation for metastatic neuro-blastoma. I n t . J .
+Radiat.
+Oncol. Biol. Phys. 9, 1961-1965, 1983.
+
+The spectra of x ray scatter in low
+Br. J. Radiol. Suppl. 9, 37-38, 1960.
+Int. J. Appl. Radiat.
+
+49
+
+15.
+
+Doppke, K . P .
+Treatment strategies - H o d g k i n ' s d i s e a s e . I n :
+Advances in Radiation Therapy Treatment Planning. Wright, A.E.,
+Boyer, A.L. (Eds.) AAPM Monography No. 9. American Institute
+of Physics, N.Y., 341-355, 1983.
+
+16.
+
+Draeger, R.H., Lee, R.H., Shea, T.E., Whitten, F.I., Eicher, M.
+Research Report 11, Bethesda, MD.
+Naval Medical Research
+Institute, 1219, 1953.
+
+17.
+
+D u t r e i x , J . , Gluckman, E., Brule, J.M. B i o l o g i c a l p r o b l e m s o f
+total body irradiation. J. Eur. Radiother.
+3, 165-173, 1982.
+
+18.
+
+El-Khatib, E., Battista, J.J.
+Improved lung dose calculation
+using tissue-maximum ratios in the Batho correction. Med.
+Phys. 11, 279-286, 1984.
+
+19.
+
+Engler, M.J., Feldman, M.I., Spira, J. Arc technique for total
+body irradiation by a 42 MV betatron.
+Med. Phys. 4, 524-525,
+1977.
+
+20.
+
+considerations in magna-field
+Evans, R.G.
+Radiobiological
+irradiation.
+Int.
+J.
+Radiat.
+Oncol.
+Biol.
+Phys.
+9,
+1907-1911, 1983.
+
+21.
+
+Dose distributions if the field size is
+Faw, F., Glenn, D.
+larger than the patient. ( A b s t r a c t ) . Proceedings of the Third
+International Congress of Medical Physics Sweden, 1972.
+
+22.
+
+Fedoruk, S.O., Johns, H.E.
+Transmission dose measurement for
+cobalt-60 radiation. Br. J. Radiol. 30, 190-195, 1957.
+
+23.
+
+Findley, D.O., Skov, D.D., Blume, K.G. T o t a l b o d y i r r a d i a t i o n
+with a 10 MV linear accelerator in conjunction with bone marrow
+transplantation.
+I n t . J . Radiat. Oncol. Biol.
+Phys.
+6,
+695-702, 1980.
+
+24.
+
+Fitzpatrick, P.J., Rider, W.D.
+Half body radiotherapy of
+advanced cancer. J. Can. Assoc. Radiol. 27, 75-79, 1976.
+
+25.
+
+F i t z p a t r i c k , P . J . , R i d e r , W . D . H a l f b o d y r a d i o t h e r a p y . Int. J.
+Radiat. Oncol. Biol. Phys. 1, 197-207, 1976.
+
+26.
+
+Fitzpatrick, P.J., Garrett, P.G.
+Metastatic breast cancer
+ovarian ablation with lower half-body irradiation.
+Int.
+J.
+Radiat. Oncol. Biol. Phys. 7, 1523-1526, 1981.
+
+27.
+
+Gagnon, W.F., Horton, J.L.
+Physical factors effecting dose to
+the skin from cobalt-60 gamma rays and 25 MV x rays. Med.
+Phys. 6, 285-290, 1979.
+
+28.
+
+G a l v i n , J . M . , D'Angio, G . J . ,
+Walsh, G.
+Use of tissue
+compensators to improve the dose uniformity for total body
+irradiation.
+Int.
+J.
+Radiat.
+Oncol.
+Biol.
+Phys.
+6,
+767-771, 1980.
+
+50
+
+29.
+
+Galvin, J.M.
+Calculation and prescription of dose for total
+body irradiation. Int. J.
+Radiat.
+Oncol. Biol. Phys. 9,
+1919-1924, 1983.
+
+30.
+
+The use of
+Geise, R.A., McCullough, E.C.
+planning.
+megavoltage photon beam
+therapy
+133-141, 1977.
+
+31.
+
+Glasgow, G.P., Mill, W.B. C o b a l t - 6 0 t o t a l b o d y i r r a d i a t i o n
+dosimetry at 220 cm s o u r c e - a x i s d i s t a n c e .
+Int. J. Radiat.
+Oncol. Biol. Phys. 6, 773-777, 1980.
+
+32.
+
+G l a s g o w , G . P . , M i l l s , W . B . , P h i l l i p s , G . L . , Herzig, G . P .
+Comparative 60-Co total body irradiation (220 cm SAD) and 25 MV
+total body irradiation (370 cm SAD) dosimetry.
+Int.
+J.
+Radiat. Oncol. Biol. Phys. 6, 1243-1250, 1980.
+
+33.
+
+Glasgow, G.P. The dosimetry of fixed, single source hemibody
+and total body irradiators. Med. Phys. 9, 311-323, 1982.
+
+34.
+
+Goolden, A.W.G., Goldman, J.M., Kam, K.C., Dunn, P.A., Baughan,
+A.S.J., M c C a r t h y , D . M . , W o r s l e y , A . M . , G o r d o n - S m i t h , E . C . ,
+Samson, D., Catovsky, D., Galton, D.A.G. Fractionation of whole
+body irradiation before bone marrow transplantation. Brit. J.
+Radiol. 56, 245-250, 1983.
+
+35.
+
+lymphoid
+an
+Halperin, E.C.
+Total
+irradiation
+as
+immunosuppressive agent for transplantation and the treatment of
+autoimmune disease: A review. Clin. Radiol. 36, 125-130, 1985.
+
+36.
+
+Herring, D.F. Methods for extracting dose response curves from
+In: Patterns of
+radiation therapy data - A unified approach.
+Care Study. American College of Radiology, 1978.
+
+37.
+
+Heublein, A.C. Preliminary report on continuous irradiation of
+the entire body. Radiol. 18, 1051-1062, 1932.
+
+38.
+
+Hill, R.P. Response of mouse lung to irradiation at different
+Int.
+J.
+Radiat.
+Oncol.
+Biol.
+Phys.
+9,
+dose rates.
+1043-1047, 1983.
+
+39.
+
+Hoppe, R.T., Kushlan, P., Kaplan, H.S., Rosenberg, S.A., Brown,
+B.W.
+The treatment of advanced stage favourable histology nonHodgkin's lymphoma: A preliminary report of a randomized trial
+comparing single agent chemotherapy, combination chemotherapy
+and whole body irradiation. Blood, 58, 592-598, 1981.
+
+40.
+
+International Commission on Radiation Units and Measurements
+(ICRU). Determination of absorbed dose in a patient irradiated
+by beams of x or gamma rays i n r a d i o t h e r a p y p r o c e d u r e s . ICRU
+Report 24, 1976. (International Commission on Radiation Units
+and Measurements, Washington).
+
+41.
+
+International Commission on Radiation Units and Measurements.
+Dose specification for reporting external beam therapy with
+photons and electrons.
+ICRU Report 29, 1978 (International
+Commission on Radiation Units and Measurements, Washington).
+
+CT scanner in
+Radiol.
+124
+
+51
+
+42.
+
+Jacobs, M.L., Pape, L. A total body irradiation chamber and its
+uses. Int. J. App. Radiat. Isotopes, 9, 141-143, 1960.
+
+43.
+
+Jenkin, R.D.T., Rider, W.D., Sonley, M.H. Ewing's sarcoma: A
+trial of adjuvant total body' irradiation.
+Radiology, 96,
+151-155, 1970.
+
+44.
+
+Jenkin, R.D.T., Berry, M.D.
+Sequential half-body irradiation.
+Int. J. Radiat. Oncol. Biol. Phys. 9, 1969-1971, 1983.
+
+45.
+
+Johns, H.E., Cunningham, J.R. The Physics of Radiology.
+Edition, Charles C. Thomas, Springfield, ILL, 1983, p 230.
+
+46.
+
+Johns, H.E., Cunningham, J.R. The Physics of Radiology, 4th Ed.
+Charles C. Thomas, Springfield, Ill. 1983, p. 397-402.
+
+47.
+
+Johnson, R.E.
+Radiation therapy of generalized lymphocytic
+lymphomas. Amer. J. Roentgen. 117, 50-53, 1973.
+
+48.
+
+Keane, T.J., Van Dyk, J., Rider, W.D. Idiopathic interstitial
+pneumonia
+following
+The
+bone
+marrow
+transplantation:
+relationship with total body irradiation.
+Int. J. Radiat.
+O n c o l . B i o l . Phys. 7, 1365-1370, 1981.
+
+49.
+
+Kereiakes, J.G.,
+VandeRiet,
+W.,
+Born,
+C.,
+Ewing, C.
+Silberstein, E., Saenger, E. Active bone-marrow dose related to
+hematological changes in whole-body and partial-body cobalt-60
+gamma radiation exposures Radiol. 103, 651-656, 1972.
+
+50.
+
+Khan, F.M., Williamson, J.F., Sewchand, W., Kim, T.H. Basic
+data for dosage calculation and compensation. Int. J. Radiat.
+Oncol. Biol. Phys. 6, 745-751, 1980.
+
+51.
+
+Kim, T.H., Khan, F.M., Galvin, J.M. A report of the work party:
+Comparison of total body irradiation techniques for bone marrow
+transplantation.
+Int. J.
+Radiat.
+Oncol.
+Biol. P h y s . 6 ,
+779-784, 1980.
+
+52.
+
+Kirby, T.H., Hanson, W.F., Cates, D.A. Total body irradiation
+dosimetry (Abstract). Med. Phys. 12, 523, 1985.
+
+53.
+
+Kolb, H.J., Rieder, I., Bodenberger, U . , N e t z e l , B . , Schaffer,
+E.
+K o l b , H . , T h i e r f e l d e r , S . Dose rate and dose fractionated
+s t u d i e s i n t o t a l b o d y i r r a d i a t i o n o f d o g s . Path. B i o l . 2 7 ,
+370-372, 1979.
+
+54.
+
+Lam, W.C., Lindskoug,
+B.A., Order, S . E . , G r a n t , D . G .
+dosimetry of cobalt-60 total
+body irradiation.
+Int.
+Radiat. Oncol. Biol. Phys. 5, 905-911, 1979.
+
+55.
+
+Lam, W.C.,
+Uniformity
+Order, S.E., Thomas, E.D.
+and
+s t a n d a r d i z a t i o n o f s i n g l e a n d o p p o s i n g c o b a l t - 6 0 sources for
+total body irradiation. I n t . J . R a d i a t . O n c o l . Biol. Phys.
+6, 245-250, 1980.
+
+4th
+
+The
+J.
+
+52
+
+56.
+
+Leung, P.M.K., Rider, W.D., Webb, H.P., Aget, H., Johns, H.E.
+Cobalt-60 therapy unit for large field irradiation. Int. J.
+Radiat. Oncol. Biol. Phys. 7, 705-712, 1981.
+
+57.
+
+Loeffler, R.K. Therapeutic use of fractionated total body and
+subtotal body irradiation. Cancer 47, 2253-2258, 1981.
+
+58.
+
+Lutz, W.R., Bjarngard, B.E. Design of a versatile total body
+i r r a d i a t i o n f a c i l i t y . (Abstract) Radiological Society of North
+America, 68th Scientific and Annual Meeting, Chicago, November,
+1982.
+
+59.
+
+Lutz, W.R., Svensson, G.K., Bjarngard, B.E.
+p r o p e r t i e s o f a 4 MV total body irradiator.
+Phys. 10, 539, 1983.
+
+60.
+
+Lutz, W.R., Larsen, R.D. T h e e f f e c t o f f l a t t e n i n g f i l t e r d e s i g n
+in quality variations within an 8-MV primary x ray beam.
+Med.
+Phys. 11, 843-845, 1984.
+
+61.
+
+Magna-field symposium. Florida. Sponsored by Children's Cancer
+Study Group in conjunction with ASTR. October, 1982. Int.
+J.
+R a d i a t . O n c o l . Biol. Phys. 9, 1905-1973, 1983
+
+62.
+
+Marinello, G., Barrie, A.M., LeBourgeois, J . P . M e a s u r e m e n t a n d
+calculation of lung dose in total body irradiation performed
+w i t h c o b a l t - 6 0 . J . Eur. Radiotherap. 3, 174-182, 1982.
+
+63.
+
+Meeting of Leiden.
+157-264, 1982,
+
+64.
+
+Miller, L.S., Fletcher, G.H., Berstner, H.B.
+Radiobiological
+patients
+treated with whole-body
+observations on
+cancer
+x-irradiation.
+Radiat. Research 4, 150-165, 1958.
+
+65.
+
+Miller, R.J.,
+Langdon, E.A.,
+Tesler, A.S.
+Total body
+i r r a d i a t i o n u t i l i z i n g a single cobalt-60 source.
+Int.
+J.
+R a d i a t . O n c o l . Biol. Phys. 1, 549-552, 1976.
+
+66.
+
+Mulvey, P.J., Godlee, J.N.
+Technique and dosimetry for TBI at
+University College Hospital. London. J. Eur. Radiother. 3,
+241-242, 1982
+
+67.
+
+P a y n e , D . G . , Yeoh, L . , F e l d ; R . , P r i n g l e , J . F . , E v a n s , W . K . ,
+Herman, J.G., Quirt, I.C. Upper half body irradiation (UHBI)
+for extensive small cell carcinoma of the lung. I n t . J .
+R a d i a t . O n c o l . Biol. Phys. 9, 1571-1574, 1983.
+
+68.
+
+P e t e r s , L . J . , Withers, H . R . , C u n d i f f , J . H . , Dicke, K . A .
+Radiobiological
+considerations in
+the use of total-body
+irradiation for bone-marrow transplantation.
+131,
+Radiology,
+243-247, 1979.
+
+69.
+
+Peters, V.G., Herer, A.S.
+Modification of a standard cobalt-60
+unit for total body irradiation at 150 cm SSD.
+Int.
+J.
+Radiat. Oncol. Biol. Phys. 10, 927-932, 1984.
+
+May
+
+1982.
+
+J.
+
+Eur.
+
+Design and beam
+(Abstract) Med.
+
+Radiother. 3,
+
+53
+
+70.
+
+P h i l l i p s , G . L . , Herzig, R . J . , Lazarus, H.M., Fay, J.W., Wolff,
+S.N., Mill, W.B., Lin, H., Thomas, P.R.M., Glasgow, G.P., Shina,
+Treatment of resistant malignant lymphoma
+D.C., Herzig G.P.
+and
+total body
+irradiation
+with
+cyclophosphamide,
+transplantation of cryopreserved autologous marrow. New Eng.
+J . M e d . 310, 1557-1561, 1984
+
+71.
+
+Pla, M., Chenery, S.G., Podgorsak, E.B. T o t a l b o d y i r r a d i a t i o n
+with a sweeping beam. Int.
+J.
+R a d i a t . O n c o l . B i o l . Phys.
+9, 83-89, 1983.
+
+72.
+
+Podgorsak, E.B., Pla, C., Evans, M.D.C., Pla, M. The influence
+of phantom size on output, peak-scatter factor and percentage
+depth dose in large field photon irradiation. Med. Phys. 12,
+639-645, 1985.
+
+73.
+
+Portal, G. Preparation and properties of principal TL products.
+Oberhofer,
+In:
+Applied Thermoluminescence Dosimetry.
+M.,
+A d a m H i l g e r L t d . , B r i s t o l , 1981, p.
+Scharmann, A.
+(Eds).
+97-122.
+
+74.
+
+Quast, U. Summary of the discussion on in vivo dosimetry.
+Eur. Radioth. 3, 259-261, 1982.
+
+75.
+
+Physical
+treatment
+total body
+Quast, U.
+planning of
+irradiation - Patient translation and beam zone method.
+Med.
+Phys. 12, 567-573, 1985.
+
+76.
+
+Rawlinson, J.A.
+Internal Report,
+Toronto, Canada 1977.
+
+77.
+
+Rider, W.D., Messner, H.A. Magna-field irradiation: Work in
+progress in bone marrow transplantation at the Princess Margaret
+Hospital, Toronto. I n t . J . R a d i a t . Oncol. B i o l . P h y s . 9 ,
+1967, 1983.
+
+78.
+
+Total and partial body irradiation.
+Rider, W.D., Van Dyk, J.
+N.M.,
+In:
+Radiation Therapy Treatment Planning, Bleehen,
+Glatstein, E., Haybittle, J.L.
+(Eds.), Marcel Dekker Inc.,
+559-594, 1983.
+
+79.
+
+Sahler, O.D.
+Development of a room specifically designed for
+total body irradiation. Radiol. 72, 266-267, 1959.
+
+80.
+
+S h a n k , B . , S i m p s o n , L . T h e r o l e o f total body irradiation in
+bone marrow transplantation for leukemia.
+Bull N.Y.
+Acad.
+Sci. 58, 763-777, 1982.
+
+81.
+
+Shank B.
+Techniques of magna-field irradiation.
+Radiat. Oncol. Biol. Phys. 9, 1925-1931, 1983.
+
+82.
+
+Sontag, M.R., Battista, J.J., Bronskill, M.J., Cunningham, J.R.
+Implications of
+computed
+inhomogeneity
+tomography
+for
+corrections in photon beam dose calculations.
+Radiol.
+124,
+143-149, 1977
+
+J.
+
+Ontario Cancer Institute,
+
+Int.
+
+J.
+
+54
+
+83.
+
+Sontag, M.R., Cunningham, J.R. The equivalent tissue-air ratio
+method for making absorbed dose calculations in a heterogeneous
+medium. Radiol. 129, 787-794, 1978.
+
+84.
+
+of cables for
+Spokas, J.J., Meeker, R.D.
+Investigation
+ionization chambers. Med. Phys. 7, 135-140, 1980.
+
+85.
+
+S t r o b e r , S . , K o t z i n , B . L . , H o p p e , R . T . , Slavin, S . , G o t t l i e b ,
+M ., Calin,
+A.,
+Fuks,
+Z.,
+Kaplan,
+H.S.
+The treatment of
+intractable rheumatoid arthritis with lymphoid irradiation.
+I n t . J . Radiat. Oncol. Biol. Phys. 7, l-7, 1981.
+
+86.
+
+Surmont, J., Dutreix, A., Lalanne, C.M. Les irradiations in
+toto pour greffes de tissu ou transplantation d'organe chez
+l'homme.
+Problems techniques.
+J. Radiol.
+Electrol. 41,
+679-689, 1960.
+
+87.
+
+The use of a 4 MV
+S v e n s s o n , G . K . , L a r s o n , R . D . , Chen, T . S .
+linear
+accelerator for whole body irradiation.
+Int.
+J.
+Radiat. Oncol. Biol.Phys. 6, 761-765, 1980
+
+88.
+
+Symposium on
+Irradiation
+for
+Bone
+Marrow
+Total Body
+Transplantation.
+Paris, September, 1978. P a t h o l o g i e B i o l o g i e ,
+27, 317-380 1979.
+
+89.
+
+Task Group 21, Radiation Therapy Committee, American Association
+o f P h y s i c i s t s i n M e d i c i n e . A protocol for the determination of
+absorbed dose from high-energy photon and electron beams. Med.
+Phys. 10, 741-771, 1983.
+
+90.
+
+The Physics and Clinical Aspects of Total Body Irradiation Used
+for Bone Marrow Transplantation.
+Workshop of the Children's
+Int.
+J.
+Radiat.
+Cancer Study Group, Montreal, June 1978.
+Oncol. Biol. Phys. 6, 743-787, 1980.
+
+91.
+
+T h o m a s , E . D . , S t o r b , R . , Buckner, C . D . T o t a l b o d y i r r a d i a t i o n
+in preparation for marrow engraftment.
+Transplantation Proc.
+4, 591-593, 1976.
+
+92.
+
+The role of
+marrow transplantation in the
+Thomas, E.D.
+eradication of malignant disease. Cancer 49, 1963-1969, 1982.
+
+93.
+
+Bone
+marrow
+UCLA
+Bone
+Marrow Transplantation
+Team:
+transplantation
+for
+aplastic
+Conditioning
+with
+anemia:
+cyclophosphamide plus low-dose total body irradiation. In:
+Experimental Hematology Today 1979.
+Baum, S.J., Lenney, G.D.,
+(Eds.) New York, Springer Verlag, 185-191, 1979.
+
+94.
+
+Urtasun, R.C., Belch, A., Bodnar, D. Hemibody irradiation: An
+active therapeutic modality for the management of patients with
+small cell lung cancer. I n t . J . R a d i a t . O n c o l . Biol. Phys.
+9, 1575-1577, 1983.
+
+55
+
+95.
+
+V a n D y k , J . , Leung, P.M.K.,
+Cunningham, J.R.
+Dosimetric
+considerations of very large cobalt-60 fields. I n t . J . R a d i a t .
+oncol. Biol. Phys. 6, 753-759, 1980.
+
+96.
+
+Van Dyk, J.,
+Battista, J.J.,
+Rider, W.D.
+Half body
+radiotherapy:
+The use of computed tomography to determine the
+dose to lung. Int. J. Radiat. Oncol. Biol. Phys. 6, 463-470,
+1980.
+
+97.
+
+Van Dyk, J., Keane, T.J., Kan S., Rider, W.D., Fryer, C.J.H.
+Radiation pneumonitis following large single dose irradiation: A
+re-evaluation based on absolute dose to lung. I n t . J . R a d i a t .
+Oncol. Biol. Phys. 7, 461-467, 1981.
+
+98.
+
+Van Dyk, J., Keane, T.J., Rider, W.D. Lung density as measured
+by computerized tomography: Implications for radiotherapy. Int.
+J . Radiat. Oncol. Biol. Phys. 8, 1363-1372, 1982.
+
+99.
+
+Van Dyk, J. Magna-field irradiation: Physical considerations.
+Int. J. Radiat. Oncol. Biol. Phys. 9, 1913-1918, 1983.
+
+100.
+
+Van Dyk, J. Whole and partial body radiotherapy: Physical
+c o n s i d e r a t i o n s . I n : Advances in Radiation Therapy Treatment
+Planning. Wright, A., Boyer, A.L. (Eds.). AAPM Monograph No.
+9, American Institute of Physics. N.Y. 403-426, 1983.
+
+101.
+
+Van Dyk, J.
+Dose
+calculations
+using
+computerize
+Lung
+tomography: Is there a need for pixel based procedures?
+Int.
+J . Radiat. Oncol Biol. Phys. 9, 1035-1041, 1983.
+
+102.
+
+Van Dyk, J. Broad Beam attenuation of cobalt-60 gamma rays and
+6, 18 and 25 MV x rays by lead. Med. Phys. 13, 105-110, 1986.
+
+103.
+
+Webster, E.W.
+considerations
+in the design of
+Physical
+facilities for the uniform whole-body irradiation of man.
+Radiol. 75, 19-32, 1960.
+
+104.
+
+Wong, J.W., Henkelman, R.M.
+Reconsideration of the power-law
+(Batho) equation for inhomogeneity-corrections. Med. Phys. 9,
+521-530, 1982.
+
+

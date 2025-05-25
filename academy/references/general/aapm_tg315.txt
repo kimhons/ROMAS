@@ -1,0 +1,1294 @@
+1    Task Group 315: Medical Physics Practice Guideline (MPPG) For Plan and Chart Review in
+2    External Beam Radiotherapy and Brachytherapy
+3    Ping Xia1, Cynthia Chuang2, Valdir C. Colussi3, Yeh-Chi Lo4, Deborah Schofield5, Benjamin J.
+4    Sintay6, Michelle Wells7, and Sumin Zhou8
+5    1
+      Department of Radiation Oncology, Cleveland Clinic, Cleveland, OH
+6    2
+      Department of Radiation Oncology, University of California- San Francisco, CA
+7    3
+      Department of Radiation Oncology, University Hospitals Cleveland Medical Center, Cleveland, OH
+8    4
+      Department of Radiation Oncology, Mount Sinai Hospital- New York, New York, NY
+9    5
+      Department of Radiation Oncology, Florida Hospital South, Orlando, FL
+10   6
+      Department of Radiation Oncology, Cone Health, Greensboro, NC
+11   7
+      Department of Radiation Oncology, Piedmont Healthcare, Atlanta, GA
+12   8
+      Department of Radiation Oncology, University of Nebraska Medical Center, Omaha, NE
+
+13
+
+
+
+
+                                                                                                       1
+14
+
+15   Contents
+16   I. Introduction ................................................................................................................................................ 3
+17      1.        Scope.................................................................................................................................................. 4
+18      2.        The charges of this MPPG .................................................................................................................. 5
+19   II. Definition ................................................................................................................................................... 6
+20   III. Expectations and Responsibilities............................................................................................................. 9
+21      1.        External Beam Radiation Therapy ..................................................................................................... 9
+22           (a) Initial plan/chart check ...................................................................................................................12
+23           (b) Weekly chart check ........................................................................................................................13
+24           (c) Final chart check .............................................................................................................................14
+25      2. Brachytherapy ......................................................................................................................................14
+26   IV. Essential Content of a Treatment Plan Document .................................................................................15
+27      1.        External Beam Plan Document ........................................................................................................16
+28      2.        Brachytherapy Plan Document ........................................................................................................17
+29   V: Recommended Checklist During Plan and Chart Review ........................................................................17
+30      1.        External Beam Plans and Charts ......................................................................................................17
+31           a.      Checklist for Planners ..................................................................................................................17
+32           b.      Initial Plan/Chart Checklist for Physicists....................................................................................18
+33           c.      Initial Plan/Chart Checklist for Therapists ...................................................................................20
+34           d.      Weekly Chart Review Checklist ...................................................................................................20
+35           e.      Final Chart Review Checklist ........................................................................................................20
+36      2.        Brachytherapy Plans/ Charts ...........................................................................................................21
+37           a.      Initial Plan/Chart Checklist for Physicists ...................................................................................21
+38           b.      Initial Plan/Chart Checklist for Therapists .................................................................................21
+39           c.      Weekly Chart Review Checklist ..................................................................................................22
+40           f.      Final Chart Review Checklist ......................................................................................................22
+41   VI: Computer-aided Plan/Check and Automation .......................................................................................22
+42   VII: Discussion ..............................................................................................................................................24
+43   VIII: Summary ...............................................................................................................................................26
+44   References: ..................................................................................................................................................28
+45
+
+
+
+                                                                                                                                                                         2
+46   I. Introduction
+47
+
+48   Task group (TG) 40 report [1], published in 1994, established the foundation of comprehensive
+
+49   quality assurance (QA) for radiation therapy. Most current medical physics practices in radiation
+
+50   therapy stem from this report. With the advancement of radiation therapy in the past two
+
+51   decades, several additional QA reports have been published [2-4], each addressing one specific
+
+52   aspect of QA topics covered in TG 40. A recently published TG 275 [5] provided evidence-
+
+53   based recommendations on physics plan and chart review for radiation therapy based on a survey
+
+54   of AAPM members and failure mode and effect analyses (FMEA). In parallel with TG 275, the
+
+55   purpose of this report is to provide specific checklist during plan/chart review for dosimetrists,
+
+56   medical physicists, and therapists based on minimum practice standards. Since radiation therapy
+
+57   is a coordinated team effort, this report also clarifies the responsibilities of each team member
+
+58   (radiation oncologists, medical physicists, dosimetrists, and therapists). The differences between
+
+59   this MPPG and TG 275 are elaborated the last section of this report.
+
+60
+
+61   A patient chart typically consists of many types of documents, including diagnostic reports,
+
+62   consultation reports, simulation documents, treatment plan reports, daily treatment records, and
+
+63   on-treatment visit reports. With the advent of electronic medical records (EMR), many clinical
+
+64   reports reside in a general hospital EMR system, while other radiation-related technical reports
+
+65   may reside in a radiation specific EMR system. One integrated EMR system is ideal; but
+
+66   currently not feasible because hospital EMR systems are generally incapable of sending radiation
+
+67   treatment plans to the treatment equipment and recording radiation treatment parameters
+
+68   automatically, both of which are critical for radiation therapy. The purpose of having a patient
+
+69   chart reviewed by different team members at multiple time points throughout the course of
+
+                                                                                                          3
+70   treatment (e.g. prior to treatment (initial), during treatment (weekly), and at the end-of-treatment
+
+71   (final) is to ensure accurate and precise radiation treatment planning and delivery. To
+
+72   accomplish these tasks, one of the most important documents of a radiation therapy-related
+
+73   patient chart is the treatment plan report, along with other supporting documents for treatment
+
+74   delivery.
+
+75
+
+76   Treatment plans for radiation oncology consist of two major components: a clinical element and
+
+77   a technical element. The clinical component of a treatment plan includes the intent of radiation
+
+78   treatment (definitive, adjuvant, or salvage), radiation dosage, fractionation scheme, and anatomic
+
+79   contours that are delineated either to receive the prescribed treatment doses or to be protected
+
+80   from a specific tolerance dose. The technical component of a treatment plan includes the details
+
+81   of patient positioning along with the immobilization devices, placement of radiation beams, and
+
+82   the aperture shapes of radiation beams (designed either manually or by computer optimization)
+
+83   to achieve highly conformal radiation dose distributions to the treatment target volumes while
+
+84   protecting the critical organs.
+
+
+85   1. Scope
+86
+
+87   This MPPG report is focused on the technical component of a treatment plan, referred to as the
+
+88   treatment plan in subsequent sections. The goal of this MPPG is to provide essential checklist
+
+89   items for medical physicists who conduct plan/chart reviews according to the minimum
+
+90   acceptable safe standards.
+
+91
+
+
+92   The purpose of a new (initial) plan/chart review is to ensure compliance with the prescription,
+
+
+                                                                                                        4
+93    no clinically significant deviations are present, and that all information necessary for the
+
+94    therapists to deliver the treatment has been provided. Significant deviations in the plan/chart
+
+95    include errors, inconsistencies, or ambiguities, which may cause confusion for the team and
+
+96    potentially resulting in treatment errors. A recent publication [6] from the Radiation Oncology
+
+97    Incident Learning System (RO-ILS) reported that 33% of reported events occur during the
+
+98    processes of treatment planning and pretreatment review/verification. Mitigation of these
+
+99    hazards is best accomplished by catching errors as far upstream as possible and including
+
+100   multiple layers of plan check/review. The possibility of an error propagating through to the
+
+101   patient can further be minimized by using a standardized treatment plan document, a consistency
+
+102   check from the planners, and a pretreatment check by radiation therapists.
+
+103
+
+
+104   The purpose of weekly on-treatment (weekly) chart review is to verify that the prescription is
+
+105   being fulfilled. If for clinical reasons, the prescription is altered, medical physicists are
+
+106   responsible for ensuring that the modified prescription is followed accordingly. At the end-of-
+
+107   treatment (final) chart check, medical physicists are responsible for ensuring that all technical
+
+108   documents for that patient are signed/approved and that the treatment course is completed. If for
+
+109   clinical reasons or patients’ decisions, the treatment course is not completed, a radiation
+
+110   oncologist should document the specific reason in the chart. This MPPG provides essential
+
+111   checklists for medical physicists to utilize while carrying out the responsibilities of initial,
+
+112   weekly, and final chart review.
+
+
+113   2. The charges of this MPPG
+114
+
+
+
+
+                                                                                                          5
+115          (1)     To define roles of a dosimetrist, therapists, a physicist in training, and a qualified
+
+116          medical physicist as they pertain to the treatment plan/chart review process for external
+
+117          beam radiotherapy (EBRT) and brachytherapy.
+
+118          (2)     To define essential checklist items for initial, weekly and final plan/chart review.
+
+119          (3)     To make recommendations on the timing of the initial, weekly, and final
+
+120          plan/chart review, especially for special procedures (e.g. TBI, stereotactic body
+
+121          radiotherapy, and brachytherapy).
+
+122
+
+123   This MPPG considers typical treatment plans in radiotherapy, including the most frequently used
+
+124   external beam radiotherapy (C-arm linear accelerators) using photons and electrons (excluding
+
+125   proton plans) and the most frequently practiced brachytherapy procedures, such as high dose rate
+
+126   (HDR) brachytherapy for gynecological treatments. It is not feasible for this MPPG to cover
+
+127   every procedure or situation, and as such, the medical physicist should collaborate with other
+
+128   members of the department to establish and document appropriate procedures for those falling
+
+129   outside of this work. Working with radiation oncologists, medical physicists are responsible for
+
+130   confirming a patient-specific high-quality plan is developed; however, the quality of a treatment
+
+131   plan is ultimately the radiation oncologist’s responsibility. This MPPG does not expound on the
+
+132   aspect of plan quality metrics.
+
+133
+
+
+134   II. Definition
+135
+
+
+
+
+                                                                                                              6
+136   The following terms will be used throughout this report. Their definitions are generally
+
+137   understood by the radiation oncology community. For others who are not familiar with these
+
+138   terms, the definitions are provided below.
+
+139   QMP: For the purpose of providing radiation oncology therapy clinical professional services, a
+
+140   Qualified Medical Physicist is an individual who is competent to practice independently in the
+
+141   subfield of therapeutic medical physics. The ACR strongly recommends that the individual be
+
+142   board certified. Individual who is not board certified but is licensed by the state, or documented
+
+143   by home institution as passing the institution's competency requirement are also considered as
+
+144   QMP. This definition is more aligned with the ACR definition [7] to be more encompassing
+
+145   than the AAPM definition of QMP [8].
+
+146   AU: Authorized Users are radiation oncologists who are authorized to utilize a high dose rate
+
+147   (HDR) brachytherapy unit and are required by the Nuclear Regulatory Commission (NRC) and
+
+148   agreement states to be present at the treatment console during high dose rate (HDR)
+
+149   brachytherapy treatments.
+
+150   AMP: Authorized Medical Physicists are individuals who are listed on the HDR license of
+
+151   brachytherapy and are required by the NRC and the agreement States to be present at the
+
+152   treatment console during brachytherapy treatments. For States that require a license to practice
+
+153   medical physics, licensed medical physicists are AMP.
+
+154   Prescription: Following the guideline of American Society of Radiation Oncology (ASTRO) on
+
+155   the prescription [9], a Radiation Oncologist should provide the following minimum information
+
+156   in the written prescription for external beam radiation: anatomic site, delivery technique
+
+157   including photon/electron, energy, total dose, number of fractions, and the percent isodose line
+
+
+                                                                                                           7
+158   that is used for normalization to a specific point or to a specific volume. If IGRT is applicable,
+
+159   the prescription should specify the alignment method (e.g. bone or soft tissue) and the frequency
+
+160   of IGRT applications.
+
+161   Written directive: Used for brachytherapy plans, similar to the prescription in EBRT plans
+
+162   defined above, a Radiation Oncologist should provide the following minimum information in the
+
+163   written prescription: anatomic site, isotope, activities, total dose, number of fractions, and the
+
+164   percent isodose line that is used for normalization to a specific point or to a specific volume.
+
+165   Clinical Plan: A radiation oncologist should provide the following in a clinical component of a
+
+166   treatment plan: instructions to the planners on how to create the planning target volume (PTV), if
+
+167   desired, total dose, fractionation scheme, and dose limits to the organs at risk (OARs), if they are
+
+168   different from the institutional established standard tolerances, as indicated in ACR guidelines
+
+169   [10, 11].
+
+170   Chart: All of the documents that accompany a patient-specific radiation treatment, including:
+
+171   treatment prescription, treatment plan (clinical and technical plans), treatment delivery
+
+172   parameters, recorded treatment deliveries, and image guided radiotherapy (IGRT) images.
+
+173   Plan: The technical component of a treatment plan, consists of the total dose, fractionation
+
+174   scheme, energy, treatment method, treatment parameters, and the isodose line that is used for
+
+175   normalization and dose statistics.
+
+176   EBRT: External Beam Radiation Therapy
+
+177   CT: Computed Tomography, which is acquired during simulation and used for treatment
+
+178   planning.
+
+
+
+                                                                                                           8
+179   IGRT: Image-Guided Radiation Therapy, utilizing imaging, including Cone Beam CT (CBCT),
+
+180   kilo-voltage (KV) or mega-voltage (MV) image pairs, for accurate patient alignment during
+
+181   radiation treatments.
+
+182   4D-CT: Multiple sets of CT scans obtained during regular respiration cycles, to obtain image
+
+183   datasets that can be used to determine tumor/normal organ motions, and to create a better
+
+184   representation of the tumor/normal organs by creating an internal target volume (ITV) or an
+
+185   average CT for treatment planning purposes.
+
+186   Initial Plan/Chart Check: The same as the new plan/chart check, applied to any plan that is
+
+187   either a new or has significant dosimetric changes.
+
+188   Weekly Chart Review: The same as the on-treatment chart check.
+
+189   Final Chart Review: The same as the end-of-treatment chart check.
+
+190
+
+191   III. Expectations and Responsibilities
+192
+
+193      1. External Beam Radiation Therapy
+194
+
+195   In compliance with the American College of Radiology (ACR) practice guideline [10], radiation
+
+196   oncologists are responsible for the delineation of the tumor volumes, including the gross tumor
+
+197   volume (GTV) and clinical target volume (CTV). For the internal target volume (ITV) and
+
+198   planning target volume (PTV), radiation oncologists can either create these target volumes, or
+
+199   provide a written instruction to the planners on how to create ITV and PTV volumes from the
+
+200   contoured GTV and CTV volumes. Radiation oncologists are responsible for reviewing and
+
+201   approving contours of all target volumes and OARs. Any OARs that are not clearly discernible
+
+
+                                                                                                        9
+202   on the planning images should be delineated by radiation oncologists. Upon approval of all
+
+203   targeted volumes and OARs, radiation oncologists should provide detailed written instructions to
+
+204   the planner about the desired dose-volume coverage to the targeted volumes and dose limits to
+
+205   clinically relevant OARs (sometimes referred to as dose constraints) [8, 9]. The primary
+
+206   responsibility of a planner is to create a treatment plan in accordance to these dose constraints
+
+207   provided by a radiation oncologist.
+
+208
+
+
+209   In the event that the prescription must be changed during planning, the radiation oncologist
+
+210   should document the change in writing [12]. Some institutions may require a physicist to check
+
+211   the plan quality (which, as mentioned previously, is not in the scope of this MPPG) before the
+
+212   radiation oncologist’s approval. Before plan approval, some institutions may have a physicist
+
+213   check important planning parameters such as the removal of the CT couch (or insertion of a
+
+214   couch model), isocenter coordinates, normalization methods, and calculation point placements,
+
+215   in an attempt to catch errors early in the planning process. Other institutions use a quality
+
+216   checklist for the planner to perform a self-check or use a computer program to perform a plan
+
+217   consistency check to eliminate obvious errors, which will be further discussed in Section V.
+
+218   Ultimately, the treatment plan must be approved by a radiation oncologist.
+
+219
+
+
+220   After plan approval, a planner will assemble all necessary information pertinent to the delivery
+
+221   of the plan, such as the creation of digitally reconstructed radiographs (DRRs), setup beams,
+
+222   source to skin surface distance (SSD) parameters, and the key treatment table parameters, when
+
+223   appropriate. Furthermore, a comprehensive treatment plan report is generated. This plan report
+
+
+                                                                                                          10
+224   is the basis for all levels of plan review by both physicists and therapists. This report can also be
+
+225   used for peer review, billing purposes, and even for patients, who may request this document
+
+226   when transferring care or for re-treatment considerations. The recommended documentation for
+
+227   this plan report is detailed in Section IV. In addition to the plan report, a planner is responsible
+
+228   for transferring the treatment delivery parameters to a Record and Verify (R&V) system, if the
+
+229   R&V system has a separate database from the treatment planning system. The information that is
+
+230   transferred may include additional shifts from the initial isocenter (or reference point) set during
+
+231   simulation, modification of patient external contours (e.g. add bolus on specific region), all
+
+232   essential treatment parameters for each field, and images (DRRs, reference images) associated
+
+233   with the treatment isocenter. This information is essential for radiation therapists to perform
+
+234   accurate treatment delivery for each patient.
+
+235   Therapists are responsible for positioning the patient for treatment, according to the simulation
+
+236   report, setup instruction, and treatment plan document. To ensure precise patient positioning,
+
+237   radiation therapists must confirm all essential information is available, approved, and consistent.
+
+238   Prior to each treatment, therapists must set up patients with patient-specific devices or patient-
+
+239   specific settings of a reusable immobilization device. A recommended checklist for therapists is
+
+240   discussed in Section V. 1c and listed in Table 5.
+
+241
+
+
+242   Plan/chart review consists of reviewing the treatment plan and/or report, relevant documentation
+
+243   such as setup instructions, and daily treatment records to ensure accuracy, consistency, and
+
+244   clarity. Reviews should occur at multiple time points during the treatment process: initially,
+
+245   weekly, and at the conclusion of treatment (final) during the course of treatments.
+
+
+
+                                                                                                             11
+246
+247   (a) Initial Plan/Chart Check
+248
+
+249   A QMP is responsible for an initial plan/chart check. It is a good practice to perform the initial
+
+250   check prior to the first treatment. The essential checklist for the initial check is discussed in
+
+251   Section V.1b and listed in Table 4. The majority of the DICOM data are transferred via network;
+
+252   however, some information may need to be entered manually. During the initial check, it is
+
+253   important to focus on these elements due to the higher risk of human error. Certain treatment
+
+254   parameters may be automatically checked (see Section VI). We recommend all radiation dose
+
+255   relevant components and critical verification imaging parameters in treatment fields be approved
+
+256   and locked after the initial check to avoid any accidental alterations during the treatment course.
+
+257   Treatments should not be allowed to proceed if the approval status is revoked.
+
+258
+
+
+259   If the initial check is completed by a QMP-designated physicist, then a QMP must complete an
+
+260   initial check prior to the delivery of 10% of the prescribed dose or prior to the third treatment,
+
+261   whichever comes first. The QMP-designated physicists must be someone who is a trained
+
+262   medical physics resident, or other physicist who is supervised by a QMP. The QMP must
+
+263   document the competency the designated physicists on plan and chart review of each specific
+
+264   EBRT treatment modality (i.e. conventional EBRT, SBRT, and SRS). For emergency treatments
+
+265   occurring after hours, an on-call QMP may be contacted to review the treatment plan remotely.
+
+266   For institutions that do not have an on-call QMP, a radiation oncologist may conduct the
+
+267   secondary initial check and a QMP shall check the plan on the next business day, or prior to the
+
+268   treatment on the next business day if additional fractions are prescribed.
+
+269
+
+                                                                                                           12
+270   (b) Weekly Chart Review
+271
+
+272   The purpose of weekly chart review is to conduct a systematic review of recorded treatment
+
+273   delivery data, including any overrides, incomplete treatments, any unusual isocenter shifts after
+
+274   the initial image verification, the status of verification image approval, and documentation of
+
+275   SSDs. If daily image guidance is indicated in the prescription, weekly chart reviews should
+
+276   check whether the frequency of image guidance is followed and that the shifts after IGRT are
+
+277   within a reasonable range. A specific weekly chart checklist is discussed in Section V. 1d and
+
+278   listed in Table 8. Any dosimetric changes in a treatment plan should be considered as a new
+
+279   plan, and a new report of the modified plan should be created. For example, a change in daily
+
+280   fraction dose requires a new report to document on the changes of monitor units (MUs). The
+
+281   modified plan should undergo an initial plan/chart check. Weekly chart reviews should be
+
+282   completed within a window of every five treatment fractions. If a treatment course is five
+
+283   fractions or less, the institution should consider developing a process to ensure at least one
+
+284   weekly chart review is conducted during the course of treatment, ideally near the beginning of
+
+285   the course. For single fraction treatment, a weekly chart check can be omitted, but the chart
+
+286   should be reviewed by a QMP within one business day of treatment completion.
+
+287
+
+
+288   Weekly chart reviews should be completed by a QMP or their trained designees, which may
+
+289   include dosimetrists, medical physics residents, and other physicists. When a designee completes
+
+290   the weekly chart review, the QMP must co-sign the document, indicating that the designees are
+
+291   under the supervision of the QMP. It is recommended, when possible, that QMPs and/or their
+
+292   designees conduct the weekly chart reviews on an alternating basis, so that the same person does
+
+293   not check the chart for the entire treatment course.
+                                                                                                        13
+294
+295   (c) Final Chart Review
+296
+
+
+297   The purpose of final chart review is to review all treatment delivery parameters and documents
+
+298   to ensure that the treatment prescriptions have been fulfilled accurately and all pertinent
+
+299   technical documents are signed and approved. The final chart review should be completed by a
+
+300   QMP within five business days of the patient’s last delivered fraction [7]. For single fraction
+
+301   treatment course, we recommend completing the final chart review on the same day of the
+
+302   treatment or no later than the next business day, if the weekly chart review is omitted.
+
+
+303
+304   2. Brachytherapy - HDR
+305
+
+
+306   There is a broad scope of procedures encompassed within the brachytherapy realm. As an
+
+307   example, this MPPG examines a common high dose rate (HDR) brachytherapy for gynecology
+
+308   cancer. The plan/chart check procedure developed for this procedure may be extended to other
+
+309   more complicated brachytherapy treatments or procedures.
+
+310
+
+
+311   The initial check for HDR should be performed by an AMP. In situations where an AMP is in a
+
+312   solo practice, an AMP designated team member (either a therapist, a dosimetrit, or an AU) who
+
+313   is trained for the HDR procedure may complete the initial plan/chart check if the HDR plan was
+
+314   created by the solo AMP.
+
+315
+
+
+
+
+                                                                                                        14
+316   This MPPG suggests an essential brachytherapy checklist for a new plan/chart checks in Section
+
+317   V.2. In practice, some institutions generate a new plan for every fraction. The new plan is
+
+318   checked again, which can be considered as the weekly chart review. In institutions where the
+
+319   same brachytherapy plan is delivered over multiple fractions, the AMP should complete a
+
+320   weekly chart review within a window of every 5 fractions, similar to those conducted for EBRT.
+
+321   If an institution decides not complete weekly chart reviews on a brachytherapy procedure
+
+322   because a new plan is created each fraction, a QMP should review a treatment procedure
+
+323   document after each treatment to ensure the treatment record, pre- and post-radiation surveys,
+
+324   and documentation of the presence of appropriate clinical personnel (an AU) is completed.
+
+325
+
+
+326   The final chart review should be performed at the end of the treatment course. The guidelines
+
+327   are the same as for EBRT. The AMP should check the accuracy of all treatment delivery
+
+328   parameters and documents to ensure the AUs’ directives have been fulfilled accurately and that
+
+329   all pertinent technical documents are signed and approved. It is recommended the final chart
+
+330   review be completed by an AMP at the day of final treatment, or no later than the next business
+
+331   day.
+
+332
+
+
+333   IV. Essential Content of a Treatment Plan Document
+334
+
+335   A treatment plan report should be generated after the radiation oncologist (or AMP)’s review and
+
+336   approval of the treatment plan. This report allows careful preservation of the treatment plan
+
+337   stored in a central location, either in the hospital EMR system or radiation oncology specific
+
+338   medical record system (Record and Verify System) along with other treatment-related
+
+                                                                                                       15
+339   documents. For purpose of patient care, the treatment plan report can be easily readable by all
+
+340   caretakers as well as the patients themselves, who are not familiar with (or do not have access to)
+
+341   the treatment planning system or a DICOM program.
+
+342
+
+
+343      1. External Beam Plan Document
+344
+
+
+345   The treatment plan report is often in a file format, such as PDF, where modification is restricted.
+
+346   A treatment plan report should display information in a consistent manner from patient to patient
+
+347   by standardizing the components, order, and the specific displays (i.e. isodose lines appearing at
+
+348   standard levels and colors). For the prescription, it is recommended to include the anatomic site
+
+349   name and laterality, total dose, number of fraction, and the percent isodose line that is used for
+
+350   normalizing to a specific point or to a specific volume (see Table 3) according to the prescription
+
+351   guideline from American Society of Radiation Oncology (ASTRO) [9]. Nomenclature such as
+
+352   beam names should be standardized and designed to reduce confusion and improve safety. For
+
+353   organ names and tumor volume names, it is recommended to use the established nomenclature
+
+354   standard described by TG 263 [13]. We recommend including at least one isodose image for
+
+355   each of the three orthogonal planes at isocenter or in the middle of the target(s) with isodose
+
+356   lines shown in absolute dose and including the prescription dose level(s).
+
+357
+
+
+358   The second column in Table 1 shows the various components of a treatment plan report for
+
+359   external beam and brachytherapy plans. Optional elements should be considered depending on
+
+360   specific institutional workflow, clinical practice, or billing requirements. The components of the
+
+
+                                                                                                           16
+361   treatment plan report should be reconsidered when implementing new technology, e.g. proton
+
+362   therapy. A treatment plan report must demonstrate that the prescription is being fulfilled. The
+
+363   documentation should clearly convey how the plan fulfills the specific radiation oncologist
+
+364   intent. Setup information including documentation of immobilization devices is important for
+
+365   reproducible treatments. If setup information is not documented elsewhere, it should be included
+
+366   in the treatment plan report.
+
+
+367      2. Brachytherapy (HDR) Plan Document
+368
+
+
+369   A brachytherapy (HDR) plan document should follow the same order as the EBRT plan
+
+370   document. The Third column in Table 1 shows the various components of a HDR plan report.
+
+371   Optional elements should be considered depending on specific institutional workflow, clinical
+
+372   practice, or billing requirements. The major differences in documents between EBRT and
+
+373   brachytherapy plans are on the sections of plan summary and beam eye views. For
+
+374   brachytherapy plans, it is of utmost importance to examine the reconstruction view of each
+
+375   catheter and/or source position(s), including orientation (for example, tip verses catheter end). It
+
+376   should be noted that the verification of the reconstruction may not be fully possible with a
+
+377   printout alone but likely requires a review with the TPS.
+
+378
+
+
+379   V: Recommended Checklist items During Plan and Chart Review
+380
+
+381      1. External Beam Plans and Charts
+382
+
+383     a. Checklist for Planners
+384
+
+
+                                                                                                        17
+385   As mentioned in Section III, the primary responsibility of a planner is to create a treatment
+
+386   plan in accordance with the treatment prescription and other written instructions provided by
+
+387   a radiation oncologist. In addition, a planner must assemble necessary information for the
+
+388   therapists to deliver the plan, including isocenter shifts, IGRT reference images, and cross-
+
+389   verification parameters (e.g. SSDs, table positions, etc.). To assist a planner, it is
+
+390   recommended that a planer conducts a self-check during planning or after the plan is
+
+391   completed. The self-check items are listed in Table 2. Once the plan is approved by a
+
+392   radiation oncologist, it is recommended that a planner creates a plan report following a
+
+393   standard format established by each local institution. The recommended components of a
+
+394   treatment plan report are listed in Table 1. The final section in Table 2 lists checklist items
+
+395   that are essential for therapists to deliver the plan. The optional items listed in Table 2 can be
+
+396   added to the planner’s checklist, depending on the preference of the local institution and
+
+397   practice.
+
+398
+
+
+399   b. Initial Plan/Chart Checklist for Physicists
+400
+
+401   A treatment prescription (and/or written directive) from a radiation oncologist is the
+
+402   foundation for any new treatment, and thus it is recommended that the treatment prescription
+
+403   be standardized, clear and concise, and follows the prescription guideline from American
+
+404   Society of Radiation Oncology (ASTRO) [7]. The essential items to be included in the
+
+405   prescription are listed in Table 3. During new plan/chart review, a QMP should ensure that
+
+406   these items are documented in the prescription and are consistent with the corresponding
+
+407   treatment plan report. Upon reviewing the plan report, it is recommended that a QMP
+
+408   follows checklist in Table 4. In the treatment plan, the isocenter or the initial reference point
+                                                                                                        18
+409   that was marked during CT simulation must agree with the skin marks on the patient since
+
+410   this is the starting point of treatment plan and delivery including any additional shifts
+
+411   required during the planning process. A recent publication [5] from Radiation Oncology
+
+412   Incident Learning System (RO-ILS) reported that a potential systematic error in 15% of
+
+413   reported events was a wrong isocenter, which could have originated from the initial isocenter
+
+414   marked on the patient skin mismatching the isocenter that was sent for treatment planning.
+
+415   Therefore, this MPPG recommended that a photo documenting the initial alignment point
+
+416   marked on the patient skin be added in the R&V system, which can assist therapists to
+
+417   identify the alignment point ( sometimes, it referred to as the laser alignment point).
+
+418   Furthermore, this MPPG also recommend documenting the agreement between the
+
+419   coordinates or location of the initial isocenter sent to the treatment planning system and the
+
+420   initial alignment on the patient skin markers. For example, for institutions that implement the
+
+421   virtual simulation (identify the iso-center after completion of planning CT acquisition) one
+
+422   can acquire an additional single slice axial CT scan after acquisition of the planning CT. This
+
+423   single slice image should contain three radio-opaque markers that are placed on the skin
+
+424   where three laser points intersected. A planner should then verify the initial isocenter (or
+
+425   reference point) matched with points marked on the patient skin.
+
+426
+
+
+427   Optional items included in Table 4 can be added to the checklist depending on the specific
+
+428   practice of each institution. A QMP should ensure that essential information from the
+
+429   treatment plan report are correctly transferred into the R&V system and approved by
+
+430   assigned responsible teams. The last section in Table 4 lists the essential checklist items. The
+
+
+
+
+                                                                                                       19
+431   optional items in this section of Table 4 can be added to the checklist depending on the
+
+432   specific practice of each institution.
+
+433
+
+
+434   c. Initial Plan/Chart Checklist for Therapists
+435
+
+436   Prior to any new treatment, therapists should conduct a new plan/chart review to confirm all
+
+437   essential information is available, approved, and consistent. The importance of therapists
+
+438   conducting an initial check is well demonstrated [14]. A recommended checklist for
+
+439   therapists is listed in Table 5. Optional items in Table 5 can be added to the checklist
+
+440   depending on the specific practice of each institution.
+
+441
+
+
+442   d. Weekly Chart Review Checklist
+443
+
+444   A recommended checklist for weekly chart check is listed in Table 8. The optional items
+
+445   listed in Table 8 can be added to the checklist depending on the specific practice of each
+
+446   institution. After completion of the weekly chart review, we recommend that a formal report
+
+447   to be generated to document the date of the weekly chart review, the treatment site,
+
+448   accumulated dose, number of fractions delivered to date, and other checklist items listed in
+
+449   Table 8. For a new plan or a modified plan that has dosimetric impact, the first on-treatment
+
+450   chart check should also include a quick check on plan quality, which serves as another level
+
+451   of assessment to ensure that there are no gross errors in the plan.
+
+452
+
+
+453   e. Final Chart Review Checklist
+454
+
+                                                                                                     20
+455   A QMP should conduct a final chart checks to ensure the treatment prescriptions and/or
+
+456   written directive have been fulfilled accurately and all pertinent documents are signed and
+
+457   approved. A recommended checklist for final review is listed in Table 9. It is recommended
+
+458   to generate a formal document to report the date of the final chart check, the treatment site,
+
+459   total dose, and total number of fractions delivered in accordance to the prescription. This
+
+460   recommendation is compliant with ACR practice guideline[7]. If the prescribed treatment
+
+461   course was not completed, a comment should be added in the existing prescription, or a
+
+462   separate note or document. This document and the existing prescription should be stated on
+
+463   the final dictation by the radiation oncologist.
+
+464
+
+465   2. Brachytherapy Plans/ Charts
+466
+
+467
+
+468   a. Initial Plan/Chart Checklist for Physicists
+
+469       As discussed in Section III 2, during HDR planning, the accuracy of image co-
+
+470       registration, applicator specification and placement, catheter reconstruction, and catheter
+
+471       channel parameters (such as indexing/ length and the appropriate identification of the first
+
+472       dwell positions) are important parameters to verify before transferring the treatment data
+
+473       to the treatment console. We recommend each new plan be checked by an AMP listed on
+
+474       the HDR license, using the checklist provided in Table 6.
+
+475
+
+
+476   b. Initial Plan/Chart Checklist for Therapists
+
+477       Prior to each treatment, we recommend that therapists (or an AMP if a therapist is not
+
+478       involved in the procedure) conduct a pre-treatment check following Table 7. The
+
+                                                                                                       21
+479          checklist can serve as a part of the treatment procedure document and be signed by an
+
+480          AMP and an authorized radiation oncologist, who are present during the treatment.
+
+481
+
+
+482      c. Weekly Chart Review Checklist
+
+483          Weekly chart review for brachytherapy plans is only required when the same
+
+484          brachytherapy plan is delivered over multiple fractions. The applicable items are listed in
+
+485          the second column in Table 8.
+
+486      d. Final Chart Review Checklist
+
+487          Similar to external beam, an AMP should conduct the final chart reviews to ensure the
+
+488          treatment prescriptions and/or written directive have been fulfilled accurately and all
+
+489          pertinent documents are signed and approved. A recommended checklist for final review
+
+490          for brachytherapy plans is the same as the EBRT plans as listed in Table 9. If the
+
+491          prescribed treatment course was not completed, a comment (or a note) should be added in
+
+492          the prescription and approved by the radiation oncologist.
+
+493
+
+
+494   VI: Computer-aided Plan/Check and Automation
+495
+
+496          Some vendors and individual institutions have developed computer programs to
+
+497   automatically check various parts of a patient plan or chart [15-20]. These programs are
+
+498   effective in checking simple logistic requirements and numerical consistency. For example, a
+
+499   computer program can check whether prescriptions or portal images are approved by radiation
+
+500   oncologists[21], and whether radiation treatment parameters are in agreement with the planned
+
+501   parameters [20] . A comprehensive literature review about computer-aided plan/chart check can
+
+
+                                                                                                       22
+502   be found in TG275 [5]. Due to significant variations in workflows among different clinical
+
+503   practices, these programs cannot completely replace the function of a physicist in the process of
+
+504   the plan and chart review. Computer programs, however, can assist in certain areas of plan/chart
+
+505   review. For example, vendor-provided programs [22, 23] can assist with checking whether plan
+
+506   DVHs meet clinical requirements, but these programs cannot substitute careful examinations of
+
+507   three dimensional dose distributions on planning images.
+
+508   With automation, plan document components recommended in Table 1 can be easily
+
+509   standardized and implemented. Most items listed in Table 2 can be checked automatically to
+
+510   avoid errors in the upstream during treatment planning, but items such as whether bolus is
+
+511   applied appropriately and whether contours of normal/critical structures are completed and
+
+512   accurate will still rely on human judgment and experiences. Some items in Table 3 can be
+
+513   extracted from treatment plan documents, but items such as CBCT frequency, IGRT alignment
+
+514   structures, and special motion management techniques vary from patient to patient, requiring
+
+515   human judgment and discretion. While a majority of the items listed in Table 4 can be checked
+
+516   by computer programs, items such as whether the isocenter of a plan (if no isocenter shift)
+
+517   matches with isocenter markers on the patient’s skin, beam clearance, and anatomy structure
+
+518   density override, still need human attention. Computer-aided programs can provide an alert list
+
+519   for initial and weekly plan/chart review, calling for special attention to certain missing or
+
+520   mismatched items, therefore can help streamline the whole process.
+
+521   Before implementing computer-aided check programs, it is the responsibility of a QMP to
+
+522   rigorously validate them to avoid potential systematic errors. With increasing use of artificial
+
+523   intelligence and sophisticated statistical machine learning tools in the medical physics field,
+
+524   more commercial computer-aided plan/chart review programs are expected to be available
+
+                                                                                                         23
+525   clinically in the near future. The combination of computer-aided and human plan/chart review
+
+526   will significantly improve the effectiveness of this vital process while improving safety and
+
+527   quality of our patient care.
+
+528
+
+
+529   VII: Discussion
+530
+
+531   The primary goal of this MPPG is to provide essential checklist items for medical physicists who
+
+532   conduct plan/chart reviews according to the minimum practice standards. The plan/chart review
+
+533   process, particularly the initial plan review process, is critical to prevent errors and to ensure
+
+534   smooth patient care. Thus this process should have multiple layers and take collective efforts of
+
+535   the entire department, in addition to the physics check/review. This MPPG, therefore, also
+
+536   recommends therapists conduct the initial plan/chart check prior to any new treatment. The
+
+537   initial plan/chart checklist for the therapists overlapped with the checklist of initial plan/chart
+
+538   check for the physicists on the important items, such as the prescriptions and location of the iso-
+
+539   center. In addition to act as an additional layer of the safety check, another purpose of checklist
+
+540   for therapists is to ensure the presence of important documents and the associated authorizations
+
+541   and approval, according to the rules of ACR and other regulatory agencies, thus preventing
+
+542   potential interruptions of patient care. This MPPG invited American Society of Radiologic
+
+543   Technologists to review the report and obtained the endorsement from the society.
+
+544
+
+
+545   To catch errors upstream, this MPPG recommends a self-consistent checklist for planners and the
+
+546   use of standard documentation of a plan. Since the planners are often dosimetrists, this MPPG
+
+547   also reach out to the American Association of Medical Dosimetrists (AAMD) for their input and
+
+                                                                                                            24
+548   endorsement of self-consistent checklist and standard documentation. There are some debates
+
+549   about whether a standard documentation is necessary if everyone has an access to the treatment
+
+550   planning system to review the plan comprehensively. Given the complexity of a treatment
+
+551   planning system, a planner typically accesses numerous treatment planning parameters through
+
+552   many sub-windows and panels, therefore, we believe that not everyone has the skill and
+
+553   confidence level as a planner in the use of a treatment planning system. A standard plan
+
+554   document displays all key information of a plan in a consistent order and straightforward format,
+
+555   facilitating those who are not familiar with the treatment planning system to grasp the content of
+
+556   a plan, including patients themselves.
+
+557
+
+
+558   From the perspective of minimum practice standards, this MPPG is different from TG 275 [5]
+
+559   although the underlining principles are the same. Within this task group, we included two
+
+560   members from TG 275, who provided a valuable link between TG 275 and this MPPG. Based
+
+561   on TG 275 and practice experiences of the task group members, which included academic and
+
+562   community practices using different Record & Verify systems and treatment planning systems,
+
+563   the recommended initial plan/chart checklist for physicists has about 50% - accordance of the
+
+564   example checklist (Table 1c from TG 275). Some items in the example checklist of TG 275,
+
+565   such as physician directives for simulation procedures, treatment prescriptions with respect to the
+
+566   standard of care/clinical guideline, are not included in the recommended checklist of this MPPG
+
+567   because we believe these items are beyond the training and responsibility of a medical physicist.
+
+568   This view is supported by ACR guideline for 3D external beam radiation planning and conformal
+
+569   therapy[10]. Furthermore, the accuracy of contours of tumor volumes and normal tissue volumes
+
+570   is predominant in 3D and IMRT planning and is the responsibilities of radiation oncologists per
+
+                                                                                                      25
+571   ACR guideline[10]. To improve patient care workflow, it is a good practice for each planner to
+
+572   conduct a sanity check of all contours to avoid replanning. This sanity check (included in Table 2
+
+573   of planner checklist) is to detect gross errors such as skip slides, miss labels of contours, an
+
+574   illogical relationship among GTV, CTV, ITV and PTV, stray voxels, to name a few. According
+
+575   to the guideline of ATSRO [9], this MPPG recommends each local institution establishes its own
+
+576   standard format of a treatment prescription for both EBRT and brachytherapy. Medical
+
+577   physicists can provide supports to radiation oncologists to adhere to the ASTRO guideline. The
+
+578   accuracy and completeness of a prescription are again beyond the clinical training and
+
+579   responsibility of a medical physicist. Some items in the checklist of this MPPG are not in the
+
+580   checklist of TG 275, including items such as the patient name and medical record numbers, and
+
+581   item such as all beams associated with the same iso-center ( for single iso-center plans). The
+
+582   weekly and final chart review checklists from this MPPG are mostly in agreement of
+
+583   recommendation of TG 275. For institutions that desire to conduct more comprehensive and
+
+584   thorough plan/chart review and have the required resources, they are encouraged to develop their
+
+585   own checklists that combines checklists from TG 275 and this MPPG and more.
+
+586   The scope of this MPPG is limited to most frequently used external beam radiotherapy (C-arm
+
+587   linear accelerators) and most frequently used brachytherapy (for gynecological treatments). The
+
+588   recommended checklists can be extended to other external beam modalities such as proton beam
+
+589   radiotherapy, Cyberknife, and Tomotherapy while taking account for unique applications of
+
+590   these modalities.
+
+
+591   VIII: Summary
+592
+
+
+
+
+                                                                                                         26
+593   This MPPG provides lists of the essential checklist items, according to the minimum practice
+
+594   standards, for medical physicists, dosimetrists, and therapists to follow when conducting
+
+595   plan/chart reviews. The report also provides essential components to include in a treatment plan
+
+596   report, provides minimum personnel qualifications for those completing plan/chart review, and
+
+597   provides appropriate timelines for when to complete plan / chart reviews.
+
+
+598
+
+
+
+
+                                                                                                      27
+599   References:
+
+600   1.      Kutcher, G.J., et al., Comprehensive QA for radiation oncology: report of AAPM Radiation
+601           Therapy Committee Task Group 40. Med Phys, 1994. 21(4): p. 581-618.
+602   2.      Ding, G.X., et al., Image guidance doses delivered during radiotherapy: Quantification,
+603           management, and reduction: Report of the AAPM Therapy Physics Committee Task Group 180.
+604           Med Phys, 2018. 45(5): p. e84-e99.
+605   3.      Klein, E.E., et al., Task Group 142 report: quality assurance of medical accelerators. Med Phys,
+606           2009. 36(9): p. 4197-212.
+607   4.      Smith, K., et al., AAPM Medical Physics Practice Guideline 8.a.: Linear accelerator performance
+608           tests. J Appl Clin Med Phys, 2017. 18(4): p. 23-39.
+609   5.      TG275, 2019.
+610   6.      Hoopes, D.J., et al., RO-ILS: Radiation Oncology Incident Learning System: A report from the first
+611           year of experience. Pract Radiat Oncol, 2015. 5(5): p. 312-318.
+612   7.      American College of Radiology, ACR–AAPM TECHNICAL STANDARD FOR THE PERFORMANCE OF
+613           RADIATION ONCOLOGY PHYSICS FOR EXTERNAL BEAM THERAPY. https://www.acr.org/-
+614           /media/ACR/Files/Practice-Parameters/Ext-Beam-TS.pdf, accessed on Oct. 11, 2018, 2015.
+615   8.      American Association of Physicists in Medicine. Professional Policy PP 1-J.
+616           https://www.aapm.org/org/policies/details.asp?type=PP&id=449,, Accessed Oct 10, 2018.
+617   9.      Evans, S.B., et al., Standardizing dose prescriptions: An ASTRO white paper. Pract Radiat Oncol,
+618           2016. 6(6): p. e369-e381.
+619   10.     American College of Radiology, ACR PRACTICE PARAMETER FOR 3D EXTERNAL BEAM RADIATION
+620   PLANNING AND CONFORMAL THERAPY; Available at: https://www.acr.org/-/media/ACR/Files/Practice-
+621         Parameters/3D-Conformal.pdf. 2016.
+622   11.   Radiology, A.C.o., ACR practice parameter for intensity modulated radiation therapy (IMRT).
+623   2016; Available at: https://www.acr.org/-/media/ACR/Files/Practice-Parameters/IMRT-RO.pdf. . 2016.
+624   12.    ROILS, Quarterly Report: Patient Saefty Work Product.
+625          https://www.astro.org/ASTRO/media/ASTRO/Patient%20Care%20and%20Research/PDFs/ROILS
+626          -Q3_2017_Report.pdf, Q3, 2017.
+627   13.    Mayo, C.S., et al., American Association of Physicists in Medicine Task Group 263: Standardizing
+628          Nomenclatures in Radiation Oncology. Int J Radiat Oncol Biol Phys, 2018. 100(4): p. 1057-1066.
+629   14.    Younge, K.C., et al., Improving patient safety and workflow efficiency with standardized
+630          pretreatment radiation therapist chart reviews. Pract Radiat Oncol, 2017. 7(5): p. 339-345.
+631   15.    Halabi, T. and H.M. Lu, Automating checks of plan check automation. J Appl Clin Med Phys, 2014.
+632          15(4): p. 4889.
+633   16.    Halabi, T., et al., Automated survey of 8000 plan checks at eight facilities. Med Phys, 2016. 43(9):
+634          p. 4966.
+635   17.    Li, H.H., et al., Software tool for physics chart checks. Pract Radiat Oncol, 2014. 4(6): p. e217-25.
+636   18.    Siochi, R.A., et al., Radiation therapy plan checks in a paperless clinic. J Appl Clin Med Phys,
+637          2009. 10(1): p. 2905.
+638   19.    Xia, J., C. Mart, and J. Bayouth, A computer aided treatment event recognition system in
+639          radiation therapy. Med Phys, 2014. 41(1): p. 011713.
+640   20.    Yang, D., et al., Technical note: electronic chart checks in a paperless radiation therapy clinic.
+641          Med Phys, 2012. 39(8): p. 4726-32.
+
+
+
+
+                                                                                                               28
+642   21.   Yu, N., et al., Data-driven management using quantitative metric and automatic auditing
+643         program (QMAP) improves consistency of radiation oncology processes. Pract Radiat Oncol,
+644         2017. 7(3): p. e215-e222.
+645   22.   Ahmed, S., et al., A method for a priori estimation of best feasible DVH for organs-at-risk:
+646         Validation for head and neck VMAT planning. Med Phys, 2017. 44(10): p. 5486-5497.
+647   23.   Fontenot, J.D., Evaluation of a novel secondary check tool for intensity-modulated radiotherapy
+648         treatment planning. J Appl Clin Med Phys, 2014. 15(5): p. 4990.
+
+649
+
+
+
+
+                                                                                                          29
+

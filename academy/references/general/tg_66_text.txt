@@ -1,0 +1,3248 @@
+Quality assurance for computed-tomography simulators and the computedtomography-simulation process: Report of the AAPM Radiation Therapy
+Committee Task Group No. 66
+Sasa Mutica)
+Department of Radiation Oncology, Washington University School of Medicine, St. Louis, Missouri 63110
+
+Jatinder R. Palta
+Department of Radiation Oncology, University of Florida, Gainesville, Florida 32610
+
+Elizabeth K. Butker
+Department of Radiation Oncology, Emory University School of Medicine, Atlanta, Georgia
+
+Indra J. Das
+Department of Radiation Oncology, University of Pennsylvania, Philadelphia, Pennsylvania 19104
+
+M. Saiful Huq
+Department of Radiation Oncology, Thomas Jefferson University Hospital, Philadelphia, Pennsylvania 19107
+
+Leh-Nien Dick Loo
+Department of Medical Physics, Kaiser Permanente, Los Angeles, California 90039
+
+Bill J. Salter
+Department of Radiation Oncology, University of Texas Health Sciences Center, San Antonio, Texas 78229
+
+Cynthia H. McColloughb)
+Department of Radiology, Mayo Clinic, Rochester, Minnesota 55905
+
+Jacob Van Dykb)
+Department of Clinical Physics, London Regional Cancer Center, London, Ontario N6A 4L6, Canada
+
+共Received 21 April 2003; revised 1 July 2003; accepted for publication 25 July 2003; published 24
+September 2003兲
+This document presents recommendations of the American Association of Physicists in Medicine
+共AAPM兲 for quality assurance of computed-tomography- 共CT兲 simulators and CT-simulation process. This report was prepared by Task Group No. 66 of the AAPM Radiation Therapy Committee.
+It was approved by the Radiation Therapy Committee and by the AAPM Science Council. © 2003
+American Association of Physicists in Medicine. 关DOI: 10.1118/1.1609271兴
+PREFACE
+The purpose of this document is to provide the medical
+physicist with a framework and guidance for establishment
+of a comprehensive quality assurance 共QA兲 program for
+computed-tomography- 共CT兲 scanners used for CTsimulation, CT-simulation software, and the CT-simulation
+process. The CT-simulator is a CT scanner equipped with a
+flat tabletop and, preferably, external patient positioning lasers. The scanner is accompanied with specialized software
+which allows treatment planning on volumetric patient CT
+scans in a manner consistent with conventional radiation
+therapy simulators.1–12 The CT scanner used in the CTsimulation process can be located in the radiation oncology
+department or in the diagnostic radiology department. Depending on the CT-scanner location and primary use, acceptance testing, commissioning, and QA can be the responsibility of a therapy medical physicist, diagnostic physicist, or
+a joint responsibility of diagnostic and therapy physicists.
+The commissioning and periodic QA of the accompanying
+software and the QA of the CT-simulation process is always
+the responsibility of the therapy physicist. This report does
+not address each of the two scenarios individually 共scanner
+located in diagnostic radiology or radiation oncology兲, but
+2762
+
+Med. Phys. 30 „10…, October 2003
+
+rather establishes a set of QA procedures that are applicable
+to scanners used for CT-simulation regardless of their location and primary purpose. It is the responsibility of the respective diagnostic and therapy physicists to determine how
+the QA program is implemented and how the responsibilities
+are assigned. The primary responsibility for implementation
+of recommendations for QA of scanners used for CTsimulation in this document rests with the radiation oncology
+Quality Assurance Committee 共QAC兲 as specified by the
+AAPM Task Group 40.13 Further discussion of QA program
+responsibilities is provided in Appendix A. If the scanner is
+located in the radiation oncology department, a therapy
+medical physicist can perform QA of the CT-scanner and of
+the simulation process independently. It is recommended that
+the therapy physicist solicit help from a diagnostic physicist
+for the establishment of a QA program and scanner commissioning if he or she has limited CT experience. Likewise, if
+the CT-scanner is located in the diagnostic radiology department, the primary responsibility for the scanner QA rests
+with the diagnostic physicist. It is then the responsibility of
+the radiation oncology physicist to assure that the recommendations of this task group are implemented by either diagnostic radiology or the radiation oncology physicist or a
+designate.
+
+0094-2405Õ2003Õ30„10…Õ2762Õ31Õ$20.00
+
+© 2003 Am. Assoc. Phys. Med.
+
+2762
+
+2763
+
+Mutic et al.: AAPM–TG66 Report
+
+2763
+
+FIG. 1. Block diagram showing relevant components of CT-simulation and
+treatment planning systems.
+
+Figure 1 shows the place of CT-simulation in the treatment planning process. CT-simulation includes the CTscanner and components of treatment planning system and
+provides input for dose calculation. Therefore, the subject
+matter addressed in this document overlaps with the AAPM
+Diagnostic X-Ray Imaging Committee Task Group 214 report
+共Specification and acceptance testing of computed tomography scanners; AAPM Report No. 39兲 and the report of the
+AAPM Radiation Therapy Committee Task Group 5315
+共Quality assurance for clinical radiotherapy treatment planning兲. The aim of the current task group was not to duplicate
+material presented in the other two reports, but to develop a
+set of QA guidelines specific to CT-simulation, and to
+complement the recommendations presented in the other two
+reports. This document was prepared with the intent that it
+would be used in conjunction with the other two reports.
+When a topic is discussed by the current task group, which is
+also addressed in Report No. 39 or the TG53 report, this
+document provides a description of the QA requirements and
+the reader is then referred to the report in which this topic
+was discussed in greater detail. In situations when the other
+two reports do not address a topic regarding QA requirements for CT-simulation, this document discusses these requirements. The current report was primarily intended for
+radiation oncology physicists who may have limited CT experience; therefore, the description of QA procedures for CTscanners is substantially more extensive than our discussion
+of CT-simulation software QA. It is expected that the therapy
+physicist is familiar with the TG53 QA recommendations
+and procedures for testing of treatment planning software.
+Most of the QA procedures presented in this document have
+already been described in literature. Whenever possible we
+refer the reader to appropriate references. A summary of recommended QA tests, frequencies, and tolerances is presented
+
+in Tables I, II, and III. These tables are intended as an overview of topics included in this document and respective recommendations.
+This report also does not address QA requirements for the
+scanner nor for software vendors. The QA tasks associated
+with the scanner design, simulation software engineering,
+testing, validation, upgrades, preventive maintenance, or
+other tasks performed by vendors are numerous and differ
+significantly among each other and are beyond the scope of
+this task group. The report also does not address CTscanning and related QA procedures for special procedures in
+radiation oncology like stereotactic radiosurgery or imageguided brachytherapy. The procedures outlined in the report
+are designed primarily for purposes of external beam radiotherapy.
+The report refers to several commercially available devices. These descriptions are intended to be examples of
+available equipment. This should not be interpreted as our
+recommendation or endorsement of these products. It is the
+responsibility of the medical institution and medical physicist to research the market when purchasing equipment.
+Terminology used in this report is modeled after that used
+in other AAPM task group reports:
+• Shall or must are used when the activity is required by
+various regulatory agencies,
+• Recommend is used when the task group expects that
+the procedure should normally be followed as described. However, there may be instances where other
+issues, techniques or priorities could force the modification of the task group recommendation.
+• Should is used when it is expected that local analysis of
+the situation may change the way a particular activity is
+performed.
+The tests described in this document address issues of
+patient, staff, public, and medical center safety. The tests are
+designed to assure proper equipment and program operation,
+which is directly related to the quality of patient care. Medical physicists and the medical center should make every effort to implement procedures outlined in this document. We
+have tried to design a CT-simulation QA program that is
+economically feasible and practical and one that should not
+be unreasonably burdensome to implement. The QA program
+should improve quality and efficiency of the treatment plan-
+
+TABLE I. Test specifications for radiation and patient safety.
+Performance
+parameter
+
+Test objective
+
+Frequency
+
+Tolerance limits
+
+Shielding survey
+
+To verify exposure
+levels around the
+CT-scanner room
+
+Initially
+
+NCRP
+recommendations
+or applicable
+regulatory limits
+
+Patient dose from
+CT-scan, CTDI
+
+To verify safe dose
+delivered from the
+scanner
+
+Annually or after
+major CT-scanner
+component
+replacement
+
+⫾20% of
+manufacturer
+specifications
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2764
+
+Mutic et al.: AAPM–TG66 Report
+
+ning process and avoid mistakes costly to both patients and
+the medical institution.
+TABLE OF CONTENTS
+I. OVERVIEW. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2764
+A. CT-simulation process. . . . . . . . . . . . . . . . . . . . . 2764
+1. CT-scan, patient positioning and
+immobilization. . . . . . . . . . . . . . . . . . . . . . . . 2766
+2. Treatment planning and CT-simulation. . . . . 2766
+3. Treatment setup. . . . . . . . . . . . . . . . . . . . . . . 2767
+B. Quality assurance program goals. . . . . . . . . . . . . 2767
+1. Safety of patients, public, and hospital
+staff. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2767
+2. Accurate target localization and treatment
+simulation. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2768
+II. FUNCTIONAL PERFORMANCE
+CHARACTERISTICS OF CT EQUIPMENT. . . . . 2768
+A. Overview of a CT-scanner and a virtual
+simulation system. . . . . . . . . . . . . . . . . . . . . . . . . 2768
+1. X-ray tube. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2768
+2. Collimator and attenuator. . . . . . . . . . . . . . . . 2768
+3. Patient support table. . . . . . . . . . . . . . . . . . . . 2768
+4. Computer and workstation. . . . . . . . . . . . . . . 2769
+5. External patient marking /positioning
+lasers. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2769
+B. Conventional and spiral CT. . . . . . . . . . . . . . . . . 2769
+C. Multislice scanners. . . . . . . . . . . . . . . . . . . . . . . . 2769
+D. Large bore scanners. . . . . . . . . . . . . . . . . . . . . . . 2769
+E. CT performance parameters. . . . . . . . . . . . . . . . . 2770
+III. QUALITY ASSURANCE FOR CT-SCANNERS
+USED FOR CT-SIMULATION AND ITS
+FREQUENCY. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2770
+A. CT dosimetry. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2770
+B. Radiation/patient safety. . . . . . . . . . . . . . . . . . . . 2770
+C. Performance of electromechanical
+components. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2770
+1. Patient marking /positioning lasers. . . . . . . . . 2770
+2. Couch and tabletop. . . . . . . . . . . . . . . . . . . . . 2771
+3. Gantry tilt. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2772
+4. Scan localization from scout image
+共topogram, pilot image兲. . . . . . . . . . . . . . . . . 2772
+5. Collimation. . . . . . . . . . . . . . . . . . . . . . . . . . . 2772
+6. X-ray generator. . . . . . . . . . . . . . . . . . . . . . . . 2773
+D. Image quality tests. . . . . . . . . . . . . . . . . . . . . . . . 2773
+1. Random uncertainty in pixel value
+共noise兲. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2773
+2. Systematic uncertainty—field uniformity. . . 2773
+3. Quantitative CT. . . . . . . . . . . . . . . . . . . . . . . 2774
+4. Spatial integrity. . . . . . . . . . . . . . . . . . . . . . . 2775
+5. Spatial resolution. . . . . . . . . . . . . . . . . . . . . . 2775
+6. Contrast resolution. . . . . . . . . . . . . . . . . . . . . 2775
+IV. QUALITY ASSURANCE FOR
+CT-SIMULATION SOFTWARE AND ITS
+FREQUENCY. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2776
+A. Spatial/geometry accuracy tests. . . . . . . . . . . . . . 2776
+1. Image input tests. . . . . . . . . . . . . . . . . . . . . . 2776
+2. Structure delineation. . . . . . . . . . . . . . . . . . . . 2776
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2764
+
+3. Multimodality image registration. . . . . . . . . . 2776
+4. Machine definition. . . . . . . . . . . . . . . . . . . . . 2776
+5. Isocenter calculation and movement. . . . . . . 2778
+6. Image reconstruction. . . . . . . . . . . . . . . . . . . 2778
+B. Evaluation of digitally reconstructed
+radiographs 共DRRs兲. . . . . . . . . . . . . . . . . . . . . . . 2778
+1. Spatial and contrast resolution. . . . . . . . . . . . 2778
+2. Geometric and spatial accuracy. . . . . . . . . . . 2778
+3. Hardcopy quality. . . . . . . . . . . . . . . . . . . . . . 2778
+C. Periodic quality assurance testing. . . . . . . . . . . . 2778
+V. EVALUATION OF THE CT-SIMULATION
+PROCESS. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2779
+A. Overall process tests. . . . . . . . . . . . . . . . . . . . . . . 2779
+B. Data transfer tests. . . . . . . . . . . . . . . . . . . . . . . . . 2780
+VI. CONCLUSIONS. . . . . . . . . . . . . . . . . . . . . . . . . . . 2781
+APPENDIX A: INFORMATION FOR HOSPITAL
+ADMINISTRATION. . . . . . . . . . . . . . . . . . . . . . . . . . . 2781
+1. Information for radiation oncology
+administration. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2781
+2. Information for diagnostic radiology
+administration. . . . . . . . . . . . . . . . . . . . . . . . . . . . 2783
+APPENDIX B: CT DOSIMETRY. . . . . . . . . . . . . . . . 2783
+1. CT dose descriptors. . . . . . . . . . . . . . . . . . . . . . . 2783
+2. CT dose measurements. . . . . . . . . . . . . . . . . . . . 2784
+APPENDIX C: RADIATION SAFETY SURVEY/
+SHIELDING EVALUATION. . . . . . . . . . . . . . . . . . . . 2785
+APPENDIX D: CT-SIMULATOR LASER QA. . . . . . 2785
+APPENDIX E: SCANNER TABLE TESTS. . . . . . . . 2788
+APPENDIX F: X-RAY GENERATOR TESTS. . . . . . 2789
+APPENDIX G: SAMPLE OVERALL
+CT-SIMULATOR PROCESS TEST. . . . . . . . . . . . . . . 2790
+
+I. OVERVIEW
+A. CT-simulation process
+
+A CT-simulator consists of a CT-scanner with a flat table
+top, laser patient positioning and marking system 共preferably
+external lasers兲, CT-simulation/3D treatment planning software, and various hardcopy output devices 共Fig. 2兲. The CTscanner is used to acquire a volumetric CT-scan of a patient,
+which represents the ‘‘virtual’’ or digital patient. The CTsimulation software provides virtual representations of the
+geometric capabilities of a treatment machine. This software
+can be a special virtual simulation program or it can be a
+component of a treatment planning system. Often, CTsimulation is referred to as virtual simulation and the two
+terms tend to be used interchangeably. Virtual simulation is
+used to define any simulation based on software created ‘‘virtual simulator’’ and a volumetric patient scan. The scan does
+not necessarily have to be CT and other imaging modalities
+can be used. A virtual simulator is a set of software which
+recreates the treatment machine and which allows import,
+manipulation, display, and storage of images from CT and/or
+other imaging modalities. CT-simulator components and
+their features are described in Secs. II, III, and IV. CTsimulation process has been described by several
+authors.1– 4,6,9–12,14,16 This process and its implementation
+
+2765
+
+Mutic et al.: AAPM–TG66 Report
+
+2765
+
+TABLE II. Test specifications for electromechanical components.a
+Performance
+parameter
+
+Test objective
+
+Frequency
+
+Tolerance limits
+
+Alignment of gantry
+lasers with the
+center of imaging
+plane
+
+To verify proper
+identification of
+scan plane with
+gantry lasers
+
+Daily
+
+⫾2 mm
+
+Orientation of
+gantry lasers with
+respect to the
+imaging plane
+
+To verify that the
+gantry lasers are
+parallel and
+orthogonal with the
+imaging plane over
+the full length of
+laser projection
+
+Monthly and after
+laser adjustments
+
+⫾2 mm over the
+length of laser
+projection
+
+Spacing of lateral
+wall lasers with
+respect to lateral
+gantry lasers and
+scan plane
+
+To verify that lateral
+wall lasers are
+accurately spaced
+from the scan plane.
+This distance is used
+for patient
+localization
+marking
+
+Monthly and after
+laser adjustments
+
+⫾2 mm
+
+Orientation of wall
+lasers with respect
+to the imaging plane
+
+To verify that the
+wall lasers are
+parallel and
+orthogonal with the
+imaging plane over
+the full length of
+laser projection
+
+Monthly and after
+laser adjustments
+
+⫾2 mm over the
+length of laser
+projection
+
+Orientation of the
+ceiling laser with
+respect to the
+imaging plane
+
+To verify that the
+ceiling laser is
+orthogonal with the
+imaging plane
+
+Monthly and after
+laser adjustments
+
+⫾2 mm over the
+length of laser
+projection
+
+Orientation of the
+CT-scanner tabletop
+with respect to the
+imaging plane
+
+To verify that the
+CT-scanner tabletop
+is level and
+orthogonal with the
+imaging plane
+
+Monthly or when
+daily laser QA tests
+reveal rotational
+problems
+
+⫾2 mm over the
+length and width of
+the tabletop
+
+Table vertical and
+longitudinal motion
+
+To verify that the
+table longitudinal
+motion according to
+digital indicators is
+accurate and
+reproducible
+
+Monthly
+
+⫾1 mm over the
+range of table
+motion
+
+Table indexing and
+position
+
+To verify table
+indexing and
+position accuracy
+under scanner
+control
+
+Annually
+
+⫾1 mm over the
+scan range
+
+Gantry tilt accuracy
+
+To verify accuracy
+of gantry tilt
+indicators
+
+Annually
+
+⫾1° over the gantry
+tilt range
+
+Gantry tilt position
+accuracy
+
+To verify that the
+gantry accurately
+returns to nominal
+position after tilting
+
+Annually
+
+⫾1° or ⫾1 mm from
+nominal position
+
+Scan localization
+
+To verify accuracy
+of scan localization
+from pilot images
+
+Annually
+
+⫾1 mm over the
+scan range
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2766
+
+Mutic et al.: AAPM–TG66 Report
+
+2766
+
+TABLE II. 共Continued.兲
+Performance
+parameter
+
+Test objective
+
+Frequency
+
+Tolerance limits
+
+Radiation profile
+width
+
+To verify that the
+radiation profile
+width meets
+manufacturer
+specification
+
+Annually 共This test
+is optional if the CTDI
+accuracy has been
+verified兲
+
+Manufacturer
+specifications
+
+Sensitivity profile
+width
+
+To verify that the
+sensitivity profile
+width meets
+manufacturer
+specification
+
+Semiannually
+
+⫾1 mm of nominal
+value
+
+Generator tests
+
+To verify proper
+operation of the xray generator
+
+After replacement
+of major generator
+component
+
+Manufacturer
+specifications or
+Report No. 39
+recommendations
+
+a
+
+Depending on the goals and prior clinical experience of a particular CT-simulation program, these tests,
+frequencies, and tolerances may be modified by the medical physicist.
+
+vary among institutions. The simulation process design is
+dependent on available resources 共equipment and personnel兲,
+patient workload, physical layout and location of system
+components, and proximity of team members. The
+CT-simulation process can be grouped into three major
+categories:
+TABLE III. Test specifications for image performance evaluation.a
+Performance
+parameter
+
+Frequency
+
+Tolerance limits
+
+CT number
+accuracy
+
+Daily—CT number for
+water
+Monthly—4 to 5 different
+materials
+Annually—Electron
+density phantom
+
+For water, 0⫾5 HU
+
+Image noise
+
+Daily
+
+Manufacturer
+specifications
+
+In plane spatial
+integrity
+
+Daily—x or y direction
+Monthly—both directions
+
+⫾1 mm
+
+Field uniformity
+
+Monthly—most commonly
+used kVp
+Annually—other used
+kVp settings
+
+within ⫾5 HU
+
+Electron density
+to CT number
+conversion
+
+Annually—or after
+scanner calibration
+
+Consistent with
+commissioning results
+and test phantom
+manufacturer
+specifications
+
+Spatial resolution
+
+Annually
+
+Manufacturer
+specifications
+
+Contrast resolution
+
+Annually
+
+Manufacturer
+specifications
+
+1. CT-scan, patient positioning and immobilization
+The CT-simulation scan is, in many respects, similar to
+conventional diagnostic scans. The primary differences are
+the requirements for patient positioning and immobilization,
+treatment specific scan protocols, often increased scan limits,
+use of contrast, placement of localization marks on the patient skin, and some other special considerations. These are
+discussed in Sec. V.
+
+2. Treatment planning and CT-simulation
+Beam placement and treatment design is performed using
+virtual simulation software. The simulation typically consists
+of contouring of the target and normal structures, placement
+of the treatment isocenter and the beams, design of treatment
+portal shapes, generation of DRRs2,11 and documentation.
+Methods for simulating specific treatment sites have been
+described by several authors.1,2,4,12,17–19
+Contouring: The treatment planning portion of the CTsimulation process begins with target and normal structure
+
+a
+
+Depending on the goals and prior clinical experience of a particular CTsimulation program, these tests, frequencies, and tolerances may be modified by the medical physicist.
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+FIG. 2. CT-simulator room drawing showing wall lasers and the overhead
+sagittal laser. 共Courtesy Philips Medical Systems兲.
+
+2767
+
+Mutic et al.: AAPM–TG66 Report
+
+delineation. Other imaging studies 共prior CT, MR, PET兲 may
+be registered 共fused兲 to the CT-scan to provide information
+for improved target or normal structure delineation.
+Treatment isocenter placement: Based on target volumes
+and treatment area, a treatment isocenter location is identified in the CT study. The isocenter may be placed manually,
+based on patient anatomy, or the CT-simulation software may
+automatically position the isocenter at the centroid of the
+contoured target volume. Once the isocenter is determined or
+‘‘marked,’’ this coordinate becomes part of the treatment
+plan and may be used as a reference location in subsequent
+dose calculations. There must be a set of localization marks
+on the patient’s skin so that the patient can be accurately
+repositioned on the treatment machine. The placement of localization marks may be performed using two different CTsimulation methods.
+Final isocenter (setup-point) marked during the CT-scan:
+for this method, the patient is scanned and, while the patient
+is still on the CT-scanner couch, the physician with possible
+dosimetrist/medical physicist assistance determines the location of the isocenter. The software’s previously mentioned
+ability to define the centroid of the contoured target volume
+can be used for this task. During this time, the patient must
+remain still on the CT couch in treatment position. The isocenter coordinates are then transferred to the scanner and
+localization marks are accordingly placed on the patient. On
+the first day of treatment, the patient will be positioned using
+these marks on the treatment machine.
+This method requires that the physician be available during the CT-scan, and the procedure time is longer. However,
+the marks made for the CT-scan can be used for positioning
+on the treatment machine without any shifts.
+A reference point marked during the CT-scan: this method
+does not require the radiation oncologist to be available for
+the CT-scan. Prior to the scan procedure, based on the diagnostic workup studies, the physician instructs the CT-scanner
+staff where to place a set of reference marks on the patient.
+For example, ‘‘place localization marks at the level of carina,
+4 cm left from patient midline, and midplane.’’ The intent is
+to place these initial marks as close to the final treatment
+isocenter as possible. Prior to the CT-scan, the reference
+marks are marked on the patient and radio opaque markers
+are placed over the skin marks. The radio opaque markers
+allow the reference marks to be visible on the CT study.
+After the scan, the patient can leave and images are transferred to the virtual simulation workstation. Later, the physician contours target volumes and determines the treatment
+isocenter coordinates. Shifts 共distances in three directions兲
+between the initial reference marks and the final treatment
+isocenter are then calculated. On the first day of treatment, or
+on conventional simulator if also available, the patient is first
+aligned to the initial reference marks using the treatment machine’s lasers and then shifted to the CT-simulation isocenter
+using the calculated shifts. Initial reference marks are then
+removed and the isocenter localization marks are placed on
+the patient.
+This method is commonly used when the CT-scanner is
+not located in the radiation oncology department or when the
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2767
+
+radiation oncologist is not available for the CT-scan. With
+proper planning 共from diagnostic workup兲, the initial marks
+can be placed very close to the center of target volume and
+thus avoiding the need for shifts for the majority of patients.
+Alternatively, for certain treatment sites, the localization
+marks are placed on a stable anatomical location which will
+reduce daily setup variations. The second method can be
+used for stimulation of these treatment sites. The setup marks
+are placed on a stable anatomical location and then shifts are
+applied to the treatment isocenter for every treatment. For
+example, patients with breast cancer can have setup marks
+placed on sternum rather than on breast tissue.
+Placement of the beams and design of treatment portals:
+Based on target geometry, treatment beams are placed and
+treatment portals designed. CT-simulation data 共images, contours, treatment beams兲 are then communicated to treatment
+planning software, which has dose calculation capabilities.
+Printing of DRRs and documentation: The final products
+of the CT-simulation are DRRs and patient setup instructions. Patient setup instructions may include possible shifts
+from the initial skin localization marks, if final isocenter
+marking procedures were not used.
+
+3. Treatment setup
+On the treatment machine, the patient is setup according
+to instructions created from the CT-simulation software. Port
+films are acquired and compared with CT-simulation DRRs.
+In some cases, the patient may undergo treatment setup verification on a conventional simulator prior to the treatment.
+This can be valuable for treatment sites in the thorax and
+abdomen, for example, due to the CT-simulation process’
+inability to display breathing motion. In such cases, the physician may wish to observe patient breathing on a conventional simulator using fluoroscopic imaging, with treatment
+blocks in place.
+A well-designed CT-simulation process can cause all of
+these steps to appear relatively seamless, and the duration of
+the entire process relatively short. Conversely, inadequately
+defined procedures and a lack of communication can lead to
+inefficiencies and treatment errors.
+
+B. Quality assurance program goals
+
+The goals of a CT-simulation QA program are to assure
+safe and accurate operation of the CT-simulation process as a
+whole. The QA program design should include tests which
+will assure accurate target and critical structure localization
+and accurate placement of treatment beams with respect to a
+volumetric CT-scan of a patient.
+
+1. Safety of patients, public, and hospital staff
+While CT-scanners are generally regarded as ‘‘safe’’
+medical devices they are radiation producing equipment and
+
+2768
+
+Mutic et al.: AAPM–TG66 Report
+
+as such capable of harming patients, staff, and public. The
+QA program must assure that radiation levels from the CTscanner are safe, and that they comply with applicable regulatory limits.
+
+2. Accurate target localization and treatment
+simulation
+For accurate patient treatment planning, the CT-scanner
+must provide high quality images, with geometrical and spatial integrity, and with a known CT number 共Hounsfield
+unit兲20 to electron density relationship. The CT-scanner QA
+program should include tests to verify that all three of the
+above conditions are met. The primary areas of focus for the
+CT-simulation QA program should be the imaging performance and geometric accuracy of the CT-scanner, the geometric accuracy and utility of the CT-simulation software,
+accuracy and image quality of DRRs, and accuracy and integrity of information transfer between the various treatment
+planning and treatment delivery systems. The tests outlined
+in Secs. II, III, and IV are designed to detect potential errors
+that can affect accuracy of target and normal structure delineation and treatment simulation. The suggested frequency of
+these tests should ensure that critical problems are detected
+in a timely fashion. The tolerance limits for QA tests recommended in this report were designed to satisfy accuracy requirements of conformal radiation therapy. They are in accordance with AAPM Report No. 39, TG53, and NCRP
+Report No. 9945 recommendations and have been shown to
+be achievable in a routine clinical setting. Depending on the
+goals and prior clinical experience of a particular CTsimulation program, these tests, frequencies, and tolerances
+may be modified by the medical physicist. Radiation therapy
+procedures which require higher precision 共i.e., intensity
+modulated radiation therapy兲 may demand more stringent
+tolerance limits and testing frequency. Likewise, QA of CTscanners which are primarily used for less demanding procedures can be based on less stringent limits. The modified QA
+program should still ensure that the QA goals and objectives
+outlined in this report are satisfied and that the quality of
+patient care is not compromised.
+
+II. FUNCTIONAL PERFORMANCE
+CHARACTERISTICS OF CT EQUIPMENT
+A. Overview of a CT-scanner and a virtual
+simulation system
+
+A typical CT-scanner consists of an x-ray source, detector
+array, patient support table, and computer workstation. The
+x-ray source and the detector electronics are housed in a
+donut shaped gantry through which the patient’s body is imaged transaxially while lying on the table. The coordination
+of the x-ray generation, table positioning, data acquisition
+and processing, and the display of the images are all under
+the control of a suite of inter-connected computers. The following is a discussion of major CT-scanner components,
+which are especially important in the CT-simulation process:
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2768
+
+1. X-ray tube
+Due to two predominate characteristics of the CTsimulation process, the x-ray tube must be designed to withstand high heat input and have rapid heat dissipation.
+(a) Large number of images per study: CT studies for
+image based radiation treatment planning and CT-simulation
+usually involve larger number of images per patient than in
+diagnostic radiology. As will be discussed later, DRR quality
+is dependent on CT slice thickness; therefore, slice thicknesses of 3 mm to 5 mm are typically used with a possibility
+of using even smaller thicknesses with multislice scanners.
+Small slice thickness is also desired to delineate accurate
+treatment volumes and critical structures. Depending on the
+treatment site and the length of the scanned volume, typically 80 to over 200 images per patient are acquired.
+(b) Rapid study acquisition time: Generally, CTsimulation studies are imaged in a single rapid acquisition.
+Rapid scan time minimizes motion artifacts 共due to breathing
+or patient movement兲.
+The x-ray tube must have large heat anode loading and
+heat dissipation capabilities to withstand the very high heat
+loads associated with the large number of images acquired in
+a rapid sequence. Heat anode storage is specified in millions
+of heat units 共MHU兲. Anode cooling rate is specified in
+MHU per minute 共MHU/min兲. CT-scanners should ideally
+have an x-ray tube capable of storing 5 MHU or more with
+0.5 MHU/min or more cooling rate. Tubes with higher specifications are readily available from several manufacturers
+and will ease the simulation process. A review of CT tube
+characteristics was given by Fox.21
+
+2. Collimator and attenuator
+Under the x-ray tube, and in the path of the x-ray beam,
+filters and/or attenuators are used to harden the beam and to
+limit the dynamic range delivered to the detectors due to the
+range of thickness at the center and the periphery of the
+human body. A pre-patient x-ray beam collimator mounted
+under the x-ray tube port is used to produce a narrow beam
+of radiation, which is used to ensure one thin slice of the
+cross-sectional body anatomy is imaged at any given time.
+
+3. Patient support table
+The CT-simulation scanner table must have a flat top
+similar to radiation therapy treatment machines. Additionally,
+it should accommodate commercially available registration
+devices, Fig. 3. The registration device allows the patient
+immobilization device to be moved from the CT-scanner to a
+treatment machine in a reproducible manner, as will be discussed later.
+Even though the general shape of the two tables may be
+similar, the treatment machine table usually has components
+共‘‘tennis racket,’’ removable panels, table support components, etc.兲 which are not reproduced on the simulator table.
+These differences can introduce setup errors due to different
+sag of two tables. Treatment polices and planning target volumes should account for these differences.
+
+2769
+
+Mutic et al.: AAPM–TG66 Report
+
+2769
+
+data to be acquired while the table translates and the tube
+rotates continuously.22 The path of the tube forms a helical
+pattern around the patient, which is different from the set of
+‘‘stacked rings’’ acquired in so-called conventional CT. A
+comprehensive review of the spiral CT technology can be
+found by Kalender.23
+Modern CT-scanners are typically capable of acquiring
+images in both scan modes. Due to faster scan times spiral
+mode is often preferred for CT-simulation scanning. The CTscanner QA program should address image quality tests of
+both scan modes. Kalender24 has discussed the image quality
+differences between axial and spiral scanning.
+FIG. 3. Carbon-fiber CT-simulator couch top with registration device and
+use of a registration device. 共Courtesy of MED-TEC, Inc, Orange City, IA兲.
+
+The positioning and movement of the tabletop must be
+precisely controlled under constant load, this is discussed in
+Sec. III C 1. The couch weight limit 共at least 400 lbs evenly
+distributed兲 and table sag should be comparable to those of
+medical linear accelerators.13
+
+4. Computer and workstation
+Computers are essential components of the CT-scanner.
+Transmission data collected by the CT detectors in its raw
+form bears no resemblance to the final cross-sectional image.
+The projection data must be processed or ‘‘reconstructed,’’
+by the computer before a usable image can be displayed.
+Modern CT-scanners often consist of multiple dedicated microprocessors that are networked to communicate with each
+other to set up the scan parameters, and to coordinate the
+x-ray production and data acquisition. After the image data is
+reconstructed for viewing, a computer workstation also provides the means for the analysis of the image data. As discussed in the OVERVIEW section, to complete a CTsimulator unit, virtual simulation software is also required.
+
+5. External patient marking Õpositioning lasers
+Computed tomography scanners used for CT-simulation
+are usually equipped with external patient marking/
+positioning lasers. Figure 2 shows a set of such lasers. External lasers are not required for patient marking and lasers
+located inside the scanner gantry can be used for this procedure. However, these lasers can be difficult to use due to
+small aperture of scanner. Therefore, it is desirable that scanners which are used for CT-simulation be equipped with external lasers. These lasers can be fixed or mobile. Mobile
+lasers allow easier marking of patients. It is especially important that the sagittal laser be mobile as CT tables do not
+move in the lateral direction. Mobile sagittal laser allows
+marking away from the patient midline.
+B. Conventional and spiral CT
+
+Conventional CT acquires data one slice at a time. After
+all projections of a slice are acquired, the table is incremented and another slice is acquired. Alternatively, spiral 共or
+helical兲 CT, which became available in the late 1980s, allows
+Medical Physics, Vol. 30, No. 10, October 2003
+
+C. Multislice scanners
+
+A recent development in CT technology allows projection
+data from multiple slices to be acquired simultaneously.25–27
+Such multi-slice scanners use multiple row of detectors in
+the z axis. Data from one or several of the detector rows can
+be combined for a given data channel.
+The primary advantage of multislice scanners is the ability to acquire image studies faster than single slice scanners.
+For example, a 4-slice helical CT can provide equivalent
+image quality at 2 to 3 times the volume coverage speed of a
+single slice helical CT.26 Due to the longer length of imaged
+volume per tube rotation 共multiple slices acquired simultaneously兲, the tube heat loading for a particular patient volume is lower for multislice than for single-slice scanners.
+Faster acquisition times and decreased tube loading of multislice scanners 共which will allow longer volumes to be
+scanned in a single acquisition兲 can potentially provide an
+advantage over single-slice systems for CT-simulation purposes. Multislice technology can be especially beneficial for
+simulation of the thorax where breathing artifacts can be
+minimized. This technology can also be valuable for simulation of respiratory-gated treatments.27–30 Multislice scanners
+are also capable of acquiring thinner slices which can result
+in better quality DRRs.
+Image performance of multi slice scanners may be evaluated by the same methods as conventional CT-scanners31 and
+QA procedures discussed in this report may be used.
+D. Large bore scanners
+
+Conventional radiation therapy techniques often require
+patients to be in positions that can prevent them from entering the 70 cm bore opening found on the majority of CTscanners. As an example, breast treatments where the ipsilateral arm is subtended at close to a 90° angle frequently have
+difficulty entering the 70 cm bore. Inability to simulate all
+patients in a comfortable treatment position due to restricted
+bore opening has often been cited as one of the weaknesses
+of the CT-simulation process.1,3,12,32 At least one manufacturer offers a CT-scanner with an 85 cm bore opening, designed specifically for radiation oncology purposes. The
+larger opening allows for greater flexibility in patient positioning and use of immobilization devices. The 85 cm bore
+scanner also has increased scan field of view 共SFOV兲, 60 cm
+compared to 48 cm on most 70 cm bore units. Increased
+
+2770
+
+Mutic et al.: AAPM–TG66 Report
+
+SFOV allows for full visualization of larger patients and immobilization devices. This feature is important to fully assess
+patient external dimensions which are necessary for radiation
+treatment planning and monitor unit calculations. The large
+bore scanner image quality is generally comparable to 70 cm
+units, however, some degradation in high contrast resolution
+and image noise have been observed.33
+Image performance of large bore scanners may be evaluated by the same methods as conventional CT-scanners,33
+and QA procedures discussed in this report are also applicable.
+E. CT performance parameters
+
+Ever since the availability of the first commercial CTscanner, nearly 25 years ago, the evaluation of CT performance has not changed significantly over time. The performance parameters being evaluated typically include the x-ray
+system calibration, collimator assessment, localization laser
+alignment, slice width and sensitivity profile, radiation exposure and dose, image uniformity and noise, spatial resolution,
+contrast resolution, CT number calibration and linearity, and
+artifact evaluation. For surgical and radiation therapy planning applications, the scanner’s internal calibration accuracy
+for the orientation, dimension, and position of the threedimensional object being imaged must also be verified. Detailed discussions on the performance evaluation for acceptance testing and QA have been published on conventional
+and spiral CT14,34 –37 for multi-slice scanners,31 and for largebore scanners.33 With the increasing presence of networked
+electronic devices and PACS systems, network communication and file compatibility issues among various computer
+workstations are additional performance parameters that
+must be addressed.
+III. QUALITY ASSURANCE FOR CT-SCANNERS
+USED FOR CT-SIMULATION AND ITS FREQUENCY
+For a successful CT-simulation process, the CT-scanner
+should consistently produce patient images with the highest
+possible quality and accurate geometrical information. Image
+quality directly affects the physician’s ability to define target
+volumes and critical structures, and the spatial integrity of
+the CT study establishes how accurately radiation can be
+delivered to target volumes. The CT-scanner evaluation process consists of an evaluation of patient dose from the CTscanner, radiation safety, electromechanical components, and
+image quality. Testing procedures and QA devices described
+here are just for illustration purposes. They are intended to
+describe a general approach to CT-simulation QA. Alternative testing methods and phantoms exist and can certainly be
+used in place of methods described here.
+A. CT dosimetry
+
+A primary concern of CT-simulation QA is patient safety.
+Radiation doses received by radiation therapy patients from a
+CT-simulation scan are insignificant in comparison with
+treatment dose from primary radiation fields and scatter and
+leakage radiation38 and scan doses are in general not a seriMedical Physics, Vol. 30, No. 10, October 2003
+
+2770
+
+ous concern. However, CT-scanner dosimetry must be a part
+of initial acceptance testing and periodic scanner QA. CTscanner dosimetry evaluation has been defined by a number
+of regulatory agencies, and can be a concern of the Joint
+Commission on Accreditation of Healthcare Organizations
+共JCAHO兲. A more detailed description of CT dosimetry is
+provided in the Appendix B. Recommendations for evaluation of CT dosimetry are provided in Table I.
+B. RadiationÕpatient safety
+
+Radiation exposure from CT-simulation procedures to
+hospital employees and the public must be below regulatory
+limits.39 Part of the initial acceptance testing must include a
+shielding survey. Appendix C includes discussion on radiation safety survey and shielding evaluation.
+As with other radiation producing devices, CT-scanners
+are equipped with emergency off switches. CT-scanner emergency off switches are usually located on the gantry and at
+the control console. The use of emergency off switches can
+damage the CT-scanner. These switches should be tested under conditions which will not harm the scanner.
+CT-scanners are typically equipped with connections for
+door interlocks. The use of door interlocks for CT-simulator
+can potentially be harmful for the patient. If the scan is interrupted during image acquisition, the entire scan may have
+to be repeated. This would expose the patient to unnecessary
+radiation. A more troublesome situation would be interruption of a scan while the patient is being injected with a contrast material. Exposure to a person accidentally entering a
+CT-scanner room during image acquisition is minimal and
+well below regulatory limits. The interruption of a scan acquisition therefore has a potential to be much more harmful
+to the patient than beneficial for a person entering the scanner room. Therefore, door interlocks should be avoided in
+CT-simulator installations, unless required by other regulations. This recommendation is consistent with the International Electromechanical Commission Publication No.
+60601-2-44 Amendment 1 共Medical Electrical Equipment.
+Part 2-44: Particular requirements for the safety of x-ray
+equipment for computed tomography兲 conclusions.
+C. Performance of electromechanical components
+
+Proper operation of electromechanical components can affect patient safety and the accuracy of CT-simulation process. This portion of the document describes testing of these
+components.
+
+1. Patient marking Õpositioning lasers
+As previously described, scanners used for CT-simulation
+are typically equipped with external lasers. These lasers are
+used to position the patient in the treatment position assuring
+that patients are straight and properly rotated. These lasers
+are also used to place positioning marks on patient skin.
+Just as the treatment room lasers possess a well-defined
+and precise spatial relationship to the treatment machine isocenter, the CT-simulation patient marking lasers must pos-
+
+2771
+
+Mutic et al.: AAPM–TG66 Report
+
+sess a similar relationship to the CT-scanner image center.
+Thus, the accuracy of the lasers directly affects the ability to
+localize treatment volumes relative to patient skin marks and
+the reproducibly of patient positioning from the CT-scanner
+to the treatment machine. Accuracy and spatial orientation of
+lasers therefore must be comparable to treatment machine
+laser accuracy.13 Laser accuracy tolerances depend on the
+goals of radiation therapy and required accuracy of treatment
+procedures. Tolerances recommended in Table II need to be
+evaluated by individual institutions.
+QA goals: CT-scanner patient marking/positioning lasers
+consist of three separate components: gantry lasers, wall
+mounted lasers 共which may be mobile兲, and an overhead
+mobile sagittal laser 共Fig. 2兲. The gantry lasers are typically
+mounted on a rotating frame within the gantry. The overhead
+gantry laser defines the sagittal and axial planes, while the
+two lateral gantry lasers identify the coronal and axial
+planes. In addition to the gantry lasers, two lateral, or side,
+lasers are mounted to the walls or rigid stands and project
+lines defining the coronal and axial planes 共horizontal and
+vertical, respectively兲. The vertical wall lasers are mounted
+to project at a predefined, fixed distance 共usually 500 mm兲
+away from the imaging plane. Last, an overhead laser
+projects a laser line defining the sagittal plane. During the
+CT-simulation process the wall and overhead lasers are used
+for patient marking.1,2,4,12
+The following are performance requirements for CTscanner lasers:
+共1兲 gantry lasers should accurately identify scan plane
+within the gantry opening;
+共2兲 gantry lasers should be parallel and orthogonal with the
+scan plane and should intersect in the center of scan
+plane;
+共3兲 vertical side-wall lasers should be accurately spaced
+from imaging plane;
+共4兲 wall lasers should be parallel and orthogonal with the
+scan plane, and should intersect at a point which is coincident with the center of the scan plane;
+共5兲 the overhead 共sagittal兲 laser should be orthogonal to the
+imaging plane;
+共6兲 the overhead 共sagittal兲 laser movement should be accurate, linear, and reproducible.
+Tools needed: An alignment tool or a phantom is needed
+to assess laser geometry and accuracy. There are several designs for scanner laser QA devices. Figure 4 shows an example of such a device. This QA device can be used to assess
+all of the above six performance requirements for scanner
+lasers. In addition, other geometric and imaging tests can be
+performed with the device. The device used here is just for
+illustration purposes and its use is described for testing of
+other parameters throughout this document. Devices with
+similar functionality are commercially available and can also
+be used for these tests. In absence of such devices, the medical physicist can devise procedures that test same parameters
+or use alternative testing methods.
+Test method: A sample laser QA process, step-by-step proMedical Physics, Vol. 30, No. 10, October 2003
+
+2771
+
+FIG. 4. 共a兲 CT-simulator laser QA device attached to the table top using a
+registration bar; 共b兲 diagram of the side view of the device through the
+center of two pegs showing holes drilled inside the pegs; 共c兲 diagram of the
+top view of the device.
+
+cedure, and accompanying form are included in the Appendix D. Parts of this process should be performed daily, as
+suggested in Table II, and the full procedure should be performed monthly or more frequently depending on laser stability.
+
+2. Couch and tabletop
+Diagnostic CT-scanners are usually equipped with only a
+cradle-shaped couch top 共the tabletop is cup shaped to conform to the circular opening of the CT-scanner gantry兲. Scanners used for CT-simulation require a flat tabletop similar to
+the treatment machine’s tabletop geometry. The flat tabletop
+can be an insert that fits inside the cradle of the existing table
+or an overlay which is mounted on the top of the cradle 共Fig.
+3兲.
+Relative to treatment setup accuracy, the tabletop represents a direct connection between the CT-scanner and the
+treatment machine. Inaccuracies in the scanner tabletop geometry will translate into poor patient position reproducibility on the treatment machine. Additionally, inaccurate table
+indexing can cause image spatial distortions,36 and vertical
+and longitudinal movement errors can cause inaccuracies in
+marking of the patient’s skin relative to the calculated treatment isocenter.
+QA goals: The following are performance requirements
+for the CT-scanner couch and tabletop:
+共1兲 flat tabletop should be level and orthogonal with respect
+to the imaging plane;
+
+2772
+
+Mutic et al.: AAPM–TG66 Report
+
+共2兲 table vertical and longitudinal motion according to digital indicators should be accurate and reproducible;
+共3兲 table indexing and position under scanner control should
+be accurate;
+共4兲 flat tabletop should not contain any objectionable artifact
+producing objects 共screws, etc.兲.
+Test method: A sample QA procedure for scanner table
+and rationale for the above listed tests are provided in the
+Appendix E. Testing frequencies and tolerances are specified
+in Table II.
+
+3. Gantry tilt
+The majority of CT-scanners are capable of acquiring
+nonorthogonal CT-scans by tilting the gantry. This feature is
+useful for acquiring diagnostic images through certain anatomical structures which are not necessarily parallel with the
+imaging plane. Scanner tilt is generally not desired in CTsimulation. However, as the majority of scanners are capable
+of gantry tilt this issue must be addressed in the CTsimulation QA program.
+QA goals: The digitally indicated angle of the CT-scanner
+gantry with respect to the nominal vertical imaging plane,
+should be accurate within ⫾1°. For scanner used for CTsimulation, it is most important that the gantry accurately
+returns to the nominal vertical scan plane after being tilted to
+some other angle. This is especially relevant for scanners that
+are being shared with diagnostic radiology. A dedicated scanner may only rarely have its gantry tilted away from the
+vertical scan plane. However, a shared scanner may frequently have its gantry tilted for, nonorthogonal, diagnostic
+scans. As described in Sec. III C 2, the scanner gantry must
+be level/orthogonal with respect to the couch tabletop. The
+following are requirements for scanner gantry tilt:
+共1兲 the angle of gantry tilt with respect to the nominal vertical imaging plane should be accurate;
+共2兲 after the tilt, the gantry should return to the nominal
+vertical imaging plane 共i.e., orthogonal to the tabletop兲.
+Tools needed: Ready-pack film, laser QA device from Fig.
+4, square acrylic or water equivalent plastic sheet from 2 to 4
+cm thick.
+Test method: 共1兲 The angle of gantry tilt with respect to
+the nominal vertical imaging plane should be accurate. This
+test has been described in detail in Report No. 39 共III A 3兲14
+and by McCollough.36 A ready-pack film is taped to a square
+acrylic or water-equivalent plastic sheet. The sheet is placed
+on its side aligned with the sagittal gantry lasers 共orthogonal
+to the imaging plane兲. The side gantry lasers should intersect
+in the approximate vertical center of the film. A single scan
+with the thinnest available thickness is first acquired with
+gantry at 0°. The gantry is then tilted in both directions
+共towards and away from the table兲 and a single scan is acquired at both gantry positions. For both gantry angles, the
+gantry position should be close to the end of the range of
+motion. The angles between the vertical 共nominal gantry position兲 exposure and tilted gantry exposures as measured
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2772
+
+with a protractor on the film should agree within ⫾1° of the
+digitally indicated gantry angle used for exposure.
+共2兲 After tilt the gantry, the gantry should return to the
+nominal vertical imaging plane (i.e., orthogonal to the tabletop). This test is performed by aligning the laser QA device
+with the gantry lasers and assuring that the device is aligned
+with the side vertical gantry lasers through the full range of
+the vertical couch travel. The gantry is then tilted in either
+direction and then returned to the vertical position. The
+alignment of the laser QA device with vertical side gantry
+lasers should remain within 1 mm from the side holes on
+both pegs. The test should be repeated for tilting the gantry
+in the opposite direction and returning it to the nominal position.
+
+4. Scan localization from scout image (topogram,
+pilot image)
+Accurate scan volume and scan location as prescribed
+from the scout image 共topogram, pilot image兲 is important
+for accurate clinical scanning. This feature can be especially
+important when performing quantitative measurements or
+scans of phantoms and dosimetric equipment.
+QA goals: The scan volume and scan location as prescribed from the scout image should be accurate within 1
+mm. Evaluation of the radiation profile width and sensitivity
+profile width has been described in detail in Report No. 39
+共III A 4兲 and by McCollough.35,36
+
+5. Collimation
+The majority of CT-scanners collimate the radiation beam
+in the longitudinal direction distal to the x-ray source 共prepatient collimation兲 and also immediately prior to the detector array 共post-patient collimation兲. The accuracy of both, the
+pre- and post-patient collimation can significantly influence
+the scan image quality. Additionally, the pre-patient collimation has direct influence on patient dose from a CT-scan. The
+accuracy of the pre-patient collimation is evaluated by measuring the Radiation Profile Width emerging from the
+scanner.14,31,36,40– 42 The actual width of the imaged slice,
+which is affected by the post-patient collimation, is assed by
+measuring the Sensitivity Profile Width.14,35,36,39,43 If the radiation profile width is wider than indicated, unnecessary
+radiation will be delivered to the patient, thus increasing the
+total dose from the scan. An excessively narrow radiation
+profile or sensitivity profile width may cause increased quantum noise due to reduced photon count. Excessive sensitivity
+profile width can result in some lose of resolution in the
+longitudinal direction.
+Evaluation of the radiation profile width and sensitivity
+profile width has been described in detail in Report No. 39
+关III A 6共a兲 and III A 6共b兲, respectively兴 and those procedures
+are recommended by this report. Manufacturer supplied performance evaluation phantoms and software routinely have
+the capability to evaluate sensitivity profile width. This utility should be included in the periodic QA program. During
+the scanner commissioning process, the manufacturersupplied performance evaluation phantoms and software
+
+2773
+
+Mutic et al.: AAPM–TG66 Report
+
+must be validated independently.31,33 The manufacturer sensitivity profile width test can be validated by comparison
+with the test performed according to the Report No. 39 procedure.
+
+6. X-ray generator
+Similar to other radiographic equipment, proper operation
+of a CT-scanner requires that quantity and quality of photons
+emitted from the x-ray tube agree with settings programmed
+on the control console for scan acquisition. Miscalibration or
+performance errors of the x-ray generator components can
+result in poor images with readily visible artifacts. The scanner software itself is often capable of detecting such errors
+and aborting scanning. The tests outlined in the Appendix F
+should be performed during commissioning and then annually if desired.
+
+2773
+
+1. Random uncertainty in pixel value (noise)
+Ideally, a CT-scan of a uniform phantom would have uniform pixel values 共CT numbers兲 throughout the phantom image. In reality, the CT numbers in an image of a homogenous
+phantom are not uniform. The variation in pixel intensities
+has random and systematic components. The random component of image nonuniformity is noise. The standard deviation of pixel values in a region of interest 共ROI兲 within a
+uniform phantom is an indication of image noise. The noise
+can be expressed in terms of standard deviation of the CT
+numbers in Hounsfield units 共HU兲 or as a percent of the
+linear attenuation coefficient of water ( ␮ w ) and corrected for
+the scanner contrast scale:14,44
+Noise⫽
+
+␦ •CS•100%
+,
+␮w
+
+共1兲
+
+D. Image quality tests
+
+Image quality directly affects the ability to identify and
+delineate target volumes and surrounding critical structures
+for radiation treatment planning. Suboptimal image quality
+may cause the omission of a portion of the target volume or
+inadvertent delineation of normal structures as target volumes, therefore, causing serious errors. It is imperative that
+the image performance of a CT-scanner used for CTsimulation be maintained as optimally as possible. The scanner QA program should be structured to detect quickly and
+identify degradation in imaging performance. Optimal image
+performance for the purposes of the QA program means that
+the CT-scanner at least meets or exceeds minimal manufacturer specifications. The QA program goals should be to
+verify that the scanner meets manufacturer specifications.
+Due to significant differences in design and imaging capabilities of modern CT-scanners, common minimum standards
+for image performance indicators for all scanners are not
+practical. The AAPM Report No. 39 addresses in detail image performance tests. Tests and recommendations outlined
+in that report are sufficient for establishment of image performance QA for scanners used for CT-simulation. Furthermore, the majority of scanner manufacturers have phantoms
+and software, which are supplied with the CT-scanner, which
+can be used to assess image quality as a part of a QA program. Although, the primary purpose of these vendor supplied phantoms is for scanner calibration and automated
+baseline performance evaluation it is reasonable to assume
+that they can be used for periodic scanner performance
+evaluation. The validity of CT-scanner manufacturer supplied phantoms and software must be verified against independent test methods or phantoms before they can be used
+for routine QA. During the initial acceptance testing and
+commissioning, tests should be performed with both, manufacturer phantom and independent test methods.33 Portions of
+this validation should be repeated during the annual scanner
+QA. Commercial CT performance phantoms are well suited
+for independent verification of manufacturer supplied phantoms and performance evaluation software. Image quality
+tests outlined below are in order as they are presented in
+Report No. 39.
+Medical Physics, Vol. 30, No. 10, October 2003
+
+where ␦ is the standard deviation of CT numbers within the
+region of interest; CS is the contrast scale defined as CS
+⫽( ␮ m ⫺ ␮ w /CTm ⫺CTw ), where ␮ m and ␮ w are the linear
+attenuation coefficients for the subject material and water,
+respectively, and CTm and CTw are the measured CT numbers for the subject material and water, respectively.
+Image noise determines the lower limit of subject contrast
+that can be distinguished by the observer 共physician, dosimetrist, etc.兲. The more uniform the background containing a
+low contrast object, the greater its contrast with that background. Theoretically, minimal noise images should increase
+normal structure and target delineation accuracy.
+Noise is very a sensitive parameter to the overall imaging
+performance of the scanner, and can usually be performed in
+conjunction with uniformity tests 共next section兲. We recommend that noise be evaluated daily.
+QA goals: The QA program should verify that the scanner
+noise meets or exceeds manufacturer specifications. Scanner
+noise should be evaluated daily as outlined in Table III.
+Tools needed: Head and body water phantoms 共manufacturer provided phantoms are adequate for this purpose兲 or
+commercially available phantoms.
+Test method: Noise measurements should be performed as
+outlined in Report No. 39 共III B 1兲. Alternatively, the manufacturer performance phantom and software may be used to
+measure noise.
+
+2. Systematic uncertainty—field uniformity
+Image artifacts due to equipment design, beam-hardening,
+or image reconstruction software can manifest themselves as
+systematic CT number 共HU兲 variations. Scanning a uniform
+phantom and sampling mean HU values for ROIs of fixed
+areas throughout the phantom can quantify the presence of
+systematic variations. This process is referred to as a field
+uniformity test. Report No. 39 共III B 2兲 provides a detailed
+discussion of various causes of field non-uniformity, and
+measurement procedures. As described below, a water scan
+which is used to verify CT number accuracy and field uni-
+
+2774
+
+Mutic et al.: AAPM–TG66 Report
+
+formity should be acquired monthly for the most commonly
+used kVp and annually for other kVp settings with tolerance
+of ⫾5 HU.
+QA goals: CT images should be free of systematic artifacts, and an image of a uniform phantom should have uniform appearance without streaking and artifacts. The difference in the mean HU values for ROIs sampled throughout a
+uniform phantom should be within 10 HU. Due to the simplicity of this test and its ability to reveal major system malfunctions, field uniformity tests should be performed daily
+for the most frequently used scan kVp and monthly for other
+kVp values.
+Tools needed: Typically, a body and a head phantom are
+used 共32 cm and 16 cm diameter water-filled cylinders兲. The
+manufacturer-supplied phantom should contain both of these
+sections.
+Test method: Field uniformity measurements should be
+performed as outlined in Report No. 39 共III B 2兲. Alternatively, the manufacturer performance phantom and software
+can be used to perform this test.
+Both the procedure described in Report No. 39 and manufacturer test procedures require the uniformity phantom to be
+centered in the scan plane. This is indeed appropriate for
+diagnostic CT-scanners, as the vast majority of patients are
+placed in that location for clinical scanning. CT-simulation
+scans frequently require the anatomical area of interest to be
+placed away from the center of the scan field. For example,
+breast patients are typically placed to the side of the scan
+field to allow the ipsilateral arm to pass through the scanner
+opening.19 Therefore, field uniformity for the scanner used
+for CT-simulation should be evaluated with the phantom
+placed in the center of scan field and also with the phantom
+displaced towards the edge of the field. For daily tests, the
+phantom should be centered. For monthly tests, the phantom
+can be shifted. The manufacturer stated uniformity specifications only apply to centered phantoms. When the phantom is
+shifted, it may not be possible to maintain manufacturer uniformity specifications. Therefore, the baseline values measured at the time of scanner installation should be used for
+uniformity evaluation with the shifted phantom. The evaluated area should be meaningful with respect to the size of the
+scan field.
+Image artifacts visible on patient images may not always
+be visible on phantom images. A scanner image reconstruction algorithm is designed to compensate for certain image
+artifacts. Often, this software does a very good job for phantom images as these are used in the software development.
+The software may not perform as well when scanning certain
+body areas, and can actually introduce artifacts. Patient images should also viewed for artifacts due to field nonuniformity.
+
+3. Quantitative CT
+Typically, images acquired by the scanner used for CTsimulation will be used for dose distribution calculations.
+The majority of modern treatment planning systems can perform density-corrected dose calculations. These calculations
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2774
+
+typically rely on relative physical or electron density 共number of electrons per unit volume兲 information contained in
+the CT images. This information is obtained from CT images
+using a density to CT number conversion. This relationship
+is typically scanner dependent. If multiple scanners and scan
+energies are used to provide treatment-planning images, density to CT number relationship for all scanners should be
+evaluated for consistency. Part of the periodic CT-simulation
+QA program should be an evaluation of CT number accuracy
+and density to CT number relationship.
+Each CT image is a two-dimensional matrix of CT numbers corresponding to mean linear attenuation coefficients of
+the material in each voxel.20 Scanner software has tools
+which will report the mean CT numbers for the region of
+interest in a CT image. The measured mean CT number for a
+given material should correspond to a value calculated based
+on the mean linear attenuation coefficient for the given material and water at specific beam energy. However, this relationship depends on scanner performance and calibration and
+should be verified experimentally.
+When density-corrected dose calculations are used for
+treatment planning, incorrect CT number to density relationship can cause dose calculation errors. This was discussed in
+more detail by TG53.15
+QA goals: The QA program should include verification of
+CT number accuracy 共measured CT numbers should agree
+with their theoretical values兲. The National Council on Radiation Protection and Measurements 共NCRP兲 Report No.
+9945 has discussed tolerances for CT number accuracy. In the
+absence of manufacturer specifications, NCRP report recommendations can be used as tolerance limits. CT number accuracy should be verified daily at least for water. Accuracy
+for three to five additional materials should be verified
+monthly and after scanner recalibration or major component
+replacement. The manufacturer phantom or electron density
+phantom can be used for this task.
+Furthermore, the density to CT number conversion relationship should be determined during initial scanner commissioning and verified at least annually. Commercially available electron density phantoms can be used for this task.
+These phantoms often consists of a water-equivalent plastic
+disk approximating the size of an average pelvis with holes
+in the disk to hold interchangeable rods made of various
+tissue and water simulating materials. Since CT images can
+theoretically cover a 16-bit range of values, planning software should be checked for compatibility in handling very
+low negative and very high positive numbers. Some treatment planning systems have created calculation errors when
+such numbers were associated with the treatment planning
+study set.
+Test method: This procedure is performed with a density
+phantom and is similar to the test for evaluation of field
+uniformity. After scanning the uniform section of the manufacturer phantom, the ROI tool is used to measure the mean
+CT number for water. This value should be within an acceptable tolerance 共usually 0 HU⫾5兲. For monthly tests, this
+procedure is repeated with a phantom that contains multiple
+objects of known composition. The phantom is scanned and
+
+2775
+
+Mutic et al.: AAPM–TG66 Report
+
+2775
+
+FIG. 5. Image performance evaluation phantom: 共a兲
+line-pair section, 共b兲 MTF section, 共c兲 low contrast
+resolution section.
+
+the ROI tool is used to evaluate the mean CT number for
+each of the materials. The numbers should be consistent with
+theoretical and baseline values, measured at the time of commissioning.
+For density to CT number conversion measurements, a
+phantom with several objects of known composition is
+needed. The ROI tool is again used to measure the mean CT
+number for each material. These numbers can be plotted and
+compared with commissioning data.
+
+4. Spatial integrity
+Radiation treatment planning relies on accurate reproduction of true patient dimensions and shape in CT images; this
+includes external skin contour and internal organs. Image
+distortions can potentially cause dosimetric errors by causing
+delivery of inappropriate radiation doses or treatment of the
+wrong area. Therefore, spatial integrity should be verified as
+a part of the CT-scanner QA program.
+QA goals: CT-simulation images should accurately reproduce true patient anatomy within ⫾1 mm without spatial
+distortions in the entire scan field. This should be verified for
+both head and body scan protocols using a phantom of
+known dimensions.
+
+5. Spatial resolution
+Spatial resolution is a common parameter used for evaluation of imaging systems. It characterizes the imaging system’s ability to distinguish between two very small objects
+placed closely together. Spatial resolution measurements are
+performed with objects which have a high contrast 共contrast
+difference of 12% or greater兲 from uniform background.20
+Spatial resolution is frequently referred to as high contrast
+resolution. High contrast resolution is a function of blurring
+present in a CT image.14,20 High contrast resolution is most
+commonly measured using either a resolution pattern 共line
+pair phantom with a range of spatial frequencies兲, or by the
+modulation transfer function 共MTF兲 method. Physical properties, measurement techniques and evaluation of resolution
+pattern and MTF have been described in detail in the
+literature.14,31,33,35,46 –52 CT image of a line pair phantom is
+shown in Fig. 5共a兲. The line pair pattern in Fig. 5共a兲 ranges in
+frequency from 1 lp/cm to 21 lp/cm. Fig. 5共b兲 shows a CT
+image of a phantom which contains a high-density, tungsten
+carbide bead which is used to create an impulse, or point
+source, from which the MTF can be calculated. Manufacturers often specify the limiting spatial resolution at the 5% or
+lower point on the MTF curve. The limiting spatial resoluMedical Physics, Vol. 30, No. 10, October 2003
+
+tion 共lp/cm兲 measured with MTF, and specified at the 5%
+value, is typically higher than the resolution that can be observed with a line pair phantom. Therefore, spatial resolution
+measured with a line pair phantom may not always meet
+manufacturer specifications. To verify the manufacturer’s
+specification, the scanner MTF should be measured. The
+manufacturer supplied performance phantom and software
+should be capable of measuring MTF. Spatial resolution
+measured with the manufacturer phantom should be independently verified as described in Report No. 39 关III B 3共a兲兴. At
+the same time a baseline measurement with a line pair phantom may be obtained, which can then be used as a reference
+for periodic QA measurements.33,53
+Spatial resolution is a fundamental indicator of the scanner’s imaging capabilities. The CT-scanners used for CTsimulation should be able to image and differentiate small
+details in patient anatomy, as well as any implanted objects.
+For example, CT-scanners are often used to image postbrachytherapy-implant prostate patients and image resolution
+should be capable of distinguishing seeds located closely
+together.54
+QA goals: The scanner should meet manufacturer specified spatial resolution performance. The spatial resolution
+should be evaluated monthly 共Table III兲.
+Tools: Manufacturer phantom, line pair phantom, or a
+commercial CT performance phantom.
+Test method: As outlined in the AAPM Report No. 39.
+
+6. Contrast resolution
+Contrast resolution can be defined as the CT-scanner’s
+ability to distinguish relatively large objects which differ
+only slightly in density from background.20 Contrast resolution is often referred to as low contrast resolution. Low contrast resolution is typically evaluated with a phantom that
+contains low contrast objects of varying sizes.14,20,31,33–36
+Also multiple sets of objects of different contrasts can be
+contained in the phantom. The phantom imaged in Fig. 5共c兲
+contains three sets of cylindrical rods of various diameters
+and contrast levels to measure low contrast performance. The
+rod diameters at each contrast level are 2, 3, 4, 5, 6, 7, 8, 9,
+10, and 15 with nominal contrast levels of 0.3%, 0.5%, and
+1%.
+QA goals: Quality assurance should demonstrate that the
+CT-scanner meets or exceeds manufacturer specifications for
+low contrast resolution. This can be evaluated using a commercially available, low contrast phantom. The manufactur-
+
+2776
+
+Mutic et al.: AAPM–TG66 Report
+
+er’s performance phantom and software may also be used for
+this task, providing that its measurements are independently
+verified.
+Tools: Commercial low contrast phantom or manufacturer
+performance phantom.
+Test method: As outlined in the AAPM Report No. 39
+关III B 3共b兲兴.
+IV. QUALITY ASSURANCE FOR CT-SIMULATION
+SOFTWARE AND ITS FREQUENCY
+CT-simulation is a geometric simulation process that provides beam arrangements and treatment fields without any
+dosimetric information. For this process to be successful,
+accurate beam geometry information should be maintained in
+the software and accurate patient geometry should be supplied. Since the core of CT-simulation is the processing of
+patient images in the virtual simulation software, the accuracy and integrity of that software should be a prime consideration. The CT-simulation software accuracy should be verified during alpha and beta testing by the manufacturer;
+however, when it is released, it should be tested clinically by
+the therapy physicist. A list of test parameters was published
+by McGee and Das.55 The AAPM TG53 report15 also addresses in detail commissioning, acceptance testing, and periodic QA of clinical radiation treatment planning systems.
+Chapter 3 of that report discusses testing of nondosimetric
+aspects of treatment planning features. The majority of these
+tests are related to CT-simulation software. The current task
+group fully endorses the recommendations of the AAPM
+TG53 for QA of treatment planning systems and we recommend that procedures outlined in that report be implemented
+as a part of the CT-simulation QA program. Therefore, we
+list here only a partial list of CT-simulation software function
+tests and refer the reader to the TG53 report for detailed
+descriptions.
+Quality assurance of CT-simulation software can be simplified with the use of appropriate phantoms. These phantoms allow evaluation of imaging and geometric accuracy of
+CT-simulation software. Craig et al.56 and McGee et al.53
+have describedsuch phantoms. One such phantom is shown
+in Fig. 6. The QA program should include verification of the
+following CT-simulation software features:
+A. SpatialÕgeometry accuracy tests
+
+1. Image input test
+These tests should verify that images transferred from the
+CT-simulation scanner or other scanners 共CT, MRI, PET兲
+have correct image geometry 共e.g., pixel size, spatial fidelity,
+slice thickness and spacing兲, image orientation 共e.g., prone/
+supine, head-foot orientation, and left–right orientation兲,
+scan text information, and grayscale values. These objects
+are transferred on most modern systems using Digital Image
+Communications in Medicine 共DICOM兲 standard.57 DICOM
+is a standard for representing and exchanging medical imaging data. The image transfer test should include verification
+of proper transfer and processing of DICOM objects.
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2776
+
+Correct image orientation is always a concern when images are transferred between treatment planning systems.
+This is especially true when images contain symmetric
+anatomy which does not indicate patients right or left side; or
+if there is a concern if the patient was scanned with head or
+feet towards the gantry. It is often desirable to have a landmark in the CT image that indicates patient geometry. Two
+thin aluminum wires can be taped on the bottom of the CTscanner tabletop to indicate patient orientation in CT images.
+The wires should be taped on the left or right side of the
+tabletop and along its entire length. The two wires should
+also form the letter ‘‘V’’ which is pointing towards the gantry. The letter ‘‘V’’ indicates patient’s scan orientation 共Head/
+Feet first兲. The wires should be small enough to avoid image
+artifacts. The right side of image in Fig. 8共a兲 contains such
+wires.
+
+2. Structure delineation
+Tables 3-4 and 3-5 in the TG53 report list tests related to
+anatomical structures and contouring. Anatomical contours
+are one of the building blocks of conformal radiation therapy
+and errors associated with manipulation and processing of
+contours can cause potentially serious dosimetric errors.
+
+3. Multimodality image registration
+Treatment planning process is increasingly dependant on
+input from several imaging modalities. As previously discussed, MRI and PET have much to offer in identification of
+target volumes and other structures. Image registration is often part of CT-simulation process and proper operation of
+software and image transfer must be verified. Image registration can be a complicated process and TG53 recommends
+that AAPM form another task group specifically charged to
+develop a report on the use and QA of dataset registration
+techniques. Mutic et al.58 have described a phantom and process for QA of image registration.
+
+4. Machine definition
+Another important CT-simulation software feature is the
+ability to create virtual treatment machines. The description,
+limits, and readouts of virtual machines have to correspond
+with actual treatment machines and must be machine type
+specific. Tables 3-9, 3-10, 3-11, 3-12, 3-13, and 3-14 in the
+TG53 report provide detailed lists of machine parameters
+and appropriate tests. Some of the tests listed in these tables
+are related to dose calculation and do not apply to CTsimulation. Machine definition also includes verification of
+the virtual machine’s geometric resolution and accuracy. It is
+reasonable to expect that geometric accuracy of a virtual
+treatment machine is better than that of a real machine.
+Collimator simulation: Collimator geometrical accuracy
+should be similar to a treatment machine. The field size accuracy provided by CT-scanner should be within ⫾1 mm for
+the entire range of field sizes. This accuracy should also be
+the same for collimators with MLC. The CT-simulation software should provide the capability of independent jaws and
+various MLC design. The user should verify proper opera-
+
+2777
+
+Mutic et al.: AAPM–TG66 Report
+
+2777
+
+FIG. 6. A quality assurance phantom for three-dimensional radiation treatment planning.
+
+tion, size, limits, and features of a virtual MLC and compare
+them with real MLC properties. Additional descriptions of
+various MLCs can be found in the literature.59– 67
+Collimator rotation should be within ⫾1° over full rotation 共360°兲. Accuracy of jaw positions at various collimator
+angles should be tested. Comprehensive evaluation should be
+at a minimum interval of 45°.
+Gantry rotation: Gantry rotation should be accurate to
+within ⫾1°. Combined functionality of the gantry and collimator should be tested at multiple positions. A standard convention for specifying gantry angle, collimator angle, table
+angle, MLC orientation, and patient orientation is still desirable. As specified in the TG53 report, these conventions must
+agree between CT-simulation software and the treatment machine. Errors in machine configuration can cause significant
+difficulties in patient treatment. Virtual treatment machines
+can typically be assigned limits to motion, but in certain
+Medical Physics, Vol. 30, No. 10, October 2003
+
+situations, the simulation software may not be able to accept
+specific treatment machine configuration. This is primarily
+due to the fact that software vendors can not predict all possible combinations of orientations for treatment machines. In
+this situation, the treatment setup documentation created by
+the simulation software will not agree with the actual treatment parameters and this may be unavoidable. The CTsimulation QA program should include steps to verify that
+the printed documentation is properly corrected and that
+treatments are implemented correctly.
+Patient support assembly (PSA) simulation: Virtual simulation should provide the PSA movement and rotation functionality. An advantage of CT-simulation is that it can simulate and provide DRRs at angles which are not possible to
+simulate with conventional simulators.68 The PSA rotation
+should be accurate to within ⫾1°, which is commonly recommended for conventional simulators. Once again geo-
+
+2778
+
+Mutic et al.: AAPM–TG66 Report
+
+metrical accuracy must be tested with the combination of
+collimator and gantry rotation.
+
+2778
+
+resolution, ray line divergence accuracy, and spatial integrity.
+Phantom described by Craig et al.56 can be used for geometric accuracy evaluation of DRRs.
+
+5. Isocenter calculation and movement
+A part of the patient CT-simulation scan is identification
+of the treatment isocenter and placing of the corresponding
+localization marks on the patient’s skin. As described in the
+overview of the CT-simulation process, once the patient is
+scanned the physician contours target volumes and simulation software calculates the treatment isocenter coordinates
+based on those target volumes. The calculated or physician
+selected isocenter coordinates are then used to move the CTscanner table and the overhead laser to mark the patient. The
+accuracy of the isocenter calculation and shift instructions
+must be verified. This should be performed with a variety of
+target shapes 共e.g., sphere, cylinder兲.
+Often, when abutting beams are used for patient treatment
+or when multiple treatment sites are treated, there are multiple treatment isocenters. The software then creates a set of
+instructions on how to shift from the initial isocenter to other
+locations. The accuracy of these instructions must be verified
+in all three directions.
+This also applies when the treatment isocenter is not
+marked during the CT-scan but only a set of initial reference
+marks is placed on patient’s skin. In this situation, during the
+virtual simulation the software will calculate shifts from the
+initial reference to the treatment isocenter. These shifts will
+be used to setup the patient on the treatment machine.
+
+6. Image reconstruction
+Multiplanar and 3D image reconstruction is another significant component of CT-simulation software. These views
+are used to aid and evaluate beam placement and block design. Simulation software uses data in native axial images to
+create reconstructions in arbitrary planes and various 3D
+views. Typically, multiple views are displayed simultaneously. The tests should verify that the software accurately
+reconstructs these displays and that beam and block projection on these views is accurate. The tests should include a set
+of various geometrical shapes 共square, rectangle, circle, ellipse兲 of different dimensions. The accuracy in drawn contours at any point should be within ⫾1 mm.
+B. Evaluation of digitally reconstructed radiographs
+„DRRs…
+
+One of the final products of a CT-simulation process is a
+set of DRRs which is used for the verification of patient
+positioning on the treatment machine. The quality and accuracy of these images affect the physician’s ability to verify
+patient setup. Poor quality DRRs may not allow adequate
+verification of patient positioning due to the inability to visualize anatomical details and geometrically inaccurate
+DRRs will cause errors in patient setup and treatment due to
+positioning errors.
+McGee et al.53 described a phantom designed for this
+task. The phantom consists of a 15 cm3 polystyrene block
+with four test patterns to evaluate contrast resolution, spatial
+Medical Physics, Vol. 30, No. 10, October 2003
+
+1. Spatial and contrast resolution
+It is generally understood that smaller slice thickness and
+spacing produces better spatial resolution DRRs. McGee
+et al.53 reported that contrast resolution is affected by the
+image reconstruction area 共field of view兲. Initial commissioning of CT-simulation software should include evaluation
+of DRR input parameters and possibilities for image quality
+improvement. It is difficult to specify tolerance limits for
+DRR spatial and contrast resolution. These are not routinely
+specified by the software manufacturer, references are scarce
+in literature, and image quality depends on many factors.
+Therefore, it may not be practical to initially determine if the
+system is operating correctly. A reasonable QA test would be
+to scan a phantom which is similar to that of McGee et al.53
+during the CT-scanner and simulation software commissioning and create baseline DRRs. The scan parameters and DRR
+settings should be recorded with the film. Upon replacement
+of major scanner components, DRR output device 共film
+printer or plotter兲, and more importantly simulation software
+upgrades, this process can be repeated to verify image performance consistency.
+
+2. Geometric and spatial accuracy
+Systematic or random geometrical errors associated with
+DRR generation can easily translate into treatment errors.
+Small DRR magnification errors 共2–5 %兲, may result in systematic errors in block manufacturing which may cause systematic treatment of smaller or larger areas than intended.
+These errors can have dosimetric consequences, but due to
+small magnitude may not be detected by the physician. The
+majority of treatments distances are between 70 cm and 120
+cm SSD, therefore, film magnification should be tested between these limits. Magnification should be within ⫾1 mm
+of expected. Spatial errors 共e.g., collimator, table rotation,
+incorrect jaw setting, etc.兲 can also cause errors which may
+not be detected from patient port films. The QA for the CTsimulation process should include evaluation of DRR geometric errors.
+
+3. Hardcopy quality
+Performance of the DRR output device should also be
+periodically evaluated. Printing of standard test patterns and
+comparison with baseline data can reveal potential problems.
+C. Periodic quality assurance testing
+
+Recommendations for periodic QA testing of treatment
+planning systems have been provided in chapter five of the
+TG53 report. The current task group endorses those recommendations for periodic QA of simulation software. Periodic
+QA should include a weekly review of any software errors,
+problems, and unusual occurrences with the simulation team
+members. The extent and frequency of treatment planning
+
+2779
+
+Mutic et al.: AAPM–TG66 Report
+
+2779
+
+TABLE IV. An example of abbreviated protocol for CT-simulation of patients with lung cancer.
+
+SITE
+LUNG
+
+Patient
+position
+Supine.
+Chin
+extended.
+Arms above
+head,
+folded, may
+rest on 5 cm
+or 7 cm
+sponge
+
+Slice
+共mm兲
+
+Index
+共mm兲
+
+Scan limits
+
+Contrast
+
+Special instructions
+
+ONC MED/LG
+THORAX 5⫻5
+
+5
+
+5
+
+Chin to lung apex
+
+ONC MED/LG
+THORAX 3⫻3
+
+3
+
+3
+
+Through target
+and CAX, most
+of lung
+
+125 ml
+Optiray 320
+and/or
+2 table
+spoons
+Esophocat
+
+ONC MED/LG
+THORAX 5⫻5
+
+5
+
+5
+
+Through rest
+of the lung
+
+ONC MED/LG
+THORAX 8⫻8
+
+8
+
+8
+
+Top of kidneys or
+per MD request
+
+CAX drawn on
+patient’s anterior and
+lateral surfaces. Per
+MD the CAX can be
+placed mid depth and
+midplane at highest
+level of thorax.
+Contrast given just
+before the scan. Start
+scanning after 1/2
+contrast in.
+
+Immobilization
+
+Setup
+
+Protocol
+
+Alpha cradle registered
+to table with
+registration device.
+
+Init. Ref. at
+carina and
+midplane or
+per MD
+instructions
+on Sim
+sheet.
+
+software tests depend on the complexity and reliability of the
+software and the local clinical practice. It is recommended
+that extended testing 共a subset of commissioning tests兲 be
+performed after installation of simulation software upgrades.
+After the CT-scanner software upgrade, a smaller set of image related tests should be performed on the CT-simulation
+software in addition to tests performed on the scanner.
+Daily clinical operation should include a formal review of
+CT-simulation plans with a specific set of parameters to be
+reviewed.13 This review should be designed to detect errors
+associated with CT-simulation software. Often these reviews
+reveal errors in a timely fashion.
+V. EVALUATION OF THE CT-SIMULATION
+PROCESS
+Once the individual components of a CT-simulation system are evaluated, it is necessary to look at the entire simulation process and evaluate its functionality. Tasks performed
+in one step can affect accuracy of later steps and this can
+only be evaluated by testing the whole process. The simulation process QA has two primary areas of concern: (1) Evaluation of the system functionality and (2) Data transfer tests.
+Both areas and the QA aspects of each are addressed in this
+section.
+A. Overall process tests
+
+As described in Sec. I, the CT-simulation process consists
+of multiple steps. Often, to test the CT-simulation process, a
+geometric phantom is scanned and treatment planning is performed on the phantom. Phantoms described in Sec. IV53,56
+are well suited for this purpose. Additionally, several other
+phantoms are commercially available. Appendix G provides
+a list of steps for evaluation of the overall process. The test
+may reveal systematic errors or incompatibilities in the treatment planning process. This is a very useful test during initial implementation of the CT-simulation program and we
+recommend that commissioning includes such testing.
+A component of every CT-simulation QA program is
+planning of individual patient treatments. Each patient treatment plan and treatment has the potential to demonstrate
+errors associated with simulation hardware and software and
+the overall simulation process. The QA program should be
+Medical Physics, Vol. 30, No. 10, October 2003
+
+designed to include formal mechanism for reporting of errors, problems, and disagreements between treatment plans
+and actual patient treatments. This process can often reveal
+errors that are not included in the periodic QA program or
+problems that have not been considered in the past. The response to these errors should include communication between treatment team members about error source and corrective actions.
+The CT-simulation program should include written procedures. Whenever possible, these procedures should identify
+sources of possible errors and suggest preventive measures.
+The procedures should be reviewed annually. Annual review
+of the CT-simulation program should include evaluation of
+past errors and efficacy of corrective measures. All members
+of the treatment planning team should be familiar with this
+document. Procedures and protocols within a department alleviate the constant questioning of how to setup and acquire
+data for a patient with a particular site of disease. Establishing procedures and protocols is the first step to concise CTsimulation. Procedures should be treatment site specific and
+include scan protocols with patient setup and immobilization, scan protocol, scan limits, contrast, special instructions,
+and possible beam arrangements. Table IV shows an abbreviated protocol for CT-simulation of patients with lung cancer. The following are some of the items that should be addressed in the procedure manual.
+Patient positioning and immobilization: The success of
+conformal radiation therapy process begins with proper setup
+and immobilization. Positioning should be as comfortable as
+possible. Patients who are uncomfortable typically have poor
+treatment setup reproducibility. Patient setup design should
+consider location of critical structures and target volumes,
+patient overall health and flexibility, possible implants and
+anatomic anomalies, and available immobilization devices.
+Immobilization devices tremendously improve reproducibility and rigidity of the setup. Treatment devices should be
+evaluated to assess whether they are appropriate for a particular treatment site and how well they perform that task.
+Evaluation of an immobilization device should include
+whether the patient is comfortable and well immobilized
+through the entire course of therapy. Immobilization and
+treatment devices should not produce image artifacts and dis-
+
+2780
+
+Mutic et al.: AAPM–TG66 Report
+
+tortions. Immobilization performs two tasks: 共1兲 Conforms to
+the patient’s contours in a manner that allows minimal movement and 共2兲 registers patient to the simulation/treatment
+table so treatment position can be easily and accurately reproduced. With use of an immobilization device that is registered to the table, the record and verify system can monitor
+treatment table coordinates with tight tolerance limits. Establishing a good immobilization protocol for each treatment
+site is the first step in assuring preciseness of a CTsimulation process.
+The simulation procedures should include instructions for
+patient positioning. For example, depending on the target
+area of the brain the head can be extended, in the neutral
+position, rotated or the chin can be tucked. If this is not
+specified, patient position may be suboptimal and scan may
+have to be repeated. It is physician’s responsibility to provide
+instructions for proper patient positioning.
+Scan limits: Scan limits should be specified by the physician and should encompass volume long enough to create
+DRRs with enough anatomical information. The scan volume
+should be at least 5 cm or greater in the superior and inferior
+direction from the anticipated treatment volumes, longer volumes may be necessary for special situations 共e.g., noncoplanar beams, vertex beams, etc.兲.
+Scan protocol: The CT-scan parameters should be designed to optimize both axial and DRR image
+quality.2,3,11,20,53,69,70 The parameters influencing axial and
+DRR image quality include: kVp, mAs, slice thickness, slice
+spacing, spiral pitch, algorithms, scanned volume, total scan
+time, and field of view 共FOV兲.11,14,20,23,31,33,34,36,53,68,69,71
+Modern scanners come with preset protocols. Often, these
+may include ‘‘oncology’’ protocols which are designed for
+the CT-simulation process. Preset protocols should be reviewed by the local facility. The scan protocols should be
+reviewed at least annually for integrity, adequacy, and possible improvements.
+Contrast: The use of contrast may be necessary for certain
+sites to better evaluate organs and tissue. Certain contrast
+materials that may have been used in conventional simulation may produce too many artifacts on the CT. For
+heterogeneity-based calculations, contrast can cause dose
+distribution errors due to artificial CT numbers and corresponding tissue densities. Contrast use should be reviewed
+with physicians periodically.
+Special considerations and instructions: Each treatment
+site has unique considerations. These should be specified in
+CT-simulation procedures. Special considerations include:
+individual physician preferences, wiring of surgical scars for
+identification on CT images, scanning of patients with pacemakers and other implants, scanning of pediatric patients,
+patients under anesthesia, etc. A communication chain and
+responsibilities should be established for new problems and
+scans of patients with special needs.
+Data acquisition: During the actual scanning of the patient it is important to observe and evaluate any voluntary or
+extreme involuntary movement such as the rise and fall of
+the chest. Unlike conventional simulation where the user is
+able to watch the motion of the patient under fluoroscopy
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2780
+
+and therefore make some clinical decisions based on this
+movement, CT-simulation is a snapshot of anatomy. The patient should be relaxed and comfortable to improve daily
+treatment reproducibility.
+Localization/marking: Localization begins once the data
+set has been acquired and transferred to the virtual simulation workstation. Isocenter can be placed based on the location of bony landmarks or based on structure centering. Initial observations regarding data transfer should include:
+patient orientation, image indexing, and FOV. Two things are
+imperative in localization: 共1兲 the isocenter localized in the
+software must coincide with the isocenter marked on the patient and 共2兲 tissue delineation is accurate and representative
+of the structure 共i.e., the area outlined on the CT equals the
+actual area of the structure兲. System tests described in Sec.
+III C 1 ensure that the lasers are aligned. The transfer of isocenter coordinates from the simulation workstation to the CT
+couch should also be evaluated for accuracy. Once the CT
+couch has been moved the lasers should represent the same
+isocenter as localized on the workstation.
+Patient marking is also a key issue in QA for CTsimulation. Along with well-designed immobilization, good
+laser marking on the patient’s skin improves the patient positioning reproducibility. Long laser lines drawn on the patient’s skin can establish the appropriate plane of treatment
+and minimize patient rotation and angulation on a day to day
+basis. It is not sufficient to only mark three small crosses on
+the patient’s skin 共one anterior or posterior and two laterals兲.
+Virtual simulation: Once the isocenter has been marked
+on the patient, the patient may leave and virtual simulation
+can begin. This entails creating beams, placing blocks/MLC,
+and shifting isocenter while viewing the patient’s imaged
+anatomy. All nondosimetric beam parameters should be
+tested as recommended by the TG53 and described in Sec.
+IV.
+DRR and setup documentation: DRRs and setup documentation should always be inspected for accuracy and consistency. They should include correct patient information,
+correct treatment machine data, and correct treatment setup
+parameters. Any discrepancies should be evaluated for systematic errors.
+B. Data transfer tests
+
+Modern radiation treatment planning process involves
+multiple treatment planning computers often located on different networks. CT-simulation process requires accurate
+transfer of images 共CT, MRI, PET, US兲, image related data,
+structures, interest points 共isocenter, setup point兲, treatment
+beams, blocks and MLCs, DRRs, patient treatment setup information, and other parameters. Changes in configuration
+共software or hardware upgrades兲 of any scanner, computer,
+or network associated with the CT-simulation have a very
+strong potential of disturbing the process and introducing
+errors. Prior to upgrading or modifying any of the components, there should be a communication about which process
+may be disturbed and appropriate arrangements should be
+made. These include backup and relocation of data and
+
+2781
+
+Mutic et al.: AAPM–TG66 Report
+
+scheduled interruption of service. Chapter 7 of the TG53
+report discusses in detail issues related to management of
+treatment planning systems and networks. The CT-simulation
+QA program should identify individuals responsible for system management and should include tests for verification of
+proper communication after system modifications.
+VI. CONCLUSIONS
+This task group report addresses quality assurance process
+for CT-simulation. The QA program described in this report
+is designed to improve accuracy of patient treatments and
+efficiency of the treatment planning process. Implementation
+of these recommendations will depend on circumstances of
+individual institutions. The basic principles presented in this
+document should be preserved whenever possible.
+As with other components of radiation treatment planning
+and delivery, CT-simulation is a constantly evolving process.
+CT-scanners and virtual simulation software are continually
+being improved and new devices are being developed. The
+QA process described in this document provides a foundation for establishment of a CT-simulation QA program. This
+program should evolve and adapt as the device used for CTsimulation process change. The modified QA program should
+continue to ensure accurate and efficient delivery of radiation
+therapy.
+APPENDIX A: INFORMATION FOR HOSPITAL
+ADMINISTRATION
+1. Information for radiation oncology administration
+
+Radiation oncology is reaching new pinnacles with continued advancement in treatment planning, delivery and verifications in several areas including volumetric imaging, optimized 3D dose calculations and display, computercontrolled treatment delivery equipment, and online
+treatment verification. Volume imaging with CT and magnetic resonance imaging 共MRI兲, functional imaging with
+positron emission tomography 共PET兲 scanning, interimage
+and intraimage registration, and automatic image segmentation tools have enhanced our ability to define target volumes
+and critical structures with improved accuracy. The radiation
+treatment planning process that historically consisted of patient positioning and/or immobilization, patient imaging data
+acquisition, target and critical structure localization, radiation
+field design, and patient marking for treatment has radically
+changed with the introduction of dedicated CT-simulators in
+radiation therapy clinics. CT-simulator comprises of a CTscanner, a laser localization system, and computer software
+that provides the capabilities of image processing and manipulation, target volume and critical structure segmentation
+and beam display in three dimensions. Simply, CTsimulation combines some of the functions of image-based
+three-dimensional treatment planning system and the conventional simulator. It attempts to integrate as much of the
+planning process as possible using exact anatomical information of the patient obtained from the 3D imaging data-set.
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2781
+
+The initial concept of CT-simulator was to emulate the
+conventional simulation process on a contiguous CT data-set
+representing the patient. This idea was first proposed by Goitein and Abrams72,73 as beam’s-eye-view 共BEV兲 planning. In
+BEV planning, relevant segmented critical structures from
+CT contours are projected to a plane beyond the patient from
+the vantage of the radiation source to assure appropriate
+three-dimensional target coverage. This concept was further
+developed by Sherouse9–11 who introduced a system that
+could work like a simulator but used digital information derived from the patient imaging data-set. A patient treatment
+simulation could be completed on a virtual patient model
+with digitally reconstructed radiographs 共DRR兲. DRR is simply a virtual radiographic projection of overlying anatomy
+共bone and tissue兲 in a beam’s eye view. Therefore, the simulation process can be completed in a virtual domain without
+having the patient in the simulator room. This paradigm not
+only improves the accuracy of target localization but it also
+provides flexibility for the radiation oncologists to complete
+the simulation process at a time that is more conducive to
+their schedule. There is a proliferation of dedicated CTsimulators in radiation therapy clinics. CT-simulators have
+become so popular that many clinics are moving away from
+conventional simulators and are relying primarily on CTsimulators.
+Virtual treatment simulation in an accurate and consistent
+manner is by no means easy to achieve since the virtual
+simulation process encompasses a number of tasks that have
+historically been done in either radiation oncology or diagnostic radiology. Scanning has been primarily performed in
+diagnostic radiology. Most radiology departments have wellestablished QA guidelines for CT-scanners in the context of
+diagnostic use. However, a CT-scanner used for virtual simulation has hardware requirements and priorities that differ
+from those of diagnostic radiology. These include the ability
+to acquire imaging data-set in exact treatment position with
+appropriate treatment accessories, precise target localization
+with respect to fiducial marks on skin surface, minimizing
+patient motion during the scan acquisition to avoid anatomic
+misalignment, and finally, adequate image storage and networking capabilities for an efficient virtual simulation setup.
+Once the CT images are transferred to the virtual simulation
+workstation, there are software requirements in manipulating
+imaging data to localize radiation targets and design fields
+accurately. Therefore, the QA of CT-simulators must include
+QA of CT-scanner, QA of the virtual simulation process and
+testing of the accuracy and performance of the patient marking system for setup reproducibility.
+As noted by other AAPM task group reports, one of the
+objectives in radiation therapy is that the radiation dose delivered to the patient be within 5% of the prescribed dose.74
+To achieve this goal, the radiation oncology community has
+subsequently introduced many advanced devices and procedures in the treatment planning process. The complexity of
+these devices and procedures, however, makes the process
+vulnerable to random and systematic uncertainties. Considering the many steps involved in delivering dose to a target
+volume in a patient, each step must be performed with accu-
+
+2782
+
+Mutic et al.: AAPM–TG66 Report
+
+racy much better than 5% to achieve an overall accuracy of
+5%. It is anticipated that better than 3% accuracy is required
+in tumor localization and dose calculations attain an overall
+accuracy of 5%. To avoid potential errors, QA is required in
+all steps of the radiation treatment process. Therefore, it is
+recommended that medical centers implement a QA program
+for equipment used for CT-simulation and the overall CTsimulation process. As recommended by the AAPM TG40,13
+the CT-simulation QA program should be overseen by the
+radiation oncology Quality Assurance Committee 共QAC兲. In
+accordance with the Joint Commission on the Accreditation
+of Health Care Organizations 共JCAHO兲 requirements,75,76 it
+is recommended that the QAC implement a Policies and Procedure Manual for QA of CT-simulators, and an accompanying Quality Audit program.
+In order to have an effective QA program, the radiation
+oncology department chairman along with administration
+should assure that appropriate resources are available. These
+resources include: qualified personnel, QA test equipment,
+available time for performance of QA program, and resources for education of involved personnel. Availability of
+these resources is a prerequisite for a successful QA program. Furthermore, the department chairman and the administration should ensure that QAC guidelines for CTsimulation QA are followed, including the performance of
+periodic QA, compliance with tolerance limits, and implementation of corrective maintenance actions.
+The responsibilities of various team members with regard
+to a comprehensive radiation oncology QA program have
+already been described by the Task Group 40. We outline
+here the responsibilities of these members as they pertain to
+QA of the CT-simulation program.
+Radiation oncologist: Radiation oncologists need to have
+the precise knowledge of the image-guided treatment simulation process. This knowledge is based on their adequate
+training in interpreting CT images, understanding the effects
+of motion and other image artifacts, understanding threedimensional imaging reconstruction and graphic displays,
+and understanding of setup and treatment uncertainties to
+define adequate margins in radiation portal design. He or she
+is usually in daily contact with CT images. Therefore, the
+radiation oncologist is in the position to observe changes in
+image quality. The physician should be attentive to image
+quality changes, degradation, and artifacts. Any changes in
+image appearance should be immediately brought to the
+medical physicist’s attention.
+Radiation oncology physicist: The radiation oncology
+physicist is responsible for design, implementation, performance, and periodic review of the CT-simulation QA program. This person is also responsible for the acceptance testing and commissioning of CT-simulation equipment. The
+radiation oncology physicist should help define the specifications for the purchase of the CT-simulator. The physicist
+should be involved in the design of the facility and should
+assure that the radiation safety survey for the facility is performed. A radiation oncology physicist, diagnostic physicist,
+or a member of the radiation safety office can perform the
+survey. The radiation oncology physicist shall also certify
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2782
+
+that the CT-simulator is performing according to the specification after it is installed and outline a written QA protocol
+which includes tests to be performed, tolerances and frequency of the tests. This person is responsible for assuring
+that all members of the CT-simulation team are properly
+trained and that ongoing training related to changes in the
+equipment and process is provided on timely basis. If the
+CT-scanner used for CT-simulation is located in the radiation
+oncology department, the radiation oncology physicist is responsible for QA of the scanner. If the scanner is located in
+the diagnostic radiology department, the radiation oncology
+physicist is responsible for assuring that the CT-scanner QA
+meets the requirements of the CT-simulation process. The
+radiation oncology physicist is always responsible for QA of
+CT-simulation software and CT-simulation process. It is
+clearly important that the radiation oncology physicist have a
+good understanding of the CT technology and familiarity
+with the acceptance testing procedures and protocols. If the
+radiation oncology physicist lacks that expertise, we recommend that the facility seek the services of a qualified diagnostic imaging medical physicist or another experienced radiation oncology physicist for acceptance testing of the CTcomponent of CT-simulator and to establish QA procedures.
+Diagnostic physicist: If the scanner used for CTsimulation is located in the diagnostic radiology department,
+the diagnostic medical physicist is responsible for QA of the
+CT-scanner. This person is responsible for implementing recommendations of the therapy physicist and this report, to
+assure that the CT-scanner QA meets the needs of the CTsimulation process. The diagnostic medical physicist is responsible for timely communication with the radiation oncology physicist or a designee about any changes in the CTscanner hardware or software or in the CT-scan process.
+Radiation therapist: The radiation therapist involved in
+the CT-simulation process and operation of the CT-scanner is
+responsible for setup and scanning of patients according to
+the radiation oncologist’s instructions. This person should
+understand the CT-simulation process and proper operation
+of the CT-scanner. The therapist should be able to recognize
+equipment malfunctions, image distortions, and potential
+problems that may affect patient safety and accuracy of radiation therapy delivery. Any of these issues should be
+brought to the medical physicist’s attention. The radiation
+therapist is typically responsible for the performance of some
+portion of the QA associated with the CT-scanner and CTsimulation process.
+Diagnostic radiologic technologist: Depending on the design and implementation of the CT-simulation process, the
+diagnostic radiologic technologist may be responsible for
+setup and scanning 共CT-simulation兲 of patients according to
+the radiation oncologist’s instructions. In this situation, expectations for this person are the same as for the radiation
+therapist. This person should receive initial and ongoing
+training regarding the CT-simulation process and its requirements.
+Medical radiation dosimetrist: The dosimetrist is involved in the processing of patient images, normal structure
+contouring, placing of the treatment beams, and actually per-
+
+2783
+
+Mutic et al.: AAPM–TG66 Report
+
+forming the software portion of the CT-simulation process.
+The dosimetrist should be able to detect problems with patient images, CT-simulation software, and the treatment planning process. The dosimetrist may be responsible for performing various QA tasks associated with CT-simulation,
+treatment planning, and delivery.
+CT-simulation can significantly improve the quality and
+efficiency of the radiation therapy process and patient care. It
+offers improved patient positioning, target delineation, treatment beam arrangement, and dose calculation. In many instances, it can simplify the simulation process for the patient
+since it utilizes patient images and relies only on a relatively
+short patient presence for setup and CT-scan. The decision to
+implement the CT-simulation process in a radiation oncology
+department is accompanied by several requirements. These
+requirements include the availability of appropriate CTsimulation equipment, qualified personnel, adequate space,
+and proper training. In addition, it requires resources for assuring proper and safe operation of the CT-simulation process and its components. Due to its sophistication, CTsimulation has the potential to introduce serious errors in
+patient treatment. While the tests outlined in this report do
+not guarantee an error-free system, they should minimize
+their probability. Without appropriate support from department administration, it is not feasible to create and maintain
+a strong QA program. Therefore, equipment, time, and personnel must be made available for the CT-simulation QA
+program.
+2. Information for diagnostic radiology administration
+
+Requirements for performance evaluation and QA of CTscanners have been outlined in the AAPM Report No. 1,37
+AAPM Report No. 39,14 NCRP No. 99,45 and the American
+College of Radiology Standard for Diagnostic Medical Physics Performance Monitoring of Computed Tomography
+Equipment. These requirements should be a component of
+the comprehensive QA program for CT-scanners in diagnostic radiology. As outlined in this document, CT-scanners used
+for CT-simulation, as a part of the radiation treatment planning process, have special performance requirements which
+must be verified for proper operation. Some of these performance requirements are in addition to the specifications already outlined for diagnostic CT-scanning; while other parameters have more stringent tolerance limits than those
+required for diagnostic scanning. Among these performance
+requirements are an increased need for mechanical integrity
+and accuracy of the CT-scanner gantry and table, addition of
+external patient positioning lasers whose accuracy must be
+verified, increased need for positional and spatial integrity of
+CT images, and increased need for accuracy of quantitative
+CT-scanner performance. Proper periodic evaluation of these
+parameters will undoubtedly add to the complexity of a diagnostic CT-scanner QA program.
+Even though the number of CT-scanners located in radiation oncology departments is constantly increasing, many
+centers will continue to rely on treatment planning images
+from diagnostic radiology. We therefore recommend that diMedical Physics, Vol. 30, No. 10, October 2003
+
+2783
+
+agnostic radiology departments incorporate in their QA program tests outlined in this report for those scanners which are
+used for CT-simulation. To further facilitate this process, we
+recommend that the diagnostic radiology department designate a liaison to the radiation oncology QA committee
+共QAC兲. This person will be responsible for proper communication between the two departments and will be responsible for ensuring that the radiation oncology QA needs are
+met in the diagnostic radiology QA program. The radiation
+oncology QAC and therapy medical physicist should have
+input to the acceptance testing and commissioning process of
+CT-scanners, and to the design of the CT-scanner QA program for those scanners which are used as CT-simulators.
+The input to the QA program design should include specification of tests, test frequency, tolerance limits, corrective actions, and QA assignments. We feel that a QA program designed jointly by diagnostic and therapy physicists can
+efficiently serve the needs of both departments.
+In addition to the radiation oncology administration, it is
+the responsibility of the diagnostic radiology chairman and
+administration to ensure that the QA program for CTscanners, which are used for CT-simulation, meets the recommendations outlined in this report. This includes the requirement that the appropriate amount of time for scanner
+QA be made available and that the therapy physicist and
+radiation oncology staff have adequate access to scanners
+which are used for CT-simulation. In general, it is assumed
+that the radiation oncology department is responsible for providing test equipment, QA phantoms, and, if necessary, labor
+for those tests which are not part of the routine diagnostic
+radiology scanner QA and which serve treatment planning
+purposes.
+
+APPENDIX B: CT DOSIMETRY
+1. CT dose descriptors
+
+The basic CT dose descriptors have been in existence for
+many years and continue to be redefined as multidetector CT
+共MDCT兲 evolves. The primary measured value is known as
+the CT Dose Index 共CTDI兲 and represents the integrated
+dose, along the z axis, from one axial CT-scan 共one rotation
+of the x-ray tube兲.77–79 All other CT dose descriptors are
+derived from this primary measured value. It is important to
+note that the CTDI is always measured in the axial scan
+mode, and that doses for helical scan modes are calculated
+from the axial information.
+The Code of Federal Regulations, 21 CFR 1020.33, section 共h兲共1兲 defines CTDI 共denoted below as CTDIFDA due to
+its specific condition兲 as ‘‘the integral of dose profile along a
+line perpendicular to the tomographic plane divided by the
+product of the nominal tomographic section thickness and
+the number of tomograms produced in the single scan;’’
+CTDIFDA⫽
+
+1
+nT
+
+冕
+
+⫹7T
+
+⫺7T
+
+D 共 z 兲 dz,
+
+共B1兲
+
+where z is the position along a line perpendicular to the
+
+2784
+
+Mutic et al.: AAPM–TG66 Report
+
+2784
+
+tomographic plane, D(z) is dose at position z, T is the nominal tomographic section thickness, and n is number of tomograms produced in a single scan.
+Theoretically, the CTDI should be measured from plus to
+minus infinity. Since in practice the ion chamber to measure
+CTDI is typically 100 mm long, the IEC has specifically
+defined the CTDI measured with such a method as CTDI100 .
+In general, the CTDI100 is different from CTDIFDA . Readers
+should be cautious of any CTDI results if they are not clearly
+specified. The FDA is also moving to adopt CTDI100 .
+As described later, CT dosimetry includes evaluation of
+CTDI dependence on the measurement point position in the
+field-of-view. For example, for body CT imaging, the CTDI
+is typically a factor or two higher at the surface than at the
+center of the field-of-view. The average CTDI across the
+field-of-view is given by the weighted CTDI (CTDIw ),
+where CTDIw ⫽2/3 CTDI共surface兲⫹1/3 CTDI共center兲.
+CTDIw is defined using the ‘‘f -factor’’ for air.
+When performing a volumetric scan, dose profiles from
+individual scans are superimposed and summed to create a
+multiple scan profile. As the number of scans contributing to
+the multiple scan dose profile is increased, the average dose
+of the multiple dose profile reaches a limiting value. This
+limiting value is defined as the MSAD and can expressed by
+the relation:78
+MSAD⫽
+
+1
+I
+
+冕
+
+I/2
+
+⫺I/2
+
+D N,I 共 z 兲 dz,
+
+共B2兲
+
+where D N,I (z) is the dose as a function of position for a
+multiple scan dose profile consisting of N scans separated by
+a constant distance between scans equal to I. Similar to the
+concerns regarding CTDI, the Z-axis extent of measurement
+for the MSAD has not been consistently defined. Using the
+CTDI100 definition, the IEC has defined the term Volume
+CTDIw (CTDIvol), which is equivalent to MSAD, but is explicitly measured using the CTDI100 values,
+CTDIvol⫽
+
+N•T
+•CTDIw ,
+I
+
+共B3兲
+
+where N is the number of simultaneous axial scans per x-ray
+source rotation, T is the thickness of one axial scan 共mm兲,
+and I is the table increment per axial scan 共mm兲.
+In spiral CT, the ratio of the table travel per rotation (I) to
+the total nominal beam width (N•T) is referred to as pitch.
+Therefore,
+CTDIvol⫽
+
+1
+•CTDIw
+pitch
+
+共B4兲
+
+The CTDIw represents the average radiation dose over the x
+and y directions and the CTDIvol represents the average radiation dose over the x, y, and z directions. CTDIvol is useful
+indicator of the dose for a specific exam protocol, because it
+takes into account protocol specific information such as
+pitch.
+Dose-Length Product 共DLP兲 is used to define the total
+energy absorbed by a scanned volume from a given protocol.
+DLP represents integrated dose along the scan length,
+Medical Physics, Vol. 30, No. 10, October 2003
+
+FIG. 7. A body and head phantom for measurement of dose from CT-scans.
+Pencil ionization chamber is inserted in the center of the body phantom.
+
+DLP 共 mGy cm兲 ⫽CTDIvol共 mGy兲 •scan length 共 cm兲 .
+共B5兲
+While two scan protocols may have the same CTDIvol , their
+DLP value may be substantially different due to difference in
+scanned volume length. Several manufacturers include DLP
+information on the scanner control console for programmed
+scan protocols and scan lengths.
+
+2. CT dose measurements
+
+As described in the preceding section, patient dose from a
+CT-scan is assessed by measuring CTDI. Two CT dosimetry
+phantoms are commonly used. A 15 cm long, 16 cm diameter
+transparent acrylic cylinder is used for ‘‘head’’ protocol measurements. A 15 cm long, 32 cm diameter cylinder is used for
+‘‘body’’ protocols. Five to nine holes are strategically placed
+in the phantoms to accept a pencil ionization chamber 共Fig.
+7兲. Phantom design requirements can be found in the Code of
+Federal Regulations 21 CFR 1020.23, Section 共b兲共6兲. Pencil
+ionization chambers are typically ten centimeters long and
+should be calibrated by accredited dosimetry laboratories.
+For the CTDI measurement, the phantom is placed in the
+center of the imaging plane resting on the tabletop or head
+holder. The phantom should be leveled and aligned with the
+central axis of the scanner. A single scan is then acquired
+through the center of the ionization chamber. The measurement procedure was described in detail in the AAPM report
+No. 3979 and by Cacak.40 The CTDI is calculated using the
+following equation:
+CTDI100⫽
+where
+
+Rdg* C tp * K el* N x * f med* 100共 mm兲
+关 cGy兴 ,
+Total nominal beam width共 mm兲
+
+共B6兲
+
+2785
+
+Mutic et al.: AAPM–TG66 Report
+
+CTDI100 is the Computed Tomography Dose Index 关 cGy兴
+measured with 100 mm long ionization chamber,
+Rdg is the electrometer reading,
+C tp is the temperature and pressure correction factor,
+K el is the electrometer calibration factor 关 C/rdg兴 ,
+N x is the chamber exposure calibration factor 关 R/C 兴 ,
+100 mm is the length of ionization chamber,
+f med is F factor which is used to convert exposure in air to
+absorbed dose in medium. At 70 keV effective energy
+f med is 0.94 and 0.78 cGy/R for muscle and acrylic,
+respectively. For CTDI100 , F factor is defined to be
+0.87 共air is assumed兲. For comparison purposes,
+it is important to know which F factor the
+manufacturer uses for defining CTDI.
+The measured dose will change as a function of kVp setting,
+mA setting, scan time, slice thickness, beam filtration, etc.
+The CTDI is typically measured for a subset of standard
+combinations of scan parameters. Manufacturers commonly
+provide correction factor tables which can be used to correct
+CTDI measured at a standard combination of scan parameters to a desired scan parameter combination, alleviating the
+need to make specific measurements. At the time of scanner
+commissioning, the validity of these tables should be spotchecked.
+
+APPENDIX C: RADIATION SAFETY
+SURVEYÕSHIELDING EVALUATION
+Shielding design for CT-scanner rooms has been described in the AAPM Report No. 39.14 The scanner itself
+provides shielding for primary radiation and scatter is the
+main source of radiation outside the scan plane. Scanner
+room shielding is, therefore, designed primarily for scatter
+radiation. The CT-scanner room shielding survey should be
+performed with a phantom in the scan plane. The phantom
+should approximate size and composition of pelvic area. Lucite or a water equivalent plastic phantom measuring 20 cm
+in diameter and 40 cm in length and width is sufficient for
+this procedure. Radiation exposure measurements should be
+performed with scan parameters that will result in the largest
+possible exposures 关i.e., the largest slice thickness and the
+highest scan potential 共kVp兲兴. Measured instantaneous exposure levels are proportional to CT-scanner mA setting. A
+typical survey procedure would include the following settings: 130 or 140 kVp, 10 mm collimator width, 200 mA,
+and exposure time sufficiently long to achieve stable radiation measurements which can be measured with a survey
+meter. As suggested in the NCRP Report No. 49,80 with the
+scattering phantom in place, all walls, doors, and windows
+should be first evaluated for shielding integrity 共gaps in the
+barrier, absence of shielding material兲 using a Geiger–Muller
+meter. Once the shielding integrity has been verified, and
+locations of highest radiation levels are found, a radiation
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2785
+
+survey meter is used to measure instantaneous exposures.
+The weekly exposure level for a particular location is calculated using the following relationship:
+X⫽60•Ẋ•W•T,
+
+共C1兲
+
+where
+X is the total weekly exposure 关 mR/week兴 ;
+Ẋ is the measured instantaneous exposure divided
+by measurement mA 关 mR/h•mA兴 ;
+X is the weekly workload 关 mA-min/week兴 as defined
+in the AAPM Report No. 39; 14
+T is the occupancy factor as defined in the
+NCRP Report #49. 80
+Shielding evaluation is performed only at the time of the
+initial scanner acceptance testing and 共unless there are structural changes to the scanner room or when scanners are replaced兲 need not be performed again.
+
+APPENDIX D: CT-SIMULATOR LASER QA
+In this procedure, it is assumed that the device from Fig. 4
+is used for testing. This phantom is used just as an example
+and other QA phantoms can be used to accomplish the same
+tests. For example, phantoms for treatment machine laser QA
+can be used.
+The device consists of a Lucite base and two Lucite pegs
+mounted on the base. The pegs are 5 cm high, 2.8 cm wide,
+and 25 cm apart. Vertical and horizontal holes are drilled
+through the center of each peg 关Fig. 4共b兲兴. The two holes,
+measuring 1 mm in diameter, meet inside the peg to form an
+inverted letter ‘‘T’’ 关Fig. 4共b兲兴. Another vertical hole of the
+same diameter is drilled in the center of the base plate 共between two pegs兲. The laser QA device is then attached to the
+scanner table using a registration bar or some other form of
+attachment. The device should be centered on the tabletop
+and positioned perfectly orthogonal to the long axis of the
+table.
+Test method: (1) Gantry lasers should accurately identify
+scan plane within the gantry opening—If the centers of holes
+inside the pegs on the laser QA device are aligned with the
+gantry lasers and a single axial scan with a 1–2 mm slice
+width is acquired, an image like that shown in Fig. 8 will be
+generated. In the alignment process, horizontal side gantry
+lasers 共left and right兲 are aligned with horizontal holes in
+pegs by raising or lowering the table. By moving the table in
+or out of the gantry, the vertical side lasers are aligned with
+the horizontal peg holes and the overhead axial gantry laser
+is aligned with the vertical holes. If the gantry lasers are
+aligned with the imaging plane then the image should show a
+well-defined inverted letter ‘‘T’’ in each peg 关Fig. 8共a兲兴. If
+there is a partial image of the inverted letter ‘‘T,’’ or no
+image at all, then the gantry lasers are not aligned with the
+imaging plane 关e.g., Fig. 8共b兲兴. If the images inside two pegs
+are not the same then the QA device is rotated with respect to
+the imaging plane. Most frequently, this indicates that the
+
+2786
+
+Mutic et al.: AAPM–TG66 Report
+
+FIG. 8. CT image of laser QA device. 共a兲 lasers aligned with imaging plane.
+共b兲 center of the QA device offset by 1 mm from the imaging plane.
+
+tabletop is rotated with respect to the imaging plane 共see Sec.
+III C 2兲.
+(2) Gantry lasers should be parallel and orthogonal with
+the scan plane and should intersect in the center of scan
+plane—If the image in Fig. 8共a兲 shows a well-defined inverted letter ‘‘T’’ in each peg then, as described above, the
+gantry lasers are aligned with the imaging plane. When the
+table is raised and lowered from the table position used to
+acquire the image in Fig. 8共a兲 the vertical side gantry lasers
+and the overhead axial gantry laser should track the holes
+inside the pegs. If the lasers drift away from the holes then
+the lasers are not parallel with the imaging plane, or the
+couch is not traveling vertically parallel with the image
+plane.
+The overhead sagittal gantry laser should be aligned with
+the center hole on the base plate of the QA device through
+the full range of couch vertical travel within the CT donut. If
+this laser drifts or does not touch the center hole at all then it
+may require alignment. If the horizontal gantry lasers are
+aligned with side holes in the pegs, they should track the
+holes the full length of the laser beam as the table is moved
+in and out of the gantry. During this test, the sagittal overhead laser should also track the center hole on the base plate.
+If either of the horizontal lasers, or the sagittal laser, drifts
+away from peg holes, then they, or the couch, are not orthogonal with the imaging plane.
+The measuring cursor option on the scanner can be used
+to evaluate if the gantry lasers intersect in the center of the
+imaging plane. The measuring cursor usually forms a cross.
+If the horizontal line of the measuring cursor is positioned
+through horizontal holes on both pegs in image in Fig. 8共a兲,
+and the vertical line of the cross hair through the hole in the
+center of the base plate, then the locator indicator for the
+cursor can be used to assess alignment accuracy. The locaMedical Physics, Vol. 30, No. 10, October 2003
+
+2786
+
+tion indicator (x,y) for the cross-hair position should read
+共0, 0兲. If there is a different y value, then the horizontal
+gantry lasers are not aligned with the center of the imaging
+plane and should be adjusted if out of tolerance. If the x
+value is different, then the overhead laser is not properly
+aligned or, more importantly, the tabletop itself may be improperly installed 共see Sec. III C 2兲.
+(3) Vertical side-wall lasers should be accurately spaced
+from imaging plane—For this test, the laser QA device, described previously, is first aligned with well-aligned gantry
+lasers or directly with the image plane as described in test
+method 共1兲 and Fig. 8共a兲. Using the digital longitudinal table
+indicator, the table is then retracted away from the gantry
+the distance equal to the predefined separation between the
+gantry and wall vertical lasers 共often 500 mm兲. After the
+retraction, both vertical wall lasers should bisect the side
+holes on pegs. Misalignment indicates that the lasers are not
+properly spaced or that the couch travel is not correctly
+indicated.
+(4) Wall lasers should be parallel and orthogonal with the
+scan plane and should intersect at a point which is coincident with the center of the scan plane—The geometry of
+side-mounted wall lasers is assessed in similar fashion as the
+gantry lasers, by aligning the QA device and moving the
+table vertically and longitudinally.
+(5) The overhead (sagittal) laser should be orthogonal to
+the imaging plane—If the table is moved towards and away
+from the gantry the sagittal laser should touch the center hole
+in the QA device the full length of the laser beam. This
+indicates that the sagittal laser is orthogonal with the imaging
+plane and that the CT couch is traveling orthogonally, as
+well.
+(6) The overhead laser movement should be accurate, linear, and reproducible—This can be tested by placing a ruler
+against the two pegs on the laser QA device across the tabletop. One of the ruler marks should be aligned with the sagittal laser 共whose position should read zero兲 and the center
+hole in the QA device. By moving the laser various distances
+to the left and right, laser movement can be evaluated. For
+daily QA, the sagittal laser can be moved a predefined distance from the center hole to the center of each peg 共125
+mm兲. After movement, the laser should intersect the vertical
+hole in each of the pegs. This is a quick way to assess daily
+laser motion accuracy.
+The image in Fig. 8共a兲 can also be used to daily assess CT
+image spatial integrity. The separation between the vertical
+holes in two pegs in Fig. 8共a兲 should measure 250⫾1 mm
+using the scanner measuring tool. Shorter or longer distances
+may indicate image spatial distortion. Additionally, the laser
+QA device can be used to assess the table’s vertical and
+longitudinal movement accuracy. If the QA device is used for
+daily laser QA, the indicated table vertical and longitudinal
+position should be the same day to day when the device is
+aligned with lasers.
+
+2787
+
+Mutic et al.: AAPM–TG66 Report
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2787
+
+2788
+
+Mutic et al.: AAPM–TG66 Report
+
+SAMPLE CT SIMULATOR LASER QA PROCEDURE
+AND FORM
+共1兲
+共2兲
+
+共3兲
+共4兲
+共5兲
+共6兲
+共7兲
+共8兲
+共9兲
+
+共10兲
+
+共11兲
+
+共12兲
+
+共13兲
+共14兲
+共15兲
+共16兲
+共17兲
+共18兲
+
+Attach the laser QA device to the simulator tabletop.
+Move the couch until the side holes in pegs are
+aligned with horizontal and vertical wall lasers. The
+table height indicator should agree with the value on
+the QA form 共i.e., 388兲. Verify that both, left and right,
+wall lasers agree with holes in pegs. The tolerance for
+this test is ⫾2 mm.
+Note the longitudinal couch position.
+Move the couch towards the gantry until holes in pegs
+align with left and right vertical gantry lasers.
+The longitudinal couch position should change by the
+known displacement between the gantry lasers and
+wall lasers, with an accuracy of ⫹2 mm.
+Verify the alignment of the left and right horizontal
+gantry lasers with holes in pegs. The tolerance is
+⫾2 mm.
+Verify the alignment of the center gantry laser with
+the center hole on the QA device. The tolerance is
+⫾2 mm.
+Retract the couch until the vertical wall lasers are
+again aligned with holes in pegs. The longitudinal
+couch position should agree with the value in step 共3兲.
+Align the overhead sagittal laser with the center mark
+on the QA device using the remote control. The lateral
+position indicated on the remote control should be
+0.0⫾2 mm.
+Align the overhead sagittal laser, using the remote
+control, with left and right pegs. The lateral position
+on the remote control should be ⫹125 mm⫾2 mm
+and ⫺125 mm⫾2 mm for left and right pegs, respectively.
+Move the table manually towards the gantry and away
+from the gantry while observing the position of right
+and left horizontal wall lasers on the pegs and the
+position of the overhead sagittal laser. The lasers
+should not move away from holes by more than
+⫾2 mm.
+Align holes in pegs with wall lasers and raise and
+lower the table while observing the position of
+right and left vertical wall lasers on the pegs and the
+position of the overhead sagittal laser. The lasers
+should not move away from holes by more than
+⫾2 mm.
+Align holes in the QA device with gantry lasers.
+Repeat steps 11 and 12 for gantry lasers.
+Move the couch towards the gantry until holes in pegs
+again align with left and right gantry lasers.
+Scan the registration device. The slice thickness and
+spacing should be 1.5 mm and 0 mm, respectively.
+The scan mode should be axial.
+After the scan is complete open a cursor option on the
+scanner and choose the cross tool.
+Align the cursor cross with the horizontal and vertical
+holes in the left peg. The X and Y values should be
+⫹125 mm⫾2 mm and 0 mm⫾2 mm, respectively.
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2788
+
+共19兲
+共20兲
+
+Align the cursor cross with the top of the center hole
+on the QA device. The X and Y values should be ⫹0
+mm⫾2 mm and ⫺29 mm⫾2 mm, respectively.
+Align the cursor cross with the horizontal and vertical
+holes in the right peg. The X and Y values should be
+⫺125 mm⫾2 mm and 0 mm⫾2 mm, respectively.
+
+APPENDIX E: SCANNER TABLE TESTS
+Testing of the following parameters should be performed
+with the tabletop loaded with at least 150 lb 共75 kg兲 of distributed the weight to simulate a patient.
+Tools needed: Laser QA device from Sec. III C 1, ruler,
+and ready-pack film.
+Test method: (1) The couch/tabletop should be level and
+orthogonal with respect to the imaging plane—One of the
+problems associated with scanners used for CT-simulation is
+the fact that a flat tabletop is generally an addition to the
+scanner, which may not have been considered during the
+scanner design. This can cause the flat-tabletop installation
+on the scanner couch base to be imprecise or irreproducible.
+This can also apply to tabletops provided and installed by the
+scanner manufacturer. Therefore, even if the scanner was installed properly and the couch base is level and orthogonal
+with the imaging plane 共this should be verified during commissioning兲, the tabletop may still not be level and/or orthogonal with the imaging plane. Proper installation of the
+tabletop cannot be verified with a level alone but must be
+verified radiographically. A level shows only that the tabletop
+is level with respect to the ‘‘world,’’ and it does not necessarily indicate whether it is orthogonal with respect to the
+imaging plane.
+To assure that the tabletop longitudinal axis of travel is
+perpendicular to the image acquisition plane 共i.e., the tabletop is not rotated with respect to the imaging plane兲, the laser
+QA device is first placed as close to the head of the tabletop
+共gantry side兲 as possible. The device is then aligned with
+gantry lasers and a single image through the device is acquired. The device is then positioned as far as possible towards the foot of the table and again aligned with gantry
+lasers where a single image is acquired. The location of the
+laser QA device in two images should be identical. Using the
+scanner cursor tool, the location of the center hole in the QA
+device should be measured on both images. The location of
+the hole on two images should be within 2 mm agreement.
+The agreement demonstrates that couch axis of travel is perpendicular to the image acquisition plane.
+The position of horizontal holes in both pegs on the QA
+device in both images should have the same coordinate
+within 2 mm when measured by the scanner cursor tool. Any
+disagreement between measured coordinates for the horizontal holes in the QA device for either one of the pegs, in either
+of the images, may be an indication that the tabletop is not
+level in the transverse direction, that the tabletop is not orthogonal to the imaging plane in the longitudinal direction,
+that the tabletop is twisted, or that couch longitudinal travel
+is introducing ‘‘roll’’ in the table as it travels.
+
+2789
+
+Mutic et al.: AAPM–TG66 Report
+
+For above described tests, it is assumed that the couch
+base is level in the axial and longitudinal direction with respect to the imaging plane and that the couch is not rotated.
+As stated above, this should be verified during commissioning. To verify that the base is not rotated with respect to the
+imaging plane, two small pieces of wire 共1 to 2 ⬙ long兲 are
+taped in the center of the couch top, one at the gantry side
+and one at the foot side 共similar to the test above兲. The lateral
+coordinates of two wires in their respective images should be
+identical. To verify that the couch base is level in the axial
+direction, the couch top can be scanned in several places and
+scanner cursor tool can be used to evaluate if the couch base
+is level. To verify that the longitudinal couch axis is orthogonal to the imaging plane, two small pieces of wire can be
+taped to the couch top 共in the same longitudinal position but
+laterally spaced as far as possible兲. Each wire should be oriented at 90° with respect to the other wire and at 45° with
+respect to the imaging plane. The wires are first scanned with
+the couch in the lowest vertical position and then in the
+highest achievable position. The separation between the
+wires in two images should be identical. Variation in wire
+separation in two images indicates that the couch base is not
+orthogonal with the imaging plane. This can be due to gantry
+or couch base tilt. Any discrepancies should be addressed
+during commissioning.
+(2) Table vertical and longitudinal motion according to
+digital indicators should be accurate and reproducible—
+Table vertical and longitudinal digital indicators are used for
+patient
+treatment
+isocenter
+marking
+during
+CT-simulation.1,2,4,12 Therefore, the digital indicators and
+table motion accuracy directly affect the ability to accurately
+correlate internal patient anatomy with skin marks. A longitudinal motion accuracy test is inherent to the previously
+described laser QA wherein the separation between gantry
+and wall lasers was verified.
+Longitudinal digitally indicated motion accuracy and reproducibility is tested by placing a longitudinally oriented,
+long ruler flat on the tabletop, and moving the table in and
+out of the gantry. Laser projection on the ruler is used to
+directly measure the distance traveled, and relative table position.
+Vertical digitally indicated motion accuracy and reproducibility is tested by placing a long ruler vertically on the tabletop and observing a laser position on the ruler as the table is
+raised and lowered. Of course, care should be taken to ensure
+that the ruler is perpendicular to the table top for all measurements. Both, longitudinal and vertical digital table position indicators should be accurate within to 2 mm.
+Some patient immobilization devices register directly to
+the scanner tabletop. These devices can register to the treatment machine tabletop as well. In such situation, it is possible to use scanner and treatment machine absolute table
+coordinates to position patients. Furthermore, treatment machine table coordinates can be entered in the record and
+verify system to verify correct patient positioning.
+Accuracy of absolute scanner couch coordinates can be
+verified by observing couch coordinates reported by the
+scanner when verifying coincidence of scanner lasers and the
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2789
+
+imaging plane 共III C 1兲. Absolute table coordinates should be
+consistent with reference values to within ⫾2 mm. Reference values should be obtained during commissioning or after adjustment of couch operation.
+(3) Table indexing and position under scanner control
+should be accurate—This test has been described in detail by
+several authors.36,40 This test is similar to the preceding section except that the table is moved under scanner control
+rather than manually. A ready-pack film is taped on the tabletop and the film is irradiated at some predetermined fixed
+spacing with a series of narrow scans. This test can be performed in axial or spiral scan mode. The spacing between
+stripes on the film should correspond to the spacing used for
+the scan. Reproducibility of the table indexing can be
+checked by irradiating the above film twice. The table should
+be moved under scanner control for both scans. After processing the film, the lines from two scans should be superimposed.
+Table indexing can alternatively be checked without exposing the film as described in the AAPM Report No. 39.14
+Table indexing accuracy and reproducibility under scanner
+control should be accurate within ⫾1 mm.
+(4) Flat tabletop should not contain any objectionable
+artifact producing objects—During initial acceptance testing,
+the flat tabletop insert should be scanned to evaluate whether
+there are any objects in the tabletop which can produce clinically significant image artifacts 共screws, etc.兲.
+
+APPENDIX F: X-RAY GENERATOR TESTS
+Typical tests of the x-ray generator include evaluation of
+the peak potential 共kVp兲, half-value layer 共HVL兲, current accuracy 共mA兲, time accuracy 共seconds兲, mAs linearity and
+reproducibility and, potentially, other tests like focal spot
+size.20 Inaccurate performance of these parameters can affect
+the accuracy of CT numbers measured with the scanner and,
+potentially, the accuracy of heterogeneity-corrected dose calculations.
+QA goals: CT-scanner x-ray generator measurements
+should be performed at installation or following replacement
+of major components in the x-ray generator system, such as
+the x-ray tube. Tests should include evaluation of
+共1兲 peak potential 共kVp兲,
+共2兲 half-value layer 共HVL兲,
+共3兲 mAs linearity,
+共4兲 mAs reproducibility,
+共5兲 time accuracy.
+Tools needed: Evaluation of a CT-scanner x-ray generator
+can be somewhat difficult due to the rotating x-ray tube and
+the closed nature of most modern systems which impede
+invasive measurements. Invasive measurements are cumbersome, require manufacturer assistance, and are potentially
+dangerous for both equipment and personnel. Noninvasive
+measurements of x-ray generator performance parameters are
+appropriate and, in fact, preferred in a radiation oncology
+setting. Several noninvasive, commercially available devices
+
+2790
+
+Mutic et al.: AAPM–TG66 Report
+
+are capable of assessing kVp, time, and exposure. Each of
+the five performance parameters listed above can be assessed
+with noninvasive devices. HVL measurements can be performed with pencil ionization chamber and electrometer.81
+Test method: For use of noninvasive measurements, the
+CT-scanner must be capable of ‘‘parking’’ the x-ray tube at
+the 12 o’clock position. The manufacturer should be able to
+provide assistance with this procedure as the utility which is
+used to park the x-ray tube is usually not a part of the main
+user interface and can sometimes be a hidden service utility.
+Report No. 39 discusses evaluation of the x-ray generator
+system, and the reader is referred to that report for a detailed
+description of tests. The AAPM Report No. 2582 also provides information and procedures for accessing some of the
+generator performance parameters. For evaluation of all of
+the above five performance parameters, the x-ray tube is rotated to the 12 o’clock position and the table is placed at the
+lowest possible position within the gantry. The measurement
+device is centered on the table using the overhead gantry
+lasers. The scanner is programmed from the control console
+to evaluate various settings. For all measurements, the widest
+available collimator setting should be used.
+(1) kVp—accuracy of all clinically used tube potential settings should be evaluated. Measured values should meet
+manufacturer specifications. In absence of the manufacturer
+specifications, Report No. 39 recommends that tube potential
+should be within ⫾2 kV of indicated values for all power
+levels.
+(2) HVL—Half-value layer should be evaluated for all
+clinically used tube potential settings. The HVL is specified
+in mm of aluminum. A set of thin sheets of aluminum, of
+varying thicknesses are required for HVL measurements.
+First, at a particular, fixed mAs setting the exposure 共mR兲 of
+the open 共unfiltered兲 beam is measured. Next, Al sheets are
+placed incrementally between the noninvasive detector and
+the x-ray tube. Exposure measurement is repeated with each
+addition of Al sheet. Half-value filtration is calculated from
+the Al thickness and the corresponding mR values. In the
+absence of manufacturer specifications, values found in the
+AAPM Report No. 2582 can be used.
+As noted by Kruger,81 displacing the ionization chamber
+laterally from the scanner isocenter can significantly change
+measured HVL values, due to bow-tie filter.
+(3) mAs linearity—This test is used to infer tube current
+through indirect measurement. The foundation for this test is
+that for a constant tube potential and slice width, the integral
+exposure 共mR兲 should be a linear function of mAs. Therefore, for this test, relative exposure measurements are required. For all measurements, the exposure time should be
+kept constant 共for example, 1 second兲 and the current should
+be varied through the range of available settings. The measurements should be performed for all clinically used tube
+potential settings. As specified in Report No. 39 共III A 7兲, for
+each tube potential, mR/mAs should be calculated. The coefficient of linearity relative to the mean of all values is then
+determined. The coefficient of linearity of mR/mAs between
+the mean of all values and any single value 共absolute difference divided by sum兲 should be within 0.05.
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2790
+
+(4) mAs reproducibility—For repeated exposure measurements at a fixed setting, the measured values should be reproducible within values specified by the manufacturer.
+(5) Time accuracy—Scan time accuracy can be evaluated
+with the noninvasive meter. Time accuracy should be measured for all available settings which are used clinically. The
+measurements should meet manufacturer specifications.
+
+APPENDIX G: SAMPLE OVERALL CT-SIMULATOR
+PROCESS TEST
+A simple phantom with an opaque marker either inside or
+on the surface works well to test the overall process or phantoms previously described can be used. A scan should be
+acquired of the phantom with a slice thickness and index
+typical of a routine scan. The following is an outline of a
+typical process:
+共1兲 Scan phantom with a fiducial marker,
+共2兲 Check scan indexing based on length of phantom,
+共3兲 Transfer data to workstation,
+共4兲 Check orientation,
+共5兲 Outline external contour of phantom,
+共6兲 Calculate area and volume to determine accuracy of
+structure outlining,
+共7兲 Align isocenter to fiducial marker,
+共8兲 Move CT couch to isocenter coordinates,
+共9兲 Mark phantom insuring that lasers match fiducial mark,
+共10兲 Set field size,
+共11兲 Send data to RTP system,
+共12兲 Check orientation and beam parameters,
+共13兲 Check CT numbers if the phantom is heterogeneous,
+共14兲 Send data to a treatment machine,
+共15兲 Print DRRs and setup documentation,
+共16兲 Setup and verify phantom treatment.
+a兲
+
+Author to whom correspondence should be address: Department of Radiation Oncology, Washington University School of Medicine, 4921 Parkview, St. Louis, MO 63110; Electronic mail: mutic@radonc.wustl.edu
+b兲
+Advisor.
+1
+E.K. Butker et al., ‘‘Practical implementation of CT-simulation: The
+Emory experience,’’ in A Practical Guide to 3-D Planning and Conformal Radiation Therapy, edited by J.A. Purdy and G. Starkschall 共Advanced Medical Publishing, Middleton, WI, 1999兲, pp. 58 –59.
+2
+A Practical Guide to CT Simulation, edited by L.R. Coia, T.E. Schultheiss, and G. Hanks 共Advanced Medical Publishing, Madison, WI, 1995兲.
+3
+J. Conway and M.H. Robinson, ‘‘CT virtual simulation,’’ Br. J. Radiol.
+70, S106 –S118 共1997兲.
+4
+CT Simulation for Radiotherapy, edited by S.K. Jani 共Medical Physics
+Publishing, Madison, WI, 1993兲.
+5
+T. Kushima and M. Kono, ‘‘New development of integrated CT simulation system for radiation therapy planning,’’ Kobe J. Med. Sci. 39, 197–
+213 共1993兲.
+6
+J.M. Michalski, J.A. Purdy, W. Harms, and J.W. Matthews, ‘‘The CTsimulation 3-D treatment planning process,’’ Front. Radiat. Ther. Oncol.
+29, 43–56 共1996兲.
+7
+Y. Nagata et al., ‘‘CT simulator: a new 3-D planning and simulating
+system for radiotherapy: Part 2. Clinical application,’’ Int. J. Radiat. Oncol., Biol., Phys. 18, 505–513 共1990兲.
+8
+T. Nishidai et al., ‘‘CT simulator: a new 3-D planning and simulating
+system for radiotherapy: Part 1. Description of system,’’ Int. J. Radiat.
+Oncol., Biol., Phys. 18, 499–504 共1990兲.
+9
+G. Sherouse, K.L. Mosher, K. Novins, E.L. Rosenman, and E.L. Chaney,
+‘‘Virtual simulation: concept and implementation,’’ in Ninth International
+
+2791
+
+Mutic et al.: AAPM–TG66 Report
+
+Conference on the Use of Computers in Radiation Therapy, edited by
+I.A.D. Bruinvis, P.H. van der Giessen, H.J. van Kleffens, and F.W. Wittkamper 共North-Holland, 1987兲, pp. 433– 436.
+10
+G.W. Sherouse, J.D. Bourland, and K. Reynolds, ‘‘Virtual simulation in
+the clinical setting: some practical considerations,’’ Int. J. Radiat. Oncol.,
+Biol., Phys. 19, 1059–1065 共1990兲.
+11
+G.W. Sherouse, K. Novins, and E.L. Chaney, ‘‘Computation of digitally
+reconstructed radiographs for use in radiotherapy treatment design,’’ Int.
+J. Radiat. Oncol., Biol., Phys. 18, 651– 658 共1990兲.
+12
+J. Van Dyk and J.S. Taylor, ‘‘CT-simulators,’’ in The Modern Technology
+for Radiation Oncology: A Compendium for Medical Physicists and Radiation Oncologists, edited by J. Van Dyk 共Medical Physics Publishing,
+Madison, WI, 1999兲, pp. 131–168.
+13
+G.J. Kutcher et al., ‘‘Comprehensive QA for radiation oncology: report
+of AAPM Radiation Therapy Committee Task Group 40,’’ Med. Phys. 21,
+581– 618 共1994兲.
+14
+AAPM, Report No. 39. Specification and Acceptance Testing of Computed Tomography Scanners 共American Institute of Physics, New York,
+1993兲.
+15
+B. Fraass et al., ‘‘American Association of Physicists in Medicine Radiation Therapy Committee Task Group 53: quality assurance for clinical
+radiotherapy treatment planning,’’ Med. Phys. 25, 1773–1829 共1998兲.
+16
+R.L. Gerber and J.A. Purdy, ‘‘Quality assurance procedures and performance testing for CT-simulators,’’ in A Practical Guide to 3-D Planning
+and Conformal Radiation Therapy, edited by J.A. Purdy and G. Starkschall 共Advanced Medical Publishing, Inc., Middleton, WI, 1999兲, pp.
+123–132.
+17
+J. Van Dyk and K. Mah, ‘‘Simulation and imaging for radiation therapy
+planning,’’ in Radiotherapy Physics in Practice, 2nd ed., edited by J.R.
+Williams and T.I. Thwaites 共Oxford University Press, Oxford, England,
+2000兲, pp. 118 –149.
+18
+K. Mah, C.E. Danjoux, S. Manship, N. Makhani, M. Cardoso, and K.E.
+Sixel, ‘‘Computed tomographic simulation of craniospinal fields in pediatric patients: improved treatment accuracy and patient comfort,’’ Int. J.
+Radiat. Oncol., Biol., Phys. 41, 997–1003 共1998兲.
+19
+E.K. Butker, D.J. Helton, J.W. Keller, I.L. Hughes, T. Crenshaw, and
+L.W. Davis, ‘‘A totally integrated simulation technique for three-field
+breast treatment using a CT simulator,’’ Med. Phys. 23, 1809–1814
+共1996兲.
+20
+T.S. Curry, J.E. Dowdey, and R.C. Murry, Christensen’s Physics of Diagnostic Radiology, 4th ed. 共Lea & Febiger, PA, Malvern, 1990兲.
+21
+S.H. Fox, ‘‘CT tube technology,’’ in Medical CT and Ultrasound: Current
+technology and applications: Proceedings of the 1995 AAPM Summer
+School, edited by L.W. Goldman and J.B. Fowlkes 共Advanced Medical
+Publishing, Madison, WI, 1995兲, pp. 350–357.
+22
+W.A. Kalender, W. Seissler, E. Klotz, and P. Vock, ‘‘Spiral volumetric CT
+with single-breath-hold technique, continuous transport, and continuous
+scanner rotation,’’ Radiology 176, 181–183 共1990兲.
+23
+W.A. Kalender, ‘‘Principles and performance of spiral CT,’’ in Medical
+CT and Ultrasound: Current Technology and Applications, edited by
+L.W. Goldman and J.B. Fowlkes 共Advanced Medical Publishing, Madison, WI, 1995兲, pp. 379– 410.
+24
+W.A. Kalender and A. Polacin, ‘‘Physical performance characteristics of
+spiral CT scanning,’’ Med. Phys. 18, 910–915 共1991兲.
+25
+K. Klingenbeck-Regn, S. Schaller, T. Flohr, B. Ohnesorge, A.F. Kopp,
+and U. Baum, ‘‘Subsecond multi-slice computed tomography: basics and
+applications,’’ Eur. J. Radiol. 31, 110–124 共1999兲.
+26
+H. Hu, ‘‘Multi-slice helical CT: scan and reconstruction,’’ Med. Phys. 26,
+5–18 共1999兲.
+27
+T. Fuchs, M. Kachelriess, and W.A. Kalender, ‘‘Technical advances in
+multi-slice spiral CT,’’ Eur. J. Radiol. 36, 69–73 共2000兲.
+28
+H.D. Suit et al., ‘‘Potential for improvement in radiation therapy,’’ Int. J.
+Radiat. Oncol., Biol., Phys. 14, 777–786 共1988兲.
+29
+C.R. Ramsey, D. Scaperoth, D. Arwood, and A.L. Oliver, ‘‘Clinical efficacy of respiratory gated conformal radiation therapy,’’ Med. Dosim 24,
+115–119 共1999兲.
+30
+K. Ohara et al., ‘‘Irradiation synchronized with respiration gate,’’ Int. J.
+Radiat. Oncol., Biol., Phys. 17, 853– 857 共1989兲.
+31
+C.H. McCollough and F.E. Zink, ‘‘Performance evaluation of a multislice CT system,’’ Med. Phys. 26, 2223–2230 共1999兲.
+32
+C.A. Perez et al., ‘‘Design of a fully integrated three-dimensional computed tomography simulator and preliminary clinical evaluation,’’ Int. J.
+Radiat. Oncol., Biol., Phys. 30, 887– 897 共1994兲.
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2791
+33
+
+J.L. Garcia-Ramirez, S. Mutic, J.F. Dempsey, D.A. Low, and J.A. Purdy,
+‘‘Performance evaluation of an 85 cm bore x-ray computed tomography
+scanner designed for radiation oncology and comparison with current
+diagnostic CT scanners,’’ Int. J. Radiat. Oncol., Biol., Phys. 52, 1123–
+1131 共2002兲.
+34
+D. Loo, ‘‘CT acceptance testing,’’ in Specification, Acceptance Testing
+and Quality Control of Diagnostic X-ray Imaging Equipment, edited by
+J.A. Seibert, G.T. Barnes, and R.G. Gould, Proceedings of AAPM Summer School 共American Institute of Physics, New York, 1991兲.
+35
+C.H. McCollough, and F.E. Zink, ‘‘Quality control and acceptance testing
+of CT systems,’’ in Medical CT and Ultrasound: Current Technology and
+Applications, edited by L.W. Goldman and J.B. Fowlkes, Proceedings of
+the 1995 AAPM Summer School 共Advanced Medical Publishing, Madison, WI, 1995兲, pp. 350–357.
+36
+C.H. McCollough and F.E. Zink, ‘‘Performance evaluation of CT systems,’’ Radiological Society of North America Categorical Course in
+Diagnostic Radiology Physics 共CT and US Cross-sectional Imaging, Oak
+Brook, IL, 2000兲.
+37
+AAPM, Report No. 1, Phantoms for performance Evaluation and quality
+assurance of CT Scanners 共American Association of Physicists in Medicine, New York, 1977兲.
+38
+M. Stovall et al., ‘‘Fetal dose from radiotherapy with photon beams:
+report of AAPM Radiation Therapy Committee Task Group No. 36,’’
+Med. Phys. 22, 63– 82 共1995兲.
+39
+National Council on Radiation Protection and Measurements 共NCRP兲
+Report Number 91. Recommendations on limits for exposure to ionizing
+radiation, Bathesda, MD, 1987.
+40
+R. Cacak, ‘‘Quality control for computed tomography scanners,’’ in Computed Tomography, 2nd ed., edited by E. Seeram 共W.B. Saunders Company, Philadelphia, PA, 2001兲 pp. 385– 407.
+41
+R.L. Dixon and K.E. Ekstrand, ‘‘A film dosimetry system for use in
+computed tomography,’’ Radiology 127, 255–258 共1978兲.
+42
+J.A. Sorenson, ‘‘Technique for evaluating radiation beam image slice
+parameters of CT scanners,’’ Med. Phys. 6, 68 – 69 共1979兲.
+43
+R.A. Brooks and G.D. Chiro, ‘‘Slice geometry in computer assisted tomography,’’ J. Comput. Assist. Tomogr. 1, 191–199 共1977兲.
+44
+CFR 21.1020.33, 1984, pp. 598 – 603.
+45
+National Council on Radiation Protection and Measurements 共NCRP兲,
+Report Number 99, Quality assurance for diagnostic imaging equipment.
+Bathesda, MD, 1988.
+46
+P.F. Judy, ‘‘The line spread function and modulation transfer function of
+a computed tomographic scanner,’’ J. Comput. Assist. Tomogr. 3, 189–
+195 共1976兲.
+47
+S.M. Bentzen, ‘‘Evaluation of the spatial resolution of a CT scanner by
+direct analysis of the edge response function,’’ Med. Phys. 10, 579–581
+共1983兲.
+48
+N.J. Schneiders and S.C. Bushong, ‘‘Single-step calculation of the MTF
+from ERF,’’ Med. Phys. 5, 31–33 共1978兲.
+49
+E.L. Nickoloff and R. Riley, ‘‘A simplified approach for modulation
+transfer function determinations in computed tomography,’’ Med. Phys.
+12, 437– 442 共1985兲.
+50
+E.L. Nickoloff, ‘‘Measurement of the PSF for a CT scanner: appropriate
+wire diameter and pixel size,’’ Phys. Med. Biol. 3, 149–155 共1988兲.
+51
+R.T. Droege and R.L. Morin, ‘‘A practical method to measure the MTF of
+CT scanners,’’ Med. Phys. 9, 758 –760 共1982兲.
+52
+P.M. Joseph and C.D. Stockham, ‘‘The influence of modulation transfer
+function shape on computed tomographic image quality,’’ Radiology 145,
+179–185 共1982兲.
+53
+K.P. McGee, I.J. Das, and C. Sims, ‘‘Evaluation of digitally reconstructed
+radiographs 共DRRs兲 used for clinical radiotherapy: a phantom study,’’
+Med. Phys. 22, 1815–1827 共1995兲.
+54
+Y. Yu et al., ‘‘Permanent prostate seed implant brachytherapy: report of
+the American Association of Physicists in Medicine Task Group No. 64,’’
+Med. Phys. 26, 2054 –2076 共1999兲.
+55
+K.P. McGee and I.J. Das, ‘‘Commissioning, acceptance testing, and quality assurance of a CT simulator,’’ in A Practical Guide to CT Simulation,
+edited by L.R. Coia, T.E. Schultheiss, and G.E. Hanks 共Advanced Medical Publishing, Madison, WI, 1995兲, pp. 39–50.
+56
+T.C. Craig, D. Brochu, and J. Van Dyk, ‘‘A quality assurance phantom for
+three-dimensional radiation treatment planning,’’ Int. J. Radiat. Oncol.,
+Biol., Phys. 44, 955–966 共1999兲.
+57
+National Electrical Manufacturers Association 共NEMA兲, DICOM PS 3
+共set兲, Digital Imaging Communications in Medicine 共DICOM兲, 1998.
+
+2792
+
+Mutic et al.: AAPM–TG66 Report
+
+58
+
+S. Mutic et al., ‘‘Multimodality image registration quality assurance for
+conformal three-dimensional treatment planning,’’ Int. J. Radiat. Oncol.,
+Biol., Phys. 51, 255–260 共2001兲.
+59
+A.L. Boyer, T.G. Ochran, C.E. Nyerick, T.J. Waldron, and C.J. Huntzinger, ‘‘Clinical dosimetry for implementation of a multileaf collimator,’’
+Med. Phys. 19, 1255–1261 共1992兲.
+60
+A. Brahme, ‘‘Design principles and clinical possibilities with new generation of radiotherapy equipment,’’ Acta Oncol. 26, 403– 412 共1987兲.
+61
+I.J. Das, G.E. Desobry, S.W. McNeely, E.C. Cheng, and T.E. Schultheiss,
+‘‘Beam characteristics of a retrofitted double-focused multileaf collimator,’’ Med. Phys. 25, 1676 –1684 共1998兲.
+62
+A. Frazier et al., ‘‘Dosimetric evaluation of the conformation of the multileaf collimator to irregularly shaped fields,’’ Int. J. Radiat. Oncol., Biol.,
+Phys. 33, 1229–1238 共1995兲.
+63
+J.M. Galvin, A.R. Smith, and B. Lally, ‘‘Characterization of a multileaf
+collimator system,’’ Int. J. Radiat. Oncol., Biol., Phys. 25, 181–192
+共1993兲.
+64
+D. Georg, F. Julia, E. Briot, D. Huyskens, U. Wolff, and A. Duetrix,
+‘‘Dosimetric comparison of an integrated multileaf-collimator versus a
+conventional collimator,’’ Phys. Med. Biol. 42, 2285–2303 共1997兲.
+65
+M.S. Huq, Y. Yu, Z.P. Chen, and N. Suntharalingam, ‘‘Dosimetric characteristics of a commercial multileaf collimator,’’ Med. Phys. 22, 241–
+247 共1995兲.
+66
+T.J. Jordan and P.C. Williams, ‘‘The design and performance characteristics of a multileaf collimator,’’ Phys. Med. Biol. 39, 231–251 共1994兲.
+67
+J.R. Palta, D.K. Yeung, and V. Frouhar, ‘‘Dosimetric considerations for a
+multileaf collimator system,’’ Med. Phys. 23, 1219–1224 共1996兲.
+68
+I.J. Das et al., ‘‘Use of multiplanar reformatted radiographic and digitally
+reconstructed radiographic images for planning conformal radiation
+therapy,’’ Radiographics 15, 1483–1488 共1995兲.
+69
+M.L. Bahner, J. Debus, A. Zabel, S. Levegrun, and G. Van Kaick, ‘‘Digitally reconstructed radiographs from abdominal CT scans as a new tool
+for radiotherapy planning,’’ Invest. Radiol. 34, 643– 647 共1999兲.
+70
+C. Yang et al., ‘‘Use of digitally reconstructed radiographs in radiotherapy treatment planning and verification,’’ Australas Radiol. 44, 439–
+443 共2000兲.
+
+Medical Physics, Vol. 30, No. 10, October 2003
+
+2792
+71
+
+W.A. Kalender, A. Polacin, and C. Suss, ‘‘A comparison of conventional
+and spiral CT: an experimental study on the detection of spherical lesions
+关published erratum appears in J. Comput. Assist. Tomogr. 1994 Jul-Aug,
+18共4兲:671兴,’’ J. Comput. Assist. Tomogr. 18, 167–176 共1994兲.
+72
+M. Goitein and M. Abrams, ‘‘Multi-dimensional treatment planning: I.
+Delineation of anatomy,’’ Int. J. Radiat. Oncol., Biol., Phys. 9, 777–787
+共1983兲.
+73
+M. Goitein, M. Abrams, D. Rowell, H. Pollari, and J. Wiles, ‘‘Multidimensional treatment planning: II. Beam’s eye-view, back projection,
+and projection through CT sections,’’ Int. J. Radiat. Oncol., Biol., Phys. 9,
+789–797 共1983兲.
+74
+International Commission on Radiation Units and Measurements 共ICRU兲,
+Determination of absorbed dose in patients irradiated by beams of x- or
+gamma-rays in radiotherapy process, Bethesda, MD, 1976.
+75
+Joint Commission on the Accreditation of Healthcare Organizations: Radiation Services: Quality assurance standards, 1987.
+76
+Joint Commission on the Accreditation of Healthcare Organizations: Radiation Services: Quality assurance standards, 1992.
+77
+H.D. Nagel, Radiation Exposure in Computed Tomography, 共COCIR,
+Frankfurt, 2000兲.
+78
+T.B. Shope, R.M. Gagne, and G.C. Johnson, ‘‘A method for describing
+the doses delivered by transmission x-ray computed tomography,’’ Med.
+Phys. 8, 488 – 495 共1981兲.
+79
+AAPM, Report No. 31, Standardized Methods for Measuring Diagnostic
+X-ray Exposures 共American Institute of Physics, New York, 1990兲.
+80
+NCRP, Structural Shielding Design and Evaluation for Medical use of X
+rays and Gamma Rays of Energies up to 10 MeV, 共National Council on
+Radiation Protection and Measurements, Washington, DC, 1976兲.
+81
+R.L. Kruger, C.H. McCollough, and F.E. Zink, ‘‘Measurement of halfvalue layer in x-ray CT: a comparison of two noninvasive techniques,’’
+Med. Phys. 27, 1915–1919 共2000兲.
+82
+AAPM, Report No. 25, Protocols for the Radiation Safety Surveys of
+Diagnostic Radiological Equipment 共American Institute of Physics, New
+York, 1988兲.
+
+

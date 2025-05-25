@@ -1,0 +1,1525 @@
+AAPM Task Group 108: PET and PET/CT Shielding Requirements
+Mark T. Madsen
+Radiology, University of Iowa
+
+Jon A. Anderson
+Radiology, University of Texas Southwest Texas Medical Center at Dallas
+
+James R. Halama
+Nuclear medicine, Loyola University Medical Center
+
+Jeff Kleck
+Attainia, Inc.
+
+Douglas J. Simpkin
+Radiology, St. Luke’s Medical Center
+
+John R. Votaw
+Radiology, Emory University
+
+Richard E. Wendt III
+University of Texas MD Anderson Cancer Center
+
+Lawrence E. Williams
+Radiology, City of Hope Medical Center
+
+Michael V. Yester
+Radiology, University of Alabama at Birmingham Medical Center
+
+共Received 21 July 2005; revised 17 October 2005; accepted for publication 18 October 2005;
+published 19 December 2005兲
+The shielding of positron emission tomography 共PET兲 and PET/CT 共computed tomography兲 facilities presents special challenges. The 0.511 MeV annihilation photons associated with positron
+decay are much higher energy than other diagnostic radiations. As a result, barrier shielding may be
+required in floors and ceilings as well as adjacent walls. Since the patient becomes the radioactive
+source after the radiopharmaceutical has been administered, one has to consider the entire time that
+the subject remains in the clinic. In this report we present methods for estimating the shielding
+requirements for PET and PET/CT facilities. Information about the physical properties of the most
+commonly used clinical PET radionuclides is summarized, although the report primarily refers to
+fluorine-18. Typical PET imaging protocols are reviewed and exposure rates from patients are
+estimated including self-attenuation by body tissues and physical decay of the radionuclide. Examples of barrier calculations are presented for controlled and noncontrolled areas. Shielding for
+adjacent rooms with scintillation cameras is also discussed. Tables and graphs of estimated transmission factors for lead, steel, and concrete at 0.511 MeV are also included. Meeting the regulatory
+limits for uncontrolled areas can be an expensive proposition. Careful planning with the equipment
+vendor, facility architect, and a qualified medical physicist is necessary to produce a cost effective
+design while maintaining radiation safety standards © 2006 American Association of Physicists in
+Medicine. 关DOI: 10.1118/1.2135911兴
+TABLE OF CONTENTS
+INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+POSITRON-EMITTING RADIONUCLIDES. . . . . . . .
+Shielding factors. . . . . . . . . . . . . . . . . . . . . . . .
+FACTORS AFFECTING RADIATION
+PROTECTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+RB-82 MYOCARDIAL PERFUSION PET
+STUDIES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+HOW F-18 FDG PET STUDIES ARE
+PERFORMED. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+TRANSMISSION SOURCES. . . . . . . . . . . . . . . . . . . .
+RADIOACTIVITY ADMINISTRATION. . . . . . . . . . .
+4
+
+Med. Phys. 33 „1…, January 2006
+
+14
+14
+14
+14
+14
+14
+14
+14
+
+FACTORS AFFECTING DOSE RATES FROM
+RADIOACTIVE PATIENTS. . . . . . . . . . . . . . . . . . . . .
+Dose rate constant. . . . . . . . . . . . . . . . . . . . . .
+Patient attenuation. . . . . . . . . . . . . . . . . . . . . .
+Radioactive decay. . . . . . . . . . . . . . . . . . . . . . .
+Regulatory limits. . . . . . . . . . . . . . . . . . . . . . .
+UPTAKE ROOM CALCULATION. . . . . . . . . . . . . . . .
+Example 1. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+IMAGING ROOM CALCULATION. . . . . . . . . . . . . . .
+Example 2. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Example 3. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+CALCULATION FOR ROOMS ABOVE AND
+BELOW THE PET FACILITY. . . . . . . . . . . . . . . . . . .
+Example 4. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+0094-2405/2006/33„1…/4/12/$23.00
+
+© 2006 Am. Assoc. Phys. Med.
+
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+4
+
+5
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+Example 5. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+DOSE LEVELS IN CONTROLLED AREAS. . . . . . . .
+Dose from patient injections. . . . . . . . . . . . . .
+Dose from patient positioning. . . . . . . . . . . . .
+Dose from patient imaging. . . . . . . . . . . . . . . .
+Example 6. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ADJACENT ROOMS ON THE SAME LEVEL IN
+CONTROLLED AREAS. . . . . . . . . . . . . . . . . . . . . . . .
+DESIGN CONSIDERATIONS. . . . . . . . . . . . . . . . . . . .
+PET/CT INSTALLATIONS. . . . . . . . . . . . . . . . . . . . . .
+SHIELDING OF THE PET TOMOGRAPH FROM
+AMBIENT RADIATION. . . . . . . . . . . . . . . . . . . . . . . .
+PET FACILITIES LOCATED IN NUCLEAR
+MEDICINE DEPARTMENTS. . . . . . . . . . . . . . . . . . . .
+Example 7. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+SUMMARY AND CONCLUSIONS. . . . . . . . . . . . . . .
+
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+14
+
+INTRODUCTION
+Positron emission tomography 共PET兲 has been available in a
+number of centers for more than 20 years, but its use was not
+widespread until about 5 years ago. The power of PET resides in its ability to capture physiology and thereby obtain
+crucial diagnostic information unavailable from highresolution pictures of the anatomy. The recent explosion of
+interest in PET as a diagnostic imaging modality originates
+from three factors: powerful radiotracers, coincidence detection, and study reimbursement. The most versatile clinical
+PET radiopharmaceutical is F-18 Fluoro-2-deoxyglucose
+共F-18 FDG兲, a glucose analog. F-18 FDG is accumulated in
+high concentration in metabolically active tumors as well as
+in the brain and the myocardium. Although the half-life of
+F-18 is only 110 min, F-18 FDG is commercially available
+throughout the U.S. in unit dose quantities. Currently, the
+U.S. Centers for Medicare & Medicaid Services 共CMS兲 is
+reimbursing F-18 FDG PET studies for diagnosis, staging,
+and restaging of nonsmall cell lung cancer, esophageal cancer, colorectal cancer, head and neck cancers, lymphoma,
+and melanoma, as well as the staging and restaging of breast
+cancer. PET F-18 FDG studies for myocardial viability and
+the presurgical evaluation of refractory seizures are also covered, along with myocardial perfusion studies using Rb-82
+chloride and N-13 ammonia.
+
+5
+
+Because of the high energy of the annihilation radiation,
+shielding requirements are an important consideration in the
+design of a PET or PET/CT imaging facility. While various
+aspects of PET shielding design have been addressed in a
+number of publications,1–4 this Task Group Report provides a
+comprehensive summary of the issues that need to be considered for PET and PET/CT shielding facilities, along with
+example calculations.
+POSITRON-EMITTING RADIONUCLIDES
+All PET tomographs use coincidence detection of the
+positron-electron annihilation photons to acquire the projection data required for tomographic images. Certain radionuclides decay by spontaneously converting a proton into a
+neutron and simultaneoulsy emit an energetic positron. After
+the positron dissipates its kinetic energy as it traverses tissue
+共or other material兲, it captures an electron and forms a positronium atom. Because the electron and positron are antiparticles, they mutually annihilate, producing two 511 keV
+photons.5 Positron-emitting radionuclides used in medical
+imaging typically have short half-lives and consequently
+many of them, such as O-15, N-13, and C-11, have to be
+produced with an on-site cyclotron in order to have clinically
+useful quantities available. These cyclotrons are also used to
+produce F-18; however, the 110 min half-life of F-18 is long
+enough that it can be regionally supplied.6 The other PET
+tracer in current clinical use that does not require a cyclotron
+is Rb-82. The half-life of Rb-82 is only 72 s, but it is produced by a commercially available radionuclide generator
+that has a shelf life of 1 month.7 Information about commonly used positron-emitting radionuclides is given in
+Tables I and II.
+Although the information in Tables I and II includes a
+variety of positron-emitting radionuclides, most of the discussion in this report will focus on F-18. There are several
+reasons for this. First and foremost, F-18 FDG is by far the
+most commonly used PET radiotracer, and is expected to
+continue in that role for the foreseeable future. Because of its
+relatively long half-life compared to other commonly used
+positron-emitting radionuclides, one can expect that shielding adequate for F-18 procedures should be more than adequate for procedures where shorter-lived radionuclides 共C-
+
+TABLE I. Physical properties of commonly used PET radionuclides.
+
+Nuclide
+
+Half-life
+
+Decay
+mode
+
+11
+
+20.4 min
+10.0 min
+2.0 min
+109.8 min
+12.7 h
+68.3 min
+76 s
+4.2 d
+
+␤+
+␤+
+␤+
+␤+, EC
+␤ − , ␤+, EC
+␤+, EC
+␤+, EC
+␤+, EC
+
+C
+N
+15
+O
+18
+F
+64
+Cu
+68
+Ga
+82
+Rb
+124
+I
+13
+
+Medical Physics, Vol. 33, No. 1, January 2006
+
+Positron
+maximum
+energy共MeV兲
+
+Photon
+emission共keV兲
+
+Photons/
+decay
+
+0.96
+1.19
+1.72
+0.63
+0.65
+1.9
+3.35
+1.54, 2.17
+
+511
+511
+511
+511
+511, 1346
+511
+511, 776
+511, 603, 1693
+
+2.00
+2.00
+2.00
+1.93
+0.38, 0.005
+1.84
+1.90, 0.13
+0.5,0.62,0.3
+
+6
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+6
+
+TABLE II. Effective dose equivalent dose rate constants for commonly used
+PET radionuclides.
+
+Nuclide
+11
+
+C
+N
+15
+O
+18
+F
+64
+Cu
+68
+Ga
+82
+Rb
+124
+I
+13
+
+Dose rate constant
+␮Sv m2 / MBq h
+
+1 hour integrated dose
+␮Sv m2 / MBq
+
+0.148
+0.148
+0.148
+0.143
+0.029
+0.134
+0.159
+0.185
+
+0.063
+0.034
+0.007
+0.119
+0.024
+0.101
+0.006
+0.184
+
+11, N-13, O-15, Rb-82兲 or those with smaller dose rate
+constants 共Cu-64, Ga-68兲 are administered with similar
+quantities of radioactivity. It should be noted that positronemitting radionuclides that are longer lived and have highenergy gamma emissions in addition to the annihilation radiation might not be adequately shielded by a facility
+designed for F-18 FDG imaging.
+The dose rate constants reported for the radionuclides in
+Table II are taken from the effective dose equivalent calculations provided in the 1991 ANSI/ANS-6.1.1 report.8 The
+Task Group believes that 0.143 ␮Sv m2 / MBq h is the most
+appropriate value to use for shielding since the regulatory
+limits are specified in terms of effective dose equivalent. A
+review of the literature provides a somewhat confusing assortment of exposure and dose rate constants for positron
+emitters that have been used in shielding calculations for
+F-18. Table III gives a list of the various dose rate values.
+These values range from 0.135 to 0.188 ␮Sv m2 / MBq h.
+Each of these values has an appropriate context for its use.
+On the low end, the 0.135 ␮Sv m2 / MBq h is the air kerma
+value. The dose rate constant for a 1 cubic cm piece of unit
+density tissue is 0.148 ␮Sv m2 / MBq h. On the high end, the
+value of 0.188 ␮Sv m2 / MBq h is calculated for the maximum dose received in a 30 cm slab of tissue exposed to a
+broad beam of 511 keV annihilation photons.9 This value is
+higher than the tissue dose constant because it includes side
+and backscatter components. The tissue depth where the
+maximum dose is achieved is 3 mm. The deep dose value of
+0.183 corresponds to the dose at 1 cm depth in a similar
+configuration, and is slightly less than the maximum because
+of attenuation.9
+
+TABLE III. Reported values of F-18 exposure and dose rate constants.
+F-18 rate constants
+
+Value
+
+Units
+
+Exposure rate constant
+Air kerma rate constant
+Effective dose equivalent 共ANS-1991兲
+Tissue dose constanta
+Deep dose equivalent 共ANS-1977兲
+Maximum dose 共ANS-1977兲
+
+15.4
+0.134
+0.143
+0.148
+0.183
+0.188
+
+␮R m2 / MBq h
+␮Sv m2 / MBq h
+␮Sv m2 / MBq h
+␮Sv m2 / MBq h
+␮Sv m2 / MBq h
+␮Sv m2 / MBq h
+
+a
+
+Dose to 1 cm3 of tissue in air.
+
+Medical Physics, Vol. 33, No. 1, January 2006
+
+FIG. 1. Plot of lead broad beam transmission factors as a function of lead
+thickness.
+
+Shielding factors
+
+A variety of attenuation coefficients has been used to estimate transmission requirements for PET facilities. Several
+publications have used the narrow-beam, good geometry attenuation coefficients for lead and concrete. At 511 keV, this
+yields a half-value layer10 of 4.1 mm for lead and 3.4 cm for
+normal concrete.3 Calculations based on these values will not
+provide sufficient shielding since they neglect scatter buildup
+factors. In addition, even tenth-value layers 共TVLs兲 that are
+derived from broad beam measurements, such as those provided by the National Council on Radiation Protection and
+Measurements11 and German Deutsches Institut für
+Normung,12 may not correctly estimate shielding requirements. In this report, we will use values of broad beam transmission factors for lead, concrete, and iron that are based on
+consistent Monte Carlo calculations performed by one of the
+authors 共Douglas Simpkin兲. An infinite broad beam geometry
+was used for the reciprocity scoring scheme.13 Plots of the
+broad beam transmission at 511 keV are provided for lead,
+concrete, and iron 共Figs. 1–3兲 along with a comparison of
+exponential attenuation using the NCRP TVL. Figure 1
+shows that there is a subtle difference between the TVL and
+Monte Carlo results for lead up to a 10 mm thickness. With
+increasing thickness of lead beyond that point, the TVL actually overestimates the amount of lead required as compared to the Monte Carlo calculation. A similar result is
+shown in Fig. 3 for iron. The results for concrete given in
+Fig. 2 show a substantial difference between the TVL and
+Monte Carlo results for concrete. Table IV summarizes the
+Monte Carlo transmission factors for lead, concrete, and iron
+and Table V gives the optimized parameters that fit the
+Monte Carlo transmission results to the Archer model.10
+FACTORS AFFECTING RADIATION
+PROTECTION
+There are several obvious factors that affect the amount of
+shielding required for PET facilities. These include the num-
+
+7
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+7
+
+TABLE IV. Broadbeam transmission factors at 511 keV in lead, concrete,
+iron.
+Transmission Factors
+
+FIG. 2. Plot of concrete broad beam transmission factors as a function of
+concrete thickness.
+
+ber of patients imaged, the amount of radiotracer administered per patient, the length of time that each patient remains
+in the facility, and the location of the facility and its general
+environs. The PET tomograph may influence the amount of
+radioactivity that is administered to patients. Depending on
+the vendor and model, a PET tomograph may acquire data in
+either a two-dimensional 共2D兲 or three-dimensional 共3D兲
+geometry.14 Two-dimensional acquisitions have lead septa
+that are placed within the axial field-of-view to restrict the
+coincidence lines of response to direct transaxial planes. In
+addition to reducing the system sensitivity for true coincidence events, the septa also significantly reduce scatter and
+random coincidence events. Because of the reduced sensitivity in the 2D mode, count rate losses are not usually a concern for whole body imaging for administered activities up to
+2 GBq that may be used for Rb-82 myocardial perfusion
+
+Thicknessa,b
+
+Lead
+
+Concretec
+
+Iron
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+12
+14
+16
+18
+20
+25
+30
+40
+50
+
+1.0000
+0.8912
+0.7873
+0.6905
+0.6021
+0.5227
+0.4522
+0.3903
+0.3362
+0.2892
+0.2485
+0.1831
+0.1347
+0.0990
+0.0728
+0.0535
+0.0247
+0.0114
+0.0024
+0.0005
+
+1.0000
+0.9583
+0.9088
+0.8519
+0.7889
+0.7218
+0.6528
+0.5842
+0.5180
+0.4558
+0.3987
+0.3008
+0.2243
+0.1662
+0.1227
+0.0904
+0.0419
+0.0194
+0.0042
+0.0009
+
+1.0000
+0.7484
+0.5325
+0.3614
+0.2353
+0.1479
+0.0905
+0.0542
+0.0319
+0.0186
+0.0107
+0.0035
+0.0011
+0.0004
+0.0001
+
+a
+
+Thickness in mm for lead.
+Thickness in cm for concrete and iron.
+c
+Concrete density= 2.35 g / cm3.
+The Monte Carlo transmission data have been fitted to the model proposed
+by Archer et al. 共Ref. 10兲: B = 兵共1 + 共␤ / ␣兲兲e␣␥x − 共␤ / ␣兲其共1/␥兲. This can be
+inverted to obtain x 共material thickness兲 as a function of transmission 共B兲:
+x = 共1 / ␣␥兲ln兵关B−␥ + 共␤ / ␣兲兴 / 关1 + 共␤ / ␣兲兴其.
+b
+
+studies. In the 3D mode, activities of this magnitude overwhelm PET tomographs, and the maximum activity that can
+be used must be reduced. PET tomographs that use BGO or
+NaI共Tl兲 detectors have a large dead time and their maximum
+operating activity is about half that of the systems based on
+LSO or GSO detectors.15,16
+RB-82 MYOCARDIAL PERFUSION PET STUDIES
+Rubidium-82 is a potassium analog similar to Tl-201 that
+is used for myocardial perfusion imaging. The half-life of
+Rb-82 is 76 s and it is available from a Sr-82/Rb-82 generator provided by Bracco Diagnostics, Inc. The generator is
+self-shielded, and has a useful life of 1 month. For the myocardial perfusion study, the patient is positioned in the PET
+tomograph while Rb-82 is eluted as rubidium chloride from a
+generator through intravenous tubing directly into the paTABLE V. Fitting parameter for broad beam 511 keV transmission data.
+
+FIG. 3. Plot of iron broad beam transmission factors as a function of iron
+thickness.
+Medical Physics, Vol. 33, No. 1, January 2006
+
+Shielding
+material
+
+␣共cm−1兲
+
+␤共cm−1兲
+
+␥
+
+Lead
+Concrete
+Iron
+
+1.543
+0.1539
+0.5704
+
+−0.4408
+−0.1161
+−0.3063
+
+2.136
+2.0752
+0.6326
+
+8
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+tient’s antecubital vein over a period of 5 – 10 s. A built-in
+ionization chamber, flow control valve, and calculator are
+used to deliver the prescribed patient doses of either 740 or
+2220 MBq for 3D or 2D PET acquisitions, respectively. A
+4 – 6 min single-position image acquisition begins 2 min following the end of administration. This procedure is performed twice. During the first study the patient’s heart is at
+rest, while the second study begins after applying pharmacological stress. It is possible to complete both studies in
+30 min.7 Because of the short half-life of Rb-82, the dose
+levels from myocardial perfusion studies are at least a factor
+of 2 less than that obtained from the studies performed with
+F-18 that are discussed in the next section.
+HOW F-18 FDG PET STUDIES ARE PERFORMED
+F-18 FDG is a nonspecific tracer for glucose metabolism
+that is taken up normally in the brain, heart, bone marrow,
+bowel, kidneys, and activated muscles. It also concentrates in
+many metabolically active tumors, making it a powerful diagnostic agent for a large number of cancers. To reduce uptake in skeletal muscles, the patients must be kept in a quiescent state before and after the administration of the F-18
+FDG in either a bed or chair. This uptake time is 30– 90 min
+depending on the type of scan and the practices of the institution. A patient preparation room for this uptake phase is a
+requirement for all PET facilities and must be included in the
+radiation safety planning. It should be noted that a busy PET
+facility will often have more than one patient in the uptake
+area and this needs to be considered when performing shielding calculations. After the uptake period, the patient should
+void to clear the radioactivity that has accumulated in the
+bladder; approximately 15%–20% of administered activity is
+excreted within the first 2 h.17,18 It is a good idea to have a
+bathroom reserved for PET patients within the immediate
+imaging area so that they do not alter the background counts
+of other detection devices as they pass though the clinic.
+After voiding, the patient is positioned on the tomograph for
+the procedure. The patient is translated though the tomograph in a step and shoot fashion. Images are acquired at 6 to
+10 bed positions over a 15– 60 min interval. The patient may
+be released immediately following the procedure or may go
+to a waiting area while the PET study is reviewed. If the
+patients are kept in the clinic for any length of time after the
+study is completed, that area must also be included in the
+radiation safety planning. Because of the high penetration of
+annihilation radiation, all surrounding areas in the vicinity of
+the PET imaging clinic must be considered for shielding calculations. This includes areas above and below the PET
+clinic as well as adjacent areas on the same floor.
+TRANSMISSION SOURCES
+Conventional PET systems use either Ge-68 or Cs-137
+radionuclide sources for acquiring the transmission studies
+that are required for attenuation compensation. These sources
+are located in shielded containers except for the time that
+they are actively being used to acquire the transmission portion of the PET scan. During the transmission study, the
+Medical Physics, Vol. 33, No. 1, January 2006
+
+8
+
+sources are positioned so that nearly all of the emitted photons are absorbed by the patient and the detectors of the PET
+scanner. As a result, the additional dose from these transmission sources to the surrounding area is negligible and can be
+excluded from shielding calculations. The radiation from the
+CT component of a PET/CT system does have to considered,
+and that will be discussed below.
+RADIOACTIVITY ADMINISTRATION
+The amount of administered activity for F-18 FDG studies
+depends to some extent on the mass of the patient, the length
+of the uptake time, and the acquisition mode. Adults typically receive 370– 740 MBq of F-18 FDG, while pediatric
+patients receive approximately 4 – 5 MBq/ kg.19 The amount
+of radiotracer that can be administered differs with the acquisition mode and limits of the PET tomograph as previously discussed.
+Because of the number of variables involved in determining the administered activity, it becomes necessary to gather
+information from the institution on the study mix, preference
+for 2D and 3D acquisitions, radiotracer uptakes times, and
+match those with the specific recommendations made by the
+PET tomograph vendor. For illustrations that follow in this
+report, it will be assumed that the F-18 FDG dose is
+555 MBq 共15 mCi兲 with an uptake time of 60 min.
+FACTORS AFFECTING DOSE RATES FROM
+RADIOACTIVE PATIENTS
+In this section the parameters associated with dose rate
+from positron-emitting sources are discussed; Table VI has a
+summary of the terms that are used. The patient is the primary source of radiation that needs to be considered. In determining the radiation dose from the patient to the surrounding areas, the following points must be considered.
+Dose rate constant
+
+The appropriate dose rate constant for F-18 for shielding
+purposes is 0.143 ␮Sv m2 / MBq h, and the dose rate associated with 37 MBq 共1 mCi兲 of F-18 is 5.3 ␮Sv/ h at 1 m from
+an unshielded point source.
+Patient attenuation
+
+Since the body absorbs some of the annihilation radiation,
+the dose rate from the patient is reduced by a significant
+factor. A number of papers have been published where direct
+measurements have been made at different orientations from
+the patient.20–27 These reported values were normalized for
+the amount of administered activity and measurement distance, and were also corrected for radioactive decay back to
+the administration time. Based on the mean of these corrected results, the Task Group recommends using a patient
+dose rate of 0.092 ␮Sv m2 / MBq h 共3.4 ␮Sv m2 / h / 37 MBq兲
+immediately after administration. This corresponds to an effective body absorption factor of 0.36, which is in good
+agreement with the total body absorption factor of 0.34 for
+500 keV photons calculated by Snyder et al.28
+
+9
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+9
+
+TABLE VI. Summary of dose parameters.
+Parameter
+
+Definition
+
+Ao
+t
+tU
+tI
+D共t兲
+D共0兲
+T1/2
+Rt
+
+Administered activity 共MBq兲
+Time 共h兲
+Uptake time 共h兲
+Imaging time 共h兲
+Total dose for time t共␮Sv兲
+Initial dose rate 共␮Sv/ h兲
+Radionuclide half-life 共h兲
+Dose reduction factor over time t
+Dose reduction factor over uptake time
+time t
+Dose reduction factor over imaging
+time t
+Number of patients per week
+Distance from source to barrier 共m兲
+Uptake time decay factor 共␮Sv兲
+Occupancy factor
+Weekly dose limit
+Transmission factor 共uptake room兲
+Transmission factor 共scanner
+room兲
+
+RtU
+RtI
+Nw
+d
+FU
+T
+P
+
+B
+
+Formulation
+
+Because PET tracers have short half-lives, the total radiation dose received over a time period t , D共t兲, is less than the
+product of the initial dose rate and time 关Ḋ共0兲 ⫻ t兴. The reduction factor, Rt, is calculated as
+
+=1.443⫻ 共T1/2 / tI兲 ⫻ 关1 − exp共−0.693tI / T1/2兲兴
+
+=exp关共 − 0.693tU / T1/2兲兴
+
+=10.9⫻ P ⫻ d2 / 关T ⫻ Nw ⫻ Ao ⫻ tU共h兲 ⫻ RtU兴
+=12.8⫻ P ⫻ d2 / 关T ⫻ Nw ⫻ Ao ⫻ FU ⫻ tI共h兲 ⫻ RtI兴
+
+⫻ RtU/d共m兲2 .
+
+共1兲
+
+For F-18, this corresponds to Rt factors of 0.91, 0.83, and
+0.76 for t = 30, 60, and 90 min, respectively.
+Regulatory limits
+
+The federal code of regulations 10 CFR20 establishes the
+dose limits in controlled radiation areas and uncontrolled areas open to the general public. Under these regulations, the
+facility must be shielded so that the effective dose equivalent
+in uncontrolled areas does not exceed 1 mSv/ year or 20 ␮Sv
+in any 1 h. The 1 mSv/ year limit implies a weekly dose
+limit of 20 ␮Sv, and this limit becomes the determining factor for shielding calculations in uncontrolled areas. The occupational dose limit in controlled areas is 50 mSv/ year.
+Most shielding calculations use a target level of 5 mSv/ year
+in controlled areas to be consistent with ALARA recommendations.
+UPTAKE ROOM CALCULATION
+Patients undergoing PET scans need to be kept in a quiet
+resting state prior to imaging to reduce uptake in the skeletal
+muscles. This uptake time varies from clinic to clinic, but is
+usually in the range of 30– 90 min. The total dose at a point
+d meters from the patient during the uptake time 共tU兲 is
+
+共2兲
+
+If NW patients are scanned per week, the total weekly dose is
+0.092 ␮Sv m2/MBq h ⫻ NW ⫻ Ao共MBq兲 ⫻ tU共h兲
+⫻ RtU/d共m兲2 .
+
+Rt = D共t兲/关Ḋ共0兲 ⫻ t兴
+
+Medical Physics, Vol. 33, No. 1, January 2006
+
+=1.443⫻ 共T1/2 / tU兲 ⫻ 共1 − exp共−0.693tU / T1/2兲兲
+
+D共tU兲 = 0.092 ␮Sv m2/MBq h ⫻ Ao共MBq兲 ⫻ tU共h兲
+
+Radioactive decay
+
+= 1.443 ⫻ 共T1/2/t兲 ⫻ 关1 − exp共− 0.693t/T1/2兲兴.
+
+=1.443⫻ 共T1/2 / t兲 ⫻ 关1 − exp共−0.693t / T1/2兲兴
+
+共3兲
+
+Thus, the transmission factor 共B兲 required is
+B = 10.9 ⫻ P ⫻ d共m兲2/共T ⫻ NW ⫻ Ao共MBq兲 ⫻ tU关h兴 ⫻ RtU兲.
+共4兲
+T is the occupancy factor and P is the weekly dose limit in
+␮Sv. In the US, P = 20 ␮Sv for uncontrolled areas, corresponding to the 1 mSv/ year limit to the general public and
+P = 100 ␮Sv for ALARA levels in controlled areas. Thus, for
+uncontrolled areas
+B = 218 ⫻ d共m兲2/关T ⫻ NW ⫻ Ao共MBq兲 ⫻ tU共h兲 ⫻ RtU兴
+共5兲
+=5.89 ⫻ d共m兲2/关T ⫻ NW ⫻ Ao共mCi兲 ⫻ tU共h兲 ⫻ RtU兴.
+共6兲
+And, for controlled areas at ALARA levels
+B = 1090 ⫻ d2/关T ⫻ NW ⫻ Ao共MBq兲 ⫻ tU共h兲 ⫻ RtU兴
+
+共7兲
+
+=29.5 ⫻ d2/关T ⫻ NW ⫻ Ao共mCi兲 ⫻ tU共h兲 ⫻ RtU兴.
+
+共8兲
+
+Example 1
+
+What is the transmission factor required for an uncontrolled area 关occupancy factor 共T兲 = 1兴 at a point 4 m from
+
+10
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+10
+
+the patient chair in an uptake room? Assume patients are
+administered 555 MBq of F-18 FDG, there are 40 patients
+per week, and the uptake time is 1 h.
+
+B = 10.9 ⫻ P ⫻ d共m兲2/共T ⫻ NW ⫻ Ao共MBq兲 ⫻ 0.85
+
+218 MBq h/m2共4 m兲2/共40 ⫻ 555 MBq 1 h ⫻ 0.83兲 = 0.189.
+
+Thus, the transmission factor for uncontrolled areas is
+
+Using Table IV values, 1.2 cm of lead or 15 cm of concrete
+shielding is required.
+
+⫻ FUtI共h兲 ⫻ RtI兲.
+
+共10兲
+
+B = 256 ⫻ d共m兲2/关T ⫻ NW ⫻ Ao共MBq兲 ⫻ FU ⫻ tI共h兲 ⫻ RtI兴.
+共11兲
+And, for controlled areas at ALARA levels
+B = 1280 ⫻ d2/关T ⫻ NW ⫻ Ao共MBq兲 ⫻ FU ⫻ tI共h兲 ⫻ RtI兴.
+
+IMAGING ROOM CALCULATION
+If the most conservative approach is taken, where no
+shielding from the tomograph is assumed, then the calculation of shielding for the tomograph room is similar to the
+uptake area calculation. Because of the delay required by the
+uptake phase between the administration of the radiopharmaceutical and the actual imaging, the activity in the patient is
+decreased by FU = exp关−0.693⫻ TU共min兲 / 110兴, where TU is
+the uptake time. In most cases the patient will void prior to
+imaging, removing approximately 15% of the administered
+activity and thereby decreasing the dose rate by 0.85. The
+weekly dose at a distance d from the source is calculated as
+0.092 ␮Sv m2/MBq h ⫻ NW ⫻ Ao共MBq兲 ⫻ 0.85 ⫻ FU
+⫻ tl共h兲 ⫻ RtI/d共m兲2 .
+The transmission factor is given as
+
+共9兲
+
+共12兲
+The decay factor for F-18 at 1 h FU is equal to exp共−0.693
+⫻ 60/ 110兲 = 0.68.
+The gantry and detectors of the PET tomograph can provide a substantial reduction of the dose rate at some of the
+walls. This depends on the actual geometry and placement of
+the tomograph in the room as well as the type of scanning
+procedures. If information on the tomograph shielding characteristics is available from the vendor, it can be incorporated into the calculation for the walls that are shielded by
+the scanner and for the floors and ceilings. Activity that is
+within the scanner bore is nearly 100% shielded, but the
+axial width of most PET scanners is 16– 18 cm. Thus, for a
+5-bed position scan, the scanner 共conservatively兲 reduces the
+dose by 20%. However, because of the time required to bring
+
+FIG. 4. Room layout of a typical PET
+facility in a nuclear medicine clinic.
+This schematic is used for the calculations given in example 3.
+
+Medical Physics, Vol. 33, No. 1, January 2006
+
+11
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+11
+
+TABLE VII. Sample calculation for a dedicated PET Facility 共Fig. 4兲. This calculation is based on the following assumptions: 40 patients per week, 555 MBq
+administration, 1 h uptake, and 30 min imaging time. Transmission data are measured with sources built into the camera that do not significantly increase the
+exposure of personnel.
+
+Room
+Office 1
+Office 2
+Office 3
+Office 4
+Office 5
+Office 6
+Office 7
+Office 8
+Office 9
+Corridor 1
+Corridor 2
+PET
+Control
+Room
+Gamma
+Camera
+
+Uptake
+distance
+
+Tomograph
+distance
+
+Weekly
+target dose
+
+Occupancy
+
+Weekly
+uptake
+
+Weekly
+tomograph
+
+Totala
+
+Transmission
+
+共m兲
+8
+6
+8
+8.5
+8.5
+9.5
+12
+7
+9
+2.5
+9
+
+共m兲
+3
+3
+7
+9
+11
+13
+15
+8
+9
+2.5
+4
+
+共uSv兲
+20
+20
+20
+20
+20
+20
+20
+20
+20
+100
+20
+
+Factor
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0.25
+0.25
+
+Dose共uSv兲
+27.1
+48. 7
+27.1
+24
+24
+19.2
+12
+35.4
+21.4
+277.8
+21.6
+
+Dose共uSv兲
+70.1
+70.1
+12.9
+7.8
+5.2
+3.7
+2.8
+9.9
+7.8
+101
+39.6
+
+Dose共uSv兲
+97.2
+118.8
+40
+31.8
+29.2
+22.9
+14.8
+45.3
+29.2
+378.8
+60.2
+
+Factor
+0.206
+0.169
+0.500
+0.629
+0.685
+0.872
+
+9
+
+2.5
+
+100
+
+1
+
+21.4
+
+122.4
+
+0.817
+
+3
+
+10
+
+100
+
+1
+
+192.7
+
+199
+
+0.503
+
+101
+6.3
+
+b
+
+0.442
+0.685
+b
+b
+
+a
+
+The total weekly dose is not modified by the occupancy factor, but the occupancy factor is included in the transmission factor calculation.
+No shielding is required for these points 共calculated transmission factor is ⬎1兲.
+
+b
+
+the patient into the room and position them for the scan, the
+effective reduction is realistically about 15%. The example
+below does not include this reduction.
+
+sponding transmission factors are also included in Table VII.
+The required lead shielding for the uptake and scanner rooms
+is given in Table VIII.
+
+Example 2
+
+CALCULATION FOR ROOMS ABOVE AND BELOW
+THE PET FACILITY
+
+What is the weekly dose equivalent to a point 3 m from
+the patient during the PET imaging procedure? Patients are
+administered 555 MBq of F-18 FDG and there are 40 patients per week. The uptake time is 60 min and the average
+imaging time is 30 min.
+From Eq. 共9兲, the weekly dose equivalent ⫽
+0.092 ␮Sv m2/MBq h ⫻ 40 ⫻ 555 MBq ⫻ 0.85 ⫻ 0.68
+⫻ 0.5 h ⫻ 0.91/共3 m兲2 = 59.7 ␮Sv.
+What is the transmission factor 关occupancy factor 共T兲 = 1兴?
+20 ␮Sv/59.7 ␮Sv = 0.34.
+Using Table IV values, 0.8 cm of lead or 11 cm of concrete
+shielding is required.
+
+Because the 511 keV annihilation photons are so penetrating, it is necessary to consider uncontrolled areas above and
+below the PET facility as well as those adjacent on the same
+level. Figure 5 shows generally accepted source and target
+distances that apply in these cases. Typically, one assumes
+that the patient 共source of the activity兲 is 1 m above the floor.
+The dose rate is calculated at 0.5 m above the floor for
+rooms above the source, and at 1.7 m above the floor for
+rooms below the source.
+
+Example 4
+
+How much shielding is required for an uncontrolled room
+above a PET uptake room? Patients are administered
+
+Example 3
+
+Figure 4 shows an example of a PET facility layout that
+will image 40 patients per week with an average administered activity of 555 MBq. The uptake time is 1 h and the
+imaging time is 30 min for each study. Table VII gives information on the distances from potential sources in the uptake room and PET tomograph room to points of interest,
+along with the target weekly dose values and occupancy factors. The calculations for the weekly doses and the correMedical Physics, Vol. 33, No. 1, January 2006
+
+TABLE VIII. Lead shielding requirements for example PET facility 共Fig. 4兲.
+
+Walls
+
+Uptake room
+Shielding 共mm Pb兲
+
+Tomographroom
+Shielding 共mmPb兲
+
+N
+E
+S
+W
+
+0
+5
+5
+2
+
+0
+3
+0
+12.1
+
+12
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+12
+
+of this dose include radiation from patient injections, patient
+positioning and the dose received during imaging
+procedure.29–32
+Dose from patient injections
+
+FIG. 5. This figures illustrates the generally accepted source and target distances used for floor, ceiling, and wall barrier calculations.
+
+555 MBq of F-18 FDG, the uptake time is 1 h, and there are
+40 patients per week. The floor-to-floor distance is 4.3 m and
+there is 10 cm of concrete between floors.
+d = 共4.3 − 1兲 + 0.5 = 3.8 m.
+Using Eq. 共3兲, the weekly dose is calculated as
+0.092 ␮Sv m2/MBq h ⫻ 40 ⫻ 555 MBq ⫻ 1 h
+⫻ 0.83/共3.8 m兲 = 117 ␮Sv.
+2
+
+The transmission factor is 20 ␮Sv/ 117 ␮Sv= 0.17. Using
+Table IV this transmission factor is associated with 1.3 cm of
+lead or 17 cm of concrete. Since the floor provides 10 cm of
+concrete 共equivalent to 0.65 cm of lead兲, an additional barrier of 0.65 cm of lead or 7 cm of concrete is required.
+Example 5
+
+How much shielding is required for an uncontrolled room
+below a PET uptake room? Patients are administered
+555 MBq of F-18 FDG and there are 40 patients per week.
+The floor-to-floor distance is 4.3 m and there is 10 cm of
+concrete between floors.
+d = 共4.3 + 1兲 − 1.7 = 3.6 m.
+The weekly dose is therefore
+
+Because of the high dose constant associated with
+positron-emitting radionuclides, hand doses for individuals
+drawing up and administering PET radiopharmaceuticals can
+be substantial. The dose rate 5 cm from an unshielded syringe with 555 MBq of F-18 is 33 mSv/ h. Tungsten syringe
+shields can reduce the hand dose by 88%, but the additional
+weight 共nearly 0.8 kg兲 can make injections difficult. Other
+ways to reduce hand dose are to use automatic dispensing
+systems and to divide the injection responsibilities among
+the staff. The staff should develop procedures to minimize
+the time spent near the radioactive patient. As much as possible, information collection, explanations, and blood collection or other tests should be performed before radioactivity
+has been administered. Remote monitoring of the patients
+using video cameras can also be used to reduce the time
+technologists and nurses spend in close proximity to the patients.
+Dose from patient positioning
+
+At the time the patient is being positioned for imaging,
+the dose rate at 1 m is approximately 30 ␮Sv/ h assuming an
+administration of 555 MBq of F-18. In a busy clinic, a technologist or nurse could spend more than an hour a day within
+that range of a radioactive patient and thereby accumulate
+more than 7.5 mSv per year. The only reasonable way to
+lower this dose is to have enough staff so that the contact
+time between radioactive patients and any one staff member
+can be diluted.
+Dose from patient imaging
+
+During the patient image acquisition, at least one technologist is located at the PET system console where both the
+patient and the progress of the imaging study can be monitored. Ideally, the console area should be located more than
+2 m away from the scanner to reduce the operator dose below ALARA levels.
+
+0.092 ␮Sv m2/MBq h ⫻ 40 ⫻ 555 MBq ⫻ 1 h
+⫻ 0.83/共3.6 m兲2 = 131 ␮Sv.
+The transmission factor is 20 ␮Sv/ 131 ␮Sv= 0.15.
+Using Table IV values, a barrier with 1.3 cm of lead or
+17 cm of concrete is required. Since the floor provides 10 cm
+of concrete 共equivalent to 0.65 cm of lead兲, an additional
+barrier of 0.65 cm of lead or 7 cm of concrete is required.
+DOSE LEVELS IN CONTROLLED AREAS
+The dose levels in controlled levels are subject to ALARA
+considerations with maximum limits set to 50 mSv per year.
+It is obvious that the technical staff that works directly with
+the PET patients receives the largest doses. The components
+Medical Physics, Vol. 33, No. 1, January 2006
+
+Example 6
+
+How far away should the control console of a PET scanner be from the patient in order that the dose to the operator
+be less than 5 mSv per year in a clinic that scans 40 patients
+per week with an average administered activity of 555 MBq,
+a 60 min uptake phase, and a 30 min scan time?
+共D m兲2 = 0.092 ␮Sv m2/MBq h ⫻ 40 ⫻ 50 ⫻ 555 MBq
+⫻ 0.85 ⫻ 0.5 h ⫻ 0.91 ⫻ 0.68/5 mSv
+D = 2.32 m.
+Often the console operator is the same technologist who positions and injects the patients, and in such cases it would be
+
+13
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+desirable to reduce the control room exposure well below
+5 mSv/ year. If the operator console cannot be located more
+than 2.32 m from the scanner, additional shielding should be
+installed to reduce the dose to below ALARA levels. This
+shielding could be placed in a walled partition between the
+technologist and scanner similar to that designed for a CT
+scanner or alternatively, movable lead shields could be used.
+ADJACENT ROOMS ON THE SAME LEVEL IN
+CONTROLLED AREAS
+Badged individuals working in rooms adjacent to PET
+uptake and scanning rooms should also be considered. Many
+clinics set their ALARA limits at 5 mSv/ year, and this level
+can be exceeded for workers in rooms adjacent to the uptake
+area if the distance from the radioactive patients is less than
+4 m and their work keeps them relatively stationary thoughout the day. Careful planning of the workflow around the
+PET facility can minimize this occurrence, and if necessary,
+additional lead shielding can be employed.
+DESIGN CONSIDERATIONS
+Using the assumptions given above for a busy PET center
+共average administered activity 555 MBq, uptake time
+60 min, and 40 patients per week兲, the distance required to
+maintain a weekly dose equivalent below 20 ␮Sv for a busy
+PET facility is 9.3 m. Since it is unlikely that rooms will be
+either large or isolated enough to accommodate this distance,
+some additional shielding will be required. New facilities can
+efficiently use concrete to achieve required shielding factors.
+In existing facilities, lead is often the best resort. Portable
+lead shields can be used effectively to shield patients in uptake rooms where they are required to remain stationary.
+Lead shields 2.5 and 5.0 cm thick are commercially available, providing dose reduction factors of 40 and 1900, respectively. Using shields in the tomograph room may be
+more problematic because the patient is translated though the
+gantry and thus moves with respect to the shield. In addition
+the shields can restrict access to the patient.
+Planning for new PET facilities should carefully consider
+the constraints associated with the regulatory limits. Uncontrolled areas with high occupancy should be located as far
+from the PET uptake and imaging rooms as possible. Also,
+the placement of the door must be carefully considered to
+avoid the expense with installing a door with substantial lead
+shielding. If uncontrolled areas are located above and below
+the PET uptake and tomograph rooms, the spacing between
+floors may need to be greater than normal. If that is not
+feasible, the floors need to be able support the weight associated with additional shielding. Floors often 共but not always兲 have 10 cm of concrete, which will provide a dose
+reduction factor of 2.5.
+PET/CT INSTALLATIONS
+The shielding considerations for the CT portion of the
+PET/CT systems are substantially the same as they would be
+for any CT installation.33 The number of patients examined
+in a PET/CT system will generally be less than that of a
+Medical Physics, Vol. 33, No. 1, January 2006
+
+13
+
+diagnostic CT scanner, although the area scanned per patient
+will be higher. Typical techniques used for the CT portion of
+the study would be 135 kVp, 80 mAs, and 125– 150 cm
+axial scan length. Currently, many PET/CT facilities are performing nondiagnostic CT scans without contrast agents,
+which accounts for the lower technique values given above.
+The trend in the future may shift toward performing higher
+quality diagnostic CT studies, resulting in higher doses requiring more shielding. It is important to determine whether
+the CT scanner will be used a portion of the time solely for
+diagnostic CT studies. This additional workload must be included in the shielding calculations for the CT component.
+It should be noted that the lead shielding required in the
+walls for the CT system alone 共ignoring the PET component兲
+will have only a modest shielding effect for the 511 keV
+annihilation radiation. For example, 1.6 mm of lead will provide a transmission factor of only 0.81 for the annihilation
+radiation. Because the HVL for the CT x rays is so much
+smaller than that for 511 keV photons, a room that is
+shielded to meet the general public levels for PET
+共1 mSv/ year兲 is unlikely to need additional shielding for the
+CT component. However, there are situations where minimal
+shielding of the PET radiation component is required to meet
+the 5 mSv/ year in controlled areas. This would occur in
+many clinics when the distance from the source to the area of
+concern is greater than 3 m. In such circumstances, the CT
+shielding will be the primary concern.
+SHIELDING OF THE PET TOMOGRAPH FROM
+AMBIENT RADIATION
+The PET tomograph itself, especially when operated in
+3D mode, can be highly sensitive to ambient radiation, such
+as that from an adjacent patient uptake room. One PET vendor specifies that the ambient radiation level must be
+⬍0.1 mR/ h for correct operation. However, it is unlikely
+that a source from a patient in an adjacent room would affect
+the scanner as much as the activity in the patient being imaged that is outside the tomograph field of view. It may be
+possible to minimize the effect with the orientation of the
+PET tomograph, and it is worthwhile to discuss this issue
+with the vendor in the planning stages of the installation. The
+vendor may also be able to provide a contour map describing
+the safe distances that unshielded sources may be located.
+PET FACILITIES LOCATED IN NUCLEAR MEDICINE
+DEPARTMENTS
+If a PET scanner is installed within a nuclear medicine
+clinic where gamma cameras, uptake probes, or other scintillating counters are located in adjoining areas, consideration for the effect of the annihilation radiation must be
+made. Reasonable efforts should be made to place the PET
+scanner, patient waiting and uptake rooms, radiotracer storage, and dose administration areas as far away from sensitive
+counting equipment as possible. Consolidating these instruments to a remote corner of the facility is the most preferable
+solution in terms of shielding.
+
+14
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+The devices most affected by the presence of radioactive
+PET patients are thyroid uptake probes and scintillation well
+counters. These devices should be located away from the
+PET tomograph and uptake rooms and should also be removed from proximity to restrooms used by the PET patients.
+Patients injected with positron-emitting radionuclides will
+increase the background count rate of devices in their vicinity. Inevitably, radioactive PET patients will be traversing
+though the hallways of the imaging area. The significance of
+changes in the background count rate must be assessed for
+each device in relation to the type of exam being performed
+共e.g., a quantitative uptake study that could easily be corrupted by inaccurate measurements of the background or
+calibration standard counts兲 and the length of time of increased exposure. Technologists should be instructed to
+move the radioactive PET patients past nuclear medicine instrumentation at a reasonable pace and should not let them
+remain in the vicinity of detection systems for an extended
+length of time. Likewise, the positron radiotracers must be
+contained in properly designed shielding as they are being
+transported though the department in the vicinity of imaging
+or detection systems.
+For scintillation cameras in close proximity to PET imaging areas, the following considerations should be kept in
+mind. Although the sensitivity of the NaI共Tl兲 crystal to
+511 keV photons is low, low- and medium-energy collimators do not absorb a high fraction of 511 keV photons. Thus,
+the background counts from annihilation photons can be significant, but the distribution of counts is fairly uniform
+across the camera field of view. Gamma camera studies with
+the detector directed toward the floor or ceiling are not likely
+to be significantly affected by positron emitters in the adjacent rooms. However, substantial increases in the background rate will be recorded if the camera is pointed directly
+at a positron-emitting source such as a radioactive patient. As
+a result, SPECT cameras should not be placed adjacent to a
+PET scanning or uptake room unless the detectors can be
+oriented so they will not point at a 511 keV source during
+the SPECT acquisition.
+If scintillation cameras are located in adjoining rooms of
+the PET scanner and patient waiting areas, shielding may
+become necessary to reduce the background count rate. Actual background measurements with a known activity of a
+positron-emitting source are recommended. The background
+should be measured at the energy window used for the scintillation camera exams and with the camera rotated to the
+most compromising angle encountered when performing a
+routine exam. The following example should help provide
+insight into how much shielding may be required.
+
+Example 7
+
+The PET uptake room is located next to a room with an
+existing single-head gamma camera used principally for Tc99m imaging. When the collimated detector head points directly towards a patient in the uptake room, the measured
+Medical Physics, Vol. 33, No. 1, January 2006
+
+14
+
+background count rate is 592 000 CPM. How much shielding
+is required to reduce the 511 keV background rate to 1000
+CPM?
+The transmission factor is 1000/ 592 000= 0.0017. Using
+Fig. 1, a barrier of 3.9 cm of lead is required.
+The lead required in the above example is substantial, and
+is much greater than needed to protect personnel in the area.
+Limiting the required thickness to cover just the critical area
+of the wall will reduce the cost significantly. It may be possible to purchase a rolling radiotherapy shield of similar
+thickness to provide the necessary barrier.
+
+SUMMARY AND CONCLUSIONS
+The shielding requirements for a PET facility are different
+from those of most other diagnostic imaging facilities. This
+is due to the high energy of the annihilation radiation and the
+fact that the patient is a constant source of radiation throughout the procedure. Meeting the regulatory limits for uncontrolled areas can be an expensive proposition. Careful planning with the equipment vendor, facility architect, and a
+qualified medical physicist is necessary to produce a costeffective design while maintaining radiation safety standards.
+1
+
+J. C. Courtney et al., “Photon shielding for a positron emission tomography suite,” Health Phys. 81, S24–28 共2001兲.
+2
+M. P. Frick et al., “Considerations in setting up a positron emission tomography center,” Semin Nucl. Med. 22, 182–188 共1992兲.
+3
+K. J. Kearfott et al., “Radiation protection design for a clinical positron
+emission tomography imaging suite,” Health Phys. 63, 581–589 共1992兲.
+4
+B. M. Methe, “Shielding design for a PET imaging suite: a case study,”
+Health Phys. 84, S83–88 共2003兲.
+5
+M. D. Harpen, “Positronium: Review of symmetry, conserved quantities
+and decay for the radiological physicist,” Med. Phys. 31, 57–61 共2004兲.
+6
+P. Alagona, Jr., D. T. Hart, and E. A. Eikman, “Regional distribution of
+2-deoxy-2关18F兴-fluoro-D-glucose for metabolic imaging using positron
+emission tomography,” Int. J. Card. Imaging 10, 137–143 共1994兲.
+7
+H. R. Schelbert et al., “PET myocardial perfusion and glucose metabolism imaging: Part 2-Guidelines for interpretation and reporting PET
+myocardial glucose metabolism and perfusion imaging: Part 1-Guidelines
+for data acquisition and patient preparation,” J. Nucl. Cardiol. 10, 557–
+571 共2003兲.
+8
+ANS, ANSI/ANS-6.1.1-1991: Neutron and Gamma-Ray Fluence-To-Dose
+Factors 共American Nuclear Society, LaGrange Park, IL, 1991兲.
+9
+ANS, ANSI/ANS-6.1.1-1977: Neutron and Gamma-Ray Fluence-To-Dose
+Factors 共American Nuclear Society, LaGrange Park, IL, 1977兲.
+10
+B. R. Archer, J. I. Thornby, and S. C. Bushong, “Diagnostic X-ray shielding design based on an empirical model of photon attenuation,” Health
+Phys. 44, 507–517 共1983兲.
+11
+NCRP, NCRP Report 49: Structural Shielding Design and Evaluation for
+Medical Use of X Rays and Gamma Rays of Energies up to 10 MeV
+共National Council on Radiation Protection, Bethesda, MD, 1976兲.
+12
+German Deutsches Institut für Normung, 6844-3. Nuklearmedizinische
+Betriebe; Strahlenschutzberechnungen 共Installations for nuclear medicine;
+radiation protection calculations兲 1989–2009.
+13
+D. J. Simpkin, “Shielding requirements for constant-potential diagnostic
+x-ray beams determined by a Monte Carlo calculation,” Health Phys. 56,
+151–164 共1989兲.
+14
+F. H. Fahey et al., “Positron emission tomography instrumentation design
+considerations for PET scanners,” Radiol. Clin. North Am. 39, 919–929
+共2001兲.
+15
+H. Everaert et al., “Optimal dose of 18F-FDG required for whole-body
+PET using an LSO PET camera,” Eur. J. Nucl. Med. Mol. Imaging 30,
+1615–1619 共2003兲.
+16
+G. Muehllehner, J. S. Karp, and S. Surti, “Design considerations for PET
+scanners,” Q. J. Nucl. Med. 46, 16–23 共2002兲.
+
+15
+
+Madsen et al.: AAPM Task Group 108: PET and PET/CT Shielding
+
+S. C. Jones et al., “The radiation dosimetry of 2 关F-18兴fluoro-2-deoxy-Dglucose in man,” J. Nucl. Med. 23, 613–617 共1982兲.
+18
+D. Swanson, H. Chilton, and J. Thrall, Pharmaceuticals in Medical Imaging 共Macmillan Publishing Company, New York, 1990兲.
+19
+E. A. Wegner et al., “The impact of PET scanning on management of
+paediatric oncology patients,” Eur. J. Nucl. Med. Mol. Imaging 32, 23–30
+共2005兲.
+20
+A. Bixler, G. Springer, and R. Lovas, “Practical aspects of radiation
+safety for using fluorine-18,” J. Nucl. Med. Technol. 27, 14–16 共1999兲.
+21
+T. F. Brown and N. J. Yasillo, “Radiation safety considerations for PET
+centers,” J. Nucl. Med. Technol. 25, 98–102 共1997兲; quiz, 104–105.
+22
+C. Chiesa et al., “Radiation dose to technicians per nuclear medicine
+procedure: comparison between technetium-99m, gallium-67, and iodine131 radiotracers and fluorine-18 fluorodeoxyglucose,” Eur. J. Nucl. Med.
+24, 1380–1389 共1997兲.
+23
+B. Cronin, P. K. Marsden, and M. J. O’Doherty, “Are restrictions to
+behaviour of patients required following fluorine-18 fluorodeoxyglucose
+positron emission tomographic studies?” Eur. J. Nucl. Med. 26, 121–128
+共1999兲.
+24
+T. M. Lundberg, P. J. Gray, and M. L. Bartlett, “Measuring and minimizing the radiation dose to nuclear medicine technologists,” J. Nucl. Med.
+Technol. 30, 25–30 共2002兲.
+25
+N. A. Benatar, B. F. Cronin, and M. J. O’Doherty, “Radiation dose rates
+17
+
+Medical Physics, Vol. 33, No. 1, January 2006
+
+15
+
+from patients undergoing PET: Implications for technologists and waiting
+areas,” Eur. J. Nucl. Med. 27, 583–589 共2000兲.
+26
+S. White et al., “Occupational exposure in nuclear medicine and PET,”
+Clin Positron Imaging 3, 127–129 共2000兲.
+27
+B. W. Zeff and M. V. Yester, “Patient self-attenuation and technologist
+dose in positron emission tomography,” Med. Phys. 32, 861–865 共2005兲.
+28
+W. Snyder et al., “MIRD Pamplet 5: Estimates of absrobed fractions for
+monenergetic photon sources uniformly distributed in various organs of a
+heterogeneous phantom,” J. Nucl. Med., Suppl. 10 Supplement 3, 44–45
+共1969兲.
+29
+V. A. McCormick and J. A. Miklos, “Radiation dose to positron emission
+tomography technologists during quantitative versus qualitative studies,”
+J. Nucl. Med. 34, 769–772 共1993兲.
+30
+N. L. McElroy, “Worker dose analysis based on real time dosimetry,”
+Health Phys. 74, 608–609 共1998兲.
+31
+C. D. Greaves and W. B. Tindale, “Dose rate measurements from radiopharmaceuticals: Implications for nuclear medicine staff and for children
+with radioactive parents,” Nucl. Med. Commun. 20, 179–187 共1999兲.
+32
+M. Griff, T. Berthold, and A. Buck, “Radiation exposure to sonographers
+from fluorine-18-FDG PET patients,” J. Nucl. Med. Technol. 28, 186–
+187 共2000兲.
+33
+P. Lin and T. Beck, AAPM Report No. 39: Specification and Acceptance
+Testing of Computed Tomography Scanners 共AAPM, New York, 1993兲,
+p. 95.
+
+

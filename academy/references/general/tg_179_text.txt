@@ -1,0 +1,2221 @@
+Quality assurance for image-guided radiation therapy utilizing CT-based
+technologies: A report of the AAPM TG-179
+Jean-Pierre Bissonnettea)
+Task Group 179, Department of Radiation Physics, Princess Margaret Hospital, University of Toronto,
+Toronto, Ontario, Canada, M5G 2M9
+
+Peter A. Balter and Lei Dong
+Department of Radiation Physics, The University of Texas M.D. Anderson Cancer Center, Houston,
+Texas 77030
+
+Katja M. Langen
+Department of Radiation Oncology, M. D. Anderson Cancer Center Orlando, Orlando, Florida 32806
+
+D. Michael Lovelock
+Department of Medical Physics, Memorial Sloan-Kettering Cancer Center, New York, New York 10021
+
+Moyed Miften
+Department of Radiation Oncology, University of Colorado School of Medicine, Aurora, Colorado 80045
+
+Douglas J. Moseley
+Department of Radiation Physics, Princess Margaret Hospital, University of Toronto, Toronto, Ontario,
+Canada, M5G 2M9
+
+Jean Pouliot
+Department of Radiation Oncology, UCSF Comprehensive Cancer Center, 1600 Divisadero St., Suite H 1031,
+San Francisco, California 94143–1708
+
+Jan-Jakob Sonke
+Department of Radiation Oncology, The Netherlands Cancer Institute—Antoni van Leeuwenhoek Hospital,
+Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands
+
+Sua Yoo
+Department of Radiation Oncology, Duke University, Durham, North Carolina 27710
+
+(Received 11 August 2011; revised 19 January 2012; accepted for publication 10 February 2012;
+published 20 March 2012)
+Purpose: Commercial CT-based image-guided radiotherapy (IGRT) systems allow widespread
+management of geometric variations in patient setup and internal organ motion. This document
+provides consensus recommendations for quality assurance protocols that ensure patient safety and
+patient treatment fidelity for such systems.
+Methods: The AAPM TG-179 reviews clinical implementation and quality assurance aspects for
+commercially available CT-based IGRT, each with their unique capabilities and underlying
+physics. The systems described are kilovolt and megavolt cone-beam CT, fan-beam MVCT, and
+CT-on-rails. A summary of the literature describing current clinical usage is also provided.
+Results: This report proposes a generic quality assurance program for CT-based IGRT systems in an
+effort to provide a vendor-independent program for clinical users. Published data from long-term,
+repeated quality control tests form the basis of the proposed test frequencies and tolerances.
+Conclusion: A program for quality control of CT-based image-guidance systems has been produced,
+with focus on geometry, image quality, image dose, system operation, and safety. Agreement and clarification with respect to reports from the AAPM TG-101, TG-104, TG-142, and TG-148 has been addressed.
+C 2012 American Association of Physicists in Medicine. [http://dx.doi.org/10.1118/1.3690466]
+V
+Key words: quality assurance, cone-beam CT, fan-beam MVCT, CT-on-rails
+
+I. INTRODUCTION
+The goal of radiation therapy (RT) is to deliver accurately a
+curative or palliative dose distribution to a well-defined target volume. Unlike dose calculation and measurement accuracy, the geometric accuracy of RT has been a challenge that
+could only recently have been quantitatively and pragmatically ascertained.1 Lately, medical linear accelerator (linac)
+1946
+
+Med. Phys. 39 (4), April 2012
+
+manufacturers and third-party vendors have developed
+integrated imaging systems to improve and facilitate internal
+patient anatomy visualization, enabling efficient positioning
+of these anatomical structures relative to the treatment room.
+These systems often use the accelerator isocenter as a reference point. The initial use of daily computed tomography
+(CT) has been for assessing internal organ position and
+defining the subsequent isocenter shifts to be performed at
+
+0094-2405/2012/39(4)/1946/18/$30.00
+
+C 2012 Am. Assoc. Phys. Med.
+V
+
+1946
+
+1947
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+1947
+
+TABLE I. Commercially available CT-based IGRT systems.
+Make and model
+
+Elekta XVI
+
+Varian On-Board Imager
+
+Siemens Artiste
+
+TomoTherapy
+
+Siemens Primatom
+
+Imaging configuration
+Field of view
+Correction method
+
+kV-CBCT
+50  50  25.6
+Automatic
+couch motion
+Optional
+Submillimeter
+0.1–3.5
+2 min
+
+kV-CBCT
+45  45  17
+Automatic
+couch motion
+None
+Submillimeter
+0.2–2.0
+1.5 min
+
+MV-CBCT
+40  40  27.4
+Automatic
+couch motion
+None
+Submillimeter
+3–10
+1.5 min
+
+MVCT
+40 cm
+Automatic in
+2 directions
+Optional
+Submillimeter
+0.7–3.0
+5 s per slice
+
+kVCT-on rails
+50 cm
+Manual
+couch motion
+Optional
+Submillimeter
+0.05–1
+3 s per sec
+
+Translation
+Rotation
+
+Geometric accuracy
+Dose (cGy)
+Image acquisition and
+reconstruction time
+
+the treatment unit.2 Fan-beam MVCT has been introduced
+clinically by integrating it with helical tomotherapy based
+with IMRT-based dose delivery.3 Megavoltage cone-beam
+CT (MV-CBCT) uses the accelerator’s treatment beam and
+its portal imaging system to provide volumetric datasets with
+sufficient contrast for image-guidance4,5 while kilovoltage
+CBCT (kV-CBCT) provides high contrast volumetric datasets using imaging components mounted orthogonally with
+respect to the treatment beam.6 Clinical implementation of
+both kV-CBCT and MV-CBCT systems necessitates conducting calibration procedures that correct for accelerator
+and imaging component sags and flexes and to properly
+register to the treatment beam isocentre.7 The clinical introduction of these guidance systems (Table I) has allowed the
+assessment and correction of patient positioning uncertainties, revealed internal organ motion and deformation, and is
+paving the way toward advanced and adaptive RT. By
+improving the geometric accuracy of RT, incremental
+improvements in tumor control probability, reduction in toxicity (thereby allowing dose escalation), conformal avoidance by intensity-modulated radiation therapy, and
+individualized PTV margins can be achieved. To fully
+exploit the information provided by these systems, clinics
+need to employ robust quality assurance (QA) programs that
+ensure that the system performance meets high expectations
+consistent with patient care requirements.8 Due to the rapid
+deployment and adoption of image-guided radiation therapy
+(IGRT), clear and concise recommendations regarding clinical commissioning and QA of these technologies and their
+related clinical processes are desired by the community.
+As of this writing, there exist no consensus guidelines for
+a comprehensive quality assurance of CT-based image-guidance systems. Early adopters of this technology have relied
+on the spirit of established standards, such as the AAPM
+TG-40 report,9 vendor literature, experience acquired at the
+time of acceptance testing, and, less frequently, by assessing
+the long-term performance of this novel equipment by analyzing data from quality control (QC) tests. Early publications on quality assurance of CT-based IGRT systems have
+evaluated safety,10 geometric accuracy,7,11–17 image
+quality,15,18–20 and imaging dose.20–24
+Professional bodies interested in establishing QA and QC
+guidelines are beginning to expose device-specific QC to formal analysis of the frequency and severity of the risks or perceived failure modes involved with novel technologies. This is
+Medical Physics, Vol. 39, No. 4, April 2012
+
+because many, if not most, undesirable events in RT have
+resulted from human error rather than equipment failure.25
+Users designing their own IGRT QA program should first
+identify clearly the clinical aims and align the QA needs to
+these aims, evaluating their resources to determine if additional
+resources are required. Physicists who are involved in starting
+CT-based IGRT technologies should study and understand not
+only the clinical potential of IGRT but also the intricacies of
+process design and development, workflow improvement, and
+change implementation within a busy clinic.
+In this report, we present a succinct review of commercially available CT-based IGRT systems and present the
+general QA principles for these devices. This report concludes with a brief discussion of the safe and efficient implementation of these technologies.
+II. EXISTING TECHNOLOGIES
+II.A. CT-on-rails
+
+Integrating a diagnostic CT scanner into a RT treatment
+room was perhaps the earliest implementation of volumetric
+image-guided radiotherapy. The first integrated clinical system combining a linac and an in-treatment-room CT unit was
+developed by Uematsu et al. in Japan.26 The original system
+was primarily designed for noninvasive, frameless, fractionated stereotactic treatments of brain and lung cancers. The
+distinguishing feature of the integrated CT-linac system is the
+moving gantry CT scanner, which is mounted on rails (henceforth referred to as “CT-on-rails”) so that it can move across
+the patient instead of the couch moving the patient through
+the scanner as in conventional CT scanner design. By rotating
+the treatment couch, usually by 180 , the couch is aligned
+with the CT gantry motion path, which acquires a patient’s
+CT images while the patient remains in the immobilized position. Subsequently, the couch rotates back to the linac side to
+proceed with treatment. While diagnostic CT effective doses
+are in the range of 2 to 10 mSv,27 imaging doses typically can
+be reduced further by a factor of 2–4 when used for daily targeting.28 This is because the image quality from low-dose CT
+imaging is sufficient for image alignment.
+II.B. Kilovoltage cone-beam CT
+
+In the past several years, kV-CBCT has become an important tool for localization and patient monitoring in
+
+1948
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+traditionally fractionated and hypofractionated RT.29–39 Traditional CT uses a fan shaped x-ray beam to acquire one or
+more thin slices (0.06–2.4 cm in length) per tube=detector
+rotation. In contrast, kV-CBCT uses a cone-shaped x-ray
+beam and acquires an entire volume (14–26 cm in length) in
+a single, relatively slow gantry rotation. To acquire the kVCBCT projection data, flat-panel detectors are used in fluoroscopy mode, obtaining multiple projections per second,
+typically resulting in 2 projections per degree over 195–360
+arcs. These projections are used to reconstruct the CBCT
+volumetric images.4,40 Because of the high spatial resolution
+of the imaging panels, the kV-CBCTs can be reconstructed
+with submillimeter isotropic voxels. In radiotherapy applications, the kV-CBCT tube and detector are mounted on the
+same gantry as the linac treatment head, a configuration that
+is commercially available.29,40 kV-CBCT produces a full CT
+data set that, though not of diagnostic quality, is generally
+adequate for imaging bone and, in some anatomic sites, soft
+tissue. kV-CBCT imaging dose varies widely with the acquisition technique. Doses ranging from 0.2 to 2 cGy per acquisition have been reported in the literature.21,22,41 kV-CBCT
+image quality is limited compared to traditional CT for a
+number of reasons including motion blur due to the long acquisition time, scattered radiation due to the volumetric
+image acquisition, and image artifacts. Research is ongoing
+to alleviate these factors and likely to improve rapidly with
+advancements in acquisition techniques42–44 and reconstruction algorithms.45–51
+II.C. Fan-beam MVCT
+
+The helical tomotherapy delivery system can be used to
+obtain fan-beam MVCT images of the patient in the treatment position.52,53 The imaging beam is produced by the
+same accelerator that generates the treatment beam, but with
+the nominal electron beam energy reduced to 3.5 MeV for
+fan-beam MVCT.54 In comparison with kV-CBCT (Sec. II
+A), those technologies using megavoltage beams for imaging
+suffer from fewer scatter and beam hardening artifacts.55
+Using megavoltage x-rays for imaging also eliminates artifacts normally caused when high-Z materials are imaged
+with kilovoltage x-ray beams. The megavoltage beam, however, inherently causes poor subject contrast.56 During image
+acquisition, the beam is collimated to 4 mm at the isocenter
+and images are typically acquired with a pitch value of 1, 2,
+or 3, which translates into slice thicknesses of 2, 4, of 6 mm,
+respectively. The longitudinal extent of the scan is variable
+and is selected by the user. The field of view is 40 cm in diameter. The fan-beam MVCT imaging dose is typically in
+the range of 1–3 cGy per scan.24
+Fan-beam MVCT image quality in terms of noise, uniformity, contrast, contrast linearity, and spatial resolution
+has been reported by Meeks et al.19 Fan-beam MVCT scans
+are noisier than kVCT scans but the resulting low contrast
+resolution remains sufficient to identify some soft tissues.19
+Woodford et al. have tested the registration accuracy and
+precision of the fan-beam MVCT system using a set of
+anthropomorphic phantoms.13,14 They have shown that the
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1948
+
+registration accuracy depends on the imaging slice thickness,
+pitch value, the superior-inferior scan length, and the
+scanned anatomical region. For head and thorax phantoms,
+registration accuracies in the ranges of 0.5–1.5 mm and
+0.5–2 mm were reported, respectively. The registration error
+was dominated by the error in the superior–inferior
+direction.
+II.D. Megavoltage cone-beam CT
+
+As of this writing, the commercially available MV-CBCT
+system (ArtisteTM, Siemens, Concord, CA) consists of an aSi flat panel adapted for MV imaging attached to a linear accelerator and an integrated workflow application to generate
+a three-dimensional representation of the patient in treatment
+position. Similar to fan-beam MVCT, the imaging beam is
+in the megavoltage range, thus rendering the images immune
+to typical high-Z artifacts. The system performs the acquisition of projection images, CBCT image reconstruction, automatic CT to CBCT volumetric image registration, and
+remote couch position adjustment.57 This provides a 3D
+patient anatomy volume in the actual treatment position that
+can be aligned to the planning CT moments before the dose
+delivery, enabling the IGRT process. The MV-CBCT beam
+geometry is fixed by the manufacturer, with the flat panel
+positioned at 145 cm source-to-imager distance (SID). The
+field width is set by the manufacturer at 27.4 cm, which projects to the detector’s 40 cm active region, and the field
+length is adjustable to a maximum of 27.4 cm. The MVCBCT system can reconstruct a field of view of up to 27 cm,
+with a slice thickness ranging from 0.5 to 10 mm. The current generation of MV CBCT systems offers a half-beam acquisition mode, increasing the reconstruction size in the
+axial plane of up to 40 cm.
+The MV-CBCT system demonstrates submillimeter localization precision23,58–60 and sufficient soft-tissue contrast to
+visualize structures such as the prostate. The dose used for
+MV-CBCT depends on the clinical application but typically
+ranges from 3 to 10 cGy,20,61 with the lower end used when
+daily acquisitions are performed on a patient, while 6 to 10
+cGy are used for tumor monitoring studies or for treatment
+planning purposes. The imaging dose can be straightforwardly accounted for in treatment planning; so, published
+studies have used doses as high as 6–10 cGy per MV-CBCT
+scan.20,61,62
+One benefit of the MV-CBCT system is its simplicity.
+There is only one x-ray source and one detector, the EPID.
+This geometry provides easier access to the patient by the
+therapists. The image is directly referenced to the beam, simplifying quality assurance of the system.23,58
+III. TYPICAL CLINICAL APPLICATIONS
+III.A. CT-on-rails
+
+The CT-on-rails system produces diagnostic quality
+images. The use of the same imaging modality as that
+employed for treatment planning not only facilitates image
+registration to align the gross tumor volume (GTV) directly
+
+1949
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+but can also use the entire CT image set for adaptive replanning
+to account for interfractional anatomy changes. CT-on-rails
+systems have been used to study organ motion and soft-tissue
+localization for prostate cancer,12,63–73 anatomy changes and
+their dosimetric impact in head and neck cancers,74–76 and
+stereotactic hypofractionated lung and paraspinal cancer
+treatments.77–84 The potential use of repeat in-room CT for
+online or offline adaptive radiotherapy has been studied by various researchers.85–94
+III.B. kV-CBCT
+
+In clinical applications, kV-CBCT offers a distinct
+advantage over projection imaging in that some soft tissue
+structures can be directly imaged and thus targeted. Two
+clinical sites that directly benefit by this are the prostate95
+and the lung;31,96 the former cannot be directly targeted with
+projection imaging without implanted fiducial markers. kVCBCT guidance is also utilized extensively in other treatment sites like head and neck,97–99 breast,36,100 esophagus,101 liver,102 and bladder.103,104 Perhaps, the most
+important application of CBCT has been the simplification
+of hypofractionated, stereotactic body radiotherapy (SBRT).
+While robust patient immobilization for the long treatment
+times typical of this technique is still required, the high accuracy of kV-CBCT based target positioning has eliminated
+the need for body frames equipped with stereotactic coordinate systems.32,105–108 Furthermore, the relatively low doses
+delivered by this modality permit more frequent patient position monitoring during those long sessions, reducing the
+effect of intrafraction position uncertainties.109,110 kVCBCT also makes adaptive planning possible, allowing for
+either margin reduction104,111 or as a dataset for assessing
+dose-related anatomical changes.112,113 Also, the intracranial
+stereotactic radiotherapy workflow has been adapted to benefit from the volumetric information obtained from CBCT.114
+III.C. Fan-beam MVCT
+
+Daily fan-beam MVCT-based alignments are performed
+typically for all patients who are treated with helical tomotherapy based IMRT. Alignments are based on soft tissue targets, bony anatomy, or implanted markers, depending on the
+visibility of the target in fan-based MVCT images. The use of
+fan-beam MVCT for alignments has been reported for prostate,115,116 lung,117 head and neck,118,119 breast,120 and gynecological tumors.121 In addition to patient alignment, fanbeam MVCT imaging has been used to document anatomical
+variation for various anatomical sites. Lung cancer tumor
+regression measurements based on fan-beam MVCT imaging
+have been reported.122–124 Deformation of the pelvic anatomy
+was reported for prostate patients.125,126 Movement of the
+mesorectal space was evaluated on fan-beam MVCT images
+by Tournel et al.127 The radiation response of an esophageal
+patient has been documented by Chen et al.128 Li et al. report
+anatomical variations for kidneys, pancreas, uterus, and sarcomas.129 Lastly, geometric changes in the parotid glands were
+reported for head and neck patients using fan-beam MVCT
+imaging.130,131 Daily fan-beam MVCT scans can be used for
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1949
+
+dose calculations, and the variations of target and organ at
+risk doses have been reported.126,130,132,133
+III.D. MV-CBCT
+
+The MV-CBCT imaging procedure has been well integrated in the clinical workflow for the patient alignment and
+IGRT processes. Since the first MV-CBCT image of a
+patient was acquired in 2003,4 many papers have reported on
+the clinical applications of MV-CBCT. These applications
+include prostate, head and neck, and lung alignments.23,58,62
+Other applications also include the monitoring of tumor
+growth and shrinkage23,134 and more advanced IGRT strategies where a multiple adaptive plan IMRT procedure
+accounts for the independent movement of the prostate and
+pelvic lymph nodes.135 MV-CBCT has been used clinically
+to improve the delineation of structures in CT images that
+suffer from metal artifacts, such as paraspinal tumors in
+proximity of orthopedic hardware,136 pelvic structures in the
+presence of hip replacement prosthetics,55 brachytherapy
+applicators and catheter visualization,137 and, finally, the
+measurement of small lesions near metallic implants.138 An
+emerging use of MV-CBCT images includes dose verification using dose recalculation139–141 and dose-guided radiation therapy (DGRT), an adaptive strategy where treatment
+modifications are based on comparisons of the dose-of-theday with the planned dose distribution.142–145
+III.E. Stereotactic body radiotherapy requirements
+
+SBRT is characterized by the accurate delivery of high
+doses of radiation in five or fewer fractions. When compared
+against conventional fractionation, the relatively high dose
+per fraction increases the potential for normal tissue damage
+or serious target underdosing, if even a single treatment is
+incorrectly delivered. Furthermore, it may be impossible to
+correct for radiation delivery errors by modifying subsequent
+fractions. Although the initial approach taken by SBRT developers was stereotactic in that the treatments were setup using
+body-frame coordinates, target position uncertainties due to
+organ motion and setup errors remained and were similar to
+those encountered with conventional radiotherapy. These spatial positioning issues have been addressed in large part by the
+widespread adoption of treatment machines with volumetric
+kilovolt or megavolt imaging capabilities. The geometric accuracy achieved by such machines has been deemed sufficient
+to permit bony or soft tissue localization or target-surrogates,
+and in many cases, normal tissues just prior to treatment, permitting immediate correction of initial and intrafraction geometric discrepancies. The AAPM Task Group 101
+recommends the use of image guidance for all SBRT treatments to eliminate the risk of a geometric miss.146
+Target or normal structure positioning relies on the ancillary imaging equipment in the treatment room, necessitating
+the development of a rigorous QA program. Patient safety,
+geometric accuracy (including linearity and alignment between
+the imaging system and the radiation isocenter), image quality,
+and spatial resolution need to be evaluated as part of a regularly scheduled QA program designed and managed by
+
+1950
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+medical physicists. Fortunately, geometric accuracy, localization, and geometric fidelity have been demonstrated, in a number of publications, to be well within 1 mm over extended
+periods of time.7,11,12,15,17,18,147 The resolving power of CTbased IGRT systems can also be on the order of 1 mm under
+favorable scatter conditions, except for MV-CBCT where the
+localization accuracy is within 2 mm.18,58 Such geometric accuracy is considered sufficient for both SBRT and conventional radiotherapy treatments.1,148,149 Because of the critical
+importance of the imaging system in SBRT patient positioning, daily quality assurance checks of geometric accuracy are
+recommended. These checks can be easily made by imaging a
+phantom that has been positioned independently, with the
+room lasers, for example, and verifying that the setup correction is within tolerance. Because the geometric accuracy of
+CT-based imaging systems for image-guidance is inherently
+high, a well-designed QA program will satisfy simultaneously
+the requirements of conventional and SBRT radiotherapy.
+Importantly, clinical and physiological process issues
+may ultimately affect the geometric accuracy of SBRT treatment delivery. While patients and tumors can be placed
+within the intended position immediately prior to treatment,35,102,150,151 there is mounting evidence that internal
+and external patient motion displaces the target away from
+the intended position,35,152–158 and patient position reassessment may be required throughout SBRT delivery depending
+on the chosen immobilization scheme, performance status,
+or length of time spent on the accelerator couch.105,109
+
+IV. QUALITY ASSURANCE ISSUES
+Recommendations from this report are summarized in
+Table II. These are generic test frequency and tolerance
+
+1950
+
+recommendations, representing the minimum imaging and
+registration performance needed for conducting IGRT with
+the technologies described in this report. Where noted, users
+can modify test frequency and tolerance according to clinical
+usage and machine capability, as specified elsewhere159–161
+and in Sec. II B of the AAPM TG-142 report.160 Of note,
+image quality test frequency could be aligned with those of
+conventional CT scanners after sufficient experience with
+the image-guided systems. While this report is in full agreement with the AAPM TG-101 and TG-104, and TG-148
+reports, a discrepancy, discussed in Sec. IV G, is noted for
+daily QC checks of CT-based IGRT technologies for SBRT
+as described in the TG-142 report. TG-179 is of the opinion
+that any major software or hardware upgrades that impact
+geometric accuracy, image quality, or imaging dose necessitate full recommissioning of the IGRT system. Likewise,
+service repairs and interventions should be followed by relevant and appropriate QC tests or baselines refreshing, as recommended by the manufacturer.
+IV.A. Geometric accuracy
+
+The value of CT-based image-guidance systems lies in
+their three-dimensional description of internal patient anatomy and its spatial relationship to the linac radiation isocenter. Therefore, for technologies where the imaging and linac
+radiation isocenters are mismatched (i.e., kV-CBCT, MVCBCT, and CT-on-rails), the relationship between the two
+isocenters, henceforth termed geometric calibration, and the
+periodic testing of this calibration, must be considered carefully. It is recommended that the geometric calibration be
+tested daily (see Sec. IV G). The geometric calibration is
+typically expressed as a function of gantry angle since the
+
+TABLE II. Summary of QC tests recommended for CT-based IGRT systems. Tolerances may change according to expectations, experience and performance.
+Frequency
+Daily
+
+Quality metric
+
+Quality check
+
+Tolerance
+
+Safety
+
+Collision and other interlocks
+Warning lights
+Laser=image=treatment isocentre coincidence OR
+Phantom localization and repositioning with couch shift
+Geometric calibration mapsa OR
+kV=MV=laser alignment
+Couch shifts: accuracy of motions
+Scale, distance, and orientation accuracya
+Uniformity, noisea
+High contrast spatial resolutiona
+Low contrast detectabilitya
+CT number accuracy and stabilitya
+Imaging dose
+X-ray generator
+performance (kV systems only):
+tube potential, mA, ms accuracy, and linearity
+Anteroposterior, mediolateral, and
+craniocaudal orientations are maintained
+(upon upgrade from CT to IGRT system)
+Long and short term planning of
+resources (disk space, manpower, etc.)
+
+Functional
+Functional
+62 mm
+62 mm
+Replace=refresh
+61 mm
+61 mm
+Baseline
+Baseline
+ 2 mm (or  5 lp=cm)
+Baseline
+Baseline
+Baseline
+Baseline
+
+System operation and accuracy
+Monthly or upon upgrade
+
+Geometric
+
+Image quality
+
+If used for dose calculation
+Annual
+
+Image quality
+Dose
+Imaging system performance
+
+Geometric
+
+System operation
+
+a
+
+These tests can be performed on a semiannual basis after stability has been demonstrated, 6–12 months after commissioning.
+
+Medical Physics, Vol. 39, No. 4, April 2012
+
+Accurate
+
+Support clinical use and current
+imaging policies and procedures
+
+1951
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+imaging and therapy system components flex during gantry
+rotation. A convenient method for performing kV-CBCT
+system geometric calibration, derived from the Winston–Lutz procedure162 and closely following the procedure
+described in Appendix G of the AAPM TG-66,163 consists of
+placing a metal ball bearing (BB) near the radiation isocenter
+and using portal images acquired at the four cardinal angles
+to compare the ball bearing image centroid to the field edges.
+To eliminate imprecision in the jaw position, images are
+acquired with the collimator rotated by 180 . The ball bearing can then be moved iteratively toward the accelerator
+radiation isocenter until it indicates accurately the location
+of the isocentre.7,164 Once positioned, the ball bearing
+images are obtained using the image-guidance system. Analyzing the apparent travel of the ball bearing on the projection images used for reconstruction of volumetric datasets
+provides a measurement of the components’ flexing as a
+function of gantry angle. Once this relationship is known,
+the pixel coincident with the isocenter can be determined
+and the projection image pixel locations referenced to the
+isocenter pixel. A plot of the distance between the measured
+isocenter pixel and the pixel that would nominally intersect
+isocenter is termed a flexmap. The shifts identified in the
+measured flexmap are performed automatically by the
+image-guidance software. Not only does the flexmap correction remove the blur due to the imaging component flexes
+but also aligns the resulting image with the accelerator isocenter. The flexmap is typically measured at commissioning
+time, verified on a monthly basis, after system upgrades or
+after service that could potentially invalidate it.
+While similarities exist between the kV-CBCT geometric
+calibration procedure and the Winston–Lutz test162 used to
+verify the alignment of stereotactic radiosurgery frames and
+attachment equipment, the two should not be confused. The
+geometric calibration procedure described above expects
+flexes and other misalignments to occur and actively corrects
+them whereas the Winston–Lutz formalism assumes rigidity
+of all system components. The Winston–Lutz test is a comprehensive test to identify misalignment without explicitly
+identifying or correcting the cause of such misalignment.
+Commercial vendors have proposed two automatic
+approaches to correct for system flex. The first approach is to
+digitally shift the projection images according to the measured flexmap prior to reconstruction of the volumetric datasets.165 This first approach can take up to 2 h to perform,
+rendering it unsuitable for daily testing. The second
+approach consists of moving the image-guidance system xray detector according to the flexmap to ensure that the detector is always coincident with the radiation beam central
+axis.16,166 The residual error is well below 1 mm after correction irrespective of the correction type for image-guided
+systems based on CBCT or for the CT-on-rails systems,11,16
+demonstrating that CT-based IGRT systems are capable of
+high geometric accuracy [typically, 60.3 mm (Refs. 11 and
+15)], irrespective of conventional or hypofractionated radiotherapy regimes. Users are cautioned, however, to perform
+the manufacturer recommended calibration procedures
+whenever service that could modify geometric calibration is
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1951
+
+performed on the IGRT components or after major software
+or hardware upgrades.
+For fan-beam MVCT units, the imaging beam is generated by the same source that generates the treatment beam
+and the two beams share a common geometry. This leads to
+an inherent robustness of the MVCT imaging system geometry. However, the image acquisition, reconstruction, and
+registration process uses hardware and software components
+that have the potential to introduce geometric errors in the
+fan-beam MVCT IGRT process. The spatial and geometric
+accuracy of the fan-beam MVCT based IGRT system therefore needs to be tested routinely and consistently. Spatial accuracy and geometry tests for fan-beam MVCT are
+described in TG-148,161 and the interested reader is referred
+to that task group for a detailed discussion. Briefly, on a
+daily basis, the image registration is tested for consistency,
+and the subsequent alignment process is tested for accuracy.
+A test of the image orientation and spatial integrity accuracy
+is recommended with a monthly frequency. An annual test
+of the imaging=treatment=laser coordinate coincidence is
+recommended. This is a phantom based end-to-end test
+intended to check the image registration and treatment delivery chain. A simultaneous test of the laser and imaging system coincidence with the imaging system enables the use of
+the laser system as a surrogate for the isocenter for daily and
+monthly consistency tests. Finally, the synchronization of
+the imaging and couch motions is explicitly tested. The test
+frequencies and tolerance values that are recommended in
+TG-148 are consistent with TG-142.
+Similar to fan-beam MVCT, the CT-on-rails solutions
+offer high CT gantry motion rigidity and reproducibility.
+The alignment between the CT and the linear accelerator isocenter, however, does not have the same rigidity as does
+other CT-based image-guidance systems since the imaging
+and treatment equipment do not share a gantry. The treatment couch is rotated prior to align the patient with the CT
+scanner, and lateral and vertical shifts may be necessary to
+fit the couch through the CT bore. Under controlled conditions using rigid phantoms, CT isocenter to treatment isocenter alignment accuracy of better than 61 mm has been
+demonstrated.12 The clinical accuracy is expected to be
+worse because the process of rotating the patient couch into
+the CT imaging position introduces additional errors due to
+couch bearings eccentricity, patient motion, and the limited
+couch readout and control precision. Another approach to
+ensure high geometric accuracy is to image external fiducial
+markers, as is done during simulation, to transfer the radiation isocentre location into CT space. Fiducial markers, such
+as BBs, can be placed on the couch, immobilization device,
+or the patient’s surface at the laser intersection. The couch
+coordinates of this location are recorded, enabling the BB
+images to act as registration markers, which couples patient
+location with couch coordinates. Shifts that will align the
+patient’s anatomy with the planned isocenter can then be calculated and reported as updated couch coordinates. This
+method relies on the room lasers acting as accurate surrogates of the accelerator isocenter. The accuracy of this
+method is generally limited to the alignment of the room
+
+1952
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+lasers and to the couch readout accuracy and tends to be on
+the order of 1 mm. In either case, the 3D CT geometric accuracy should be checked annually and the alignment between
+the CT and the radiation isocenter or the lasers and the radiation isocenters should be checked daily. This can be done by
+imaging a device placed at radiation isocenter at a known
+offset, shifting based on an acquired CT, and verified with
+megavoltage portal images.
+For MV-CBCT, a longitudinal (lateral) EPID positioning
+error will result in an error in the longitudinal (radial) position of the image isocenter with respect to the machine isocenter. Therefore, the positional accuracy of the EPID in the
+horizontal plane (i.e., the plane perpendicular to the beam
+central axis) is recommended to be checked daily by acquiring two portal images for a reticule with two orthogonal
+tungsten wires, one at a gantry angle of 0 and the other at
+90 , and comparing the position of the projection of the
+crossing of the wires with the position of the central pixel
+corrected for the residual misalignments, with and without
+gantry sag effects.23,58 EPID positioning errors with respect
+to the machine isocenter should not exceed 1 mm in the horizontal plane. The residual misalignments are recommended
+to be recalibrated and checked every 6 months. An error in
+the vertical position of the flat panel does not translate in an
+error in the reconstructed isocenter position, as the machine
+isocenter still projects to the center of the EPID. However,
+since the projection matrices derived during the geometry
+calibration procedure are only strictly valid at a SID of
+145 cm, a vertical position error may result in some image
+distortion. Unlike the horizontal position, which is recommended to be checked daily, the vertical position of the
+EPID is recommended to be checked monthly, using a ruler,
+and with a recommended tolerance of 65 mm. This tolerance was selected because an error of 1 cm in the SID results
+in a 0.7% magnification of the image.
+A specialized phantom can be used to test MV-CBCT
+geometric accuracy and registration. The phantom is a cylinder with four tungsten beads placed 90 apart on the surface.
+The beads are positioned within a common transverse
+plane.58 The position accuracy is checked by placing a reference point at the center of each bead in the CB image of the
+phantom and ensuring that the recorded position of that reference point is within 1 mm of the physical bead position in
+the phantom. To verify stability, this procedure can repeated
+five times, on five consecutive images of the phantom in the
+same position. A monthly check is recommended with all
+beads required to be within 61 mm in the three principal
+directions.
+IV.B. Image quality
+
+The general principles of image quality QA for CT-based
+IGRT technologies follow those of fan-beam computed tomography systems (single and multislice third and fourth
+generation scanners operated in axial or helical modes) that
+have been described comprehensively in AAPM report 74167
+and reiterated in the AAPM TG-142 report.160 Recommendations of this report are directly applicable to the CT on
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1952
+
+rails systems operating in a fan-beam mode. The design of
+other CT-based IGRT systems, summarized in Sec II A, differs from conventional CT scanner designs, utilizing a megavolt imaging beam and=or a cone beam geometry,
+differences that impact image quality.168 Improvements in
+imaging physics and correction algorithms are required
+before image quality levels approach those achieved with
+fan-beam CT scanners. For commissioning purposes, the
+methodologies described in the AAPM report 74 have been
+adopted for CT-based technologies, with findings summarized below.15,18–20 Evidence-based guidelines have not yet
+been established because few authors have repeated these
+tests over extended periods of time, so test tolerances and
+frequencies have not yet been determined.18 At this stage,
+the AAPM TG-179 recommends that image quality tests be
+performed initially on a monthly basis, and ultimately on a
+semiannual basis, after parameter stability has been demonstrated by the users.
+Technologies based on cone-beam geometry (i.e., MVCBCT and kV-CBCT) require large area detectors, usually
+flat panel imagers (FPI) that are inferior, in terms of dynamic
+range and detector quantum efficiency, to the high quality
+detectors used in multislice CT scanners. Moreover, the
+large cone angle used by these technologies allow x-ray scatter to contribute undesirable signals to the reconstructed
+images.40,169 As a result, x-ray scatter reduces soft tissue
+contrast, increases image noise, introduces cupping and capping artifacts in 3D reconstructions,159,170,171 and reduces
+the reconstructed CT number accuracy.18 Finally, blurring
+from internal structure motion affects the image quality since
+image acquisition takes up to 2 min.
+The QA program of a CT-based IGRT system should be
+tailored to its utilization. IGRT systems are usually used to
+localize targets and organs at risk and drive correction strategies to minimize geometric uncertainties. Soft-tissue detectability is thus an important aspect of CT-based IMRT
+quality. CT number linearity and accuracy become important
+only if the CT scans are also used for dose calculation (e.g.,
+patient too large for conventional CT bore or adaptive radiotherapy programs).
+Most image quality control tests can be performed using
+commercially available phantoms that contain multiple
+inserts tailored to test various aspects of image quality.
+Examples include the CatPhan 500 phantom (The Phantom
+Laboratory, Salem, NY) or the AAPM CT performance
+phantom (CIRS, Norfolk, VA). Similar phantoms are being
+adapted for megavoltage imaging purposes (Siemens Medical Solutions, Concord, CA).20,172 This section describes the
+general principles of these tests. It is recommended that the
+image quality tests be performed during system acceptance
+to obtain a system performance baseline that can thereafter
+be compared to quality assurance results acquired under
+identical conditions. For example, changes in the scatter
+environment (i.e., phantom size or field size) may yield spurious deviations from the baselines.18 Measurements
+acquired over extended periods of time have shown that
+most image quality parameters do not vary much over time.
+Based on the available evidence and given the technological
+
+1953
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+improvements expected in a few years, the AAPM TG-179
+recommends the test frequencies and tolerances presented in
+Table II. Users are justified to reduce the frequency of those
+image-quality tests marked by an asterisk to semiannual or
+upon extensive service after the stability of their own CTbased IGRT systems has been demonstrated.18
+Several authors have reported on the scale and distance
+accuracy, low contrast resolution, spatial resolution, uniformity, and image artifacts.15,17,18,20 These data are usually
+acquired by imaging one of the phantoms mentioned in the
+previous paragraph, therefore allowing several parameters to
+be analyzed, offline, using a single volumetric image
+acquisition.
+IV.B.1. Scale and distance accuracy
+
+Image scale and voxel size accuracy can be quantified by
+scanning objects of known sizes and comparing the object
+size in the image to the actual size. In general, CT-based
+IGRT systems have displayed distance accuracy well within
+1 mm.159 Deviations in scale and distance accuracy will
+affect image registration accuracy and may reduce patient
+positioning correction accuracy. Such deviations are likely
+to be caused by unintended changes in scanner geometry
+that could also degrade the spatial resolution. These changes
+should be fixed by the geometric accuracy calibration procedure described in Sec. IV A. A monthly test frequency is recommended initially, adopting a 6-month schedule when
+stability has been demonstrated.
+
+1953
+
+IV.B.3. Spatial resolution
+
+Most CT-based IGRT systems clinically operate at a spatial resolution that is substantially lower than their best performance due to the large size of the volumetric datasets that
+would be obtained at full resolution. There is an intrinsic
+tradeoff between spatial resolution and low contrast detectability in computed tomography imaging. As the latter is
+more important for IGRT, spatial resolution can be compromised. Routine QA of the spatial resolution is, nevertheless,
+useful because a reduction in spatial resolution may indicate
+changes in scanner geometry and=or gantry angle readout
+calibration. Spatial resolution measurements are conducted
+by imaging a series of high contrast objects with suitable resolution objects, e.g., rods, plates, or bars, embedded in the
+image quality phantom. Authors report that spatial resolution
+is on the order of 6–9 line-pairs=cm for kV-CBCT,15,17,18
+and of up to 4 line-pairs=cm for MV-CBCT,20 thus enabling
+visualization of high-contrast objects of 1–2.5 mm in size. In
+fan-beam MVCT images, the vendor’s specification indicates that a 1.6 mm high contrast object should be
+resolved.173 Spatial resolution has been shown to be independent of dose or location of the phantom with respect to
+the isocenter plane.18 For routine QA, monthly spatial resolution evaluation against established baselines is sufficient.159,160 A monthly test frequency is recommended
+initially, adopting a 6-month schedule when stability has
+been demonstrated.
+IV.B.4. Uniformity and noise
+
+IV.B.2. Low contrast resolution
+
+Low contrast detectability requirements for a CT-based
+IGRT system are generally looser than for a diagnostic CT
+scanner. While the diagnostic CT scan is used to diagnose
+disease and identify the anatomy, the IGRT scan is mainly
+used for localization of the preidentified and segmented
+structures. Low contrast detectability is tested by scanning a
+phantom containing objects with a variety of linear attenuation coefficients. Contrast detectability depends on phantom
+size, object size, reconstructed voxel size, and imaging technique. It is, therefore, important to obtain the test images
+using clinically relevant parameters and keep these parameters constant for quality control checks. The visibility of 1%
+contrast objects that are 7 mm in diameter has been reported
+for kV-CBCT systems.15,17 The fan-beam MVCT system
+can resolve 13 mm diameter objects with 2% density differences from background,19 and MV-CBCT can resolve 2 cm
+objects with 1% contrast.58 The required contrast resolution
+for clinical scenarios depends on the anatomical region. For
+example, the contrast difference between the prostate and
+the rectum is typically 2% while that between the normal
+breast tissue and a seroma cavity is 10–15%. The low contrast visibility should be tested against a baseline image on a
+monthly basis. Changes in low contrast detectability are
+likely related to changes in image noise and=or image uniformity. A monthly test frequency is recommended initially,
+adopting a 6-month schedule when stability has been
+demonstrated.
+Medical Physics, Vol. 39, No. 4, April 2012
+
+Nonuniformities and artifacts can be easily detected during a visual inspection of a volumetric image of a uniform
+density phantom, such as a water bath or water-equivalent
+object.174 The gray scale window width should be selected
+to reveal clinically relevant artifacts: examples of such artifacts are provided in the AAPM TG-104 (Sec. III B 6).159
+Ring artifacts are often caused by detector element malfunction and require recalibration of the defective pixels map.175
+Cupping artifacts (i.e., the center of the image of a uniform
+object appears darker than at the periphery) are mostly
+caused by scattered radiation. While commercial systems
+have cupping artifact correction calibrations, these calibrations occasionally cause their own artifacts.170,171 These
+types of artifacts affect image uniformity, so scanning a uniform density phantom can provide quantitative image uniformity and noise values. Uniformity is characterized by the
+variability of the average signal over several small regions
+of interest (ROI) and should meet vendor specifications.
+Noise is characterized by the average signal variability over
+these ROIs and should also meet the vendor specifications.
+Note that rather than using multiple small ROIs, using a single larger ROI makes it difficult to decouple the effects of
+image noise and nonuniformity. Image uniformity may
+reduce with increasing object size because of the subsequent
+increase of scattered-to-primary x-ray fluence. Cone-beam
+CT systems are more susceptible to this effect, while fanbeam systems, such as CT-on-rails and tomotherapy, exhibit
+uniformity comparable to those of diagnostic CT scans,19
+
+1954
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+and such systems can hold the same generally accepted tolerances.174 For cone-beam CT systems, repeating the uniformity measurements under conditions that were identical to
+acceptance testing will be important to be able to compare
+the results against the established baselines. For routine QA,
+comparing uniformity and noise with the established baselines is sufficient;159,160 monitoring relative deviations is
+more useful than measuring absolute contrast values. A
+monthly test frequency is recommended initially, adopting a
+6-month schedule when stability has been demonstrated.
+Image nonuniformity also affects dose calculation accuracy. For fan-beam MVCT, for example, a maximum HU
+difference in peripheral and central ROIs of 25 HU is recommended in TG-148 if the images are to be used for dose
+calculations.161
+IV.C. Image dose
+
+CT-based IGRT has progressed rapidly as experience has
+shown it to be a good means for identifying and correcting
+geometric errors prior to initiating radiation therapy. Daily
+imaging doses are generally small compared to therapeutic
+doses but are distributed over the entire imaged volume.
+Dosimetric CT-based imaging studies have been published10,22,24,172,176,177 and report dose ranging from 0.1 to 2
+cGy=scan for kV-CBCT and 0.7 to 10.8 cGy=scan for MVCBCT. For fan-beam MVCT images, the doses range from
+0.7 to 4 cGy and depend on the selected CT pitch and the
+imaged anatomy thickness.24 Dose can, therefore, cumulate
+from 3 to 370 cGy over a course of treatment, above the
+threshold doses reported in the literature for secondary
+malignancy occurrence.178,179
+Image quality is intimately linked to imaging dose. It is,
+therefore, tempting to use relatively high mAs imaging techniques such as those used for diagnostic imaging, without
+reaching equivalent image quality for kV-CBCT, especially
+for large and low-contrast volumes. It is, therefore, justified
+to reduce the image dose while the task at hand (e.g., visualize bony anatomy to correct patient positioning) remains
+feasible and particularly indicated for smaller volumes
+containing high-contrast structures, such as head-and-neck.
+Strategies to achieve doses that are reasonably low may
+include reducing tube mAs, reducing the number of projections acquired for a whole scan or performing partial scans,
+reducing imaging frequency, or minimizing the field-of-view
+to reduce integral dose. Each of these strategies is the topic
+of current research.119,180,181 Still, a compromise solution
+between the risk estimated from image doses must be balanced with the benefit offered (high precision treatment leading to reduced high dose volumes) and should be contrasted
+with the estimated risk from the extra doses that can result
+from IMRT and volumetric arc therapy.182 At a minimum,
+each facility should evaluate the doses associated with each
+IGRT implementation and discuss the cost versus benefit
+with the radiation oncologists. This may be especially important in treating patients with long post-treatment life expectancies, such as pediatric patients. Simple measurement
+techniques and dose indices, usually variations on the CTDI
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1954
+
+dose indices used in conventional CT, have been suggested
+to describe imaging dose.21,176,183 We refer the reader to the
+AAPM Task Group 75 report on advice on managing image
+dose for IGRT.183
+IV.D. Accuracy of CT numbers
+
+CT number accuracy becomes important when IGRT
+scans are used for dose calculations.132,141,184,185 CT number
+accuracy is measured by scanning a phantom containing
+inserts with a wide range of electron densities and comparing
+the CT numbers in the image with the specifications for the
+inserts. CT numbers are defined as being proportional to linear attenuation coefficients, but individual scanners will exhibit inaccuracies in linear attenuation coefficient
+measurements. The relationship between electron density
+and linear attenuation coefficient for human tissues is bilinear.186 CT number accuracy for CBCT suffers from the sensitivity of scatter-to-primary x-ray fluence to object and=or
+field size. The same holds true when a phantom size deviates
+from calibration conditions, so faithfully reproducing test
+conditions is crucial for obtaining meaningful quality control
+check results.18,159,160 Research is ongoing to better correct
+for scatter contribution and thus improve HU integrity of
+CBCT scans. For these reasons, kV-CBCT does not provide
+quantitative CT because small deviations from acceptance
+phantom conditions significantly affect CT numbers. This is
+not the case for either fan-beam MVCT132 or for CT-onrails.174 For fan-beam MVCT images, a monthly test of the
+HU calibration is recommended in TG-148. HU for materials
+with densities close to waterlike densities should be within
+30 HU from the calibration data and within 50 HU for lung
+and bonelike materials. This test is recommended only if
+images are used for dose calculations.161
+Because of the cupping artifact produced by scatter radiation and beam hardening, the calibration of MV-CBCT
+images is more elaborate than conventional fan-beam CT
+calibration. However, the smaller amount of scatter and the
+reduced energy dependence of the photon interactions in the
+MeV x-ray range produce a cupping artifact that is predictable. This allows for the use of simple nonpatient specific
+correction methods to improve the MV-CBCT image uniformity and provide accurate and stable CT numbers, making MV-CBCT suitable for dose recalculation. Using
+postprocessed images, dose calculations performed on MVCBCT images agree with calculations conducted using conventional kVCT images within 61% and 1–3% on phantom
+and patient images, respectively.139–141,187
+Once the corrections mentioned above become available
+in released CT-based IGRT products, regular monitoring of
+the daily patient dose based on on-board images acquired of
+the patient on the treatment table can become a powerful
+tool for tracking the progress and accuracy of the
+treatment.142,143,187
+IV.E. Image registration
+
+Image registration is an important step in CT-based
+IGRT. Due to the nonrigid nature of patient’s anatomy and
+
+1955
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+the limited correction methods, the “best” alignment may
+depend on the clinical case. A compromise between aligning
+soft tissue structures, bony, or implanted fiducial surrogates,
+and nearby critical structures, may be required. Selection
+between available intervention methods (simple couch translations, available couch rotations, online replanning methods, etc.) will also be required and will impact the
+registration method selection. At this writing, a uniform consensus for image registration quality assurance has not been
+developed, although the AAPM TG-132 is currently designing protocols for patient specific image registration and
+fusion software acceptance testing and quality assurance, so
+this area falls outside the scope of the current task group.
+It should be pointed out that difficulties in differentiating
+soft tissues can arise with CT-based image-guidance systems. When soft tissue localization is ambiguous, it is prudent to adopt a two-staged image guidance approach. In this
+approach, automatic registration based on bony anatomy is
+used to identify and correct gross geometric discrepancies.
+Subsequently, manual or automated soft-tissue registrations
+are used to refine registration to improve the measurement
+accuracy. Users are cautioned to visually assess image registration accuracy not only over the target area but also in its
+surrounding volume. It is also highly recommended that the
+user establish site-specific clinical protocols to explicitly
+describe the volume of interest, alignment goals, and evaluation criteria.
+Care should be taken to optimally derive a correction
+from a registration result. Ideally, the volumetric image
+registration algorithm should calculate both rotational and
+translational shifts; shifts that are too large for a specific
+treatment technology (e.g., any couch translation larger than
+1 cm or rotation exceeding 3 degrees) might warrant repeating the patient setup procedure.188 Careful assessment of the
+target position and rotation in combination with organs at
+risk or other anatomical landmarks should be performed; assistance with this task might be provided by projecting contours defined on the planning scan onto the daily volumetric
+image. As IGRT is employed to empower adaptive radiation
+therapy, commercial vendors will have to develop reliable
+algorithms to account for deforming or moving anatomy
+over a single treatment or an entire radiation therapy course
+and suggest test methods with the collaboration of early
+adopters.189
+IV.F Accuracy of remote-controlled couch
+
+A key component to any image-guidance system is the
+patient positioning device. This device typically involves a
+motorized, remote-controlled couch that translates the
+patient along three-axes.190 A couch with 6 degrees of freedom (3 translations and 3 rotations) is also commercially
+available.191,192 Patient positioning corrections need to be
+both accurate and precise to realize the full potential of
+IGRT. The accuracy and precision of correction movements
+should be assessed during commissioning. Submillimeter
+couch position accuracy has been demonstrated, for several
+commercial couches, using high-precision calipers,190 portal
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1955
+
+imaging,7,193 optical navigation systems,194 film,195 and the
+image-guidance system196 itself. These data suggest that
+couch motion accuracy is well within the vendor-provided
+specifications or the tolerances suggested by the AAPM TG142 report (i.e., 62mm=1 )160 and should suffice for highprecision radiotherapy and SBRT. However, authors typically recommend repeating such procedures during regularly
+scheduled QA activities but fail to specify test frequency.
+Tracking the trends from repeating these tests over extended
+periods of time may guide appropriate test frequencies, as
+well as what long-term accuracy is achievable, but such time
+trends have not yet been reported.
+The AAPM TG-179 recommends that the tolerances for
+accuracy of remote-controlled couches match those specified
+in TG-142. One benefit from the end-to-end QC test
+described in Sec. IV G is that the accuracy of couch motions
+is tested on a daily basis. Therefore, Table II does not specify additional recommended tests to those of TG-142.
+IV.G. Daily operational issues
+
+This task group recommends that daily CT-based IGRT
+QC tests be performed. The primary rationale for daily QC
+procedures is to identify any sudden performance changes or
+gross errors that could result from collisions, upgrades, or
+afterhours service. Another benefit of daily QC is to obtain a
+record of the geometric accuracy of the therapy equipment,
+using a more efficient procedure than the lengthy but more
+precise monthly procedure described in Sec. IV A. The rapid
+daily procedure described below inherently involves other
+routine QC items, such as warming up the x-ray tube, reporting certain warning messages and system interlocks, and verifying there is sufficient disk space for the work day.159 In
+some implementations, the imaging equipment is positioned
+by powerful robotic arms that move near the patient, creating
+a potential for injury. Thus, the daily QC procedures also
+need to ensure the touch panels or motion interlocks are all
+functional.
+Simple, integral tests have been described to check the
+overall CT-simulation processes accuracy,163 and similar
+tests, with adapted phantoms, have been proposed for
+image-guidance systems.8,15,159,197,198 A variety of methods
+have been proposed to achieve this goal. Cubic phantoms
+with a marker placed at the center can be aligned with the
+linac isocenter using room lasers or portal images; volumetric phantom images would therefore measure the isocenter
+localization accuracy.8 A phantom with multiple markers at
+known positions would provide additional assessments,
+such as volumetric image orientation,8 confirm source-toimager distance,197 assess image sharpness,198 and even
+assess dose.199,200 Typically, these phantoms are aligned to
+the accelerator isocenter using the room lasers, thereby
+speeding up the execution of the daily test at the cost of
+relating accuracy to the laser system rather than directly to
+the isocenter. A tolerance of 62 mm has been demonstrated
+for such daily geometric accuracy assessment; the accuracy
+should be confirmed with orthogonal portal images of the
+phantom.11
+
+1956
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+A variant of the daily QA procedure can be implemented
+to assess communication between the image registration
+software and the remote-controlled couch, to verify couch
+motion accuracy, and to provide a rapid end-to-end test of
+the IGRT process.8,11,201 The image acquisition and registration software is typically independent of the treatment couch
+control system; hence, the software provides an objective
+measure of the couch positioning accuracy and precision.
+The “residual correction error” is a useful measure of the targeting and couch correction accuracy. This value can be estimated by first placing a phantom at isocenter and then
+displacing the phantom at predefined distances in three
+directions; this displacement is independently measured. The
+displacement should be less than 2 cm in any cardinal direction because remote-controlled movements for most IGRT
+couches are currently limited to 2 cm to reduce the likelihood of patient–machine collision. The daily QA procedure
+should also avoid repeated, trivial, or clinically irrelevant
+displacement magnitudes. For example, a displacement of
+(1,1,1) cm in the (L=R, S=I, and A=P) directions would not
+expose an error where the coordinate axes were mismatched
+between a scan from the CT-based image-guidance system
+and a reference CT scan.
+After the displacement is applied, a localization image
+dataset is acquired to assess what couch motions are
+required to align the phantom to its nominal position. To
+mimic patient treatments, a reference CT scan of the phantom is used as a surrogate of the CT simulation scan. The
+shift is determined by comparing the localization and simulation images and a suggested couch shift is determined.
+The shift is applied and a verification image dataset is
+acquired and registered again to the reference CT dataset.
+The displacement indicated from registering the verification dataset to the reference CT defines the residual couch
+correction error. The residual error obtained with this simplified geometric accuracy check should be 0 6 2 mm,
+based on a 95% confidence interval.11 Repeated measurements of this residual error define the systematic error
+(mean) and the uncertainty (standard deviation) of the
+targeting and correction system; again, submillimeter accuracy has been reported on phantom studies.202 However,
+the overall accuracy has been shown to depend on the IG
+modality (2D or 3D, kV or MV),203 the x-ray technique
+(kVp, mAs, or MUs), the target (fiducial or soft-tissue or
+bony matching), and the targeting method (manual or automatic). This daily QA procedure creates confidence in the
+IGRT system accuracy and precision. It is also useful for
+technical and clinical staff training as well as to provide a
+quick check after scheduled or unscheduled service events
+or other mishaps, such as a collision.
+It should be noted that the tolerance supported by published data for daily geometric accuracy test is 0 6 2 mm to
+a 95% confidence interval, in agreement with the AAPM
+TG-101 report.11,146 The AAPM TG-142 report recommends
+that daily tests of IGRT systems demonstrate an accuracy of
+61 mm for SBRT techiniques160 while the AAPM TG-104
+report does not distinguish between conventional and hypofractionated techniques.159 The AAPM Task Group 179 is
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1956
+
+consistent with the TG-101 and TG-104 reports for a number
+of reasons. As described above, the daily test aims to detect
+gross, unintentional misalignments that may be caused by
+collisions, service, or research activities performed after
+hours. Second, the daily procedures described in this section
+provide rapid assessment of geometric accuracy, system integrity, and functionality; this rapidity is achieved at the cost
+of a reduced test precision relative to the geometric calibration procedures described at the beginning of this section.
+Daily geometric tests need to be performed in short amounts
+of time, and accuracy is compromised because the user manually aligns the phantom with room lasers and because the
+accelerator component flexes and torques are under sampled
+when only orthogonal portal images are used to assess coincidence of all isocenters. Finally, for some systems, manual
+image matching introduces further uncertainties in the test.11
+The AAPM TG-179 stresses that the complete geometric
+calibration procedure described in Sec. IV A has proven the
+submillimeter accuracy of CT-based IGRT devices over
+extended periods of time; repeating this procedure whenever
+extensive service or upgrades are performed should maintain
+a high, submillimetric geometric accuracy that suffices to
+both conventional and hypofractionated radiotherapy fractionation schedules. Verifying the geometric accuracy using the
+geometric calibration procedure described in Sec. IV A can
+take up to 2 h and so is inappropriate for daily QC.
+V. COMMISSIONING THE IMAGE-GUIDED
+PROCESS
+Clinical experience with CT-based image-guidance technologies is steadily growing. These technologies can achieve
+several aims. First, they can increase radiotherapy accuracy
+by verifying the patient position with respect to the treatment
+beam immediately prior to irradiation. Second, the enhanced
+geometric accuracy can be used to review and perhaps
+reduce setup margins for PTV design, leading to reduced
+doses to organs at risk and perhaps escalating dose. Finally,
+IGRT may also empower adaptive radiotherapy because
+clinicians can assess anatomical changes seen during a
+course of radiation and rationally respond to those changes.
+Secondary aims of IGRT might include replacing film or
+portal imaging to document positional accuracy, manage
+inter- and intrafractional organ motion during radiotherapy,
+or measure the actual efficacy of immobilization accessories.
+Thus, first-time users of this technology should ascertain
+which of these aims are desirable for their own clinical contexts and tailor their commissioning and QA programs
+accordingly.
+One strategy for implementing wide-scale IGRT is to
+build on several short-term successes, starting with acceptance testing of the first CT-based IGRT device to develop
+image-guidance protocols. Several initiatives can be performed in parallel. Multidisciplinary teams can build their
+confidence in the IGRT process, using end-to-end tests
+where a phantom is treated exactly like a patient, from CT
+simulation to treatment delivery. Such end-to-end tests simulate the process in a multidisciplinary environment, help
+
+1957
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+identify and resolve issues, and develop expertise. Other
+issues include the following:
+• developing
+
+an appropriate nomenclature for clearly and
+systematically communicating and documenting imageguided measurements;
+• assessing performance under a clinical load;
+• defining an appropriate frequency of site-specific image
+guidance protocols; and
+• defining the roles, responsibilities, and involvement of
+team members in the image-guidance process
+A powerful motivating factor for multidisciplinary teams
+is the clinical research required to establish safe and efficient
+clinical operation. Specific operating issues include obtaining
+soft-tissue contrast on volumetric datasets using doses lower
+than or comparable to portal imaging opens the possibility of
+frequent and accurate positioning of the patient at the onset
+of each treatment.35,109,110 Teams can test and benchmark
+CT-based IGRT against portal imaging guidance, initially
+using rigid phantoms and end-to-end tests,7 followed with
+patient studies.36,95,96,99,105,204 Often, such studies involve
+verification imaging to assess the accuracy of the position
+correction; this build clinicians’ confidence in the IGRT process accuracy. In parallel, a QA program must be established
+to ensure the safe, reliable, and consistent operation of the
+CT-based image-guidance technology,175 accounting for the
+goals and aims to be achieved with such guidance systems, be
+it simply the correction of geometric uncertainties to empowering an adaptive radiotherapy protocol for routine use.
+Clinical patient studies are introduced gradually, selecting
+a few anatomical sites prior to broadening the use of imageguidance across all anatomical sites.205 Depending on the
+comfort and confidence levels of users, initial anatomical
+site groups can be selected based on (i) research or personal
+interests, (ii) sufficient patient volume to allow clinical team
+to learn without overloading it (about five patients initially
+on a treatment unit), (iii) difficulty of the imaging process, as
+influenced by visualization of soft tissues and mobility of internal organs, and (iv) when image contrast gains offered by
+kilovoltage over portal imaging are immediately obvious
+(lung, pediatrics, and brain). Coordination meetings help
+
+1957
+
+share the findings from various site groups and identify
+infrastructure issues, such as nomenclature, documentation
+of the image-guidance protocols, disk space, and defining
+data archiving requirements. A team with representation
+from all disciplines (i.e., therapists, physicists, and physicians) should be involved in the development of site-specific
+IGRT techniques. The team should develop an initial imageguidance procedure considering the following:
+• definition of the initial positional accuracy requirements in
+
+the clinic;
+• recommendation
+
+of appropriate imaging techniques for
+specific anatomical sites;
+• keep radiation doses low;
+• identify appropriate immobilization accessories;
+• document results from end-to-end image guidance testing;
+and
+• identify obstacles or potential pitfalls for safe and efficient
+use of the technology.
+Subsequently, the analysis of positional data from end-toend testing will help the team reassess setup margins, tolerances for residual positional errors, and opportunities for
+dose escalation. Vendors have an obligation to provide user
+training, and administrators need to allow extra time for staff
+to learn the new process, over the course of a few months,
+while making teams aware of the fiscal constraints that need
+to be met once the new IGRT processes are stabilized. Each
+team should fully document site-specific image-guided processes, with clear statements of accuracy requirements. These
+documents can then be used as learning tools for other staff.
+Depending on the aims of individual clinics in implementing IGRT, the time and resource commitment to implement CT-based IGRT technologies differs between clinics
+around the world and between imaging systems. Table III
+summarizes the collected experiences of AAPM TG-179
+members as an estimate of the resource needs to maintain
+image-guidance programs with CT-based technologies. Clinics are advised to plan for additional resources from radiation therapy, radiation oncology, and medical physics for
+successful wide-scale implementation of CT-based image
+guidance technologies and processes.
+
+TABLE III. Estimated human resources required for image guidance using CT-based IGRT technologies. Estimates are obtained from the collected experiences
+of the task group members. More time is required when performing commissioning and quality control testing of 2D functions on some platforms.
+Activity
+
+Responsibility
+
+Time
+
+Acceptance testing and commissioning
+Education
+
+Operation
+
+Physicists
+Physicists
+Therapists
+Dosimetrists
+Therapists
+
+2.5 days
+2 days
+2 days
+2 days
+5 mins=patient
+
+Review of images
+Daily quality control tests
+Monthly quality control tests
+Annual quality control tests
+Continued clinical support
+
+Dosimetrists
+Physicians
+Therapists
+Physicists
+Physicists
+Physicists
+
+10 min=patient
+5 min=scan
+10 min
+1–2 h
+2–4 h
+0.05 full-time equivalent position
+
+Medical Physics, Vol. 39, No. 4, April 2012
+
+Notes
+
+First install only
+First install only
+First install only
+Each treatment with IGRT; includes
+image acquisition and evaluation
+Data transfers to imaging platform
+0 when performed by therapists
+
+Ad hoc activity
+
+1958
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+VI. CONCLUSIONS
+CT-based image-guidance systems have the potential to
+profoundly change how RT is delivered. The quality control
+protocols employed for these devices are highly dependent
+on their intended use. Since the primary aim of imageguidance is to detect and correct positional uncertainties,
+particular attention should be paid to their geometric accuracy assessment. As PTV margins become tighter, the geometric accuracy of radiation therapy delivery systems
+becomes as important as the dosimetric accuracy, warranting
+implementation of daily QC procedures.
+Image quality requirements for QA differ, however.
+While most of the commercially -available systems are capable of visualizing bony anatomy, air, and some soft tissue,
+their performance is subject to variations caused by the x-ray
+scatter environment and beam hardening, both of which degrade image contrast, noise, and uniformity. For some configurations, it may be more difficult to use directly images
+from IGRT systems for soft tissue target alignment or for
+treatment planning because the CT number accuracy is
+object-dependent. The tests described in this report and corroborated in the reports from the AAPM TG-101, 104, 142,
+and 148 propose guidelines for test tolerance and frequency
+of testing should be based on the intended use of the images.
+a)
+
+Author to whom correspondence should be addressed. Electronic mail:
+jean-pierre.bissonnette@rmp.uhn.on.ca
+1
+C. A. McBain, A. M. Henry, J. Sykes, A. Amer, T. Marchant, C. M.
+Moore, J. Davies, J. Stratford, C. McCarthy, B. Porritt, P. Williams, V. S.
+Khoo, and P. Price, “X-ray volumetric imaging in image-guided radiotherapy: The new standard in on-treatment imaging,” Int. J. Radiat.
+Oncol., Biol., Phys. 64, 625–634 (2006).
+2
+J. Lattanzi, S. McNeely, A. Hanlon, I. Das, T. E. Schultheiss, and G. E.
+Hanks, “Daily CT localization for correcting portal errors in the treatment
+of prostate cancer,” Int. J. Radiat. Oncol., Biol., Phys. 41, 1079–1086
+(1998).
+3
+T. R. Mackie, J. Kapatoes, K. Ruchala, W. Lu, C. Wu, G. Olivera, L.
+Forrest, W. Tome, J. Welsh, R. Jeraj, P. Harari, P. Reckwerdt, B. Paliwal,
+M. Ritter, H. Keller, J. Fowler, and M. Mehta, “Image guidance for precise conformal radiotherapy,” Int. J. Radiat. Oncol., Biol., Phys. 56,
+89–105 (2003).
+4
+J. Pouliot, A. Bani-Hashemi, J. Chen, M. Svatos, F. Ghelmansarai, M.
+Mitschke, M. Aubin, P. Xia, O. Morin, K. Bucci, M. Roach, III, P. Hernandez, Z. Zheng, D. Hristov, and L. Verhey, “Low-dose megavoltage
+cone-beam CT for radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys.
+61, 552–560 (2005).
+5
+R. G. Simpson, C. T. Chen, E. A. Grubbs, and W. Swindell, “A 4-MV CT
+scanner for radiation therapy: the prototype system,” Med. Phys. 9,
+574–579 (1982).
+6
+D. A. Jaffray, D. G. Drake, M. Moreau, A. A. Martinez, and J. W. Wong,
+“A radiographic and tomographic imaging system integrated into a medical linear accelerator for localization of bone and soft-tissue targets,” Int.
+J. Radiat. Oncol., Biol., Phys. 45, 773–789 (1999).
+7
+M. B. Sharpe, D. J. Moseley, T. G. Purdie, M. Islam, J. H. Siewerdsen,
+and D. A. Jaffray, “The stability of mechanical calibration for a kV cone
+beam computed tomography system integrated with linear accelerator,”
+Med. Phys. 33, 136–144 (2006).
+8
+J. P. Bissonnette, “Quality assurance of image-guidance technologies,”
+Semin. Radiat. Oncol. 17, 278–286 (2007).
+9
+G. J. Kutcher, L. Coia, M. Gillin, W. F. Hanson, S. Leibel, R. J. Morton,
+J. R. Palta, J. A. Purdy, L. E. Reinstein, G. K. Svensson, M. Weller, and
+L. Wingfield, “Comprehensive QA for radiation oncology: Report of the
+AAPM Radiation Therapy Committee Task Group 40,” Med. Phys. 21,
+581–618 (1994).
+10
+J. Lehmann, J. Perks, S. Semon, R. Harse, and J. A. Purdy,
+“Commissioning experience with cone-beam computed tomography for
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1958
+
+image-guided radiation therapy,” J. Appl. Clin. Med. Phys. 8, 2354
+(2007).
+11
+J. P. Bissonnette, D. Moseley, E. White, M. Sharpe, T. Purdie, and D. A.
+Jaffray, “Quality assurance for the geometric accuracy of cone-beam CT
+guidance in radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys. 71,
+S57–S61 (2008).
+12
+L. Court, I. Rosen, R. Mohan, and L. Dong, “Evaluation of mechanical
+precision and alignment uncertainties for an integrated CT=LINAC system,” Med. Phys. 30, 1198–1210 (2003).
+13
+C. Woodford, S. Yartsev, and J. Van Dyk, “Optimization of megavoltage
+CT scan registration settings for thoracic cases on helical tomotherapy,”
+Phys. Med. Biol. 52, N345–N354 (2007).
+14
+C. Woodford, S. Yartsev, and J. Van Dyk, “Optimization of megavoltage
+CT scan registration settings for brain cancer treatments on
+tomotherapy,” Phys. Med. Biol. 52, N185–N193 (2007).
+15
+S. Yoo, G. Y. Kim, R. Hammoud, E. Elder, T. Pawlicki, H. Guan, T. Fox,
+G. Luxton, F. F. Yin, and P. Munro, “A quality assurance program for the
+on-board imagers,” Med. Phys. 33, 4431–4447 (2006).
+16
+K. Kuriyama, H. Onishi, N. Sano, T. Komiyama, Y. Aikawa, Y. Tateda,
+T. Araki, and M. Uematsu, “A new irradiation unit constructed of selfmoving gantry-CT and linac,” Int. J. Radiat. Oncol., Biol., Phys. 55,
+428–435 (2003).
+17
+C. B. Saw, Y. Yang, F. Li, N. J. Yue, C. Ding, K. Komanduri, S. Huq,
+and D. E. Heron, “Performance characteristics and quality assurance
+aspects of kilovoltage cone-beam CT on medical linear accelerator,”
+Med. Dosim. 32, 80–85 (2007).
+18
+J. P. Bissonnette, D. J. Moseley, and D. A. Jaffray, “A quality assurance
+program for image quality of cone-beam CT guidance in radiation
+therapy,” Med. Phys. 35, 1807–1815 (2008).
+19
+S. L. Meeks, J. F. Harmon, Jr., K. M. Langen, T. R. Willoughby, T. H.
+Wagner, and P. A. Kupelian, “Performance characterization of megavoltage computed tomography imaging on a helical tomotherapy unit,” Med.
+Phys. 32, 2673–2681 (2005).
+20
+O. Gayou, D. S. Parda, M. Johnson, and M. Miften, “Patient dose and
+image quality from mega-voltage cone beam computed tomography
+imaging,” Med. Phys. 34, 499–506 (2007).
+21
+A. Amer, T. Marchant, J. Sykes, J. Czajka, and C. Moore, “Imaging doses
+from the Elekta Synergy X-ray cone beam CT system,” Br. J. Radiol. 80,
+476–482 (2007).
+22
+M. K. Islam, T. G. Purdie, B. D. Norrlinger, H. Alasti, D. J. Moseley, M.
+B. Sharpe, J. H. Siewerdsen, and D. A. Jaffray, “Patient dose from kilovoltage cone beam computed tomography imaging in radiation therapy,”
+Med. Phys. 33, 1573–1582 (2006).
+23
+O. Morin, A. Gillis, J. Chen, M. Aubin, M. K. Bucci, M. Roach, III, and
+J. Pouliot, “Megavoltage cone-beam CT: System description and clinical
+applications,” Med. Dosim. 31, 51–61 (2006).
+24
+A. P. Shah, K. M. Langen, K. J. Ruchala, A. Cox, P. A. Kupelian, and S.
+L. Meeks, “Patient dose from megavoltage computed tomography imaging,” Int. J. Radiat. Oncol., Biol., Phys. 70, 1579–1587 (2008).
+25
+B. Thomadsen, “Critique of traditional quality assurance paradigm,” Int.
+J. Radiat. Oncol., Biol., Phys. 71, S166–S169 (2008).
+26
+M. Uematsu, T. Fukui, A. Shioda, H. Tokumitsu, K. Takai, T. Kojima, Y.
+Asai, and S. Kusano, “A dual computed tomography linear accelerator
+unit for stereotactic radiation therapy: a new approach without cranially
+fixated stereotactic frames,” Int. J. Radiat. Oncol., Biol., Phys. 35,
+587–592 (1996).
+27
+P. C. Shrimpton, M. C. Hillier, M. A. Lewis, and M. Dunn, “National survey of doses from CT in the UK: 2003,” Br. J. Radiol. 79, 968–980 (2006).
+28
+J. O’Daniel, T. Pan, R. Mohan, and L. Dong, “CT dose from daily inroom CT-guided radiotherapy,” Med. Phys. 31, 1876 (2004).
+29
+B. Sorcini and A. Tilikidis, “Clinical application of image-guided radiotherapy, IGRT (on the Varian OBI platform),” Cancer Radiother. 10,
+252–257 (2006).
+30
+C. Thilmann, S. Nill, T. Tucking, A. Hoss, B. Hesse, L. Dietrich, R.
+Bendl, B. Rhein, P. Haring, C. Thieke, U. Oelfke, J. Debus, and P. Huber,
+“Correction of patient positioning errors based on in-line cone beam CTs:
+Clinical implementation and first experiences,” Radiat. Oncol. 1, 16
+(2006).
+31
+G. R. Borst, J. J. Sonke, A. Betgen, P. Remeijer, M. van Herk and J. V.
+Lebesque, “Kilo-voltage cone-beam computed tomography setup measurements for lung cancer patients; first clinical results and comparison
+with electronic portal-imaging device,” Int. J. Radiat. Oncol., Biol., Phys.
+68, 555–561 (2007).
+
+1959
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+32
+
+D. M. Duggan, G. X. Ding, C. W. Coffey, 2nd, W. Kirby, D. E. Hallahan,
+A. Malcolm, and B. Lu, “Deep-inspiration breath-hold kilovoltage conebeam CT for setup of stereotactic body radiation therapy for lung tumors:
+Initial experience,” Lung Cancer 56, 77–88 (2007).
+33
+L. H. Kim, J. Wong, and D. Yan, “On-line localization of the lumpectomy cavity using surgical clips,” Int. J. Radiat. Oncol., Biol., Phys. 69,
+1305–1309 (2007).
+34
+K. Nakagawa, H. Yamashita, K. Shiraishi, H. Igaki, A. Terahara, N.
+Nakamura, K. Ohtomo, S. Saegusa, T. Shiraki, T. Oritate, and K. Yoda,
+“Verification of in-treatment tumor position using kilovoltage cone-beam
+computed tomography: A preliminary study,” Int. J. Radiat. Oncol.,
+Biol., Phys. 69, 970–973 (2007).
+35
+T. G. Purdie, J. P. Bissonnette, K. Franks, A. Bezjak, D. Payne, F. Sie, M.
+B. Sharpe, and D. A. Jaffray, “Cone-beam computed tomography for online image guidance of lung stereotactic radiotherapy: Localization, verification, and intrafraction tumor position,” Int. J. Radiat. Oncol., Biol.,
+Phys. 68, 243–252 (2007).
+36
+E. A. White, J. Cho, K. A. Vallis, M. B. Sharpe, G. Lee, H. Blackburn, T.
+Nageeti, C. McGibney, and D. A. Jaffray, “Cone beam computed tomography guidance for setup of patients receiving accelerated partial breast
+irradiation,” Int. J. Radiat. Oncol., Biol., Phys. 68, 547–554 (2007).
+37
+J. Boda-Heggemann, F. M. Kohler, H. Wertz, M. Ehmann, B. Hermann,
+N. Riesenacker, B. Kupper, F. Lohr, and F. Wenz, “Intrafraction motion
+of the prostate during an IMRT session: A fiducial-based 3D measurement with cone-beam CT,” Radiat. Oncol. 3, 37 (2008).
+38
+Y. Gong, J. Wang, S. Bai, X. Jiang, and F. Xu, “Conventionally-fractionated image-guided intensity modulated radiotherapy (IG-IMRT): A safe
+and effective treatment for cancer spinal metastasis,” Radiat. Oncol. 3, 11
+(2008).
+39
+G. Y. Kim, T. Pawlicki, Q. T. Le, and G. Luxton, “Linac-based on-board
+imaging feasibility and the dosimetric consequences of head roll in headand-neck IMRT plans,” Med. Dosim. 33, 93–99 (2008).
+40
+D. A. Jaffray and J. H. Siewerdsen, “Cone-beam computed tomography
+with a flat-panel imager: Initial performance characterization,” Med.
+Phys. 27, 1311–1323 (2000).
+41
+G. X. Ding, P. Munro, J. Pawlowski, A. Malcolm, and C. W. Coffey,
+“Reducing radiation exposure to patients from kV-CBCT imaging,”
+Radiother. Oncol. 97, 585–592 (2010).
+42
+J. J. Sonke, L. Zijp, P. Remeijer, and M. van Herk, “Respiratory correlated cone beam CT,” Med. Phys. 32, 1176–1186 (2005).
+43
+L. Dietrich, S. Jetter, T. Tucking, S. Nill, and U. Oelfke, “Linac-integrated 4D cone beam CT: first experimental results,” Phys. Med. Biol.
+51, 2939–2952 (2006).
+44
+T. Li, E. Schreibmann, Y. Yang, and L. Xing, “Motion correction for
+improved target localization with on-board cone-beam computed
+tomography,” Phys. Med. Biol. 51, 253–267 (2006).
+45
+J. H. Siewerdsen, M. J. Daly, B. Bakhtiar, D. J. Moseley, S. Richard, H.
+Keller, and D. A. Jaffray, “A simple, direct method for x-ray scatter estimation and correction in digital radiography and cone-beam CT,” Med.
+Phys. 33, 187–197 (2006).
+46
+S. Rit, J. Wolthaus, M. van Herk and J. J. Sonke, “On-the-fly motioncompensated cone-beam CT using an a priori motion model,” Medical
+Image Computing and Computer-Assisted Intervention—Part I, Vol. 11,
+pp. 729–736 (2008).
+47
+S. Leng, J. Tang, J. Zambelli, B. Nett, R. Tolakanahalli, and G. H. Chen,
+“High temporal resolution and streak-free four-dimensional cone-beam
+computed tomography,” Phys. Med. Biol. 53, 5653–5673 (2008).
+48
+S. Mori, M. Endo, S. Komatsu, S. Kandatsu, T. Yashiro, and M. Baba, “A
+combination-weighted Feldkamp-based reconstruction algorithm for
+cone-beam CT,” Phys. Med. Biol. 51, 3953–3965 (2006).
+49
+J. Zhong, R. Ning, and D. Conover, “Image denoising based on multiscale singularity detection for cone beam CT breast imaging,” IEEE
+Trans. Med. Imaging 23, 696–703 (2004).
+50
+D. Letourneau, R. Wong, D. Moseley, M. B. Sharpe, S. Ansell, M.
+Gospodarowicz, and D. A. Jaffray, “Online planning and delivery technique for radiotherapy of spinal metastases using cone-beam CT: Image
+quality and system performance,” Int. J. Radiat. Oncol., Biol., Phys. 67,
+1229–1237 (2007).
+51
+L. Zhu, Y. Xie, J. Wang, and L. Xing, “Scatter correction for cone-beam
+CT in radiation therapy,” Med. Phys. 36, 2258–2268 (2009).
+52
+T. R. Mackie, G. H. Olivera, J. M. Kapatoes, K. J. Ruchala, J. P. Balog,
+W. A. Tome, S. Hui, M. Kissick, C. Wu, R. Jeraj, P. J. Rockwerdt, P.
+Harari, M. Ritter, L. Forrest, J. S. Welsh, and M. P. Metha, “Helical
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1959
+
+tomotherapy,” in Intensity Modulated Radiation Therapy. The state of the
+Art. AAPM Summer School Proceedings, edited by J. Palta and T. R.
+Mackie (Medical Physics Publishing, Madison, WI, 2003), pp. 247–284.
+53
+K. J. Ruchala, G. H. Olivera, E. A. Schloesser, and T. R. Mackie,
+“Megavoltage CT on a tomotherapy system,” Phys. Med. Biol. 44,
+2597–2621 (1999).
+54
+R. Jeraj, T. R. Mackie, J. Balog, G. Olivera, D. Pearson, J. Kapatoes, K.
+Ruchala, and P. Reckwerdt, “Radiation characteristics of helical
+tomotherapy,” Med. Phys. 31, 396–404 (2004).
+55
+M. Aubin, O. Morin, J. Chen, A. Gillis, B. Pickett, J. F. Aubry, C. Akazawa,
+J. Speight, M. Roach, III, and J. Pouliot, “The use of megavoltage conebeam CT to complement CT for target definition in pelvic radiotherapy in
+the presence of hip replacement,” Br. J. Radiol. 79, 918–921 (2006).
+56
+P. Munro, J. A. Rawlinson, and A. Fenster, “Therapy imaging: Limitations of imaging with high energy x-ray beams,” Proc. SPIE 767,
+178–184 (1987).
+57
+C. Amies, A. Bani-Hashemi, J. C. Celi, G. Grousset, F. Ghelmansarai, D.
+Hristov, D. Lane, M. Mitschke, A. Singh, H. Shukla, J. Stein, and M.
+Wofford, “A multi-platform approach to image guided radiation therapy
+(IGRT),” Med. Dosim. 31, 12–19 (2006).
+58
+O. Gayou and M. Miften, “Commissioning and clinical implementation
+of a mega-voltage cone beam CT system for treatment localization,”
+Med. Phys. 34, 3183–3192 (2007).
+59
+K. M. Langen, S. L. Meeks, and J. Pouliot, “Quality assurance of onboard
+megavoltage computed tomography imaging and target localization systems for on- and off-line image-guided radiotherapy,” Int. J. Radiat.
+Oncol., Biol., Phys. 71, S62–S65 (2008).
+60
+O. Morin, J. F. Aubry, M. Aubin, J. Chen, M. Descovich, A. L. Hashemi,
+and J. Pouliot, “Physical performance and image optimization of megavoltage cone-beam CT,” Med. Phys. 36, 1421–1432 (2009).
+61
+O. Morin, A. Gillis, M. Descovich, J. Chen, M. Aubin, J. F. Aubry, H.
+Chen, A. R. Gottschalk, P. Xia, and J. Pouliot, “Patient dose considerations for routine megavoltage cone-beam CT imaging,” Med. Phys. 34,
+1819–1827 (2007).
+62
+M. Miften, O. Gayou, B. Reitz, R. Fuhrer, B. Leicher, and D. S. Parda,
+“IMRT planning and delivery incorporating daily dose from megavoltage cone-beam computed tomography imaging,” Med. Phys. 34,
+3760–3767 (2007).
+63
+A. Y. Fung, S. Y. Grimm, J. R. Wong, and M. Uematsu, “Computed tomography localization of radiation treatment delivery versus conventional localization with bony landmarks,” J. Appl. Clin. Med. Phys. 4,
+112–119 (2003).
+64
+J. R. Wong, L. Grimm, M. Uematsu, R. Oren, C. W. Cheng, S. Merrick, and P. Schiff, “Image-guided radiotherapy for prostate cancer by
+CT-linear accelerator combination: Prostate movements and dosimetric considerations,” Int. J. Radiat. Oncol., Biol., Phys. 61, 561–569
+(2005).
+65
+M. Uematsu, A. Shioda, A. Suda, T. Fukui, Y. Ozeki, Y. Hama, J. R.
+Wong, and S. Kusano, “Computed tomography-guided frameless stereotactic radiotherapy for stage I non-small cell lung cancer: A 5-year experience,” Int. J. Radiat. Oncol., Biol., Phys. 51, 666–670 (2001).
+66
+J. R. Wong, Z. Gao, M. Uematsu, S. Merrick, N. P. Machernis, T. Chen,
+and C. W. Cheng, “Interfractional prostate shifts: Review of 1870 computed tomography (CT) scans obtained during image-guided radiotherapy
+using CT-on-rails for the treatment of prostate cancer,” Int. J. Radiat.
+Oncol., Biol., Phys. 72, 1396–1401 (2008).
+67
+K. Paskalev, S. Feigenberg, R. Jacob, S. McNeeley, E. Horwitz, R. Price,
+C. Ma, and A. Pollack, “Target localization for post-prostatectomy
+patients using CT and ultrasound image guidance,” J. Appl. Clin. Med.
+Phys. 6, 40–49 (2005).
+68
+L. E. Court, L. Dong, N. Taylor, M. Ballo, K. Kitamura, A. K. Lee, J.
+O’Daniel, R. A. White, R. Cheung, and D. Kuban, “Evaluation of a
+contour-alignment technique for CT-guided prostate radiotherapy: An
+intra- and interobserver study,” Int. J. Radiat. Oncol., Biol., Phys. 59,
+412–418 (2004).
+69
+L. E. Court and L. Dong, “Automatic registration of the prostate for computed-tomography-guided radiotherapy,” Med. Phys. 30, 2750–2757
+(2003).
+70
+K. Paskalev, C. M. Ma, R. Jacob, R. Price, S. McNeeley, L. Wang, B.
+Movsas, and A. Pollack, “Daily target localization for prostate patients
+based on 3D image correlation,” Phys. Med. Biol. 49, 931–939 (2004).
+71
+C. M. Ma and K. Paskalev, “In-room CT techniques for image-guided
+radiation therapy,” Med. Dosim. 31, 30–39 (2006).
+
+1960
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+72
+
+J. C. O’Daniel, L. Dong, L. Zhang, H. Wang, S. L. Tucker, R. J. Kudchadker, A. K. Lee, R. Cheung, J. D. Cox, D. A. Kuban, and R. Mohan,
+“Daily bone alignment with limited repeat CT correction rivals daily
+ultrasound alignment for prostate radiotherapy,” Int. J. Radiat. Oncol.,
+Biol., Phys. 71, 274–280 (2008).
+73
+S. J. Frank, L. Dong, R. J. Kudchadker, R. De Crevoisier, A. K. Lee, R.
+Cheung, S. Choi, J. O’Daniel, S. L. Tucker, H. Wang, and D. A. Kuban,
+“Quantification of prostate and seminal vesicle interfraction variation
+during IMRT,” Int. J. Radiat. Oncol., Biol., Phys. 71, 813–820 (2008).
+74
+X. Zhang, L. Dong, A. K. Lee, J. D. Cox, D. A. Kuban, R. X. Zhu, X.
+Wang, Y. Li, W. D. Newhauser, M. Gillin, and R. Mohan, “Effect of anatomic motion on proton therapy dose distributions in prostate cancer
+treatment,” Int. J. Radiat. Oncol., Biol., Phys. 67, 620–629 (2007).
+75
+J. L. Barker, Jr., A. S. Garden, K. K. Ang, J. C. O’Daniel, H. Wang, L. E.
+Court, W. H. Morrison, D. I. Rosenthal, K. S. Chao, S. L. Tucker, R.
+Mohan, and L. Dong, “Quantification of volumetric and geometric
+changes occurring during fractionated radiotherapy for head-and-neck
+cancer using an integrated CT=linear accelerator system,” Int. J. Radiat.
+Oncol., Biol., Phys. 59, 960–970 (2004).
+76
+J. C. O’Daniel, A. S. Garden, D. L. Schwartz, H. Wang, K. K. Ang, A.
+Ahamad, D. I. Rosenthal, W. H. Morrison, J. A. Asper, L. Zhang, S. M.
+Tung, R. Mohan, and L. Dong, “Parotid gland dose in intensitymodulated radiotherapy for head and neck cancer: Is what you plan what
+you get?,” Int. J. Radiat. Oncol., Biol., Phys. 69, 1290–1296 (2007).
+77
+M. Uematsu, “[Stereotactic radiation therapy for non small cell lung cancer],” Nippon Geka Gakkai Zasshi 103, 256–257 (2002).
+78
+H. Onishi, K. Kuriyama, T. Komiyama, S. Tanaka, N. Sano, Y. Aikawa,
+Y. Tateda, T. Araki, S. Ikenaga, and M. Uematsu, “A new irradiation system for lung cancer combining linear accelerator, computed tomography,
+patient self-breath-holding, and patient-directed beam-control without respiratory monitoring devices,” Int. J. Radiat. Oncol., Biol., Phys. 56,
+14–20 (2003).
+79
+K. M. Yenice, D. M. Lovelock, M. A. Hunt, W. R. Lutz, N. FournierBidoz, C. H. Hua, J. Yamada, M. Bilsky, H. Lee, K. Pfaff, S. V. Spirou,
+and H. I. Amols, “CT image-guided intensity-modulated therapy for paraspinal tumors using stereotactic immobilization,” Int. J. Radiat. Oncol.,
+Biol., Phys. 55, 583–593 (2003).
+80
+A. S. Shiu, E. L. Chang, J. S. Ye, M. Lii, L. D. Rhines, E. Mendel, J.
+Weinberg, S. Singh, M. H. Maor, R. Mohan, and J. D. Cox, “Near simultaneous computed tomography image-guided stereotactic spinal radiotherapy: An emerging paradigm for achieving true stereotaxy,” Int. J.
+Radiat. Oncol., Biol., Phys. 57, 605–613 (2003).
+81
+J. Y. Chang, L. Dong, H. Liu, G. Starkschall, P. Balter, R. Mohan, Z.
+Liao, J. D. Cox, and R. Komaki, “Image-guided radiation therapy for
+non-small cell lung cancer,” J. Thorac. Oncol. 3, 177–186 (2008).
+82
+J. Y. Chang, P. A. Balter, L. Dong, Q. Yang, Z. Liao, M. Jeter, M. K.
+Bucci, M. F. McAleer, R. J. Mehran, J. A. Roth, and R. Komaki,
+“Stereotactic body radiation therapy in centrally and superiorly located
+stage I or isolated recurrent non-small-cell lung cancer,” Int. J. Radiat.
+Oncol., Biol., Phys. 72, 967–971 (2008).
+83
+E. L. Chang, A. S. Shiu, E. Mendel, L. A. Mathews, A. Mahajan, P. K.
+Allen, J. S. Weinberg, B. W. Brown, X. S. Wang, S. Y. Woo, C. Cleeland, M. H. Maor, and L. D. Rhines, “Phase I=II study of stereotactic
+body radiotherapy for spinal metastasis and its pattern of failure,” J. Neurosurg. Spine 7, 151–160 (2007).
+84
+C. Wang, A. Shiu, M. Lii, S. Woo, and E. L. Chang, “Automatic target
+localization and verification for on-line image-guided stereotactic body
+radiotherapy of the spine,” Technol. Cancer Res. Treat. 6, 187–196 (2007).
+85
+M. Birkner, D. Yan, M. Alber, J. Liang, and F. Nusslin, “Adapting
+inverse planning to patient and organ geometrical variation: Algorithm
+and implementation,” Med. Phys. 30, 2822–2831 (2003).
+86
+B. Schaly, J. A. Kempe, G. S. Bauman, J. J. Battista, and J. Van Dyk,
+“Tracking the dose distribution in radiation therapy by accounting for
+variable anatomy,” Phys. Med. Biol. 49, 791–805 (2004).
+87
+L. E. Court, L. Dong, A. K. Lee, R. Cheung, M. D. Bonnen, J. O’Daniel,
+H. Wang, R. Mohan, and D. Kuban, “An automatic CT-guided adaptive
+radiation therapy technique by online modification of multileaf collimator
+leaf positions for prostate cancer,” Int. J. Radiat. Oncol., Biol., Phys. 62,
+154–163 (2005).
+88
+L. E. Court, R. B. Tishler, J. Petit, R. Cormack, and L. Chin, “Automatic
+online adaptive radiation therapy techniques for targets with significant
+shape change: a feasibility study,” Phys. Med. Biol. 51, 2493–2501
+(2006).
+Medical Physics, Vol. 39, No. 4, April 2012
+
+89
+
+1960
+
+R. Mohan, X. Zhang, H. Wang, Y. Kang, X. Wang, H. Liu, K. K. Ang, D.
+Kuban, and L. Dong, “Use of deformed intensity distributions for on-line
+modification of image-guided IMRT to account for interfractional anatomic changes,” Int. J. Radiat. Oncol., Biol., Phys. 61, 1258–1266 (2005).
+90
+E. E. Ahunbay, C. Peng, G. P. Chen, S. Narayanan, C. Yu, C. Lawton,
+and X. A. Li, “An on-line replanning scheme for interfractional variations,” Med. Phys. 35, 3607–3615 (2008).
+91
+Q. Wu, J. Liang, and D. Yan, “Application of dose compensation in
+image-guided radiotherapy of prostate cancer,” Phys. Med. Biol. 51,
+1405–1419 (2006).
+92
+Q. J. Wu, D. Thongphiew, Z. Wang, B. Mathayomchan, V. Chankong, S.
+Yoo, W. R. Lee, and F. F. Yin, “On-line re-optimization of prostate
+IMRT plans for adaptive radiation therapy,” Phys. Med. Biol. 53,
+673–691 (2008).
+93
+W. Lu, M. Chen, Q. Chen, K. Ruchala, and G. Olivera, “Adaptive fractionation therapy: I. Basic concept and strategy,” Phys. Med. Biol. 53,
+5495–5511 (2008).
+94
+H. Wang, A. S. Garden, L. Zhang, X. Wei, A. Ahamad, D. A. Kuban, R.
+Komaki, J. O’Daniel, Y. Zhang, R. Mohan, and L. Dong, “Performance
+evaluation of automatic anatomy segmentation algorithm on repeat or
+four-dimensional computed tomography images using deformable image
+registration method,” Int. J. Radiat. Oncol., Biol., Phys. 72, 210–219
+(2008).
+95
+D. J. Moseley, E. A. White, K. L. Wiltshire, T. Rosewall, M. B. Sharpe,
+J. H. Siewerdsen, J. P. Bissonnette, M. Gospodarowicz, P. Warde, C. N.
+Catton, and D. A. Jaffray, “Comparison of localization performance with
+implanted fiducial markers and cone-beam computed tomography for online image-guided radiotherapy of the prostate,” Int. J. Radiat. Oncol.,
+Biol., Phys. 67, 942–953 (2007).
+96
+J. P. Bissonnette, T. G. Purdie, J. A. Higgins, W. Li, and A. Bezjak,
+“Cone-beam computed tomographic image guidance for lung cancer radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys. 73, 927–934 (2009).
+97
+J. Wang, S. Bai, N. Chen, F. Xu, X. Jiang, Y. Li, Q. Xu, Y. Shen, H.
+Zhang, Y. Gong, R. Zhong, and Q. Jiang, “The clinical feasibility and
+effect of online cone beam computer tomography-guided intensity-modulated radiotherapy for nasopharyngeal cancer,” Radiother. Oncol. 90,
+221–227 (2009).
+98
+B. Polat, J. Wilbert, K. Baier, M. Flentje, and M. Guckenberger,
+“Nonrigid patient setup errors in the head-and-neck region,” Strahlenther.
+Onkol. 183, 506–511 (2007).
+99
+G. G. Zeng, S. L. Breen, A. Bayley, E. White, H. Keller, L. Dawson, and
+D. A. Jaffray, “A method to analyze the cord geometrical uncertainties
+during head and neck radiation therapy using cone beam CT,” Radiother.
+Oncol. 90, 228–230 (2009).
+100
+T. Fatunase, Z. Wang, S. Yoo, J. L. Hubbs, R. G. Prosnitz, F. F. Yin, and
+L. B. Marks, “Assessment of the residual error in soft tissue setup in
+patients undergoing partial breast irradiation: results of a prospective
+study using cone-beam computed tomography,” Int. J. Radiat. Oncol.,
+Biol., Phys. 70, 1025–1034 (2008).
+101
+M. A. Hawkins, C. Brooks, V. N. Hansen, A. Aitken, and D. M. Tait,
+“Cone beam computed tomography-derived adaptive radiotherapy for
+radical treatment of esophageal cancer,” Int. J. Radiat. Oncol., Biol.,
+Phys. 77, 378–383.
+102
+M. A. Hawkins, D. Moseley, C. Eccles, D. Jaffray, and L. A. Dawson,
+“Comparison of breath hold cone beam CT and orthogonal image guided
+radiotherapy for liver cancer,” Int. J. Radiat. Oncol., Biol., Phys. 63,
+S555–S556 (2005).
+103
+F. Foroudi, A. Haworth, A. Pangehel, J. Wong, P. Roxby, G. Duchesne,
+S. Williams, and K. H. Tai, “Inter-observer variability of clinical target
+volume delineation for bladder cancer using CT and cone beam CT,” J.
+Med. Imaging Radiat. Oncol. 53, 100–106 (2009).
+104
+N. Burridge, A. Amer, T. Marchant, J. Sykes, J. Stratford, A. Henry, C.
+McBain, P. Price, and C. Moore, “Online adaptive radiotherapy of the
+bladder: small bowel irradiated-volume reduction,” Int. J. Radiat. Oncol.,
+Biol., Phys. 66, 892–897 (2006).
+105
+T. G. Purdie, D. J. Moseley, J. P. Bissonnette, M. B. Sharpe, K. Franks,
+A. Bezjak, and D. A. Jaffray, “Respiration correlated cone-beam computed tomography and 4DCT for evaluating target motion in Stereotactic
+Lung Radiation Therapy,” Acta Oncol. 45, 915–922 (2006).
+106
+J. J. Sonke, M. Rossi, J. Wolthaus, M. van Herk, E. Damen, and J. Belderbos, “Frameless stereotactic body radiotherapy for lung cancer using
+four-dimensional cone beam CT guidance,” Int. J. Radiat. Oncol., Biol.,
+Phys. 74, 567–574 (2009).
+
+1961
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+107
+
+F. F. Yin, Z. Wang, S. Yoo, Q. J. Wu, J. Kirkpatrick, N. Larrier, J. Meyer,
+C. G. Willett, and L. B. Marks, “Integration of cone-beam CT in stereotactic
+body radiation therapy,” Technol. Cancer Res. Treat. 7, 133–139 (2008).
+108
+Z. Wang, J. W. Nelson, S. Yoo, Q. J. Wu, J. P. Kirkpatrick, L. B. Marks,
+and F. F. Yin, “Refinement of treatment setup and target localization accuracy using three-dimensional cone-beam computed tomography for stereotactic body radiotherapy,” Int. J. Radiat. Oncol., Biol., Phys. 73,
+571–577 (2009).
+109
+W. Li, T. G. Purdie, M. Taremi, S. Fung, A. Brade, J. B. C. Cho, A.
+Hope, A. Sun, D. Jaffray, A. Bezjak, and J.-P. Bissonnette, “Effect of
+immobilization and performance status on intra-fraction motion for stereotactic lung radiotherapy—analysis of 133 patients,” Int. J. Radiat.
+Oncol., Biol., Phys. 81, 1568–1575 (2011).
+110
+J. Higgins, A. Bezjak, A. Hope, T. Panzarella, W. Li, J. B. Cho, T. Craig,
+A. Brade, A. Sun, and J.-P. Bissonnette, “Effect of image-guidance frequency on geometric accuracy and setup margins in radiotherapy for
+locally advanced lung cancer,” Int. J. Radiat. Oncol., Biol., Phys. 80,
+1330–1337 (2011).
+111
+J. Nijkamp, F. J. Pos, T. T. Nuver, R. de Jong, P. Remeijer, J. J. Sonke,
+and J. V. Lebesque, “Adaptive radiotherapy for prostate cancer using kilovoltage cone-beam computed tomography: First clinical results,” Int. J.
+Radiat. Oncol., Biol., Phys. 70, 75–82 (2008).
+112
+G. X. Ding, D. M. Duggan, C. W. Coffey, M. Deeley, D. E. Hallahan, A.
+Cmelak, and A. Malcolm, “A study on adaptive IMRT treatment planning
+using kV cone-beam CT,” Radiother. Oncol. 85, 116–125 (2007).
+113
+Y. Yang, E. Schreibmann, T. Li, C. Wang, and L. Xing, “Evaluation of
+on-board kV cone beam CT (CBCT)-based dose calculation,” Phys. Med.
+Biol. 52, 685–705 (2007).
+114
+L. Masi, F. Casamassima, C. Polli, C. Menichelli, I. Bonucci, and C. Cavedon, “Cone beam CT image guidance for intracranial stereotactic treatments: Comparison with a frame guided set-up,” Int. J. Radiat. Oncol.,
+Biol., Phys. 71, 926–933 (2008).
+115
+C. Fiorino, F. Alongi, S. Broggi, G. M. Cattaneo, C. Cozzarini, N. Di
+Muzio, E. Maggiulli, P. Mangili, L. Perna, R. Valdagni, F. Fazio, and R.
+Calandrino, “Physics aspects of prostate tomotherapy: Planning optimization and image-guidance issues,” Acta Oncol. 47, 1309–1316 (2008).
+116
+K. M. Langen, Y. Zhang, R. D. Andrews, M. E. Hurley, S. L. Meeks, D.
+O. Poole, T. R. Willoughby, and P. A. Kupelian, “Initial experience with
+megavoltage (MV) CT guidance for daily prostate alignments,” Int. J.
+Radiat. Oncol., Biol., Phys. 62, 1517–1524 (2005).
+117
+W. Hodge, W. A. Tome, H. A. Jaradat, N. P. Orton, D. Khuntia, A. Traynor, T. Weigel, and M. P. Mehta, “Feasibility report of image guided stereotactic body radiotherapy (IG-SBRT) with tomotherapy for early stage
+medically inoperable lung cancer using extreme hypofractionation,” Acta
+Oncol. 45, 890–896 (2006).
+118
+K. Sheng, M. C. Chow, G. Hunter, J. M. Larner, and P. W. Read, “Is daily
+CT image guidance necessary for nasal cavity and nasopharyngeal radiotherapy: An investigation based on helical tomotherapy,” J. Appl. Clin.
+Med. Phys. 9, 2686 (2008).
+119
+O. A. Zeidan, K. M. Langen, S. L. Meeks, R. R. Manon, T. H. Wagner,
+T. R. Willoughby, D. W. Jenkins, and P. A. Kupelian, “Evaluation of
+image-guidance protocols in the treatment of head and neck cancers,” Int.
+J. Radiat. Oncol., Biol., Phys. 67, 670–677 (2007).
+120
+K. M. Langen, D. J. Buchholz, D. R. Burch, R. Burkavage, A. U. Limaye,
+S. L. Meeks, P. A. Kupelian, K. J. Ruchala, J. Haimerl, D. Henderson,
+and G. H. Olivera, “Investigation of accelerated partial breast patient
+alignment and treatment with helical tomotherapy unit,” Int. J. Radiat.
+Oncol., Biol., Phys. 70, 1272–1280 (2008).
+121
+L. Santanam, J. Esthappan, S. Mutic, E. E. Klein, S. M. Goddu, S. Chaudhari, S. Wahab, I. M. El Naqa, D. A. Low, and P. W. Grigsby,
+“Estimation of setup uncertainty using planar and MVCT imaging for gynecologic malignancies,” Int. J. Radiat. Oncol., Biol., Phys. 71,
+1511–1517 (2008).
+122
+P. A. Kupelian, C. Ramsey, S. L. Meeks, T. R. Willoughby, A. Forbes, T.
+H. Wagner, and K. M. Langen, “Serial megavoltage CT imaging during
+external beam radiotherapy for non-small-cell lung cancer: Observations
+on tumor regression during treatment,” Int. J. Radiat. Oncol., Biol., Phys.
+63, 1024–1028 (2005).
+123
+M. L. Siker, W. A. Tome, and M. P. Mehta, “Tumor volume changes on
+serial imaging with megavoltage CT for non-small-cell lung cancer during
+intensity-modulated radiotherapy: How reliable, consistent, and meaningful
+is the effect?,” Int. J. Radiat. Oncol., Biol., Phys. 66, 135–141 (2006).
+
+Medical Physics, Vol. 39, No. 4, April 2012
+
+124
+
+1961
+
+C. Woodford, S. Yartsev, A. R. Dar, G. Bauman, and J. Van Dyk,
+“Adaptive radiotherapy planning on decreasing gross tumor volumes as
+seen on megavoltage computed tomography images,” Int. J. Radiat.
+Oncol., Biol., Phys. 69, 1316–1322 (2007).
+125
+C. Fiorino, N. Di Muzio, S. Broggi, C. Cozzarini, E. Maggiulli, F. Alongi,
+R. Valdagni, F. Fazio, and R. Calandrino, “Evidence of limited motion of
+the prostate by carefully emptying the rectum as assessed by daily
+MVCT image guidance with helical tomotherapy,” Int. J. Radiat. Oncol.,
+Biol., Phys. 71, 611–617 (2008).
+126
+P. A. Kupelian, K. M. Langen, O. A. Zeidan, S. L. Meeks, T. R. Willoughby, T. H. Wagner, S. Jeswani, K. J. Ruchala, J. Haimerl, and G. H.
+Olivera, “Daily variations in delivered doses in patients treated with
+radiotherapy for localized prostate cancer,” Int. J. Radiat. Oncol., Biol.,
+Phys. 66, 876–882 (2006).
+127
+K. Tournel, M. De Ridder, B. Engels, P. Bijdekerke, Y. Fierens, M.
+Duchateau, N. Linthout, T. Reynders, D. Verellen, and G. Storme,
+“Assessment of intrafractional movement and internal motion in radiotherapy of rectal cancer using megavoltage computed tomography,” Int.
+J. Radiat. Oncol., Biol., Phys. 71, 934–939 (2008).
+128
+Y. J. Chen, C. Han, A. Liu, T. E. Schultheiss, K. H. Kernstine, S. Shibata,
+N. L. Vora, R. D. Pezner, and J. Y. Wong, “Setup variations in radiotherapy of esophageal cancer: evaluation by daily megavoltage computed tomographic localization,” Int. J. Radiat. Oncol., Biol., Phys. 68,
+1537–1545 (2007).
+129
+X. A. Li, X. S. Qi, M. Pitterle, K. Kalakota, K. Mueller, B. A. Erickson,
+D. Wang, C. J. Schultz, S. Y. Firat, and J. F. Wilson, “Interfractional
+variations in patient setup and anatomic change assessed by daily computed tomography,” Int. J. Radiat. Oncol., Biol., Phys. 68, 581–591
+(2007).
+130
+C. Han, Y. J. Chen, A. Liu, T. E. Schultheiss, and J. Y. Wong, “Actual
+dose variation of parotid glands and spinal cord for nasopharyngeal cancer patients during radiotherapy,” Int. J. Radiat. Oncol., Biol., Phys. 70,
+1256–1262 (2008).
+131
+C. Lee, K. M. Langen, W. Lu, J. Haimerl, E. Schnarr, K. J. Ruchala,
+G. H. Olivera, S. L. Meeks, P. A. Kupelian, T. D. Shellenberger, and
+R. R. Manon, “Evaluation of geometric changes of parotid glands during
+head and neck cancer radiotherapy using daily megavoltage computed
+tomography and deformable image registration,” Radiother. Oncol. 89,
+81–88 (2008).
+132
+K. M. Langen, S. L. Meeks, D. O. Poole, T. H. Wagner, T. R. Willoughby, P. A. Kupelian, K. J. Ruchala, J. Haimerl, and G. H. Olivera,
+“The use of megavoltage CT (MVCT) images for dose recomputations,”
+Phys. Med. Biol. 50, 4259–4276 (2005).
+133
+C. Lee, K. M. Langen, W. Lu, J. Haimerl, E. Schnarr, K. J. Ruchala, G.
+H. Olivera, S. L. Meeks, P. A. Kupelian, T. D. Shellenberger, and R. R.
+Manon, “Assessment of parotid gland dose changes during head and neck
+cancer radiotherapy using daily megavoltage computed tomography and
+deformable image registration,” Int. J. Radiat. Oncol., Biol., Phys. 70,
+1563–1571 (2008).
+134
+J. F. Aubry and J. Pouliot, “Imaging changes in radation therapy: Does it
+matter?,” MRI 12, 3–13 (2008).
+135
+M. Roach, J. Pouliot, and P. Xia, “Image-guided intensity modulated
+radiotherapy (IGRT) for clinically localized prostate cancer: Targeting
+pelvic lymph nodes,” in Image-Guided Radiation Therapy of Prostate
+Cancer, edited by R. K. Valicenti, A. P. Dicker, and D. A. Jaffray
+(Informa Healthcare, London, 2008), pp. 183–196.
+136
+E. K. Hansen, D. A. Larson, M. Aubin, J. Chen, M. Descovich, A. M. Gillis, O. Morin, P. Xia, and J. Pouliot, “Image-guided radiotherapy using
+megavoltage cone-beam computed tomography for treatment of paraspinous tumors in the presence of orthopedic hardware,” Int. J. Radiat.
+Oncol., Biol., Phys. 66, 323–326 (2006).
+137
+M. Descovich, O. Morin, J. F. Aubry, M. Aubin, J. Chen, H. Chen, I.-C.
+Hsu, J. Speight, and J. Pouliot, “Megavoltage cone-beam CT to complement CT-based treatment planing for HDR brachytherapy,” Brachytherapy 5, 85–86 (2006).
+138
+V. Grigorescu, S. Prevrhal, and J. Pouliot, “Measurement of small lesions
+near metallic implants with mega-voltage cone beam CT,” Proc. SPIE
+6913, 69131N (2008).
+139
+J. F. Aubry, J. Cheung, O. Morin, A. Gottschalk, L. Beaulieu, and J. Pouliot, “Correction of megavoltage cone-beam CT images of the pelvic
+region based on phantom measurements for dose calculation purposes,”
+J. Appl. Clin. Med. Phys. 10, 2852 (2009).
+
+1962
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+140
+
+J. F. Aubry, J. Pouliot, and L. Beaulieu, “Correction of megavoltage
+cone-beam CT images for dose calculation in the head and neck region,”
+Med. Phys. 35, 900–907 (2008).
+141
+O. Morin, J. Chen, M. Aubin, A. Gillis, J. Aubry, S. Bose, H. Chen,
+M. Descovich, P. Xia, and J. Pouliot, “Dose calculations using megavoltage cone-beam CT,” Int. J. Radiat. Oncol., Biol., Phys. 67, 1202–1210
+(2007).
+142
+J. Chen, O. Morin, M. Aubin, M. K. Bucci, C. F. Chuang, and J. Pouliot,
+“Dose-guided radiation therapy with megavoltage cone-beam CT,” Br. J.
+Radiol. 79, S87–S98 (2006).
+143
+J. Cheung, J. F. Aubry, A. Gottschalk, S. Yom, J. C. Celi, and J. Pouliot,
+“Dose recalculation and the dose-guided radiation therapy (DGRT) process using megavoltage cone-beam CT,” Int. J. Radiat. Oncol., Biol.,
+Phys. 74, 583–592 (2009).
+144
+J. Pouliot, “Megavoltage imaging, megavoltage cone beam CT and doseguided radiation therapy,” Front. Radiat. Ther. Oncol. 40, 132–142 (2007).
+145
+J. Pouliot, “From dose to image to dose: IGRT to DGRT,” in Choices in
+Advanced Radiotherapy, edited by R. Mould, (Nucletron, The Netherlands, 2007), pp. 243–250.
+146
+S. H. Benedict, K. M. Yenice, D. Followill, J. M. Galvin, W. Hinson, B.
+Kavanagh, P. Keall, M. Lovelock, S. Meeks, L. Papiez, T. Purdie, R.
+Sadagopan, M. C. Schell, B. Salter, D. J. Schlesinger, A. S. Shiu, T. Solberg, D. Y. Song, V. Stieber, R. Timmerman, W. A. Tome, D. Verellen,
+L. Wang, and F. F. Yin, “Stereotactic body radiation therapy: The report
+of AAPM Task Group 101,” Med. Phys. 37, 4078–4101 (2010).
+147
+S. Boswell, W. Tome, R. Jeraj, H. Jaradat, and T. R. Mackie, “Automatic
+registration of megavoltage to kilovoltage CT images in helical tomotherapy: An evaluation of the setup verification process for the special case of
+a rigid head phantom,” Med. Phys. 33, 4395–4404 (2006).
+148
+M. Fuss, J. Boda-Heggemann, N. Papanikolau, and B. J. Salter, “Imageguidance for stereotactic body radiation therapy,” Med. Dosim. 32,
+102–110 (2007).
+149
+L. A. Dawson and D. A. Jaffray, “Advances in image-guided radiation
+therapy,” J. Clin. Oncol. 25, 938–946 (2007).
+150
+A. Sahgal, D. A. Larson, and E. L. Chang, “Stereotactic body radiosurgery for spinal metastases: A critical review,” Int. J. Radiat. Oncol.,
+Biol., Phys. 71, 652–665 (2008).
+151
+Y. Yamada, M. H. Bilsky, D. M. Lovelock, E. S. Venkatraman, S. Toner,
+J. Johnson, J. Zatcky, M. J. Zelefsky, and Z. Fuks, “High-dose, singlefraction image-guided intensity-modulated radiotherapy for metastatic
+spinal lesions,” Int. J. Radiat. Oncol., Biol., Phys. 71, 484–490 (2008).
+152
+J. J. Sonke, J. Lebesque, and M. van Herk, “Variability of fourdimensional computed tomography patient models,” Int. J. Radiat.
+Oncol., Biol., Phys. 70, 590–598 (2008).
+153
+H. Shirato, S. Shimizu, K. Kitamura, T. Nishioka, K. Kagei, S. Hashimoto, H. Aoyama, T. Kunieda, N. Shinohara, H. Dosaka-Akita and K.
+Miyasaka, “Four-dimensional treatment planning and fluoroscopic realtime tumor tracking radiotherapy for moving tumor,” Int. J. Radiat.
+Oncol., Biol., Phys. 48, 435–442 (2000).
+154
+Y. Seppenwoolde, H. Shirato, K. Kitamura, S. Shimizu, M. van Herk, J.
+V. Lebesque, and K. Miyasaka, “Precise and real-time measurement of
+3D tumor motion in lung due to breathing and heartbeat, measured during
+radiotherapy,” Int. J. Radiat. Oncol., Biol., Phys. 53, 822–834 (2002).
+155
+Y. G. van der Geld, S. Senan, J. R. van Sornsen de Koste, H. van Tinteren, B. J. Slotman, R. W. Underberg, and F. J. Lagerwaard, “Evaluating
+mobility for radiotherapy planning of lung tumors: A comparison of virtual fluoroscopy and 4DCT,” Lung Cancer 53, 31–37 (2006).
+156
+M. Guckenberger, K. Baier, I. Guenther, A. Richter, J. Wilbert, O. Sauer,
+D. Vordermark, and M. Flentje, “Reliability of the bony anatomy in
+image-guided stereotactic radiotherapy of brain metastases,” Int. J.
+Radiat. Oncol., Biol., Phys. 69, 294–301 (2007).
+157
+J. P. Bissonnette, K. N. Franks, T. G. Purdie, D. J. Moseley, J. J. Sonke,
+D. A. Jaffray, L. A. Dawson, and A. Bezjak, “Quantifying interfraction
+and intrafraction tumor motion in lung stereotactic body radiotherapy
+using respiration-correlated cone beam computed tomography,” Int. J.
+Radiat. Oncol., Biol., Phys. 75, 688–695 (2009).
+158
+L. Ma, A. Sahgal, S. Hossain, C. Chuang, M. Descovich, K. Huang, A.
+Gottschalk, and D. A. Larson, “Nonrandom intrafraction target motions
+and general strategy for correction of spine stereotactic body radiotherapy,” Int. J. Radiat. Oncol., Biol., Phys. 75, 1261–1265 (2009).
+159
+F.-F. Yin, J. Wong, J. Balter, S. Benedict, J.-P. Bissonnette, T. Craig, L.
+Dong, D. Jaffray, S. Jiang, S. Kim, C.-M. C. Ma, M. Murphy, P. Munro,
+T. Solberg, and Q. J. Wu, “The role of in-room kV x-ray imaging for
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1962
+
+patient setup and target localization: Report of AAPM Task Group 104,”
+in AAPM Report (American Association of Physicists in Medicine, College Park, MD, 2009), p. 62.
+160
+E. E. Klein, J. Hanley, J. Bayouth, F. F. Yin, W. Simon, S. Dresser, C.
+Serago, F. Aguirre, L. Ma, B. Arjomandy, C. Liu, C. Sandin, and T.
+Holmes, “Task Group 142 report: Quality assurance of medical accelerators,” Med. Phys. 36, 4197–4212 (2009).
+161
+K. M. Langen, N. Papanikolaou, J. Balog, R. Crilly, D. Followill, S. M.
+Goddu, W. Grant, III, G. Olivera, C. R. Ramsey, and C. Shi, “QA for helical tomotherapy: Report of the AAPM Task Group 148,” Med. Phys. 37,
+4817–4853 (2010).
+162
+W. Lutz, K. R. Winston, and N. Maleki, “A system for stereotactic radiosurgery with a linear accelerator,” Int. J. Radiat. Oncol., Biol., Phys. 14,
+373–381 (1988).
+163
+S. Mutic, J. R. Palta, E. K. Butker, I. J. Das, M. S. Huq, L. N. Loo, B. J.
+Salter, C. H. McCollough, and J. Van Dyk, “Quality assurance for
+computed-tomography simulators and the computed-tomography-simulation process: report of the AAPM Radiation Therapy Committee Task
+Group No. 66,” Med. Phys. 30, 2762–2792 (2003).
+164
+W. P. M. Mayles, R. Lake, A. McKenzie, E. M. Macaulay, H. M. Morgan, T. J. Jordan, and S. K. Powley, Physical Aspects of Quality Control
+in Radiotherapy (The Institute of Physics and Engineering in Medicine,
+New York, 1999), pp. 1–286.
+165
+D. A. Jaffray, J. H. Siewerdsen, J. W. Wong, and A. A. Martinez,
+“Flat-panel cone-beam computed tomography for image-guided radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys. 53, 1337–1349
+(2002).
+166
+F. F. Yin, H. Guan, and W. Lu, “A technique for on-board CT reconstruction using both kilovoltage and megavoltage beam projections for 3D
+treatment verification,” Med. Phys. 32, 2819–2826 (2005).
+167
+S. J. Shepard, P.-J. P. Lin, J. M. Boone, D. D. Cody, J. R. Fisher, G. D.
+Frey, H. Glasser, J. E. Gray, A. G. Haus, L. V. Hefner, J. Richard L.
+Holmes, R. J. Kobistek, F. N. Ranallo, P. L. Rauch, R. P. Rossi, J. A. Seibert, K. J. Strauss, O. H. Suleiman, J. R. Schenck, and S. K. Thompson,
+AAPM Report No. 74 Quality Control in Diagnostic Radiology, 1 ed.
+(Medical Physics Publishing, Madison, WI, 2002).
+168
+J. Stutzel, U. Oelfke, and S. Nill, “A quantitative image quality comparison of four different image guided radiotherapy devices,” Radiother.
+Oncol. 86, 20–24 (2008).
+169
+G. H. Glover, “Compton scatter effects in CT reconstructions,” Med.
+Phys. 9, 860–867 (1982).
+170
+J. H. Siewerdsen and D. A. Jaffray, “Cone-beam computed tomography
+with a flat-panel imager: magnitude and effects of x-ray scatter,” Med.
+Phys. 28, 220–231 (2001).
+171
+J. F. Barrett and N. Keat, “Artifacts in CT: Recognition and avoidance,”
+Radiographics 24, 1679–1691 (2004).
+172
+O. Morin, M. Aubin, J. Aubry, J. Chen, M. Descovich, and J. Pouliot, “Quality
+assurance of megavoltage cone-beam CT,” Med. Phys. 34, 2634 (2007).
+173
+K. M. Langen, N. Papanikolaou, J. Balog, R. Crilly, D. Followhill, S. M.
+Goddu, W. Grant III, G. Olivera, C. Ramsey, and C. Shi, “QA for helical
+tomotherapy: Report of the AAPM Task Group 148,” Med. Phys. 37,
+4817–4853 (2010).
+174
+P.-J. P. Lin, T. J. Beck, C. Borras, G. Cohen, R. A. Jucius, R. J. Kriz,
+E. L. Nickoloff, L. N. Rothenberg, K. J. Strauss, and T. Villafana,
+AAPM Report No. 39 Specification and Acceptance Testing of Computed
+Tomography Scanners, 1 ed. (Medical Physics Publishing, Madison,
+WI, 1993).
+175
+D. A. Jaffray, J.-P. Bissonnette, and T. Craig, “X-ray imaging for verification and localization in radiation therapy,” in The Modern Technology
+of Radiation Oncology, Vol. 2, edited by J. Van Dyk (Medical Physics
+Publishing, Madison, WI, 2005), pp. 259–284.
+176
+E. K. Osei, B. Schaly, A. Fleck, P. Charland, and R. Barnett, “Dose
+assessment from an online kilovoltage imaging system in radiation
+therapy,” J. Radiol. Prot. 29, 37–50 (2009).
+177
+W. Y. Song, S. Kamath, S. Ozawa, S. A. Ani, A. Chvetsov, N. Bhandare,
+J. R. Palta, C. Liu, and J. G. Li, “A dose comparison study between XVI
+and OBI CBCT systems,” Med. Phys. 35, 480–486 (2008).
+178
+M. Tubiana, “[Prevention of cancer and the dose-effect relationship: the
+carcinogenic effects of ionizing radiations],” Cancer Radiother. 13,
+238–258 (2009).
+179
+M. Tubiana, “Can we reduce the incidence of second primary malignancies occurring after radiotherapy? A critical review,” Radiother. Oncol.
+91, 4–15; discussion 11–13 (2009).
+
+1963
+
+Bissonnette et al.: QA for image-guided radiation therapy utilizing CT-based technologies
+
+180
+
+D. J. Godfrey, F. F. Yin, M. Oldham, S. Yoo, and C. Willett, “Digital
+tomosynthesis with an on-board kilovoltage imaging device,” Int. J.
+Radiat. Oncol., Biol., Phys. 65, 8–15 (2006).
+181
+P. A. Kupelian, C. Lee, K. M. Langen, O. A. Zeidan, R. R. Manon, T. R.
+Willoughby, and S. L. Meeks, “Evaluation of image-guidance strategies
+in the treatment of localized prostate cancer,” Int. J. Radiat. Oncol., Biol.,
+Phys. 70, 1151–1157 (2008).
+182
+E. J. Hall, “Intensity-modulated radiation therapy, protons, and the risk of
+second cancers,” Int. J. Radiat. Oncol., Biol., Phys. 65, 1–7 (2006).
+183
+M. Murphy, J. Balter, S. Balter, J. A. BenComo, I. Das, S. Jiang, C.-M.
+Ma, G. H. Olivera, R. F. Rodebaugh, K. J. Ruchala, H. Shirato, and F.-F.
+Yin, “The management of imaging dose during image-guided radiotherapy: Report of the AAPM Task Group 75,” Med. Phys. 34, 4041–4063
+(2007).
+184
+S. Yoo and F. F. Yin, “Dosimetric feasibility of cone-beam CT-based
+treatment planning compared to CT-based treatment planning,” Int. J.
+Radiat. Oncol., Biol., Phys. 66, 1553–1561 (2006).
+185
+A. Richter, Q. Hu, D. Steglich, K. Baier, J. Wilbert, M. Guckenberger,
+and M. Flentje, “Investigation of the usability of conebeam CT data sets
+for dose calculation,” Radiat. Oncol. 3, 42 (2008).
+186
+S. J. Thomas, “Relative electron density calibration of CT scanners for
+radiotherapy treatment planning,” Br. J. Radiol. 72, 781–786 (1999).
+187
+S. F. Petit, W. J. C. v. Elmpt, P. Lambin, and A. L. A. J. Dekker, “Dose
+recalculation in megavoltage cone-beam CT for treatment evaluation: Removal of cupping and truncation artefacts in scans of the thorax and
+abdomen,” Radiother. Oncol. 94, 359–366 (2010).
+188
+M. J. Murphy, “Image-guided patient positioning: If one cannot correct
+for rotational offsets in external-beam radiotherapy setup, how should
+rotational offsets be managed?,” Med. Phys. 34, 1880–1883 (2007).
+189
+K. K. Brock, “Results of a multi-institution deformable registration
+accuracy study (MIDRAS),” Int. J. Radiat. Oncol., Biol., Phys. 76,
+583–596.
+190
+A. Bel, O. Petrascu, I. Van de Vondel, L. Coppens, N. Linthout, D. Verellen, and G. Storme, “A computerized remote table control for fast online patient repositioning: Implementation and clinical feasibility,” Med.
+Phys. 27, 354–358 (2000).
+191
+J. Meyer, J. Wilbert, K. Baier, M. Guckenberger, A. Richter, O. Sauer,
+and M. Flentje, “Positioning accuracy of cone-beam computed tomography in combination with a HexaPOD robot treatment table,” Int. J.
+Radiat. Oncol., Biol., Phys. 67, 1220–1228 (2007).
+192
+M. Guckenberger, J. Meyer, J. Wilbert, K. Baier, O. Sauer, and M.
+Flentje, “Precision of image-guided radiotherapy (IGRT) in six degrees
+
+Medical Physics, Vol. 39, No. 4, April 2012
+
+1963
+
+of freedom and limitations in clinical practice,” Strahlenther. Onkol. 183,
+307–313 (2007).
+193
+M. Mamalui-Hunter, H. Li, and D. A. Low, “Linac mechanic QA using a
+cylindrical phantom,” Phys. Med. Biol. 53, 5139–5149 (2008).
+194
+D. Moseley, W. Li, and D. Jaffray, “Accuracy of automatic couch corrections with on-line volumetric imaging,” Med. Phys. 34, 2378 (2007).
+195
+J. D. Fenwick, W. A. Tome, H. A. Jaradat, S. K. Hui, J. A. James, J. P.
+Balog, C. N. DeSouza, D. B. Lucas, G. H. Olivera, T. R. Mackie, and B.
+R. Paliwal, “Quality assurance of a helical tomotherapy machine,” Phys.
+Med. Biol. 49, 2933–2953 (2004).
+196
+C. W. Cheng, J. Wong, L. Grimm, M. Chow, M. Uematsu, and A. Fung,
+“Commissioning and clinical implementation of a sliding gantry CT scanner installed in an existing treatment room and early clinical experience
+for precise tumor localization,” Am. J. Clin. Oncol. 26, e28–36 (2003).
+197
+W. Mao, L. Lee, and L. Xing, “Development of a QA phantom and automated analysis tool for geometric quality assurance of on-board MV and
+kV x-ray imaging systems,” Med. Phys. 35, 1497–1506 (2008).
+198
+J. R. Sykes, R. Lindsay, C. J. Dean, D. S. Brettle, D. R. Magee, and D. I.
+Thwaites, “Measurement of cone beam CT coincidence with megavoltage isocentre and image sharpness using the QUASAR Penta-Guide
+phantom,” Phys. Med. Biol. 53, 5275–5293 (2008).
+199
+C. G. Rowbottom, and D. A. Jaffray, “Development of an integral system
+test for image-guided radiotherapy,” Med. Phys. 31, 3500–3505 (2004).
+200
+D. Letourneau, H. Keller, M. B. Sharpe, and D. A. Jaffray, “Integral test
+phantom for dosimetric quality assurance of image guided and intensity
+modulated stereotactic radiotherapy,” Med. Phys. 34, 1842–1849 (2007).
+201
+E. White, D. Moseley, T. Purdie, M. Sharpe, J.-P. Bissonnette, and D. Jaffray, “Development of a daily quality assurance procedure for a kilovoltage cone-beam CT guidance system,” Radiother. Oncol. 81, S162 (2006).
+202
+A. McNiven, C. L. Chin, A. D. Vandermeer, and D. Moseley,
+“Comparison of the residual error in treatment set-up using different
+imaging modalities: A phantom study,” Med. Phys. 35, 2692 (2008).
+203
+G. S. Mageras and J. Mechalakos, “Planning in the IGRT context: Closing the loop,” Semin. Radiat. Oncol. 17, 268–277 (2007).
+204
+M. A. Hawkins, K. K. Brock, C. Eccles, D. Moseley, D. Jaffray, and L.
+A. Dawson, “Assessment of residual error in liver position using kV
+cone-beam computed tomography for liver cancer high-precision radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys. 66, 610–619 (2006).
+205
+J.-P. Bissonnette, “Linear accelerator: Implementation and use,” in Quality Assurance and Safety for Radiotherapy, edited by T. Pawlicki, P. Dunscombe, A. J. Mundt, and P. Scalliet (Taylor & Francis, Boca Raton, FL,
+2010), pp. 317–321.
+
+

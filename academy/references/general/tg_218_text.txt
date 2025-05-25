@@ -1,0 +1,496 @@
+3/29/2019
+
+Disclosure
+I have no relevant conflicts of interest to disclose.
+I am not a member of AAPM TG-218.
+
+TG-218 & Its Implementation
+into the Clinic
+Presented by Jaclyn Carroll, M.S.
+April 1, 2019
+AAPM Spring Clinical Meeting
+
+IMRT QA is a hot topic
+
+Charges of TG-218:
+• Review data on IMRT QA dose distribution agreement.
+• Review & analyze delivery and measurement methods.
+
+From 2010-March 2018, there were 1,089 submissions in
+Medical Physics on the topic of “ IMRT QA”
+
+• Review & compare analysis methods.
+• Investigate & summarize on-market IMRT QA devices.
+
+3/29/2019
+
+This talk will cover…
+• main points from TG-218.
+• recommendations from TG-218.
+
+1. Dose Distribution Comparisons
+1. Dose distribution comparisons
+2. Delivery methods
+3. Tolerance & action limits
+4. Courses of action
+
+Reference
+
+Evaluated
+
+• our site’s experience adopting TG-218 recommendations.
+
+How do you compare them?
+Image obtained from TG-218, Figure 8.
+
+1. Dose Distribution Comparisons
+
+1. Dose Distribution Comparisons
+
+Patient Geometry:
+
+Goal
+Reference and Evaluated dose distributions
+“agree to within limits that are clinically relevant”
+
+QA
+Geometry:
+
+Challenges
+• Simply, “…the dose deposited in the phantom has a
+different pattern than the dose deposited in the patient.”
+• Some methods can be overly sensitive to steep dose gradients, vice versa
+• How does a universal tolerance apply to patient anatomy?
+Image obtained from https://www.sunnuclear.com/solutions/patientqa/arccheck3dvh
+
+• Dose difference test
+• DTA test
+• Gamma test
+
+3/29/2019
+
+1. Dose Distribution Comparisons
+
+1. Dose Distribution Comparisons
+
+• Dose difference test
+
+• Dose difference test
+
+• Definition:
+
+• DTA test
+• Gamma test
+
+• Definition:
+• Faces challenges if dose distribution grid sizes are different
+• Does well in low-dose gradient regions, but not in steep dose gradients
+• Doesn’t account for spatial tolerance, but we need to consider it
+
+• DTA test
+• Gamma test
+
+Image obtained from TG-218, Figure 3.
+
+1. Dose Distribution Comparisons
+
+1. Dose Distribution Comparisons
+
+• Dose difference test
+• DTA test
+
+• Dose difference test
+• DTA test
+• Gamma test
+
+• Definition: “for a point in the reference distribution, [the DTA is] the
+closest location in the evaluated dose distribution with the same dose”
+OR: “the closest distance of the evaluated distribution isodose line”
+• Ideal for steep dose gradients, but oversensitive in low-dose gradients
+
+• Gamma test
+
+• Aims to combine aspects of both above tests
+• Definition:
+
+3/29/2019
+
+1. Dose Distribution Comparisons
+
+1. Dose Distribution Comparisons
+
+• Dose difference test
+• DTA test
+• Gamma test
+
+• Dose difference test
+• DTA test
+• Gamma test
+
+• Aims to combine aspects of both above tests
+• Definition:
+
+• Aims to combine aspects of both above tests
+• Definition:
+if 0
+if
+
+1, pass
+1, fail
+
+Image obtained from TG-218, Figure 3.
+
+1. Dose Distribution Comparisons
+
+1. Dose Distribution Comparisons
+
+• Dose difference test
+• DTA test
+• Gamma test
+
+Additional Considerations:
+
+• Aims to combine aspects of both above tests
+• Definition:
+• Things to consider:
+• It is universal
+• Spatial resolution
+• Interpretation
+
+• Dose threshold:
+• Exclude the low-dose (10%) areas from analysis
+
+• Normalization options:
+• Use global normalization versus local normalization
+
+• System performance:
+• Clinical case sent to vendors with varying results- why?
+
+3/29/2019
+
+2. Delivery Methods
+
+2. Delivery Methods
+Method
+
+• Perpendicular composite (PC)
+• Perpendicular field-by-field (PFF)
+• True composite (TC)
+
+Image obtained from TG-218, Figure 6.
+
+PC
+
+PFF
+
+TC
+
+Diagram
+
+Advantages
+
+• single image to
+analyze
+
+• samples every part of
+every field
+• field-by-field analysis may
+reveal subtle errors
+
+• most closely represents
+delivery to patient
+• can validate integrity of
+patient plan file transfer
+
+Disadvantages
+
+• masks delivery
+errors
+• dose distribution is
+unrelated to that of
+delivery for patient
+
+• small differences may
+result in lower passing rates
+• poor agreement between
+field-by-field and 3D
+analysis
+
+• doesn’t sample every
+part of every field
+• still doesn’t account for
+patient contour or
+heterogeneities
+
+Images obtained from TG-218, Figure 6.
+
+3. Tolerance & Action Limits
+
+3. Tolerance & Action Limits
+
+Definitions
+
+What should we use?
+• Tolerance Limit: 95%
+
+• The Tolerance Limit refers to the range within which the IMRT QA
+process is considered to be unchanging.
+• The Action Limit sets a minimum level of process performance such
+that IMRT QA measurements outside the action limits could result in a
+negative clinical impact for the patient.
+
+• Action Limit: 90%
+
+Where do these limits come from?
+• Used statistical process control methods to develop
+• In agreement with paper by Stambaugh et al.
+
+3/29/2019
+
+3. Tolerance & Action Limits
+
+4. Courses of Action
+
+Flow Chart
+
+What happens when your QA fails?
+• Check your setup.
+
+Develop your own
+tolerance and action
+limits, particularly
+for special cases
+(i.e. SRS).
+
+• Check for correct file transfer.
+• Is anything deviating from normal? Check daily QA. Validate dose
+calibration with a standard dose (recommended prior to each PSQA).
+• Determine where the failed points are. Are they relevant to the plan?
+Are they clustered in one area?
+• Try to isolate the discrepancy, such as by
+performing a PFF analysis.
+
+Image obtained from TG-218, Figure 9.
+
+4. Courses of Action
+Regarding overall PSQA process:
+• Track your results.
+• May reveal trends for specific sites.
+• May indicate room for improvement in other areas of QA process.
+• Stambaugh et al. (Dec. 2018), “Improvements in treatment planning
+calculations motivated by tightening IMRT QA tolerances”
+
+• Move toward structure-by-structure or DVH-based analysis.
+
+Summary
+1. Dose Distribution Comparisons
+• Use Gamma analysis, 3%/2 mm
+
+“ tool should be used as an
+indicator of problems, not as
+a single indicator of plan
+quality.” (M. Miften, PPT)
+
+2. Delivery Methods
+• True Composite (TC) if possible
+
+3. Tolerance & Action Limits
+• TL: 95%, AL: 90%
+
+“No single dose comparison tool provides all
+of the information necessary to quantitatively
+evaluate or compare dose distributions. Each
+tool has limitations that need to be understood
+when conducting evaluations.” (TG-120)
+
+4. Courses of Action
+• check setup, evaluate location of failures, file transfer...
+• look for trends in results, keep improving process!
+
+3/29/2019
+
+Using TG-218 in the Clinic
+
+Using TG-218 in the Clinic
+
+• First, why?
+
+Methods:
+
+Static-beam IMRT QA
+
+VMAT QA
+
+‒ Delivered 110 patient-specific
+
+• What did we change?
+
+IMRT/VMAT QA plans (with) →
+‒ Recorded passing rates for
+3% / 3mm and 3% / 2mm
+
+• Delivery method
+• Gamma criteria
+
+‒ Retrospectively delivered 15
+static-beam IMRT QA plans
+
+3% / 3mm → 3% / 2mm
+• Tolerance & Action Limits
+
+with TC delivery method
+
+90% → 95% T.L., 90% A.L.
+
+Using TG-218 in the Clinic
+
+Using TG-218 in the Clinic
+
+Results: 110 patient-specific QA plans using PC delivery
+
+Results:
+
+% of Cases
+
+3%/3mm
+
+3%/2mm
+
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+• None were below the 90% AL for
+3%/3mm or 3%/2mm
+• 8 (7.3%) were below the 95% TL
+for 3%/2mm
+• Average passing rate for
+3%/3mm: 99.2%
+
+Passing Rate
+Image obtained from M. Miften PPT at http://amos3.aapm.org/abstracts/pdf/124-34859-405535-125518.pdf.
+
+3%/2mm: 98.3%
+
+Average passing rates
+PC: 98.4% ( = 1.4%)
+TC: 97.6% ( = 3.0%)
+
+3/29/2019
+
+Using TG-218 in the Clinic
+
+Using TG-218 in the Clinic
+
+Results:
+
+Results:
+
+Passes
+-3
+
+-3
+
+Fails TL & AL
+-2
+
+Using TG-218 in the Clinic
+
+-2
+
+Using TG-218 in the Clinic
+
+Passes
+
+Conclusions
+
+Results:
+-3
+
+What’s the effect on our clinical workflow?
+Change
+Gamma criteria (3%/3mm → 3%/2mm)
+
+Average gamma passing rate
+Old
+
+New
+
+99.2
+
+98.3
+
+98.4
+
+97.6
+
+(110 patient plans, PC method)
+
+Fails TL
+
+Delivery method (PC → TC)
+(15 select plans, 3%/2mm criteria)
+
+-2
+
+Where are we now?
+• Adopted new gamma criteria, delivery method & practice limits,
+looking to begin using DVH-based analysis program
+
+3/29/2019
+
+Thank you!
+
+References
+
+Brian Hasson, Ph.D.
+Charlie Geraghty, M.S.
+Texin Li, Ph.D.
+Lee Myers, Ph.D.
+Sandy Konerth, M.S.
+
+• TG-218
+Miften M, Olch A, Mihailidis D, Moran J, Pawlicki T, Molineu A, et al., “Tolerance limits and methodologies for IMRT measurementbased verification QA: recommendations of AAPM task group no. 218.” Med Phys. 2018; 45(4):e53–e83.
+
+• TG-120
+D. A. Low, J. M. Moran, J. F. Dempsey, L. Dong, and M. Oldham, “Dosimetry tools and techniques for IMRT,” Med. Phys. 2011; 38,
+1313–1338.
+
+• TG-218 PowerPoint slide set
+Miften, M. TG-218: How to Handle Pretreatment Measurement IMRT Verification QA [PowerPoint Slides]. Retrieved from
+http://amos3.aapm.org/abstracts/pdf/124-34859-405535-125518.pdf
+
+Question 1
+
+Question 2
+
+The TG-218 report provides comprehensive recommendations for a
+department’s patient-specific IMRT/VMAT QA program. Select the best
+summary of recommendations for the following aspects: delivery
+method, gamma analysis criteria, low-dose threshold, universal
+tolerance limit, universal action limit.
+
+When a patient-specific IMRT/VMAT QA fails a given universal
+tolerance limit, what are the steps that a physicist should take?
+
+a. Perpendicular Composite, 3%/2mm, 10%, 98%, 90%
+
+c. Check the machine’s daily QA results for output, flatness and symmetry.
+d. Deliver a standard field to verify the calibration of the measurement
+device.
+e. All of the above.
+
+b. True Composite, 3%/2mm, 10%, 95%, 90%
+c. Perpendicular Field-by-Field, 3%/3mm, 10%, 90%, 80%
+d. True Composite, 3%/3mm, 10%, 95%, 90%
+
+a. Ensure correct setup of measurement device.
+b. Ensure correct file transfer of plan from TPS to R&V system.
+
+

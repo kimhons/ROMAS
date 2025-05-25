@@ -1,0 +1,853 @@
+Dose-rate considerations for the INTRABEAM electronic brachytherapy
+system: Report from the American Association of Physicists in Medicine task
+group no. 292*
+Wesley S. Culbersona)
+Department of Medical Physics, School of Medicine and Public Health, University of Wisconsin, Madison, WI 53705, USA
+
+Stephen D. Davis
+Department of Radiation Oncology, Miami Cancer Institute, Baptist Health South Florida, Miami, FL 33176, USA
+
+Grace Gwe-Ya Kim
+
+Department of Radiation Medicine and Applied Science, University of California – San Diego, La Jolla, CA 92093-5004, USA
+
+Jessica R. Lowenstein
+Department of Radiation Physics, University of Texas MD Anderson Cancer Center, Houston, TX 77030, USA
+
+Zoubir Ouhib
+Department of Radiation Oncology, Lynn Regional Cancer Center, Delray Beach, FL 33484, USA
+
+Marija Popovic
+Department of Medical Physics, McGill University Health Center, Montreal, QC H4A 3J1, Canada
+
+Timothy J. Waldron
+Department of Radiation Oncology, University of Iowa Hospital & Clinics, Iowa City, IA 52242-1009, USA
+
+Habib Saﬁgholi
+Carleton Laboratory for Radiotherapy Physics, Physics Department, Carleton University, Ottawa, ON K1S 5B6, Canada
+
+Samantha J. Simiele
+Department of Radiation Physics, University of Texas MD Anderson Cancer Center, Houston, TX 77030, USA
+
+Mark J. Rivard
+Department of Radiation Oncology, Rhode Island Hospital Brown University, Providence, RI 02903, USA
+
+(Received 31 October 2019; revised 16 March 2020; accepted for publication 16 March 2020;
+published 11 May 2020)
+The purpose of this report is to provide detailed guidance on the dosimetry of the INTRABEAMâ
+(Carl Zeiss Medical AG, Jena, Germany) electronic brachytherapy (eBT) system as it stands at the
+present time. This report has been developed by the members of American Association of Physicists
+in Medicine (AAPM) Task Group 292 and endorsed by the AAPM. Members of AAPM Task Group
+292 on Electronic-Brachytherapy Dosimetry have reviewed pertinent publications and user manuals
+regarding the INTRABEAM system dosimetry and manufacturer-supplied dose calculation protocols.
+Formal written correspondence with Zeiss has also provided further clarification. Dose-rate calculations for the INTRABEAM system are highly dependent on choice of dosimetry protocol. Even with
+careful protocol selection, large uncertainties remain due to the incomplete characterization of the
+ionization chambers used for verification with respect to their energy dependence as well as manufacturing variations. There are two distinct sets of dose-rate data provided by Zeiss for the INTRABEAM system. One dataset (Calibration V4.0) is representative of the physical dose surrounding the
+source and the other dataset (TARGIT) has been adjusted to be consistent with a clinical trial named
+TARGIT (TARGeted Intraoperative RadioTherapy). The adjusted TARGIT doses are quite dissimilar
+to the physical doses, with differences ranging from 14% to 30% at the surface of a spherical applicator, depending on its diameter, and up to a factor of two at closer distances with the smaller needle
+applicators. In addition, ion chamber selection and associated manufacturing tolerances contribute to
+significant additional uncertainties. With these substantial differences in dose rates and their associated uncertainties, it is important for users to be aware of how each value is calculated and whether it
+is appropriate to be used for the intended treatment. If users intend to deliver doses that are the same
+as they were in 1998 at the onset of the TARGIT trial, then the TARGIT dose-rate tables should be
+used. The Calibration V4.0 dose rates may be more appropriate to use for applications other than
+TARGIT trial treatments, since they more closely represent the physical doses being delivered. Users
+should also be aware of the substantial uncertainties associated with the provided dose rates, which
+are due to beam hardening, chamber geometry, and selection of the point-of-measurement for a given
+ionization chamber. This report serves to describe the details and implications of the manufacturere913
+
+Med. Phys. 47 (8), August 2020
+
+0094-2405/2020/47(8)/e913/7
+
+© 2020 American Association of Physicists in Medicine
+
+e913
+
+Culberson et al.: INTRABEAM dose considerations
+
+e914
+
+recommended dosimetry formalism for users of the INTRABEAM system. © 2020 American Association of Physicists in Medicine [https://doi.org/10.1002/mp.14163]
+Key words: dosimetry, electronic brachytherapy, INTRABEAM
+1. INTRODUCTION
+In North America, there are two manufacturers of FDA-approved electronic brachytherapy (eBT) systems being used
+for interstitial, intracavitary, and intraoperative brachytherapy
+applications. These are the Xoft Axxentâ (a subsidiary of
+iCAD, Inc. Nashua, NH) and INTRABEAMâ (Carl Zeiss
+Meditec AG, Jena, Germany) systems. Although the systems
+are being used at many radiation oncology centers, there are
+relatively few publications on their dosimetry protocols and,
+to date, no AAPM consensus recommendations for dosimetry
+formalisms and quality assurance.1–8 The AAPM Task Group
+292 has been charged to develop dosimetry recommendations
+for these systems, and they are progressing toward creation of
+a detailed report. However, after reviewing the literature and
+corresponding with Zeiss, it was felt that there was a need to
+report on the dose specification of the INTRABEAM system
+to its users before a comprehensive report is available.
+Dosimetry of eBT systems for surface applications (skin,
+keloids, etc.) with the INTRABEAM Flat and Surface applicators utilizes a completely different dosimetry approach and
+is not addressed in this Report since it is the subject of
+AAPM Task Group 253.
+Xoft and Zeiss have recommended two different dosimetry
+formalisms to determine the absorbed dose rates to water
+from their sources and applicators.9,10 This Report focuses on
+the INTRABEAM dosimetry formalism as developed and
+supplied by Zeiss to INTRABEAM users.
+2. MATERIALS AND METHODS
+2.A. INTRABEAM system
+The INTRABEAM system is a fully integrated miniature x-ray tube system designed for intraoperative radiation
+therapy. Accelerated electrons drift down an evacuated hollow cylinder (100 mm in length) to strike a thin gold target supported by a beryllium thermal buffer.11 It is the
+bremsstrahlung and fluorescent photons produced in this
+gold target that are used for brachytherapy. The INTRABEAM system is designed to accommodate a variety of
+applicators that attach to the treatment unit and surround
+the end of the x-ray tube, providing a selection of dose
+distributions for treatment. There is currently a single xray source model, named the XRS 4, and two systems
+(source and controller) available, named the INTRABEAM
+System PRS500 and INTRABEAM 600. The INTRABEAM 600 was introduced in 2017 as an updated version
+of the INTRABEAM System PRS500.10 The two control
+units utilize the same firmware and electronics, but are
+controlled by different software packages with different
+graphical user interfaces.
+Medical Physics, 47 (8), August 2020
+
+For every INTRABEAM x-ray tube, Zeiss provides the
+treatment dose-rate data to the user. The provided dose rates
+are based on physical measurements performed by Zeiss in a
+water phantom and are in the form of dose-rate tables as a
+function of distance from the source, r (mm). Dose-rate tables
+are provided for 40 and 50 kV settings (both fixed at 40 lA).
+The dose rate units are Gy/min and are provided at 0.5 mm
+increments ranging from depths of 3.0 to 45.0 mm.
+In the dose-rate tables provided to each user, there are different columns for the dose rates listed as “Dose rate (Calibration V4.0)” and “Dose rate (TARGIT).” Each are in units
+of Gy/min and the dose-rate values listed are substantially
+different (up to a factor of two). At the surface of spherical
+applicators that range in diameter from 1.5 to 5.0 cm, the
+dose-rate differences range from 14% to 30%, with the largest
+discrepancies observed for smallest applicators. Larger differences (up to a factor of two near the x-ray source) occur at
+closer distances, utilized with the needle applicators. These
+large differences are the impetus for the current Report.
+Included with the measured dose-rate tables is a clarification
+statement on the methods used to determine the dose rates.
+The following sections of the current Report are drawn from
+these statements and are supplemented with further clarifications.
+2.B. TARGIT dose rates
+The intent of giving the TARGIT dose rates is to provide
+the INTRABEAM users with dose-rate values that are calculated by the same formalism that was used at the onset of the
+TARGIT-A clinical trial. The TARGIT-A trial was started in
+1998, and over 2000 patients have been treated with this technique.12 Since the inception of this trial, more sophisticated
+dosimetry formalisms have been published, namely AAPM
+TG-61 and IAEA TRS-398.13,14 The TARGIT dose rates are
+provided to the INTRABEAM users to ensure the same dose
+at the applicator surface for all institutions that participate in
+the trial (i.e., 20 Gy at the surface regardless of applicator
+size or any newer protocols).
+The TARGIT approach is based on measurements at Zeiss
+in a water phantom with a robotic positioning system named
+the INTRABEAM Water Phantom (formerly called the “gold
+standard water phantom”) with a PTW model 23342 ionization chamber installed within a waterproof holder manufactured by Zeiss. This parallel-plate type chamber has a small
+volume (0.02 cm3) with an air cavity diameter of approximately 5.2 mm and a collecting electrode diameter of
+3.0 mm.15 It is marketed to be used with soft x-ray beams
+and has a thin 0.03 mm polyethylene entrance window. The
+chamber was calibrated for exposure (without a waterproof
+holder) by the PTW Calibration Laboratory in Freiburg,
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e914
+
+Culberson et al.: INTRABEAM dose considerations
+
+Germany, an IAEA-accredited secondary-standards dosimetry laboratory (SSDL). The exposure calibration coefficient is
+converted to absorbed dose rate to water using a conversion
+factor of 0.881 rad/R. The ICRU refers to this conversion factor as the f-factor, which is provided in their 1970 ICRU
+Report 17 for 20 keV monoenergetic photons.16 This f-factor
+is not specific to the INTRABEAM system and therefore
+likely does not accurately account for the INTRABEAM photon energy spectrum or beam hardening as a function of
+depth.
+2.C. Calibration V4.0 dose rates
+The alternate method for dose-rate determination suggested by Zeiss, named the Calibration V4.0 method, is based
+on measurements in a water phantom with an even smaller
+(0.005 cm3) parallel-plate chamber, the PTW model 34013.15
+The air cavity diameter is approximately 2.9 mm and the collecting electrode diameter is 1.7 mm, almost half the diameter of the PTW model 23342 used in the TARGIT method.
+Instead of an exposure-based calibration as was the case for
+the TARGIT method, both air kerma and absorbed dose to
+water calibrations are obtained from PTW for the V4.0
+method with the TW15 (15 kVp), TW30 (30 kVp), TW50
+(50 kVp), and TW70 (70 kVp) beam qualities. A summary
+of the TARGIT and Calibration V4.0 dose-rate determination
+methods is provided in Table I.
+
+e915
+TABLE I. Summary of the TARGIT and Calibration V4.0 dose rate determination methods.
+TARGIT dose-rate
+method
+Chamber model
+used
+
+PTW model 23342
+
+PTW model 34013
+
+Chamber
+volume (cm3)
+
+0.02
+
+0.005
+
+Air cavity diam.
+(mm)
+
+5.2
+
+2.9
+
+Collecting
+electrode diam.
+(mm)
+
+3.0
+
+1.7
+
+Plate separation
+(mm)
+
+1.0
+
+0.9
+
+Chamber
+calibration
+quantity
+
+Exposure (R/C)
+
+Air kerma (cGy/C)
+
+Conversion to
+dose
+
+Roentgen-to-rad
+conversion, from ICRU
+Report 17 for
+monoenergetic 20 keV
+photons
+
+Air kerma to absorbed dose,
+from chamber-specific
+measurements by PTW (a
+SSDL calibration lab)
+
+Measurement
+method
+
+Measured in Zeiss
+INTRABEAM Water
+Phantom or derived from
+Calibration V4.0 dose
+rates with supplied
+conversion factors
+Spherical applicators and
+TARGIT trial consistency
+
+Measured in INTRABEAM
+Water Phantom
+
+Instructed use
+
+2.D. Dose rates provided to the user
+Zeiss provides the dose-rate tables to INTRABEAM users.
+TARGIT dose rates are obtained through measurements made
+by Zeiss in their water phantom and are input directly into
+the INTRABEAM system. Dose-rate data are provided to the
+user at the initial system commissioning. At the recommended annual frequency, the x-ray tube assembly (it can be
+removed from the rest of the system) is returned by the user
+to the manufacturer for thorough inspection and recertification for use. At that time, Zeiss performs measurements in
+their water phantom and provides the data to the user electronically and on paper, which is subsequently entered into
+the user’s system by the Zeiss field service engineer.
+The INTRABEAM PRS500 system is intended for use
+with the TARGIT dose-rate tables. The INTRABEAM
+PRS500 system does not differentiate between the TARGIT
+and Calibration V4.0 protocols and the user does not have the
+ability to toggle or select the dose rates at the dose prescription stage. They do, however, have this ability with the
+INTRABEAM 600.
+2.E. User measurement methods
+The user has the option of measuring dose rates with a
+water phantom designed by Zeiss for specific use by clinical
+users with the INTRABEAM x-ray tube. This phantom utilizes a translation stage to position the source and detector.
+Without availability of an internationally accepted or AAPM-
+
+Medical Physics, 47 (8), August 2020
+
+Calibration V4.0 dose-rate
+method
+
+Needle, surface, and flat
+applicators or users who
+wish to use with spherical
+applicators (option with
+INTRABEAM 600)
+
+recommended formalism, the user is directed to the Water
+Phantom Instruction Manual.10 In this manual is an equation to determine the absorbed dose rate to water by means of
+ion chamber measurements performed in the provided water
+phantom. The equation loosely follows the approach specified in the AAPM TG-61 Report.13 The fundamental base
+quantity for source output is air-kerma rate, and the desired
+quantity for treatment purposes is absorbed dose rate to
+water. PTW-defined x-ray beam qualities (low-energy “TW”
+series) are used for the ion chamber calibration and then an
+HVL of the INTRABEAM system is used to select the appropriate calibration coefficients. The formula for determining
+the Calibration V4.0 dose rates is provided in the Water
+Phantom Instruction Manual as the following,
+D_ W ðr Þ ¼ NK  QðrÞ  CT;P  kQ  kKa! DW
+
+(1)
+
+where each variable in the above equation is listed in Table II
+along with its definition, units, and clarification notes.10 The
+parameters of Eq. (1) are further described in the following
+subsections. The user is instructed to use a PTW model
+34013 ionization chamber for these measurements.
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e915
+
+Culberson et al.: INTRABEAM dose considerations
+
+TABLE II. Description of the variables used in the dose rate Eq. (1) provided
+by Zeiss in their Water Phantom User Manual.8
+Definition
+
+Units
+
+Clarification Notes
+
+D_ W ðrÞ
+
+absorbed dose rate to
+water
+
+Gy/
+min
+
+Calibration V4.0 value
+
+NK
+
+air kerma calibration
+coefficient
+charge measured in
+1 min  
+
+CT;P ¼ TTo  PPo ,
+correction for air density inside the chamber
+beam quality
+correction factor
+accounting for the
+difference in the
+calibration beam and
+INTRABEAM beam
+
+Gy/C
+
+from PTW (SSDL calibration
+lab) for TW30 x-rays
+
+QðrÞ
+CT;P
+
+kQ
+
+kKa! DW
+
+air kerma to absorbed
+dose to water
+conversion
+
+C
+unitless
+
+reference temperature and
+pressure should be consistent
+with the calibration conditions
+provided by PTW on
+calibration certificate,
+presumed to approximate the
+TW30 beam quality according
+to the Water Phantom
+Instruction Manual8
+
+unitless
+
+unitless
+
+values are provided on the
+PTW calibration certificate for
+each TW beam quality
+
+2.E.1. Calibration reliance on beam quality
+The PTW model 34013 chamber is calibrated by PTW for
+air kerma and for absorbed dose rate to water for the following beam qualities: TW15 (15 kVp), TW30 (30 kVp), TW50
+(50 kVp), and TW70 (70 kVp). These are PTW-defined
+beam qualities as listed in Table III. In principle, the airkerma calibrations for similar beams could be obtained from
+an Accredited Dosimetry Calibration Laboratory (ADCL).
+However, there are no ADCLs that offer an absorbed dose
+rate to water calibration for x-ray beams and this is necessary
+to determine kKa! DW , thus limiting the utility of the calibration for INTRABEAM dosimetry.
+2.E.2. kQ correction
+The kQ correction is used to correct the ion chamber airkerma response from the calibration beam to the INTRABEAM beam. In the Zeiss Water Phantom User Manual
+V6.0, it is stated that the INTRABEAM photon energy is best
+approximated by the PTW TW30 beam. This is not a valid
+assumption, since the INTRABEAM source is not filtered in
+TABLE III. Comparison of the HVLs and conversion data as determined from
+calibrations by the PTW SSDL at 30 cm from the focal spot.
+Beam quality
+Parameter
+
+TW15
+
+TW30
+
+TW50
+
+TW70
+
+HVL (mm Al)
+
+0.11
+
+0.44
+
+1.13
+
+3.15
+
+kKa! DW
+kQ
+
+1.049
+0.987
+
+1.036
+1.000
+
+1.020
+1.021
+
+1.026
+1.024
+
+kKa! DW  kQ
+
+1.035
+
+1.036
+
+1.041
+
+1.051
+
+This example data are from the calibration report of a PTW model 34013 chamber
+s/n 000525 dated December 7, 2015.17
+
+Medical Physics, 47 (8), August 2020
+
+e916
+
+the same way as the TW30 beam. When the AAPM contacted
+Zeiss for clarification, they were informed that the INTRABEAM source HVL was measured with 10 mm of watermimicking plastic present between the source and chamber.
+With this technique, Zeiss determined the HVL of the
+INTRABEAM source to be 0.64 mm Al. The HVL of the
+PTW SSDL TW30 beam is listed as 0.44 mm Al. It therefore
+does not seem appropriate to use TW30 (kQ ¼ 1 with the
+TW30 beam) for the INTRABEAM system. It is noted, however, that the effects of this are minimized when the two corrections, kQ and kKa! DW , are multiplied together (see
+Section 3.B).
+2.E.3. kKa! DW correction
+A value of kKa! DW = 1.054 was provided in Version 4.0 of
+the Water Phantom Instruction Manual.8 Zeiss has clarified
+that this value was an “average of all PTW chambers” and
+was provided by PTW to Zeiss at the time the Calibration
+V4.0 method was released. For Version 5 and greater of the
+Water Phantom Instruction Manual, the value is specific to
+each chamber and is provided on the PTW ionization chamber calibration certificate.
+2.E.4. Conversion to TARGIT dose rates
+As noted earlier, the TARGIT dose rates are also provided
+to the user. According to the Water Phantom Instruction Manual8, these TARGIT dose rates are determined by converting
+the Calibration V4.0 dose rates to TARGIT dose rates by
+means of a “TARGIT conversion factor, f’(r),” which is
+defined in the following section. The Water Phantom Instruction Manual8 describes the original method that was used to
+determine the TARGIT dose rates, which was done with a
+model 23342 ion chamber in a water tank. The readings were
+converted to dose rate to water by means of an exposurebased chamber calibration and an f-factor of 0.881 rad/R for
+monoenergetic 20-keV photons.16
+2.E.5. Conversion function
+The Water Phantom Instruction Manual8 provides a conversion function intended to convert the Calibration V4.0
+dose rates as measured by the user to the TARGIT dose rates.
+This conversion is defined in Eq. (2) as:
+D_ W;TARGIT ðrÞ ¼ f 0 ðrÞ  D_ W;Calibration V4:0ðrÞ
+
+(2)
+
+where f 0 ðr Þ is the TARGIT conversion factor, D_ W;TARGIT ðrÞ
+are the dose rates that represent the TARGIT dose rates, and
+D_ W;Calibration V4:0ðrÞ are the dose rates determined using
+Eq. (1) above. Values for this TARGIT conversion factor are
+provided to the user in the same report as the dose rate tables.
+Although derivation of this function is not provided by the
+manufacturer to the users, there are statements in the Water
+Phantom Instruction Manual on the contributing factors such
+as differences in ion chambers, holders, and formulas for
+dose-rate calculations. Upon request, the manufacturer has
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e916
+
+Culberson et al.: INTRABEAM dose considerations
+
+e917
+
+TABLE IV. Surface dose rates and dose-rate differences (%) at 0, 10, and 20 mm from the surface of spherical applicators of various diameters attached to an
+example INTRABEAM source (s/n 507336) operating at 50 kV and 40 lA.
+Dose-rate differences (%)
+Applicator diameter (mm)
+
+Calibration V4.0 dose rate (Gy/min)
+d = 0 mm
+
+TARGIT dose rate (Gy/min)
+d = 0 mm
+
+d = 0 mm
+
+d = 10 mm
+
+d = 20 mm
+
+15
+
+7.9638
+
+5.5781
+
+30
+
+17
+
+13
+
+20
+
+3.6691
+
+2.7501
+
+25
+
+16
+
+13
+
+25
+
+2.0060
+
+1.5715
+
+22
+
+15
+
+12
+
+30
+35
+
+1.2292
+0.8132
+
+0.9927
+0.6718
+
+19
+17
+
+14
+13
+
+12
+11
+
+40
+
+0.5644
+
+0.4743
+
+16
+
+13
+
+11
+
+45
+
+0.4179
+
+0.3559
+
+15
+
+12
+
+11
+
+50
+
+0.3149
+
+0.2710
+
+14
+
+12
+
+11
+
+The data were provided by Zeiss. Dose-rate differences are relative to the Calibration V4.0 dose rates. Data in this table are for illustrative purposes only and unique to a
+specific source.
+
+provided clarification that the TARGIT conversion factor has
+been determined by averaging the measurements of several
+systems and has a maximum “tolerance” of 5.1% for all distances.
+
+complications of converting air kerma to dose rate to water
+with the current approach. However, it is likely going to be
+years before this quantity and standard is realized by PTB
+and available to clinics (personal communication with Thorsten Schneider, September 2018).
+
+2.F. Spherical and Needle applicators
+In the intraoperative setting, spherical applicators are commonly used for breast cancer treatments. Needle applicators
+are used for interstitial irradiation, most commonly for the
+treatment of vertebral metastases. Each applicator is uniquely
+identified by its serial number and accompanied by a table of
+transfer coefficients which reflect the effect of the applicator
+on the dose from the bare XRS probe. The transfer coefficients are used by the INTRABEAM system to account for
+the applicator by correcting the dose from the bare source.
+By definition,
+Transfer Coefficient ðrÞ ¼
+
+D_ W;applicator ðrÞ
+D_ W;TARGIT ðrÞ
+
+(3)
+
+where the transfer coefficient (r) is the depth-dependent correction factor determined by the ratio of the dose rates of the
+source inside the applicator, D_ W;applicator ðrÞ, and the dose rates
+of the bare source in water determined by the TARGIT
+method, D_ W;TARGIT ðrÞ as defined in Eq. (2). The transfer
+coefficients are provided in a separate data sheet to each user
+by the manufacturer in increments of 0.5 mm from the surface of the applicator up to 45.0 mm from the surface of the
+probe.
+2.G. INTRABEAM-speciﬁc standards under
+development
+Presently, there is work being pursued toward a direct
+absorbed dose rate to water INTRABEAM-specific standard
+within a European Union’s consortium consisting of several
+standards laboratories as part of a EURAMET project (short
+name: PRISM-eBT, Project Number: 18NRM02).17 This is a
+desirable quantity to realize since it would reduce the
+Medical Physics, 47 (8), August 2020
+
+3. RESULTS
+3.A. Dose-rate differences between TARGIT and
+Calibration V4.0
+There are substantial differences, up to 30%, between the
+TARGIT and Calibration V4.0 dose-rate determinations at
+clinically relevant distances with spherical applicators (i.e., at
+the surface, d = 0 mm for the 15-mm-diameter spherical
+applicator). This has been acknowledged by Zeiss and independently verified by multiple researchers.1,18
+There are several reasons for the large differences in the
+two dose-rate determinations, but the main cause is due to
+volume averaging differences between the PTW model
+23342 chamber used in the TARGIT method and the PTW
+model 34013 chamber used in the Calibration V4.0
+method.19 The model 23342 chamber has a 5.2-mm-air cavity diameter and plate separation of 1 mm, which introduces
+large volume averaging effects at close measurement distances. The effect is augmented by the fact that Zeiss considers the effective point of measurement to be the inner surface
+of the entrance foil as opposed to the centroid of the collecting volume, as recommended in the AAPM TG-61 report.
+The model 34013 chamber has a 2.9-mm-air cavity diameter
+and nominal plate separation of 0.9 mm, so volume averaging effects at close distances are greatly reduced. Neither
+dosimetry method includes a correction for volume averaging. Other secondary causes of differences in the two doserate determinations are different designs in the chamber
+holders and differences in the dosimetry formalism used to
+convert from the measured ionization chamber current to
+dose to water. With differences this large, extreme care
+should be taken when selecting the dose rates for treatment.
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e917
+
+Culberson et al.: INTRABEAM dose considerations
+
+For example, Table IV lists the dose rates for a clinical
+INTRABEAM source (s/n 507366) as well as the percentage
+differences between the TARGIT and Calibration V4.0 datasets. Notice the large differences at the surface of the smallest available applicator. These differences between the two
+dose-rate protocols are still present even at large distances
+(> 20 mm) from the applicator surface.
+
+3.B. Beam hardening uncertainties
+The Zeiss-recommended formalism does not account for
+any changes in energy as a function of depth in water. kQ and
+kKa! DW are held constant in the recommended formalism and
+it is known that these conversion factors are not constant with
+depth. It has been shown that the HVL of the INTRABEAM
+source changes dramatically as a function of depth in water
+with an HVL of approximately 0.1 mm of Al in air (shallow
+depths) to more than 1.3 mm of Al after 20 mm of attenuation in water, due to significant beam hardening.3,6,20–23
+The magnitude of the error induced by this oversimplification of beam quality can be estimated by reviewing the calibration certificate of a sample ion chamber used for the
+Calibration V4.0 measurements. For a range of standard calibration beams (TW15 through TW70), the net result of the
+combination of conversion factors is relatively small, 1.6%.
+Although this is an illustrative example, it still does not represent the full response of the chamber as a function of depth in
+water with the INTRABEAM system. Others have also noted
+this and explored other methods, such as the Watson et al.
+2018 “CQ” method.3,6 This method implements a Monte
+Carlo-calculated conversion, CQ, from air kerma to absorbed
+dose as a function of depth in water for the INTRABEAM
+source. This would provide a more accurate conversion since
+it considers beam hardening with depth.
+In addition to the changes in beam hardening with depth,
+it should be noted that both the Calibration V4.0 and TARGIT dose rates have been determined in a homogeneous
+water environment. Additional transfer coefficients are
+needed to account for the attenuation and scatter effects of
+the applicator materials (see Section 2.F).
+
+e918
+
+3.D. Dose-rate selection limitations
+The user does not have the ability to toggle between the
+TARGIT and Calibration V4.0 dose rate tables in the INTRABEAM PRS500 system. They do, however, have this ability
+with the INTRABEAM 600. Without the ability to switch
+between the dose-rate tables in the model PRS500 system,
+users are limited to using the TARGIT dose rates. It is therefore of critical importance that the user understands the significant differences between the TARGIT and Calibration
+V4.0 dose rates, their dependence on depth and applicator
+type and size, and ultimately their implications in the clinical
+use of the INTRABEAM system.
+4. DISCUSSION AND CONCLUSIONS
+The current Report highlights the important differences in
+dose rates with the INTRABEAM system that arise from
+using two protocols, both provided at the time of source calibration by the manufacturer. These differences in dose rates
+vary by 30% at the surface of a 15-mm diameter applicator.
+Users should select the TARGIT dose-rate tables if they
+intend to deliver doses that are the same as they were in 1998
+at the onset of the TARGIT trial. While clinical trial outcomes are of utmost importance, there needs to be attention
+paid to consistency of prescribed vs delivered doses, especially in the context of regulatory requirements and otherwise
+acceptable standards of care. For applications other than
+TARGIT trial treatments, the Calibration V4.0 dose rates
+may be more appropriate to use since they more closely represent the physical doses being delivered. Users should also
+be aware of the substantial uncertainties associated with the
+provided dose rates, which stem from beam hardening, chamber geometry, and selection of the point-of-measurement for
+a given ion chamber.
+ACKNOWLEDGMENTS
+The authors thank Frank Weigand of Carl Zeiss Medical
+AG for his valuable clarifications and contributions to this
+Report.
+
+3.C. Ion chamber uncertainties
+
+CONFLICT OF INTEREST
+
+It has been shown that the depth-dependent conversion factors for the PTW model 34013 chamber supplied with the
+INTRABEAM system are highly dependent (up to 20% at the
+shallower depths) on nominal manufacturing tolerances and
+chamber guarding designs.3 The specific effect is in the conversion of air kerma to dose to water, which varies as a function of depth in water and also with the chamber geometry.
+In addition to the effects of nominal chamber specifications, using the inside of the entrance foil vs the centroid of
+the air cavity as the point of measurement definition also
+plays a vital role. Watson et al. 2017 showed a substantial difference in the conversion factors (up to 30%) depending on
+selection of the point of measurement.3
+
+The authors declare no conflict of interest that should be
+disclosed.
+
+Medical Physics, 47 (8), August 2020
+
+*This Report was developed by the American Association of Physicists in
+Medicine Task Group 292 on electronic brachytherapy dosimetry.
+a)
+Author to whome correspondence should be addressed. Electronic mail:
+wsculberson@wisc.edu; Telephone: 608-262-5084.
+
+REFERENCES
+1. Abudra AA. Development of new dosimetric standards for low energy Xrays (<= 50 keV) used in contact radiotherapy. [Doctoral]: Nuclear
+Experiment, Universite Paris-Saclay.2017.
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e918
+
+Culberson et al.: INTRABEAM dose considerations
+
+2. Eaton DJ, Duck S. Dosimetry measurements with an intra-operative xray device. Phys Med Biol. 2010;55:N359–N369.
+3. Watson PGF, Popovic M, Seuntjens J. Determination of absorbed dose
+to water from a miniature kilovoltage x-ray source using a parallel-plate
+ionization chamber. Phys Med Biol. 2017;63:015016.
+4. Seltzer SM, O’Brien M, Mitch MG. New national air-kerma standard for
+low-energy electronic brachytherapy sources. J Res Natl Inst Stand Technol. 2014;119:554–574.
+5. Ebert MA, Carruthers B, Lanzon PJ, et al. Dosimetry of a low-kV intraoperative X-ray source using basic analytical beam models. Australas
+Phys Eng Sci Med. 2002;25:119–123.
+6. Watson PG, Seuntjens J. Effect of explicit M and N-shell atomic transitions on a low-energy x-ray source. Med Phys. 2016;43:1760–1763.
+7. Eaton DJ. Quality assurance and independent dosimetry for an intraoperative x-ray device. Med Phys. 2012;39:6908–6920.
+8. Brodin NP, Mehta KJ, Basavatia A, et al. A skin dose prediction model
+based on in vivo dosimetry and ultrasound skin bridge measurements
+during intraoperative breast radiation therapy. Brachytherapy.
+2019;18:720–726.
+9. Xoft Medical I. Axxent Electronic Brachytherapy System Operator Manual. Appendix J: Xoft Inc; 2009.
+10. Carl Zeiss Meditec AG. Intrabeam Water Phantom Instructions for Use
+V6.0. In. V6.0 ed. Jena, Germany;2016.
+11. Khajeh M, Safigholi H. Anode optimization for miniature electronic
+brachytherapy X-ray sources using Monte Carlo and computational fluid
+dynamic codes. J Adv Res. 2016;7:225–232.
+12. Vaidya JS, Wenz F, Bulsara M, et al. Risk-adapted targeted intraoperative radiotherapy versus whole-breast radiotherapy for breast cancer: 5year results for local control and overall survival from the TARGIT-A
+randomised trial. The Lancet. 2014;383:603–613.
+13. Ma CM, Coffey CW, DeWerd LA, et al. AAPM protocol for 40–300 kV
+x-ray beam dosimetry in radiotherapy and radiobiology. Med Phys.
+2001;28:868–893.
+
+Medical Physics, 47 (8), August 2020
+
+e919
+14. Andreo P, Huq MS, Westermark M, et al. Protocols for the dosimetry of
+high-energy photon and electron beams: a comparison of the IAEA
+TRS-398 and previous international Codes of Practice. Phys Med Biol.
+2002;47:3033.
+15. ICRU. Radiation Dosimetry: x Rays Generated at Potentials of 5 to 150
+KV. Vol 17: International Commission on Radiation Units and Measurements.1970.
+16. PTW-Freiburg. Soft x-ray chambers user manual. In. D564.131.00/05, en
+edn. Freiburg, Germany:2016.
+17. PRISM-eBT. Publishable Summary for 18NRM02 PRISM-eBT Primary
+standards and traceable measurement methods for X-ray emitting electronic brachytherapy devices. https://www.euramet.org/research-inno
+vation/search-research-projects/details/project/primary-standards-and-tra
+ceable-measurement-methods-for-x-ray-emitting-electronic-brachythera
+py-devi/ Published 2019.
+18. Watson PGF, Bekerat H, Papaconstadopoulos P, Davis S, Seuntjens J.
+An investigation into the INTRABEAM miniature x-ray source dosimetry using ionization chamber and radiochromic film measurements. Med
+Phys. 2018;45:4274–4286.
+19. Shaikh MY, Burmeister J, Scott R, Kumaraswamy LK, Nalichowski A,
+Joiner MC. Dosimetric evaluation of incorporating the revised V4.0 calibration protocol for breast intraoperative radiotherapy with the INTRABEAM system. J Appl Clin Med Phys. 2020;21:50–59.
+20. Beatty J, Biggs P, Gall K, et al. A new miniature x-ray device for interstitial radiosurgery: Dosimetry. Med Phys. 1996;23:53–62.
+21. Weigand F. Personal communication with. In: Dec 2018.
+22. Armoogum KS, Parry JM, Souliman SK, Sutton DG, Mackay CD.
+Functional intercomparison of intraoperative radiotherapy equipment–
+Photon Radiosurgery System. Radiation oncology. 2007;2:11.
+23. Avanzo M, Rink A, Dassie A, et al. In vivo dosimetry with radiochromic
+films in low-voltage intraoperative radiotherapy of the breast. Med Phys.
+2012;39:2359–2368.
+
+24734209, 2020, 8, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14163, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+e919
+
+

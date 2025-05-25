@@ -1,0 +1,6 @@
+--2025-05-02 09:12:03--  https://jdc.jefferson.edu/cgi/viewcontent.cgi?article=1017
+Resolving jdc.jefferson.edu (jdc.jefferson.edu)... 50.18.241.247, 13.57.92.51
+Connecting to jdc.jefferson.edu (jdc.jefferson.edu)|50.18.241.247|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-05-02 09:12:03 ERROR 400: Bad Request.
+

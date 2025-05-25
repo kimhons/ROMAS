@@ -1,0 +1,3072 @@
+High dose-rate brachytherapy treatment delivery: Report of the AAPM
+Radiation Therapy Committee Task Group No. 59
+H. Dale Kubo
+Department of Radiation Oncology, University of California Davis Cancer Center, Sacramento,
+California 95817
+
+Glenn P. Glasgow
+Department of Radiotherapy, Loyola University of Chicago, Maywood, Illinois 60153
+
+Timothy D. Pethel
+Department of Radiation Oncology, Athens Regional Medical Center, Athens, Georgia 30606
+
+Bruce R. Thomadsen
+Department of Medical Physics, University of Wisconsin, Madison, Wisconsin 53792
+
+Jeffrey F. Williamsona)
+Department of Radiation Oncology, Washington University, St. Louis, Missouri 63110
+
+~Received 10 December 1997; accepted for publication 28 January 1998!
+The goals of this task group are to examine the current high dose-rate ~HDR! treatment delivery
+practices and to prepare a document to assure safe delivery of HDR treatments. The document
+consists of detailed HDR procedures for design of an HDR brachytherapy program, staffing and
+training, treatment specific quality assurance, and emergency procedures. The document provides
+an extensive quality assurance ~QA! check list. It reviews all aspects of HDR treatment delivery
+safety, including prescription, treatment plan, treatment delivery, and radiation safety. © 1998
+American Association of Physicists in Medicine. @S0094-2405~98!01604-6#
+Key words: HDR brachytherapy, staffing and training, treatment delivery safety, quality
+assurance, emergency procedures
+
+TABLE OF CONTENTS
+I. INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+A. Literature review. . . . . . . . . . . . . . . . . . . . . . . . .
+B. Summary of NUREG/CR-6125. . . . . . . . . . . . . .
+C. Advantages and disadvantages of HDR. . . . . . .
+II. DESIGN OF AN HDR BRACHYTHERAPY
+PROGRAM. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+A. HDR treatment delivery misadventures and
+types of errors. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Systematic errors. . . . . . . . . . . . . . . . . . . . . .
+2. Random errors. . . . . . . . . . . . . . . . . . . . . . . .
+B. Principles of an HDR brachytherapy program
+design. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Use written documentation. . . . . . . . . . . . . .
+2. Develop a formal procedure. . . . . . . . . . . . .
+3. Exploit redundancy. . . . . . . . . . . . . . . . . . . . .
+4. Exploit quality improvement
+techniques. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+C. Treatment documentation, procedure
+checklists, and forms. . . . . . . . . . . . . . . . . . . . . .
+III. STAFFING AND TRAINING. . . . . . . . . . . . . . . .
+A. Staffing requirements. . . . . . . . . . . . . . . . . . . . . .
+B. Training requirements. . . . . . . . . . . . . . . . . . . . .
+C. Recommended training schedule. . . . . . . . . . . . .
+IV. TREATMENT SPECIFIC QUALITY
+ASSURANCE. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+A. Applicator preparation. . . . . . . . . . . . . . . . . . . . .
+375
+
+Med. Phys. 25 „4…, April 1998
+
+376
+376
+376
+377
+378
+378
+378
+378
+379
+379
+379
+379
+379
+379
+381
+381
+383
+385
+386
+386
+
+B. Applicator insertion. . . . . . . . . . . . . . . . . . . . . . .
+C. Implant localization and simulation. . . . . . . . . . .
+D. Treatment prescription. . . . . . . . . . . . . . . . . . . . .
+E. Implant design and evaluation. . . . . . . . . . . . . . .
+1. Localization. . . . . . . . . . . . . . . . . . . . . . . . . .
+2. Computer treatment planning. . . . . . . . . . . . .
+3. Pretreatment review of HDR treatment
+plan. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4. Manual verification of HDR computer
+calculations. . . . . . . . . . . . . . . . . . . . . . . . . . .
+5. Patient preparation. . . . . . . . . . . . . . . . . . . . .
+6. Patient setup and treatment. . . . . . . . . . . . . .
+7. Post-treatment quality assurance. . . . . . . . . .
+V. EMERGENCY PROCEDURES FOR
+HDR REMOTE AFTERLOADING
+UNITS. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+A. Routine emergency equipment. . . . . . . . . . . . . . .
+B. Emergencies. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Physical plant emergencies. . . . . . . . . . . . . .
+2. Minor emergencies involving
+the RAU. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3. Major emergencies. . . . . . . . . . . . . . . . . . . . .
+C. Practical concerns. . . . . . . . . . . . . . . . . . . . . . . . .
+D. Conclusions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+APPENDIX: RECOMMENDED CHECK-OFF
+LIST . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+ACKNOWLEDGMENTS . . . . . . . . . . . . . . . . . . . . . . .
+REFERENCES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+0094-2405/98/25„4…/375/29/$10.00
+
+© 1998 Am. Assoc. Phys. Med.
+
+386
+386
+387
+388
+388
+388
+389
+389
+391
+392
+393
+
+393
+393
+393
+393
+393
+394
+396
+396
+397
+402
+403
+375
+
+376
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+I. INTRODUCTION
+The formation of this task group was prompted by the following developments: ~1! a death related to personnel errors
+and malfunction during a high dose-rate ~HDR! treatment,1
+~2! greater use of HDR brachytherapy units, ~3! the United
+States Nuclear Regulatory Commission’s ~USNRC! proposal
+to rewrite 10 CFR 35 to include HDR brachytherapy quality
+assurance and safety guidelines, and ~4! the need for education on comprehensive HDR safe-treatment-delivery procedures. The goals of this task group are to examine the current
+HDR treatment delivery practices and to prepare a document
+to assure safe delivery of HDR treatments. The document
+consists of detailed HDR procedures and an extensive quality assurance ~QA! check list. It reviews all aspects of HDR
+treatment delivery safety, including prescription, treatment
+plan, treatment delivery, and radiation safety.
+There are several reported incidents related to HDR
+brachytherapy treatments. The USNRC has reviewed these
+incidents and analyzed their causes.2 The USNRC is considering new rules and regulations for HDR treatments. The
+USNRC prefers that users, through professional associations,
+provide recommendations and practical guidelines.
+Three models of HDR units are currently available in the
+United States; a microSelectron HDR from NucletronOdelft, a model 12~i! from GammaMed, and Varisource
+from Varian Associates. Each unit has unique output formats
+for printouts, plots, and information transfer. One goal was
+to generate a general suggested QA check form applicable to
+all units. The task group members and consultants are a diversified group of experienced users and the vendors representing each different unit.
+Terms used in the report are defined below:
+RAU: remote afterloading unit. A brachytherapy treatment unit which delivers from a remote control station radioactive sources to predesignated locations via catheters,
+needles, or applicators.
+RAB: Remote afterloading brachytherapy. Brachytherapy
+treatment using a remote afterloading unit.
+HDRB: High dose-rate brachytherapy. HDRB in this report indicates RAB using an In-192 source of up to 10 Ci
+(3.731011 Bq) producing the dose-rate of 12 Gy/h or higher
+at the prescription point.
+LDRB: Low dose-rate brachytherapy, where a typical
+treatment dose rate is approximately 50 cGy per hour.
+Shall and should are used throughout the report to indicate the level of recommendation: Shall indicates a recommendation needs to be adhered in order to meet the currently
+accepted standards of HDR treatment delivery. Should indicates a recommendation for a prudent practice.
+Operating room or special procedure room: room where
+applicator insertion is performed.
+A. Literature review
+
+American Association of Physicists in Medicine ~AAPM!
+Task Group ~TG! Report No. 413 describes HDR units.
+Chapter 7 ‘‘Quality Assurance for High Dose Rate Brachytherapy’’ by Williamson et al.4 describes HDR quality assurMedical Physics, Vol. 25, No. 4, April 1998
+
+376
+
+ance and provides many references. AAPM TG Report No.
+405 offers some QA recommendations while AAPM TG 566
+offers a code of practice for brachytherapy including HDRB.
+However, none addresses the details and issues related to the
+safe delivery of HDR treatments.
+Of over 350 remote afterloading units sold in North
+America, about 325 are HDR units, most of which use a
+nominal 10 Ci lr-192 source. Institutions replace the 73.8 day
+half-life lr-192 source three or four times a year.7 Source
+activity at replacement is 3 to 4 Ci. A typical dose rate at
+treatment distance is 5 Gy in 5 – 10 min, or 0.5– 1.0 Gy per
+min for a new source. While RAUs reduce personnel exposure of those performing brachytherapy, this is only one of
+several factors that account for their popularity. The technology of RAUs and related issues of licensure, quality assurance, source calibration, their medical use, and quality management and regulatory issues are the subject of recent
+publications.4,8–11
+B. Summary of NUREG/CR-6125 „Ref. 2…
+
+Even as RAUs have successfully reduced brachytherapy
+personnel radiation exposures, a few significant medical incidents have resulted in substantial unplanned radiation exposure to patients and brachytherapy personnel.2 In 1992
+four ‘‘misadministrations’’ with RAUs were reported in the
+21 states under United States Nuclear Regulatory Commission jurisdiction. An additional four misadministrations were
+reported in 1993, three in 1994, and two in 1995. A misadministration by USNRC-standards consists of delivering
+treatment to the wrong patient, using the wrong radioisotope,
+treating the wrong site, using leaking sources, failing to remove a temporary implant, or delivering a radiation dose
+differing more than 20% from the prescribed dose.
+The human and mechanical factors contributing to these
+incidents and to other less serious incidents are the subject of
+a recent comprehensive multiple volume report.2 ‘‘Human
+Factors Evaluation of Remote Afterloading Brachytherapy’’
+is a 526 page document, in three volumes, published in May,
+1995, by the USNRC as NUREG/CR-6125. The document
+reports the findings of a project in 1994 designed to ~1! identify ‘‘root causes’’ of human error in the use of RAB, ~2!
+evaluate the effects these errors had on performance of RAB
+functions and tasks, ~3! identify and rank tasks with significant safety problems, and ~4! identify and evaluate alternative approaches for resolving these problems. Volume 1,
+‘‘Human Error and Critical Tasks in Remote Afterloading
+Brachytherapy and Approaches for Improving System Performance,’’ reports the significant findings; Volume 2,
+‘‘Function and Task Analysis,’’ explains the individual tasks
+identified; and Volume 3, ‘‘Supporting Analysis of Human
+System Interfaces, Procedures and Practices, Training and
+Organizational Practices, and Policies,’’ describes RAB units
+in detail, and their use. Executive Summaries, totaling 13
+pages, offer cogent summaries of each volume.
+Volume 1 offers an overview of the contents and conclusions contained in the other two volumes. Twenty-six opportunities for human error were identified in RAB. Thirty-six
+
+377
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+alternate approaches or suggestion to performing tasks are
+offered as a means to reduce human error. Appendix A presents error tables identifying 76 possible human errors in 14
+categories, such as applicator placement. Appendix B offers
+an extensive literature review of brachytherapy, misadministration and error reports, as well as key literature in the field
+of human-system interfaces and human factors.
+Volume 2 notes that the function and task analysis of
+RAB are characterized by 13 items, including task and step
+sequence, RAB system used, equipment arrangement, task
+performers and supervisors, equipment used, task performance times, input requirements, system feedback, possible
+errors and their likelihood, staff workload assessment, distraction levels and effects, and skills required. An error
+analysis was performed for each of the above. Skills assessment identified 19 skills needed to perform the RAB functions and tasks. A total of 27 tasks were identified for the
+major functions of patient preparation, treatment planning
+and delivery, post-treatment, and quality assurance and
+maintenance procedures. Extensive tables provide details
+about each task and identify possible errors and their likelihood. Treatment planning was identified as requiring the
+greatest skills. Human-systems interface problems identified
+included confusing computer menus and work process structures. This volume is useful in understanding how RAB programs often are organized and the process of treatment.
+Volume 3 focuses on human-system interfaces and notes
+that users often were unfamiliar with the RAB units they
+operate. Often operators could not see, during RAB, critical
+controls and displays and system status information often
+was unavailable. Linkages between sequential tasks often
+were overlooked and contributed to errors in execution of
+tasks. Verification procedures often were lacking. Training
+practices varied widely and little written training material
+was available. Most facilities with RAB programs lacked
+formal training and retraining courses. Furthermore, the materials provided in these courses offered minimal information. Few written procedures and guidelines existed in most
+of the facilities included in the study.
+Information presented in the 526 pages of these three volumes indicates numerous opportunities for human errors in
+clinical practice. However, suggested alternate approaches to
+human system interfaces, job performance aids, procedures,
+and improved training can reduce the likelihood of errors in
+most of the critical tasks. Suggested organizational modifications could improve quality assurance and increase the opportunity for detecting and correcting human errors.
+Those willing to study these volumes will find numerous
+suggestions that, if incorporated into an RAB program, likely
+will improve the program and markedly reduce the potential
+for human error.
+C. Advantages and disadvantages of HDR
+
+There are many advantages to HDR. They include:
+~1! Dose optimization capability. Allowing better optimization of the isodose distributions to the shape of the treatment volume than LDR.
+Medical Physics, Vol. 25, No. 4, April 1998
+
+377
+
+~2! Outpatient treatment. Shorter HDR procedures treating
+most ambulatory patients as outpatients, eliminating expensive overnight hospital costs.
+~3! More stable positioning. Reduced positioning uncertainty between localization and the completion of treatment due to better immobilization of applicators.
+~4! Adding distance to normal tissue. Short duration of the
+procedure allowing some retractors to move normal tissue away from the source track.
+~5! Smaller applicators. HDR gynecological tandems’ diameter being approximately 3 mm, compared with 7 mm
+for LDR applicators: This smaller size means greater
+comfort ~less pain! for the patient during insertion.
+~6! Immediate treatment after changes in operating room
+rather than waiting for a shipment of sources. Differences between an executed implant and that planned
+only requiring replanning prior to treatment, rather than
+ordering a new set of sources.
+~7! Better documentation. HDR unit printing out detailed
+treatment parameters rather than relying on the diligence
+of the person inserting the sources to write in a chart.
+~8! Reduction of radiation exposure to health care providers.
+Providing better radiation protection for all health care
+workers.
+Offsetting these advantages, HDRB carries with it the potential for serious errors due to more unforgiving nature in comparison to LDRB: ~1! technical difficulty; and ~2! compressed time frame for a large fraction dose. Specifically;
+~1! Relatively complicated treatments system. Because HDR
+treatments give large doses in as very short time, HDR
+systems require safety interlocks. This makes the units
+more complicated and difficult to operate, and requires
+longer training periods for physicists, dosimetrists, and
+radiation therapists as discussed in next chapter. Convenient dose optimization codes can be difficult for even
+experienced physicists to understand.
+~2! Compressed time frame. Since each fraction may deliver
+a large dose, errors can lead to severe consequences. The
+entire procedure often must proceed quickly to prevent
+patient movement, to reduce the probability for thrombosis due to patient immobility, and, in cases using general anesthesia, to minimize the expense and risk to the
+patient. Often, an HDR unit coexists with an external
+beam treatment machine in the same room. When either
+schedule is delayed, those involved in both HDR and
+external beam treatments tend to rush.
+~3! Radiobiological disadvantages. Radiobiologically, HDR
+treatment may be expected to result in more normaltissue toxicity than LDR treatments, if the same tumor
+effect is maintained with no change in geometry. Many
+years of use will be required to determine the successful
+use of HDR.
+~4! Increased need for accurate dosimetric, anatomic and
+geometric information. Maintaining doses below levels
+that would compromise healthy tissues ~being more at
+risk than with LDRB! requires more accurate anatomic
+and geometric information. Optimization, as practiced
+
+378
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+with HDR brachytherapy, requires a better knowledge of
+the dose distribution desired than most LDR treatments.
+~5! The potential for very high radiation doses to patients
+and unit operators following failure of the source to retract.
+II. DESIGN OF AN HDR BRACHYTHERAPY
+PROGRAM
+The Task Group believes that the most effective and practical strategy for minimizing treatment delivery errors and
+other safety hazards is by carefully designing the treatment
+delivery process with treatment delivery accuracy and patient
+safety end points in mind as well as more traditional design
+end points such as clinical efficacy, cost effectiveness, physician convenience, and patient throughput. The treatment
+delivery process encompasses applicator selection and insertion, implant planning and dosimetric evaluation along with
+delivery of the treatment itself. The design process includes
+developing step-by-step treatment procedures, specification
+of personnel along with required credentials and duties, and
+design procedure-specific training curricula as well as defining use of the treatment delivery and planning equipment. In
+this approach, the quality assurance program is not an extra
+set of activities and checks imposed upon the treatment delivery process, but is built in to the process.
+A. HDR treatment delivery misadventures and types
+of errors
+
+The Task Group prefers the term ‘‘misadventure’’ to describe treatments which deviate from the safety or accuracy
+criteria at the foundation of the institution’s QA program. An
+event or incident is a misadventure if it has the potential to
+compromise the patient’s clinical outcome, safety of the patient, caregivers; or public, or if uncorrected, has the potential to compromise safety or clinical efficacy of future treatments. A misadventure may be a treatment delivery error,
+delivery of an incorrect or unintended therapeutic dose, or
+failure to adhere to established procedures, which if repeated
+could result in future delivery errors. The Task Group believes good clinical judgment must be used to identify misadventures; it is neither useful nor possible to set exact criteria for such events. Most HDR brachytherapy
+misadventures are caused by human errors or misjudgments
+made during treatment planning and delivery, rather than by
+failure or malfunction of equipment. Generally, treatment delivery errors fall into systematic and random errors.
+
+1. Systematic errors
+A treatment delivery error is systematic if it is caused by
+following treatment delivery procedures based upon incorrect assumptions regarding the properties of the treatment
+planning or delivery systems. Such errors are systematic because ~1! no individual lapse of judgment or failure to adhere
+to procedure was the cause and ~2! all patients treated according to these flawed procedures are at risk for similar
+treatment delivery errors. Examples include assuming: ~1!
+Medical Physics, Vol. 25, No. 4, April 1998
+
+378
+
+that a 1.8 cm diameter colpostat has a diameter of 2 cm; ~2!
+that the remote afterloader timer is consistent with the time
+standard used for source calibration when, in fact, there is a
+10% discrepancy; and ~3! that a 709 mm long source transfer
+tube is 712 mm long. The cause of this class of errors often
+is inadequate acceptance testing or periodic quality assurance
+~QA!. The QA program should be designed to ensure that all
+systems and devices associated with treatment delivery, including applicators, simulation aids, and treatment planning
+aids, are functioning correctly with respect to safety, positional accuracy, temporal accuracy, and dose delivery accuracy end points. The device-oriented component of the QA
+program should ensure that all devices are functioning correctly and consistently with the procedures followed by the
+treatment delivery team. The recommendations this document provides assume that an appropriate device-oriented
+QA program is in place and treatment delivery procedures
+are based upon an accurate picture of device function. Any
+institution practicing HDR brachytherapy shall develop a
+device-oriented QA program consistent with the AAPM
+Task Group 56 Report, ‘‘Code of practice for brachytherapy
+physics,’’ on guidelines on acceptance testing, commissioning, and periodic QA of brachytherapy devices.6
+
+2. Random errors
+Minimizing randomly occurring treatment delivery errors
+is the main subject of this document. Such errors are due to
+individual mistakes, lapses in judgment, or device malfunctions rather than to a false belief, shared by the treatment
+delivery team, regarding the function of a device. Such errors
+may be due to: ~1! transient malfunction of a device ~afterloader, applicator, or planning system!; ~2! failure of a team
+member to follow established policies; ~3! making a mistake
+while following policies; and ~4! relying on policies and procedures which inadequately define each team member’s duties and responses to deviations from normally expected outcomes. The most important causes of misadventures are ~2!,
+~3!, and ~4!.
+Failure to follow procedures may be caused by inadequate
+training, inadequate supervision, or excessive time pressure.
+Making mistakes while following policies is often a consequence of inadequate documentation or training, poor intrateam communication, poorly designed treatment-planning
+and remote-afterloader interfaces, an inexperienced or incompetent team member, suboptimal working conditions, or
+excessive time pressure. The Task Group strongly recommends that institutions make minimization of treatment delivery errors a high priority in designing both the HDR
+brachytherapy working environment and procedure flow. In
+the final analysis, one must accept that individual random
+errors and mistakes will occur even when the staff is well
+trained and experienced and when the working environment
+is ergometrically sound. Only by building redundant checks
+at each key decision point in the treatment planning and
+delivery process can the incidence of misadventures be reduced to an acceptable level.
+
+379
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+B. Principles of an HDR brachytherapy program
+design
+
+Usually the physicist’s role is to define the organization
+and responsibilities of the treatment delivery team members
+and to provide for their training. HDR brachytherapy is often
+hectic since the time the applicator remains in the patient
+must be minimized, creating an environment in which errors
+and miscommunications easily occur. In developing a robust,
+error-free HDR treatment delivery program, the following
+basic principles should be followed.
+
+1. Use written documentation
+Accurate HDR treatment planning and delivery presumes
+accurate information transfer among delivery team members
+working in the operating room, simulator room, and the
+treatment planning and treatment delivery areas. The radiation oncologist, physicist, medical radiation safety officer,
+dosimetrist, and treatment unit operator must cooperate
+closely and communicate accurately and unambiguously. All
+critical information, including applicator types used, relation
+of target volume to applicators, dose prescription, simulator
+localization information, etc., should be recorded on appropriate forms by the individual team member primarily responsible for each corresponding activity. These forms
+should accompany the patient chart and film jacket as the
+patient proceeds through applicator insertion, treatment planning, and treatment delivery.
+
+2. Develop a formal procedure
+For each type of HDR treatment, the procedures and duties of each team member should be carefully defined. A
+radiation therapist, dosimetrist, or physicist assisting the physician during the applicator placement should document the
+applicators used, and whether bony anatomy, surface markers, applicator geometry, or surgical clips will be used to
+select the active dwell position. For each QA check, the individual responsible for performing the check and evaluating
+the outcome, the item to be tested, the method used, the
+expected outcome, and actions to be taken in event of an
+undesired outcome should be well understood. To ensure
+compliance and to guide the staff, QA check lists should be
+used.
+
+3. Exploit redundancy
+The physicist should review the proposed treatment delivery process and isolate the vulnerable actions and decision
+points where mistakes could result in serious dose delivery
+errors. Each key step and essential piece of information
+should be independently verified. How exhaustive, logically
+complete, and specific the QA test is depends on the physicist’s estimate on the incidence of the target error and how
+serious the consequences are to the patient and staff.
+
+4. Exploit quality improvement techniques
+The essential characteristic of a quality improvement or
+comprehensive QA program is some mechanism by which
+HDR brachytherapy experience is reviewed to ~1! confirm
+Medical Physics, Vol. 25, No. 4, April 1998
+
+379
+
+compliance with the stated program; ~2! assess program adequacy and completeness; and ~3! to introduce improvements
+to address any identified weaknesses. All HDR brachytherapy programs should have a formal comprehensive QA
+programs as described in the Task Group 40 Report No. 465
+‘‘Comprehensive QA for Radiation Oncology.’’
+C. Treatment documentation, procedure checklists,
+and forms
+
+Good documentation is essential to a well-organized HDR
+facility. This report recommends that each facility shall develop written procedures which address the issues listed below. For functions ~1!, ~2!, ~3!, and ~5! specially designed
+forms to be filled out for each patient treatment are strongly
+recommended.
+~1! Written prescription and daily treatment record.
+~2! Treatment day remote afterloader QA protocol.
+~3! QA procedure flow checkoff list.
+~4! Physicist’s treatment plan/documentation review.
+~5! Depending on the complexity and frequency of each specific type of procedure, forms to document implant geometry, simulation data, and verification of computerized dwell-time calculations.
+~6! Written protocols or policies of treatment for commonly
+treated disease sites, including treatment technique, dose
+specification criterion, and dose prescriptions.
+Each brachytherapy practice shall develop written procedures and patient-specific documentation for each major type
+of procedure, as described above. Treatment documentation
+should aim for completeness, such that treatment could be
+retrospectively reconstructed if necessary. This treatment
+documentation should be filled out as the information becomes available during the procedure as its main purpose is
+to minimize miscommunication by replacing verbal transfer
+of key information by written communication. In addition,
+each institution should develop a mechanism, formal or informal, for confirming compliance with the written QA program. Formalizing treatment execution by means of QA
+check-off forms is often a worthwhile enhancement of the
+basic ‘‘integrated’’ QA program. Developing such forms
+forces one to systematically conceptualize the treatment delivery process. In addition to documenting compliance with
+QA requirements, check-off forms are useful for training
+new team members, and for guiding the flow of infrequently
+performed procedures. However, the Task Group recognizes
+that formal documentation of all QA checks constitutes a
+significant burden and may not be the only approach to confirming QA. For example, a small, highly experienced treatment delivery team, which frequently performs brachytherapy procedures and supports an adequate level of
+redundancy, may not find comprehensive QA checklists useful.
+Probably no form is more critical to the safe execution of
+HDR brachytherapy as the treatment prescription and daily
+treatment record. In many institutions a separate prescription
+is written by the physician for each fraction. A radiation
+
+380
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+FIG. 1. Example of a prescription form that combines the written prescription, a generic implant diagram, implant description, and daily treatment
+record on a single sheet of paper.
+
+therapy summary sheet reflects the current status of treatment
+~total dose and number of fractions given so far! and the
+written prescription that drives the whole process: more detailed descriptions of individual fractions, e.g., dwell time
+distributions, should be filed in separate sections of the chart.
+A form could be designed to include the prescription and all
+QA procedures. The form should be general so that at a
+glance, critical questions such as ‘‘is another fraction
+needed?’’ can be quickly answered. Figure 1 illustrates such
+a form. Each facility should adapt a similar design to their
+individual needs.
+The Task Group recommends that the prescription/daily
+treatment record form ~The NRC 10 CFR 35.32~1! requires
+that a written directive be prepared prior to any HDR treatment and signed and dated by the authorized user. 10 CFR
+35.2 requires that the written directive specify the radioisotope, treatment site, and total dose.! should provide the following information for each course of therapy:
+~1! An unambiguous method of identifying the patient’s
+identity on all treatment records, forms, and radiographs.
+At minimum, this should include the patient’s name and
+hospital number or radiation oncology patient number.
+~2! A clearly defined written prescription, including the fraction size, number of fractions, total absorbed dose, and
+dose specification criterion, e.g., dose to Point A, as well
+Medical Physics, Vol. 25, No. 4, April 1998
+
+380
+
+as a well-defined space for the authorized physician to
+sign and date. Either by means of a diagram, illustrating
+the approximate location of applicator system relative to
+the patient’s anatomy, or by means of an anatomic description, the site of the implant must be included. An
+approximate indication of the desired time interval between fractions and/or total duration of the treatment
+time may be useful. Some means of clearly indicating
+revisions to the written prescription should be included.
+~3! For each fraction, a brief description of the applicators
+used. For intracavitary gynecologic implants, the colpostat or cylinder diameter should be documented along
+with the tandem curvature. The type of applicator system
+~e.g., ‘‘Fletcher-Suit,’’ ‘‘ring’’! should be indicated. For
+interstitial or transluminal implants, the number and type
+of catheters should be indicated, e.g., ‘‘two 6 French 100
+cm endobronchial applicators.’’ If different HDR treatment modalities or machines are available, the identity
+of the desired device ~e.g., the afterloader serial number!
+should be included.
+~4! A daily treatment record, showing the delivery date of
+each fraction, the absorbed dose ~or other quantity delivered!, the cumulative total dose, the source strength, total
+dwell time, and integrated reference air-kerma ~IRAK:
+see Ref. 12!. Integrated Reference Air Kerma, or IRAK,
+is defined as the product of Air-kerma strength ~in units
+of m Gym2 /s21! and dwell time ~units of seconds!,
+summed over all dwell positions in the implant. The
+units of IRAK are m Gym2 ~equivalently cGycm2!. IRAK
+is the quantity endorsed by the American Brachytherapy
+Society ~Ref. 12!, then the American Endocurietherapy
+Society, to replace the obsolete quantity mgRaEq-h. The
+ICRU, in its Report 38,13 has recommended a conceptually equivalent quantity, Reference Air Kerma. For HDR
+brachytherapy, IRAK is a useful parameter since it
+should remain constant as the source decays for a fixedgeometry implant. In addition, the daily treatment record
+should contain signature blocks for the physicist and
+physician to document their pretreatment checks of the
+plan and remote afterloader input parameters and a signature block for the treatment unit operator to sign following treatment delivery.
+Preferably, this above information should be contained on
+a single page valid for the entire treatment course with separate sections or pages for each fraction. Other general
+fraction-independent information that should be available, either on the prescription form or on other summary forms, are
+~1! the diagnosis, including site and stage of disease, and ~2!
+if HDRB is to be combined with external beam treatment, an
+overall description of the integrated treatment ~e.g., 40 Gy
+whole pelvis, 10 Gy split field, 45 Gy periaortics, and 6
+HDRB fractions for a total point A dose of 70 Gy!. The latter
+information is useful for physicists and other personnel who
+review the proposed HDR treatment so that significant deviations from department policies of treatment can be noticed. The American Brachytherapy Society brachytherapy
+dose specification recommendations14 contain many useful
+
+381
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+suggestions for documenting target volume location and
+shape, prescription criteria, and applicator characteristics that
+are applicable to HDR brachytherapy.
+In addition, the Task Group recommends that all documentation specific to each fraction be filed in a clearly
+marked section in the chart. All documents must bear the
+patient’s name and date of treatment. At minimum, this information should include:
+~1! For multicatheter interstitial implants, a detailed crosssection diagram of the implant, documenting the catheter
+numbering system relative to externally identifiable
+anatomy. The channel number ~if different from the
+catheter number!, the identity of the simulation marker,
+and any information recorded at the time of simulation
+~simulation marker pull-back distances, insertion depths,
+catheter lengths, or offsets between most distal active
+position and catheter tip! needed to compute positional
+programming parameters should be described. Throughout this report, ‘‘distal’’ is used to refer to the direction
+towards the applicator tip and away from the treatment
+unit head while ‘‘proximal’’ denotes the direction towards the applicator orifice closest to the treatment unit
+head.
+~2! For all implants, a complete catheter-by-catheter description giving the insertion depth, the active dwell positions, distance between adjacent dwell positions, and all
+dwell times. ‘‘Insertion depth’’ is a general term used to
+describe the location of the active dwell-position sequence relative to the closed end or orifice of the implanted catheter. Insertion depth is specified differently
+by the competing HDR remote afterloader manufacturers. This list should contain all information needed to
+manually program the treatment unit but should be independent of the afterloader so it can be used as the basis
+for verifying the accuracy of the program. At least some
+treatment planning systems include this information in
+the printed documentation associated with each graphic
+treatment plan.
+~3! Any information needed to identify the active dwell positions and the programming parameters needed to define
+the location of each along the catheter track. For many
+treatments, the active dwell positions must be manually
+identified from radiographs, prior to the computer planning and evaluation process. In these cases, the task
+group strongly recommends that at least the first and last
+dwell position in each catheter, along with any offsets
+needed to calculate the programmed insertion depths or
+treatment lengths,4,15 be recorded on a separate form ~see
+Fig. 1 for an example! as it is extracted from the radiographs. This document can then serve as the basis for
+entering data into the planning system and later verifying
+its output. For intracavitary surface-dose applicators in
+which active dwell positions are fixed in advance, the
+desired active dwell distribution should be permanently
+defined in applicator-specific forms or written procedures which are used as the basis of entering data into
+the planning system.
+Medical Physics, Vol. 25, No. 4, April 1998
+
+381
+
+~4! The graphic treatment plan ~isodose plots and associated
+documentation! itself, if distinct from ~2! above.
+~5! Second calculations, as described in Sec. IV E 4, used as
+the basis of remote-afterloader programming or to verify
+computer-based calculations. The calculation should include the prescribed dose, source strength, and all assumptions made.
+~6! QA check-off list, which is discussed further in the Appendix. All critical QA checks and redundant observations should be listed on the form. It serves to remind all
+treatment delivery personnel of essential checks, provides a simple and easily auditable record for demonstrating compliance, and is a useful tool for training
+newcomers in system operation.
+~7! Any hardcopy printout generated by the treatment delivery device which documents its performance during
+treatment delivery.
+III. STAFFING AND TRAINING
+A. Staffing requirements
+
+Because HDR brachytherapy planning and treatments
+proceed rapidly, the staff needs to be adequately trained with
+the system to notice errors in planning or setup before they
+actually become treatment-delivery errors. The operational
+organization of a treatment facility must also provide coverage in sufficient depth to intercept errors. Each facility must
+determine what constitutes appropriate balance between procedures to prevent errors, redundancy, and staffing levels.
+The level and intensity of quality assurance procedures often
+depends on the complexity of the application and the training
+and experience of the team members. The need to intercept
+errors quickly, and to provide independent verification, can
+stress radiation oncology staffs.
+Physicians, department heads, and administrators must realize that development and maintenance of a safe and effective HDR program requires a significant time commitment
+for all staff involved, especially the medical physicist on
+whom the burden of acceptance testing the equipment, developing procedures, and training other staff falls. Adequate
+staffing and equipment resources must be provided. For example, planning a facility, selecting appropriate equipment,
+acceptance testing and commissioning equipment, and developing procedures may take as much time as installing and
+accepting a linear accelerator.
+For an experienced HDR medical physicist, 2–4 months
+of full time equivalent effort, depending on program complexity, should be budgeted for starting up a new program.
+For a qualified medical physicist without prior HDR experience, additional time should be allowed. Once the program is
+operating, demands for physics effort are less consuming,
+but still significant. For example, performing four procedures
+back-to-back can easily total 4–8 h of medical physicist
+time, including treatment supervision and treatment plan review. For an average load of 10 fractions per week, including periodic QA, staff training and treatment record audits, 1
+FTE of a qualified medical physicist should be allocated.
+Departmental management should be aware that efficient ex-
+
+382
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+382
+
+FIG. 2. HDR procedure flow: One medical physicist model.
+
+ecution of several back-to-back treatments in a single day
+may require participation of more than one treatment team:
+one team to cover applicator insertion, while the other performs treatment planning and delivery.
+Figure 2 shows one model for managing an HDR brachytherapy case. In this model, a dosimetrist performs the dosimetry ~including reconstruction, dose calculation, and optimization!. The medical physicist and a radiation oncologist
+perform verification checks on the results of the planning.
+The medical physicist performs an independent verification,
+and checks that the resultant plan satisfies the prescription,
+passes tests for likely correctness, and that the program transfer device, card, or disk contains the correct settings for the
+treatment unit. The physician checks that the isodose distribution satisfies the goals of the treatment, and performs some
+simple, quick checks that could detect some more-likely errors.
+The medical physicist and the physician verify that the
+program in the treatment unit matches those settings derived
+during the planning session.
+Depending on the organization of the department and the
+rules of the particular state, the medical physicist, the dosimetrist, the therapist, or the physician could operate the unit
+during the treatment. One of the persons attending the treatment, preferably the operator, shall be trained, willing, and
+Medical Physics, Vol. 25, No. 4, April 1998
+
+ready to enter the room when a high-activity source is exposed in the event of a retraction failure. After the treatment,
+the operator must check the patient and unit to assure that the
+source completely retracted, and check the record for any
+mistakes.
+Basically, one physicist model is the central recommendation for minimum safety requirements. However, additional QA benefits may be acquired by a two physicist
+model: A dosimetrist entering the data under the direct observation of a medical physicist who watches for correct data
+entry. A typical case may require the entry of about 350
+pieces of information ~systems that use less information generally allow less flexibility and/or may make inappropriate
+assumptions about application geometry!. At facilities using
+the two-person data entry model, correction of errors at the
+time of entry by the second person is a common event. In
+this model, the medical physicist and dosimetrist leave the
+room after completion of the planning, and a second medical
+physicist and a radiation oncologist enter to perform verification checks on the results of the planning. The second
+medical physicist does not attend the planning session so as
+not to be influenced by discussions between the planners,
+who could convince themselves that a decision was correct
+when it was really in error. The second medical physicist
+performs the independent verification and checks as the
+
+383
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+383
+
+sitions to recalculate an isodose distribution for comparison
+with that generated by the primary computer system, rather
+than regenerating a new, freshly optimized set of dwell
+times. This procedure really checks only that the primary
+computer’s dose calculational algorithm matches that of the
+checking computer, and that the primary computer made no
+calculational errors. Such errors are rare, and acceptance testing of the computer system should check the correctness of
+the algorithm. Relying of such a comparison to check the
+correctness of the HDR plan fails to intercept the most common human errors, such as mistaken data entries in the optimization routine, or incorrectly specified lengths. It is not
+clear that verification of isodose distributions on particular
+cases using a second computer system serves any purpose.
+Table I outlines a typical division of labor for an HDR
+brachytherapy program. It should be noted that some labor
+will be shared by nurses who assist in assisting equipment
+package, applicator insertions and removal, post-treatment
+patient care, and equipment cleansing and resterilization.
+B. Training requirements
+
+FIG. 3. HDR procedure flow: Two medical physicist model.
+
+single medical physicist does in the previous model.
+Figure 3 schematically illustrates the flow of events with
+the two-medical physicist model. This model requires five
+persons ~two medical physicists, a physician, a dosimetrist,
+and a therapist! just for treatment planning, neglecting any
+nursing assistance needed through the procedure. This really
+adds only one person ~a medical physicist! to the crew that
+normally develops and treats an LDR case, and does so to
+reduce the likelihood of repeating the treatment planning and
+dose calculations due to an error found during a check. During an LDR treatment, such repetition adds little to the total
+treatment duration, with the patient somewhat comfortable in
+bed. For an HDR treatment, the dosimetry can account for a
+large portion of the treatment duration, and the patient may
+be constrained to a rather uncomfortable position, and, thus,
+the proceedings move very quickly.
+Figure 3 shows a department with a resident in radiation
+oncology, but the presence of a resident is not integral to the
+model.
+Departments with limited staff, say with one medical
+physicist and one radiation oncologist, and a radiographer for
+the imaging, must meet the independent verification requirement using a second computer system, or some form of
+manual calculation. While both the second computer system
+and manual calculations assist in the verification when a second medical physicist checks the plans ~or a physicist after a
+dosimetrist generates a plan!, they form the only basis when
+one medical physicist performs all roles.
+Verification using a second computer system usually entails entering the source activity, dwell times, and dwell poMedical Physics, Vol. 25, No. 4, April 1998
+
+A successful program requires a qualified and integrated
+treatment delivery team with substantial experience. Additional expertise, required above and beyond board certification, can often be acquired through focused self-study, careful planning and preparation, and extensive practice with the
+devices. All participating members of a HDR brachytherapy
+team shall be trained for emergency procedures for each type
+of application, with instruction on what to do when the emergency procedures do not go according to the plan. Credentials suggested by this Task Group include:
+Radiation Oncologist. A broad-certified radiation oncologist with special expertise in brachytherapy, preferably HDR
+brachytherapy, is required. The physician must be licensed
+by the USNRC or an Agreement State to use the HDR unit.
+As HDR brachytherapy remains a continuously evolving
+technique, this experience should include following patients
+and quantifying clinical outcome. This, in turn, requires appropriate biometry resources. Before beginning a HDR practice on patients, time should be spent visiting facilities with
+ongoing programs. In a busy HDR practice, it may not be
+practical for the attending radiation oncologist to be available during each treatment. For example, the radiation oncologist may be occupied inserting applicators in the second
+patient while the first patient is being treated. In such cases,
+an appropriately trained and supervised physician, e.g., resident radiation oncologist, may take on certain duties, such as
+checking setups, attending treatments, and removing applicators.
+Medical physicist. A board-certified medical physicist in
+radiation oncology physics or therapeutic radiological physics ~or radiological physics!, with expertise in brachytherapy
+is required. The medical physicist should spend 1–3 weeks
+visiting at an established HDR program. At minimum, the
+medical physicist shall have received vendor-supplied training for both the treatment unit and the radiotherapy
+treatment-planning computer system. A medical physicist
+
+384
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+384
+
+TABLE I. One model HDR treatment delivery organization.
+Activity
+
+Radiation
+oncologist
+
+Pretreatment
+preparation
+
+Reviews patient
+history
+Defines
+procedure, selects
+applicators
+Schedules patient
+
+Applicator insertion
+
+Performs procedure
+
+Simulation/
+localization
+
+Operator
+
+Dosimetrist
+
+Medical
+physicist
+Consults with
+physician
+Commissions new
+applicators
+Designs
+procedure for
+novel treatment
+
+Schedules
+patienta
+Tests and
+packages
+applicatorsa
+Contacts medical
+physicist if nonroutine
+treatment
+Assists
+physiciana
+Documents
+implant
+Performs daily
+QAb
+Label applicators
+Record simulation
+marker identity
+Measure
+localization
+parameters
+
+Prescription/
+localization
+
+Defines active
+dwell positionsb
+Defines target
+volumeb
+Writes
+prescription
+Defines
+optimization
+criteria
+
+Reviews
+radiographs,
+prescription
+
+Verifies positional
+parameters
+
+Treatment
+planning
+
+Reviews treatment
+plan
+
+Plans treatment
+
+Supervises
+planning
+Does manual
+calculation
+Checks
+calculation
+Reviews plan
+
+Prepares transfer
+medium
+
+Treatment unit
+preparation
+
+Treatment delivery
+
+Post-treatment
+
+a
+
+Connects unit to
+the catheters
+
+Authorizes
+treatment
+responds to
+emergencies as
+directed by the
+physicist
+
+Disconnects
+patient and
+removes
+applicatora
+
+Operates
+treatment unit
+Monitors
+treatment
+progress
+Programs HDR
+Sets up patient
+Compares
+treatment
+program to
+prescription
+Surveys patient
+and room
+Removes patient
+from room
+Completes daily
+treatment record
+Checks paperwork
+completeness
+Secures
+treatment device
+
+May be performed by or with the assistance of a nurse.
+May be performed by or with the assistance of a medical physicist.
+
+b
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+Calculates HDR
+positional
+programming
+parameters
+Checks setup
+Reviews daily QA
+Check treatment
+unit program
+Monitors
+treatment
+progress
+Reviews
+emergency
+procedures
+Supervises
+emergency
+procedures
+
+385
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+new to HDR brachytherapy should carefully work through
+extensive commissioning tests for both the treatment unit
+and the planning system, and become competent at operating
+both systems. The medical physicist should carefully work
+out procedures for each item mentioned in Table I.
+Dosimetrist. An individual with two years training in
+brachytherapy treatment planning is required. Formal qualifications include certification as a medical dosimetrist, certification as a radiation therapist with experience in dosimetry,
+or an undergraduate degree in physics or radiological sciences with experience in dosimetry. This individual should
+have vendor-supplied training operating the treatment planning system. HDR computerized treatment planning systems
+generally are functionally much more sophisticated than their
+LDR counterparts. Such systems offer several choices for
+reconstructing the implant geometry from radiographic images, have several dwell-weight optimization options, and
+have more sophisticated dose specification procedures, dose
+display options, and methods for quantifying implant quality.
+Some available systems have poorly designed user interfaces
+that contribute to difficulty in learning system operation and
+increase the likelihood of making errors. Prior to treating
+patients, the dosimetrist should practice extensively with the
+system, with the goal of learning to plan treatments independently of the medical physicist. For each type of procedure
+anticipated, the medical physicist and dosimetrist should
+work together closely to develop detailed written procedures
+that specify which program options are to be used.
+Treatment-unit Operator. This individual should have
+vendor-supplied training on the HDR unit, or the equivalent
+from an in-house trainer if that expertise exists in the facility,
+and must spend extensive time practicing with the unit before treating patients. If assisting the physician during applicator insertion, this individual needs a good working knowledge of the clinical aspects of the proposed treatment,
+including applicator properties, operation and selection, target volume localization strategies, and a good knowledge of
+afterloader-imposed geometric limitations on applicator insertion. A medical physicist, dosimetrist, radiation therapist,
+nurse, or physician may be designated to deliver the treatment. Some states may require HDR operators to be licensed
+radiation therapists. The operator must be trained to
+promptly enter the room and follow the emergency procedures should the source fail to retract into its shielded position.
+Radiation Safety Officer ~RSO!. The RSO has final responsibility for the safe use of radiation at an institution, and
+is responsible for all communications to regulatory agencies
+flow. While often the RSO may not be involved in daily
+operations of an HDR unit, this person must review and approve the operational procedures and emergency plans.
+As mentioned above, the persons involved in the planning
+and execution of an HDR treatment must be able to recognize readily when some aspect of the treatment looks wrong.
+All persons involved should be certified by their respective
+certifying bodies, unless they are in training ~such as residents! and under close supervision by one who is certified.
+Each of the persons involved needs additional training in
+Medical Physics, Vol. 25, No. 4, April 1998
+
+385
+
+HDRB. Initially, one person in each of the disciplines should
+spend time at a facility that has been performing HDR procedures to gain an understanding of the nature of HDRB. In
+addition, all manufacturers of HDR units provide training
+that prospective users should attend at the manufacturer’s
+training center and/or the user’s site.
+
+C. Recommended training schedule
+
+One person at an institution should be responsible for the
+subsequent training and examination of other staff members.
+Sample training schedules include:
+Operator
+~1! Training in programming and operating the unit.
+~2! Training in daily quality assurance and safety procedures.
+~3! Training in emergency procedures for each type of patient treated, with instruction on what to do when the
+emergency procedures do not go according to plan.
+~4! Training in monitoring the unit and patient during a patient treatment.
+~5! Training in detecting errors and potential problem situations.
+~6! Supervised practice.
+~7! Unsupervised practice.
+~8! Supervised operation during a patient’s treatment.
+Radiation therapist
+~1! Review of treatment planning system requirements for
+localization and imaging.
+~2! Practice treatment delivery with a dummy patient.
+~3! Supervised operation during a patient’s treatment.
+Dosimetrist
+~1! Observation of planning for a patient’s treatment.
+~2! Introduction to the treatment planning program.
+~3! Walking through a sample case.
+~4! Practice on sample cases.
+~5! Exploration of all parts of the planning software, and
+how to recover from inadvertent deviations from the normal protocol.
+~6! Recognition of when optimization has failed to produce
+a desirable dose distribution, and interventional techniques.
+~7! Supervised operation during a patient’s treatment.
+Planning medical physicist
+~1! All of the training for a dosimetrist and participation in a
+patient’s treatment planning performing the dosimetrist’s
+function.
+~2! Training in evaluation of all information returned from
+the planning computer.
+~3! Practice in the use of the nonroutine parts of the software.
+~4! Practice in optimization in nonroutine situations.
+
+386
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+~5! Recognition of when optimization has failed to produce
+a desirable dose distribution, and interventional techniques.
+~6! Supervised operation during a patient’s treatment.
+Verifying medical physicist
+~1! All of the training for the planning medical physicist.
+~2! Exploration of possible paths of errors.
+~3! Sampling technique to verify accuracy of a treatment
+plan.
+~4! Instruction in the use of evaluation tools ~e.g., forms!.
+~5! Supervised operation during a patient’s treatment.
+Radiation oncologist
+~1! Training in the nature of the applicators
+~2! Observation of the placement of an applicator.
+~3! Supervised placement of applicators.
+~4! Discussion of desired dose distributions.
+~5! Instruction on the interpretation of the resultant information for a treatment plan ~e.g., computer printouts, isodose distributions!.
+~6! Instruction in the use of evaluation tools ~e.g., forms!.
+~7! Supervised operation during a patient’s treatment.
+Once certified, a team member must remain active or undergo refresher retraining. The NRC requires annual retraining for all operators, but persons performing other functions
+may also need periodic reviews. Departmental guidelines requiring all authorized persons to participate in at least one
+procedure per month help keep the staff current.
+IV. TREATMENT SPECIFIC QUALITY ASSURANCE
+The following sections describe examples of QA checks
+for each phase of the treatment delivery process. General
+descriptions of checks recommended by this report are tabulated. Implementation of such measures by a specific facility
+will necessarily be individualized taking into account procedure complexity and frequency, staff availability, skill level
+of available personnel, and the type of available devices.
+A. Applicator preparation
+
+Upon scheduling a procedure, the appropriate applicator
+kit should be assembled, reviewed for correct operation and
+completeness, and sent for appropriate sterilization. It is useful to make a list of required kit components for each procedure type so that appropriate localization dummies, adapters,
+etc., are not forgotten. If single-use applicators are used, they
+should be checked for correct and error-free operation on the
+HDR and their depths sounded if the localization procedure
+requires them to have a fixed length. Until operating room
+support personnel become accustomed to the special equipment needs of various HDR procedures, e.g., fluoroscopic
+examination table, a particular bronchoscope, topical anesthetic, etc., these items should be ordered in advance for each
+procedure. Care should be taken to label and sort applicators
+of similar appearance. For example, interstitial HDR applicators are frequently of larger diameter ~1.9 mm o.d. versus
+1.7 mm o.d.! than their LDR manually afterloaded counterMedical Physics, Vol. 25, No. 4, April 1998
+
+386
+
+parts. All accessories ~buttons, transfer tubes, adapters, etc.!
+should be carefully checked for compatibility.
+B. Applicator insertion
+
+Insertion of intracavitary and interstitial applicators is the
+responsibility of the radiation oncologist. For transluminal
+applicators, the placement is often done by a pulmonologist.
+The physics team involvement in the operative procedure
+depends on procedure complexity, physician familiarity with
+the equipment, and the receptivity of physician to physicist
+participation. The Task Group recommends that a member of
+the physics team ~experienced radiation therapist or dosimetrist for routine procedures or a physicist for complex or
+unfamiliar ones! attend the operative procedure. The essential operating room responsibilities of the physics team are to
+~1! ensure that the appropriate applicators and accessories are
+present, handed to the physician in proper order, and installed in a fashion compatible with the mechanical and geometric requirements of the afterloading device, ~2! ensure
+that tumor localization data ~direct visualization, fluoroscopy, bronchoscopy, etc.! available only in the operating
+room are properly recorded and correlated with dwell position settings for later use in defining the treatment volume,
+~3! document the applicators used and their location on the
+prescription form, and ~4! for catheters, after the depth is
+sounded the ends should be marked so that it will be noted
+later if they have been cut shorter by someone. Physics attendance in the operating room can prevent errors such as
+cutting catheters too short for attachment to the afterloader
+transfer tubes, neglecting to remove the solid plastic inserts
+inside flexible implant catheters used to form 180° loops,
+placing miniovoid caps on the applicator tubes with their 4
+mm thick rather than 8 mm thick sides directed laterally, and
+preventing insertion of LDR- rather than HDR-compatible
+gynecological applicators. Especially, in a teaching hospital
+in which senior residents or junior staff with limited brachytherapy experience perform procedures under the supervision
+of an attending radiation oncologist, providing an experienced technical support person is an essential quality assurance measure.
+After insertion, all applicators should be marked near the
+point of insertion on the patient so that dislocation of the
+system during the insertion-to-treatment interval can be detected. For example, endobronchial applicators can be
+marked by a tape where they enter the patient’s nares, or the
+distance from the applicator orifice to the entry point on the
+patient can be measured and recorded. If a gynecological
+intracavitary insertion patient is to be moved between localization and treatment, a mark can be placed on the patient’s
+inner thigh opposite the proximal aspect of the applicator
+assembly.
+C. Implant localization and simulation
+
+During radiographic examination of the implant, several
+key steps influence positional accuracy of the treatment. For
+multiple-catheter transluminal implants or interstitial implants, each applicator should be labeled externally with the
+
+387
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+387
+
+FIG. 4. Example of a form used for recording localization information obtained in the simulator room for calculating positional treatment-unit programming
+parameter. This form is intended for interstitial implants using 30 cm long simulation markers marketed by Nucletron. This localization method assumes that
+all transfer tubes are of a known uniform length.
+
+corresponding channel number. A correctly labeled sketch of
+the implant should be drawn on the prescription form or
+other document. Generally, each applicator is loaded with a
+radiographically distinct or recognizable sequence of dummy
+seeds. The identity of each simulation marker should be
+carefully recorded on the implant diagram to facilitate
+matching of corresponding dwell positions and catheters on
+orthogonal or variable-angle radiographs. Finally, the localization procedure may require the depth of each catheter or
+catheter-transfer tube combination to be sounded, the results
+of which must be correctly recorded on the localization form.
+For large interstitial implants, a form ~see Fig. 4! that clearly
+defines the needed information is recommended. Incorrect
+execution of these steps may deliver the wrong sequence of
+dwell positions and times to a catheter. Two persons should
+work together to gather the localization information and
+verify its correctness, one to perform the labeling and measurement functions and a second to record the information
+and check the accuracy of the first person.
+Radiographic visualization of plastic intracavitary applicators, e.g., vaginal cylinders, can be achieved by inserting
+small radio opaque seeds or spacers near the surface of such
+applicators. Such marking systems not only improve anatomic localization of applicator surfaces, but supports radiographic verification of colpostat and vaginal cylinder diameter as well.
+Finally, care should be taken to obtain radiographs that
+~1! facilitate accurate manual matching of corresponding images on the two views and ~2! are consistent with input requirements of the selected implant reconstruction algorithm.
+Medical Physics, Vol. 25, No. 4, April 1998
+
+For large interstitial implants, oblique views are sometimes
+useful for maximizing separation of the projected simulation
+markers, which aids manual matching. In contrast to many
+LDR interstitial implants, consisting of ribbons of uniform
+strength, length, and insertion depth, dwell weight optimization always results in unique sequences of dwell times in
+each catheter. Accurate reconstruction of the correspondence
+between channel number and the radiographic image of each
+catheter is essential to ensure delivery of each dwell-time
+sequence to the intended catheter. To more easily correlate
+the implanted catheters with radiographic anatomy, oblique
+radiographs should always be supplemented by anatomical
+lateral and AP views. Both a physicist ~and/or dosimetrist!
+and a radiation oncologist should approve the radiographs as
+adequate for implant reconstruction and clinical evaluation
+before the patient leaves the table.
+D. Treatment prescription
+
+Following simulation, the radiation oncologist reviews the
+radiographs along with other pertinent localization data and
+~1! defines the target volume or dwell positions to be activated, ~2! defines where the prescribed dose is to be delivered or specified, and ~3! selects the prescribed dose and
+fractionation scheme, and completes and signs the prescription. Unless procedure frequency is high enough to allow
+this procedure to be unambiguously routinized, this activity
+should involve consultation between the physician and the
+physicist. The physicist’s role is to confirm that all relevant
+tumor imaging studies and localization data are correctly
+
+388
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+correlated with the simulation marker images, to aid the physician in articulating clinical intent in terms of quantitative
+end points, and to develop a clear strategy for optimizing the
+implant dose distribution, e.g., does the volume outlined on
+the radiographs indicate the dwell positions to be activated or
+a target surface with the dwell positions to be selected to
+achieve a compromise between dose nonuniformity and target volume coverage? Generally, an experienced physicist
+should be able to recommend a combination of prescription
+criterion and margin of implanted volume about the target
+surface necessary to achieve this goal without lengthy computer planning. Verifying that the selected dwell positions
+cover the target volume may take some persistence. For example, in a transluminal treatment of the esophagus, the distal and proximal tumor margins can be identified by esophagoscopy ~and stated in terms of insertion depth from the
+incisors!, from barium-swallow radiographs, or from CT.
+Having identified the method of target localization, the
+physicist should verify that this volume is covered by the
+selected dwell positions.
+The task group strongly recommends that detailed stepby-step procedures, describing the simulation, treatment volume localization, dose prescription, and treatment planning
+processes, be written. These procedures should address:
+~1! The clinical indications for treatment, including disease
+stage, site, previous surgical management, and pathological findings ~example, definitive radiation therapy for
+medically inoperable Stage IB carcinoma of the endometrium!.
+~2! The overall treatment strategy including external beam
+and HDR total doses and fractionation.
+~3! The applicator type and geometry to be used.
+~4! The dose specification and optimization strategy.
+~5! The method of treatment planning including: source geometry reconstruction ~e.g., pre-entered coordinates, orthogonal radiographs, or combination!, placement of
+dose optimization and dose specification points, dose
+prescription, stopping points where physicist and physician input are needed, relationship between manual and
+computer calculations, and orientation and location of
+isodose calculations.
+E. Implant design and evaluation
+
+1. Localization
+The first step in the planning phase of treatment delivery
+is to describe the active dwell positions in terms of input
+parameters used by the treatment planning system and treatment delivery unit, e.g., dwell position numbers and treatment lengths. For intracavitary and transluminal treatments,
+such localization calculations may be very straightforward,
+e.g., looking up the active dwell position number and treatment lengths in the treatment policies ~See Fig. 4 for an
+example!. As discussed in Sec. IV C, interstitial implants are
+more complex. Whenever optimization is used, accurate
+planning and treatment of interstitial implants requires accurately matching the radiographic images of each catheter
+Medical Physics, Vol. 25, No. 4, April 1998
+
+388
+
+with its channel number as defined by the label attached to
+its orifice during simulation. If the implanted applicators are
+not of uniform length or implanted to the same depth relative
+to the target volume boundary, then the positional programming parameter may vary from catheter-to-catheter as well.
+The matching process can be a time consuming, error prone
+activity requiring intense concentration and freedom from
+interruptions. To ameliorate the impact of mismatching,
+uniform-length catheters should be used whenever possible
+and every effort made by the radiation oncologist to insert
+catheters to a uniform depth with respect to the distal margin
+of the target volume. For such implants, one person, e.g., the
+dosimetrist, should perform the matching and a second person, e.g., the physicist, should verify the catheter imagechannel number correspondence and localization calculations. For endobronchial implants consisting of two to three
+transluminal applicators, each applicator should be labeled in
+the operating room and its anatomic location recorded ~e.g.,
+no. 25right upper lobe! so that channel numberradiographic image correspondence can be independently
+checked.
+Several methods are available for assuring that the treatment unit settings needed to position the radioactive source
+at the desired position on a simulator radiograph are correctly calculated.4,15 The details depend on the afterloader
+design, the applicator type ~interstitial versus intracavitary!,
+the type of simulator marker used, and whether the marker is
+referenced to the applicator orifice or its distal closure. Other
+factors, e.g., the constancy and uniformity of transfer tube
+length, also influence the choice of localization method. For
+each type of implant, an appropriate localization method
+must be selected and tested in advance. Any additional information that must be obtained from radiographs or measured in the simulator must be defined, and methods developed, e.g., Fig. 4 for capturing and verifying this data.
+Testing involves using a single applicator to compare the
+location of selected seeds on a radiographic marker to the
+autoradiographically defined HDR source center for the programming settings defined by the localization calculation.
+
+2. Computer treatment planning
+Treatment planning begins with a consultation between
+the dosimetrist and physicist regarding the basic approach to
+treatment planning. For intracavitary implants, treatment
+length settings and active dwell positions may be fixed in
+advance or a standard plan, containing the fixed Cartesian
+coordinates of each catheter trajectory may be used. For endobronchial or interstitial implants, the catheter numbers and
+radiograph images may have to be matched by the dosimetrist and physicist. Other issues include the choice of optimization algorithm and selection of dose calculation points
+used to specify the prescribed dose and to define the optimization criteria. Well-defined optimization and doseprescription protocols which limit the options available to
+the dosimetrist should be used. For example, one approach to
+standardizing interstitial implant planning on the Nucletron
+planning system is to permit only geometric optimization
+
+389
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+~eliminating the need for dose point placement! and requiring dose to be prescribed as a fixed fraction ~0.75–0.90! of
+the central minimum dose defined by placing dose calculation points in the central transverse plane of implant at a
+specified point in the program flow.
+
+3. Pretreatment review of HDR treatment plan
+The physicist charged with reviewing the treatment planning process should ensure that the physician’s clinical intent
+has been communicated accurately to the dosimetrist, and
+that the resulting plan is consistent with that intent. For example, it may not be clear whether a volume marked by the
+physician on the localization radiographs describes the treatment volume or the target volume to be enclosed by the
+prescription isodose or whether the prescription distance is
+specified relative to the applicator center or its surface. It
+may seem self-evident that clear communication between
+physician, physicist, and planner is necessary, but over time
+expectations and assumptions can become implicit and unstated, leading to misunderstandings in the event of staff
+changes, etc. An effective physics review encompasses much
+more than verification of computer plan accuracy: it includes
+assessment of clinical appropriateness and consistency of the
+final treatment program with target localization data, simulation radiographs, treatment prescription, and a computer
+treatment plan.
+The specific review of each plan should begin with verification of input data, including:
+~1! name of patient and date of treatment;
+~2! source strength matches the decayed value;
+~3! correct system file ~including, e.g., calibration data!
+used;
+~4! magnification factors, source-film distances, etc.;
+~5! source position reconstruction algorithm used was consistent with the simulation radiograph geometry;
+~6! units of all quantities;
+~7! step size ~or length!;
+~8! optimization scheme and prescription criterion chosen
+are consistent with implant geometry and clinical intent;
+~9! dose per fraction matches the treatment prescription;
+~10! reconstructed implant geometry matches radiographic
+projections;
+~11! distance from machine reference point to distal-most
+dwell location;
+~12! dwell times and locations programmed in the treatment
+unit match those on the plan;
+~13! Correctness of treatment unit programs recalled for
+treatment of subsequent fractions, including handling of
+decay corrections. The GammaMed HDR Treatment
+Planning and Treatment Delivery system handles
+source decay in a unique way. All treatment plans created by the GammaMed computer planning system utilize a 10 Ci (3.731011 Bq) source for all calculations.
+These nominal dwell time are based on a 10 Ci source.
+The treatment console is programmed with the nominal
+dwell times based on a 10 Ci source and these appear as
+entered. When treatment begins, a factor is automatiMedical Physics, Vol. 25, No. 4, April 1998
+
+389
+
+cally applied to each nominal dwell time to correct for
+actual source activity. This factor is equal to 100
+310 Ci actual activity. For example, the factor is 100
+for a 10 Ci source. For a 5 Ci (1.8531011 Bq) source,
+the factor is 200. This factor is calculated by the physicist during initial calibration of a source and entered
+with the date. The system subsequently automatically
+adjusts the factor to correct for source decay. The net
+result is approximately a 1% increase in this factor each
+day. This factor is thus an indicator of actual source
+activity. This factor is indicated on treatment console,
+and on treatment record printed during treatment.
+Especially with respect to positional parameters ~active dwell
+positions chosen, spacing, dwell train location within each
+catheter, etc.!, the simulation radiographs, graphical plan
+representation, localization form, and treatment unit printout
+should all be intercompared. For those planning systems that
+do not completely document the implant reconstruction process, e.g., algorithm chosen and radiograph orientation used,
+Item ~10! is extremely important as an indirect verification of
+appropriate reconstruction algorithm selection and operation.
+Finally, the plan should be checked for ‘‘reasonableness’’
+using the previous plan, if available, and an appropriate figure of merit. Just as mgRaEq-h/dose ratio is a useful parameter for judging low dose-rate implants using radium substitutes, the ~source strength3dwell time!/dose, or IRAK/dose,
+ratio should fall within the range expected for the given implant geometry. Quantitative verification of computergenerated dwell time calculations is reviewed below.
+The plan should also be assessed for clinical adequacy.
+The selected applicator, dose specification criterion, prescribed dose, and choice of optimization approach should be
+checked against the department’s policies of treatment or, at
+least, customary practices for the given site and stage of
+disease. In performing this review, the physicist should be
+aware of all treatments previously given to the patient and
+check that the cumulative total doses to critical structures
+~vaginal mucosa, bladder neck, anterior rectal wall! are
+within tolerances. Any significant deviation from these expectations should be brought to the radiation oncologist’s
+attention for their review.
+Prior to initiating treatment, the attending physician
+should review the treatment plan, treatment unit programming, and associated documentation. The physicist’s signature documenting plan review, the fraction size, dose prescription site, consistency of dose distribution size and
+location with target volume coverage should be reviewed
+along with any other factors influencing clinical appropriateness. Satisfactory physician and physicist review should be
+documented by signature on the daily treatment record or
+QA checkoff list.
+
+4. Verification of HDR computer calculations
+As discussed in Sec. III A, relying on a second computer
+to check the correctness of the HDR plan fails to intercept
+the most common human errors, such as mistaken data entries in the optimization routine, or incorrectly specified
+
+390
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+TABLE II. Manual dose verification methods for optimized implants @reproduced from Williamson ~Ref. 4! with permission#. Expected values of dose
+index 10 cm from implant in its central transverse plane ~Ref. 17!, where the
+dose index is defined as, Dose index5@1003Average of doses at
+110 cm and 210 cm~cGy!#/@Activity~Ci!3Total time~s!#.
+Implant type
+
+Expected range of dose index
+
+Pulmonary
+Vaginal cylinder
+Long esophagus
+
+1.05–1.20 ~lower if highly elongated, higher if curved!
+1.10–1.20 ~i.e., short single catheter!
+0.95–1.10 ~i.e., long single catheter!
+
+lengths. It is not clear that verification of isodose distributions on particular cases using a second computer system
+serves any purpose. This section presents an alternative
+means of verification. Stepping source remote afterloading
+technology allows the treatment time at each active dwell
+position to be independently programmed. Mathematically
+elegant and clinically appealing optimization algorithms are
+widely available that vary the relative dwell times ~or
+weights! of each activated dwell position to maximize dose
+uniformity, target coverage, or other dosimetric constraints
+chosen by the user. The result is often a highly nonuniform
+distribution of dwell times. When such algorithms are applied to conventional implant geometries, dose homogeneity
+is often improved and the length of the implanted volume
+needed to adequately cover the target volume may be
+reduced.16 Such flexibility creates a number of quality assurance problems, many of which have been discussed elsewhere in this report. An important issue is how to verify the
+accuracy of optimized calculations with verification calculation techniques. In many cases verification can easily be
+done manually, but also it can be done by small computer
+codes. ‘‘Practical’’ in this context requires that the assessment take only a few minutes. In addition, the calculation
+check must have a high probability of detecting significant
+errors.
+A standard technique is to evaluate some characteristic
+parameter of the plan and compare it to an expected value.
+For example, at distances sufficiently far from the implant,
+the dose is determined primarily by the source strength and
+total treatment time and is insensitive to local dwell time
+variations. One group17 calculates the dose at points 610 cm
+from the approximate center of the implant in the direction
+most orthogonal to the treatment applicators. The mean dose,
+divided by the current source activity and total treatment
+time, is then, compared to expected values which depend on
+the type of implant geometry. Table II lists representative
+numbers. Readers are cautioned that the specific values depend on many variables, such as the quantity used to specify
+source strength, single-source dosimetry data selected, and
+optimization scheme applied. At such long distances, the
+specific form of the tissue attenuation and scatter factor ~radial dose factor! used by the planning computer needs to be
+considered, since some expressions may extrapolate poorly.
+The ‘‘dose at a large distance’’ method can detect errors
+in source strength input, unauthorized changes in physical
+dose factors, or calculation ‘‘bugs’’ which can globally afMedical Physics, Vol. 25, No. 4, April 1998
+
+390
+TABLE III. Expected total treatment time for volume implants, calculated by
+Total time5Reference dose ~cGy!3R V 3elongation factor/Activity ~Ci!.
+Note: Reference dose chosen to be 90%–95% of central minimum dose for
+geometrically optimized volume implants.
+Volume (cm3)
+
+R V @Ci s/Gy#
+
+Length/diameter
+
+Elongation factor
+
+50
+60
+80
+100
+140
+180
+220
+260
+300
+340
+380
+
+287
+323
+391
+434
+569
+672
+768
+859
+945
+1027
+1105
+
+1.5
+2.0
+2.5
+3.0
+
+1.03
+1.06
+1.10
+1.15
+
+fect dose-calculation accuracy. Its insensitivity to local dose
+variations means that it is not capable of detecting some
+errors which determine the dose at clinically relevant distances. For example, consider a situation in which the planner intended to place active dwell positions at 1.0 cm intervals but inadvertently specified 0.5 cm spacing. If the
+number of dwell positions were not doubled then the implant
+would be smaller than desired. The next logical step is to
+develop expectation values based on doses at typical prescription distances which are sensitive to implant geometry.
+The group at the University of Wisconsin has developed
+dose indices for a variety of implant types: endobronchial,
+gynecological ~tandem and ovoids, ovoids only, vaginal cylinder!, and volume implants. For example, Ref. 18 describes
+two indices for tandem and ovoid treatments based on the
+ratio of dose at the primary prescription point to ~1! the dwell
+time in one particular position in the tandem and ~2! the total
+dwell time.
+Table III also illustrates the University of Wisconsin
+method of verifying total treatment time for volume
+implants.4,19 This table was derived from the original
+Manchester volume implant table,20 by applying the current
+values for the exposure rate constant and conversion from
+exposure to dose ~1.065!, adjusting for the ratio of stated to
+minimum dose ~1.11!, and conversion from mgRaEq h to
+Ci s. The table gives R V , the number of Ci s per Gy required
+to the volume enclosed by the implant. When applied to
+geometrically optimized ~distance option! volume implants,
+the table has an accuracy of better than 8% when the reference dose is defined to be 90%–95% of the central minimum
+dose.
+Kubo21 and Kubo and Chin22 have reported simple mathematical formulas for checking single catheter treatments
+when the dose is prescribed at distances of 7.5 or 10 mm
+from the catheter center. For 10 mm dose prescription, the
+total treatment time was found to be within 62%:
+T5a
+
+D
+~ 2.67•L178.6! ,
+S
+
+~1!
+
+where T is the expected treatment time in seconds, a is the
+
+391
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+391
+
+conversion constant and is 0.01 Ci s/~cGy mm!, D is the prescribed dose in cGy, S is the source activity in Ci, and L is
+the total treatment length in millimeters.
+For example, the treatment time for the prescribed dose of
+1000 cGy and source strength of 7.5 Ci (2.7731011 Bq) for
+the treatment length of 55 mm is 300.6 s from Eq. ~1!. The
+planned treatment time was 303.9 s, 1.1% more than the
+expected time. Again, the numerical values in the formula
+depend on the specifics of the dose calculation data and the
+optimization algorithm assumed. This single catheter approach is further expanded so that the prescription distance
+and length can be combined into one equation.23 From the
+treatment plans generated with treatment lengths of 50, 100,
+150, and 200 mm and treatment distances of 2–14 mm with
+a step of 2 mm, it was found that the total treatment time
+increased linearly with the treatment length whereas the
+treatment time varied supralinearly with the treatment distance. Therefore, using the prescription dose of 500 cGy and
+a source strength of 10 Ci (3.731011 Bq) as a reference, the
+treatment time was first fit with a second-order polynomial as
+a function of a treatment distance, d. For the smallest treatment length of L 1 550 mm, the best fit for treatment time
+was obtained with
+T ~ d,L 1 550! 525.2418.80•d10.263•d 2 .
+
+T ~ d,L 2 5200! 5214.9131.2•d10.236•d .
+
+~3!
+
+The correlation coefficient for Eqs. ~2! and ~3! was better
+than 0.999.
+Using a linear relation between the treatment time and
+treatment length, a total treatment time formula for treatment
+length of L and treatment distance of d is generated,
+T ~ d,L ! ref5T ~ d,L 1 ! 1
+
+S
+
+D
+
+L2L 1
+• @ T ~ d,L 2 ! 2T ~ d,L 1 !# .
+L 2 2L 1
+~4!
+
+For nonreference cases where source strength is S ~Ci! and
+the prescription dose is D p ~cGy!, the total treatment time
+can be calculated by,
+T ~ d,L ! nonref5T ~ d,L ! ref•
+
+D p ~ cGy! •10 Ci
+.
+500 cGy•S ~ Ci!
+
+~5!
+
+A different formulation for checking total treatment time has
+been used by Ezzell at Wayne State University,24 where a
+simple dwell time pattern for single catheter implants was
+developed using film dosimetry instead of a mathematical
+optimization scheme. Ezzell’s relationship between the same
+parameters defined in Eq. ~1! is given by
+T5
+
+S
+
+D
+
+L
+D
+•
+.
+S
+0.0537•L123.09
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+d @cm#
+
+A
+
+B
+
+C
+
+1.5
+2.0
+2.5
+3.0
+
+0.402
+20.258
+20.619
+20.822
+
+0.923
+0.836
+0.751
+0.673
+
+20.0171
+20.0148
+20.0126
+20.0106
+
+Equation ~6! assumes anisotropy corrections, active lengths
+of 50–230 mm, a 5 mm separation between adjacent dwell
+positions and the following pattern of relative dwell weights:
+1.5,1.4,1.3,1.2,1.1,1.0,...,1.0,1.1,1.2,1.3,1.4,1.5.
+Optimized square and rectangular single-plane implants
+have also been systematically analyzed and dose indices developed in support of dose calculation verification.25 Define
+the dose index I as
+
+~2!
+
+Similarly, for the largest treatment length of L 2 5200 mm,
+the best fit was obtained with,
+2
+
+TABLE IV. Expected values of dose index for geometrically optimized planar implants, where the dose index is defined as, Dose index I5@dose at
+distance d from plane ~cGy!•area (cm2!# /@activity ~Ci!•total time ~s!#.
+Equivalent side E is E52• @ L•W/(L1W) # (cm), where L and W are
+length and width in cm of the implanted area L•W. I5A1B•E1C•E 2 ,
+where A, B, and C depend on d. Note: for a curved implant surface, increase I by 10%; for implants with deviated catheters and significant cold
+spots, decrease I by 5%.
+
+~6!
+
+I5
+
+D•A
+,
+S•T
+
+~7!
+
+where D is the dose in cGy at a distance d from the plane of
+the implant, A is the area of the implant in cm2, S is the
+source activity in Ci, and T is the total dwell time in seconds.
+The expected value of I is a simple quadratic function of
+the side, E, of the equivalent square implanted area which, in
+turn, is calculated from the familiar area/perimeter rule.
+Table IV gives the quadratic coefficients A, B, and C for
+several different reference distances d assuming inter catheter spacings of 1–1.5 cm and geometric optimization. For
+idealized implants, ranging in area from 3.033.5 cm2 to
+25.5322.5 cm2, Table IV provided the index, I, to within
+5%. The index I was calculated for a series of clinical implants, most of which were used to treat the tumor bed following surgical excision of extremity sarcomas. Despite significant deviation from ideal planar geometry following
+closure of the operative wound, the observed index agreed
+with the predicted value within 10% for all cases.
+In practice, applying these methods requires that the implant dimensions be determined independently from the localization radiographs and the activity be taken from a precalculated table. If these parameters are taken directly from
+the computer output, errors in the computation may go unnoticed ~see the first paragraph of this section!.
+
+5. Patient preparation
+Prior to patient treatment the applicators must be installed
+and treatment planning and treatment unit programming
+must be complete. This usually necessitates that the patient
+lie on a table or stretcher for times on the order of minutes, to
+possibly an hour. This wait time is often directly related to
+
+392
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+the treatment planning and unit programming time required.
+Patients should be cared for and kept as comfortable as possible while maintaining applicator positioning. Upon
+completion of treatment planning and treatment unit programming, the patient applicators are connected to the treatment unit. Applicator positioning should be verified and all
+connections verified. It is the strong recommendation of this
+Task Group that treatment planning and treatment unit programming activities not be routinely subject to time constraints.
+
+6. Patient setup and treatment
+While the physician and physicist are reviewing the treatment documentation, the radiation therapist can move the
+patient into the HDR room and proceed with positioning and
+connection of the applicators to the indexer. The radiation
+therapist should verify that all emergency equipment is
+present, that the survey meter @Geiger–Mueller ~GM! detector and/or ion chamber survey instrument# is present and in
+good operating order, and that informed consent forms are
+properly signed and filed in the chart. The Task Group notes
+that some GM meters register zero exposure in response to
+saturation-level radiation fields: the selected instrument
+should have a range from 0.1 mR/h to at least 1000 mR/h
+and should be checked by the medical physicist for appropriate response near the exposed HDR source. This check
+can be performed by placing a survey instrument at specific
+distances from the source, say, 100 cm, 200 cm, etc., and by
+taking the readings using a TV camera. A good practice is to
+know the radiation level just inside the entrance door to the
+treatment room when the source is exposed. This measurement can also be done using a TV camera. This measurement
+most likely excludes the meter saturation problem since the
+reading inside the door should be substantially low. If the
+upper range of the available GM meters is 100 mR/h, or if
+false readings in high intensity fields are of concern, an ion
+chamber should be used to cover the upper extreme of the
+exposure-rate range. Before each treatment, the detectors
+should be checked for correct function using the classical
+three-step process ~battery function, acceptable background
+reading when no radiation exposure is present, and correct
+response to a radioactive check source!.
+The identity of the patient shall be confirmed by an appropriate method. The USNRC Quality Management
+Program10 has adopted a more rigorous and inflexible standard, requiring that the patient be identified by two means:
+~1! by comparing the patient’s appearance with a photograph; and ~2! by asking the patient’s name or social security
+number and comparing this response with the chart. A second individual, e.g., physicist, should check that transfer
+tubes are free of kinks and that the applicator-treatment unit
+channel number correspondence agrees with the source localization documentation. In addition, the physicist should
+check that transfer tubes of the correct length ~for the Nucletron system, 1500 or 1000 mm transfer tubes are available
+for interstitial and intracavitary applicators! have been selected. Finally, applicator positioning in the patient should be
+Medical Physics, Vol. 25, No. 4, April 1998
+
+392
+
+checked against the marks or measurements obtained in the
+operating room.
+At this point, all treatment documentation should be fully
+reviewed and available to the machine operator, including
+the written prescription, a table of dwell times and position
+settings, and the treatment plan. Prior to initiating treatment,
+the operator should check that ~1! a signed prescription is
+available, ~2! physicist and physician have signed off on plan
+review, ~3! the fraction size listed on the computer plan and
+the prescription agree, ~4! the treatment to be given is consistent with the written prescription and the cumulative dose
+delivered by previous fractions, and ~5! dwell times, length
+settings, and step sizes programmed into the treatment unit
+agree with the computer plan listing or table prepared by the
+physicist. It is helpful for one individual to read the dwell
+times from the HDR printout, while the other compares these
+values to the treatment plan. Since manual keyboard entry of
+the treatment parameters describing a complex implant may
+require several hundred keystrokes, the likelihood of data
+entry error is high. Meticulous checking of such manually
+entered data is essential: whenever possible, prestored standard configurations or direct entry from the treatment planning computer should be used. In any case, at least one person ~usually the physicist! must check the printed treatment
+program against the treatment plan.
+The Task Group recommends that the physicist and an
+individual qualified to remove the applicators from the patient under emergency conditions shall attend the treatment
+and be prepared to detect emergency conditions and implement the appropriate responses. This second person will usually be the attending radiation oncologist who shall be responsible for safe and rapid execution of applicator removal.
+However, the attending radiation oncologist may delegate
+this duty to an appropriate medical professional, e.g., nurse
+or resident physician, who has appropriate training in applicator removal and radiation safety procedures. The recommended approach is more flexible than that imposed by the
+USNRC in May 1993. USNRC requires that both an authorized user ~a radiation oncologist authorized to prescribe
+brachytherapy! and a medical physicist ~or radiation safety
+officer! be physically present at all HDR treatments.11 The
+Task Group strongly condemns the use of any health professionals, who are not properly trained with HDR device operation and treatment delivery as an alternative to staffing
+HDR treatments by a qualified medical physicist. If warranted by the patient’s medical condition, a nurse and proper
+monitoring equipment should be present. Emergency procedures should be planned and reviewed annually by the team
+including how and under what conditions applicators are to
+be removed and who is responsible for what. Upon initiating
+treatment, the physicist should observe the treatment console
+and should be aware of which catheter is involved should an
+alarm condition interrupt treatment. Whenever treatment is
+interrupted, it is essential to check the area monitor to confirm that the source has been retracted.
+
+393
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+393
+
+7. Post-treatment quality assurance
+
+1. Physical plant emergencies
+
+After treatment is completed and the area monitor indicates no exposure in the room, the room and patient should
+be surveyed with an appropriate hand-held detector to confirm that the source is fully retracted into its shielded storage
+position. As a final check of treatment accuracy, the administered dwell times listed on the treatment unit printout,
+should be compared to the originally programmed time. All
+QA checklists and documentation should be reviewed for
+completeness and filed away in the chart along with the treatment history printed out by the HDR unit. The room and
+HDR key should be secured as specified by the user’s license.
+
+These emergencies include fire, physical disasters
+~storms, tornadoes, floods, earthquakes, etc.!, and transient
+power interruptions or longer power failures. All medical
+facilities will have planned responses to physical plant emergencies. These are usually well established separate response
+sequences for fire, storms, and power failures that generally
+involve, not necessarily always in this sequence, removing
+the patient from the area, securing the area, reporting the
+problem to the appropriate authorities in the medical facility,
+and then recovery from the incident. RAUs meet FDA standards and are well designed to withstand physical damage
+during these conventional emergencies; however, those responding to the emergency must know, generally through
+posted signs, that the area contains a radioactive device, requiring certain additional precautions. Generally confirmation ~by inspection or radiation survey! by knowledgeable
+staff that the RAU is in a safe condition is usually required.
+Conventional emergencies such as power loss or a fire in
+the device may well effect operation of the device. Loss of
+power is handled differently by each manufacturer. However, usually the RAUs have backup batteries or power packs
+designed to retract the source during a power failure and to
+provide power to the computer or microprocessor to retain
+memory and treatment information on the partially delivered
+treatment.
+
+V. EMERGENCY PROCEDURES FOR HDR
+REMOTE AFTERLOADING UNITS
+Even though the likelihood of major emergencies, i.e.,
+source detachment during treatment is exceedingly low, this
+report strongly recommends that all HDR brachytherapy
+treatment users shall learn and periodically retrain to operate
+the devices and to respond properly to emergencies, as recently reviewed.26 For HDRB the USNRC has required that
+licensees have ‘‘written emergency procedures describing
+actions to be taken, including surgical intervention, should
+the source not return to the shielded container at the conclusion of treatment.’’ 9 The USNRC also directs the licensee to
+have ‘‘appropriate staff and equipment available in support
+of these procedures.’’ 9 This directive, and other USNRC
+regulations, applies in the 21 states in which the USNRC has
+jurisdiction. In the 29 Agreement States this directive and
+other USNRC regulations may not currently apply as each
+Agreement State has some time and flexibility in adopting
+USNRC directives and regulations. However, it is likely that
+more Agreement States will be adopting current and proposed USNRC regulations, perhaps in modified form, for
+RAUs in the next few years.
+A. Routine emergency equipment
+
+Routine emergency safety precautions require either having an emergency container available in the treatment room,
+as well as an emergency kit containing Kelly surgical clamps
+and long-handled positive spring action forceps for manipulation of the source guide tubes and applicators if the source
+fails to return to the safe. These forceps must be readily
+available for use. The emergency container should be placed
+close to the patient and should be large enough to accept the
+entire applicator assembly, containing the source, removed
+from any patient. Additional medical supplies ~described
+later! and associated devices to assist with emergency applicator removal should be readily available.
+B. Emergencies
+
+What constitutes an emergency? We consider emergencies separated into three categories: conventional physical
+plant emergencies not directly related to the RAU, and minor
+and major emergencies associated with the RAU.
+Medical Physics, Vol. 25, No. 4, April 1998
+
+2. Minor emergencies involving the RAU
+This less serious category constitutes abnormal performance of the device that prevents or interrupts treatment
+~e.g., loose source guide tube connector, vault door not properly closed, etc.!, followed by recovery actions that correct
+the abnormality allowing treatment to resume to termination.
+The more serious category involves operator physical intervention ~e.g., room entry! to retract the radioactive source
+into the RAU’s protective safe. While major emergencies
+have greater possibility for unplanned radiation exposure to
+both the patient and operator personnel, minor emergencies
+occur more frequently.
+Manufacturers offer the operator, through displayed messages or error codes, instructions on how to respond to an
+abnormal occurrences or machine malfunction. The type and
+number of these error messages usually varies with the complexity of the equipment. Ideally, operators should immediately recognize the meanings of all status lamps, audible
+alarms, and printed or displayed messages that indicate malfunctions. However, if the number of error codes is large,
+training should focus on recognizing those most likely to
+occur most frequently during routine treatments. However, a
+complete status code list must be readily available at the
+operator’s console for instant access during emergencies.
+Any status messages displayed in numeric code must be
+identified in well-understood terms, e.g., kinked tube,
+jammed cable, etc. Often, it is useful to recast the vendor’s
+numeric status message codes into tables that clearly indicate
+the status of all indicators ~lamps, audible signals, printed
+
+394
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+394
+TABLE V. Approximate doses ~cGy! delivered at distances ~cm!, from 10 Ci
+(3.731011 Bq) and 5 Ci (1.8531011 Bq) Ir-192 sources in elapsed time
+~minutes!.
+Distances ~cm!
+
+Time
+~min!
+
+Activity
+~Ci!
+
+1
+
+10
+
+25
+
+50
+
+100
+
+0.5
+
+10
+5
+10
+5
+10
+5
+10
+5
+10
+5
+
+366
+183
+732
+366
+1460
+730
+3660
+1830
+7320
+3660
+
+3.7
+1.9
+7.5
+3.7
+15
+7.5
+37
+19
+75
+37
+
+0.60
+0.30
+1.2
+0.60
+2.4
+1.2
+6.0
+3.0
+12
+6.0
+
+0.15
+0.08
+0.30
+0.15
+0.60
+0.30
+1.5
+0.75
+3.0
+1.5
+
+0.037
+0.019
+0.075
+0.037
+0.150
+0.075
+0.370
+0.19
+0.75
+0.37
+
+1.0
+2.0
+5.0
+10
+FIG. 5. Approximate dose rate versus distance for 10 Ci (3.731011 Bq) and
+5 Ci (1.8531011 Bq) Ir-192 sources.
+
+tape message, etc.! when the code occurs, and clearly state
+the recovery actions.
+Operators must recognize messages to answer the question ‘‘Can I recover or must I abort the treatment?’’ Recovery actions and operation sequences must be clearly understood and practiced. One reported misadministration
+occurred because operators failed to properly respond to a
+minor malfunction. For training it is useful to know which
+error codes can be safely and readily simulated by the RAU
+so operators can be trained to respond to those codes. However, simulation of the emergency must not place the equipment or the operators at risk. Conversely, those malfunctions
+that produce error codes that cannot be simulated on the
+RAU must be identified so the operators can be trained to
+recognize and respond to these situations. A degree of realism is lost in training sessions when the console display cannot produce the indicators for the emergency.
+
+3. Major emergencies
+The more serious emergencies, e.g., source retraction failure, patient medical emergency, total computer failure, etc.,
+involve operator physical intervention, and possibly the
+physical intervention of the radiation oncologist, operators,
+and the physicist to retract the high dose rate source into the
+safe or to clean a blockage or system fault that is preventing
+proper source retraction.
+Establishing emergency procedures ~EPs! for these more
+serious emergencies generally involves the following steps:
+~1! establishing policy about EPs; ~2! preparing initial action
+sequences for written EPs; ~3! identifying and obtaining
+equipment necessary to perform EPs; ~4! testing initial written EPs; ~5! revising action sequences and written EPs following tests and written final EPs; ~6! preparation of training
+materials and didactic education of staff in EPs; ~7! applied
+~hands-on! execution of EPs; ~8! necessary revisions in EPs
+identified during training; and ~9! repeat EP training at specified intervals.
+The emergency may be observed by activation of emergency indicators at the console, by simple observation that a
+Medical Physics, Vol. 25, No. 4, April 1998
+
+treatment is too long, by noticing that the computer system
+clearly has failed, or that an excessive radiation level exists
+after treatment.
+In the design of EPs that require personnel intervention
+and possible entry into the vault, the procedures must be
+designed to reduce the radiation dose to the patient by retracting the source from the patient as soon as possible while
+minimizing the radiation exposure to personnel performing
+the source retraction. Figure 5 graphs the dose rate, in cGy/
+min, as a function of distance, in cm, from 10 and 5 Ci
+sources. Table V shows the dose to personnel as a function
+of distance and time, for both 10 and 5 Ci sources. Figure 6
+shows dose rates at the periphery of the volume of tissue
+irradiated by a static 10 Ci source. The dose rate is about 400
+cGy/min at the periphery of a sphere of 10 cm3. Clearly
+speed is of the essence in removing the source from the
+patient in order to limit the dose to small volumes of local
+tissue.
+Generally, during an emergency, the goal should be to
+keep effective dose equivalents to personnel to less than the
+5 Sv ~or 5000 mrem! per year limit. As shown in Table V, if
+one’s distance is 25 cm from the source during an emer-
+
+FIG. 6. Dose rates at the periphery of volumes of tissue irradiated by a static
+10 Ci (3.731011 Bq) Ir-192 source.
+
+395
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+gency, depending on source activity, one would receive a
+3–6 cGy dose in about 5 min while resolving the emergency.
+However, at 1 cm, the dose to the patient would be about
+1830–3660 cGy of undesired dose. Clearly, depending on
+source activity, the source must be retracted within 1 to 2
+min to keep the dose to the patient to within nominal values
+of several hundreds of centigrays normally associated with
+various fractionation regimens. While the radiobiology of
+dose and fractionation is beyond the scope of this paper, an
+unplanned local dose approximately equivalent to a planned
+treatment dose fraction, while undesired, is unlikely to cause
+serious consequences, such as the death of the patient. Hence
+speed is all important in executing emergency procedures to
+minimize not only the dose to the patient but also the exposure to personnel.
+Manufacturers provide suggested emergency procedures
+if the source fails to return to the safe. These generally are
+short single page synopsis, suitable for posting, of the necessary sequential steps involved in the emergency procedure.
+They assume the physical integrity of the applicator is maintained. These EPs are specific to the RAU but generally involve the following sequence, assuming that if the initial
+action fails to lead to recovery, that the following action is
+required. The generic sequence is ~1! observation at console
+of error message and emergency indicators ~audible and visible alarms!; ~2! recovery at the console ~e.g., pressing an
+emergency off button!; ~3! entry into the room with a portable radiation survey meter ~opening the door activates the
+interlock that retracts the source!; ~4! observation of radiation levels in the room ~by mounted monitors or portable
+survey meters!; ~5! recovery at the RAU ~pressing an emergency off button on the RAU!; ~6! manual retraction of the
+source ~using a hand crank!; ~7! patient survey and RAU
+survey ~confirming source is in the safe!; ~8! applicator removal and placement in the emergency container; ~9! patient
+survey and emergency container survey ~to confirm source is
+not in the patient and is in the emergency container!; and
+~10! removal of patient from the vault ~with subsequent redundant survey with a GM meter!.
+Glasgow26 has described the emergency equipment for a
+GammaMed IIi HDR unit, assuming the integrity of the applicator is maintained. The emergency kit consists of equipment ~GM meter, ionization survey meter, Danger: Open
+Radiation Source - Keep Out! sign! to be at the operating
+console outside the treatment vault and equipment, listed in
+Table VI, to be placed in the vault in the emergency kit prior
+to the treatment. If, for any reason applicator removal is not
+the first choice, then, ~1! extract the source from the applicator ~first attempted from the distal end connection from the
+applicator, failing that, from the proximal end connection of
+the applicator!; if the source cannot be removed from the
+applicator, ~2! remove applicators by a qualified radiation
+oncologist. The applicator removal procedures are identified
+by applicator type ~e.g., small intraluminal, large intracavitary, and sutured interstitial applicators.! Table VII lists an
+abbreviated sequence of general steps for the removal of the
+small intraluminal and large intracavitary applicators. Table
+VIII lists the explicit steps for the removal of a sutured inMedical Physics, Vol. 25, No. 4, April 1998
+
+395
+TABLE VI. Suggested components for an emergency kit for an RAU.
+A. At the console outside the room:
+Sign-‘‘Danger-Open Radiation Source-Keep Out!’’
+Geiger–Muller meter ~0.1–100 mR/h range!
+Ionization survey meter ~1–1000 mR/h range!
+B. Inside the room:
+Short handle ~12–15 in.! positive spring action forceps
+Long handle ~18–24 in.! positive spring action forceps
+Kelly surgical clamps
+High quality flashlight and fresh spare batteries
+Suture removal kit
+Suture kit
+
+terstitialapplicator. Table IX lists the specific components of
+the suture removal and resuturing kit.
+All of these discussions of emergency procedures assumed that the integrity of the applicator was maintained.
+However, applicators can fail, as occurred when a source
+jammed in a bent plastic catheter.27 This illustrates the importance of the fundamental rule of EPs: EPs must be pre-
+
+TABLE VII. Physician surgical intervention procedures.
+The procedures assume that:
+~1! the applicator has not ruptured and that the source is in the
+applicator;
+~2! all attempts to remove the source drive cable with source from
+the applicator failed;
+~3! the applicator can be quickly removed in a medically safe
+manner;
+~4! the physician has direct responsibility for removing any
+applicator; other personnel can assist, but minimize the number
+of personnel present;
+~5! the applicator must be removed as quickly as possible;
+~6! all procedures required to protect personnel from blood apply.
+SMALL INTRALUMINAL TUBE OR LARGE
+INTRACAVITARY APPLICATORS
+~1! Release the tube or applicator from any retaining device.
+~2! Using the Kelly clamps or other remote manipulators grasp the
+tube or applicator near the connection to the source guide tube
+to the tube or applicator.
+~3! Extract the tube or applicator from the patient. Do NOT grasp
+the tube or applicator with your hand. With a second set of
+Kelly clamps or remote manipulators grasp the tube or
+applicator near its end and place it into the emergency
+container.
+~4! Place the shield cover on the top of the emergency container.
+~5! Remove the patient from the interior of the treatment room to
+the maze, away from the emergency container, but still in the
+shielded portion of the maze. Survey the patient with the
+ionization survey meter to ensure the source is out. Remove the
+patient from the room and repeat the survey with the GM
+meter.
+~6! Lock the door; post the door with the sign ‘‘Danger-Open
+Radiation Source-Keep Out!’’. Notify posted list of
+personnel.
+
+396
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+396
+
+pared assuming that the initial recovery action sequence
+fails, that subsequent recovery action sequences fail, and that
+the assumptions on which the EPs are based may be invalidated during the emergency. Emergency procedures should
+be prepared, if possible, for the worst case scenarios.
+What emergency actions are required if the source separates from the cable and falls on the floor, or, if the source
+capsule ruptures and disperses the source element on the
+floor? Retrieval of just the source or source element generally may require special retrieval equipment and radiation
+precautions, and should not be considered as part of the normal emergency action sequence involving the radiation
+therapy operators and radiation oncologists. If radiation surveys reveal the source is not in the patient, the safe, nor the
+emergency can, but is elsewhere in the vault, speedy evacuation of the patient and personnel from the room will minimize radiation exposure. However, one must ensure, by careful radiation surveys, that no radioactive material has been
+tracked out of the vault on the bottoms of shoes. The vault
+should be secured, posted with a Danger: Open Radioactive
+Source - Keep Out! sign, and a notification process begun of
+those responsible for source retrieval. Normally, the vendor
+will assume responsibility for source retrieval.
+The ultimate emergency would be to lose a source in a
+patient; some accident in which the applicator fails, and the
+source breaks loose and lodges in the patient. Theoretically,
+this would not occur because the license application commits
+the user that they shall not conduct any treatment procedure
+for which a decoupled or jammed source could not be removed expeditiously from the patient and placed in the
+shielded container.27 Following an emergency procedure, it
+is essential that the users know the dose delivered if the
+treatment was interrupted and how to program the unit for
+the remaining portion of the treatment.
+
+TABLE VIII. Physician surgical intervention procedures.
+
+C. Practical concerns
+
+TABLE IX. Suggested items for removal of sutured applicators and resuturing the anatomic site, if necessary. All items are in sterile packages.
+
+Practice of EPs generally will cause their revision to make
+them more practical. The contents of the emergency kit must
+be carefully selected and tested. For example, the original
+emergency kit contents described by Glasgow26 subsequently
+was reduced to the 9 items listed in Table VI. Personnel
+should use their wristwatches for estimating all elapsed times
+during emergencies, as wall clocks generally display different times in different rooms.
+Personnel should know the status of all radiation indicators in the room at the successful completion of an emergency procedure. If radiation alarms are to be activated for
+HDRB, they should be off when the source is properly in the
+emergency container. They should be tested to ensure that is
+the case. The exposure rate around a 4 in. diameter emergency lead can with a 1 in. thick wall, containing a 10 Ci
+source, is about 1 mR/h at 0.5 m and exceeds 10 mR/h only
+near the edge of the emergency container. A radiation survey
+of the radiation exposure rates around an emergency container containing a 10 Ci source should be made to confirm
+Medical Physics, Vol. 25, No. 4, April 1998
+
+The procedures assume the same assumption as in Table VII.
+SUTURED CATHETER OR NEEDLE APPLICATORS
+~1! Identify at the console, by display or by visible inspection by
+the CCTV of the transparent source guide tubes, the source
+guide tube that contains the source drive cable and source and
+the catheter or needle to which it is attached.
+~2! Use the suture removal kit; working as quickly as possible, cut
+all sutures retaining the identified catheter, needle, or, if
+necessary, the device holding the catheters and needles.
+~3! Using the Kelly clamps or other remote manipulators grasp the
+catheter or needle and carefully extract it from the patient and
+place it in the emergency container. DO NOT grasp the
+catheter or needles with your hand. If the patient could bleed, a
+second person should have swabs available to apply
+compression.
+~4! Place the shield cover on the top of the emergency container.
+~5! Institute the patient removal and survey sequence and room
+security sequence described in Table VII, steps ~5! and ~6!.
+
+that the container shields properly and that radiation monitors cease alarming when the source is placed in the container.
+D. Conclusions
+
+The RAUs are complex devices that require that the personnel operating, using, and caring for patients with these devices be exceptionally well-trained in normal operation of
+the units and be equally well-trained to respond to minor and
+major emergencies. Properly trained staff must be able to
+recognize errors and to recover from minor emergencies
+without incident. They must also be able to respond to serious emergencies that involve vault entry and emergency
+
+A. Sutured Applicator Removal Three suture removal kits with
+scissors and overwrap
+Four betadine swab sticks
+Ten 434 in. 12-ply gauze
+Ten cotton tip applicators
+Six latex glove sets
+B. Suture Kit
+Small towel clips
+Blair brown needle holder
+Webster needle holder
+5 1/2 in. SB scissors
+6 in. tissue forceps
+Adson tissue forceps
+Curved mosquito forceps
+Straight mosquito forceps
+434 in. gauze sponge
+Drape sheet
+Green towel
+Chromic gut suture
+4-0 silk suture
+Proline polypropylene suture
+
+397
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+397
+
+TABLE X. Pretreatment QA checks. For routine applications, these tests can be performed by the radiation
+therapist or source curator.
+System tested
+
+Test end point
+
+Reusable applicators,
+e.g., intracavitary
+applicators
+
+Completeness,
+operable condition, and
+structural integrity
+
+All applicator components, caps, cylinder segments,
+clamps, tools, and other accessories available. Plastic
+components not cracked or abraded and fit tightly over
+metal tubes. Applicator appropriately sterilized.
+
+Single-use interstitial
+and transluminal
+applicators
+
+Identity
+Correct function
+
+Correct diameter and length
+Buttons, connectors, etc., fit on applicators. Applicators
+not kinked. If indicated, perform simulated treatment on
+machine.
+All accessories present
+If active source positioning requires fixed length, sound
+each applicator
+
+Completeness
+Positional accuracy
+
+Test methodology
+
+Templates and other
+custom devices
+
+Correct function
+Identity
+
+Correct hole diameter
+Review spacing, dimensions, etc., with physician or
+physicist
+
+Operating room
+readiness
+
+All required equipment
+and medical resources
+available
+
+Arrangement in advance. Verify on day of procedure.
+
+Remote afterloader
+
+Correct function of
+device and safety
+accessories
+
+Execute daily QA protocol the morning of the procedure
+
+source retraction. Staff properly executing recovery actions
+during these emergencies are not likely to receive dose
+equivalents that exceed annual regulatory limits for whole
+body exposure. Unplanned local doses to the patients are
+likely to be similar to prescribed doses if recovery actions are
+executed promptly. Proper, well tested, readily available
+emergency equipment will facilitate speedy recovery during
+serious emergencies. Personnel must receive appropriate and
+frequent training, including practice sessions with simulated
+emergencies, to be properly prepared for emergencies.
+
+Any single major abnormal occurrence or unit malfunction must be thoroughly investigated, usually by contacting
+the vendor, and corrected before the unit is used for additional treatment. Thorough quality assurance is required after
+such incidents occur.
+APPENDIX: RECOMMENDED CHECK-OFF LIST
+The TG-59 recommends that institutional HDR brachytherapy treatment delivery procedures address the safety and
+
+TABLE XI. Essential physics and QA duties during applicator insertion.
+System tested
+Applicator identity
+
+Test end point
+
+Test methodology
+
+Applicator type and dimensions
+~e.g., cylinder or colpostat
+diameter! consistent with
+clinician’s intent
+
+Hand requested applicator to physician, make certain
+physician knows which one is inserted into patient and is
+compatible with selected modality ~HDR, LDR, Manual,
+etc.!
+
+Limitations of afterloader respected
+
+Adequate distal margin and proximal leader to allow
+connection to treatment unit. Treatment volume within
+programmable range. Catheters not kinked or constricted
+during insertion.
+Direct visualization
+
+Applicator insertion
+All adapters, radiographic
+markers, clamps correctly
+assembled
+Location of target
+volume
+
+Operating room data relevant to
+defining distal- and proximalmost dwell positions in each
+catheter identified
+
+Ask radiation oncologist how target volume/area is
+identified. Record all relevant information, e.g., surgical
+clip location, bronchoscope insertion depth to tumor
+margin, radiographic landmarks, etc.
+
+Treatment record
+
+Inserted applicators accurately
+recorded
+
+Verify diagram drawn against observations
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+398
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+398
+
+TABLE XII. Essential physics and QA duties during radiographic examination of the implant.
+System tested
+
+Test end point
+
+Applicator identity
+
+Applicator numbering system
+matches diagram
+
+One person attaches labels, another observes
+and records data on diagram. Recorded data
+checked.
+
+Simulation marker
+identity
+
+Radiographically distinct
+markers distributed so as to
+enhance matching on two
+radiographs
+
+Consult experienced dosimetrist or physicist for
+complex cases
+
+Applicator-marker identity
+correctly recorded. Markers
+correctly inserted
+
+One person inserts markers, another observes,
+verifies, and records data on diagram
+
+Treatment record
+
+Inserted applicators accurately
+recorded
+
+Verify diagram drawn against observations
+
+Radiographs
+
+Beam geometry satisfies
+reconstruction algorithm,
+adequate quality and catheter
+separation for matching
+
+Dosimetrist reviews radiographs
+
+Radiograph quality adequate
+for clinical evaluation
+
+Radiation oncologist reviews radiographs. AP
+and lateral views obtained if oblique views used
+for implant reconstruction
+
+QA checks listed below. The Task Group notes that not all
+items are applicable to all types of equipment and procedures
+and that individual users may wish to augment this list to
+reflect their institutional practice patterns, staffing level and
+cost-benefit analyses. Individual users should adapt the rec-
+
+Test methodology
+
+ommended QA procedures to suit their needs. The check-off
+list summarizes the TG-59 Report recommendations contained in Tables X–XVII.
+The central purpose of the check-off list is to define QA
+and safety checks to be performed during the execution of
+
+TABLE XIII. Essential elements of the treatment prescription process. The individual listed first is responsible
+for executing the activity while the second individual is responsible for verifying the procedure.
+Responsible
+individual
+Radiation oncologist
+
+Physicist
+
+Activity
+Complete, sign, and date
+prescription
+Review radiographs and mark
+treatment and/or target
+volume and sign
+Define dose prescription and
+optimization criteria
+
+Radiation oncologist
+and physicist
+
+Methodology
+
+Define treatment planning
+constraints ~maximum and
+minimum doses, normal
+tissue tolerances, etc.!
+
+Physicist/Dosimetrist: Question deviations
+from treatment policies or customary practice
+
+If high-frequency procedure or clinical indication
+for treatment, written treatment policies which
+describe the dose specification and optimization
+processes should be available
+If procedure is infrequent, customized, or
+otherwise unusual, physician and physicist
+should work together to address these
+questions
+If standard pattern used ~e.g., intracavitary
+implant!, procedure type and protocol identified
+
+Physicist
+
+Active dwell positions selected
+and documented
+
+Dosimetrist
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+If identified and marked radiographically
+confirm that the all relevant data defining target
+volume is consistent with proposed dwell
+position distribution
+
+399
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+399
+
+TABLE XIV. Critical steps in the treatment planning process. The individual listed first ~primary! is responsible
+for executing the activity while the second individual ~secondary! is responsible for verifying the procedure.
+Primary/secondary
+individual
+
+Physicist/Dosimetrist
+
+Activity
+
+Review treatment
+planningprocedure
+
+Methodology
+Physicist reviews with dosimetrist:
+which written procedure, if any, to be followed.
+or identifies reconstruction, optimization, dose
+specification procedures to be used for this case
+If standard pattern used ~e.g., intracavitary
+implant!, procedure type and protocol identified
+
+Dosimetrist/Physicist
+
+Active dwell positions
+localization
+Channel numbers matched to radiographic
+image, treatment length, and first and last dwell
+positions in each catheter calculated. Physicist
+to review.
+
+Dosimetrist
+
+Verify plan input data
+
+Radiation oncologist
+
+Assess clinical adequacy of
+plan
+Accept or reject plan
+
+Compare patient name on prescription,
+radiographs, localization data, and HDR
+treatment schedule
+Confirm date/time displayed on RTP, and that
+displayed source strength agrees with source
+inventory or chart
+Check entered daily dose against prescription,
+for each catheter check length, dwell spacing,
+and active dwell position numbers against
+localization protocol or planning procedure
+Check radiograph orientations, distances,
+magnifications, and gantry angles against
+requirements for selected source position
+reconstruction algorithm
+Intended volume treated to desired dose
+
+each individual patient treatment. The checklist is intended
+not only to maximize safe and accurate execution of each
+treatment, but to define the procedure flow. Our recommendations assume that a periodic device-oriented QA program
+for the remote afterloader, treatment planning system, applicators, QA test equipment, and other accessories has been
+implemented according the AAPM Task Group 56
+guidelines.6 TG-56 recommends that QA protocols be executed at annual, quarterly ~following each source exchange!, and daily intervals. The associated tests include
+HDR source calibration and other functional parameters testing which ensure that the desired dose distribution and
+spatial-temporal distribution of radioactivity are delivered as
+intended by the attending radiation oncologist. The device
+QA protocol also addresses patient and staff safety, radiation
+barrier adequacy, and function of critical safety interlocks
+and warning systems. In contrast, the TG-59 report emphasizes day-of-treatment checks. An important component is
+the daily QA equipment checks, which are reproduced below
+from the AAPM Task Group 56 Report.6 The purpose of this
+set of global but nonspecific tests is to confirm the correct
+operation of the treatment unit and availability of needed
+accessories on the day of treatment. The additional checks
+listed below emphasize accuracy and safety of treatment
+planning and delivery processes, and are designed to enhance
+Medical Physics, Vol. 25, No. 4, April 1998
+
+Optimization goals and constraints satisfied
+
+correct execution of assigned tasks by the treatment delivery
+team and accurate information transfer from one team member to another, rather than correct operation of equipment.
+In order to facilitate correct communication among treatment delivery team members, the use of certain forms may
+be recommended. For example;
+~1! Prescription Form and Daily Treatment Record. See
+Treatment prescription below.
+~2! Pre-treatment Physicist Treatment Plan Review, which
+should have entries for all input and output to be
+checked. See ~2!–~7!.
+~3! Daily Equipment QA Protocol as described in 1.
+~4! Dwell-Position Localization Form for complex multicatheter implants ~see Fig. 4!.
+~5! ‘‘Master QA Checkoff List’’ which describes the QA
+test sequence and mentions all tests not covered by the
+more specific forms ~2!–~5!.
+Additionally, the signed Informed Consent Form and other
+critical technical and clinical information should be available
+in the patient chart.
+In the following, a suggested list of QA checkoff items is
+given in order of HDR procedure.
+
+400
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+400
+
+‘TABLE XV. Pretreatment physicist review of HDR treatment plan and dwell-time calculations.
+End point
+
+Check methodology
+
+Patient identity
+
+Compare patient names/numbers/dates printed on
+prescription, simulator radiographs, chart, and localization
+form
+
+Input data
+
+As described in text
+
+Positional accuracy/
+Implant geometry
+
+Plan optimization process
+
+Applicators modeled in treatment plan match those of
+operating room description and implant diagram
+Verify matching and localization calculations against
+radiographs if interstitial ortransluminal implant.
+Compare active dwell positions, dwell separation, and
+treatment length listed on computer plan to localization
+form or to appropriate treatment planning procedure.
+Compare three orthogonal dimensions of implant measured
+from AP and lateral radiographs to corresponding
+dimensions of graphic plan. Check radiograph orientations,
+distances, magnifications, and gantry anglesagainst
+requirements for selected source position reconstruction
+algorithm.
+Appropriate optimization option used.
+Dose optimization and dose specification points in correct
+location relative to dwell positions on graphic plan.
+Expected isodose curve passes through dose specification
+points.
+Optimization algorithm produces expected distribution of
+dwell weights, coverage of target volume, and distribution/
+magnitude of hot spots or peripheral/central
+minimum dose ratio. Implant quality parameters derived
+from dose-volume histograms, if available and previously
+validated, should be checked.
+
+Dose calculation
+accuracy
+
+~RAK!/dose ratio falls within expected range.
+Assuming distribution of dwell times on computer plan
+printout, manually
+calculated dose agrees with dose calculated by RTP system
+within expected tolerance.
+Doses at clinically important points of interest agree with
+values interpolated from isodoses.
+Isodose curves calculated in appropriate planes.
+
+Clinical adequacy
+
+Prescribed dose, applicator selected, and dose distribution
+consistent with Policies of Treatment for patient’s disease
+or physicist’s understanding of physician’s clinical intent.
+Volume covered by prescription isodose surface consistent
+with all known target localization data.
+Maximum dose and dose to critical anatomic structures,
+including previously administered therapy, within accepted
+range.
+
+Daily treatment record
+
+Source strength, total dwell time, total IRAK, no. and type
+of applicators correctly entered into daily treatment record.
+
+1. Daily QA checks on the remote afterloader
+
+~a! Correct function of
+~1! backup battery;
+~2! audible and visual treatment status ~source and cable status! indicators at console and above door;
+~3! independent aerial radiation monitor~s!;
+~4! audio-visual communication systems;
+~5! remote afterloader during a simulated treatment;
+Medical Physics, Vol. 25, No. 4, April 1998
+
+~6! door interlock and audible/visual error and alarm indicators;
+~7! dedicated fluoroscopy/imaging system if available.
+~b! Accuracy of
+~1! decayed source strength programmed into treatment unit
+and planning system;
+~2! timer and radiation output using tertiary standard or
+timer sport check. ~The AAPM TG-59 recommends, but
+
+401
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+401
+
+TABLE XVI. Pretreatment safety checks to be performed after patient setup and treatment programming.
+End point
+
+Individual
+
+Patient identity
+
+Operator
+
+Any method appropriate to patient mental
+condition and degree of operator familiarity with
+patient. Check patient name against that on
+chart and treatment plan.
+
+Prescription followed
+
+Operator
+
+Compare dose/fraction on treatment plan and prescription.
+Compare total dose and no. of fractions against treatment
+previously given.
+Compare source strength on treatment plan and remote
+afterloader.
+Check: Prescription filled out and signed, physician and
+physicist have signed off on treatment documentation.
+Correct length transfer tubes used; applicator no.-channel
+no. correspondence correct.
+Dwell times and positional settings printed by afterloader
+match treatment plan.
+
+Setup accuracy
+
+Physicist
+
+Programmed afterloader settings match treatment plan.
+Correct length transfer tubes used; applicator no.-channel
+no. correspondence correct.
+Applicator positioning checked against operating room
+measurements, reference marks
+
+Operator
+
+Methodology
+
+does not require, a global test of timer accuracy and
+source output by obtaining an integrated reading using a
+radiation detector and jig for fixing the source-detector
+geometry which has been previously calibrated against
+the secondary standard used for quarterly source calibration.!
+~3! Source positioning.
+~c! Availability, condition, and correct function of
+~1! Emergency Procedures Kit and Emergency Safe;
+~2! Emergency procedures or instructions;
+~3! Treatment unit operator’s manual;
+~4! Handheld GM counter and/or survey meter.
+2. Applicator preparation
+
+~1! All applicator components and accessory available.
+~2! Plastic components in good condition.
+~3! Applicators’ correct length and diameters.
+
+~4! Applicator properly sterilized and valid date of sterilization.
+3. Applicator insertion
+
+~1! Patient identification.
+~2! Label dummy markers.
+~3! Hand and check-off requested applicator to physician.
+~4! Applicator configuration same as preplan ~predesign or
+plan intention!.
+~5! Record all relevant information and draw diagram
+against observation and compare with preplan.
+4. Implant localization and simulator
+
+~1! Patient identification.
+~2! Labels on dummy markers.
+~3! Compare dummy marker drawing against the plan drawing.
+~4! Quality of the localization radiographs.
+
+TABLE XVII. Post-treatment QA checks.
+End point
+
+Individual
+
+Patient/personnel
+safety
+
+Operator
+
+Treatment accuracy
+
+Operator
+
+Chart order
+
+Operator
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+Methodology
+Area monitor checked before entering the room.
+Enter room leading with survey instrument to
+confirm complete retraction of source
+HDR device shut down and secured after
+patient removed
+Fill in daily treatment record.
+Compare total dwell time on treatment unit
+printout agrees with calculation.
+All forms and checklists complete and properly
+filed in chart.
+
+402
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+~5! Label the radiographs.
+~6! Depict or draw treatment volume on radiographs or elsewhere.
+5. Treatment prescription
+
+~1! Physician’s signature and the date.
+~2! Patient identity.
+~3! Applicator specifications.
+~4! Type of treatment and the treatment site.
+~5! Total dose, fraction size, and a number of fractions.
+~6! Treatment date and time.
+~7! Overall treatment strategy including HDR and external
+beam.
+~8! Optimization goals and constraints satisfactory.
+~9! Check if extra dummy wire test is needed because of
+tight bends.
+6. Treatment plan
+
+~1! Software version number, source calibration date, source
+strength.
+~2! Today’s date, and source strength against decayed
+strength.
+~3! Correct system data file.
+~4! Default parameters used for dose calculations.
+7. Pretreatment review „independent check…
+
+A. General
+
+402
+
+~6! Source geometry reconstruction.
+~7! Start and end dwell positions.
+~8! Correct Indexer Length for each catheter.
+~9! Radiograph orientation, magnifications, and film-tosource distance.
+~10! Applicator points coordinates.
+~11! Correct dose optimization points on printout and plot.
+~12! Correct prescription-point dose on printout and plot.
+~13! Reasonable plot for the positions of the patient points.
+~14! Check on the printout that the doses to the patient
+points are reasonable.
+~15! Reasonable agreement with previous plan.
+~16! Smooth dummy wire travel.
+
+D. Program card printout
+Check that the information on the program card printout
+is correct and the same as that in the prescription and plan
+printout.
+~1! Same step size as in plan printout.
+~2! Total number of catheters agreeing with that in the plan
+printout.
+~3! Total treatment time agreeing with that in the plan printout.
+~4! Indexer length agreeing with that in the plan printout.
+~5! Correct channel number~s!.
+~6! First and last dwell positions agreeing with the plan
+printout.
+~7! Correct indexer length and offset for each catheter.
+
+Should have
+~1! Physician Prescription Form, completed, signed, and
+dated;
+~2! HDR Physics Form, filled out, signed, and dated;
+~3! all simulator radiographs;
+~4! patient chart, including all previous HDR plans;
+~5! isodose plot of current plan, signed by physician;
+~6! printout of current plan;
+~7! printout from the program card for the current plan.
+
+B. Radiographs
+~1! Proper set~s! of radiographs.
+~2! Correct radiograph orientation on the digitizer.
+~3! Correct numbering of catheters and dwell positions.
+~4! Information transferred from initial planner to radiographs.
+~5! All desired patient dose points properly defined and
+marked.
+~6! Correct dose origin in the same place on all radiographs.
+
+C. Plan and plot
+~1! Patient identification.
+~2! Source activities from the table and from the planning
+system agree to within 0.5%.
+~3! Source strength, ID, date of calibration.
+~4! Correct number of catheters.
+~5! Step size.
+Medical Physics, Vol. 25, No. 4, April 1998
+
+8. Post-treatment QA
+
+~1! Verify each treatment time on the printout.
+~2! Verify radiation level at console ~background!, on patient, and on the unit.
+~3! Detach treatment applicator from the unit.
+~4! Retrieve metal adapters on bronchial catheter.
+~5! Clean all coupling mechanisms.
+~6! Return the treatment unit to storage area.
+~7! Retrieve treatment printout file appropriately.
+~8! Document total treatment interruption time and number
+of error conditions.
+~9! Turn off control panel and lock keys in designated area.
+~10! File daily treatment record.
+9. Others
+
+~1! Periodic check on staff annual retraining.
+~2! Periodic emergency test.
+ACKNOWLEDGMENTS
+The Task Group appreciates the following consultants,
+representing the US Government, the Health Physics community and industries who have contributed to this report:
+Ralph E. Shuping, Ph.D., U.S. Food and Drug Administra-
+
+403
+
+Kubo et al.: HDR brachytherapy treatment delivery
+
+tion; James A. Smith, MS., U.S. Nuclear Regulatory Commission; Marcia B. Hartman, MS., University of California
+Davis Medical Center; Dan Hardesty, Varian Associates;
+Steve Teague, Nucletron-Odelft Corporation; Steve Woodruff, Frank Barker Associates.
+a!
+
+Electronic-mail: williamson_jf@castor.wustl.edu
+United States Nuclear Regulatory Commission, ‘‘Loss of an Iridium-192
+Source and Therapy Misadministration at Indiana Regional Cancer Center, Indiana, Pennsylvania on November 16, 1992,’’ Report NUREG1480, Washington, D.C., 1993.
+2
+United States Nuclear Regulatory Commission, ‘‘Human Factors Evaluation of Remote Afterloading Brachytherapy,’’ J. R. Allan, R. T. Kelley,
+M. L. Quinn, J. W. Gwynne III, R. A. Moore, F. A. Muckler, J. Kasumovic, W. M. Saunders, R. P. Lepage, E. Chin, I. Schoenfield, and D. I.
+Serig, NUREG/CR-6125 ~Vols. 1, 2, and 3!, United States Nuclear Regulatory Commission, Washington, D.C., May, 1995.
+3
+G. P. Glasgow, J. D. Bourland, P. W. Grigsby, J. A. Meli, and K. A.
+Weaver, ‘‘Remote Afterloading Technology, Report No. 41 of the American Association of Physicists in Medicine Task Group No. 41’’ ~American Institute of Physics, New York, 1993!.
+4
+J. F. Williamson, G. A. Ezzell, A. O. Olch, and B. T. Thomadsen, ‘‘Quality Assurance for High Dose Rate Brachytherapy,’’ in Textbook on High
+Dose Rate Brachytherapy, edited by S. Nag ~Futura, Armonk, NY, 1994!,
+pp. 147–212.
+5
+G. J. Kutcher, L. Coia, M. Gillin, W. F. Hanson, S. Leibel, R. J. Morton,
+J. R. Palta, J. A. Purdy, L. E. Reinstein, G. K. Svensson, M. Weller, and
+L. Wingfield, Comprehensive QA for Radiation Oncology: AAPM Radiation Therapy Committee Task Group 40, AAPM Report No. 46,
+American Association of Physicists in Medicine ~American Institute of
+Physics, New York, 1994!.
+6
+R. Nath, L. L. Anderson, J. A. Meli, A. J. Olch, J. A. Stitt, and J. F.
+Williamson, ‘‘Code of practice for brachytherapy physics: AAPM Radiation Therapy Committee Task Group 56,’’ Med. Phys. 24, 1557–1598
+~1997!.
+7
+M. B. Podgorsak, L. A. DeWerd, and B. R. Paliwal, ‘‘The half-life of
+high dose rate Ir-192 source,’’ Med. Phys. 20, 1257–1259 ~1993!.
+8
+United States Nuclear Regulatory Commission, ‘‘Enforcement Actions:
+Significant Actions Resolved-Medical Licenses,’’ NUREG-094: Vol. 13,
+No. 3, Part 2; July–Sept., Washington, D.C., 1994.
+9
+United States Nuclear Regulatory Commission, ‘‘Quality Management in
+Remote Afterloading Brachytherapy,’’ United States Nuclear Regulatory
+Commission. NUREG/CR-6276, Washington, D.C., 1995.
+10
+United States Nuclear Regulatory Commission, ‘‘Quality Management
+Program and Misadministrations,’’ Federal Register 56 ~143!: 34104–
+34122, Thursday, 25 July 1991.
+11
+United States Nuclear Regulatory Commission, ‘‘Release of Patients after
+Brachytherapy Treatment with Remote Afterloading Devices,’’ NRC Bulletin 93-01 20 April 1993, U.S. Nuclear Regulatory Commission, Washington, D.C.
+12
+J. F. Williamson, L. L. Anderson, P. W. Grigsby, A. Martinez, R. Nath,
+D. Neblett, A. Olch, and K. Weaver, ‘‘American Endocurietherapy Society recommendations for specification of brachytherapy source strength,’’
+1
+
+Medical Physics, Vol. 25, No. 4, April 1998
+
+403
+Endocurietherapy/Hyperthermia Oncology 9, 1–7 ~1993!.
+International Commission on Radiation Units and Measurement Report
+No. 38, ‘‘Dose and volume specification for reporting intracavitary
+therapy in gynecology,’’ Bethesda, MD, 1985.
+14
+L. L. Anderson, R. Nath, A. J. Olch, and J. Roy, ‘‘American Endocurietherapy recommendations for dose specification in brachytherapy,’’
+Endocurietherapy/Hyperthermia Oncology 7, 1–12 ~1991!.
+15
+J. F. Williamson, ‘‘Simulation and source localization procedures for
+pulsed and high dose-rate brachytherapy,’’ in Quality Assurance: Activity
+Special Report No. 7 ~Nucletron-Odelft International B. V., Veenendaal,
+The Netherlands, 1995!, pp. 57–65.
+16
+B. R. Thomadsen, P. V. Houdek, R. van der Laarse, G. Edmundson, I. K.
+Kolkman-Duerloo, and A. G. Vissar, ‘‘Treatment planning and optimization,’’ in Textbook on High Dose Rate Brachytherapy, edited by S. Nag
+~Futura, Armonk, NY, 1994!, pp. 79–145.
+17
+G. A. Ezzell and R. W. Luthmann, ‘‘Clinical implementation of dwelltime optimization techniques for single stepping-source remote afterloaders,’’ in Brachytherapy Physics, edited by J. F. Williamson, B. T. Thomadsen, and R. Nath ~Medical Physics, Madison, 1995!, pp. 617–640.
+18
+B. R. Thomadsen, S. Shahabi, J. A. Stitt, D. A. Buchler, F. J. Fowler, B.
+R. Paliwal, and T. J. Kinsella, ‘‘High dose rate intracavitary brachytherapy for carcinoma of the cervix: the Madison system: II. Procedural
+and physical considerations,’’ Int. J. Radiat. Oncol., Biol., Phys. 24, 349–
+357 ~1992!.
+19
+B. R. Thomadsen, Chapter 32, ‘‘Clinical implication of remote afterloading, interstitial brachytherapy,’’ in Brachytherapy Physics, edited by J. F.
+Williamson, B. R. Thomadsen, and R. Nath ~Medical Physics Publishing,
+Madison, 1995!, pp. 647–677.
+20
+Radium dosage, the Manchester system, edited by W. J. Meredith ~Livingstone, Edinburgh, 1967!.
+21
+H. Kubo, ‘‘Verification of treatment plans by mathematical formulas for
+single catheter HDR brachytherapy,’’ Med. Dosimetry 17, 151–155
+~1992!.
+22
+H. Kubo and R. B. Chin, ‘‘Simple mathematical formulas for quickchecking of single-catheter high dose rate brachytherapy treatment
+plans,’’ Endocurietherapy/Hyperthermia Oncol. 8, 165–169 ~1992!.
+23
+R. D. Rogus, M. J. Smith, and H. D. Kubo, ‘‘An equation to QA check
+the total treatment time for single-catheter HDR brachytherapy of known
+length and dose prescription depth,’’ Int. J. Radiat. Oncol., Biol., Phys.
+40, 245–248 ~1998!.
+24
+See, for example, J. F. Williamson, G. A. Ezzell, A. Olch, and B. R.
+Thomadsen, ‘‘Quality assurance for high dose rate brachytherapy,’’ in
+High dose rate brachytherapy: A textbook, edited by S. Nag ~Futura,
+Armonk, NY, 1994!, pp. 147–212.
+25
+G. A. Ezzell, ‘‘Quality assurance of treatment plans for optimized high
+dose rate brachytherapy,’’ Med. Phys. 21, 659–661 ~1994!.
+26
+G. P. Glasgow, ‘‘Radiation control, personnel training and emergency
+procedures for remote afterloading units,’’ Endocurietherapy/
+Hyperthermia Oncology 12, 67–79 ~1996!.
+27
+United States Nuclear Regulatory Commission Informational Notice 9437: ‘‘Misadministration caused by a bent interstitial needle during
+brachytherapy procedure,’’ Office of Nuclear Materials Safety and Safeguards, Washington, D.C., 1994.
+13
+
+

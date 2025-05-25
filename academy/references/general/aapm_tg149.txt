@@ -1,0 +1,5852 @@
+Dose calculation formalisms and consensus dosimetry parameters
+for intravascular brachytherapy dosimetry: Recommendations
+of the AAPM Therapy Physics Committee Task Group No. 149
+Sou-Tung Chiu-Tsaoa兲
+Quality Mediphys LLC, 17 Jade Lane, Denville, New Jersey 07834
+
+Dennis R. Schaart
+Delft University of Technology, IRI Mekelweg 15, 2629 JB Delft, The Netherlands
+
+Christopher G. Soares
+National Institute of Standards and Technology, 100 Bureau Drive, Stop 8460, Gaithersburg, Maryland
+20899-8460
+
+Ravinder Nath
+Yale University School of Medicine, WW-229, 333 Cedar Street, New Haven, Connecticut 06510
+
+共Received 16 March 2007; revised 19 June 2007; accepted for publication 2 July 2007;
+published 15 October 2007兲
+Since the publication of AAPM Task Group 60 report in 1999, a considerable amount of dosimetry
+data for the three coronary brachytherapy systems in use in the United States has been reported. A
+subgroup, Task Group 149, of the AAPM working group on Special Brachytherapy Modalities
+共Bruce Thomadsen, Chair兲 was charged to develop recommendations for dose calculation formalisms and the related consensus dosimetry parameters. The recommendations of this group are
+presented here. For the Cordis 192Ir and Novoste 90Sr/ 90Y systems, the original TG-43 formalism in
+spherical coordinates should be used along with the consensus values of the dose rate constant,
+geometry function, radial dose function, and anisotropy function for the single seeds. Contributions
+from the single seeds should be added linearly for the calculation of dose distributions from a
+source train. For the Guidant 32P wire system, the modified TG-43 formalism in cylindrical coordinates along with the recommended data for the 20 and 27 mm wires should be used. Data tables
+for the 6, 10, 14, 18, and 22 seed trains of the Cordis system, 30, 40, and 60 mm seed trains of the
+Novoste system, and the 20 and 27 mm wires of the Guidant system are presented along with our
+rationale and methodology for selecting the consensus data. Briefly, all available datasets were
+compared with each other and the consensus dataset was either an average of available data or the
+one obtained from the most densely populated study; in most cases this was a Monte Carlo
+calculation. © 2007 American Association of Physicists in Medicine. 关DOI: 10.1118/1.2767184兴
+Key words: brachytherapy, dosimetry, restenosis, intravascular brachytherapy
+TABLE OF CONTENTS
+I. INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4127
+II. BACKGROUND. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4128
+II.A. Approved IVBT systems. . . . . . . . . . . . . . . . . 4128
+II.A.1. 192Ir. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4128
+II.A.2. 90Sr/ 90Y. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4128
+II.A.3. 32P. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4128
+II.B. Description of sources. . . . . . . . . . . . . . . . . . . 4129
+II.B.1. 192Ir seed train sources. . . . . . . . . . . . . . . . 4129
+II.B.2. 90Sr/ 90Y seed train sources. . . . . . . . . . . . . 4129
+II.B.3. 32P wire sources. . . . . . . . . . . . . . . . . . . . . 4130
+II.C. Determination of dose distributions in IVBT.. 4130
+II.C.1. Monte Carlo calculations. . . . . . . . . . . . . . . 4130
+II.C.2. Experimental measurements. . . . . . . . . . . . 4130
+II.D. Review of dose calculation formalisms. . . . . . 4130
+II.D.1. Spherical coordinates. . . . . . . . . . . . . . . . . . 4130
+II.D.2. Cylindrical coordinates. . . . . . . . . . . . . . . . 4131
+4126
+
+Med. Phys. 34 „11…, November 2007
+
+III. METHOD OF OBTAINING CONSENSUS
+DATA. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4133
+III.A. Single seed source data. . . . . . . . . . . . . . . . . . 4133
+III.B. Line source data. . . . . . . . . . . . . . . . . . . . . . . . 4133
+III.C. Train source data. . . . . . . . . . . . . . . . . . . . . . . 4134
+III.D. Media scaling. . . . . . . . . . . . . . . . . . . . . . . . . . 4134
+IV. DATA COMPARISON AND
+RECOMMENDATIONS. . . . . . . . . . . . . . . . . . . . . . 4134
+IV.A. Source strength of catheter-based IVBT
+sources. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4134
+IV.A.1. Gamma emitting 192Ir sources. . . . . . . . . . . 4135
+IV.A.2. Beta emitting 32P and 90Sr/ 90Y sources... 4135
+IV.B. Recommended dose calculation formalism... 4136
+IV.C. Recommended dosimetry parameters. . . . . . . 4136
+IV.C.1. 192Ir seed train sources. . . . . . . . . . . . . . . . 4136
+IV.C.2. 90Sr/ 90Y seed train sources. . . . . . . . . . . . . 4137
+IV.C.3. 32P wire sources. . . . . . . . . . . . . . . . . . . . . . 4139
+V. DISCUSSION AND CONCLUSIONS. . . . . . . . . . . 4150
+
+0094-2405/2007/34„11…/4126/32/$23.00
+
+© 2007 Am. Assoc. Phys. Med.
+
+4126
+
+4127
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+I. INTRODUCTION
+Restenosis at the site of percutaneous interventions remains a
+major limitation in the management of coronary and peripheral vessel diseases. The incidence of restenosis after angioplasty of a de novo coronary artery obstruction varies from
+10% to 40% and is related to a number of risk factors. The
+pathophysiology involves several mechanisms 共elastic recoil,
+negative remodeling, and neointimal hyperplasia兲 in response to the injury caused by the angioplasty. Over the last
+two decades numerous drugs and devices have been tried in
+an attempt to reduce restenosis. Although numerous treatment modalities have been tested in randomized controlled
+trials, only intravascular brachytherapy 共IVBT兲 and recently
+the implantation of drug-eluting stents have been shown to
+significantly decrease the likelihood of restenosis. Stents provide mechanical scaffolding, which prevents recoil and remodeling. However, the implantation of stents also initiates
+the neointimal hyperplasia leading to the phenomenon of instent restenosis. To alleviate this process, drug-eluting stents
+release an antiproliferative drug that helps in the prevention
+of neointimal hyperplasia, and IVBT employs ionizing radiation for the same purpose. However, in the United States,
+drug-eluting stents 共DES兲 are approved only for treating de
+novo lesions, while IVBT is approved only for treating instent restenosis. Hence the clinical applications of these two
+modes of treatment may be complementary.1,2 Although
+drug-eluting stents have proven to be successful in reducing
+restenosis and the need for revascularization compared to
+bare-metal stents in several recent trials,3–5 restenosis still
+occurs in drug-eluting stent patients, especially those with
+more complex lesions and other medical conditions such as
+diabetes. A recent study from Washington Hospital Center6
+has demonstrated the safety and efficacy of intravascular
+brachytherapy for the treatment of patients with in-stent restenosis after implantation of drug-eluting stents.
+The use of ionizing radiation in the management of proliferative disorders such as malignancies has been well
+known for over a century. In addition, ionizing radiation has
+also been used extensively in nonmalignant proliferative disorders such as keloid formation, heterotopic ossification, and
+pterygium. Thus, the use of IVBT in the management of
+restenosis in blood vessel diseases has a sound scientific basis, and its efficacy in humans has been established in randomized clinical trials.
+Randomized, controlled clinical trials have shown that
+brachytherapy using beta7,8 or gamma emitters9,10 is highly
+effective in decreasing the incidence of recurrent in-stent restenosis as measured angiographically and by intravascular
+ultrasound. Brachytherapy also decreases the incidence of
+major adverse cardiac events 共primarily the need for further
+revascularization兲, compared with placebo. Based on these
+studies, three brachytherapy systems 共two beta and one
+gamma兲 have been approved by the Food and Drug Administration 共FDA兲 for the treatment of in-stent restenosis. These
+systems have been used in more than 30 000 patients. For
+patients with in-stent restenosis, IVBT after recanalization
+has become a proven modality for treatment.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4127
+
+The three FDA approved IVBT systems, which were utilized for most of the clinical trials in the United States, are
+the Checkmate system from Cordis Corporation, the BetaCath system from Novoste Corporation, and the Galileo system from Guidant Corporation. In this article certain commercially available products are referred to by name. These
+references are for information purposes only and do not imply that these products are the best or only available for the
+purpose, and do not imply endorsement by the National Institute of Standards and Technology. All of these are afterloading systems by means of which sealed radioactive
+brachytherapy sources are manually or automatically advanced into a delivery catheter previously positioned inside
+the patient. The sources in these three systems are based on
+the radionuclides 192Ir, 90Sr/ 90Y, and 32P, respectively.
+For completeness, it is mentioned that a variety of other
+radionuclides have seen limited clinical testing or have been
+considered interesting, but do not appear to be likely candidates for immediate commercial development. At present, no
+trials are being conducted using these isotopes. These radionuclides include 48V, 62Cu, 68Ge/ 68Ga, 90Y, 99mTc, 103Pd,
+106
+Ru/ 106Rh, 109Cd, 114mIn/ 114In, 125I, 133Xe, 144Ce/ 144Pr,
+145
+Sm, 153Gd, 153Sm, 166Ho, 169Yb, 181W, 186Re, 188Re,
+188
+W / 188Re, and 198Au; in this article, we do not pay any
+further attention to these other radionuclides.
+It is also to be mentioned that in the early days of IVBT
+there was great interest in permanently implanted radioactive
+stents. Other IVBT delivery systems used in clinical trials
+included catheters with radioactive membranes, radioactive
+liquid-filled balloons, and radioactive gas-filled balloons.
+However, clinical results for these systems have yielded, at
+best, ambiguous and inconsistent results. Miniature x-ray
+tubes have also been considered, but technological difficulties have so far prevented these devices from becoming used
+routinely. Thus, we chose not to describe these systems for
+this report.
+IVBT benefits from a team approach that brings together
+the expertise of the interventional cardiologist, radiation oncologist and medical physicist. Each of these professionals
+plays an important role in the optimization of the safety and
+efficacy of this procedure. In 1999, the AAPM Task Group
+60 report described many of the tasks performed by the
+medical physicist and recommended dosimetry procedures in
+order to standardize them. The AAPM TG-60 report11 is now
+about 8 years old and several new developments have occurred in this field. In this article, we present an update to the
+TG-60 report. The update has been written to address specific topics where the AAPM needs to make new recommendations. Our focus is to recommend a standard dose calculation formalism and provide the consensus dosimetry
+parameters for each of the commonly used IVBT systems.
+Even though the application of intravascular brachytherapy is decreasing, patients are still being treated12,13 by
+IVBT and reference data for the sources used in the three
+major IVBT systems are still needed for future evaluations of
+the large body of clinical trial experience that has already
+been accumulated. These data are essential for a uniform
+treatment of retrospective dosimetry for possible future epi-
+
+4128
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4128
+
+demiological studies of the treated population. In addition,
+they will be useful if such sources are used in any possible
+future applications.
+The dosimetry protocols used so far in the IVBT clinical
+trials have been very simple. The manufacturer of the device
+specified the dose rate profile as a function of distance along
+the perpendicular bisector of the source/train, and this dose
+rate profile was used to calculate the dwell time for delivering the prescription dose at the prescription point. If it is
+desired to calculate the dose at other points, then it is necessary to use a formalism, which allows the user to calculate
+the dose rate at an arbitrary point in space. In this report, we
+address the calculation formalisms for dose distributions.
+The recommendations presented here by this Task Group
+abide by the AAPM recommendation that consensus recommendations be obtained from the results of 共at least兲 two
+independent investigations.
+II. BACKGROUND
+II.A. Approved IVBT systems
+
+A brief description of the three FDA-approved IVBT systems based on 192Ir, 90Sr/ 90Y, and 32P and their associated
+clinical applications is given below. The sources used in
+these systems are described in more detail in Sec. II B.
+II.A.1. 192Ir
+192
+
+Ir is the only gamma emitter that has been clinically
+used in IVBT thus far. This radionuclide is used in the
+Checkmate system from Cordis Corporation. The sources,
+consisting of a number of 192Ir seeds inside a nylon ribbon,
+are manufactured by Best Medical International. Treatment
+times for IVBT are typically 15 to 40 min. The delivery device consists of a cylindrical lead storage “pig.” The sources
+are manually advanced by the radiation oncologist into a
+specially designed noncentering intraarterial catheter.
+Dose prescription has been designed via one of two protocols. In the SCRIPPS 共Scripps Coronary Radiation to Inhibit Proliferation Post Stenting兲14 and GAMMA-I9 trials
+dose prescription was based on multiple cut intravascular
+ultrasound 共IVUS兲 measurements of vessel diameter to determine minimal and maximal distances to the external elastic lamina. Dose was prescribed as 8 Gy at the maximum
+
+FIG. 1. Schematic showing 共a兲 a single 192Ir seed, and 共b兲 6-seed 192Ir train
+in nylon ribbon. The solid black area indicates the radioactive Pt/ Ir core at
+the center of each seed. The gray area around the black shows the stainless
+steel encapsulation around the core.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+FIG. 2. Schematic showing 共a兲 5 F single seed of 90Sr/ 90Y and an 8-seed
+train with gold markers on the ends, and 共b兲 3.5 F single seed of 90Sr/ 90Y
+and an 8-seed train with Pt/ Ir markers at the ends in a stainless steel wire
+jacket.
+
+luminal distance, limited by the constraint of 30 Gy maximum dose to the nearest luminal distance. Alternatively, in
+the WRIST 共Washington Radiation for In-Stent Restenosis
+Trial兲15 and GAMMA-II trials dose was prescribed at some
+fixed point from the source ribbon. The prescription dose for
+the WRIST trial was 15 Gy at 2 mm for vessel sizes
+2.4 to 4.0 mm and 15 Gy at 2.4 mm for vessel sizes
+4.0 to 5.0 mm. The prescription dose for the GAMMA-II
+trial was 14 Gy at 2 mm for vessel sizes 2.7 to 4.0 mm.
+II.A.2. 90Sr/ 90Y
+The source in the first approved beta particle IVBT device, the Beta-Cath system, is 90Sr/ 90Y. The Beta-Cath system, developed and tested by Novoste Corporation, has been
+used in the START 共Stents and Radiation Therapy兲16 trials,
+BERT 共Beta Energy Restenosis Trial兲,17 and BRIE 共Beta Radiation In Europe兲18 trials. The Novoste source consists of a
+string 共“train”兲 of 90Sr/ 90Y seeds. The seeds are stored in a
+hand-held delivery device and are advanced by a closed-loop
+hydraulic system, which uses sterile saline to advance 共and
+then retract兲 the seeds into and out of a noncentered catheter.
+Two source sizes have been used: The older 5 F 共1.65 mm
+diameter兲 and a newer 3.5 F 共1.16 mm兲 system. Dose is prescribed at a fixed distance, 2 mm, from the center of the
+source. For vessels 2.7– 3.3 mm in diameter, the prescription
+dose is 18.4 Gy, and for vessel diameters 3.3– 4.0 mm, the
+prescription dose is 23.0 Gy. These dose values are based on
+revised data from NIST on the actual doses prescribed in the
+trial.
+II.A.3. 32P
+The second important beta emitter used in IVBT is 32P.
+The Galileo system from Guidant Corporation consists of a
+
+4129
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4129
+
+FIG. 3. 共a兲 Schematic of the 20 mm
+Guidant 32P wire source. Reproduced
+from Mourtada et al. 2003 共Ref. 29兲
+with permission from author. 共b兲 Schematic of the 27 mm Guidant 32P wire
+source. Reproduced from Mourtada et
+al. 2000 共Ref. 30兲 with permission
+from author.
+
+computer-controlled afterloader, similar to a conventional
+HDR unit, equipped with a 32P wire source. Several types of
+perfusion centering catheters have been made available for
+this system. The Galileo system has been tested in the INHIBIT 共Intimal Hyperplasia Inhibition with Beta In-stent
+Trial兲19 and PREVENT 共Proliferation REduction with Vascular ENergy Trial兲8 trials. In these trials, dose was prescribed
+at a fixed depth, 1 mm, into the vessel wall, and the prescription dose was 20 Gy. The vessel diameter was determined
+from the angioplasty balloon diameter and from fluoroscopy.
+Vessel diameters of 2.4– 3.7 mm can be treated using balloons of 2.5, 3.0, and 3.5 mm diameter. The Galileo system
+is the only one approved for source pullback, i.e., stepping
+the source to treat longer lesions.
+II.B. Description of sources
+
+II.B.1. 192Ir seed train sources
+The 192Ir seed train assembly in a nylon ribbon has been
+used in tumor brachytherapy for decades.20 The 192Ir radionuclide is an emitter of a complex scheme of gamma rays,
+x rays, beta particles, conversion electrons and Auger
+electrons.21–23 It emits approximately 2.1 gammas per decay
+ranging in energy primarily between 296 and 612 keV, with
+an average energy of 370 keV. The half life is 74 days. In
+the Cordis Checkmate system, model 81-01 192Ir seeds
+共3 mm length兲 from Best Medical 共Springfield, VA兲 are assembled in a hollow nylon ribbon, with a 1 mm gap between
+neighboring seeds 共see Fig. 1兲.24 Each seed is 0.5 mm in
+outer diameter. The inner Pt/ Ir core 共0.1 mm in diameter兲 is
+encapsulated by stainless steel of 0.2 mm thickness radially.
+Seed activities are typically 33 mCi per seed. The seed ends
+are not encapsulated, allowing the emission of beta particles
+and internal conversion electrons through the 1 mm air gaps.
+The 192Ir ribbon systems approved by the FDA include three
+different lengths, namely, 23 mm 共6 seeds兲, 39 mm 共10
+Medical Physics, Vol. 34, No. 11, November 2007
+
+seeds兲, and 55 mm 共14 seeds兲. For longer lesions, seed trains
+of up to 23 seeds have also been used in the Long WRIST
+clinical trial,25 but they are not approved by the FDA for
+market release.
+II.B.2. 90Sr/ 90Y seed train sources
+Sr is a pure beta emitter with a 28.8 year halflife,26 and
+546 keV maximum beta energy. The daughter isotope 90Y is
+also a pure beta emitter with a 64 h halflife, maximum beta
+energy of 2.28 MeV and an average beta energy of
+0.935 MeV. It is primarily the 90Y beta particles that are
+used for therapy, although 90Y is in secular equilibrium with
+the parent 90Sr, and both radiations are emitted. The original
+5 F Novoste Beta-Cath system was first used in clinical trials
+in 1997 and consists of trains of individual 2.5 mm long
+90
+Sr/ 90Y seed sources with no separation between the seeds.
+The seed activities are typically 3.5 mCi per seed. Depending upon the lesion length being treated, trains of 30 mm 共12
+seeds兲, 40 mm 共16 seeds兲, or 60 mm 共24 seeds兲 were used.
+Figure 2共a兲 shows the single seed construction, as well as a
+train of seeds. The individual seeds consist of a 2.5 mm long
+by 0.56 mm diameter ceramic cylindrical core encapsulated
+in a stainless steel cylindrical capsule with 0.04 mm walls
+and 0.05 mm ends.27 The seed trains were brought into the
+patient hydraulically in a 5 F 共1.67 mm兲 diameter eccentric
+three-lumen treatment catheter, with gold marker seeds at
+either end of the seed train.
+In 2000, a second source design was introduced, with a
+narrower diameter, delivered in a 3.5 F diameter catheter. In
+this design, the nominal 2.5 mm long core material is now a
+sintered aluminum powder in which the 90Sr/ 90Y is bound,
+with a 0.32 mm diameter. The core is encapsulated in a stainless steel capsule with 0.03 mm thick sides and ends. The
+individual seeds in the train are held together by a jacket
+made from a stainless steel coil having 0.445 mm diameter
+90
+
+4130
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+and including Pt/ Ir alloy markers at each end.28 The train is
+brought into the patient in a three-lumen eccentric catheter
+with a 1.16 mm diameter. Both the individual seed and the
+seed train in a catheter are shown in Fig. 2共b兲.
+II.B.3. 32P wire sources
+32
+
+P is a pure beta emitter with a 14.3 day halflife, a maximum beta energy of 1.71 MeV, and an average beta energy
+of 0.695 MeV. The 20 and 27 mm 32P wire sources manufactured by Guidant Corporation are shown in Figs. 3共a兲 and
+3共b兲, respectively. Both sources are composed of a flexible,
+polymer core containing the 32P radionuclide, which is encapsulated in superelastic NiTi tubing. The 20 mm source
+design29 is the successor of the 27 mm design30 and is essentially the same, except for the nominal length of the radioactive core and the addition of a second x-ray marker at the
+proximal side of the core. The 20 mm source can be used in
+automated stepping mode for the irradiation of longer lesions. For this source, the manufacturing tolerance in the
+active source length as represented by the distance between
+the proximal and distal 50% isodose lines was +0.9 to
+− 0.5 mm. More details can be found in the aforementioned
+references.
+II.C. Determination of dose distributions in IVBT
+
+The introduction of intravascular brachytherapy has created new challenges in the field of brachytherapy dosimetry,
+because of the necessity to know accurately the dose distribution with submillimeter resolution at very small distances
+from the source. A brief overview of the various methods
+used for determining the dose distribution about intravascular sources is given below.
+II.C.1. Monte Carlo calculations
+An important advantage of Monte Carlo simulations is
+that the dose distribution can be calculated with high spatial
+resolution. A variety of well-validated general-purpose
+Monte Carlo codes are currently available for brachytherapy
+dosimetry and sufficient computing power for dose calculations on brachytherapy sources is widely available. It is
+therefore not surprising that many authors have used this
+technique for the calculation of dose distributions about
+IVBT sources. However, it is not trivial to obtain correct
+results using Monte Carlo calculations, as can be seen, for
+example, from the discussions given in Sec. V. Generalpurpose codes that have been used for the studies included in
+the present comparison are CYLTRAN, part of the ITS 3.0
+package;31 EGS4;32 EGSnrc;33 MCNP4B;34 MCNP4C;35 MCNPX;36
+37
+38
+PENELOPE; and GEANT4 In a few studies, special codes
+have been developed by the authors for IVBT dosimetry.39,40
+II.C.2. Experimental measurements
+Near-field dosimetry of brachytherapy sources is complicated by the very high dose gradients associated with small
+sources at short distances in water or water-equivalent materials. To avoid dosimeter volume averaging effects, very high
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4130
+
+resolution 共less than 0.5 mm兲 is required. For 192Ir sources at
+1 cm or greater distances, 1 mm⫻ 1 mm⫻ 1 mm thermoluminescence dosimeters 共TLDs兲 sufficiently minimize volume
+averaging effects and are the most commonly used systems
+for dosimetry at these distances.39 However, at the distances
+of interest in intravascular brachytherapy, recourse must be
+made to detectors that offer higher spatial resolution. Detectors that offer submillimeter resolution include radiochromic
+film,41 small-volume scintillators,42 and ultrathin TLDs.43 In
+addition, very-small-volume extrapolation ionization chambers serve as primary dosimetry standards for beta particle
+brachytherapy sources in the United States,44 Germany,44 and
+the Netherlands.45
+Radiochromic film offers the necessary spatial resolution
+共better than 0.1 mm in all dimensions兲, near water equivalence for photons above 100 keV and for beta particles, and
+the required sensitivity for these relatively high dose and
+dose rate field measurements. Most of the experimental results compared in Sec. IV for intravascular brachytherapy
+sources were obtained with this method. There are several
+good reviews on the use of radiochromic film available in the
+literature.46–48 Precautions required in the use of radiochromic film include proper consideration of the measurement
+depth in nonaqueous media 共see Sec. III D兲, time and temperature dependence of the measured optical density, and
+energy dependence of the response to photons with energies
+below 100 keV.49,50
+
+II.D. Review of dose calculation formalisms
+
+II.D.1. Spherical coordinates
+The dose calculation formalism of the AAPM TG-43 is
+expressed in polar coordinates although it actually uses a
+spherical coordinate system since there is no assumed dependence on the azimuthal angle. This formalism has become
+the standard for the dosimetry of interstitial brachytherapy
+gamma sources for cancer treatment.51
+The general, two-dimensional 共2D兲 dose-rate equation
+from the 2004 update of the TG-43 protocol52 is given by
+Ḋ共r, ␪兲 = SK⌳
+
+GL共r, ␪兲
+gL共r兲F共r, ␪兲,
+GL共r0, ␪0兲
+
+共1兲
+
+where r denotes the distance from the center of the active
+source to the point of interest P共r , ␪兲, r0 denotes the reference distance, which is specified to be 1 cm in this protocol
+for gamma-particle emitting sources, and ␪ denotes the polar
+angle specifying the point-of-interest relative to the source
+longitudinal axis 共see Fig. 4兲. The reference angle, ␪0, lies in
+the source transverse plane, and is specified to be 90° or
+␲ / 2 rad. SK is the air kerma strength of the source. It has
+units of ␮Gy h−1 m2 or U.
+The dose rate constant, ⌳, equals the ratio of absorbed
+dose rate at the reference position, P共r0 , ␪0兲 in a water
+equivalent phantom, and SK. ⌳ has units of cGy h−1 U−1,
+which reduces to cm−2:
+
+4131
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+冦
+
+␤
+if ␪ ⫽ 0 ° ,
+,
+Lr
+sin
+␪
+GL共r, ␪兲 =
+共r2 − L2/4兲−1 , if ␪ = 0 ° ,
+
+4131
+
+冧
+
+共4兲
+
+where ␤ is the angle, in radians, subtended by the tips of the
+hypothetical line source with respect to the calculation point,
+P共r , ␪兲, and L is the active source length 共see Fig. 4兲.
+The radial dose function, gL共r兲, accounts for dose fall-off
+on the transverse plane due to photon scattering and attenuation, i.e., excluding the fall-off accounted for by the geometry function. gL共r兲 is defined by Eq. 共5兲 and is equal to unity
+at r0 = 1 cm:
+gL共r兲 =
+
+Ḋ共r, ␪0兲 GL共r0, ␪0兲
+Ḋ共r , ␪ 兲 GL共r, ␪0兲
+0
+
+共5兲
+
+0
+
+F共r , ␪兲 is the 2D anisotropy function that accounts for
+angular dependence of photon absorption and scatter in the
+encapsulation and the medium is defined as
+F共r, ␪兲 =
+
+Ḋ共r, ␪兲 GL共r, ␪0兲
+.
+Ḋ共r, ␪ 兲 GL共r, ␪兲
+
+共6兲
+
+0
+
+FIG. 4. Diagrams showing the source and the point of interest P共r , ␪兲, 共a兲 for
+short sources, 192Ir and 90Sr/ 90Y seeds and 共b兲 long 32P wire sources. In the
+TG-43 dose calculation formalisms, the point P is defined by means of the
+polar coordinates r and ␪, while the angle ␤ is used to calculate the geometry function of a line source with finite length L. The coordinates ␳ and z
+are used in the new formalism for beta line sources.
+
+Other than inclusion of the subscript “L,” this definition is
+identical to the original TG-43 definition.
+For beta-particle emitting seed sources, the same formalism has been proposed, with the difference that the product
+of air kerma strength and dose rate constant in Eq. 共1兲 is
+replaced by the reference absorbed dose rate Ḋw 共2 mm兲 at
+the reference radial distance, r0, of 2 mm from the center of
+the source in water.11
+II.D.2. Cylindrical coordinates
+
+Ḋ共r0, ␪0兲
+⌳=
+.
+SK
+
+共2兲
+
+The dose-rate constant depends on both the radionuclide and
+the source model and is influenced by both the source internal design and the experimental methodology used by the
+primary standard to realize SK.
+GL共r , ␪兲 is the geometry function 共cm−2兲 that describes the
+dose distribution in the absence of scattering and attenuation
+within the source itself and any surrounding materials. The
+geometry function in its most general form is given by
+
+GL共r, ␪兲 =
+
+冕
+
+V
+
+关␽共r⬘兲dV⬘/兩r⬘ − r兩2兴
+
+冕
+
+,
+
+共3兲
+
+␽共r⬘兲dV⬘
+
+V
+
+where ␽共r⬘兲 represents the density of radioactive material
+within volume element dV⬘ at the point r⬘ within the source,
+and V denotes integration over the source radioactive core.
+In IVBT it is appropriate to use the line-source model,
+which gives rise to the following geometry function:
+Medical Physics, Vol. 34, No. 11, November 2007
+
+It has been shown by Schaart et al.53 that the TG-43 formalism, which was originally developed for point-like
+sources, does not work well for long intravascular line
+sources, and in principle fails completely for beta particle
+line sources with a length L larger than twice the range R of
+the beta particles 共L ⬎ 2R兲. The cause of this failure lies in
+the fact that the radial dose function gL共r兲 is a function of the
+共polar兲 distance r to the center of the source. If the source
+emits beta radiation with a range R, and if we neglect bremsstrahlung for simplicity, gL共r兲 becomes zero for r ⬎ R. Therefore, if the source length exceeds 2R, there are points 共notably at values of ␪ near 0° and 180°兲 that are located at
+distances r ⬎ R from the source center but where the absorbed dose rate remains finite. At such points, the anisotropy function F共r , ␪兲 would become infinite.
+In reality, F共r , ␪兲 remains finite because of the presence of
+bremsstrahlung, but it nevertheless increases to very large
+values. The resulting large and rapid variations make a table
+of F共r , ␪兲 difficult to interpolate accurately. This finding has
+later been confirmed by others.54–56 Since it is in fact one of
+the main purposes of the TG-43 formalism to minimize dose
+calculation errors due to interpolation, Schaart et al. proposed an adaptation of the formalism that appears to work
+well for intravascular line sources and also preserves the es-
+
+4132
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+sential advantages of the TG-43 approach. The new formalism is conceptually similar to the TG-43 formalism. However, the parameters of the new formalism are redefined to
+avoid the singularity problem described above. Furthermore,
+the new formalism is defined in cylindrical coordinates,
+共␳ , z , ␾兲, which better match the source-target geometry. This
+has the advantage that an evenly spaced matrix of data points
+within the region of interest is easily obtained using equidistant intervals along the axes. The origin of the cylindrical
+coordinate system is located at the source center, while the z
+axis coincides with the long symmetry axis of the source, as
+indicated in Fig. 4. Under the assumption that the source is
+cylindrically symmetric, it suffices to use only the coordinates 共␳ , z兲, where ␳ is used to denote the cylindrical radial
+distance in order to avoid confusion with the polar or spherical distance r used in the TG-43 formalism.
+In the cylindrical coordinate formalism, the dose rate distribution about a beta particle line source in water is expressed as follows:
+Ḋ共␳,z兲 = Ḋ共␳0,z0兲关G共␳,z兲/G共␳0,z0兲兴g共␳兲F共␳,z兲.
+
+共7兲
+
+Here, Ḋ共␳0 , z0兲 denotes the source strength that is defined as
+the reference absorbed dose rate 共absorbed dose rate in water
+at the reference point兲, i.e., at ␳0 = 2 mm and z0 = 0. Similar to
+the TG-43 formalism in spherical coordinates, a geometry
+function is used to suppress the influence of the inverse
+square law on the other parameters. The general definition of
+the geometry function has been given in Sec. II D. Since the
+absorbed dose rate along a long, uniform beta particle line
+source is very uniform and almost independent of source
+length except near the ends of the source, it is appropriate to
+use the geometry function for an infinite line source, as originally proposed by Schaart et al. In this approximation, the
+geometry function reduces to53
+1
+G共␳,z兲 = G共␳兲 = .
+␳
+
+共8兲
+
+This geometry function is recommended for all beta line
+sources to which the formalism is applied.
+The transverse dose function g共␳兲, which is normalized to
+unity at the reference point, is defined as follows:
+g共␳兲 =
+
+G共␳0,z0兲 Ḋ共␳,z0兲
+.
+G共␳,z0兲 Ḋ共␳ ,z 兲
+0
+
+共9兲
+
+0
+
+The transverse dose function plays a similar role as the
+radial dose function, in that it characterizes the dose rate
+distribution along the transverse bisector of the source. However, the transverse dose function is a function of the cylindrical radial distance ␳ instead of the spherical distance r.
+Therefore, if the above geometry function is used, g共␳兲 approximately characterizes the entire dose distribution about a
+uniform beta line source, except in the dose fall-off regions
+near the ends of the source.
+The nonuniformity function F共␳ , z兲, which is normalized
+to unity on the transverse axis, is defined as
+Medical Physics, Vol. 34, No. 11, November 2007
+
+F共␳,z兲 =
+
+4132
+
+G共␳,z0兲 Ḋ共␳,z兲
+.
+G共␳,z兲 Ḋ共␳,z 兲
+
+共10兲
+
+0
+
+Substitution of the above geometry function 关Eq. 共8兲兴
+shows that the first factor on the right-hand side of this equation is equal to unity, so the nonuniformity function completely describes the axial variation of the dose rate in terms
+of the ratio of the dose rate at a point and the dose rate on the
+central transverse axis at the same radial distance. Thus, this
+function accounts for the dose fall-off near the source ends,
+but also for any dose rate nonuniformity that may result from
+variations in, e.g., the activity distribution or the encapsulation thickness along the length of the source.
+It is to be noted that, in the meantime, other authors have
+also proposed line source formalisms based on cylindrical
+coordinates. Patel et al.,54 for example, proposed a formalism
+comprised of a transverse dose function equal to the radial
+depth-dose distribution normalized at the reference point,
+and a modulation function, equal to F共␳ , z兲 as defined above.
+Instead of the geometry function G共␳ , z兲, however, these authors proposed a so-called distribution factor consisting of a
+modified Fermi–Dirac function, which can be seen as a fit to
+the typical variation of the dose distribution of a beta particle
+line source in the longitudinal direction. The potential advantage of this approach is that the modulation function remains
+close to unity if the distribution factor can be fit well to the
+dose distribution of the source under consideration. This was
+successfully demonstrated for a 90Y beta particle line source.
+The dose distribution about other source designs may be very
+different, however. In some cases, it may therefore appear
+difficult to fit the distribution factor to the dose distribution,
+resulting in a rapidly varying modulation function that is
+difficult to interpolate. A second disadvantage of this method
+is that the distribution factor does not account for the influence of the inverse square law in the transverse direction. For
+this reason, the transverse dose function falls off just as
+steeply as the radial depth-dose distribution itself.
+In a second paper, the same group compared the TG-43
+formalism with the line source formalism proposed by
+Schaart et al. for a 192Ir line source composed of a 30 mm
+long Ir wire encapsulated in a thin-walled Ni/ Ti tube.56 The
+TG-43 geometry function for a finite line source with a
+length L = 30 mm was used in both cases.11 Interestingly, the
+beta particles emitted by 192Ir appeared to contribute significantly to the dose rate at radial distances up to about 1.5 mm.
+As a result, the anisotropy function showed rapid variations
+at these radial distances. In contrast, the nonuniformity function remained close to unity throughout the entire region of
+clinical interest. Because of this and the fact that the use of
+cylindrical coordinates requires a smaller matrix of F共␳ , z兲
+values to accurately describe the dose distribution, we conclude that the cylindrical formalism is more suitable for intravascular line sources. Note that although there is no space
+between the seeds in either of the Novoste source train systems, the single seed TG-43/60 formalism described in Sec.
+II D 1 is preferred for these sources since this approach al-
+
+4133
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+lows greater flexibility in radiation field calculations by allowing the consideration of curved sources 共see Sec. III C兲.
+Wang and Li55 used a formalism that is similar to the one
+proposed by Schaart et al. except that a central region of
+axial dose uniformity is presupposed. As a result, the formalism exhibits discontinuities in both G共␳ , z兲 and F共␳ , z兲 at the
+z values between which the dose distribution is presupposed
+to be uniform. This formalism was successfully demonstrated using a Monte Carlo calculated dose distribution of a
+uniform 27 mm long Guidant 32P beta particle line source. A
+limitation of this formalism, however, is that it is inherently
+unsuitable for sources that lack the presupposed region of
+longitudinal uniformity. For the same reason, it is impossible
+to use this formalism for the representation of, e.g., film
+measurements on real sources, which in general are not perfectly uniform.
+The geometry function given in Eq. 共8兲 has a very simple
+form. This function has been selected based on the arguments given below. It has recently been suggested that a
+more precise representation of the geometry function 共sometimes called particle streaming function兲 could be obtained
+via a Monte Carlo evaluation of Eq. 共3兲, especially if the
+radioactivity distribution inside the source has a complex
+geometry.57,58 In reaction to these and other papers, however,
+several arguments have been given to select only a few,
+simple, analytical geometry functions for use in brachytherapy treatment planning.59–61
+First, it should be recognized that possible differences between Eq. 共3兲 and the selected, approximate geometry function do not introduce errors in the dose calculation as long as
+the geometry function applied in dose calculations are the
+same as the one used by the authors who prepared the TG43/60 data set.
+Second, the role of the geometry function is to suppress
+the influence of the inverse-square law on the other dose
+calculation parameters. As a result, these other parameters
+become less rapidly varying functions. This is essential for
+accurate interpolation between tabulated data points and may
+even permit extrapolation to points outside the tabulated data
+range. However, this approach works only if the geometry
+function can be recalculated exactly at any point in space.
+Hence, the geometry function should be an analytical function: Providing this rapidly varying function in the form of,
+for example, a table of Monte Carlo results would reintroduce interpolation errors that the geometry function is in fact
+supposed to eliminate.
+Third, it is important that a limited set of geometry functions be used in clinical practice. This minimizes the chance
+of errors resulting from the use of the wrong geometry function, and makes it more likely that all of the geometry functions used are indeed available in all commercial treatment
+planning systems.
+III. METHOD OF OBTAINING CONSENSUS DATA
+III.A. Single seed source data
+
+When authors provided measured or calculated data for
+individual seed sources, the comparisons of results were relaMedical Physics, Vol. 34, No. 11, November 2007
+
+4133
+
+tively straightforward. In general, the comparisons were performed in three steps. First the dose rate constants for single
+seed sources were compared. For 192Ir sources the dose rate
+constant was expressed in terms of dose rate per unit air
+kerma strength at the reference distance of 1 cm from the
+source center in water. For 90Sr/ 90Y seeds the quantity compared was dose rate per unit contained activity at the reference distance of 2 mm from the seed center in water. For
+expressing contained activity of 90Sr/ 90Y seeds, the convention of using only the parent activity was followed. The second step was the comparison of relative depth-dose profiles
+or, equivalently, radial dose functions for single seed sources.
+The latter comparison was much more sensitive to small
+variations due to the removal of the strong distance dependence through application of the geometry function. Finally,
+anisotropy function data were compared graphically for fixed
+radial distances as a function of angle.
+In comparing dose rate constants and selecting the consensus value, there were several considerations. One can argue that the value from a single reference should be selected
+as being representative of the collection of values available
+in the literature. Alternatively, one can argue that an averaged value of experimental and calculated values should be
+used. In this work, both approaches have been followed 共see
+Sec. IV兲, depending on the source type.
+In comparing radial dose functions and anisotropy functions of single seeds, only one set of functions has been
+chosen for each system rather than averaging data from
+many authors. The chosen functions were usually from
+Monte Carlo calculations that spanned the required range of
+radial distances and angles and had sufficiently fine spacing
+to make the interpolation between points accurate. Analytical
+functions were fit to the chosen radial dose function data
+when they were not available in the literature. The degree to
+which the data agreed with available experimental measurements was considered in the selection of the Monte Carlo
+study for recommended values.
+An important aspect of the comparison was also a consideration of how well the radial dose and anisotropy functions
+for single sources predicted the dose profiles measured and
+calculated for ribbon and train sources. This is discussed
+further in Sec. IV.
+
+III.B. Line source data
+
+For the special case of 32P wire sources, generally results
+are only available for the entire wire length. As discussed in
+Sec. II D 2, the TG-43 formalism is not appropriate for these
+sources and a cylindrical formalism is used instead. In this
+formalism the quantities for comparison are the reference
+absorbed dose rate per unit contained activity per unit active
+source length, the transverse dose function, and the nonuniformity function. Similar arguments with respect to the
+choice of consensus values for these parameters can be made
+in exact analogy to the TG-43 parameters discussed in the
+previous section. Details for the choices made are given in
+Sec. IV.
+
+4134
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+III.C. Train source data
+
+For the case of 192Ir ribbons and 90Sr/ 90Y seed trains,
+measured data are generally available only for trains of
+sources rather than individual sources. Calculations, on the
+other hand, are usually available for both trains and single
+sources. As mentioned above, one of the crucial methods of
+comparison of various available values of the TG-43 parameters is to use the principle of superposition of dose distributions for a single source to predict the dose profile for a train
+source. The predicted profiles are then compared to measured and calculated profiles. Generally these comparisons
+were confined to relative depth-dose profiles and to axial
+distributions at radial distances of 1 or 2 mm, as well as
+distributions perpendicular to the source axis at a depth of
+2 mm. In the axial distribution comparisons, the decision
+was made to normalize the dose profiles to an average value
+over the central 32 of the physical source length, rather than at
+a point at the source center. This was done to reduce the
+influence of local variations in the profiles 共e.g., due to
+source nonuniformity or measurement uncertainties兲 on the
+comparison. This convention was used throughout the comparisons presented in this work. The same convention has
+been used in the away-and-along tables presented in Sec. IV.
+Note that for the purposes of performing the averaging over
+the central 32 of the physical source length, a maximum distance between points of 0.1 mm shall be used. Since most
+measurements of nonuniformity are performed with radiochromic film, this is well within the capabilities of this dosimeter.
+For the special case of the 2.5 mm long 32P wire segments
+calculated by Mourtada et al.62 the superposition principle
+was also used to construct wire source dose distributions for
+comparison with measurements and calculations. These segments are short enough to be usable under the TG-43 formalism and thus represent a method for modeling curved
+sources, which is impossible to do under the cylindrical formalism. As the Mourtada data are the only available data,
+they are recommended as the consensus values for 2.5 mm
+long 32P wire segment superposition calculations.
+III.D. Media scaling
+
+Dose measurements on therapeutic beta particle sources
+are often performed in solid phantoms made from low-Z
+materials such as A-150 plastic, WT1, polystyrene, or
+poly共methyl methacrylate兲 共PMMA兲. The depth-dose distribution in such a solid phantom is generally different from
+that in water, therefore requiring a correction. Monte Carlo
+calculations, in which the phantom medium is replaced by
+water, can be used for such corrections. Another possibility is
+to correct through scaling.
+In the late 1960s, Cross proposed that the depth-dose distributions of plane and point beta particle sources in different
+low-Z media are very similar and can be related to one another via a scaling factor on distance.63 Since then, this socalled scaling method has been used for a variety of applications, and the results in low-Z media appear to be accurate
+to within 2% to 3% for the types of sources just mentioned.64
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4134
+
+Recently, the applicability of the scaling method has been
+extended to line sources with zero or finite diameter by
+Schaart.65
+For a point source, the dose distribution in one low-Z
+medium can be calculated from that in another low-Z medium as follows:63,64
+
+冉 冊
+
+␰2
+␰2
+D2共r兲 = ␩3 22 D1 ␩ r ,
+␰1
+␰1
+
+共11兲
+
+where r is the distance to the source in units of length, ␩ is
+the scaling factor, or relative attenuation, of medium 2 relative to medium 1, and ␰1 and ␰2 are the densities of medium
+1 and 2, respectively.
+For a cylindrical source having a length larger than twice
+the beta particle range, the depth-dose distributions in different media are related by65
+
+冋
+
+␳ D 2共 ␳ 兲 = ␩ ␳ s + ␩
+
+册冋
+
+册
+
+␰2
+␰2
+共 ␳ − ␳ s兲 D 1 ␳ s + ␩ 共 ␳ − ␳ s兲 ,
+␰1
+␰1
+共12兲
+
+where ␳ is the radial distance to the longitudinal source axis
+and ␳s is the outer radius of the source. For ␳s = 0, this equation reduces to
+D 2共 ␳ 兲 = ␩ 2
+
+冉 冊
+
+␰2
+␰2
+D1 ␩ ␳ .
+␰1
+␰1
+
+共13兲
+
+We have applied media scaling in some cases where the
+original publication contained dosimetric data for media
+other than water. In such cases this is clearly indicated.
+
+IV. DATA COMPARISON AND RECOMMENDATIONS
+IV.A. Source strength of catheter-based IVBT
+sources
+
+For a given source type, the two most important quantities
+in the determination of the dose delivered to the target are
+the brachytherapy source strength and the amount of time the
+source is left in the target 共i.e., the irradiation time兲 assuming
+all other parameters are known 共i.e., source position in reference to the target, etc.兲. The source strength of each delivered source is provided by the vendor to the user. It is the
+responsibility of the medical physicist to verify the accuracy
+of the source strength before its first clinical use.
+Two different definitions of brachytherapy source strength
+are in use. For photon sources the AAPM TG-32,66
+TG-43,51,52 and TG-60,11 recommend that source strength be
+specified in terms of the air kerma strength, SK. For beta
+sources from catheter based systems, the AAPM TG-60 report recommends that source strength be specified in terms
+of absorbed dose rate to water at 2 mm radial distance,
+Ḋw共2 mm兲. In this report, we make the following recommendations for the specification of source strength of IVBT
+sources.
+
+4135
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+IV.A.1. Gamma emitting 192Ir sources
+Iridium-192 sources used for intravascular brachytherapy
+are calibrated in an identical manner to those used in conventional brachytherapy.51 Individual seeds are calibrated at
+NIST with primary standards in terms of air kerma strength.
+For 192Ir sources the primary standard is a re-entrant chamber, which was originally calibrated against a NIST primary
+standard free air ionization chamber.67 Such calibrated
+sources are distributed to manufacturers and secondary laboratories for calibration of secondary standards, which are
+typically well-type ionization chambers.
+We recommend that no changes in the calibration of
+source strength of gamma emitting 192Ir sources be made. Air
+kerma strength standards and the procedures for the transfer
+of primary standards to the ADCLs and the user are well
+understood and extensively described in the literature.
+Briefly, air kerma strength, SK, is the air kerma rate,
+K̇␦ 共d兲 in vacuo and due to photons of energy greater than ␦,
+at distance d, multiplied by the square of this distance, d2:
+SK = K̇␦ 共d兲d2 .
+
+共14兲
+
+The quantity d is the distance from the source center to the
+point of K̇␦ 共d兲 specification 共usually but not necessarily associated with the point of measurement兲 which should be
+located on the transverse bisector of the source 共the plane
+normal to the longitudinal axis of the source, which bisects
+the radioactivity distribution兲. The distance d can be any distance that is large relative to the maximum linear dimension
+of the radioactivity distribution so that SK is independent of
+d. K̇␦ 共d兲 is usually inferred from air kerma rate measurements performed in a free-air geometry at distances typically
+of the order of 1 m.49 The qualification in vacuo means that
+the measurements should be corrected for photon attenuation
+and scattering in air and any other medium interposed between the source and detector, as well as photon scattering
+from any nearby objects including walls, floors, and ceilings.
+Of course, air kerma rate may also be calculated to subvert
+some of the limitations imposed on practical measurements.
+The energy cutoff, ␦, is intended to exclude low-energy or
+contaminant photons 共e.g., characteristic x rays originating in
+the outer layers of steel or titanium source cladding兲 that
+increase K̇␦ 共d兲 without contributing significantly to dose at
+distances greater than 0.1 cm in tissue.
+
+TABLE I. Dose rate constant, ⌳ 共at 10 mm兲, and dose rate per unit air kerma
+strength at 2 mm along the transverse axis of an 192Ir seed, both in units of
+cGy h−1 U−1.
+⌳ 共cGy h−1 U−1兲 Dose Rate 共cGy h−1 U−1兲
+at 10 mm
+at 2 mm
+
+Author
+Patel et al. 共Ref. 72兲
+Williamson 共Ref. 39兲
+Nath et al. 共TG-43兲 共Ref. 51兲
+Wang and Sloboda 共Ref. 68兲
+Anctil et al. 共Ref. 69兲
+Wang and Li 共Ref. 27兲
+Chen and Nath 共Ref. 70兲
+Papagiannis et al. 共Ref. 40兲
+Ye et al. 共Ref. 71兲
+
+1.108
+1.11
+1.12
+1.115
+1.1
+1.109
+1.124
+1.104
+1.129
+
+23.82
+
+23.76
+24.04
+24.9
+
+brated sources are distributed to manufacturers and secondary laboratories for calibration of secondary standards, which
+are typically well-type ionization chambers.
+It should be noted that Ḋw共2 mm兲 is often supplemented
+with values of contained activity, as this is the quantity used
+by some vendors and users in the determination of source
+strength in the clinic. Knowing the contained activity and the
+details of the source design, one can infer Ḋw共2 mm兲 by
+using the results of Monte Carlo simulations. The manufacturers of both the 90Sr/ 90Y and 32P systems do provide contained activity as well as Ḋw共2 mm兲 in their source specifications. For the former, only the parent activity is specified.
+Manufacturer measurements of contained activity are performed using well ionization chambers with activity calibrations traceable to primary standards. It should be noted that
+manufacturer statements of contained activity and reference
+absorbed dose rate are not independent but are based on a
+single determination with a system calibrated either in terms
+of one quantity or the other, with the complementary quantity inferred using a reference 共usually Monte Carlo based兲
+relationship between contained activity and reference absorbed dose rate. We recommend that the primary standard
+based upon an in-medium measurement of dose using an
+
+TABLE II. Coefficients, ai, for the reference radial dose function for 192Ir,
+90
+Sr/ 90Y single seed sources 关Eq. 共15兲兴 and for the transverse dose function
+for 32P wire sources 关Eq. 共16兲兴. The fit for 192Ir is valid for 0.5 mm艋 r
+艋 90 mm, that for 90Sr/ 90Y for 0.5 mm艋 r 艋 9.9 mm. The fit for 32P is valid
+for 0.5 mm艋 ␳ 艋 6.5 mm.
+
+IV.A.2. Beta emitting 32P and 90Sr/ 90Y sources
+
+Coefficient
+
+Currently, beta-emitting catheter based systems are calibrated at primary and secondary laboratories in terms of reference absorbed dose rate 共absorbed dose rate to water at a
+reference distance of 2 mm in water兲 measured in water
+equivalent plastic using an extrapolation ionization chamber
+equipped with a 1 mm diameter collecting electrode.30,41
+This approach for the primary standard for beta emitting
+IVBT sources has the advantage of yielding the quantity of
+interest in an absolute sense. Similarly to 192Ir sources, cali-
+
+a0
+a1
+a2
+a3
+a4
+a5
+a6
+a7
+a8
+a9
+a10
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4135
+
+192
+
+Ir
+
+9.89054⫻ 10−1
+8.81319⫻ 10−4
+3.51778⫻ 10−5
+−1.46637⫻ 10−6
+9.24370⫻ 10−9
+
+90
+
+Sr/ 90Y
+
+32
+
+1.42392⫻ 100
+−1.20120⫻ 100
+1.82809⫻ 100
+−1.46740⫻ 100
+6.75438⫻ 10−1
+−1.95682⫻ 10−1
+3.67827⫻ 10−2
+−4.46911⫻ 10−3
+3.38232⫻ 10−4
+−1.44859⫻ 10−5
+2.68025⫻ 10−7
+
+6.51289⫻ 10−1
+5.92999⫻ 10−2
+−2.55906⫻ 10−1
+4.03760⫻ 10−2
+−4.32949⫻ 10−3
+
+P
+
+4136
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+TABLE III. List of values of the radial dose function, gL共r兲, for 192Ir and
+90
+Sr/ 90Y single seed sources using effective lengths of 3 and 2.5 mm, respectively. Values of g共␳兲 for 32P wire sources 共20 and 27 mm long兲 are also
+listed in the rightmost column. These values were generated with Eqs. 共15兲
+and 共16兲 and the coefficients given in Table II for the respective radionuclides. Note that both r and ␳ are expressed in millimeters. The fit for 192Ir
+is valid for 0.5 mm艋 r 艋 90 mm, that for 90Sr/ 90Y for 0.5 mm艋 r
+艋 9.9 mm. The fit for 32P is valid for 0.5 mm艋 ␳ 艋 6.5 mm.
+r or ␳
+共mm兲
+
+192
+Ir
+gL共r兲
+
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+6.0
+6.5
+7.0
+7.5
+8.0
+8.5
+9.0
+10.0
+20.0
+30.0
+40.0
+50.0
+60.0
+70.0
+80.0
+90.0
+
+0.990
+0.990
+0.990
+0.991
+0.991
+0.992
+0.993
+0.993
+0.994
+0.994
+0.995
+0.995
+0.996
+0.996
+0.997
+0.998
+0.999
+0.999
+1.000
+1.010
+1.015
+1.010
+0.996
+0.972
+0.942
+0.913
+0.891
+
+90
+
+Sr/ 90Y
+gL共r兲
+
+32
+P
+g共␳兲
+
+1.134⫻ 100
+1.096⫻ 100
+1.067⫻ 100
+1.001⫻ 100
+9.088⫻ 10−1
+8.034⫻ 10−1
+6.919⫻ 10−1
+5.780⫻ 10−1
+4.660⫻ 10−1
+3.621⫻ 10−1
+2.718⫻ 10−1
+1.978⫻ 10−1
+1.389⫻ 10−1
+9.223⫻ 10−2
+5.587⫻ 10−2
+3.025⫻ 10−2
+1.617⫻ 10−2
+9.814⫻ 10−3
+
+1.862⫻ 100
+1.634⫻ 100
+1.322⫻ 100
+1.000⫻ 100
+7.131⫻ 10−1
+4.797⫻ 10−1
+3.028⫻ 10−1
+1.772⫻ 10−1
+9.441⫻ 10−2
+4.465⫻ 10−2
+1.817⫻ 10−2
+6.125⫻ 10−3
+1.636⫻ 10−3
+
+extrapolation chamber should continue to be used as the primary quantity for specification of beta particle sources for
+IVBT.
+It is anticipated that well-type ionization chambers will
+continue to be the principal instrument used to transfer calibrations of sources between laboratories. For this purpose it
+is extremely important that the inserts used to position the
+sources within the chamber volume be standardized since the
+chamber calibration coefficient will be different for each
+source design and chamber insert type.
+It should also be noted that, strictly speaking, the well
+chamber will measure a quantity that is related to source
+contained activity. Use of the well-chamber reading to infer
+reference absorbed dose rate cannot be done without knowledge that the activity is distributed uniformly in the source
+共which may, e.g., be verified via film measurements兲. This is
+particularly important for beta-particle line sources since the
+reference absorbed dose rate is influenced only by the central
+section of the source with a length of the same order of
+magnitude as the beta particle range.41 Nonuniform sources
+thus have a different relationship between contained activity
+and reference absorbed dose rate than uniform sources. The
+latter case is usually assumed in modeling calculations made
+to yield this relationship.
+Also necessary is the frequent use of reference sources to
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4136
+
+check the long-term stability of the response of the well
+chamber. The latter sources need not be calibrated since only
+the relative readings are necessary for this purpose. Sources
+with a long halflife such as 137Cs or 90Sr/ 90Y are recommended for this purpose. Preferably they would be usable in
+the same insert as that used for the brachytherapy source
+calibrations so that insert integrity could be monitored as
+well.
+In principle, any radiation sensitive detector in a calibrated reproducible geometry could be used to transfer calibrations between laboratories. For beta sources, the best detectors would be similar to the extrapolation chamber
+described above for the direct measurement of reference absorbed dose rate; the only difference being that calibration of
+the detector in a radiation field of known absorbed dose rate
+would be necessary. As with well-ionization chambers, the
+detector in its measurement geometry 共phantom, holder, etc.兲
+would be calibrated using a brachytherapy source with
+known reference absorbed dose rate. The system would require calibration for each type of source to be measured.
+IV.B. Recommended dose calculation formalism
+
+We recommend that the general, 2D dose-rate equation
+from the 2004 TG-43 protocol given in Eq. 共1兲 be retained
+for photon and beta particle emitting seed sources. In this
+formalism we recommend using the line-source model given
+in Eq. 共4兲. 共The point source approximation is not considered
+appropriate for the close distances involved in intravascular
+brachytherapy source dosimetry.兲 Also, we recommend the
+use of linear superposition for the summation of doses from
+individual sources in a train. For the calculation of the dose
+distribution about the 20 and 27 mm Guidant 32P line
+sources, we recommend the cylindrical formalism discussed
+in Sec. II D.
+IV.C. Recommended dosimetry parameters
+
+IV.C.1. 192Ir seed train sources
+IV.C.1.a. Source length.
+The recommended value for the active source length L is
+3.0 mm. This value has been used for the calculation of all
+data presented below.
+IV.C.1.b. Dose rate constant.
+Published values27,39,40,51,68–72 of the dose rate constant 关absorbed dose rate in water at 10 mm 共1 cm兲 per unit air kerma
+strength 共U兲兴 were compared and are shown in Table I. For
+the sake of simplicity and consistency we recommend the
+TG-43 recommended value, 1.12 cGy U−1 h−1 of Nath et
+al.51 for the Best model 81-01 192Ir seed as the reference
+value for this parameter. All published values are within 2%
+of this reference value.
+Also shown in Table I are the four reported values for the
+dose rate at 2 mm in water per unit air kerma strength. These
+values are also in fair agreement with one another 共the difference between the largest and smallest value ⬍5%兲.
+IV.C.1.c. Radial dose function.
+Four sets of published values for the radial dose function,
+gL共r兲, for a single 192Ir seed source, are shown in Fig. 5.
+
+4137
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+FIG. 5. Comparison of published radial dose functions for a single 192Ir
+seed. The recommended data set is shown in red.
+
+They all agree with one another to within about 2% at distances larger than 1 mm and within 4% between 0.5 and
+1 mm. However, for shorter distances, the values by Patel et
+al.72 rise steeply as the distance decreases. This is due to the
+inclusion of the contribution of the beta particles emitted by
+192
+Ir. Although we consider this study more correct at shorter
+distances, we again recommend the TG-43 values for the
+sake of simplicity and because these beta particles are absorbed in the nylon ribbon and do not contribute a significant
+dose to the tissues.73 The recommended reference values are
+obtained from the TG-43 polynomial fit calculated down to
+0.5 mm from the seed center 共the closest distance from any
+tissue, even in an eccentric catheter and ribbon兲. This function is also shown in Fig. 5 and is given by
+n
+
+gL共r兲 = 兺 airi ,
+
+共15兲
+
+i=0
+
+where n is the order of the polynomial used for the fit. The
+parameters of the fit are given in Table II. Note that r is
+expressed in millimeters. The range of application of this
+function is from 0.5 to 90 mm.
+IV.C.1.d. 2D anisotropy function.
+A sample of the published values27,51,69,72,74–76 for the 2D
+anisotropy function, F共r , ␪兲 for a single 192Ir seed source is
+shown in Fig. 6. The recommended reference values for r
+⬍ 10 mm are those given by Patel et al.72 The values for r
+艌 10 mm are from the TG-43 recommendation.51 This
+choice was made based on the fact that this Monte Carlo
+study was the most densely populated and also considered
+the beta particles and electrons emitted by the seed source.
+As shown in Fig. 6 the chosen set agrees well with those of
+other authors, except at short distances and small angles
+where the beta particle contribution influences the function.
+These values are shown in Table IV. For reference purposes,
+the values of the product of r2 and the geometry function,
+GL共r , ␪兲, for a source with a 3 mm active length are displayed in Table V共a兲. The main reason for using the TG-43
+data for distances r 艌 1 cm is that the dose contributions at
+these distances are relatively unimportant for IVBT. In order
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4137
+
+to keep only one data set for 192Ir 共Best兲 seeds used in conventional brachytherapy for distances of 1 cm and greater,
+the existing TG-43 values are recommended. However, these
+values may change when new recommendations from the
+high energy source working group become available in the
+future.
+IV.C.1.e. Comparison of dose distributions.
+The dose distributions for a single seed, and a 39 mm 共10
+seed兲 train, calculated using the reference parameters, are
+tabulated in Tables VI and VII, respectively. Dose rates at
+2 mm, averaged over the central 32 of the train length are
+shown in Table VIII for commonly used train lengths. For
+comparison
+with
+published
+measurements
+and
+calculations,27,72,75,77,78 relative depth-dose profiles and axial
+dose profiles for 23 mm 共6 seed trains兲 are shown in Figs. 7
+and 8, respectively. Because the transverse dose profiles at
+the train center 共located at an interseed gap兲 and at the seed
+center are very different, these are shown separately in Figs.
+7共a兲 and 7共b兲
+IV.C.2. 90Sr/ 90Y seed train sources
+IV.C.2.a. Source length.
+The recommended value for the active source length L is
+2.5 mm. This value has been used for the calculation of all
+data presented below.
+IV.C.2.b. Reference absorbed dose rate per unit activity.
+Published values27,28,79 of the absorbed dose rate in water at
+2 mm per unit contained activity were compared and are
+shown in Table IX. The average of the published values
+shown, 1.10 Gy min−1 mCi−1, was chosen as the reference
+value for both 5 F and 3.5 F seeds. As shown in Table IX, all
+published values are within 2% of this reference value. The
+differences between the values published for the 5 F and
+3.5 F sources were not considered to be significant. In some
+cases, as specified in the table, authors used the combined
+activities of the parent 90Sr and daughter 90Y for the activity
+specification. In these cases, it was necessary to multiply the
+published value by a factor of 2 to account for this.
+Table X shows published values27,28,71,80–82 of the absorbed dose rate 共Gy min−1兲 in water at 2 mm per unit contained activity 共mCi兲 for train sources of various lengths.
+Where train values were not given explicitly in the references, they were calculated from the value for a single seed
+共see Table IX兲 and the radial dose function and anisotropy
+function published in the same reference. The scatter in the
+published values for train sources is considerably greater
+than for a single seed, mainly due to the inclusion of some
+measured 共“exp”兲 data in the comparisons. The recommended reference values for the dose rate per unit contained
+activity are 0.154, 0.113, and 0.0746 Gy min−1 mCi−1 for
+seed trains of lengths, 30, 40, and 60 mm, respectively. As in
+Table IX, it was sometimes necessary to multiply published
+values by a factor of 2 to account for the activity specification used.
+IV.C.2.c. Radial dose function.
+Published values27,28,41 for the radial dose function for a
+single 90Sr/ 90Y seed source are shown in Fig. 9. The recom-
+
+4138
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4138
+
+FIG. 6. Comparison of published 2D anisotropy functions, F共r , ␪兲, for a single 192Ir seed. The data reported by Patel et al. 共Ref. 72兲, Wang and Li 共Ref. 27兲,
+Soares 共Ref. 75兲, Yang and Chan 共Ref. 74兲, Anctil et al. 共Ref. 69兲, Capote et al. 共Ref. 76兲, and Nath et al. 共Ref. 51兲 are shown by the symbol types diamond,
+cross, square, plus sign, triangle, star, and circle, respectively. Recommended data are shown in red.
+
+mended reference values are a fit of the Wang and Li
+共2002兲28 data for the 5 F source. This function is also shown
+plotted in Fig. 9 and is given by Eq. 共15兲. The parameters of
+the fit are given in Table II. Note that r is expressed in
+millimeters. The range of application of this function is from
+0.5 to 9.9 mm. The recommended values of the radial dose
+function are also tabulated in Table III.
+IV.C.2.d. 2D anisotropy function.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+A sample of the published values27,28,41 for the 2D anisotropy
+function, F共r , ␪兲, for a single 90Sr/ 90Y seed source is shown
+in Fig. 10. The recommended reference values are those
+given by Wang and Li 共2002兲28 for the 5 F source. These data
+are shown in Table XI. For reference purposes, the values of
+the geometry function multiplied by the distance squared for
+a 2.5 mm seed are listed in Table V共b兲.
+IV.C.2.e. Comparison of dose distributions.
+
+4139
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+TABLE IV. Recommended values of the anisotropy function, F共r , ␪兲, for a
+single 192Ir seed.
+
+␪
+共degrees兲
+r
+共mm兲
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+1.7
+1.8
+1.9
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+6.0
+7.0
+8.0
+9.0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+
+0
+
+10
+
+20
+
+30
+
+40
+
+4139
+
+TABLE V. Geometry function GL共r , ␪兲 multiplied by r2 for a seed source with
+共a兲 3.0 mm 共for 192Ir兲 and 共b兲 2.5 mm 共for 90Sr/ 90Y兲 active lengths.
+共a兲
+
+50
+
+60
+
+70
+
+80
+
+90
+
+—
+—
+—
+— 1.063 1.079 1.045 1.034 1.038 1.000
+—
+—
+— 1.032 1.078 1.040 1.037 1.018 1.027 1.000
+—
+—
+— 1.077 1.073 1.043 1.025 1.024 1.020 1.000
+—
+—
+— 1.070 1.036 1.032 1.008 1.019 1.013 1.000
+—
+— 1.085 1.072 1.053 1.022 1.019 1.017 1.011 1.000
+—
+— 1.117 1.057 1.037 1.023 1.018 1.012 1.005 1.000
+—
+— 1.098 1.061 1.025 1.021 1.013 1.007 1.002 1.000
+—
+— 1.076 1.047 1.028 1.014 1.007 1.005 1.002 1.000
+—
+— 1.099 1.058 1.023 1.010 1.007 1.004 1.003 1.000
+—
+— 1.151 1.059 1.030 1.012 1.004 1.004 1.005 1.000
+—
+— 1.259 1.115 1.034 1.008 1.001 1.002 1.004 1.000
+—
+— 1.703 1.144 1.033 1.007 0.999 1.000 1.002 1.000
+— 5.661 1.914 1.216 1.039 1.005 1.001 0.999 1.001 1.000
+— 7.870 2.146 1.243 1.044 1.006 1.003 1.002 1.003 1.000
+— 8.235 2.348 1.277 1.048 1.009 1.004 1.003 1.003 1.000
+— 7.834 2.293 1.261 1.049 1.008 1.001 1.003 1.003 1.000
+— 3.738 1.621 1.123 1.015 0.997 0.998 1.004 1.003 1.000
+— 1.923 1.126 1.002 0.994 0.995 0.999 1.002 1.004 1.000
+— 1.266 0.981 0.978 0.989 0.996 0.998 1.001 1.003 1.000
+— 1.041 0.957 0.975 0.987 0.993 1.000 1.000 1.003 1.000
+— 0.971 0.955 0.974 0.988 0.993 0.997 1.001 1.005 1.000
+— 0.930 0.950 0.973 0.982 0.990 0.996 0.999 1.000 1.000
+— 0.909 0.954 0.976 0.987 0.996 1.001 1.000 1.003 1.000
+— 0.904 0.957 0.977 0.990 0.992 0.997 0.999 1.001 1.000
+— 0.904 0.955 0.976 0.988 0.992 0.997 0.998 1.001 1.000
+— 0.898 0.953 0.976 0.985 0.992 0.996 0.999 1.001 1.000
+0.806 0.843 0.947 0.966 1.000 1.020 1.030 1.030 1.020 1.000
+0.788 0.906 0.947 0.941 0.945 0.949 0.953 0.989 0.991 1.000
+0.769 0.813 0.893 0.936 1.030 0.984 0.977 1.030 1.030 1.000
+0.868 0.949 1.010 0.996 1.020 1.030 1.040 1.010 1.010 1.000
+0.831 0.931 0.994 1.030 1.070 1.050 1.030 1.010 1.020 1.000
+0.819 0.899 0.920 0.928 0.973 0.959 0.954 0.996 0.997 1.000
+0.844 0.944 0.985 0.969 0.962 0.967 1.010 1.020 0.979 1.000
+0.824 0.932 0.926 0.958 0.970 0.982 0.970 0.983 0.994 1.000
+0.889 0.962 0.990 0.968 0.996 0.992 1.010 1.020 0.987 1.000
+
+The away-and-along table of recommended dose rates normalized to unity at the reference point for a single 90Sr/ 90Y
+seed source is displayed in Table XII. The dose distribution
+for a 40 mm 共16 seed兲 train calculated using the reference
+parameters is tabulated in Table XIII. For comparison with
+published measurements and calculations,27,28,41,80–84 relative
+depth-dose profiles for 30 mm 共12 seed trains兲 and axial dose
+profiles for 40 mm 共16 seed trains兲 are shown plotted in Figs.
+11 and 12, respectively.
+IV.C.3. 32P wire sources
+IV.C.3.a. Reference absorbed dose rate per unit activity.
+Published values29,30,62,85–89 of the reference absorbed dose
+rate per unit contained activity for the 20 and 27 mm
+Guidant 32P sources are shown in Table XIV 共measurement
+results兲 and Table XV 共simulation results兲. Also shown in
+these tables are the corresponding values of the reference
+absorbed dose rate per unit contained activity per unit active
+source length. This value is expected to be the same for both
+types of sources as may be explained as follows.
+The reference absorbed dose rate may be assumed to be
+entirely due to beta particles, as the bremsstrahlung contribution at the reference point 共␳0z0兲 is negligibly small.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+r
+共mm兲
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+4.0
+5.0
+7.0
+10
+20
+30
+40
+50
+
+␪
+共degrees兲
+0
+
+10
+
+20
+
+30
+
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+4.0
+5.0
+7.0
+10
+20
+30
+40
+50
+
+50
+
+60
+
+70
+
+80
+
+90
+
+2.891 1.409 0.928 0.698 0.570 0.494 0.448 0.424 0.416
+5.273 2.392 1.510 1.113 0.900 0.777 0.705 0.667 0.655
+4.523 2.296 1.571 1.222 1.025 0.907 0.836 0.798 0.785
+2.062 1.685 1.390 1.187 1.050 0.959 0.901 0.868 0.858
+1.511 1.389 1.255 1.139 1.047 0.980 0.935 0.909 0.901
+1.310 1.251 1.176 1.102 1.039 0.990 0.955 0.934 0.927
+1.155 1.131 1.097 1.060 1.026 0.996 0.975 0.961 0.957
+1.094 1.081 1.062 1.039 1.018 0.998 0.984 0.975 0.972
+1.046 1.040 1.031 1.020 1.009 1.000 0.992 0.987 0.985
+1.023 1.022 1.019 1.015 1.010 1.005 1.000 0.996 0.993 0.993
+1.006 1.005 1.005 1.004 1.003 1.001 1.000 0.999 0.998 0.998
+1.003 1.002 1.002 1.002 1.001 1.001 1.000 1.000 0.999 0.999
+1.001 1.001 1.001 1.001 1.001 1.000 1.000 1.000 1.000 1.000
+1.001 1.001 1.001 1.001 1.000 1.000 1.000 1.000 1.000 1.000
+
+共b兲
+r
+共mm兲
+
+40
+
+␪
+共degrees兲
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+3.430 1.653 1.079 0.807 0.656 0.566 0.513 0.485 0.476
+5.723 2.518 1.595 1.187 0.969 0.843 0.769 0.729 0.717
+3.273 2.620 1.892 1.463 1.207 1.046 0.944 0.880 0.845 0.834
+1.641 1.576 1.431 1.277 1.147 1.049 0.977 0.930 0.903 0.894
+1.333 1.310 1.251 1.176 1.102 1.039 0.990 0.955 0.934 0.927
+1.210 1.198 1.165 1.121 1.074 1.030 0.995 0.969 0.953 0.947
+1.108 1.103 1.088 1.067 1.043 1.019 0.998 0.982 0.973 0.969
+1.067 1.064 1.055 1.042 1.028 1.013 0.999 0.989 0.982 0.980
+1.033 1.032 1.028 1.021 1.014 1.007 1.000 0.994 0.991 0.990
+1.016 1.015 1.013 1.010 1.007 1.003 1.000 0.997 0.995 0.995
+1.004 1.004 1.003 1.003 1.002 1.001 1.000 0.999 0.999 0.999
+1.002 1.002 1.001 1.001 1.001 1.000 1.000 1.000 0.999 0.999
+1.001 1.001 1.001 1.001 1.000 1.000 1.000 1.000 1.000 1.000
+1.001 1.001 1.001 1.000 1.000 1.000 1.000 1.000 1.000 1.000
+
+Therefore, only the parts of the source located within distances less than the beta particle range from the reference
+point can be assumed to contribute to the reference absorbed
+dose rate. Since the range of 32P beta particles in water
+equals ⬃8 mm, this means for both the 20 and 27 mm
+sources that only the central section of the source, with a
+length of ⬃16 mm, contributes to the reference absorbed
+dose rate. Since the 20 and 27 mm source geometries are
+essentially the same except for the active source length, see
+Sec. II B 3, it then follows that the reference absorbed dose
+rate per unit activity is the same for both sources if the activity per unit source length is the same. More generally it
+can be said that the reference absorbed dose rate per unit
+activity per unit length is expected to be independent of
+source length for any 32P line source with an active source
+length larger than twice the range of the beta particles.
+For this reason, it was decided to calculate the recommended absorbed dose rate per unit activity for both the 20
+and 27 mm sources from a single recommended value of the
+absorbed dose rate per unit activity per unit length. This
+value was derived as follows. First, we calculated the average
+of
+all
+published
+experimental
+values
+共0.622 cGy s−1 mCi cm兲 and the average of all published
+
+0.5
+
+8.052
+7.021
+6.368
+6.038
+8.371
+10.05
+8.377
+5.749
+3.698
+1.272
+0.418
+0.206
+0.131
+0.096
+0.063
+0.052
+0.039
+
+Along Axis
+z 共mm兲
+
+0.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+10.0
+
+6.327
+5.464
+4.964
+4.774
+5.778
+6.396
+5.574
+4.039
+2.831
+1.026
+0.347
+0.189
+0.119
+0.085
+0.062
+0.051
+0.040
+
+0.6
+
+5.114
+4.378
+4.009
+3.864
+4.177
+4.396
+3.900
+2.976
+2.181
+0.852
+0.331
+0.185
+0.124
+0.086
+0.066
+0.049
+0.040
+
+0.7
+
+4.242
+3.589
+3.320
+3.190
+3.214
+3.250
+2.876
+2.306
+1.745
+0.729
+0.310
+0.183
+0.120
+0.086
+0.063
+0.049
+0.040
+
+0.8
+3.572
+3.037
+2.820
+2.653
+2.595
+2.499
+2.197
+1.801
+1.459
+0.669
+0.306
+0.185
+0.122
+0.086
+0.065
+0.049
+0.040
+
+0.9
+3.057
+2.599
+2.402
+2.243
+2.127
+1.985
+1.777
+1.503
+1.210
+0.614
+0.298
+0.181
+0.121
+0.087
+0.065
+0.051
+0.040
+
+1.0
+2.651
+2.242
+2.082
+1.934
+1.812
+1.661
+1.454
+1.241
+1.040
+0.576
+0.291
+0.178
+0.122
+0.086
+0.065
+0.051
+0.041
+
+1.1
+2.317
+1.970
+1.838
+1.691
+1.570
+1.425
+1.236
+1.087
+0.908
+0.541
+0.285
+0.179
+0.121
+0.087
+0.065
+0.051
+0.041
+
+1.2
+2.044
+1.746
+1.623
+1.496
+1.381
+1.252
+1.097
+0.963
+0.823
+0.516
+0.282
+0.176
+0.120
+0.087
+0.065
+0.051
+0.041
+
+1.3
+1.815
+1.554
+1.455
+1.344
+1.241
+1.108
+0.990
+0.864
+0.757
+0.495
+0.276
+0.175
+0.120
+0.087
+0.066
+0.051
+0.041
+
+1.4
+1.625
+1.401
+1.314
+1.213
+1.112
+1.015
+0.898
+0.794
+0.695
+0.472
+0.273
+0.173
+0.120
+0.087
+0.066
+0.051
+0.041
+
+1.5
+1.463
+1.267
+1.187
+1.103
+1.013
+0.923
+0.825
+0.735
+0.651
+0.453
+0.267
+0.172
+0.119
+0.087
+0.066
+0.052
+0.041
+
+1.6
+1.323
+1.152
+1.080
+1.006
+0.925
+0.845
+0.764
+0.686
+0.613
+0.435
+0.263
+0.171
+0.118
+0.087
+0.066
+0.052
+0.041
+
+1.7
+1.200
+1.051
+0.990
+0.927
+0.855
+0.783
+0.710
+0.641
+0.579
+0.419
+0.257
+0.169
+0.118
+0.087
+0.066
+0.052
+0.042
+
+1.8
+1.092
+0.962
+0.909
+0.855
+0.789
+0.727
+0.667
+0.604
+0.547
+0.403
+0.252
+0.167
+0.116
+0.086
+0.066
+0.052
+0.042
+
+1.9
+
+2.0
+1.000
+0.887
+0.840
+0.789
+0.734
+0.680
+0.624
+0.569
+0.518
+0.389
+0.247
+0.165
+0.116
+0.086
+0.066
+0.052
+0.042
+
+Away from Axis, ␳ 共mm兲
+
+0.672
+0.613
+0.587
+0.560
+0.528
+0.497
+0.467
+0.436
+0.405
+0.322
+0.219
+0.153
+0.111
+0.084
+0.064
+0.051
+0.042
+
+2.5
+0.481
+0.446
+0.432
+0.416
+0.399
+0.379
+0.360
+0.342
+0.322
+0.268
+0.193
+0.140
+0.105
+0.080
+0.063
+0.050
+0.041
+
+3.0
+0.360
+0.340
+0.331
+0.320
+0.310
+0.298
+0.286
+0.273
+0.261
+0.224
+0.169
+0.127
+0.098
+0.076
+0.061
+0.049
+0.041
+
+3.5
+0.280
+0.267
+0.261
+0.255
+0.247
+0.239
+0.232
+0.223
+0.215
+0.188
+0.148
+0.116
+0.091
+0.072
+0.058
+0.048
+0.040
+
+4.0
+0.223
+0.215
+0.211
+0.207
+0.202
+0.197
+0.190
+0.185
+0.178
+0.160
+0.130
+0.104
+0.084
+0.068
+0.055
+0.046
+0.038
+
+4.5
+0.183
+0.176
+0.173
+0.171
+0.168
+0.163
+0.160
+0.155
+0.151
+0.138
+0.115
+0.095
+0.077
+0.063
+0.053
+0.044
+0.037
+
+5.0
+0.127
+0.124
+0.123
+0.121
+0.119
+0.118
+0.116
+0.113
+0.111
+0.103
+0.090
+0.077
+0.065
+0.055
+0.047
+0.040
+0.034
+
+6.0
+0.094
+0.092
+0.092
+0.091
+0.090
+0.088
+0.087
+0.086
+0.085
+0.080
+0.072
+0.063
+0.055
+0.048
+0.041
+0.036
+0.031
+
+7.0
+
+0.072
+0.071
+0.071
+0.070
+0.070
+0.069
+0.068
+0.067
+0.067
+0.064
+0.058
+0.053
+0.047
+0.041
+0.037
+0.032
+0.028
+
+8.0
+
+0.057
+0.057
+0.056
+0.056
+0.056
+0.055
+0.055
+0.054
+0.054
+0.052
+0.048
+0.044
+0.040
+0.036
+0.032
+0.029
+0.026
+
+9.0
+
+0.047
+0.046
+0.046
+0.046
+0.046
+0.045
+0.045
+0.045
+0.044
+0.043
+0.040
+0.038
+0.034
+0.031
+0.029
+0.026
+0.023
+
+10.0
+
+TABLE VI. Away-and-along table for dose rates from a single 192Ir seed normalized to unity at 2 mm along the transverse axis of the seed. Absolute absorbed dose rates in cGy h−1 for a seed of unit air kerma strength
+共1 U兲 can be obtained by multiplication with 24.12.
+
+4140
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4140
+
+2
+
+0.5
+
+12.864
+5.853
+5.189
+5.274
+5.061
+5.273
+5.187
+5.851
+12.862
+5.850
+5.185
+5.269
+5.056
+5.267
+5.181
+5.844
+12.853
+5.840
+5.174
+5.257
+5.043
+5.252
+5.164
+5.824
+12.831
+5.825
+5.166
+5.247
+5.030
+5.236
+5.143
+5.799
+12.797
+5.779
+5.103
+5.154
+4.884
+4.961
+4.444
+
+Along axis
+z
+共mm兲
+
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+6.0
+6.5
+7.0
+7.5
+8.0
+8.5
+9.0
+9.5
+10.0
+10.5
+11.0
+11.5
+12.0
+12.5
+13.0
+13.5
+14.0
+14.5
+15.0
+15.5
+16.0
+16.5
+17.0
+17.5
+18.0
+18.5
+19.0
+
+8.573
+5.388
+4.181
+4.259
+4.159
+4.259
+4.179
+5.386
+8.571
+5.385
+4.177
+4.255
+4.154
+4.253
+4.173
+5.378
+8.562
+5.375
+4.166
+4.243
+4.140
+4.237
+4.155
+5.359
+8.540
+5.359
+4.156
+4.230
+4.125
+4.218
+4.131
+5.328
+8.499
+5.304
+4.080
+4.119
+3.951
+3.894
+3.454
+
+0.6
+5.169
+4.253
+3.463
+3.546
+3.537
+3.546
+3.462
+4.251
+5.167
+4.250
+3.459
+3.542
+3.531
+3.540
+3.455
+4.243
+5.158
+4.240
+3.448
+3.529
+3.518
+3.524
+3.438
+4.224
+5.136
+4.222
+3.436
+3.515
+3.499
+3.501
+3.409
+4.187
+5.088
+4.158
+3.348
+3.387
+3.300
+3.185
+2.808
+
+0.7
+3.764
+3.339
+2.937
+3.043
+3.032
+3.042
+2.936
+3.337
+3.762
+3.336
+2.933
+3.038
+3.027
+3.036
+2.929
+3.329
+3.753
+3.326
+2.922
+3.026
+3.013
+3.020
+2.912
+3.310
+3.731
+3.307
+2.908
+3.009
+2.992
+2.994
+2.879
+3.267
+3.676
+3.234
+2.808
+2.865
+2.795
+2.695
+2.348
+
+0.8
+3.065
+2.630
+2.542
+2.639
+2.642
+2.639
+2.541
+2.628
+3.063
+2.627
+2.538
+2.635
+2.636
+2.633
+2.534
+2.620
+3.054
+2.617
+2.527
+2.622
+2.622
+2.617
+2.516
+2.601
+3.032
+2.598
+2.510
+2.603
+2.598
+2.587
+2.479
+2.553
+2.971
+2.516
+2.401
+2.461
+2.407
+2.306
+2.013
+
+0.9
+2.504
+2.292
+2.225
+2.318
+2.334
+2.317
+2.224
+2.290
+2.502
+2.289
+2.222
+2.313
+2.328
+2.311
+2.217
+2.282
+2.493
+2.279
+2.210
+2.301
+2.314
+2.295
+2.200
+2.262
+2.470
+2.258
+2.192
+2.279
+2.288
+2.262
+2.158
+2.210
+2.403
+2.171
+2.084
+2.139
+2.102
+1.997
+1.752
+
+1.0
+1.342
+1.344
+1.387
+1.433
+1.450
+1.432
+1.386
+1.342
+1.340
+1.341
+1.383
+1.428
+1.444
+1.426
+1.379
+1.334
+1.331
+1.331
+1.372
+1.415
+1.430
+1.410
+1.361
+1.314
+1.308
+1.306
+1.344
+1.383
+1.392
+1.367
+1.311
+1.255
+1.238
+1.222
+1.241
+1.254
+1.230
+1.155
+1.023
+
+1.5
+0.988
+0.994
+1.015
+1.034
+1.040
+1.034
+1.013
+0.992
+0.985
+0.991
+1.011
+1.029
+1.034
+1.027
+1.006
+0.984
+0.976
+0.981
+0.999
+1.016
+1.020
+1.011
+0.988
+0.964
+0.953
+0.955
+0.970
+0.984
+0.982
+0.968
+0.938
+0.906
+0.885
+0.874
+0.873
+0.865
+0.836
+0.784
+0.705
+
+2.0
+0.789
+0.792
+0.800
+0.807
+0.808
+0.806
+0.799
+0.790
+0.786
+0.789
+0.796
+0.802
+0.802
+0.800
+0.791
+0.782
+0.777
+0.778
+0.784
+0.789
+0.788
+0.783
+0.773
+0.762
+0.754
+0.753
+0.756
+0.757
+0.751
+0.741
+0.725
+0.706
+0.689
+0.677
+0.665
+0.649
+0.621
+0.584
+0.532
+
+2.5
+0.653
+0.654
+0.657
+0.659
+0.658
+0.659
+0.655
+0.652
+0.650
+0.650
+0.652
+0.654
+0.653
+0.652
+0.648
+0.643
+0.641
+0.640
+0.641
+0.641
+0.638
+0.636
+0.630
+0.623
+0.618
+0.615
+0.613
+0.610
+0.602
+0.596
+0.584
+0.570
+0.557
+0.544
+0.530
+0.513
+0.489
+0.461
+0.424
+
+3.0
+
+3.5
+0.554
+0.553
+0.554
+0.555
+0.554
+0.554
+0.553
+0.551
+0.551
+0.550
+0.550
+0.550
+0.548
+0.547
+0.546
+0.543
+0.542
+0.540
+0.539
+0.537
+0.534
+0.532
+0.528
+0.523
+0.520
+0.515
+0.511
+0.506
+0.500
+0.493
+0.484
+0.474
+0.463
+0.450
+0.436
+0.420
+0.400
+0.378
+0.351
+
+Away from axis, ␳
+共mm兲
+
+0.477
+0.477
+0.477
+0.478
+0.477
+0.477
+0.476
+0.475
+0.474
+0.474
+0.473
+0.473
+0.472
+0.471
+0.469
+0.467
+0.465
+0.464
+0.462
+0.460
+0.457
+0.455
+0.451
+0.448
+0.444
+0.440
+0.436
+0.431
+0.425
+0.418
+0.410
+0.401
+0.391
+0.380
+0.368
+0.354
+0.337
+0.319
+0.299
+
+4.0
+0.418
+0.418
+0.418
+0.418
+0.418
+0.417
+0.416
+0.416
+0.415
+0.414
+0.414
+0.413
+0.412
+0.411
+0.409
+0.408
+0.406
+0.404
+0.402
+0.400
+0.399
+0.395
+0.392
+0.389
+0.385
+0.382
+0.377
+0.372
+0.367
+0.361
+0.354
+0.346
+0.337
+0.327
+0.316
+0.304
+0.291
+0.275
+0.259
+
+4.5
+0.370
+0.370
+0.370
+0.370
+0.370
+0.369
+0.369
+0.368
+0.368
+0.367
+0.366
+0.365
+0.364
+0.363
+0.362
+0.360
+0.359
+0.357
+0.355
+0.353
+0.351
+0.348
+0.346
+0.342
+0.339
+0.335
+0.331
+0.327
+0.322
+0.316
+0.310
+0.302
+0.294
+0.286
+0.276
+0.266
+0.254
+0.242
+0.228
+
+5.0
+0.298
+0.298
+0.298
+0.298
+0.298
+0.297
+0.297
+0.296
+0.296
+0.295
+0.295
+0.294
+0.293
+0.292
+0.290
+0.289
+0.287
+0.286
+0.284
+0.282
+0.280
+0.278
+0.275
+0.273
+0.269
+0.266
+0.263
+0.259
+0.254
+0.249
+0.244
+0.239
+0.232
+0.226
+0.218
+0.210
+0.202
+0.193
+0.184
+
+6.0
+0.247
+0.247
+0.247
+0.247
+0.246
+0.246
+0.246
+0.245
+0.245
+0.244
+0.243
+0.242
+0.242
+0.241
+0.239
+0.238
+0.237
+0.235
+0.234
+0.232
+0.230
+0.228
+0.226
+0.223
+0.221
+0.218
+0.215
+0.211
+0.208
+0.203
+0.199
+0.194
+0.189
+0.184
+0.179
+0.172
+0.166
+0.159
+0.153
+
+7.0
+0.209
+0.209
+0.208
+0.208
+0.208
+0.208
+0.207
+0.207
+0.206
+0.206
+0.205
+0.204
+0.203
+0.203
+0.202
+0.201
+0.199
+0.198
+0.196
+0.195
+0.193
+0.191
+0.189
+0.187
+0.185
+0.182
+0.180
+0.177
+0.173
+0.170
+0.166
+0.163
+0.159
+0.154
+0.150
+0.145
+0.140
+0.135
+0.130
+
+8.0
+
+0.179
+0.179
+0.179
+0.178
+0.178
+0.178
+0.178
+0.177
+0.177
+0.176
+0.176
+0.175
+0.174
+0.173
+0.172
+0.171
+0.170
+0.169
+0.168
+0.166
+0.165
+0.163
+0.161
+0.159
+0.157
+0.155
+0.153
+0.150
+0.148
+0.145
+0.142
+0.139
+0.135
+0.132
+0.128
+0.124
+0.121
+0.116
+0.112
+
+9.0
+
+0.155
+0.155
+0.155
+0.155
+0.154
+0.154
+0.154
+0.154
+0.153
+0.153
+0.152
+0.151
+0.151
+0.150
+0.149
+0.148
+0.147
+0.146
+0.145
+0.144
+0.142
+0.141
+0.139
+0.138
+0.136
+0.134
+0.132
+0.130
+0.128
+0.125
+0.123
+0.120
+0.117
+0.114
+0.111
+0.108
+0.105
+0.102
+0.099
+
+10.0
+
+TABLE VII. Away-and-along table for dose rates from an 192Ir 10 seed train normalized to an average value of 1 over the central 3 active source length of the seed train at ␳ = 2 mm. Absolute absorbed dose rates
+in cGy h−1 for a source containing 10 seeds of unit air kerma strength 共1 U in each seed兲 can be obtained by multiplying with 39.97.
+
+4141
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4141
+
+0.5
+
+3.700
+6.446
+2.182
+0.773
+0.207
+0.095
+0.060
+0.060
+0.046
+0.019
+0.010
+0.005
+
+Along axis
+z
+共mm兲
+
+19.5
+20.0
+20.5
+21.0
+22.0
+24.0
+26.0
+28.0
+30.0
+40.0
+50.0
+60.0
+
+3.612
+4.301
+1.805
+0.755
+0.237
+0.102
+0.063
+0.060
+0.046
+0.019
+0.010
+0.005
+
+0.6
+2.818
+2.599
+1.464
+0.685
+0.266
+0.109
+0.066
+0.061
+0.047
+0.019
+0.010
+0.005
+
+0.7
+2.205
+1.896
+1.163
+0.618
+0.266
+0.116
+0.069
+0.061
+0.047
+0.019
+0.010
+0.005
+
+0.8
+1.755
+1.547
+0.904
+0.558
+0.264
+0.123
+0.072
+0.061
+0.047
+0.019
+0.010
+0.005
+
+0.9
+1.518
+1.266
+0.802
+0.503
+0.262
+0.130
+0.075
+0.061
+0.047
+0.019
+0.010
+0.005
+
+1.0
+0.858
+0.686
+0.515
+0.394
+0.250
+0.133
+0.087
+0.062
+0.048
+0.020
+0.010
+0.005
+
+1.5
+0.608
+0.509
+0.416
+0.339
+0.234
+0.132
+0.087
+0.063
+0.048
+0.020
+0.010
+0.005
+
+2.0
+0.472
+0.409
+0.349
+0.297
+0.217
+0.129
+0.087
+0.063
+0.049
+0.020
+0.010
+0.005
+
+2.5
+0.384
+0.341
+0.300
+0.262
+0.200
+0.125
+0.086
+0.063
+0.049
+0.020
+0.010
+0.005
+
+3.0
+
+3.5
+0.322
+0.292
+0.261
+0.233
+0.185
+0.121
+0.084
+0.063
+0.049
+0.020
+0.011
+0.005
+
+Away from axis, ␳
+共mm兲
+
+TABLE VII. 共Continued.兲
+
+0.277
+0.254
+0.231
+0.209
+0.170
+0.116
+0.082
+0.062
+0.048
+0.020
+0.011
+0.005
+
+4.0
+0.242
+0.224
+0.206
+0.189
+0.158
+0.110
+0.080
+0.061
+0.048
+0.020
+0.011
+0.005
+
+4.5
+0.214
+0.200
+0.186
+0.172
+0.146
+0.105
+0.078
+0.060
+0.048
+0.020
+0.011
+0.005
+
+5.0
+0.174
+0.164
+0.154
+0.145
+0.127
+0.096
+0.074
+0.058
+0.046
+0.020
+0.011
+0.005
+
+6.0
+0.146
+0.138
+0.131
+0.124
+0.111
+0.087
+0.069
+0.055
+0.045
+0.020
+0.011
+0.005
+
+7.0
+0.125
+0.119
+0.114
+0.108
+0.098
+0.079
+0.064
+0.052
+0.043
+0.020
+0.011
+0.005
+
+8.0
+
+0.108
+0.104
+0.100
+0.096
+0.087
+0.072
+0.060
+0.049
+0.041
+0.020
+0.011
+0.005
+
+9.0
+
+0.095
+0.092
+0.089
+0.085
+0.079
+0.066
+0.056
+0.047
+0.040
+0.020
+0.011
+0.005
+
+10.0
+
+4142
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4142
+
+4143
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4143
+
+TABLE VIII. Absorbed dose rate, Ḋ, in cGy h−1 at 2 mm along the transverse
+2
+axis of the seed for a single 192Ir seed and averaged over 3 of the active
+source length at ␳ = 2 mm for 6,10,14,18, and 22 seed trains containing seeds
+of unit air kerma strength 共1 U per seed兲. For comparison, the vendorspecified values are also shown.
+
+Number of Seeds
+1
+6
+10
+14
+18
+22
+
+Ḋ 共cGy h−1兲
+This Recommendation
+Vendor’s Specification
+24.12
+38.02
+39.97
+40.90
+41.31
+41.58
+
+40.50
+41.84
+41.99
+
+simulated values 共0.604 cGy s−1 mCi cm兲 see Tables XIV
+and XV. These values differ by about 3%, which is not significant compared to the experimental uncertainties quoted in
+the publications. Second, the average of these two average
+values was calculated, see Table XVI. In this way, equal
+weight was given to the experimental and simulation results.
+
+FIG. 8. Comparison of axial dose profiles at 2 mm depth for an 192Ir 6-seed
+2
+train normalized to averages of the central 3 length of the seed train
+共⫾7.7 mm from the center兲. The curves represent the doses obtained by
+superposition using three separate sets of single-seed reference dosimetry
+parameters reported by Soares 共Ref. 75兲, Wang and Li 共Ref. 27兲, and Patel
+et al. 共Ref. 72兲.
+
+The resulting recommended value of the reference absorbed
+dose rate per unit activity per unit length equals
+0.613 cGy s−1 mCi cm. As can be seen from Tables XIV and
+XV, all published values of this parameter are between +6%
+and −5% of the recommended value. As expected, no significant differences were found between the values published for
+the 27 and 20 mm sources.
+As can be seen by comparing the EGSNRC results from
+Wang and Li 共2001兲87 and Li et al. 共2001兲88 in Table XV, the
+presence or absence of a catheter in a simulation or measurement may have a small effect 共⬃3% according to these simulations兲 on the value of the reference absorbed dose rate per
+unit activity. A Monte Carlo analysis of the influence of a
+TABLE IX. Comparison of published values of the reference absorbed does
+rate per unit contained activity for a single 90Sr/ 90Y seed.
+
+Author
+Wang and
+Li 2000
+共Ref. 27兲
+Wang and
+Li 2002
+共Ref. 28兲
+Wang and
+Li 2002
+共Ref. 28兲
+Asenjo
+et al. 2002
+共Ref. 79兲
+FIG. 7. 共a兲 Comparison of relative depth-dose curves for an 192Ir 6 seed train
+at the train center 共located at an interseed gap兲. The curves represent the
+doses obtained by superposition using three separate sets of single seed
+reference dosimetry parameters reported by Soares 共Ref. 75兲, Wang and Li
+共Ref. 27兲, and Patel et al. 共Ref. 72兲. 共b兲 Comparison of relative depth-dose
+curves for an 192Ir 6 seed train at the seed center.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+a
+
+% Difference
+from
+Reference
+Value 共%兲
+
+Type of
+Determination
+
+Source
+Type
+
+Dose Rate per
+Unit Contained
+Activity
+共Gy min−1 mCi−1兲
+
+MC
+
+5F
+
+1.09a
+
+−0.8
+
+MC
+
+3.5 F
+
+1.11a
+
+1.4
+
+MC
+
+5F
+
+1.09a
+
+−1.0
+
+MC
+
+5F
+
+1.10a
+
+0.3
+
+Average
+SD
+%SD
+
+1.10
+0.012
+1.1%
+
+The published values were multiplied by a factor of 2 to account for the
+contained activity specification convention used.
+
+4144
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4144
+
+TABLE X. Comparison of the reference absorbed dose rate per unit contained activity at ␳ = 2 mm for 共a兲 30 mm 共12 seed兲 90Sr/ 90Y trains, 共b兲 40 mm 共16 seed兲
+90
+Sr/ 90Y seed trains, and 共c兲 60 mm 共24 seed兲 90Sr/ 90Y seed trains.
+共a兲
+
+Author
+Chibani and Li 2003 共Ref. 80兲
+Roa et al. 2004 共Ref. 81兲
+Roa et al. 2004
+Novoste 共from Roa et al. 2004兲
+Novoste 共from Roa et al. 2004兲
+Ye et al. 2003 共Ref. 71兲
+Ye et al. 2000 共Ref. 82兲
+Novoste 共from Ye et al. 2003兲
+Wang and Li 2000 共Ref. 27兲 superposition
+Wang and Li 2002 共Ref. 28兲 superposition
+Wang and Li 2002 superposition
+
+Type of
+Determination
+
+Source
+Type
+
+Dose Rate per Unit
+Contained Activity
+共Gy min−1 mCi−1兲
+
+% Difference from
+Reference Value 共%兲
+
+MC
+exp
+exp
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+MC
+
+5F
+5F
+3.5 F
+5F
+3.5 F
+5F
+5F
+5F
+5F
+3.5 F
+5F
+
+0.146
+0.144
+0.166
+0.168
+0.174
+0.140
+0.149a
+0.139
+0.156
+0.158
+0.153
+
+−4.9
+−6.6
+7.6
+9.1
+13
+−8.8
+−3.1
+−9.6
+1.1
+2.6
+−0.5
+
+Average
+SD
+%SD
+
+0.154
+0.012
+7.5%
+
+共b兲
+
+Author
+Roa et al. 2004
+Novoste 共from Roa et al. 2004兲
+NIST 共unpublished兲
+Wang and Li 2000 superposition
+Wang and Li 2002 superposition
+Wang and Li 2002 superposition
+
+Type of
+Determination
+
+Source
+Type
+
+Dose Rate per Unit
+Contained Activity
+共Gy min−1 mCi−1兲
+
+% Difference from
+Reference Value 共%兲
+
+exp
+MC
+expb
+MC
+MC
+MC
+
+3.5 F
+3.5 F
+3.5 F
+5F
+3.5 F
+5F
+
+0.111
+0.109
+0.110
+0.117
+0.119
+0.115
+
+−1.7
+−3.8
+−3.3
+3.0
+4.6
+1.3
+
+Average
+SD
+%SD
+
+0.113
+0.0040
+3.5%
+
+共c兲
+
+Author
+Roa et al. 2004
+Novoste 共from Roa et al. 2004兲
+Wang and Li 2000 superposition
+Wang and Li 2002 superposition
+Wang and Li 2002 superposition
+
+Type of
+Determination
+
+Source
+Type
+
+Dose Rate per Unit
+Contained Activity
+共Gy min−1 mCi−1兲
+
+% Difference from
+Reference Value 共%兲
+
+exp
+MC
+MC
+MC
+MC
+
+5F
+5F
+5F
+3.5 F
+5F
+
+0.0696
+0.0698
+0.0778
+0.0790
+0.0766
+
+−6.6
+−6.4
+4.4
+6.0
+2.7
+
+Average
+SD
+%SD
+
+0.0746
+0.0045
+6.1%
+
+a
+
+The published values were multiplied by a factor of 2 to account for the contained activity specification convention used.
+The estimated uncertainty in the NIST experimental determination of the reference absorbed dose rate per unit contained activity is dominated by the
+absorbed dose measurement uncertainty, given as ⫾7.4% 共1␴兲 共Ref. 41兲.
+
+b
+
+centering catheter by Torres et al.89 showed very similar results. However, a number of different clinical catheters 共as
+well as a physics catheter for quality control measurements兲
+have been used with this source, making it difficult to determine the appropriate correction factor for each value in the
+table. Furthermore, the resulting differences do not seem
+large in comparison to the variations arising from other differences between simulations and in comparison to the uncertainty quoted for the various measurement results. ThereMedical Physics, Vol. 34, No. 11, November 2007
+
+fore, no attempt has been made to correct for the presence or
+absence of a catheter.
+The recommended values of the reference absorbed dose
+rate per unit contained activity have been derived from the
+above recommended value of the reference absorbed dose
+rate per unit activity per unit length by dividing by the active
+source length, see Table XV. The recommended values are
+0.227 cGy s−1 mCi−1 for the 27 mm source and
+0.307 cGy s−1 mCi−1 for the 20 mm source.
+
+4145
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+FIG. 9. Comparison of published radial dose functions for a single 90Sr/ 90Y
+seed. The red solid line shows the fit to the Wang and Li 5 F data that is
+recommended for both the 3.5 F and 5 F 90Sr/ 90Y seeds.
+
+IV.C.3.b. Transverse dose function.
+The arguments given in the preceding section to justify the
+use of a single value of the absorbed dose rate at the reference point per unit activity per unit length for both the 27
+and 20 mm Guidant sources can be applied to any point on
+the source transverse axis where the dose can be assumed to
+be deposited by beta particles only. For this reason, one may
+expect the relative radial depth-dose distribution 共i.e., normalized to unity at the reference point兲 of both sources to be
+the same. As the same geometry function is recommended
+for both sources, viz., 1 / ␳, one would then also expect the
+transverse dose functions of both sources to be the same at
+the clinically relevant distances.
+Indeed, the results included in this comparison provide no
+evidence of significant differences between the transverse
+dose functions of the 27 and 20 mm sources for distances up
+to 6.5 mm. This may be seen in Fig. 13, which shows all
+transverse dose functions derived from the published dose
+distributions included in the present comparison. Because of
+this similarity, a single transverse dose function is recommended for both types of sources.
+
+4145
+
+As shown in Fig. 13, there is good agreement between
+most simulation results. However, the two curves obtained
+with MCNP4B, while in good agreement with each other, deviate significantly from the other simulation results. The
+EGS4 results are also somewhat different from the other simulations. Appreciable discrepancies exist between the results
+obtained with GEANT 4 共version 4.1 with patch-01 and lowenergy package G4EMLOW 1.1兲 and all other simulations, as
+was already noted by the authors.89 It is to be noted that EGS4
+and MCNP4B are older codes that have in the meantime been
+replaced by more recent versions 共EGSNRC, MCNP4C, MCNPX兲,
+which are considered to better represent the state-of-the-art
+in Monte Carlo radiation transport simulation. Furthermore,
+the MCNP4B simulations were performed using the 共default兲
+MCNP electron energy indexing algorithm, which has been
+shown to lead to erroneous results.90–92 In the MCNP4C and
+MCNPX simulations included in the comparison, the authors
+have used the so-called ITS electron energy indexing algorithm, which should give more accurate results.
+There is fair agreement between the experimental and
+simulation results. The results from Piermattei et al.86 disagree with all others at the shortest measurement distances
+and seem to include a background reading 共visible at larger
+distances兲, which is not seen in any of the other results. Furthermore, in the region between about 3 and 4 mm the film
+measurements by Mourtada et al.30 on the 27 mm source
+disagree with the other results by slightly more than the
+quoted uncertainty in the dose reading of ⬃16% 共2␴兲. Taking into account the measurement uncertainties 共which are
+generally larger than the simulation uncertainties兲, there is
+fair agreement between the experimental and simulation results obtained with the more recent codes 共i.e., all except
+those obtained with EGS4, GEANT4 or MCNP4B兲.
+Given this agreement, it makes sense to base the recommended transverse dose function on the Monte Carlo results,
+since the spatial resolution is much better than in most of the
+measurements. Figure 14 contains the data points of the
+Monte Carlo results except for those obtained with either
+EGS4, GEANT4, or MCNP4B, which have been excluded for the
+reasons mentioned above.
+
+TABLE XI. Reference values for the anisotropy function for a single 90Sr/ 90Y seed.
+
+r
+共mm兲
+0.5
+1
+1.5
+2
+2.5
+3
+4
+5
+6
+7
+8
+
+0
+
+1
+
+2
+
+3
+
+5
+
+7
+
+10
+
+12
+
+15
+
+␪
+共degrees兲
+20
+25
+30
+
+35
+
+40
+
+45
+
+50
+
+55
+
+60
+
+70
+
+80
+
+90
+
+1.018 1.012 1.006 1.001 1.000
+1.098 1.06 1.035 1.021 1.012 1.007 1.004 1.001 1.000 1.000 1.000
+0.832 0.829 0.812 0.800 0.789 0.786 0.781 0.772 0.745 0.780 0.836 0.879 0.911 0.934 0.951 0.964 0.974 0.981 0.992 0.998 1.000
+0.789 0.785 0.782 0.780 0.777 0.775 0.765 0.754 0.742 0.743 0.767 0.803 0.842 0.878 0.908 0.932 0.952 0.967 0.987 0.997 1.000
+0.746 0.745 0.744 0.744 0.745 0.746 0.743 0.743 0.744 0.755 0.774 0.803 0.835 0.867 0.896 0.922 0.942 0.959 0.983 0.996 1.000
+0.740 0.739 0.739 0.740 0.742 0.746 0.748 0.750 0.755 0.769 0.788 0.813 0.841 0.870 0.896 0.921 0.941 0.958 0.983 0.996 1.000
+0.766 0.767 0.768 0.769 0.770 0.772 0.775 0.779 0.786 0.800 0.818 0.839 0.863 0.885 0.908 0.929 0.947 0.962 0.984 0.996 1.000
+0.793 0.797 0.800 0.801 0.800 0.799 0.806 0.810 0.816 0.828 0.844 0.863 0.882 0.903 0.922 0.939 0.955 0.968 0.986 0.996 1.000
+0.829 0.829 0.830 0.831 0.833 0.837 0.839 0.842 0.845 0.856 0.871 0.889 0.905 0.921 0.939 0.953 0.965 0.976 0.989 0.998 1.000
+0.876 0.874 0.877 0.895 0.882 0.890 0.896 0.897 0.900 0.909 0.921 0.933 0.942 0.955 0.967 0.977 0.986 0.989 0.996 1.001 1.000
+0.972 0.951 0.958 1.004 1.006 0.997 0.990 0.996 1.001 1.003 1.000 1.015 1.019 1.015 1.011 1.021 1.016 1.016 1.011 1.002 1.000
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+0
+0.25
+0.5
+0.75
+1
+1.25
+1.5
+1.75
+2
+2.25
+2.5
+2.75
+3
+3.25
+3.5
+3.75
+4
+4.25
+4.5
+4.75
+5
+5.25
+5.5
+5.75
+6
+6.25
+6.5
+6.75
+7
+7.25
+7.5
+7.75
+8
+8.25
+8.5
+8.75
+9
+9.25
+9.5
+9.75
+10
+
+Along axis, z 共mm兲
+1
+3.511⫻ 100
+3.460⫻ 100
+3.298⫻ 100
+3.011⫻ 100
+2.581⫻ 100
+2.059⫻ 100
+1.549⫻ 100
+1.124⫻ 100
+8.424⫻ 10−1
+6.393⫻ 10−1
+4.938⫻ 10−1
+3.854⫻ 10−1
+3.043⫻ 10−1
+2.420⫻ 10−1
+1.934⫻ 10−1
+1.549⫻ 10−1
+1.243⫻ 10−1
+9.970⫻ 10−2
+7.981⫻ 10−2
+6.376⫻ 10−2
+5.078⫻ 10−2
+4.035⫻ 10−2
+3.197⫻ 10−2
+2.524⫻ 10−2
+1.992⫻ 10−2
+1.573⫻ 10−2
+1.234⫻ 10−2
+9.511⫻ 10−3
+7.322⫻ 10−3
+5.618⫻ 10−3
+4.219⫻ 10−3
+3.145⫻ 10−3
+2.373⫻ 10−3
+1.812⫻ 10−3
+1.620⫻ 10−3
+1.478⫻ 10−3
+1.214⫻ 10−3
+1.463⫻ 10−3
+1.514⫻ 10−3
+1.478⫻ 10−3
+0.000⫻ 100
+
+0.5
+
+9.649⫻ 100
+9.551⫻ 100
+3.780⫻ 100
+6.937⫻ 100
+7.302⫻ 100
+3.583⫻ 100
+2.685⫻ 100
+1.701⫻ 100
+1.150⫻ 100
+8.134⫻ 10−1
+5.926⫻ 10−1
+4.464⫻ 10−1
+3.428⫻ 10−1
+2.681⫻ 10−1
+2.117⫻ 10−1
+1.682⫻ 10−1
+1.340⫻ 10−1
+1.069⫻ 10−1
+8.523⫻ 10−2
+6.788⫻ 10−2
+5.394⫻ 10−2
+4.280⫻ 10−2
+3.385⫻ 10−2
+2.671⫻ 10−2
+2.101⫻ 10−2
+1.652⫻ 10−2
+1.297⫻ 10−2
+1.008⫻ 10−2
+7.726⫻ 10−3
+5.931⫻ 10−3
+4.539⫻ 10−3
+3.305⫻ 10−3
+2.480⫻ 10−3
+2.027⫻ 10−3
+1.611⫻ 10−3
+1.591⫻ 10−3
+1.380⫻ 10−3
+1.470⫻ 10−3
+1.337⫻ 10−3
+1.513⫻ 10−3
+0.000⫻ 100
+
+1.767⫻ 100
+1.743⫻ 100
+1.660⫻ 100
+1.530⫻ 100
+1.360⫻ 100
+1.160⫻ 100
+9.588⫻ 10−1
+7.756⫻ 10−1
+6.190⫻ 10−1
+4.952⫻ 10−1
+3.965⫻ 10−1
+3.188⫻ 10−1
+2.572⫻ 10−1
+2.079⫻ 10−1
+1.685⫻ 10−1
+1.364⫻ 10−1
+1.102⫻ 10−1
+8.884⫻ 10−2
+7.146⫻ 10−2
+5.729⫻ 10−2
+4.578⫻ 10−2
+3.644⫻ 10−2
+2.894⫻ 10−2
+2.289⫻ 10−2
+1.815⫻ 10−2
+1.436⫻ 10−2
+1.122⫻ 10−2
+8.684⫻ 10−3
+6.687⫻ 10−3
+5.136⫻ 10−3
+3.871⫻ 10−3
+2.902⫻ 10−3
+2.209⫻ 10−3
+1.788⫻ 10−3
+1.357⫻ 10−3
+1.598⫻ 10−3
+1.522⫻ 10−3
+1.441⫻ 10−3
+1.481⫻ 10−3
+1.674⫻ 10−3
+0.000⫻ 100
+
+1.5
+1.000⫻ 100
+9.885⫻ 10−1
+9.477⫻ 10−1
+8.872⫻ 10−1
+8.068⫻ 10−1
+7.163⫻ 10−1
+6.208⫻ 10−1
+5.293⫻ 10−1
+4.445⫻ 10−1
+3.700⫻ 10−1
+3.067⫻ 10−1
+2.532⫻ 10−1
+2.086⫻ 10−1
+1.714⫻ 10−1
+1.404⫻ 10−1
+1.148⫻ 10−1
+9.350⫻ 10−2
+7.586⫻ 10−2
+6.134⫻ 10−2
+4.942⫻ 10−2
+3.964⫻ 10−2
+3.168⫻ 10−2
+2.524⫻ 10−2
+2.007⫻ 10−2
+1.599⫻ 10−2
+1.263⫻ 10−2
+9.877⫻ 10−3
+7.672⫻ 10−3
+5.949⫻ 10−3
+4.480⫻ 10−3
+3.356⫻ 10−3
+2.483⫻ 10−3
+2.010⫻ 10−3
+1.738⫻ 10−3
+1.335⫻ 10−3
+1.504⫻ 10−3
+1.385⫻ 10−3
+1.486⫻ 10−3
+1.447⫻ 10−3
+1.565⫻ 10−3
+0.000⫻ 100
+
+2
+6.027⫻ 10−1
+5.969⫻ 10−1
+5.766⫻ 10−1
+5.458⫻ 10−1
+5.064⫻ 10−1
+4.603⫻ 10−1
+4.115⫻ 10−1
+3.619⫻ 10−1
+3.141⫻ 10−1
+2.695⫻ 10−1
+2.291⫻ 10−1
+1.933⫻ 10−1
+1.621⫻ 10−1
+1.353⫻ 10−1
+1.123⫻ 10−1
+9.268⫻ 10−2
+7.612⫻ 10−2
+6.220⫻ 10−2
+5.062⫻ 10−2
+4.102⫻ 10−2
+3.310⫻ 10−2
+2.659⫻ 10−2
+2.129⫻ 10−2
+1.703⫻ 10−2
+1.356⫻ 10−2
+1.071⫻ 10−2
+8.323⫻ 10−3
+6.504⫻ 10−3
+4.957⫻ 10−3
+3.727⫻ 10−3
+2.900⫻ 10−3
+2.230⫻ 10−3
+1.778⫻ 10−3
+1.515⫻ 10−3
+1.447⫻ 10−3
+1.501⫻ 10−3
+1.570⫻ 10−3
+1.424⫻ 10−3
+1.297⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+
+2.5
+3.780⫻ 10−1
+3.750⫻ 10−1
+3.659⫻ 10−1
+3.483⫻ 10−1
+3.275⫻ 10−1
+3.026⫻ 10−1
+2.754⫻ 10−1
+2.474⫻ 10−1
+2.192⫻ 10−1
+1.920⫻ 10−1
+1.664⫻ 10−1
+1.428⫻ 10−1
+1.216⫻ 10−1
+1.027⫻ 10−1
+8.622⫻ 10−2
+7.185⫻ 10−2
+5.950⫻ 10−2
+4.901⫻ 10−2
+4.019⫻ 10−2
+3.279⫻ 10−2
+2.664⫻ 10−2
+2.153⫻ 10−2
+1.738⫻ 10−2
+1.397⫻ 10−2
+1.110⫻ 10−2
+8.680⫻ 10−3
+6.808⫻ 10−3
+5.278⫻ 10−3
+3.981⫻ 10−3
+3.146⫻ 10−3
+2.309⫻ 10−3
+1.805⫻ 10−3
+1.545⫻ 10−3
+1.372⫻ 10−3
+1.478⫻ 10−3
+1.360⫻ 10−3
+1.428⫻ 10−3
+1.136⫻ 10−3
+1.728⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+
+3
+1.565⫻ 10−1
+1.555⫻ 10−1
+1.525⫻ 10−1
+1.470⫻ 10−1
+1.401⫻ 10−1
+1.318⫻ 10−1
+1.226⫻ 10−1
+1.124⫻ 10−1
+1.019⫻ 10−1
+9.148⫻ 10−2
+8.114⫻ 10−2
+7.128⫻ 10−2
+6.197⫻ 10−2
+5.344⫻ 10−2
+4.572⫻ 10−2
+3.881⫻ 10−2
+3.274⫻ 10−2
+2.737⫻ 10−2
+2.276⫻ 10−2
+1.886⫻ 10−2
+1.547⫻ 10−2
+1.269⫻ 10−2
+1.024⫻ 10−2
+8.201⫻ 10−3
+6.555⫻ 10−3
+5.149⫻ 10−3
+4.009⫻ 10−3
+3.119⫻ 10−3
+2.354⫻ 10−3
+1.863⫻ 10−3
+1.744⫻ 10−3
+1.572⫻ 10−3
+1.404⫻ 10−3
+1.389⫻ 10−3
+1.447⫻ 10−3
+1.606⫻ 10−3
+1.458⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+4
+
+Away from axis, ␳
+共mm兲
+
+6.347⫻ 10−2
+6.311⫻ 10−2
+6.206⫻ 10−2
+6.033⫻ 10−2
+5.772⫻ 10−2
+5.476⫻ 10−2
+5.140⫻ 10−2
+4.776⫻ 10−2
+4.383⫻ 10−2
+3.987⫻ 10−2
+3.590⫻ 10−2
+3.206⫻ 10−2
+2.834⫻ 10−2
+2.480⫻ 10−2
+2.155⫻ 10−2
+1.860⫻ 10−2
+1.589⫻ 10−2
+1.350⫻ 10−2
+1.131⫻ 10−2
+9.398⫻ 10−3
+7.735⫻ 10−3
+6.315⫻ 10−3
+5.067⫻ 10−3
+3.984⫻ 10−3
+3.200⫻ 10−3
+2.456⫻ 10−3
+2.114⫻ 10−3
+1.735⫻ 10−3
+1.570⫻ 10−3
+1.466⫻ 10−3
+1.470⫻ 10−3
+1.401⫻ 10−3
+1.357⫻ 10−3
+1.440⫻ 10−3
+1.417⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+5
+2.427⫻ 10−2
+2.415⫻ 10−2
+2.379⫻ 10−2
+2.319⫻ 10−2
+2.237⫻ 10−2
+2.133⫻ 10−2
+2.015⫻ 10−2
+1.887⫻ 10−2
+1.746⫻ 10−2
+1.605⫻ 10−2
+1.460⫻ 10−2
+1.315⫻ 10−2
+1.171⫻ 10−2
+1.037⫻ 10−2
+9.064⫻ 10−3
+7.807⫻ 10−3
+6.703⫻ 10−3
+5.636⫻ 10−3
+4.780⫻ 10−3
+3.891⫻ 10−3
+3.269⫻ 10−3
+2.598⫻ 10−3
+2.174⫻ 10−3
+1.784⫻ 10−3
+1.595⫻ 10−3
+1.607⫻ 10−3
+1.546⫻ 10−3
+1.490⫻ 10−3
+1.436⫻ 10−3
+1.391⫻ 10−3
+1.359⫻ 10−3
+1.454⫻ 10−3
+1.947⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+6
+8.481⫻ 10−3
+8.447⫻ 10−3
+8.321⫻ 10−3
+8.144⫻ 10−3
+7.818⫻ 10−3
+7.451⫻ 10−3
+7.061⫻ 10−3
+6.617⫻ 10−3
+6.192⫻ 10−3
+5.613⫻ 10−3
+5.083⫻ 10−3
+4.540⫻ 10−3
+4.030⫻ 10−3
+3.634⫻ 10−3
+3.117⫻ 10−3
+2.817⫻ 10−3
+2.316⫻ 10−3
+2.147⫻ 10−3
+1.909⫻ 10−3
+1.564⫻ 10−3
+1.556⫻ 10−3
+1.565⫻ 10−3
+1.306⫻ 10−3
+1.338⫻ 10−3
+1.366⫻ 10−3
+1.407⫻ 10−3
+1.514⫻ 10−3
+1.125⫻ 10−3
+1.690⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+7
+
+2.567⫻ 10−3
+2.471⫻ 10−3
+2.401⫻ 10−3
+2.384⫻ 10−3
+2.241⫻ 10−3
+2.285⫻ 10−3
+2.176⫻ 10−3
+1.967⫻ 10−3
+1.974⫻ 10−3
+1.762⫻ 10−3
+1.735⫻ 10−3
+1.554⫻ 10−3
+1.512⫻ 10−3
+1.587⫻ 10−3
+1.385⫻ 10−3
+1.507⫻ 10−3
+1.383⫻ 10−3
+1.332⫻ 10−3
+1.593⫻ 10−3
+1.488⫻ 10−3
+1.196⫻ 10−3
+1.265⫻ 10−3
+1.426⫻ 10−3
+1.712⫻ 10−3
+1.936⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+8
+
+1.426⫻ 10−3
+1.371⫻ 10−3
+1.445⫻ 10−3
+1.469⫻ 10−3
+1.465⫻ 10−3
+1.590⫻ 10−3
+1.336⫻ 10−3
+1.362⫻ 10−3
+1.354⫻ 10−3
+1.231⫻ 10−3
+1.189⫻ 10−3
+1.528⫻ 10−3
+1.238⫻ 10−3
+1.259⫻ 10−3
+1.336⫻ 10−3
+1.455⫻ 10−3
+1.561⫻ 10−3
+1.639⫻ 10−3
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+0.000⫻ 100
+
+9
+
+TABLE XII. Away-and-along table of dose rates for a single 90Sr/ 90Y seed normalized to unity at the reference point. Absolute values of the absorbed dose rate in Gy min−1 for a seed containing 1 mCi can be
+obtained by multiplication with 1.10.
+
+4146
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4146
+
+4147
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4147
+
+FIG. 10. Comparison of published 2D anisotropy functions for a single 90Sr/ 90Y seed source. The measured
+and calculated data reported by Soares et al. 共Ref. 41兲
+are shown by open and closed square symbols, respectively. The results reported by Wang and Li in 2000
+共Ref. 27兲 are displayed by crosses. The data by Wang
+and Li in 2002 共Ref. 28兲 are indicated by diamonds and
+circles for the 5 F and 3.5 F sources, respectively. Recommended data are shown in red.
+
+The recommended transverse dose function for both 20
+and 27 mm Guidant 32P sources is a fit to all Monte Carlo
+data points shown in Fig. 14 and is given by
+4
+
+g共␳兲 = 兺 exp共ai␳i兲.
+
+共16兲
+
+i=0
+
+The parameters of the fit are given in Table II. Note that ␳ is
+expressed in millimeters. The fit is valid between ␳ = 0.5 and
+␳ = 6.5 mm. Values of the recommended transverse dose
+function are given in Table III.
+IV.C.3.c. Nonuniformity function.
+Figure 15共a兲 compares the relative axial dose profiles derived
+from the available published dose distributions for the
+
+FIG. 11. Published relative depth-dose data for 30 mm 共12 90Sr/ 90Y seed兲
+trains.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+20 mm Guidant 32P source.29,62,86,89,93 The data from Mourtada et al.62 have been selected to derive the recommended
+nonuniformity function F共␳ , z兲, since these data were available at a high spatial resolution and are in good agreement
+with the other published data. Values of the recommended
+nonuniformity function are given in Table XVII. Note that
+the red solid curve shown in Fig. 15共a兲 is equal to F共␳
+= 2 mm, z兲. It is noted that the red curve in Fig. 15共a兲 has
+been derived straight from the original, high-resolution
+Monte Carlo results provided to us by the authors. The values of F共␳ , z兲 shown in Table XVII, on the other hand, have
+been derived from the dose rate table given in the article.
+This table was derived from fits through the high-resolution
+
+FIG. 12. Published axial profiles at 2 mm depth in water for 40 mm 共16
+90
+Sr/ 90Y seed兲 sources compared to that calculated using the recommended
+parameters 共shown by solid line in red兲.
+
+0
+0.25
+0.5
+0.75
+1
+1.25
+1.5
+1.75
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+20.25
+20.5
+20.75
+21
+21.25
+21.5
+21.75
+22
+22.5
+23
+23.5
+24
+24.5
+25
+
+Along
+axis,
+z 共mm兲
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+4.5
+
+5
+
+5.5
+
+6
+
+6.5
+
+7
+
+8
+
+4.444⫻ 100 2.631⫻ 100 1.547⫻ 100 9.966⫻ 10−1 6.663⫻ 10−1 4.533⫻ 10−1 3.093⫻ 10−1 2.092⫻ 10−1 1.394⫻ 10−1 8.939⫻ 10−2 5.731⫻ 10−2 3.625⫻ 10−2 2.252⫻ 10−2 1.376⫻ 10−2 8.674⫻ 10−3
+6.113⫻ 100 2.643⫻ 100 1.550⫻ 100 9.963⫻ 10−1 6.668⫻ 10−1 4.535⫻ 10−1 3.091⫻ 10−1 2.090⫻ 10−1 1.384⫻ 10−1 9.036⫻ 10−2 5.728⫻ 10−2 3.621⫻ 10−2 2.239⫻ 10−2 1.367⫻ 10−2 8.803⫻ 10−3
+5.337⫻ 100 2.661⫻ 100 1.555⫻ 10 9.990⫻ 10−1 6.671⫻ 10−1 4.534⫻ 10−1 3.092⫻ 10−1 2.080⫻ 10−1 1.384⫻ 10−1 9.051⫻ 10−2 5.838⫻ 10−2 3.616⫻ 10−2 2.242⫻ 10−2 1.356⫻ 10−2 7.527⫻ 10−3
+3.185⫻ 100 2.693⫻ 100 1.560⫻ 100 1.000⫻ 100 6.677⫻ 10−1 4.548⫻ 10−1 3.087⫻ 10−1 2.082⫻ 10−1 1.387⫻ 10−1 9.051⫻ 10−2 5.844⫻ 10−2 3.732⫻ 10−2 2.239⫻ 10−2 1.382⫻ 10−2 7.667⫻ 10−3
+6.444⫻ 100 2.711⫻ 100 1.569⫻ 100 1.003⫻ 100 6.680⫻ 10−1 4.533⫻ 10−1 3.085⫻ 10−1 2.082⫻ 10−1 1.384⫻ 10−1 9.055⫻ 10−2 5.828⫻ 10−2 3.695⫻ 10−2 2.236⫻ 10−2 1.281⫻ 10−2 7.847⫻ 10−3
+6.455⫻ 100 2.717⫻ 100 1.568⫻ 100 1.002⫻ 100 6.678⫻ 10−1 4.531⫻ 10−1 3.082⫻ 10−1 2.082⫻ 10−1 1.384⫻ 10−1 9.059⫻ 10−2 5.815⫻ 10−2 3.697⫻ 10−2 2.357⫻ 10−2 1.283⫻ 10−2 7.876⫻ 10−3
+6.444⫻ 100 2.711⫻ 100 1.569⫻ 100 1.003⫻ 100 6.680⫻ 10−1 4.533⫻ 10−1 3.085⫻ 10−1 2.082⫻ 10−1 1.384⫻ 10−1 9.055⫻ 10−2 5.828⫻ 10−2 3.695⫻ 10−2 2.236⫻ 10−2 1.281⫻ 10−2 7.847⫻ 10−3
+3.185⫻ 100 2.693⫻ 100 1.560⫻ 100 1.000⫻ 100 6.677⫻ 10−1 4.548⫻ 10−1 3.087⫻ 10−1 2.082⫻ 10−1 1.387⫻ 10−1 9.051⫻ 10−2 5.844⫻ 10−2 3.732⫻ 10−2 2.239⫻ 10−2 1.382⫻ 10−2 7.667⫻ 10−3
+5.337⫻ 100 2.661⫻ 100 1.555⫻ 100 9.990⫻ 10−1 6.671⫻ 10−1 4.534⫻ 10−1 3.092⫻ 10−1 2.080⫻ 10−1 1.384⫻ 10−1 9.051⫻ 10−2 5.838⫻ 10−2 3.616⫻ 10−2 2.242⫻ 10−2 1.356⫻ 10−2 7.527⫻ 10−3
+6.444⫻ 100 2.711⫻ 100 1.569⫻ 100 1.003⫻ 100 6.680⫻ 10−1 4.533⫻ 10−1 3.085⫻ 10−1 2.082⫻ 10−1 1.384⫻ 10−1 9.055⫻ 10−2 5.828⫻ 10−2 3.695⫻ 10−2 2.236⫻ 10−2 1.281⫻ 10−2 7.847⫻ 10−3
+6.444⫻ 100 2.711⫻ 100 1.569⫻ 100 1.003⫻ 100 6.680⫻ 10−1 4.533⫻ 10−1 3.085⫻ 10−1 2.082⫻ 10−1 1.384⫻ 10−1 9.055⫻ 10−2 5.828⫻ 10−2 3.695⫻ 10−2 2.236⫻ 10−2 1.281⫻ 10−2 7.847⫻ 10−3
+5.337⫻ 100 2.661⫻ 100 1.555⫻ 100 9.990⫻ 10−1 6.671⫻ 10−1 4.534⫻ 10−1 3.092⫻ 10−1 2.080⫻ 10−1 1.384⫻ 10−1 9.051⫻ 10−2 5.838⫻ 10−2 3.616⫻ 10−2 2.242⫻ 10−2 1.356⫻ 10−2 7.527⫻ 10−3
+4.444⫻ 100 2.631⫻ 100 1.547⫻ 100 9.966⫻ 10−1 6.663⫻ 10−1 4.533⫻ 10−1 3.093⫻ 10−1 2.092⫻ 10−1 1.394⫻ 10−1 8.939⫻ 10−2 5.731⫻ 10−2 3.625⫻ 10−2 2.252⫻ 10−2 1.376⫻ 10−2 8.674⫻ 10−3
+5.336⫻ 100 2.660⫻ 100 1.554⫻ 10 9.981⫻ 10−1 6.662⫻ 10−1 4.528⫻ 10−1 3.082⫻ 10−1 2.080⫻ 10−1 1.384⫻ 10−1 9.051⫻ 10−2 5.838⫻ 10−2 3.616⫻ 10−2 2.242⫻ 10−2 1.356⫻ 10−2 7.527⫻ 10−3
+6.440⫻ 100 2.707⫻ 100 1.564⫻ 100 9.993⫻ 10−1 6.658⫻ 10−1 4.514⫻ 10−1 3.070⫻ 10−1 2.071⫻ 10−1 1.374⫻ 10−1 8.969⫻ 10−2 5.741⫻ 10−2 3.613⫻ 10−2 2.147⫻ 10−2 1.281⫻ 10−2 7.847⫻ 10−3
+6.417⫻ 100 2.685⫻ 100 1.545⫻ 100 9.827⫻ 10−1 6.510⫻ 10−1 4.395⫻ 10−1 2.975⫻ 10−1 1.998⫻ 10−1 1.323⫻ 10−1 8.601⫻ 10−2 5.502⫻ 10−2 3.456⫻ 10−2 2.133⫻ 10−2 1.189⫻ 10−2 7.032⫻ 10−3
+5.162⫻ 100 2.502⫻ 100 1.418⫻ 100 8.851⫻ 10−1 5.764⫻ 10−1 3.838⫻ 10−1 2.575⫻ 10−1 1.709⫻ 10−1 1.125⫻ 10−1 7.269⫻ 10−2 4.630⫻ 10−2 2.900⫻ 10−2 1.780⫻ 10−2 1.063⫻ 10−2 5.577⫻ 10−3
+2.222⫻ 100 1.316⫻ 100 7.733⫻ 10−1 4.983⫻ 10−1 3.332⫻ 10−1 2.266⫻ 10−1 1.547⫻ 10−1 1.046⫻ 10−1 6.968⫻ 10−2 4.470⫻ 10−2 2.865⫻ 10−2 1.813⫻ 10−2 1.126⫻ 10−2 6.882⫻ 10−3 4.337⫻ 10−3
+1.670⫻ 100 9.943⫻ 10−1 6.377⫻ 10−1 4.277⫻ 10−1 2.933⫻ 10−1 2.023⫻ 10−1 1.392⫻ 10−1 9.477⫻ 10−2 6.257⫻ 10−2 4.091⫻ 10−2 2.625⫻ 10−2 1.674⫻ 10−2 1.028⫻ 10−2 6.420⫻ 10−3 4.353⫻ 10−3
+1.073⫻ 100 7.276⫻ 10−1 5.155⫻ 10−1 3.621⫻ 10−1 2.547⫻ 10−1 1.785⫻ 10−1 1.243⫻ 10−1 8.421⫻ 10−2 5.643⫻ 10−2 3.713⫻ 10−2 2.409⫻ 10−2 1.532⫻ 10−2 9.558⫻ 10−3 5.829⫻ 10−3 2.965⫻ 10−3
+7.336⫻ 10−1 5.488⫻ 10−1 4.118⫻ 10−1 3.026⫻ 10−1 2.187⫻ 10−1 1.563⫻ 10−1 1.089⫻ 10−1 7.488⫻ 10−2 5.058⫻ 10−2 3.343⫻ 10−2 2.189⫻ 10−2 1.396⫻ 10−2 8.861⫻ 10−3 5.772⫻ 10−3 2.819⫻ 10−3
+5.239⫻ 10−1 4.186⫻ 10−1 3.297⫻ 10−1 2.508⫻ 10−1 1.852⫻ 10−1 1.343⫻ 10−1 9.528⫻ 10−2 6.614⫻ 10−2 4.497⫻ 10−2 2.991⫻ 10−2 1.960⫻ 10−2 1.257⫻ 10−2 8.065⫻ 10−3 4.231⫻ 10−3 2.761⫻ 10−3
+3.838⫻ 10−1 3.235⫻ 10−1 2.630⫻ 10−1 2.061⫻ 10−1 1.563⫻ 10−1 1.152⫻ 10−1 8.264⫻ 10−2 5.798⫻ 10−2 3.964⫻ 10−2 2.659⫻ 10−2 1.743⫻ 10−2 1.133⫻ 10−2 7.471⫻ 10−3 3.913⫻ 10−3 2.548⫻ 10−3
+2.903⫻ 10−1 2.528⫻ 10−1 2.111⫻ 10−1 1.694⫻ 10−1 1.309⫻ 10−1 9.793⫻ 10−2 7.127⫻ 10−2 5.043⫻ 10−2 3.466⫻ 10−2 2.345⫻ 10−2 1.550⫻ 10−2 1.014⫻ 10−2 5.729⫻ 10−3 3.599⫻ 10−3 2.351⫻ 10−3
+2.235⫻ 10−1 1.996⫻ 10−1 1.700⫻ 10−1 1.390⫻ 10−1 1.092⫻ 10−1 8.285⫻ 10−2 6.088⫻ 10−2 4.340⫻ 10−2 3.031⫻ 10−2 2.049⫻ 10−2 1.374⫻ 10−2 9.334⫻ 10−3 5.071⫻ 10−3 3.145⫻ 10−3 2.131⫻ 10−3
+1.750⫻ 10−1 1.586⫻ 10−1 1.371⫻ 10−1 1.139⫻ 10−1 9.069⫻ 10−2 6.960⫻ 10−2 5.163⫻ 10−2 3.715⫻ 10−2 2.595⫻ 10−2 1.781⫻ 10−2 1.208⫻ 10−2 7.162⫻ 10−3 4.616⫻ 10−3 2.931⫻ 10−3 1.950⫻ 10−3
+1.098⫻ 10−1 1.015⫻ 10−1 8.980⫻ 10−2 7.601⫻ 10−2 6.184⫻ 10−2 4.827⫻ 10−2 3.653⫻ 10−2 2.686⫻ 10−2 1.919⫻ 10−2 1.241⫻ 10−2 8.337⫻ 10−3 5.549⫻ 10−3 3.654⫻ 10−3 2.489⫻ 10−3 1.910⫻ 10−3
+6.981⫻ 10−2 6.524⫻ 10−2 5.834⫻ 10−2 5.012⫻ 10−2 4.134⫻ 10−2 3.267⫻ 10−2 2.539⫻ 10−2 1.797⫻ 10−2 1.283⫻ 10−2 8.981⫻ 10−3 6.230⫻ 10−3 4.201⫻ 10−3 2.802⫻ 10−3 1.929⫻ 10−3 8.524⫻ 10−4
+4.440⫻ 10−2 4.177⫻ 10−2 3.779⫻ 10−2 3.269⫻ 10−2 2.638⫻ 10−2 2.118⫻ 10−2 1.631⫻ 10−2 1.221⫻ 10−2 9.005⫻ 10−3 6.404⫻ 10−3 4.548⫻ 10−3 3.114⫻ 10−3 2.304⫻ 10−3 9.218⫻ 10−4 9.251⫻ 10−4
+2.718⫻ 10−2 2.564⫻ 10−2 2.319⫻ 10−2 2.014⫻ 10−2 1.699⫻ 10−2 1.375⫻ 10−2 1.095⫻ 10−2 8.407⫻ 10−3 6.160⫻ 10−3 4.548⫻ 10−3 3.260⫻ 10−3 2.389⫻ 10−3 1.033⫻ 10−3 9.226⫻ 10−4 8.151⫻ 10−4
+1.694⫻ 10−2 1.594⫻ 10−2 1.455⫻ 10−2 1.286⫻ 10−2 1.093⫻ 10−2 9.044⫻ 10−3 7.245⫻ 10−3 5.653⫻ 10−3 4.212⫻ 10−3 3.198⫻ 10−3 2.456⫻ 10−3 1.051⫻ 10−3 9.400⫻ 10−4 7.888⫻ 10−4 7.691⫻ 10−4
+1.068⫻ 10−2 1.015⫻ 10−2 9.406⫻ 10−3 8.329⫻ 10−3 7.201⫻ 10−3 5.919⫻ 10−3 4.879⫻ 10−3 3.982⫻ 10−3 3.144⫻ 10−3 1.447⫻ 10−3 1.080⫻ 10−3 9.475⫻ 10−4 9.190⫻ 10−4 8.291⫻ 10−4 8.803⫻ 10−4
+
+0.5
+
+Away from axis, ␳
+共mm兲
+4
+
+TABLE XIII. Away-and-along table of dose rates for a 16 90Sr/ 90Y seed 共40 mm兲 train source calculated with the reference parameters and normalized to unity at the reference point. Absolute values of the absorbed
+dose rate in Gy min−1 for a 16 seed train containing a total of 1 mCi can be obtained by multiplication with 0.113.
+
+4148
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4148
+
+4149
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4149
+
+TABLE XIV. Comparison of published experimental values of the reference absorbed dose rate per unit contained activity for the 20 and 27 mm Guidant 32P
+sources.
+
+Author
+Mourtada et al. 2000 共Ref. 30兲
+Bohm et al. 2001 共Ref. 85兲
+Mourtada et al. 2003 共Ref. 29兲
+
+Piermattei et al. 2003 共Ref. 86兲
+
+Type of
+Determination
+
+Catheter
+Included
+
+Active Source
+Length 共mm兲
+
+Reference Absorbed
+Dose Rate per Unit
+Activity 共cGy s−1 mCi−1兲
+
+Reference Absorbed Dose Rate per
+Unit Activity per Unit Source Length
+共cGy s−1 mCi−1 cm兲
+
+Yes
+
+27
+
+0.229a
+
+0.618
+
+No
+No
+
+27
+27
+
+0.229
+0.218b
+
+0.618
+0.589
+
+No
+
+20
+
+0.321c
+
+0.642
+
+20
+20
+20
+
+c
+
+0.625
+0.617
+0.648
+
+MD-55-2 and HD-810
+radiochromic films
+Plastic scintillator
+MD-55-2 film
+Extrapolation
+chamber
+HD-810 film
+MD-55-2 film
+HS-14 film
+
+No
+No
+Yes
+
+0.312
+0.308c
+0.324
+
+Average of experimental values
+Standard deviation
+
+0.622
+0.019
+
+a
+
+Average of both film measurements, converted from A150 to water by author.
+Converted from polystyrene to water by author.
+c
+Scaled from polystyrene to water by means of Eq. 共12兲, using a scaling factor of 0.938 and assuming a density of 1.055 g cm−3 for polystyrene.
+b
+
+Monte Carlo data in order to reduce the influence of statistical noise.62 It is also noted that the values of the recommended nonuniformity function have been mirrored, and
+therefore are symmetric, about the source transverse axis as
+they were calculated for the distal half of the source length
+only. Mirroring seems justified because of the symmetry of
+the source design 共see Sec. II B 3兲, as is also discussed in the
+original work62 and is confirmed by Fig. 15共a兲.
+The construction of the 27 mm Guidant 32P source is essentially the same as that of the 20 mm source, except for the
+active source length and the fact that the 27 mm source has
+only one 共distal兲 marker whereas the 20 mm source has
+
+markers at both the proximal and distal ends, see Sec. II B 3.
+In principle, the presence of a marker may affect the shape of
+
+TABLE XV. Comparison of published simulated values of the reference absorbed dose rate per unit contained activity for the 20 and 27 mm Guidant 32P
+sources.
+
+Author
+Mourtada et al. 2000 共Ref. 30兲
+Bohm et al. 2001 共Ref. 85兲
+Wang & Li 2001 共Ref. 87兲
+Li et al. 2001 共Ref. 88兲
+Mourtada et al. 2003 共Ref. 29兲
+
+Torres et al. 2004 共Ref. 89兲
+
+Mourtada et al. 2004 共Ref. 62兲
+
+Type of
+Determination
+
+Catheter
+Included
+
+Active Source
+Length 共mm兲
+
+Reference Absorbed
+Dose Rate per Unit
+Activity 共cGy s−1 mCi−1兲
+
+Reference Absorbed Dose Rate per
+Unit Activity per Unit Source Length
+共cGy s−1 mCi−1 cm兲
+
+MCNP4B
+MCNP4B
+EGSnrc
+EGS4
+EGSnrc
+CYLTRAN
+MCNPX
+MCNP4C
+EGSnrc
+EGS4
+PENELOPE
+GEANT4
+PENELOPE
+GEANT4
+PENELOPE
+MCNPX 2.4.0
+
+Yes
+Yes
+Yes
+Yes
+No
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+No
+No
+No
+Yes
+
+27
+27
+27
+27
+27
+20
+20
+20
+20
+20
+20
+27
+27
+20
+20
+20
+
+0.229
+0.232
+0.225
+0.222
+0.219a
+0.301b
+0.303b
+0.306b
+0.299b
+0.296b
+0.298b
+0.231
+0.215
+0.311
+0.291
+0.300
+
+0.618
+0.626
+0.608
+0.599
+0.590
+0.603
+0.606
+0.612
+0.599
+0.592
+0.596
+0.624
+0.581
+0.622
+0.582
+0.600
+
+Average of simulated values
+Standard deviation
+
+0.604
+0.014
+
+The same EGSnrc result for a 27 mm source without catheter is also given in Wang & Li 共2001兲 共Ref. 87兲. The value has only been included once in the
+present comparison.
+b
+Results of simulations in water as provided by author 共values not given in reference兲.
+a
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4150
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+FIG. 13. Comparison of transverse dose functions for 20 and 27 mm 32P
+wire sources. The measured data are shown using symbols. The solid lines
+indicate simulated values.
+
+the dose fall-off near the end of the source. As can be seen in
+Fig. 15共b兲, however, at ␳ = 2 mm the axial dose profiles appear to be very similar to the nonuniformity function F共␳
+= 2 mm, z兲 recommended for the 20 mm source at both the
+proximal and distal ends of the source. The same was found
+at smaller radial distances, down to ␳ = 0.5 mm, where the
+dose profile is believed to be most sensitive to the presence
+of a marker. Excellent agreement was also found at ␳
+= 4 mm, as expected. Therefore, the recommended nonuniformity function of the 27 mm source is the same as that for
+the 20 mm source, except that a central region with a length
+of 7 mm has been added, see Table XVII. In this central
+region, it is assumed that F共␳ , z兲 = 1.
+It is noted that, because of this additional central region,
+the nonuniformity function of the 27 mm source is not exactly normalized to unity over the central two-thirds of the
+active source length. However, the resulting error is consid-
+
+4150
+
+FIG. 14. Comparison between transverse dose functions for the 20 and
+27 mm 32P wire sources obtained using the most recent versions of various
+Monte Carlo codes. All data points available from these studies are shown.
+The red solid line represents the recommended transverse dose function,
+which is a fit to all of these data points.
+
+ered insignificant 共 ⬃ 0.07% 兲 in view of the simplicity and
+consistency obtained by using the same longitudinal fall-off
+data for both the 20 and 27 mm sources.
+IV.C.3.d. Comparison of dose distributions.
+Table XVIII contains normalized dose distributions for the
+20 and 27 mm Guidant 32P sources, calculated using the recommended dose calculation parameters. The relative depthdose distribution calculated with the recommended dose calculation parameters 共which is the same for the 20 and 27 mm
+sources兲 is compared with published measurements and
+simulations in Fig. 16.
+V. DISCUSSION AND CONCLUSIONS
+For the 192Ir source we have made a recommendation of
+using the radial dose function from AAPM TG-43,51 and a
+2D anisotropy function from Patel et al.72 The reason is as
+follows. The closest radial distance of approach from the
+seed center to any tissue is 0.5 mm, due to the nylon ribbon
+
+TABLE XVI. Recommended values of the reference absorbed dose rate per unit contained activity for the 20 and 27 mm Guidant 32P sources.
+
+Value
+
+Reference Dose Rate per
+Unit Activity per Unit Source Length
+共cGy s−1 mCi−1 cm兲
+
+Average of experimental values
+Average of simulated values
+Recommended value
+a
+
+0.622
+0.604
+0.613a
+
+Reference Dose Rate per Unit Activity 共cGy s−1 mCi−1兲
+27 mm source
+
+20 mm source
+
+0.227
+
+0.307
+
+Calculated as the mean of the average of the experimental values and the average of the simulated values.
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4151
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4151
+
+FIG. 15. Comparison of axial dose profiles for the 共a兲
+20 mm and 共b兲 27 mm 32P sources to the recommended
+nonuniformity function 共shown in red兲 at ␳ = 2.0 mm.
+Left: Proximal profile. Right: Distal profile.
+
+wall thickness and catheter wall thickness, even if the 192Ir
+seed ribbon is eccentrically positioned in the catheter lumen.
+The contribution from beta particles and conversion electrons causes only a 4% greater value of the radial dose function than predicted by the TG-43 polynomial fit at 0.5 mm
+along the transverse axis of the seed. On the other hand, as
+shown in Fig. 6, the anisotropy function values reported by
+Wang and Li27 were much lower than those reported by Patel
+et al.72 for short distances and shallow polar angles. For ␪
+= 10°, the differences are up to 85%, 75%, 50%, and 20% at
+2, 2.5, 3, and 4 mm, respectively. This major underestimate
+of doses near the gap between neighboring 192Ir seeds is due
+to the lack of consideration 共by Wang and Li兲 of the contributions from the beta particles and conversion electrons that
+are emitted from the unencapsulated ends of the 192Ir seeds.
+Therefore, we recommend the use of the Patel et al. anisotropy function 共Table IV兲.
+For 90Sr/ 90Y sources we recommend the use of the TG43/60 formalism for single seed sources and the dose superposition method to arrive at the dose distributions for trains
+of sources. The recommended values of reference absorbed
+dose rate per unit contained activity for single seeds, and
+trains of 12, 16, and 24 seeds were obtained from averages of
+available measurements and calculations as shown in Tables
+IX and X. The convention of using the activity of only the
+Medical Physics, Vol. 34, No. 11, November 2007
+
+parent radionuclide in quoting contained activity for these
+sources is necessary to properly use these data. The recommended values for the radial dose distribution for a single
+seed were obtained from a fit of the data of Wang and Li,28
+which was the Monte Carlo study with the highest density of
+points and which best represented the average of available
+data 共see Fig. 9兲. The recommended values for the single
+source anisotropy function were also taken from Wang and
+Li,28 for the same reasons as for the radial dose function.
+Differences between the 5 F and 3.5 Fr seed data were not
+perceptible enough to warrant separate data for each seed
+model.
+For 32P line sources, we recommend the use of a modified
+version of the TG-43/60 dose calculation formalism defined
+in cylindrical coordinates. Instead of the radial dose function
+and anisotropy function, this formalism makes use of the
+transverse dose function and the nonuniformity function defined in Sec. II D 2. Furthermore, it employs a geometry
+function based on the infinite-line source approximation.
+The recommended values of the reference absorbed dose
+rate per unit source strength for the 20 and 27 mm 32P
+sources are based on a comparison of published values of the
+same quantity, divided by the active source length. As argued
+in Sec. IV C 3, this allowed us to recommend consensus values for both sources that are consistent with one another.
+
+4152
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4152
+
+TABLE XVII. Condensed recommended nonuniformity function for the 20 and 27 mm Guidant 32P sources. For the 27 mm source, F共␳ , z兲 = 1 for 0 ⬍ z
+⬍ 3.5 mm. Furthermore, F共␳ , −z兲 = F共␳ , z兲 for both sources.
+z 共mm兲
+27 mm 20 mm
+Source Source
+⫾3.5
+⫾4.0
+⫾4.5
+⫾5.0
+⫾5.5
+⫾6.0
+⫾6.5
+⫾7.0
+⫾7.5
+⫾8.0
+⫾8.5
+⫾9.0
+⫾9.5
+⫾10.0
+⫾10.5
+⫾11.0
+⫾11.5
+⫾12.0
+⫾12.5
+⫾13.0
+⫾13.5
+⫾14.0
+⫾14.5
+⫾15.0
+⫾15.5
+⫾16.0
+⫾16.5
+⫾17.0
+⫾17.5
+
+⫾0.0
+⫾0.5
+⫾1.0
+⫾1.5
+⫾2.0
+⫾2.5
+⫾3.0
+⫾3.5
+⫾4.0
+⫾4.5
+⫾5.0
+⫾5.5
+⫾6.0
+⫾6.5
+⫾7.0
+⫾7.5
+⫾8.0
+⫾8.5
+⫾9.0
+⫾9.5
+⫾10.0
+⫾10.5
+⫾11.0
+⫾11.5
+⫾12.0
+⫾12.5
+⫾13.0
+⫾13.5
+⫾14.0
+
+␳
+共mm兲
+0.6
+
+1.0
+
+1.5
+
+2.0
+
+2.5
+
+3.0
+
+3.5
+
+4.0
+
+4.5
+
+5.0
+
+9.982⫻ 10−1 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 9.993⫻ 10−1 9.992⫻ 10−1 9.992⫻ 10−1 1.000⫻ 100 1.001⫻ 100
+9.982⫻ 10−1 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 9.977⫻ 10−1 9.992⫻ 10−1 9.996⫻ 10−1 1.000⫻ 100 1.001⫻ 100
+9.988⫻ 10−1 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 9.972⫻ 10−1 1.001⫻ 100 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100
+9.988⫻ 10−1 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 9.999⫻ 10−1 1.003⫻ 100 1.001⫻ 100 1.001⫻ 100 1.003⫻ 100
+9.999⫻ 10−1 1.000⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 1.002⫻ 100 1.004⫻ 100 1.002⫻ 100 1.002⫻ 100 1.004⫻ 100
+1.000⫻ 100 1.001⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 1.002⫻ 100 1.004⫻ 100 1.003⫻ 100 1.003⫻ 100 1.004⫻ 100
+1.001⫻ 100 1.001⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 1.002⫻ 100 1.003⫻ 100 1.004⫻ 100 1.003⫻ 100 1.003⫻ 100
+1.002⫻ 100 1.001⫻ 100 1.001⫻ 100 1.002⫻ 100 1.002⫻ 100 1.003⫻ 100 1.003⫻ 100 1.005⫻ 100 1.003⫻ 100 1.001⫻ 100
+1.003⫻ 100 1.001⫻ 100 1.001⫻ 100 1.001⫻ 100 1.001⫻ 100 1.005⫻ 100 1.003⫻ 100 1.005⫻ 100 1.002⫻ 100 1.000⫻ 100
+1.003⫻ 100 1.001⫻ 100 1.001⫻ 100 1.001⫻ 100 1.001⫻ 100 1.005⫻ 100 1.003⫻ 100 1.004⫻ 100 1.001⫻ 100 9.990⫻ 10−1
+1.002⫻ 100 1.001⫻ 100 1.000⫻ 100 1.000⫻ 100 1.000⫻ 100 1.004⫻ 100 1.001⫻ 100 1.001⫻ 100 1.000⫻ 100 9.987⫻ 10−1
+1.001⫻ 100 9.998⫻ 10−1 9.990⫻ 10−1 9.985⫻ 10−1 9.985⫻ 10−1 1.001⫻ 100 9.981⫻ 10−1 9.981⫻ 10−1 9.994⫻ 10−1 9.985⫻ 10−1
+9.988⫻ 10−1 9.982⫻ 10−1 9.969⫻ 10−1 9.959⫻ 10−1 9.950⫻ 10−1 9.955⫻ 10−1 9.931⫻ 10−1 9.932⫻ 10−1 9.963⫻ 10−1 9.965⫻ 10−1
+9.955⫻ 10−1 9.954⫻ 10−1 9.931⫻ 10−1 9.909⫻ 10−1 9.886⫻ 10−1 9.872⫻ 10−1 9.846⫻ 10−1 9.846⫻ 10−1 9.891⫻ 10−1 9.892⫻ 10−1
+9.905⫻ 10−1 9.907⫻ 10−1 9.865⫻ 10−1 9.812⫻ 10−1 9.769⫻ 10−1 9.733⫻ 10−1 9.691⫻ 10−1 9.692⫻ 10−1 9.733⫻ 10−1 9.730⫻ 10−1
+9.840⫻ 10−1 9.827⫻ 10−1 9.741⫻ 10−1 9.632⫻ 10−1 9.554⫻ 10−1 9.484⫻ 10−1 9.415⫻ 10−1 9.410⫻ 10−1 9.447⫻ 10−1 9.425⫻ 10−1
+9.757⫻ 10−1 9.686⫻ 10−1 9.506⫻ 10−1 9.312⫻ 10−1 9.175⫻ 10−1 9.059⫻ 10−1 8.960⫻ 10−1 8.948⫻ 10−1 8.972⫻ 10−1 8.932⫻ 10−1
+9.625⫻ 10−1 9.403⫻ 10−1 9.053⫻ 10−1 8.755⫻ 10−1 8.547⫻ 10−1 8.396⫻ 10−1 8.280⫻ 10−1 8.260⫻ 10−1 8.274⫻ 10−1 8.223⫻ 10−1
+9.307⫻ 10−1 8.764⫻ 10−1 8.214⫻ 10−1 7.852⫻ 10−1 7.609⫻ 10−1 7.466⫻ 10−1 7.355⫻ 10−1 7.325⫻ 10−1 7.346⫻ 10−1 7.296⫻ 10−1
+8.169⫻ 10−1 7.342⫻ 10−1 6.822⫻ 10−1 6.545⫻ 10−1 6.369⫻ 10−1 6.295⫻ 10−1 6.218⫻ 10−1 6.187⫻ 10−1 6.217⫻ 10−1 6.186⫻ 10−1
+4.925⫻ 10−1 4.927⫻ 10−1 4.940⫻ 10−1 4.948⫻ 10−1 4.936⫻ 10−1 4.973⫻ 10−1 4.950⫻ 10−1 4.925⫻ 10−1 4.973⫻ 10−1 4.963⫻ 10−1
+1.661⫻ 10−1 2.504⫻ 10−1 3.050⫻ 10−1 3.351⫻ 10−1 3.514⫻ 10−1 3.642⫻ 10−1 3.675⫻ 10−1 3.675⫻ 10−1 3.730⫻ 10−1 3.729⫻ 10−1
+5.774⫻ 10−2 1.101⫻ 10−1 1.660⫻ 10−1 2.051⫻ 10−1 2.293⫻ 10−1 2.452⫻ 10−1 2.526⫻ 10−1 2.557⫻ 10−1 2.607⫻ 10−1 2.595⫻ 10−1
+2.651⫻ 10−2 5.083⫻ 10−2 8.573⫻ 10−2 1.163⫻ 10−1 1.382⫻ 10−1 1.521⫻ 10−1 1.604⫻ 10−1 1.657⫻ 10−1 1.691⫻ 10−1 1.656⫻ 10−1
+1.442⫻ 10−2 2.639⫻ 10−2 4.462⫻ 10−2 6.248⫻ 10−2 7.790⫻ 10−2 8.861⫻ 10−2 9.515⫻ 10−2 9.977⫻ 10−2 1.016⫻ 10−1 9.638⫻ 10−2
+7.922⫻ 10−3 1.447⫻ 10−2 2.358⫻ 10−2 3.232⫻ 10−2 4.157⫻ 10−2 4.954⫻ 10−2 5.353⫻ 10−2 5.481⫻ 10−2 5.561⫻ 10−2 5.122⫻ 10−2
+4.079⫻ 10−3 7.647⫻ 10−3 1.194⫻ 10−2 1.613⫻ 10−2 2.095⫻ 10−2 2.521⫻ 10−2 2.781⫻ 10−2 2.668⫻ 10−2 2.654⫻ 10−2 2.473⫻ 10−2
+1.931⫻ 10−3 3.617⫻ 10−3 5.130⫻ 10−3 7.632⫻ 10−3 9.694⫻ 10−3 9.621⫻ 10−3 1.178⫻ 10−2 1.233⫻ 10−2 1.067⫻ 10−2 1.020⫻ 10−2
+8.565⫻ 10−4 1.594⫻ 10−3 1.598⫻ 10−3 3.231⫻ 10−3 3.674⫻ 10−3 4.644⫻ 10−3 4.912⫻ 10−3 5.469⫻ 10−3 4.358⫻ 10−3 3.672⫻ 10−2
+
+Similarly, we recommend a single transverse dose function for both the 20 and the 27 mm 32P source. The recommended transverse dose function is a fit to the data points of
+a selected subset of the Monte Carlo data published for both
+sources. This function agrees within experimental uncertainty with the large majority of the published measurements.
+The recommended nonuniformity function for the 20 mm
+32
+P source is a mirror-symmetric data set published by a
+single author, which has been selected because of its high
+spatial resolution and good agreement with other published
+data. The nonuniformity function for the 27 mm source is the
+same, except for the addition of a central, 7 mm long, uniform region.
+The reader may have noticed that different approaches
+have been used for obtaining the consensus data. For example, in some cases a recommended dose calculation parameter may consist of 共a fit of兲 values published in a single
+paper, whereas in other cases an average of multiple data sets
+may have been calculated. This is because the use of a single
+method would not have allowed us to obtain the best possible consensus data set in all cases.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+One of the difficulties encountered in this meta-analysis is
+that not all authors provided clear and/or complete uncertainty data with their results. When calculating an average of
+multiple data sets, for example, one would like to introduce
+weighting factors to account for the different relative uncertainties in different data sets. Regretfully, the available uncertainty data did not permit such a rigorous and straightforward approach: Whereas some measurements were published
+with a complete uncertainty analysis, other papers provided
+only limited information; whereas the statistical uncertainty
+in Monte Carlo results was usually specified and/or could be
+considered negligibly small, often no attention was paid to
+possible systematic errors.
+Hence, rather than following a single and straightforward
+approach to calculate the consensus data sets, we carefully
+evaluated the published data, taking into account any information available on the associated uncertainty. Based on this
+evaluation we determined which approach would provide the
+best possible consensus data for each individual case. The
+rationale for following a given approach is explained where
+necessary. In some cases we were able to derive an indica-
+
+4153
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4153
+2
+
+TABLE XVIII. Away-and-along table of dose rates for the 20 and 27 mm Guidant 32P sources, normalized to an average value of 1 over the central 3 of the
+active source length at ␳ = 2 mm 共see also the comment in Sec. IV C 3 with respect to the normalization for the case of the 27 mm source兲. Absolute dose rates
+in cGy s−1 for sources containing 1 mCi of 32P can be obtained by multiplying with 0.307 and 0.227 for 20 and 27 mm sources, respectively.
+
+␳
+共mm兲
+
+z
+共mm兲
+27 mm 20 mm
+source source
+⫾3.5
+⫾4.0
+⫾4.5
+⫾5.0
+⫾5.5
+⫾6.0
+⫾6.5
+⫾7.0
+⫾7.5
+⫾8.0
+⫾8.5
+⫾9.0
+⫾9.5
+⫾10.0
+⫾10.5
+⫾11.0
+⫾11.5
+⫾12.0
+⫾12.5
+⫾13.0
+⫾13.5
+⫾14.0
+⫾14.5
+⫾15.0
+⫾15.5
+⫾16.0
+⫾16.5
+⫾17.0
+⫾17.5
+
+⫾0.0
+⫾0.5
+⫾1.0
+⫾1.5
+⫾2.0
+⫾2.5
+⫾3.0
+⫾3.5
+⫾4.0
+⫾4.5
+⫾5.0
+⫾5.5
+⫾6.0
+⫾6.5
+⫾7.0
+⫾7.5
+⫾8.0
+⫾8.5
+⫾9.0
+⫾9.5
+⫾10.0
+⫾10.5
+⫾11.0
+⫾11.5
+⫾12.0
+⫾12.5
+⫾13.0
+⫾13.5
+⫾14.0
+
+0.6
+
+1.0
+
+1.5
+
+2.0
+
+2.5
+
+3.0
+
+3.5
+
+4.0
+
+4.5
+
+5.0
+
+6.081⫻ 100 3.269⫻ 100 1.763⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.196⫻ 10−1 1.729⫻ 10−1 8.855⫻ 10−2 4.197⫻ 10−2 1.787⫻ 10−2
+6.081⫻ 100 3.269⫻ 100 1.763⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.191⫻ 10−1 1.729⫻ 10−1 8.858⫻ 10−2 4.197⫻ 10−2 1.788⫻ 10−2
+6.084⫻ 100 3.269⫻ 100 1.764⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.189⫻ 10−1 1.733⫻ 10−1 8.861⫻ 10−2 4.200⫻ 10−2 1.790⫻ 10−2
+6.084⫻ 100 3.269⫻ 100 1.764⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.198⫻ 10−1 1.736⫻ 10−1 8.868⫻ 10−2 4.200⫻ 10−2 1.791⫻ 10−2
+6.091⫻ 100 3.269⫻ 100 1.764⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.203⫻ 10−1 1.737⫻ 10−1 8.878⫻ 10−2 4.204⫻ 10−2 1.793⫻ 10−2
+6.094⫻ 100 3.269⫻ 100 1.764⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.204⫻ 10−1 1.737⫻ 10−1 8.888⫻ 10−2 4.207⫻ 10−2 1.793⫻ 10−2
+6.097⫻ 100 3.269⫻ 100 1.765⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.204⫻ 10−1 1.736⫻ 10−1 8.901⫻ 10−2 4.207⫻ 10−2 1.791⫻ 10−2
+6.104⫻ 100 3.270⫻ 100 1.765⫻ 100 1.002⫻ 100 5.716⫻ 10−1 3.208⫻ 10−1 1.736⫻ 10−1 8.908⫻ 10−2 4.207⫻ 10−2 1.789⫻ 10−2
+6.107⫻ 100 3.270⫻ 100 1.764⫻ 100 1.001⫻ 100 5.713⫻ 10−1 3.213⫻ 10−1 1.736⫻ 10−1 8.905⫻ 10−2 4.204⫻ 10−2 1.786⫻ 10−2
+6.107⫻ 100 3.270⫻ 100 1.764⫻ 100 1.001⫻ 100 5.709⫻ 10−1 3.215⫻ 10−1 1.735⫻ 10−1 8.895⫻ 10−2 4.200⫻ 10−2 1.784⫻ 10−2
+6.104⫻ 100 3.269⫻ 100 1.763⫻ 100 1.000⫻ 100 5.706⫻ 10−1 3.212⫻ 10−1 1.732⫻ 10−1 8.875⫻ 10−2 4.197⫻ 10−2 1.784⫻ 10−2
+6.097⫻ 100 3.266⫻ 100 1.760⫻ 100 9.985⫻ 10−1 5.696⫻ 10−1 3.201⫻ 10−1 1.727⫻ 10−1 8.845⫻ 10−2 4.194⫻ 10−2 1.783⫻ 10−2
+6.084⫻ 100 3.261⫻ 100 1.757⫻ 100 9.959⫻ 10−1 5.676⫻ 10−1 3.184⫻ 10−1 1.718⫻ 10−1 8.801⫻ 10−2 4.181⫻ 10−2 1.780⫻ 10−2
+6.064⫻ 100 3.252⫻ 100 1.750⫻ 100 9.909⫻ 10−1 5.640⫻ 10−1 3.157⫻ 10−1 1.704⫻ 10−1 8.725⫻ 10−2 4.151⫻ 10−2 1.767⫻ 10−2
+6.034⫻ 100 3.237⫻ 100 1.738⫻ 100 9.812⫻ 10−1 5.573⫻ 10−1 3.113⫻ 10−1 1.677⫻ 10−1 8.588⫻ 10−2 4.084⫻ 10−2 1.738⫻ 10−2
+5.994⫻ 100 3.210⫻ 100 1.716⫻ 100 9.632⫻ 10−1 5.450⫻ 10−1 3.033⫻ 10−1 1.629⫻ 10−1 8.339⫻ 10−2 3.964⫻ 10−2 1.684⫻ 10−2
+5.943⫻ 100 3.164⫻ 100 1.675⫻ 100 9.312⫻ 10−1 5.234⫻ 10−1 2.897⫻ 10−1 1.551⫻ 10−1 7.929⫻ 10−2 3.765⫻ 10−2 1.595⫻ 10−2
+5.863⫻ 100 3.072⫻ 100 1.595⫻ 100 8.755⫻ 10−1 4.876⫻ 10−1 2.685⫻ 10−1 1.433⫻ 10−1 7.320⫻ 10−2 3.472⫻ 10−2 1.469⫻ 10−2
+5.669⫻ 100 2.863⫻ 100 1.447⫻ 100 7.852⫻ 10−1 4.341⫻ 10−1 2.388⫻ 10−1 1.273⫻ 10−1 6.491⫻ 10−2 3.083⫻ 10−2 1.303⫻ 10−2
+4.976⫻ 100 2.399⫻ 100 1.202⫻ 100 6.545⫻ 10−1 3.634⫻ 10−1 2.013⫻ 10−1 1.076⫻ 10−1 5.483⫻ 10−2 2.609⫻ 10−2 1.105⫻ 10−2
+3.000⫻ 100 1.610⫻ 100 8.704⫻ 10−1 4.948⫻ 10−1 2.816⫻ 10−1 1.591⫻ 10−1 8.566⫻ 10−2 4.364⫻ 10−2 2.087⫻ 10−2 8.865⫻ 10−3
+1.012⫻ 100 8.180⫻ 10−1 5.375⫻ 10−1 3.351⫻ 10−1 2.004⫻ 10−1 1.165⫻ 10−1 6.359⫻ 10−2 3.257⫻ 10−2 1.565⫻ 10−2 6.661⫻ 10−3
+3.517⫻ 10−1 3.598⫻ 10−1 2.926⫻ 10−1 2.051⫻ 10−1 1.308⫻ 10−1 7.842⫻ 10−2 4.371⫻ 10−2 2.266⫻ 10−2 1.094⫻ 10−2 4.635⫻ 10−3
+1.615⫻ 10−1 1.661⫻ 10−1 1.511⫻ 10−1 1.163⫻ 10−1 7.882⫻ 10−2 4.864⫻ 10−2 2.776⫻ 10−2 1.469⫻ 10−2 7.097⫻ 10−3 2.958⫻ 10−3
+8.781⫻ 10−2 8.620⫻ 10−2 7.862⫻ 10−2 6.248⫻ 10−2 4.444⫻ 10−2 2.834⫻ 10−2 1.646⫻ 10−2 8.841⫻ 10−3 4.264⫻ 10−3 1.721⫻ 10−3
+4.826⫻ 10−2 4.729⫻ 10−2 4.155⫻ 10−2 3.232⫻ 10−2 2.371⫻ 10−2 1.584⫻ 10−2 9.263⫻ 10−3 4.857⫻ 10−3 2.333⫻ 10−3 9.148⫻ 10−4
+2.485⫻ 10−2 2.498⫻ 10−2 2.105⫻ 10−2 1.613⫻ 10−2 1.195⫻ 10−2 8.064⫻ 10−3 4.812⫻ 10−3 2.364⫻ 10−3 1.113⫻ 10−3 4.417⫻ 10−4
+1.176⫻ 10−2 1.182⫻ 10−2 9.039⫻ 10−3 7.632⫻ 10−3 5.530⫻ 10−3 3.077⫻ 10−3 2.039⫻ 10−3 1.093⫻ 10−3 4.477⫻ 10−4 1.822⫻ 10−4
+5.217⫻ 10−3 5.206⫻ 10−3 2.815⫻ 10−3 3.231⫻ 10−3 2.096⫻ 10−3 1.485⫻ 10−3 8.499⫻ 10−4 4.847⫻ 10−4 1.829⫻ 10−4 6.559⫻ 10−4
+
+tion of the uncertainty in the consensus data from statistical
+analysis of the available data. An example hereof is the standard deviations calculated from the published values of the
+source strengths.
+Ideally, treatment planning for brachytherapy should use a
+full 3D description of the dose profiles around the source or
+sources used for the treatment and the location of these
+sources relative to the anatomic structures of interest in the
+treatment. In the special case of intravascular brachytherapy,
+the treatment geometry is very simple and such detailed 3D
+descriptions of target structures and dose distributions are not
+always necessary or available. True 3D imaging modalities
+共e.g., combining angiography and IVUS兲 are not available in
+most centers. Therefore, a multilevel approach, as has been
+proposed for external beam therapy reporting94,95 and recently adopted for intravascular brachytherapy treatment
+planning by ESTRO96 is appropriate. The recommended values of the various factors and functions presented in this
+report can be used in dose calculations at each of these levels. The ESTRO recommendations are summarized below.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+Basic treatment planning 共level 1兲 uses angiographic data
+only and is based on the intervention length plus safety margins and the reference lumen diameter. Dose is prescribed to
+a specific point related to the source axis or the vessel lumen
+diameter. Dose reporting is limited to points at the vessel
+lumen surface and at a reference depth into the vessel wall at
+the representative central plane, including minimum and
+maximum variations in the case of noncentered devices. The
+calculation of these doses is possible using the reference absorbed dose rate and a description of the radial dose profile
+in the central plane of the sources used. In order to encompass the entire target length, the choice of an adequate active
+source length is based on a longitudinal dose profile. For
+simplification of the treatment planning process, the respective devices are characterized with a reference isodose length
+共RIL兲, which is defined as the length enclosed by the 90%
+points of the axial dose profile at the reference depth. Thus,
+the dosimetric data for basic treatment planning are reduced
+to values for the reference absorbed dose rate, the radial dose
+profile at the central plane, and the RIL. These data are re-
+
+4154
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+4154
+
+FIG. 16. Comparison between the relative depth-dose distributions calculated with the recommended dose calculation parameters 共equal for 20 and 27 mm
+sources, shown in red兲 and published measurements and simulations.
+
+lated to an entire, rectilinear source arrangement, including
+each seed in the case of a source train or including each
+dwell position in the case of a stepped source. All of these
+data can be derived from the AAPM recommended values
+for the dose calculation parameters presented in this report.
+Advanced treatment planning 共level 2兲 additionally uses
+IVUS-based information for dose calculations with respect to
+anatomical and pathological structures in the vessel wall not
+limited to the central plane. In addition to the dose calculations performed for level 1 planning, 2D dose calculations
+are performed in the central plane and in at least two welldefined peripheral planes. These calculations are based on
+2D dose information for the entire source arrangement,
+which is assumed to be rectilinear and includes the contributions from all seeds and/or dwell positions. The AAPM recommended values for the dose calculation parameters presented in this report can be used for these calculations.
+Medical Physics, Vol. 34, No. 11, November 2007
+
+In developmental treatment planning 共level 3兲 the calculation of dose volume histograms for vessel wall structures is
+included in the treatment planning process or at least in retrospective analysis of the actual treatment. In level 3 planning, the calculation is based on a full 3D dose distribution,
+and the reference dosimetry data necessary for such calculations are presented in this report. If the 3D curvature of the
+source is known 共e.g., using imaging modalities combining
+angiography and IVUS兲, the 3D dose distribution should be
+based on the superposition of the dose distributions of the
+individual seeds in the case of a train source, or of a series of
+small wire segments in the case of a wire source, taking into
+account the 3D position and orientation of each seed or segment.
+From the many papers on absorbed dose measurements
+for intravascular brachytherapy published in the last decade,
+part of which are included in the present study, it can be
+
+4155
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+concluded that much valuable experience has been gained in
+the dosimetry at submillimeter distances from brachytherapy
+sources. Many of these advances will no doubt benefit future
+applications of brachytherapy at millimeter and submillimeter distances. The very high dose rate gradients and highly
+divergent nature of the fields in the close vicinity to small
+sources pose daunting challenges to accurate measurements,
+as was repeatedly demonstrated during the recent efforts in
+the standardization of the sources.97 Typical dose rate gradients are on the order of 100% per millimeters, which means
+that a positioning error of 0.1 mm introduces a 10% error in
+dose measurement. Additional uncertainties are introduced
+by the physical properties of the sources themselves.
+90
+Sr/ 90Y source trains delivered in the treatment catheter are
+never truly colinear 共as they are modeled兲 due to the necessity of free movement within the catheter. The colinearity of
+the seeds in the train varies each time the sources are delivered to the catheter. For 192Ir seeds the lack of encapsulation
+on the seed ends allows the low-energy beta particles from
+this isotope to escape into the air space in the ribbon catheter,
+and these contribute to absorbed dose at shallow depths 共less
+than 1 mm兲 in the gaps between the seeds. In addition, the
+nominal 1 mm spacing between the seeds in these ribbons
+could sometimes vary, causing multiseed ribbons to be
+longer than expected 共see Fig. 8兲.
+The special measurement problems posed by intravascular
+brachytherapy have led to developments and improvements
+in several measurement systems. For example, radiochromic
+film dosimetry has been improved to meet these challenges,
+and a new generation of small volume scintillator systems
+has been developed for in vitro dosimetry of these
+sources.98,42 Very precise contained activity measurement
+techniques for the beta particle sources were developed,99
+which, when combined with Monte Carlo results, allow the
+prediction of reference absorbed dose rates. This provides an
+alternative means to determine the reference absorbed dose
+rate with high accuracy.
+In addition to measurements, a variety of Monte Carlo
+codes has been used to determine the dose distribution about
+intravascular sources. Some interesting observations can be
+made from the Monte Carlo studies discussed in this article.
+It has been demonstrated that, for a given source design, very
+good agreement can be obtained between the dose distributions predicted by different codes, although these may use
+different multiple-scattering algorithms, cross-section libraries, etc., Fig. 14 provides an example of the very close agreement that can be obtained. Whereas this convergence may
+support an optimistic view on the current state-of-the-art of
+Monte Carlo radiation transport simulation, it is important to
+note that such good agreement can be obtained only if the
+source emission spectrum, the source geometry, and the materials are implemented very similarly in the different simulations, as was indeed the case in the studies presented in
+Fig. 14. Since inaccurate modeling of the source may lead to
+systematic errors in the calculated dose distributions, it is
+important that source manufacturers provide accurate and
+complete information regarding the source design. Although
+it has been shown that good agreement between different
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4155
+
+simulations and between simulations and experiments can be
+achieved, this is certainly not trivial. Some examples of significant discrepancies that may occur can be found in the
+discussion of the Monte Carlo results in Sec. IV C 3. Especially electron transport simulations may suffer from, e.g.,
+boundary-crossing artifacts, step-size artifacts, and/or other
+problems. Furthermore, it is generally crucial to set proper
+values for a variety of radiation transport parameters in order
+to get good results. Therefore, it remains of great importance
+that the user of a Monte Carlo code acquires a thorough
+understanding of its algorithms and their limitations.
+The experiences gained as described in the previous paragraphs will also find utilization in other fields requiring dosimetry of small radiation sources, such as traditional
+brachytherapy with low-energy photon sources. The same
+challenging field characteristics are also present here, and the
+advances made in measurement and calculation technology
+can be applied to absorbed dose determinations with these
+sources as well. These advances hopefully will lead to improved standards based on absorbed dose rather than air
+kerma for these sources, as well as for new sources, which
+do not lend themselves to air kerma strength measurement,
+such as x-ray probe systems100 or plaque sources for the
+treatment of age-related macular degeneration.101
+a兲
+
+Author to whom correspondence should be addressed. Electronic mail:
+soutung@optonline.net
+1
+P. Tripuraneni, “The future of CART in the era of drug eluting stents: ‘It’s
+not over until it’s over,”’ Brachytherapy 2, 74–76 共2003兲.
+2
+P. M. Devlin, “The future of coronary artery radiation therapy—The
+CART before the 共unbridled兲 horse,” Brachytherapy 2, 73–74 共2003兲.
+3
+M. C. Morice et al. and RAVEL Study Group, “A randomized comparison
+of a sirolimus-eluting stent with a standard stent for coronary revascularization,” N. Engl. J. Med. 346, 1773–1780 共2002兲.
+4
+J. W. Moses et al. and SIRIUS Investigators, “Sirolimus-eluting stents
+versus standard stents in patients with stenosis in a native coronary artery,” N. Engl. J. Med. 349, 1315–1323 共2003兲.
+5
+G. W. Stone et al. and TAXUS-IV Investigators, “A polymer-based,
+paclitaxel-eluting stent in patients with coronary artery disease,” N. Engl.
+J. Med. 350, 221–231 共2004兲.
+6
+R. Torguson, M. Sabate, R. Deible, K. Smith, W. W. Chu, K. M. Kent, A.
+D. Pichard, W. O. Suddath, L. F. Satler, and R. Waksman, “Intravascular
+brachytherapy versus drug-eluting stents for the treatment of patients with
+drug-eluting stent restenosis,” Am. J. Cardiol. 98, 1340–1344 共2006兲.
+7
+R. Waksman, B. Bhargava, L. White, R. C. Chan, R. Mehran, A. J. Lansky, G. S. Mintz, L. F. Satler, A. D. Pichard, M. B. Leon, and K. K. Kent,
+“Intracoronary beta radiation therapy inhibits recurrence of in-stent restenosis,” Circulation 101, 1895–1898 共2000兲.
+8
+A. E. Raizner, S. N. Oesterle, R. Waksman, P. W. Serruys, A. Colombo,
+Y. L. Lim, A. C. Yeung, W. J. Van Der Giessen, L. Vandertie, J. K. Chiu,
+L. R. White, P. J. Fitzgerald, G. L. Kaluza, and N. M. Ali, “Inhibition of
+restenosis with beta-emitting radiotherapy: Report of the proliferation reduction with vascular energy trial 共PREVENT兲,” Circulation 102, 951–
+958 共2000兲.
+9
+M. B. Leon, P. S. Teirstein, J. W. Moses, P. Tripuraneni, A. J. Lansky, S.
+Jani, S. C. Wong, D. Fish, S. Ellis, D. R. Holmes, D. Kerieakes, R. E.
+Kuntz, “Localized intracoronary gamma-radiation therapy to inhibit the
+recurrence of restenosis after stenting,” N. Engl. J. Med. 344, 250–256
+共2001兲.
+10
+J. A. Condado, R. Waksman, J. F. Saucedo, B. Bhargava, A. J. Lansky, C.
+Calderas, O. Gurdiel, J. Gonzalez, M. Fadoul, B. Parra, L. Iturria, and B.
+Amezaga, “Five-year clinical and angiographic follow-up after intracoronary iridium-192 radiation therapy,” Cardiovasc. Radiat. Med. 3, 74–81
+共2002兲.
+11
+R. Nath, H. Amols, C. Coffey, D. Duggan, S. Jani, Z. Li, M. Schell, C.
+Soares, J. Whiting, P. Cole, I. Crocker, and R. Schwartz, “Intravascular
+
+4156
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+brachytherapy physics: Report of the AAPM Radiation Therapy Committee Task Group No. 60,” Med. Phys. 26, 119–152 共1999兲.
+12
+M. Price, H. Giap, and P. S. Teirstein, “Intracoronary radiation therapy for
+multi-drug resistant in-stent restenosis: Initial clinical experience,” Catheterization and Cardiovasc. Intervent. 69, 132–134 共2007兲.
+13
+P. Ortolani, A. Marzocchi, M. Aquilina, W. Gaiba, S. Neri, C. Marrozzini,
+T. Palmerini, N. Taglieri, and A. Branzi, “32P Brachytherapy in the treatment of complex Cypher in-stent restenosis,” J. Interv. Cardiol. 18, 205–
+211 共2005兲.
+14
+P. S. Teirstein et al., “Catheter-based radiotherapy to inhibit restenosis
+after coronary stenting,” N. Engl. J. Med. 336 1697–1703 共1997兲.
+15
+R. Waksman et al., “Intracoronary gamma radiation therapy after angioplasty inhibits recurrence in patients with in-stent restenosis,” Circulation
+101, 2165–2171 共2000兲.
+16
+J. J. Popma, M. Suntharalingam, A. J. Lansky, R. R. Heuser, B. Speiser,
+P. S. Teirstein, V. Massullo, T. Bass, R. Henderson, S. Silber, P. von
+Rottkay, R. Bonan, K. K. L. Ho, Al. Osattin, and R. E. Kuntz, “Randomized trial of 90Sr/90Y ß-radiation versus placebo control for treatment of
+in-stent restenosis,” Circulation 106, 1090–1096 共2002兲.
+17
+S. B. King, III, D. O. Williams, P. Chougele, J. L. Klein, R. Waksman, R.
+Hilstead, J. Macdonald, K. Anderberg, and I. R. Crocker, “Endovascular
+␤-radiation to reduce restenosis after balloon angioplasty: Results of the
+beta energy restenosis trial 共BERT兲,” Circulation 97, 2025–2030 共1998兲.
+18
+P. W. Serruys, G. Sianos, W. van der Giessen, H. J. R. M. Bonnier, P.
+Urban, W. Wijns, E. Benit, M. Vandormal, R. Dörr, C. Disco, M. Debbas,
+and S. Silber, “Intracoronary ␤-radiation to reduce restenosis after balloon angioplasty and stenting,” Eur. Heart J. 23, 1351–1359 共2002兲.
+19
+R. Waksman, A. Raizner, A. Yeung, A. Lansky, and L. Vandertie, “Use of
+localised intracoronary ␤ radiation in treatment of in-stent restenosis: The
+INHIBIT randomised controlled trial,” Lancet 359, 551–557 共2002兲.
+20
+L. Anderson, R. Nath, K. Weaver, D. Nori, T. L. Phillips, Y. H. Son, S.
+Chiu-Tsao, A. S. Meigooni, J. A. Meli, and V. Smith, Interstitial Brachytherapy, Physical, Biological and Clinical Considerations 共Raven, New
+York, 1990兲.
+21
+N. S. Patel, S. Chiu-Tsao, Y. Ho, T. Duckworth, J. A. Shih, H. S. Tsao, H.
+Quon, and L. B. Harrison, “High beta and electron dose from 192Ir: implications for “gamma” intravascular brachytherapy,” Int. J. Radiat. Oncol., Biol., Phys. 54, 972–980 共2002兲.
+22
+NCRP Report No. 58, A handbook of radioactivity measurements procedures. National Council of Radiation Protection and Measurements 共National Council on Radiation Protection and Measurements, Bethesda,
+1985兲.
+23
+N. B. Grove and M. J. Martin, “Log-f tables for beta decay,” Nucl. Data
+Tables 10 205–317 共1971兲.
+24
+S. Jani, V. Massullo, P. Tripuraneni, and P. Teirstein, “The Ir-192 radioactive seed ribbon,” in Handbook of Vascular Brachytherapy, 2nd ed.,
+edited by R. Waksman and P. Serruys 共Martin Dunitz Ltd., United Kingdom, 2000兲, pp. 52–56.
+25
+R. Waksman, E. Cheneau, A. Ajani, R. L. White, E. Pinnow, R. Torguson,
+R. Dieble, L. F. Satler, A. D. Pichard, K. M. Kent, P. S. Tierstein, and J.
+Lindsay, “Intracoronary radiation therapy inproves the clinical and angiographic outcomes of diffuse in-stent restenotic lesions,” Circulation 107,
+1744–1749 共2003兲.
+26
+National Nuclear Data Center, Brookhaven National Laboratory,
+www.nndc.bnl.gov 共2007 January 10兲.
+27
+R. Wang and X. A. Li, “A Monte Carlo calculation of dosimetric parameters of 90Sr/90Y and 192Ir SS sources for intravascular brachytherapy,”
+Med. Phys. 27, 2528–2535 共2000兲.
+28
+R. Wang and X. A. Li, “Dosimetric comparison of two 90Sr/90Y sources
+for intravascular brachytherapy: An EGSnrc Monte Carlo calculation,”
+Phys. Med. Biol. 47, 4259–4269 共2002兲.
+29
+F. A. Mourtada, C. G. Soares, S. M. Seltzer, P. M. Bergstrom, Jr., J. M.
+Fernandez-Varea, J. Asenjo, and S. H. Lott, “Dosimetry characterization
+for a 32P source wire used for intravascular brachytherapy with automated
+stepping,” Med. Phys. 30, 959–971 共2003兲.
+30
+F. A. Mourtada, C. G. Soares, S. M. Seltzer, and S. H. Lott, “Dosimetry
+characterization of 32P catheter-based vascular brachytherapy source
+wire,” Med. Phys. 27, 1770–1776 共2000兲.
+31
+J. A. Halbleib, R. P. Kensek, T. A. Mehlhorn, G. D. Valdez, S. M. Seltzer,
+and M. J. Berger, Report SAND91-1634, ITS Version 3.0: Integrated
+TIGER Series of Coupled Electron/Photon Monte Carlo Transport Codes
+共Sandia National Laboratories, Albuquerque, NM, 1992兲.
+32
+W. R. Nelson, H. Hirayama, and D. W. Rogers, Report SLAC-265, The
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4156
+
+EGS4 Code System 共Stanford Linear Accelerator Center, Stanford University, Stanford, CA, 1985兲.
+33
+I. Kawrakow and D. W. O. Rogers, NRCC Report PIRS-701, The EGSnrc
+Code System: Monte Carlo Simulation of Electron and Photon Transport
+共National Research Council of Canada, Ottawa, 2000兲.
+34
+J. F. Briesmeister, ed., Report LA-12625-M, MCNP™-A General Monte
+Carlo N-Particle Transport Code: Version 4B 共Los Alamos National
+Laboratory, Los Alamos, NM, 1997兲.
+35
+J. F. Briesmeister, ed., Report LA-13709-M, MCNP™-A General Monte
+Carlo N-Particle Transport Code: Version 4C 共Los Alamos National
+Laboratory, Los Alamos, NM, 2000兲.
+36
+L. S. Waters, Report LA-CP-02–408, MCNPX-User’s Manual Version
+2.4.0 共Los Alamos National Laboratory, 2002兲.
+37
+F. Salvat, J. M. Fernández-Varea, and J. Sempau, PENELOPE, A Code
+System for Monte Carlo Simulation of Electron and Photon Transport,
+Workshop Proceedings, Issy-les-Moulineaux, France 7–10 July 2003
+共OECD/NEA, Paris, France, 2003兲.
+38
+S. Agostinelli et al., “GEANT4—a simulation toolkit,” Nucl. Instrum.
+Methods Phys. Res. A 506, 250–303 共2003兲.
+39
+J. F. Williamson, “Comparison of measured and calculated dose rates in
+water near I-125 and Ir-192 seeds,” Med. Phys. 18, 776–786 共1991兲.
+40
+P. Papagiannis, A. Angeloloulos, E. Pantelis, L. Sakelliou, D. Baltas, P.
+Karaiskos, P. Sandilos, and L. Vlachos, “Dosimetry comparison of 192Ir
+sources,” Med. Phys. 29, 2239–2246 共2002兲.
+41
+C. G. Soares, D. Halpern, and C. K. Wang, “Calibration and characterization of beta-particle sources for intravascular brachytherapy,” Med.
+Phys. 25, 339–346 共1998兲.
+42
+M. Bambynek, D. Flühs, U. Quast, D. Wegener, and C. G. Soares, “A
+high-precision, high-resolution and fast dosimetry system for beta sources
+applied in cardiovascular brachytherapy,” Med. Phys. 27, 662–667
+共2000兲.
+43
+D. R. Schaart, A. J. J. Bos, A. J. M. Winkelman, and M. C. Clarijs, “The
+radial depth-dose distribution of a 188W/188Re beta line source measured
+with novel, ultra-thin TLDs in a PMMA phantom: Comparison with
+Monte Carlo simulations,” Phys. Med. Biol. 47, 3605–3627 共2002兲.
+44
+H.-J. Selbach and C. G. Soares, “New developments on primary standards
+for brachytherapy at NIST 共US兲 and PTB 共Germany兲,” in Standards and
+Codes of Practice in Medical Radiation Dosimetry, Proceedings of an
+International Symposium, Vienna, 25–28 November 2002, Vol. 2, pp.
+101–110 共International Atomic Energy Agency, Vienna, 2003兲.
+45
+J. van der Marel and E. van Dijk, “Developments of a Dutch primary
+standard for beta emitting brachytherapy sources,” in Standards and
+Codes of Practice in Medical Radiation Dosimetry, Proceedings of an
+International Symposium, Vienna, 25–28 November 2002, Vol. 2, pp. 93–
+100 共International Atomic Energy Agency, Vienna, 2003兲.
+46
+A. Niroomand-Rad, C. R. Blackwell, B. M. Coursey, K. P. Gall, J. M.
+Galvin, W. L. McLaughlin, A. S. Meigooni, R. Nath, J. E. Rodgers, and
+C. G. Soares, “Radiochromic film dosimetry: Report of the AAPM Radiation Therapy Committee Task Group No. 55,” Med. Phys. 25, 2093–
+2115 共1998兲.
+47
+C. G. Soares, “Radiochromic film dosimetry,” Radiat. Meas. 41, S100–
+S116 共2006兲.
+48
+M. J. Butson, P. K. N. Yu, T. Cheung, and P. Metcalfe, “Radiochromic
+film for medical radiation dosimetry,” Mater. Sci. Eng. R41, 61–120
+共2003兲.
+49
+IAEA TECDOC-1274, Calibration of photon and beta ray sources used
+in brachytherapy. Guidelines on standardized procedures at Secondary
+Standards Dosimetry Laboratories (SSDLs) and hospitals. 共International
+Atomic Energy Agency, Vienna, 2002兲.
+50
+J. F. Dempsey, D. A. Low, S. Mutic, J. Markman, A. S. Kirov, G. H.
+Nussbaum, and J. F. Williamson, “Validation of a precision radiochromic
+film dosimetry system for quantitative two-dimensional imaging of acute
+exposure dose distributions,.” Med. Phys. 27, 2462–2475 共2000兲.
+51
+R. Nath, L. L. Anderson, G. Luxton, K. A. Weaver, J. F. Williamson, and
+A. S. Meigooni, “Dosimetry of interstitial brachytherapy sources: Recommendations of the AAPM Radiation Therapy Committee Task Group No.
+43,” Med. Phys. 22, 209–234 共1995兲.
+52
+M. J. Rivard, B. M. Coursey, L. A. DeWerd, W. F. Hanson, M. S. Huq, G.
+S. Ibbott, M. G. Mitch, R. Nath, and J. F. Williamson, “Update of AAPM
+Task Group No. 43 Report: A revised AAPM protocol for brachytherapy
+dose calculations,” Med. Phys. 31, 633–647 共2004兲.
+53
+D. R. Schaart, M. C. Clarijs, and A. J. J. Bos, “On the applicability of the
+AAPM TG-60/TG-43 dose calculation formalism to intravascular line
+
+4157
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+sources: Proposal for an adapted formalism,” Med. Phys. 28, 638–653
+共2001兲.
+54
+N. S. Patel, S. T. Chiu-Tsao, H. S. Tsao, and L. B. Harrison, “A new
+treatment planning formalism for catheter-based b sources used in intravascular brachytherapy,” Cardiovasc. Radiat. Med. 2, 157–164 共2001兲.
+55
+R. Wang and X. A. Li, “Monte Carlo dose calculations of beta-emitting
+sources for intravascular brachytherapy: A comparison between EGS4,
+EGSnrc, and MCNP,” Med. Phys. 28, 134–141 共2001兲.
+56
+N. S. Patel, S. T. Chiu-Tsao, P. Fan, H. S. Tsao, S. F. Liprie, and L. B.
+Harrison, “The use of cylindrical coordinates for treatment planning parameters of an elongated 192Ir source,” Int. J. Radiat. Oncol., Biol., Phys.
+51, 1093–1102 共2001兲.
+57
+M. J. Rivard, “Refinements to the geometry factor used in the AAPM
+Task Group No. 43 necessary for brachytherapy dosimetry calculations,”
+Med. Phys. 26, 2445–2450 共1999兲.
+58
+P. Karaiskos, L. Sakelliou, P. Sandilos, and L. Vlachas, “Limitations of
+the point and line source approximations for the determination of geometry factors around brachytherapy sources,” Med. Phys. 27, 124–128
+共2000兲.
+59
+E. Kouwenhoven, R. van der Laarse, and D. R. Schaart, “Variation in the
+interpretation of the AAPM TG-43 geometry factor leads to unclearness
+in brachytherapy dosimetry,” Med. Phys. 28, 1965–1966 共2001兲.
+60
+J. A. Meli, “Let’s abandon geometry factors other than that of a point
+source in brachytherapy dosimetry,” Med. Phys. 29, 1917–1918 共2002兲.
+61
+M. J. Rivard, B. M. Coursey, L. A. DeWerd, W. F. Hanson, M. S. Huq, G.
+S. Ibbott, R. Nath, and J. F. Williamson, “Comment on: Let’s abandon
+geometry factors other than that of a point source in brachytherapy dosimetry,” Med. Phys. 29, 1919–1920 共2002兲.
+62
+F. A. Mourtada, C. G. Soares, and J. L. Horton, “A segmented 32P source
+Monte Carlo model to derive AAPM TG-60 dosimetric parameters used
+for intravascular brachytherapy,” Med. Phys. 31, 602–608 共2004兲.
+63
+W. G. Cross, “Variation of beta dose attenuation in different media,”
+Phys. Med. Biol. 13, 611–618 共1968兲.
+64
+International Commission on Radiation Units and Measurements, ICRU
+Report 56, Dosimetry of External Beta Rays for Radiation Protection
+共International Commission on Radiation Units and Measurements, Bethesda, MD, 1997兲.
+65
+D. R. Schaart, “The scaling method applied to beta particle line sources
+with a finite diameter,” Med. Phys. 29, 2682–2686 共2002兲.
+66
+AAPM Report No. 21. Recommendations of AAPM Task Group 32:
+Specification of Brachytherapy Source Strength 共American Institute of
+Physics, New York, 1987兲.
+67
+T. P. Loftus, “Standardization of 192Ir gamma ray sources in terms of
+exposure,” J. Res. Natl. Bur. Stand. 85, 19–25 共1980兲.
+68
+R. Wang and R. S. Sloboda, “Influence of source geometry and materials
+on the transverse axis dosimetry of 192Ir brachytherapy sources,” Phys.
+Med. Biol. 43, 37–48 共1998兲.
+69
+J. C. Anctil, B. G. Clark, and C. J. Arsenault, “Experimental determination of dosimetry functions of Ir-192 sources,” Med. Phys. 25, 2279–2287
+共1998兲.
+70
+Z. Chen and R. Nath, “Dose rate constant and energy spectrum of interstitial brachytherapy sources,” Med. Phys. 28, 86–96 共2001兲.
+71
+S. J. Ye, E. I. Parsai, and J. J. Feldmeier “Dosimetric characteristics of a
+linear array of ␤ or ␥-emitting seeds in intravascular irradiation: Monte
+Carlo studies for the AAPM TG-43/60 formalism,” Med. Phys. 30, 403–
+414 共2003兲.
+72
+N. S. Patel, S. Chiu-Tsao, J. A. Shih, Y. Ho, H. S. Tsao, and L. B.
+Harrison, “Treatment Planning dosimetric parameters for 192Ir seed at
+short distances: Effects of air channels and neighboring seeds,” Med.
+Phys. 31, 1521–1528 共2004兲.
+73
+D. Baltas, P. Karaiskos, P. Papagiannis, L. Sakelliou, E. Loeffler, and N.
+Zamboglou, “Beta versus gamma dosimetry close to Ir-192 brachytherapy
+sources,” Med. Phys. 28, 1875–1882 共2001兲.
+74
+N. C. Yang and R. C. Chan, “Beta particle and conversion electron contributions on Ir-192 dosimetry in intravascular Brachytherapy,” Med.
+Phys. 28, 1182 共2001兲.
+75
+C. G. Soares, “Dosimetric issues in vascular brachytherapy 共TG43/60兲,”
+in Intravascular Brachytherapy/Fluoroscopically Guided Interventions,
+S. Balter, R. C. Chan, and T. B. Shope, Jr., eds. Medical Physics Monograph No. 28, AAPM 2002 summer School Proceedings 共Medical Physics
+Publishing, Madison, WI, 2002兲, pp. 321–372.
+76
+R. Capote, E. Mainegra, and E. López, “Anisotropy function for 192Ir
+low-dose-rate brachytherapy sources: An EGS4 Monte Carlo study,”
+Medical Physics, Vol. 34, No. 11, November 2007
+
+4157
+
+Phys. Med. Biol. 46, 1487–1499 共2001兲.
+N. Reynaert, M. Van Eijkeren, Y. Taeymans, and H. Thierens, “Dosimetry
+of 192Ir sources used for endovascular brachytherapy,” Phys. Med. Biol.
+46, 499–516 共2001兲.
+78
+S. Chiu-Tsao, T. L. Duckworth, N. S. Patel, J. Pisch, and L. B. Harrison,
+“Verification of Ir-192 near-source dosimetry using GAFCHROMIC
+film,” Med. Phys. 31, 201–207 共2004兲.
+79
+J. Asenjo, J. M. Fernandez-Varea, and A. Sanchez-Reyes, “Characterization of a high-dose-rate 90Sr/ 90Y source for intravascular brachytherapy
+by using the Monte Carlo code PENELOPE,” Phys. Med. Biol. 47, 697–
+711 共2002兲.
+80
+O. Chibani and X. A. Li, “IVBTMC, a Monte Carlo dose calculation tool
+for intravascular brachytherapy,” Med. Phys. 30, 44–51 共2003兲.
+81
+D. E. Roa, H. Song, N. Yue, F. d’Errico, and R. Nath, “Dosimetric characeristics of the Novoste Beta-Cath 90Sr/ 90Y source trains at submillimeter
+distances,” Med. Phys. 31, 1269–1276 共2004兲.
+82
+S. J. Ye, X. A. Li, J. R. Zimmer, J. J. Chu, and C. K. Choi, “Dosimetric
+perturbations of linear array of beta-emitter seeds and metallic stent in
+intravascular brachytherapy,” Med. Phys. 27, 374–380 共2000兲.
+83
+D. M. Duggan, C. W. Coffey, J. L. Lobdell, and M. C. Schell, “Radiochromic film dosimetry of a high dose rate beta particle sources for intravascular brachytherapy,” Med. Phys. 26, 2461–2464 共1999兲.
+84
+C. Kirisits, D. Georg, P. Wexberg, B. Pokrajac, and R. Pötter, “Determination and application of the reference isodose length 共RIL兲 for commercial endovascular brachytherapy devices,” Radiother. Oncol. 64, 309–315
+共2002兲.
+85
+T. D. Bohm, F. A. Mourtada, and R. K. Das, “Dose rate table for a 32P
+intravascular brachytherapy source from Monte Carlo calculations,” Med.
+Phys. 28, 1770–1775 共2001兲.
+86
+A. Piermattei, A. Fidanzio, F. Perrone, L. Azario, L. Grimaldi, P. Viola,
+and R. Capote, “Experimental dosimetry of a 32P catheter-based endovascular brachytherapy source,” Phys. Med. Biol. 48, 2283–2296 共2003兲.
+87
+R. Wang and X. A. Li, “Monte Carlo characterization of a 32P source for
+intravascular brachytherapy,” Med. Phys. 28, 1776–1785 共2001兲.
+88
+X. A. Li, M. Suntharalingam, and C. Yu, “Dosimetry of source stepping
+for intravascular brachytherapy,” Cardiovasc. Rad. Med. 2, 165–172
+共2001兲.
+89
+J. Torres, M. J. Buades, J. F. Almansa, R. Guerrero, and A. M. Lallena,
+“Dosimetry characterization of 32P intravascular brachytherapy source
+wires using PENELOPE and GEANT4,” Med. Phys. 31, 296–304 共2004兲.
+90
+R. Jeraj, P. J. Keall, and P. M. Ostwald, “Comparisons between MCNP,
+EGS4 and experiment for clinical electron beams,” Phys. Med. Biol. 44,
+705–717 共1999兲.
+91
+N. Reynaert, H. Palmans, H. Thierens, and R. Jeraj, “Parameter dependence of the MCNP electron transport in determining dose distributions,”
+Med. Phys. 29, 2446–2454 共2002兲.
+92
+D. R. Schaart, J. T. M. Jansen, J. Zoetelief, and P. F. A. de Leege, “A
+comparison of MCNP4C electron transport with ITS 3.0 and experiment
+at incident energies between 100 keV and 20 MeV: Influence of voxel
+size, substeps and energy indexing algorithm,” Phys. Med. Biol. 47,
+1459–1484 共2002兲.
+93
+C. Kirisits, “Determination and application of the reference isodose
+length 共RIL兲 for commercial endovascular brachytherapy devices,” Radiother. Oncol. 64, 309–315 共2002兲.
+94
+ICRU Report No. 50, Prescribing, recording and reporting photon beam
+therapy 共International Commission on Radiation Units and Measurements, Bethesda, 1993兲.
+95
+ICRU Report No. 62, Prescribing, recording and reporting photon beam
+therapy (Supplement to ICRU Report 50). 共International Commission on
+Radiation Units and Measurements, Bethesda, 1999兲.
+96
+R. Pötter et al., “Recommendations of the EVA GEC ESTRO Working
+Group: prescribing, recording, and reporting in endovascular brachytherapy. Quality assurance, equipment, personnel and education,” Radiother. Oncol. 59, 339–360 共2001兲.
+97
+C. G. Soares, “Consistency standards for source strength of beta-particle
+sources,” Vasc. Radiother. Monitor 3, 59–63 共2001兲.
+98
+D. Flühs, M. Heintz, F. Indenkämpen, C. Wieczorek, H. Kolanoski, and
+U. Quast, “Direct reading measurement of absorbed dose with plastic
+scintillators—The general concept and applications to ophthalmic dosimetry,” Med. Phys. 23, 427–434 共1996兲.
+99
+R. Collé, “Chemical digestion and radionuclidic assay of TiNiencapsulated 32P intravascular brachytherapy sources,” Int. J. Appl. Radiat. Isot. 50, 811–833 共1999兲.
+77
+
+4158
+
+Chiu-Tsao et al.: Task Group No. 149 report, intravascular brachytherapy dosimetry
+
+100
+
+M. Dinsmore, K. J. Harte, A. P. Sliski, D. O. Smith, P. M. Nomikos, M.
+J. Dalterio, A. J. Boom, W. F. Leonard, P. E. Oettinger, and J. C. Yanch,
+“A new miniature x-ray source for interstitial radiosurgery: device description,” Med. Phys. 23, 45–52 共1996兲.
+
+Medical Physics, Vol. 34, No. 11, November 2007
+
+101
+
+4158
+
+R. Hearn, C. G. Soares, J. Bergman, K. Millage, M. Napolitino, and J.
+Rodgers, “Radiological characterization of a 103Pd ocular brachytherapy
+source,” Med. Phys. 31, 1914 共2004兲 共abstract兲.
+
+

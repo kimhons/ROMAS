@@ -1,0 +1,1376 @@
+AAPM REPORT NO. 100
+
+Acceptance Testing
+and Quality Assurance Procedures
+for Magnetic Resonance Imaging Facilities
+
+Report of MR Subcommittee Task Group I
+December 2010
+
+DISCLAIMER: This publication is based on sources
+and information believed to be reliable, but the
+AAPM, the authors, and the editors disclaim
+any warranty or liability based on or relating
+to the contents of this publication.
+The AAPM does not endorse any products,
+manufacturers, or suppliers. Nothing in
+this publication should be interpreted
+as implying such endorsement.
+
+© 2010 by American Association of Physicists in Medicine
+
+DISCLAIMER: This publication is based on sources and information believed to be reliable,
+but the AAPM, the authors, and the publisher disclaim any warranty or liability
+based on or relating to the contents of this publication.
+The AAPM does not endorse any products, manufacturers, or suppliers. Nothing in this
+publication should be interpreted as implying such endorsement.
+
+ISBN: 978-1-936366-02-6
+ISSN: 0271-7344
+
+© 2010 by American Association of Physicists in Medicine
+
+All rights reserved.
+
+Published by
+American Association of Physicists in Medicine
+One Physics Ellipse
+College Park, MD 20740-3846
+
+MR SubcommitteeTask Group I
+Edward F. Jackson1
+Department of Imaging Physics, The University of Texas M.D. Anderson Cancer Center,
+Houston, TX
+Michael J. Bronskill
+Sunnybrook & Women’s College, Toronto, ON, Canada
+Dick J. Drost
+Nuclear Medicine and MRI Department, St Joseph’s Health Centre, London, ON, Canada
+Joseph Och
+Medical Physics and Engineering, Allegheny General Hospital, Pittsburgh, PA
+Robert A. Pooley
+Mayo Clinic, Jacksonville, FL
+Wlad T. Sobol
+Radiology Department, The University of Alabama Birmingham, Birmingham, AL
+Geoffrey D. Clarke
+Department of Radiology, The University of Texas Health Sciences Center, San Antonio, TX
+
+Submitted to MRSC reviewers on:
+Approved by the MRSC reviewers on:
+Submitted to IPC on:
+Approved by the IPC on:
+
+1
+
+Address correspondence to:
+
+August 11, 2008
+September 9, 2008
+November 25, 2008
+Spring, 2009
+
+Edward F. Jackson, Ph.D.
+Department of Imaging Physics
+M.D. Anderson Cancer Center
+1515 Holcombe Blvd, Unit 1472
+Houston, TX 77030-4009
+ejackson@mdanderson.org
+713-745-0559
+713-745-0581 (FAX)
+
+Key Words:
+MRI, Magnetic Resonance Imaging, Acceptance Testing, Quality Assurance
+iii
+
+Contents
+I. Introduction.................................................................................................................... 1
+II. Acceptance Test Procedures Prior to MR System Installation...................................... 3
+A.
+
+Vibration Measurements ............................................................................................. 3
+
+B.
+
+RF Shield Testing ................................................................................................................ 3
+
+III. Acceptance Test Procedures Following MR System Installation ........................................... 5
+A.
+
+Magnetic Fringe Field Mapping .......................................................................................... 5
+
+B.
+
+Phantoms ............................................................................................................................. 6
+
+C.
+
+MR System Inventory .......................................................................................................... 7
+
+D.
+
+General System Checks ....................................................................................................... 7
+Mechanical System Checks................................................................................................... 7
+Emergency System Checks.................................................................................................... 8
+Patient Monitoring, Anesthesiology Systems, Gating Systems,
+and MR-Compatible Injectors .............................................................................................. 8
+
+E.
+
+MR Scanner System Tests.................................................................................................... 9
+Static Magnetic Field Subsystem Tests ................................................................................. 9
+RF Subsystem Tests .............................................................................................................. 13
+Gradient Subsystem Tests ..................................................................................................... 14
+Combined Gradient/RF Subsystem Tests .............................................................................. 16
+Global System Tests.............................................................................................................. 17
+
+F.
+
+Advanced MR System Tests ................................................................................................ 23
+Ultrafast Imaging Tests ........................................................................................................ 23
+Spectroscopy Tests................................................................................................................ 27
+
+IV. Conclusions ...................................................................................................................... 31
+Acknowledgments.............................................................................................................................. 31
+References.......................................................................................................................................... 31
+
+v
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+I. Introduction
+This document was prepared to assist the medical physicist in defining an acceptance test
+strategy and quality assurance procedures for magnetic resonance imaging (MRI) facilities.
+Due to the wide variety of MRI systems available, with an equally wide range of options on
+each type of system, this document does not seek to provide a definitive guideline for development of such procedures. Instead, the goal of this document is to provide suggestions for
+relevant, practical tests that qualified medical physicists can perform independently or with
+the assistance of the magnetic resonance (MR) system vendor’s service personnel. The document outlines a recommended general testing strategy, overviews phantom availability/
+preparation issues, and then lists individual tests, each with a rationale for performing the test,
+a suggested procedure, and, where appropriate, suggested acceptance criteria. In some cases,
+alternative procedures are also provided.
+This document was developed to replace the now dated reports of the American
+Association of Physicists in Medicine (AAPM) Magnetic Resonance Task Group 11 and Task
+Group 62, although some materials from these original reports are referenced in the current
+document. This document also refers to specific tests and acceptance criteria based on the
+American College of Radiology (ACR) MR Accreditation Program MR phantom testing documents3,4 and the ACR MRI quality control (QC) program documentation.5 The rationale for
+specific inclusion of selected ACR phantom tests was made based on the large number of
+ACR-accredited MR facilities and, therefore, the widespread availability and use of the ACR
+MR Accreditation Phantom. For ACR phantom tests, it should be noted that some acceptance
+criteria given in this document differ from action criteria noted in the ACR MR Quality Control
+Manual 2004 5 and/or MRI Phantom Test Guidance 4 document. In such cases, the criteria recommended herein exceed the requirements suggested by the ACR, as acceptance testing
+should establish the optimal operating characteristics for the MR system.
+Clearly, the earlier the medical physicist becomes involved in the installation process
+the better. Ideally, the physicist will be involved in the bid specification and review process,
+the purchase decision, the site planning and construction meetings, and the testing of the
+radiofrequency (RF) shielding. In addition to the actual performance of the acceptance tests,
+the development of the system specifications, the testing and acceptance criteria, and the
+review of the service contracts are all areas where medical physicist involvement is highly
+advised. Without involvement at these early stages, mutual agreement between the site and the
+vendor regarding specific tests and acceptance criteria can be difficult, if not impossible, to
+obtain. Site planning requirements for MR systems include aspects quite unique as compared
+to requirements for most other imaging modalities, particularly with respect to safety, vibration, magnetic field shielding, and RF interference shielding. It is strongly recommended that
+the physicist carefully review site planning information contained in the pre-installation manual for the specific system under discussion (now generally available online) as well as the
+ACR Guidance Document for Safe MR Practices: 2007.6 Additional reference information is
+available in the 1992 AAPM Summer School proceedings.7
+Currently, the level of rigor in acceptance testing of MRI systems is highly variable,
+ranging from acceptance based on first patient examination, with no involvement of persons
+other than the vendor’s service/installation personnel, to highly rigorous acceptance testing
+1
+
+AAPM REPORT NO. 100
+
+procedures. However, several changes in the clinical practice of MRI are causing the MR community to re-evaluate the prior and current levels of acceptance testing and quality assurance
+programs. First, increasing numbers of imaging centers are using MR image data for treatment
+planning (surgical as well as stereotactic and conformal radiation therapy applications) or for
+actual guidance during interventional procedures. These applications require increased diligence
+in ensuring that MR systems are optimally calibrated (and appropriate acquisition techniques
+are utilized) such that the spatial accuracy of the resulting images is suitable for the intended
+purposes. Second, the ACR MR Accreditation Program requires that its accredited facilities
+adhere to the ACR Practice Guideline for the Performing and Interpreting Magnetic Resonance
+Imaging (MRI) and the ACR Technical Standard for Diagnostic Medical Physics Performance
+Monitoring of Magnetic Resonance Imaging Equipment, which include requirements for both
+acceptance testing and quality assurance programs. (All ACR Standards, including those cited
+above, are available at http://www.acr.org.) Medical physicists, with adequate training, experience,
+and continuing medical education in MR physics, are clearly ideal candidates to develop and to
+supervise such procedures.
+Given the ever-increasing range of MR applications, from exquisite anatomical imaging
+to functional imaging and spectroscopy, it is important that site-specific applications of the MR
+system be considered in the specifications, bid reviews, and acceptance testing and quality
+assurance program development. These site-specific applications affect the selection of the
+tests to be performed in addition to the particular acceptance criteria for a given test. For
+example, systems that will be used for ultrafast imaging and/or spectroscopy will have more
+stringent magnetic field homogeneity and eddy current correction criteria than will systems
+that will be used only for routine imaging applications.
+Once the site preparation and system installation procedures begin, it is strongly
+recommended that the physicist have regular involvement with the monitoring of these procedures. Site planning for MR systems has numerous unique requirements relative to other
+imaging modalities, and poor construction practices can easily turn into serious “artifact
+generators” later. Valuable time can be saved if the physicist has regular interaction with the
+construction contractors, RF shield installation team, and, of course, the MR system installation personnel. Furthermore, as outlined below, certain system and site installation tests
+require test equipment that is not readily available to the practicing medical physicist. If, however, the physicist is present during such tests, and understands the details of the tests being
+performed, there is no reason such test data cannot be used as part of the acceptance test and
+form the foundation for any subsequent quality assurance program.
+Acceptance testing is by definition the determination of whether the system delivered
+and installed is the system that was mutually agreed upon by both the buyer and the vendor
+and whether the system performs as specified in the contract. Therefore, access to and review
+of the original contract or sales agreement is highly desirable. All items related to the system
+should be clearly specified, including all RF coils, imaging options and pulse sequences,
+processing features, networking and filming options, etc. Ideally, the nominal performance
+criteria for key features, such as field homogeneity, should be provided in the contract. With
+this document in hand, and knowing the targeted applications of the MR system at the particular
+site, the medical physicist can fine tune the acceptance test procedure and recommend relevant
+aspects of a continuing quality assurance program.
+2
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+II. Acceptance Test Procedures Prior to MR System Installation
+A. Vibration Measurements
+Most MR system vendors specify acceptable transient and steady-state vibration levels, as a
+function of frequency, for the intended installation site for a given system. Vibration levels
+that exceed the specifications may result in phase artifacts in the images that can be difficult
+to diagnose and to eliminate. Since tracing such artifacts to the source is more difficult after
+installation, it is much more efficient to identify and determine solutions to vibration problems
+before the system is installed. Furthermore, the range of possible solutions to such problems
+becomes more limited after the system is delivered and installed.
+Vibration issues are becoming increasingly important as vendors, in order to ease siting restrictions and to improve patient comfort, have designed newer generation magnets to
+be lighter and smaller. As a trade-off to these improvements, the systems are more sensitive
+to vibration than were previous systems with larger and more massive magnets. Therefore,
+many vendors recommend or require building vibration testing before the MR system is
+installed. Due to the specialized nature of this testing, such vibration tests are typically best
+performed by an independent acoustic engineering contractor following completion of as
+much of the construction as possible. Both steady-state and transient vibration levels are
+assessed in three orthogonal directions using an accelerometer.8 If possible, the physicist
+should be present during such testing to verify that transient and steady-state vibration levels
+are within the MR system vendor’s specifications. The vibration test report should be part of
+the acceptance test and maintained at the facility. If the site vibration analysis indicates that
+steady-state or transient vibration levels exceed specifications, the site can then proceed with
+determining the source of the vibration and suitable means of achieving the necessary vibration specifications by either isolating the scanner pad from the building, if on grade floor or
+below, or by determining the source of the vibration and isolating or reducing the vibration
+from that source.
+Note that it is not unusual for artifacts due to vibrations to arise well after system
+installation and acceptance testing. For example, large ventilation systems can cause phase
+artifacts in MR images if the fan assembly becomes unbalanced. Therefore, if phase ghosting
+artifacts arise, and cannot be eliminated by system re-calibration and/or component replacement
+by the vendor or service organization, the vibration analysis should be repeated to determine
+if the vibration levels have significantly increased and, if so, to assist in determining the
+source of the vibration and ways to minimize its effect on system performance. Note also that
+as the patient table mechanics age, table vibration can increase, especially with lighter subjects
+such as children and babies. Furthermore, the vibration induced by the pulsing of the gradient
+coils will, over time, cause a loosening of some gradient, RF, and other connections to the
+scanner that, if left uncorrected, can result in “white pixels” in ultrahigh speed imaging. The
+vendor’s service personnel can usually prevent or correct the latter two problems by proper
+maintenance of the scanner during scheduled service calls.
+B. RF Shield Testing
+The MR system, at its very basic level, is a very sensitive RF receiver, designed to receive
+RF signals with amplitudes on the order of millivolts, most commonly in the 10–150 MHz
+3
+
+AAPM REPORT NO. 100
+
+frequency range. Due to the large variety of environmental RF signals in this frequency range
+that may interfere with the desired signal, the RF shield is an integral part of any MR system.
+As RF interference is a very common artifact in MR images, the RF shielding should be thoroughly tested.
+The RF shield, in essence, is a Faraday cage completely surrounding the MR scanner.
+Most commonly this shield is in the form of copper sheeting in the walls, ceiling, and floor;
+copper mesh in the window(s); and specially designed RF doors which, when closed, maintain
+the integrity of the shield. Most vendors specify the performance of the shield in terms of
+attenuation (in decibels [dB]) at a particular frequency. For example, for ≤ 1.5 tesla (T) scanners, common acceptance criteria are 100 dB attenuation at 100 MHz plane-wave. (The test
+frequency typically increases to 150–170 MHz for 3.0T systems.) In addition, the shield is
+typically required to be electrically isolated from building ground (before scanner installation)
+at DC frequency. (A typical requirement is 1 kΩ isolation at DC.) Note that both of these criteria are specified for tests performed before the MR scanner is actually installed. Therefore,
+the testing must be performed after the completion of the RF shield (most commonly by a
+shielding vendor, not the MR system vendor), but before the MR scanner is installed and the
+MR scan room construction completed.
+The actual test of RF shield performance is accomplished by placing an antenna on one
+side of the shield and broadcasting RF test signals (at the agreed-upon test frequency) through
+the shield. A second RF antenna on the other side of the shield is used as the receiver and the
+attenuation of the signal is determined by comparing these signals to unattenuated reference
+signals obtained, for example, through the open RF door. Therefore, the test requires a frequency generator, RF amplifier, two tuned antennas, and a spectrum analyzer. Such equipment
+is not commonly available to the practicing medical physicist. Hence, this test is typically performed by the shield vendor or an independent contractor. However, medical physicist
+involvement is quite important in the thorough testing of the shielded room. The medical
+physicist should ensure that the weak points of the room, not just the strongly attenuating
+regions, are tested and the results documented on a drawing of the room under test. Weak
+points are most commonly the RF door, the window(s), the area near the cryogen vent penetration through the shield, the shield penetrations for the room ventilation ducts, and the penetration panel where the MR scanner connections to the rest of the system are ultimately
+made. If a dry pipe fire sprinkler system is not used, the RF shield test should be performed
+with water in the sprinkler system. The physicist should insist on a copy of the test results, not
+just the certificate of compliance, and such results should be made part of the acceptance test
+and maintained in the facility.
+Recall, however, that this test is performed after the RF shield is in place but before the
+room is completed and the scanner installed. During scanner installation, a section of the
+shield must be removed to install the MR system. The shield is then closed again and the contractors complete the finish-out of the room. In finishing out the room, it is not uncommon for
+construction workers to accidentally short the RF shield to ground by, for example, driving a
+nail or screw through a grounded structure and into the RF shield. The shield integrity will be
+violated by this action and, if undetected until the first MR images demonstrate excessive RF
+noise, such a mistake can be difficult to find and repair. Therefore, to assist in preventing such
+problems, a common alarm circuit can be installed after the shield tests. Essentially, the alarm
+4
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+system consists of a battery-operated buzzer connected between the shield and building
+ground. If the shield becomes shorted during the finish-out phase of the construction, the
+alarm sounds immediately and the problem can be easily rectified. Most RF shield vendors
+will assist in providing such an alarm circuit.
+It is recommended that a second RF shield test be performed after MR system installation and room construction is complete. However, the RF shield vendor’s acceptance test criteria will undoubtedly be those obtained before the scanner is installed, not afterwards. If a
+second test is performed, the site should not expect to achieve the same degree of attenuation.
+For example, it is not uncommon for an RF-shielded room that attenuated a 100 MHz test signal by 100 dB before MR system installation to only attenuate the same test signal by about
+85 dB once the MR system installation is complete. The DC isolation test, of course, is not
+repeated after the MR system is installed.
+Finally, it should be noted that the shield integrity can be assessed in a rudimentary
+fashion using a battery-operated FM radio. With the RF door closed, radio reception should
+not be possible in a well-shielded room. Of course, such a rudimentary test cannot be considered an acceptance test. However, if RF interference is seen and RF shield integrity is questionable, this simple test can detect a seriously compromised shield. Care should be taken, of
+course, in performing this test because superconducting and permanent magnets are always
+“on”. Since most portable FM radios contain some ferrous material, e.g., batteries, care should
+be taken so that the radio is not pulled into the bore of the magnet.
+
+III. Acceptance Test Procedures Following MR System Installation
+Once the MR system has been installed and calibrated by the vendor’s installation and/or field
+service personnel, the physicist must usually accomplish the acceptance tests in the most time
+efficient manner. This can be a daunting challenge since most modern scanners have at least
+five major types of pulse sequences, can acquire images in any plane (including oblique
+planes), and have at least 10 RF coils. In addition, the scanner console may or may not have
+the necessary imaging processing tools available to accomplish the tests. Finally, the appropriate phantoms must be available for the tests. A large part of the physicist’s work in developing the acceptance test procedures lies in determining just how much to test, what phantoms
+to utilize for the tests, and how to acquire and analyze the data in the most time-efficient manner. The following sections offer suggestions to assist the physicist in approaching these
+issues.
+A. Magnetic Fringe Field Mapping
+Once the MR system has been installed and the magnet energized, the fringe fields associated
+with the magnet should be measured and noted on a drawing of the facility. Preferably, the
+physicist will have access to the site planning drawings on which the vendor overlaid the predicted fringe fields. If so, the physicist can simply make spot measurements to verify the accuracy of the predicted fringe fields, noting any discrepancies on the drawings. Particular
+attention should be paid to the 5-gauss fringe fields since most MR facilities post 5-gauss
+exclusion zone signage warning persons with pacemakers and neurostimulators not to enter
+5
+
+AAPM REPORT NO. 100
+
+the area bounded by the signs. Such documented measurements of fringe fields should become
+part of the acceptance test documents and should be maintained by the facility. The physicist
+should verify that the appropriate signage, multilingual as necessary, is posted at the 5-gauss
+exclusion zone boundaries and, in addition, appropriate signage, noting additional restrictions,
+is provided on the door(s) to the MR scan room.
+The most common means of measuring magnetic fields is a handheld gaussmeter that
+uses a Hall effect probe to determine the magnitude and direction of the magnetic field. While
+such gaussmeters are not overly expensive (typically $800 to $1500), not all medical physicists have direct access to such a device. However, MR system vendors will typically have a
+gaussmeter that, assuming it is properly calibrated, can be used by the physicist for independent measures of the fringe fields. It should be noted that the accuracy, precision, and correct
+operation of the particular gaussmeter should be well understood by the physicist should he or
+she wish to verify the magnetic fringe fields independently. For example, most hand-held
+gaussmeters use single-axis Hall effect probes rather than more expensive three-axis probes.
+With single-axis probes, the magnetic field measured depends strongly on the orientation of
+the probe in the field. With such probes, a sweeping motion should be used and the maximum
+reading obtained recorded. If independent confirmation of the 5-gauss fringe field extent is not
+possible, it is recommended that the physicist be present during such measurements taken by
+the vendor’s installation or field service personnel.
+B. Phantoms
+Virtually all MR phantoms are fluid-filled spherical or cylindrical objects. The fluid filling the
+phantoms, for field strengths ≤ 2T, is typically water doped with a paramagnetic substance to
+reduce the spin-lattice (T 1) and spin-spin (T 2) relaxation times to values on the order of
+200–500 milliseconds (ms) and 150–300 ms, respectively. In addition, NaCl may be added to
+provide conductivities similar to those found in the human body. By doing so, the phantom is
+made to electrically load the RF coil in a manner similar to human tissue. Two previously
+reported filling solutions are: (1) 1 liter H2O, 3.6 grams (g) NaCl, and 1.25 g of pure CuSO4
+or 1.96 g of CuSO45H2O, as recommended in a previous AAPM MR Task Group report,2 and
+(2) 10 mM NiCl2 and 75 mM NaCl, as is used in the ACR MR accreditation program phantom.4 The key advantage of using NiCl 2 as the doping material (instead of CuSO4) is the
+decreased temperature dependence of the T 1 relaxation times of the resulting solution.
+Phantoms can be purchased from multiple sources or can be made “in-house.” In addition, it
+is not uncommon for the MR system vendor to provide a variety of phantoms with the scanner to be used by the field service personnel. The physicist can put the phantoms to immediate use, and use of these phantoms provides common ground for the physicist and vendor
+when discussing any problems and determining how the appropriate solutions to the problems
+can be verified.
+Particularly useful phantoms are spherical or cylindrical phantoms of dimensions similar to the human head and abdomen (to evaluate signal-to-noise ratio [SNR], uniformity, and
+ghosting), and cylindrical phantoms containing test objects to evaluate slice thickness and
+spacing, geometric accuracy, high contrast resolution, and low contrast object detectability.
+Of course, for sites that are part of the ACR MRI Accreditation Program, the ACR MRI
+6
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Accreditation Phantom is required and can be used in acceptance testing as well as quality
+assurance and MR accreditation tests. (This phantom is available for purchase by medical
+physicists from J.M. Specialty Parts, San Diego, CA, (619) 794-7200.) Specific phantoms useful for each recommended test are described in the sections below.
+As more ultrahigh field magnets (≥ 3T) systems are being installed for clinical imaging,
+it should be noted that water-filled phantoms as described above are not optimal for some
+acceptance and QC tests. As discussed below, this is due to RF penetration and dielectric
+effects that become more pronounced with increasing frequency. For such systems, other
+phantom filling solutions, such as oils, may be more appropriate. If water-filled phantoms are
+used at these frequencies, some acceptance criteria, particularly the RF uniformity acceptance
+criteria, must be appropriately modified.
+C. MR System Inventory
+Due to the complexity of the MR system, and the large variety of available options (pulse
+sequences, RF coils, filming and/or networking interfaces, post-processing packages, etc.),
+performing a complete inventory of all components is a necessary, although tedious, task.
+Frequently the vendor will have a shipping log that a member of the installation team can provide to the physicist to minimize the time required to log each component’s model number,
+serial number, version number, and date of manufacture (if applicable). It is not uncommon,
+however, to discover that certain ordered options have not been enabled or installed, a surface
+coil has not been shipped, or other “minor” errors. (In fact, this is one of the most common
+problems at acceptance testing of MR systems.) This is also a good time to record Internet
+protocol (IP) addresses for all computers and any Digital Imaging and Communications in
+Medicine (DICOM) configuration information. Having such information in the acceptance test
+documentation typically saves significant time later when new network connections or
+DICOM transfer and/or print destinations need to be established.
+D. General System Checks
+Mechanical System Checks
+The mechanical system checks to be performed are tests of (1) the table motion and table
+docking and undocking mechanisms (if applicable), (2) table position accuracy, (3) magnet
+bore ventilation and lighting, (4) image analysis and display option capabilities, and (5) image
+archive and filming and/or networking capabilities.
+For many of these checks, verification and operational tests are straightforward. Table
+docking and motion mechanisms can be physically evaluated for smooth and proper operation.
+Proper operation of the bore ventilation and lighting systems can be assessed through direct
+observation. Table positioning accuracy can be verified by comparing the distance the weightloaded table actually moves (using a non-magnetic measuring tape) to that indicated on the
+digital display. Image analysis and display options should be tested during the acceptance of
+the system. Such options may include, but not be limited to, distance and angle measurements,
+profile measurements, region-of-interest statistics, and 3D display modes (maximum intensity
+projections, shaded-surface display, etc.). Local image archive operations should be verified
+7
+
+AAPM REPORT NO. 100
+
+as well as networking capabilities to PACS (Picture Archiving and Communication System),
+soft-copy display, and/or hard-copy device destinations.
+Emergency System Checks
+All MR systems come with multiple safety features that should be tested. With only one
+exception, it is recommended that each and every emergency system be tested. Some systems
+have up to three levels of “emergency stop” controls. The first level typically disconnects
+power from the RF and gradient hardware in the magnet bore. The second level may disconnect power to all system components, including the computer systems and, on some systems,
+the cold head on the superconducting magnet. The third level, on superconducting magnet systems, “quenches” the superconducting magnet. This quench circuit should only be tested by
+the MR system installation/service personnel, but the medical physicist should ensure that the
+test was performed and the results documented.
+It is strongly recommended that the medical physicist consult with the vendor prior to
+undertaking any tests of the emergency shutdown systems and, if at all possible, a service
+engineer should be available during such tests. While these systems generally work as
+designed, reinitialization of the system following such an emergency shutdown may require
+the intervention of the service personnel.
+Finally, superconducting MR systems typically have cryogen exhaust systems that are
+activated in the case of a quench. If there are manual cryogen exhaust system switches that can
+be activated by the MR system operator (by means other than the emergency quench circuit),
+they should be tested and clearly labeled.
+Patient Monitoring, Anesthesiology Systems, Gating Systems, and MR-Compatible Injectors
+All MR scanners have a “patient alert” system, commonly a pneumatically triggered alarm at
+the scanner console, and two-way patient-operator intercom systems to allow communication
+between the patient and the scanner operator. Both of these systems should be tested, with the
+scanner in normal operation, during the acceptance test procedure. In addition, if closedcircuit television monitoring systems are installed, correct operation should be verified.
+Oxygen monitors, installed in the scan room of superconducting MR systems to detect
+low levels of oxygen due to excessive boil off of cryogen gases, are less commonly installed
+than they were previously. A simple test of this system can be performed by exhaling vigorously on the oxygen sensor to cause a reduced oxygen reading. However, if the system has an
+oxygen monitor system, proper operation should be initially verified by the facility’s biomedical engineering department personnel after proper training has been given regarding the magnetic field environment. It should be noted that this system, like other emergency systems
+associated with the MR scanner, can “shut down” components of the system. Therefore, such
+tests should be performed after consultation with a member of the vendor’s service personnel.
+Many modern scanner systems have dedicated MR-compatible patient monitoring
+equipment, anesthesiology systems, and/or injectors installed along with the MR system. Such
+patient monitors can be stand-alone or may interface with the scanner to provide, for example,
+cardiac gating data for triggering purposes. It is relatively straightforward to verify proper
+
+8
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+communication between the monitor and the scanner using a physiological simulator, if available
+at the site or from the MR system vendor. Verification of the accuracy of the patient monitor
+data, however, is probably best addressed by biomedical engineering department personnel. It
+should be noted that some monitoring equipment contains magnetic components and/or may
+be affected by the static or RF magnetic fields of the scanner. Therefore, proper operation of
+the equipment should be verified with the components placed at the planned positions in the
+scanner room.
+Even if there are no dedicated patient monitoring systems in the scanner room, most
+MR systems still have some type of electrocardiograph (ECG), pulse oximetry, and/or respiratory bellows monitoring equipment commonly used for gating the scanner during cardiac
+and/or abdominal imaging studies. The medical physicist should test these components by verifying that an appropriate signal is produced on the system console and/or magnet housing.
+One advisable test to perform if any such “peripheral” equipment is installed is to
+obtain a baseline SNR measurement with all such equipment off and then repeat the measurements as each peripheral system is switched on to its normal operating state and placed at the
+position it will be used during routine operation. Such equipment can occasionally be a source
+of RF interference. Noting and correcting such “noise sources” during acceptance testing
+avoids costly downtime and frustration after the facility is in clinical operation.
+If such peripheral devices are used in the scan room, the physicist should obtain the
+vendor-specific maximum allowable magnet field strength for proper operation, if applicable,
+and confirm that the location of the device when in use is in a location where the fringe field
+amplitude does not exceed the stated maximum value. Permanent floor markings can be used
+to indicate “safe zones” or operation for such devices.
+E. MR Scanner System Tests
+After completing all tasks related to siting, interfaces, and safety, the acceptance testing of the
+MR system itself can begin. To accomplish the testing in the most time-efficient manner, it is
+recommended that independent subsystems (magnet, RF, gradient) be tested first, followed by
+tests that combine no more than two subsystems, ending with tests that combine all subsystems. For example, an SNR measurement, while a relatively sensitive quality assurance tool,
+is a non-specific acceptance test since every adjustable parameter and subsystem affects SNR.
+A suggested test order is: (1) static magnetic field tests, (2) RF system tests, (3) gradient system tests, (4) RF/gradient combination tests, and, finally, (5) global system tests.
+Static Magnetic Field Subsystem Tests
+1. Magnetic Field Homogeneity
+Overview: The primary test relative to the static magnetic field is the assessment of magnetic
+field homogeneity, typically expressed in terms of the magnetic field variation over a given
+diameter spherical volume (DSV). The actual homogeneity will be influenced by a variety of
+factors, including inaccuracies in the coil windings, perturbations induced by external ferromagnetic structures near the magnet, and the degree to which the above influences can be
+compensated using magnetic fields produced by superconductive, room temperature, and/or
+9
+
+AAPM REPORT NO. 100
+
+passive “shim” coils. The goal of the shim procedures is to optimize the field homogeneity
+by compensating for all the above factors. One of the most common detrimental effects of
+poor homogeneity on clinical imaging protocols is non-uniformity in the level of fat suppression seen in images where chemical shift selective saturation techniques (“fat-sat” or
+“chem-sat”) are utilized. However, such inhomogeneities can also contribute to geometrical
+distortion of images and adversely affect image uniformity. These effects become more
+severe in ultrafast imaging sequences, such as echo planar imaging. Finally, poor homogeneity of the static field has a particularly detrimental effect on spectroscopy data (on systems
+with spectroscopy capabilities).
+The magnetic field homogeneity (MFH) may be expressed in terms of part per million
+(ppm) of magnetic field variation or in frequency units (Hz). The frequency unit measures
+reflect the variation in Larmor frequency across the DSV. (The Larmor frequency is given
+by ω ⫽ γ B0 , where B0 is the magnetic field strength and γ is the gyromagnetic ratio, e.g.,
+γ /(2π) ⫽ 42.576 MHz/ T for hydrogen [1H].)
+Procedure: There are three proposed techniques, briefly summarized below, for assessing the
+MFH. Each technique is discussed more fully in the references.2,9
+(a) Spectral Peak Measurement Technique. An MR spectrum is acquired from a spherical, homogeneous phantom of the desired DSV centered at the isocenter of the
+magnet. The full-width at half maximum (FWHM) of the spectral peak is measured. The FWHM measures can be converted from Hz to ppm using the Larmor
+equation. For protons, this conversion is given by
+FWHM(ppm ) =
+
+FWHM(Hz)
+.
+42576000 (Hz tesla ) B0 ( tesla )
+
+(1)
+
+Advantages: Fast and simple to perform.
+Disadvantages: (1) Provides a global assessment of the MFH, i.e., does not allow
+for assessment of the MFH in individual planes, and (2) limited choices of DSV.
+(b) Phase Mapping Technique. Two gradient-echo images (per plane) are acquired
+with a small difference in echo times (a few milliseconds). The images are reconstructed in “phase mode” rather than the standard magnitude mode and are then
+subtracted. The MFH can then be computed pixel-by-pixel as
+∆B0 =
+
+∆φ
+,
+γ (TE 2 − TE1 )
+
+(2)
+
+where ∆φ is the phase difference and γ is the gyromagnetic ratio.
+Advantages: Fast, can assess multiple planes and DSVs, provides a measure of the
+“spherical harmonic correction coefficients” for each of the shim coils.
+Disadvantages: Requires specialized image reconstruction techniques frequently
+unavailable to end-users of the MR system (phase reconstruction capability, phase
+“unwrapping” algorithms, and image difference calculations).
+10
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Since some of the necessary tools required for methods (a) or (b) above are not independently available to the medical physicist, this test is probably most efficiently (and accurately) performed by the vendor, with a final report of the optimized field homogeneity
+provided to the medical physicist for inclusion in the acceptance test report to the facility and
+serving as the baseline MFH measure for subsequent QC measures.
+While the vendor’s MFH data are commonly used at acceptance testing and during
+ongoing quality control, a medical physicist might, in the place of or in addition to, wish to
+have an independent means of assessing MFH that does not require special test tools or access
+to data not usually provided to individuals other than the vendor’s service personnel. In such
+a case, a more recently reported means of assessing MFH, described below, can be considered.
+(c) Bandwidth Difference Technique. Another method for assessing MFH has been
+reported by Chen et al.9 Spatial distortion in MRI depends on the MFH, but is also
+affected by gradient strength. The “bandwidth difference” (∆BW) method compares the distortion for small and large bandwidth acquisitions to determine the
+MFH. In general, one can assume that the gradient field is linear, B(x,y) = B0 ⫹
+∆ B(x,y), so that the main magnetic field, B(x,y), is a vector sum of B0, the dominating space-independent field, and ∆ B(ξ,ψ), the field inhomogeneity in millitesla
+(mT) over the DSV. The linear magnetic field gradient along the x-axis for conventional Fourier transform MRI is related to BW by:
+Gx = ( 2π γ ) × ( BWx FOVx ) ,
+
+(3)
+
+where γ is the gyromagnetic ratio, BW is in Hz, and the FOV is the field of view
+in meters. The test proceeds by acquiring the first scan in which BW1 is small so
+that G1 ~ ∆ B(x,y), and x ′ ⫽ x, reflecting the fact that ∆ B(x,y) is similar in magnitude to G1. For the second scan, BW2 is set to near its maximum value so that
+G2 >> ∆ B(x,y) resulting in x ′ ⬇ x. While what constitutes “small” and “large”
+bandwidths may vary, the former typically ranges down below 5 kilohertz (kHz)
+while the later can extend above 100 kHz. The distance difference (x 1′ ⫺ x 2′ ) is
+proportional to the MFH for a given DSV, which can be expressed in terms of the
+bandwidths used for each acquisition as:
+MFH(ppm ) =
+
+BW1 × BW2 × ( x1′ − x2′ )
+,
+γ i B0 i FOV i ( BW1 − BW2 )
+
+(4)
+
+where γ = γ /(2π). This measurement may then be repeated for a number of diameters at different orientations and in different planes throughout the phantom.
+Changing the bandwidth only produces distortions in the frequency-encoding
+direction, so two images should be acquired at each bandwidth value in each
+imaging plane, with the direction of the phase-encoding and frequency-encoding
+gradients switched. The average of the values may be recorded at several positions
+at a given DSV and used to determine an overall MFH.
+Advantages: Can be used on almost all commercial clinical MRI systems.
+11
+
+AAPM REPORT NO. 100
+
+Disadvantages: It can be tedious to make multiple measurements and to perform
+the various calculations by hand. Use of this technique also assumes that the gradient fields are correctly calibrated. Therefore, this test is often more useful for
+ongoing quality control than for acceptance testing unless accurate gradient calibrations (over the FOV used for the test) are confirmed before this technique is
+used to assess MFH.
+Acceptance Criteria: For modern cylindrical superconducting magnets, possible inhomogeneity criteria over a 35-centimeter (cm) DSV are < 0.5 ppm root-mean-square (RMS) for systems
+used for routine imaging, and < 0.1 ppm RMS for systems used for ultrafast imaging (echo planar imaging, EPI) and spectroscopy applications. Unfortunately, MR system vendors report
+their homogeneity specifications in various ways, using peak-to-peak or RMS measures, for
+example, from a range of DSV values. This makes direct comparisons of field homogeneity
+specifications from different vendors rather difficult.
+2. Magnetic Field Drift
+Overview: Changes in the magnetic field strength over time (magnetic field “drift”) can affect
+the SNR of conventional imaging data and has a more profound detrimental effect on ultrafast
+imaging (functional and diffusion MRI) and spectroscopy data. It should be noted that the drift
+rate measured on superconducting systems will be significantly higher during acceptance testing than it will be after a few weeks to months when it should settle down to a constant nearly
+linear drift rate, unless the superconducting shim coils are used to re-shim the magnetic system, at which time the drift rate will temporarily increase again. In superconducting magnets
+this drift rate is due to small resistive losses in the superconducting wire, welds, and persistence-mode switch. In low field non-superconducting magnets, the magnetic field drift rate is
+temperature dependent. Furthermore, temperature fluctuations in the iron shims (if present) or
+temperature changes in magnetic shielding (if present) will cause corresponding fluctuations
+in the magnetic field strength. Therefore, the room temperature must be carefully maintained.
+Procedure: Since the Larmor equation, ω ⫽ γ B0, directly relates the magnetic field strength to
+the resonant frequency, the magnetic field stability can be indirectly measured by tracking the
+variation in the resonant frequency (also commonly called the “center frequency”). Virtually
+all MR scanners provide this measure as part of the prescan procedure. A simple spherical
+phantom is ideal for this test, but a cylindrical phantom with a homogeneous section can also
+be used. The same phantom should be used for this test each time and care should be taken to
+position the phantom consistently relative to the RF coil. Using a simple spin-echo sequence,
+prescan the phantom to obtain the center frequency and record it daily over the maximum
+available time allocated for acceptance testing. (Such a measure is often more useful in the
+subsequent QC procedures, when the drift rate has settled down after installation.)
+Acceptance Criteria: The drift rate for modern superconducting magnets should not exceed
+1 ppm/day during acceptance testing. (The value should be significantly less, typically less
+than 0.25 ppm/day, after 1 to 2 months of operation.)
+
+12
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+RF Subsystem Tests
+1. Transmitter and Gain Calibration
+Overview: To produce the desired nutation angle and Larmor frequency, the MR system must,
+during prescan, determine the correct transmit frequency (center frequency) and the correct
+transmit gain. Most scanners automatically determine each of the parameters, along with the
+appropriate receiver gain such that the MR signal is digitized with maximal dynamic range but
+without preamplifier saturation. It is useful at acceptance testing to check the accuracy with
+which the scanner automatically determines the transmit frequency and the transmitter and
+receiver gains.
+Procedure: Using a homogeneous spherical phantom (preferable) or cylindrical phantom with
+a uniform signal producing insert (acceptable), allow the scanner to prescan automatically
+using the most commonly used pulse sequences, i.e., spin-echo, fast spin-echo, and gradientecho. Record the values of the center frequency and, if available, the transmitter and receiver
+gains. If possible, manually prescan the phantom using the same acquisition sequences and
+parameters and compare the gains obtained from manual prescan with those obtained using
+auto-prescan. To determine the correct transmitter gain, vary the gain slightly (both above and
+below the value obtained using auto-prescan) and observe the effect on a profile of the phantom. (Make sure TR >> T1 of the phantom solution.) At the transmitter gain corresponding to
+a nutation angle of 90°, the profile amplitude should be maximized and this value should correspond to the value obtained using auto-prescan.
+Alternatively, for gradient-echo sequences (with TR >> T1 of the phantom solution)
+auto-prescan the phantom and then obtain images with nutation angle settings of 20°, 50°, 80°,
+90°, 100°, 130°, and 160°. A plot of signal intensity versus flip angle should demonstrate a
+maximum at 90° if the transmitter gain is properly calibrated.
+Finally, for the most commonly used pulse sequences, obtain a set of multislice
+images using the minimum slice gap. (When performing this test, make sure that the system
+does not default to an interleaved acquisition mode.) Observe the images for artifacts such as
+central “zipper” artifacts or ghost images. Their presence may indicate miscalibration of the
+RF subsystem.
+Acceptance Criteria: All images should be artifact free. Manually determined values of transmitter gain should agree to within ⫾5% with those determined automatically, and manual versus automatic determinations of center frequency should agree within ⫾10 Hz.
+2. Transmitter Gain Stability
+Overview: Three stability measures characterize the overall transmitter gain: amplitude stability, frequency stability, and phase stability. Poor transmitter gain stability results in a variety of image artifacts, including ghosting, low SNR, and poor uniformity. Good stability is
+particularly essential for high-quality fast and ultrafast imaging studies, such as those obtained
+with fast spin-echo and EPI sequences, respectively, as well as for spectroscopy studies. The
+RF subsystem should demonstrate acceptable amplitude, frequency, and phase stability as
+each is critical to optimal image and/or spectral quality.
+
+13
+
+AAPM REPORT NO. 100
+
+Procedure: Previous AAPM acceptance testing and quality assurance documents have suggested visually examining the variation in free-induction decay (FID) curves or spectral
+peaks over time. However, modern MR systems, with digital transmitter and receiver electronics, demonstrate relatively small drifts that will likely be unperceivable using these previously proposed techniques. On the other hand, since the new classes of ultrafast imaging
+and spectroscopy sequences are exceedingly sensitive to RF instability, most vendors have
+developed sensitive amplitude, frequency, and phase stability assessment tools that are used
+by the installation and field service personnel. Therefore, this is another test that is probably
+best performed by the vendor, with a copy of the final results included in the acceptance test
+report.
+Acceptance Criteria: There are no uniform acceptance criteria for RF subsystem stability.
+Therefore, the suggested criterion is that the stability meets or exceeds the minimum amplitude, frequency, and phase stability levels established by the vendor, unless otherwise stated
+in the bid and/or contract.
+Gradient Subsystem Tests
+1. Geometric Accuracy and Linearity
+Overview: Assuming the static magnetic field is homogeneous (already assessed above), the
+dominant hardware factor affecting geometric accuracy in an MR system is the gradient magnetic field subsystem. Ideally, the three orthogonal gradient coils encode position linearly to
+frequency and phase. However, despite the best engineering design efforts on the part of the
+vendors to produce perfectly linear gradient fields, all physically realizable coils produce
+nonlinear gradient fields, mainly due to the finite extent of the coils. With the recent advent
+of shorter bore systems, such gradient nonlinearities have become even more apparent. To
+compensate, vendors incorporate a “warping” algorithm to correct the raw images for the
+known nonlinearities of a given gradient coil design. Even with these corrections, however,
+the geometric accuracy varies across the FOV, particularly for off-isocenter slices. (Typically,
+the vendors specify geometric accuracy only for a single slice located at isocenter.)
+At acceptance testing, the geometric accuracy of the MR system should be assessed. It
+is recommended that this assessment be performed not only at isocenter, but at two or more
+locations off isocenter. Furthermore, it is recommended that the geometric accuracy be
+assessed in all three principal planes. For systems that will be used to obtain image data for
+treatment planning purposes, particular attention should be paid to these tests, and the geometric accuracy should be determined over a range of FOVs and slice offset locations to adequately define the entire volume from which the data will be acquired.
+Following the successful completion of this acceptance test step, the physicist will
+have validated the accuracy of the spatial measuring tools on the scanner. These tools can then
+be used for subsequent tests requiring distance measures, e.g., slice thickness.
+Procedure: The percent geometric distortion can easily be measured with a phantom of known
+dimensions or one containing a uniform grid or hole pattern. The phantom should be imaged
+
+14
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+in all three orthogonal planes and measures of percent geometric distortion, %GD, should be
+obtained in each plane as
+%GD = 100 •
+
+∆ actual − ∆ measured
+,
+∆ measured
+
+(5)
+
+where ∆actual is the actual dimension of the phantom and ∆measured is the dimension as measured
+on the image.
+If a phantom containing a uniform grid or hole pattern is utilized, the linearity over the
+entire FOV can be determined from the coefficient of variation of the hole or grid spacings.
+(This provides a more thorough evaluation of the variation in gradient linearly across the
+entire phantom, not just at two points.)
+If using the ACR MR Accreditation Phantom, it should be noted that the diameter of
+the phantom is 190 mm and the length is 148 mm. The phantom can be rotated in some of the
+available head coils to allow for the assessment of geometric distortion in all three planes. In
+some newer phased-array head coils, however, the phantom can only be scanned in the axial
+plane and assessment of other planes will require the use of a different RF coil.
+Acceptance Criteria: The absolute value of the percent geometric distortion should not
+exceed 2% (less than 2% if data are to be used for treatment planning purposes). (For the ACR
+MR Accreditation Program, the maximum geometric distortion allowed when using the ACR
+accreditation phantom is ⫾2 mm.)
+2. Eddy Current Compensation
+Overview: During image acquisition, the gradient coils are switched on and off very rapidly.
+The resulting time-varying magnetic fields induce eddy currents on conductive structures
+nearby and the magnetic fields associated with these eddy currents oppose the applied gradient fields. As a result, the minimum rise time of the gradient fields and, therefore, the maximum image acquisition rates, are limited by the eddy currents.
+Eddy current effects have long plagued MR system design engineers. Numerous artifacts arise from poor eddy current compensation, particularly in spectroscopy and fast and
+ultrafast imaging applications. Therefore, optimal eddy current compensation is a necessity.
+Unfortunately, proper eddy current compensation optimization is extremely difficult to verify
+at acceptance testing using sequences and tools readily available to practicing medical physicists. Previous AAPM acceptance testing and quality assurance documents have suggested two
+techniques for characterizing eddy current compensation.2 The first is a direct measure using
+a small pickup coil and integrating circuit, the second is to examine the effect of a gradient
+pulse, preceding a 90° pulse by a variable delay, on the free-induction decay (FID) or spectrum. Unfortunately, both techniques are rather impractical for most medical physicists, and
+this is another area where the vendor’s software tools and phantoms are extremely useful.
+Many vendors can print out the final report for the eddy current compensation settings. This
+information should become part of the acceptance test documentation, and can be extremely
+valuable for future QC monitoring.
+
+15
+
+AAPM REPORT NO. 100
+
+Acceptance Criteria: As is the case for RF subsystem stability tests, there are no uniform
+acceptance criteria for eddy current correction measures. Therefore, the suggested criterium is
+that the eddy current correction results meet or exceed the levels established by the vendor,
+unless otherwise stated in the bid and/or contract.
+Combined Gradient/RF Subsystem Tests
+1. Slice Thickness and Spacing
+Overview: Slice thickness in MRI is ideally determined by the bandwidth of the RF excitation
+pulse and the amplitude of the associated applied gradient pulse, i.e., thickness = 2π ∆ν/(γ G),
+where ∆ν is the bandwidth of the RF pulse (Hz), γ is the gyromagnetic ratio (γ /(2π) = 42.567
+MHz/tesla, for protons), and G is the gradient field amplitude (tesla/m). Slice thickness is an
+important parameter in MRI since erroneously thick slices result in partial volume effects that
+degrade the apparent spatial resolution, while erroneously thin slices result in poor SNR.
+Furthermore, poor slice selection profiles can be problematic when minimal slice gaps are
+required. Factors that degrade slice profiles include gradient field non-uniformity, RF field
+non-uniformity, poor RF pulse shape due to RF transmitter amplitude nonlinearity and instability of the RF phase and/or amplitude, and stimulated echo formation not being appropriately spoiled.
+Procedure: While several techniques exist for measuring slice thickness and spacing, by far the
+most commonly used technique involves the use of a crossed-ramp phantom insert (Figure 1).
+As discussed in the previous National Electrical Manufacturers Association (NEMA)10 and
+AAPM 1,2 acceptance testing and quality assurance documents, the use of crossed ramps
+(inclined surfaces oriented at a fixed angle, φ, with respect to one another) minimizes meas-
+
+(a)
+
+(b)
+
+Figure 1. Slice thickness phantom containing two sets of φ ⫽ 90° crossedramps (a) and a representative slice profile (b).
+
+16
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+urement errors that result from a tilted or rotated phantom. If a and b are the measured FWHM
+values on the two crossed ramps, then the FWHM of the “true” slice profile is given by
+
+FWHM =
+
+(a + b)cos φ + (a + b)2 cos2 φ + 4 ab sin 2 φ
+.
+2 sin φ
+
+(6)
+
+Note that for φ ⫽ 90°, the FWHM simplifies to ab.
+It is recommended that the slice thickness be assessed (with time to repetition, TR >
+3T1) using each of the sequences most commonly used clinically. This recommendation is
+based on the fact that the results for each type of pulse sequence may vary due to the
+sequence-specific RF waveforms being utilized for slice selective pulses. Since a different
+gradient field is used for slice selection for each plane, it is also recommended that the slice
+thickness be measured in all three principal planes using at least one pulse sequence. For slice
+spacing measurements, one can simply prescribe multiple slices along the inclined ramps and
+measure the spacing between the edges of the slice profiles on the ramp.
+If using the ACR MR Accreditation Phantom, slice #1 contains a pair of 10:1 crossed
+ramps. If the FWHM from the imaged profiles of the ramps in this phantom are denoted as
+a and b, then the resulting FWHM of the slice profile is given by
+FWHM =
+
+ab
+.
+5(a + b)
+
+(7)
+
+Acceptance Criteria: The measured slice thickness, for spin-echo sequences, should be within
+⫾10% of the prescribed thickness for a 5 mm or greater slice thickness. (Note that the width
+of the fluid-filled channel in the ramp determines the accuracy of the slice thickness measurement.1,2,10 ) For slice spacing, the disagreement between the prescribed and measured spacings
+should be ≤10%.
+Global System Tests
+1. SNR
+Overview: As mentioned above, the choice of every imaging parameter, as well as RF coil
+selection and phantom positioning, affects the SNR. Therefore, although SNR is a sensitive QC
+parameter, it is not a particularly informative parameter when it comes to determining where a
+problem is located within the imaging chain. System problems that yield low SNR include RF
+coil failure, poor RF coil decoupling, pre-amplifier and receiver failures, and reception of
+external RF noise sources inadequately attenuated due to RF shield integrity problems.
+Procedure: The preferred method for measuring SNR is the approach proposed by NEMA.11
+In this approach, two identical images of a homogeneous phantom are acquired with minimal
+time separation between the image acquisitions. The images are then subtracted, and the SNR
+is taken to be
+SNR NEMA =
+
+17
+
+2S
+,
+σ
+
+(8)
+
+AAPM REPORT NO. 100
+
+where S is the mean signal in a region of interest (ROI) containing at least 75% of the phantom area defined in either of the two original images (or an average of the two), and σ is the
+standard deviation from the same ROI in the difference image. Some scanners, of course, do
+not allow the operator to form difference images, and the NEMA approach is not practical
+unless the images are taken off-line to another workstation. In cases where the NEMA
+approach is not practical, an SNR measure can be computed from measurements in a single
+image using equation (9):
+S
+
+SNR =
+
+ σ bkg
+
+
+≈
+2−
+
+π
+
+2
+
+0.655 S
+,
+σ bkg
+
+(9)
+
+where σbkg is the standard deviation of an ROI in the background (air). (Note that the factor of
+approximately 0.655 compensates for the fact that the background signal distribution in magnitude images is Rician, not Gaussian.12,13) In any case, it is likely that the SNR measure chosen for use by the vendor will differ from that chosen by the medical physicist. Therefore, an
+agreement between the parties must be reached with regard to “acceptable measures.” Note
+that SNR measures should be obtained for at least the head and body coils, and in the three
+orthogonal planes for at least one of those coils. Furthermore, one might also consider obtaining SNR measures in a single plane utilizing each of the pulse sequences commonly used in
+clinical practice. If using the ACR MR Accreditation Phantom, slice #7 should be utilized for
+these tests.
+Reference SNR tests for all coils are preferable. For surface and phased-array coils,
+where the signal varies significantly with spatial position, it is critical that a filmed or digital
+image be obtained showing the locations of the ROIs. Furthermore, the use of “maximum”
+SNR measures, as described in the Medical Physicist’s/MRI Scientist’s Section of the ACR MRI
+Quality Control Manual,5 is recommended for the acceptance and on-going QC for all surface
+and phased-array coils. For phased-array coils, reconstruction of images from each coil element, not just the composite image, is preferable as it allows for SNR characterization of each
+coil element in the array, not just the SNR of the composite image for all coil elements. Such
+single-element, or intermediate, images can be reconstructed and displayed on many scanners,
+but this typically requires the assistance of a service engineer or the ability to operate the scanner in a service or research mode. With respect to SNR measures in phase-array coils, it should
+be noted that equation (9) only applies to magnitude images from quadratic or linear volume
+coils. For phased-array coils, the SNR measure obtained from magnitude images requires a
+further correction that depends on the number of elements in the array.14
+Acceptance Criteria: Acceptance criteria for SNR cannot be given in general terms since the
+values will always be system specific (due to RF coil, scan conditions, phantom T1 and T2
+values, etc.). However, SNR measures obtained during acceptance testing should form the
+baseline or reference values used in the subsequent quality assurance program. The SNR
+values should meet or exceed the values provided by the coil manufacturer(s), if provided,
+when using the scanning parameters and phantom(s) recommended by the manufacturer.
+
+18
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Figure 2. PIU assessment using the ACR MR
+accreditation phantom.
+
+2. Percent Image Uniformity (PIU)
+Overview: Image uniformity refers to the ability of an MRI system to depict uniform regions
+of a phantom with the same intensity. Non-uniformity is most commonly the result of RF or
+magnetic field inhomogeneities or poor eddy current compensation.
+Procedure: The PIU measure is obtained from a homogeneous phantom in a ROI that comprises at least 75% of the cross-sectional area of the phantom. The ACR MR Accreditation
+Phantom contains such a homogeneous region in slice #7. Typically, a small ROI (~1 cm2) is
+chosen in the area of minimal pixel intensity Smin and in the area of maximal pixel intensity
+
+( )
+
+( S ) (Figure 2). Then the PIU is then calculated as
+max
+
+(
+(
+
+)
+)
+
+
+S max − Smin 
+
+.
+PIU = 100 • 1 −
+
+S max + Smin 
+
+
+
+(10)
+
+Acceptance Criteria: For a volume head coil, the PIU measure should meet or exceed 90% for
+scanners operating at 2T or below. (Note: For scanners operating at field strengths greater than
+2T, the PIU value would be expected to be less than this 90%, if using water-filled phantoms,
+due to dielectric and penetration effects.15)
+3. High-Contrast Spatial Resolution
+Overview: High contrast spatial resolution is a measure of the capacity of the MRI system to
+show separation of objects when there is no significant noise contribution. The high-contrast
+spatial resolution in MRI is typically limited by the acquisition matrix pixel size. Additional
+factors that can negatively affect high contrast spatial resolution include poor eddy current
+19
+
+AAPM REPORT NO. 100
+
+Figure 3. High-contrast test object in slice #1 of the ACR phantom. The upper left square
+of holes is used for the horizontal test and the lower right square of holes is used for the
+vertical test. The hole spacings are 1.1 mm, 1.0 mm, and 0.9 mm, respectively, for the three
+sets of upper left/lower right squares.
+
+compensation, excessive image ghosting, and excessive low-pass filtration of images during
+reconstruction.
+Procedure: High contrast resolution can be assessed with any phantom insert containing
+arrays of successively smaller diameter high contrast objects. The resolution should be measured in both the frequency- and phase-encoding directions in all three principal planes. Slice
+#1 of the ACR MR Accreditation Phantom contains such an insert with 1.1, 1.0, and 0.9 mm
+resolution patterns for both the frequency- and phase-encoding directions (Figure 3). With this
+phantom, and a 25-cm FOV, 256×256 matrix scan, the 1.0 mm holes should be resolved on at
+least one of the rows in the upper left hole pattern, and the 1.0 mm holes should be resolved
+on at least one of the columns in the lower right hole pattern.
+Acceptance Criteria: Object sizes that are at least one theoretical pixel width in size and
+separated by at least one pixel width should be resolvable.
+4. Low-Contrast Object Detectability (LCOD)
+Overview: A low-contrast object detectability test assesses the ability of the system to resolve
+objects in the presence of noise. Factors that negatively affect low-contrast object detectability include those that negatively affect SNR. Therefore, low-contrast object detectability test
+results are dependent upon the field strength of the system.
+Prior AAPM MR acceptance testing and quality assurance guidelines did not address
+means of assessing low-contrast object detectability. However, some MR phantoms, e.g., the
+ACR phantom, do provide inserts for such assessments. For this particular phantom, the testing procedure is briefly outlined below.
+Procedure: The ACR phantom contains 4 disks of varying thickness, and each disk has 10
+spokes of 3 holes each, with the hole diameter decreasing with increasing spoke number
+(Figure 4). The number of complete contiguous spokes that can be seen in the four disks is
+counted and used as a measure of low-contrast object detectability. The inserts in slices 8, 9,
+10, and 11 yield contrasts (fluid MR signal versus solid plastic non-signal for 5 mm sections)
+of 1.4%, 2.5%, 3.6%, and 5.1%, respectively.
+20
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Figure 4. Low-contrast object detectability inserts of the
+ACR accreditation phantom.
+
+Acceptance Criteria: For the ACR T1-weighted pulse sequence (time to echo, TE ⫽ 20 ms,
+TR ⫽ 500 ms, 1 average, 256×256 matrix, 25-cm FOV), the minimum number of spokes that
+must be visible for ACR accreditation purposes is 9. However, on high-field systems the number of detectable spokes should be significantly higher. Low-contrast object detectability data
+from over 200 scanners with varying field strengths (0.2T ⫺ 2.0T), obtained by two members
+of this task group (GDC, EFJ), are summarized in Figure 5.
+
+Figure 5. Fitted ACR T1-weighted sequence LCOD data from
+231 scanners at field strengths from 0.2T to 2.0T.
+
+21
+
+AAPM REPORT NO. 100
+
+As the trend line in Figure 5 was computed from the mean LCOD measures for a subset of systems that passed ACR accreditation LCOD testing, it is recommended that measures
+for systems at acceptance testing meet or exceed the values determined from this figure.
+4. Percent Signal Ghosting
+Overview: Ghosting is typically a consequence of intrascan signal instability. Excessive
+ghosting, generally only observed in the phase-encoding direction, can obscure detail. The
+effects are most obvious, of course, in low signal level (background) areas.
+Procedure: Any homogeneous phantom, or homogeneous section of a phantom, can be used
+for this test. If using the ACR MR Accreditation Phantom, slice #7 should be used for the
+measurements. The mean signal, S , from a large ROI (>75% of the cross-sectional area of the
+phantom) is recorded, as are the mean signals from the background in the frequency-encoding
+direction SFE1 and SFE 2 and in the phase-encoding direction SPE1 and SPE 2 . The ghosting
+
+(
+
+)
+
+(
+
+)
+
+ratio (Figure 6) is then given by
+
+GR =
+
+(S
+
+FE1
+
+) (
+
++ S FE2 − S PE1 + S PE2
+
+).
+
+2S
+
+Figure 6. Measurement of the average ghosting ratio. The
+ROIs in the frequency-encoding direction provide a measurement of the signal in the noise areas and the ROIs in the
+phase-encoding direction provide a measurement of the signal in the ghost areas. The large ROI provides a measurement
+of the average signal intensity in the phantom.
+
+22
+
+(11)
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Acceptance Criteria: If using the ACR MR Accreditation Phantom and ACR T1-weighted scan
+parameters, it is recommended that the ghosting ratio be ≤1% at acceptance testing. Similar
+criteria should apply for clinically relevant fast spin-echo T2-weighted images.
+F. Advanced MR System Tests
+Modern state-of-the-art scanners have a wide variety of advanced features, including ultrafast
+imaging and spectroscopy sequences. Acceptance of such scanners, therefore, requires additional testing that goes beyond the tests outlined above or contained in the ACR accreditation
+testing guidelines. The following tests are certainly not comprehensive, but form a starting
+point for testing such advanced features.
+Ultrafast Imaging Tests
+Overview: Echo planar imaging sequences are currently the fastest commercially available
+imaging techniques used in MRI. In “single-shot EPI,” all phase- and frequency-encoding is
+performed following a single slice selective RF pulse, resulting in minimum acquisition times
+as short as 50 ms/image. In “multishot EPI”, k-space is filled in more than one TR with the
+number of “shots” determining the number of repetitions required to fill k-space. Multishot EPI
+acquisitions are less demanding on the MR systems and are less prone to most EPI artifacts
+(due to the decreased time between subsequent lines of k-space, i.e., decreased “echo spacing”),
+but do not provide the temporal resolution achievable with single-shot EPI techniques.
+The most common uses of EPI sequences are in diffusion MRI, functional MRI
+(fMRI), and perfusion MRI. In each case, the stability of the signal (and ghost artifacts) over
+time is critical. The ghost artifacts (commonly referred to as N/2 ghosts or Nyquist ghosts) are
+quite common in single-shot EPI acquisitions and are caused by inconsistent phase shifts
+between even and odd echoes. For FOVs that just cover the anatomy of interest, these ghosts
+can overlap the anatomy and, particularly if unstable over time, can significantly corrupt the
+data. Two types of phase errors have been identified.16,17 The first type of phase error, often
+referred to as the zero-order phase error, is spatially independent. It arises from B0 eddy currents, asymmetrical analog filter response, or other factors that introduce a different zerothorder phase between odd and even echoes. The Nyquist ghost produced by the zeroth-order
+phase error is spatially uniform (Figure 7a). The second type of phase error is the linear (or
+first-order) phase error. This phase error originates from the time shift between the centers of
+the odd and even echoes caused by eddy currents as well as gradient group delays. The linear
+phase error generates a Nyquist ghost whose intensity is modulated by a sinusoidal function,
+resulting in a nodal line in the center of the FOV (Figure 7b).
+The N/2 ghosts are minimized on most systems by acquiring a “reference scan” before
+the actual image acquisition; data from a reference scan are acquired using the same imaging
+pulse sequence but without the phase-encoding gradients enabled. The phase inconsistency
+among the echoes can then be calculated by analyzing the Fourier domain data and the echo
+offsets, thus determined, are used to correct the actual k-space data.
+Another common problem in single-shot EPI imaging is geometric distortion. In general, the geometric distortion observed in EPI is significantly greater than that observed using
+spin-echo, fast spin-echo, or gradient-echo imaging. The distortion may be caused by B0 -field
+23
+
+AAPM REPORT NO. 100
+
+(a)
+
+(b)
+
+Figure 7. N/2 EPI ghosts due to (a) zeroth-order and (b) first-order phase shifts (note signal
+null in center of ghost image).
+
+inhomogeneities, but eddy current effects, particularly those with long time constants, can
+also distort EPI images. When a background gradient exists in the phase-encoding direction,
+the image will be either compressed or dilated along the phase-encoding direction. For a
+background gradient in the read-out direction, the image is sheared. Visualizing the pattern of
+distortion provides valuable information about the B 0-field characteristics of the system
+(Figure 8). Various distortion correction methods have been developed.18 However, the most
+effective approach is to improve the magnet shimming and eddy current compensation. It
+should be noted that such distortions can be particularly problematic in diffusion imaging
+sequences, where large gradient pulses are used to sensitize the image to the diffusion of the
+water protons. In fact, diffusion-weighted EPI scans are useful QC scans for monitoring eddy
+current compensation efficiency, and acquiring a baseline diffusion-weighted scan during
+acceptance testing, if possible, provides data that can be used subsequently to assess drift of
+the eddy current compensation system, i.e., as eddy current compensation drifts, more image
+dilation/compression and/or shear distortions are observed in the diffusion-weighted scans.
+No previously reported AAPM or ACR guidelines exist for acceptance testing or QC procedures for ultrafast imaging sequences. For site acceptance testing scanners with such capabilities,
+some suggested tests are provided below. In general, many of the acceptance tests used in “conventional MRI” can be repeated with using EPI sequences, including geometric distortion and SNR.
+(Because of the extreme sensitivity of EPI scans to susceptibility effects, however, a simple homogeneous spherical phantom is suggested as opposed to Plexiglas™ phantoms with multiple inserts.)
+1. Ghosting
+The average ghosting ratio can be computed by measuring the signal intensity in the N/2 ghost
+and dividing by the signal intensity from the matching region of the phantom, correcting for
+the background (Figure 9).
+24
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Figure 8. (a) Spin echo image without geometric distortion, (b) EPI image with compression
+distortion, (c) EPI image with shear distortion.
+
+Figure 9. Measurement of the average ghosting ratio. ROIs b
+and c provide measurements of ghost signal intensity and ROIs
+d and e provide measurements of background signal intensity
+(noise).
+
+25
+
+AAPM REPORT NO. 100
+
+The ghosting ratio is then calculated as
+
+GR =
+
+(S b + S c ) − (S d + S e )
+.
+2 Sa
+
+(12)
+
+Such values should generally not exceed 3% for a single-shot spin-echo EPI sequence with a
+24-cm FOV, 5-mm section thickness, 128×128 matrix, and ~100 kHz effective bandwidth.
+Note that small ROIs in the phase-encoding direction should be avoided due to the ghost signal null at the center of the frequency encoding direction for the linear phase error (as noted
+above). Also, it is recommended that the FOV be chosen such that the N/2 ghosts do not overlap the true image.
+2. Geometric Distortion
+The compression/dilation and shear distortions and image shift outlined above can be measured using the same homogeneous phantom that is used for the ghosting evaluation. The
+dimensions can be compared to the “true dimensions” obtained using a conventional spin echo
+pulse sequence.
+Typical distortions (|ls – lx |/lx and |lc – lx |/lx , where lx is measured in the frequencyencoding direction) are less than 3% for spin-echo and gradient-echo EPI acquisitions with a
+24-cm FOV, 5 mm section thickness, ~⫾100 kHz effective bandwidth, and 128×128 matrix
+(Figure 10).
+3. EPI Stability
+Two of the common uses of single-shot EPI acquisitions are perfusion and fMRI studies. In
+each case, images from the same sections of anatomy are acquired rapidly to allow for the
+measurement of regional cerebral blood volume and hemodynamic changes in regions of
+
+Figure 10. Measurement of (a) shear distortion, (b) compression/dilation distortion, (c) image
+shift.
+
+26
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+neuronal activation, respectively. For such techniques it is important that the signal, ghost, and
+noise levels remain nearly constant for the duration of the study. Therefore, it is useful to
+obtain measures of signal intensity, ghost intensity, and ghosting ratio as a function of time.
+The length of the scan should be the longest time period over which such data will be obtained
+at the facility. (Typically, a 10-min acquisition is acceptable, for example, to mimic typical
+fMRI scan times per image set.) As the percent change in signal observed in most fMRI studies at 1.5T is ~1% to 4%, the coefficient of variation of the signal intensity should be less than
+0.25%. (More sophisticated testing of MRI scanner stability is described by Weisskoff.19)
+Very high-power gradients and extremely sensitive RF receivers, used commonly in
+EPI applications, can lead to unusual noise problems that can involve not only the MR system
+itself but also the surrounding room components, such as ventilation, ceiling, and raised flooring structures. Such problems usually appear with ultrafast imaging sequences and most vendors have special “spike noise” test procedures. It is suggested that the medical physicist have
+the vendor’s installation or service personnel repeat these tests during the acceptance testing,
+particularly if the magnet room was not completely finished when the earlier tests were performed. If spike noise is detected, the vendor’s personnel can use a RF surface coil outside the
+magnet to track down the source, often loose or vibrating parts of the MR system or of the
+ceiling, ventilation ducts, or flooring. Improper positioning and insecure fastening of gradient
+cables can also be a common source of spike noise. This type of noise source is often intermittent and tracking down the source can require a patient, thorough investigation.
+Spectroscopy Tests
+Overview: The goal of MRS acquisitions is to provide biochemical, not anatomical, information from a given ROI (or multiple ROIs). The most common pulse sequences used to localize
+the volume of interest (VOI) from which the spectral data is obtained are PRESS (point
+resolved spectroscopy) and STEAM (stimulated echo acquisition mode).20–22 Both singlevoxel techniques, in which spectral data are acquired from a single VOI at a time, and spectroscopic imaging techniques, in which spectral data are acquired from multiple VOIs at a
+time, are currently in use. (For an introduction to magnetic resonance spectroscopy (MRS), the
+reader is referred to the AAPM MR Committee Task Group #9 report.20)
+Procedures: No formal AAPM guidelines exist for acceptance testing of MRS procedures,
+although some QC procedures are discussed in the Task Group #9 report.20 Some basic MRS
+acceptance tests to consider, however, are summarized below.
+1. VOI Location Accuracy
+On many scanners with MRS capability, it is possible to prescribe the VOI graphically on a
+conventional MR image and then acquire an image of the VOI using the MRS localization
+sequence in a homogeneous phantom. In this manner, the spatial positioning accuracy of the
+VOI can be easily assessed. This should be performed for VOIs near the isocenter as well as
+off-isocenter. Such a graphically prescribed and localized image of a VOI is given in Figure 11.
+Typically, the position of edges of the imaged VOI and the prescribed VOI should agree within
+⫾1.0 mm.
+
+27
+
+AAPM REPORT NO. 100
+
+(a)
+
+(b)
+
+Figure 11. Localized MRS VOI tests: (a) Image showing prescribed VOI; (b) localized image from the
+VOI.
+
+2. Spectral Quality Tests
+Some MR system vendors provide aqueous “tissue-mimicking” MRS phantoms that contain
+multiple chemical compounds in approximate in vivo concentration ratios. These phantoms
+can be highly useful in acceptance testing and QC for MRS procedures. They allow for assessing the degree of water suppression that is obtained, as well as determinations of SNR of the
+resulting water-suppressed MRS scans. Efficient water suppression is necessary as the in vivo
+ratio of water:metabolite concentration is approximately 55M:10mM. Typically, water suppression in MRS studies is accomplished in a manner similar to “fat-sat” suppression of fat
+signal in conventional MR imaging. In MRS studies, water is typically suppressed by three
+narrow bandwidth chemical shift selective (CHESS) pulses that are centered on the water
+resonance frequency.20 Typical MRS techniques acquire both a water-suppressed spectrum and
+a water-unsuppressed spectrum, with the unsuppressed spectrum being used for correcting the
+water-suppressed spectrum for eddy currents and for “phasing” of the suppressed spectrum.
+An example of a water-suppressed spectrum obtained from a brain-simulating phantom from
+a particular vendor is given in Figure 12.
+With limited time available for acceptance testing, only one or two acquisitions can be
+tested, and with this restriction the best choice is a short echo time, single-voxel acquisition,
+such as a STEAM sequence with TE ⫽ 20 ms or a PRESS sequence with TE ⫽ 30 ms. The
+shorter echo times will employ higher gradient amplitudes and sometimes shorter slab selective RF pulses that can cause eddy current artifacts and outer volume contamination artifacts
+in the spectra.20,24 As the PRESS sequence with TE ⫽ 30 ms has shorter duration spoiling
+gradients, it will be a more severe test than the STEAM sequence with TE ⫽ 20 ms.
+The spectroscopy phantom should be placed at the center of the head coil and the
+following data acquired. (Some or all of these acquisitions may already be part of the MR
+28
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+Figure 12. Water-suppressed 1H MRS scan from a brain tissue-mimicking
+phantom. NAA: N-acetylaspartate, Cr: creatine and phosphocreatine, Cho:
+choline, Ins: myo-inositol.
+
+system’s spectroscopy QC software). After the automated global shim is performed and a set
+of scout images is obtained, a 2×2×2 cm3 voxel is positioned at approximately the center of the
+phantom. After the localized automatic shim on the voxel is performed (most likely part of the
+single-voxel acquisition software), acquire two 16-average data sets, one with and one without water suppression. The 16 acquisitions enable complete phase cycling, which reduces
+outer volume contamination.24 Since the typical TR is 1.5 seconds (s), this requires only 24 s
+per acquisition. Minimal post processing, e.g., zero filling, Fourier transformation, and spectrum phasing, should be used on the single-voxel time domain data. No time domain or frequency domain filtering should be applied. Water subtraction and baseline post-processing
+should also not be applied. If the system has the option to perform eddy current correction
+(ECC), the water-suppressed single-voxel data should be processed twice: once without ECC
+and once with ECC, which requires the water-unsuppressed data.25 (The ECC algorithm takes
+the phase of each complex time domain point in the water-suppressed data and subtracts the
+phase of the corresponding time domain point in the water-unsuppressed data.) Finally, peak
+areas and widths can be measured, if possible on a given system, by fitting Lorentzian peaks
+to the metabolite peaks in the ECC-corrected single-voxel water-suppressed spectrum. This is
+usually accomplished with the QC module or other processing module of the spectroscopy
+software. Even if such a module is not available, the peak width and height can usually be
+obtained on the scanner or on an associated workstation.
+
+29
+
+AAPM REPORT NO. 100
+
+For an MR system with a second-order room temperature shim set, the global water
+peak FWHM should be <7 Hz. For an MR system with only linear shims, the FWHM should
+be <14 Hz. In both cases, the FWHM of the phantom NAA or acetate peak (2.0 ppm) should
+be ~1 Hz in the ECC-corrected single-voxel water-suppressed spectrum. (This assumes that
+the T2 of the NAA or acetate is greater than 400 ms and the signal readout duration is 1024 ms
+or longer.) The phantom metabolite spectrum should have a flat baseline with no highfrequency hashing (due to outer volume contamination), and isolated singlet peaks should be
+well represented by a Lorentzian fitting function. A poor peak fit could be due to magnetic
+field inhomogeneities (unlikely if the FWHM ~ 1 Hz), poor software sequence tuning, or,
+most likely, first and higher order eddy currents, which are not corrected even when the ECC
+algorithm is used. Another artifact that will be very visible in the non-ECC processed singlevoxel spectrum is a negative spike on one side of each metabolite peak. This is due to the zero
+order eddy currents (a changing B0 offset with time) and should not be visible in the ECCprocessed spectrum. The area and FWHM of one or more metabolite peaks and baseline noise
+should be recorded for future reference. The post-processing software should be capable of
+calculating spectrum noise as the RMS noise about the spectrum baseline in a region with no
+metabolite peaks. This may require some additional baseline post processing to ensure a flat
+horizontal baseline with no DC offset.
+The SNR can be calculated from a metabolite peak as either peak height divided by the
+RMS baseline noise or as peak area divided by the RMS baseline noise. Since peak area
+depends less on the voxel shim than peak height, the peak area SNR definition will be more
+consistent, but does change with acquisition and post-processing filtering. The SNR also
+depends on the phantom metabolite concentration, T1 and T2 values of the metabolites, the
+choices of TR and TE, the type of acquisition (STEAM or PRESS), and the number of acquisitions and signal readout duration per acquisition. Therefore, if the MR system manufacturer
+specifies a minimum phantom metabolite SNR, it would only apply to a specific phantom,
+acquisition, and post-processing protocol.
+If a real-time signal display is available, for example from a manual single-voxel shim
+menu with a frequency domain signal display, an additional test for hardware stability is to
+observe the water-suppressed water signal with the RF adjusted to maximum water suppression and (usually) maximum receiver gain. Visually inspect the remnant water peak signal
+from acquisition to acquisition. Amplitude fluctuations below 10% are excellent. This is a
+good hardware test, especially for low-level RF stability, but since some type of water subtraction is done in 1H spectroscopy post-processing, the final spectral quantification may not
+be affected by unstable water suppression as long as a sophisticated water fitting/suppression
+routine is used in post-processing. If these hardware instabilities also occur during the RF
+volume selective pulses and rephasing gradients, spectra will be degraded. One can also look
+at the unsuppressed water signal by turning off the water suppression RF pulses. In this case,
+shot-to-shot signal amplitude variation should be ~1% and the peak position should not
+change by more than 1 Hz. Variations in peak amplitude, shape, or phase are most likely
+caused by gradient instabilities or, if a second order room temperature shim set is installed,
+from shim power supply instabilities.
+
+30
+
+ACCEPTANCE TESTING AND QA PROCEDURES FOR MRI FACILITIES
+
+IV. Conclusions
+The goal of this task group report was to provide (1) the practicing medical physicist with
+practical information regarding the development of acceptance testing and quality assurance
+strategies, (2) examples of such acceptance tests, and (3) where possible, acceptance criteria
+for the tests. In addition, the report provides an introduction to acceptance and quality assurance tests for more advanced features, such as EPI and spectroscopy. With the large range of
+equipment, pulse sequences, and applications, it is impractical to go into detail in any particular area while maintaining a reasonable length for the document. For more detailed test
+strategies and acceptance criteria, the reader is referred to the literature cited within the text as
+well as to the extensive volume of NEMA standards relevant to MRI. A partial list of these
+standards is provided in the references10,11,26–29 and all standards can be downloaded from
+NEMA at http://www.nema.org.
+
+Acknowledgments
+The task group committee wishes to acknowledge the valuable input provided by Joel P.
+Felmlee, Ph.D., and X. Joe Zhou, Ph.D., during various stages of the development of this
+report.
+
+References
+1. Price RR, Axel L, Morgan T, Newman R, Perman W, Schneider N, Salikson M, Wood M, Thomas SR.
+(1990). “Quality assurance methods and phantoms for magnetic resonance imaging: Report of AAPM
+nuclear magnetic resonance Task Group No. 1.” Med Phys 17(2):287–295.
+2. Och JG, Clarke GD, Sobol WT, Rosen CW, Mun SK. (1992). “Acceptance testing of magnetic resonance
+imaging systems: Report of AAPM Nuclear Magnetic Resonance Task Group No. 6.” Med Phys 19(1):
+217–229.
+3. American College of Radiology (ACR). Site Scanning Instructions for Use of the MR Phantom for the
+ACRTM MRI Accreditation Program.
+http:/www.acr.org/accreditation/mri/mri_qc_forms/site_scanning_instructions_phantom.aspx.
+4. American College of Radiology (ACR). MR Accreditation Program Phantom Test Guidance.
+http://www.acr.org/accreditation/mri/mri_qc_forms/phantom_test_guidance.aspx.
+5. American College of Radiology (ACR). MRI Quality Control Manual 2004. Reston, VA: ACR, 2004.
+6. Kanal E, Barkovich AJ, Bell C, Borgstede JP, Bradley WG Jr, Froelich JW, Gilk T, Gimbel JR, Gosbee J,
+Kuhni-Kaminski E, Lester JW Jr, Nyenhuis J, Parag Y, Schaefer DJ, Sebek-Scoumis EA, Weinreb J, Zaremba
+LA, Wilcox P, Lucey L, Sass N; ACR Blue Ribon Panel on MR Safety. (2007). “ACR guidance document for
+safe MR practices: 2007.” AJR Am J Roentgenol 188 (6):1447–1474.
+7. Bronskill MJ, Sprawls P (eds.). The Physics of MRI. 1992 AAPM Summer School. Madison, WI: Medical
+Physics Publishing, 1993. Also published on CD-ROM, 2007, ISBN 978-1-888340-69-3.
+8. Evans JB. (2005). “Structural floor vibration and sound isolation design for a magnetic resonance imaging
+system.” J Building Acoustics 12:207–223. http://www.jeacoustics.com/library/pdf/BA_12-3-Evans.pdf.
+9. Chen HH, Boykin RD, Clarke GD, Gao JH, Roby JW 3rd. (2006). “Routine testing of magnetic field homogeneity on clinical MRI systems.” Med Phys 33(11):4299–4306.
+10. NEMA-MS-5. Determination of Slice Thickness in Diagnostic Magnetic Resonance Imaging. NEMA MR
+Standards: MS 5-2003. Rosslyn, VA: National Electrical Manufacturers Association, 2003.
+
+31
+
+AAPM REPORT NO. 100
+
+11. NEMA-MS-1. Determination of Signal-To-Noise Ratio (SNR) in Diagnostic Magnetic Resonance Imaging.
+NEMA MR Standards: MS 1-2008. Rosslyn, VA: National Electrical Manufacturers Association, 2008.
+12. Kaufman L, Kramer DM, Crooks LE, Ortendahl DA. (1989). “Measuring signal-to-noise ratios in MR imaging.” Radiology 173(1):265–267.
+13. Gudbjartsson H, Patz S. (1995). “The Rician distribution of noisy MRI data.” Magn Reson Med 34(6):
+910–914.
+14. Constantinides CD, Atalar E, McVeigh ER. (1997). “Signal-to-noise measurements in magnitude images
+from NMR phased arrays.” Magn Reson Med 38(5):852–857.
+15. Tropp J. (2004). “Image brightening in samples of high dielectric constant.” J Magn Reson 167(1):12–24.
+16. Maier JK, Vavrek M, Glover GH. Correction of NMR Data Acquired by an Echo-Planar Technique. U.S.
+Patent 5151656, 1992.
+17. Zakhor A. (1990). “Ghost cancellation for MRI images.” IEEE Trans Med Imaging 9(3):318–326.
+18. Jezzard P, Balaban RS. (1995). “Correction for geometric distortion in echo planar images from B0 field variations.” Magn Reson Med 34(1):65–73.
+19. Weisskoff RM. (1996). “Simple measurement of scanner stability for functional NMR imaging of activation
+in the brain.” Magn Reson Med 36(4):643–645.
+20. Drost DJ, Riddle WR, Clarke GD. (2002). “Proton magnetic resonance spectroscopy in the brain: Report of
+AAPM MR Task Group #9.” Med Phys 29(9):2177–2197.
+21. Frahm J, Merboldt K-D, Hänicke W. (1987). “Localized proton spectroscopy using stimulated echoes.”
+J Magn Reson 72(3):502–508.
+22. Bottomley PA. Selective Volume Method for Performing Localized NMR Spectroscopy: U.S. Patent
+4480228, 1984.
+23. Haase A, Frahm J, Hänicke W, Matthaei D. 1985). “1H NMR chemical shift selective (CHESS) imaging.”
+Phys Med Biol 30(4):341–344.
+24. Hennig J. (1992). “The application of phase rotation for localized in vivo spectroscopy with short echo
+times.” J Magn Reson 96(1):40–49.
+25. Klose U. (1990). “In vivo proton spectroscopy in the presence of eddy currents.” Magn Reson Med 14(1):
+26–30.
+26. NEMA-MS-2. Determination of Two-Dimensional Geometric Distortion in Diagnostic Magnetic Resonance
+Images: MS 2-2003. Rosslyn, VA: National Electrical Manufacturers Association, 2003.
+27. NEMA-MS-3. Determination of Image Uniformity in Diagnostic Magnetic Resonance Images: MS 3-2008.
+Rosslyn, VA: National Electrical Manufacturers Association, 2008.
+28. NEMA-MS-6. Characterization of Signal-To-Noise Ratio and Image Uniformity for Single-Channel NonVolume Coils in Diagnostic Magnetic Resonance Imaging (MRI): MS 6-2008. Rosslyn, VA: National
+Electrical Manufacturers Association, 2008.
+29. NEMA-MS-9. Characterization of Phased Array Coils for Diagnostic Magnetic Resonance Images: MS
+9-2008. Rosslyn, VA: National Electrical Manufacturers Association, 2008.
+
+32
+
+

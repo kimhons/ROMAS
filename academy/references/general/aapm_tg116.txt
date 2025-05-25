@@ -1,0 +1,2884 @@
+               AAPM REPORT NO. 116
+
+
+
+
+        An Exposure Indicator
+        for Digital Radiography
+
+
+
+Report of AAPM Task Group 116
+
+
+                      July 2009
+
+
+
+DISCLAIMER: This publication is based on sources
+ and information believed to be reliable, but the
+ AAPM and the editors disclaim any warranty or
+   liability based on or relating to the contents
+                 of this publication.
+
+
+   The AAPM does not endorse any products,
+   manufacturers, or suppliers. Nothing in this
+       publication should be interpreted
+        as implying such endorsement.
+
+
+© 2009 by American Association of Physicists in Medicine
+ DISCLAIMER: This publication is based on sources and information believed to be reliable, but
+the AAPM, the editors, and the publisher disclaim any warranty or liability based on or relating to
+                                the contents of this publication.
+
+     The AAPM does not endorse any products, manufacturers, or suppliers. Nothing in this
+             publication should be interpreted as implying such endorsement.
+
+
+
+
+                                    ISBN: 978-1-888340-86-0
+                                        ISSN: 0271-7344
+
+
+                   © 2009 by American Association of Physicists in Medicine
+
+
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or
+ transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or
+                 otherwise) without the prior written permission of the publisher.
+
+
+
+                                         Published by
+                         American Association of Physicists in Medicine
+                                     One Physics Ellipse
+                                College Park, MD 20740-3846
+                 AAPM REPORT NO. 116
+
+
+
+            An Exposure Indicator
+            for Digital Radiography
+
+
+         Report of AAPM Task Group 116
+
+
+                          Co-Chairs
+
+                         S. Jeff Shepard
+                          Jihong Wang
+               Imaging Physics Department #056
+                Division of Diagnostic Imaging
+      The University of Texas M.D. Anderson Cancer Center
+                       Houston, TX 77030
+
+
+                    Task Group Members:
+
+        Michael Flynn, Henry Ford Hospital, Detroit, MI
+   Eric Gingold, Thomas Jefferson University, Philadelphia, PA
+         Lee Goldman, Hartford Hospital, Hartford, CT
+            Kerry Krugh, Toledo Hospital, Toledo OH
+      David L. Leong, Analogic Corporation, Peabody, MA
+Eugene Mah, Medical University of South Carolina, Charleston, SC
+  Kent Ogden, SUNY Upstate Medical University, Syracuse, NY
+         Donald Peck, Henry Ford Hospital, Detroit, MI
+         Ehsan Samei, Duke University, Chapel Hill, NC
+    Charles E. Willis, The University of Texas M.D. Anderson
+                  Cancer Center, Houston, TX
+
+
+
+
+                               iii
+                              ACKNOWLEDGMENTS
+
+
+ TG-116 would like to recognize contributions from industry liaisons to the TG effort. This
+acknowledgment was inadvertently left out of the original report. Many of these individuals
+contributed materially to writing the appendices and all of them participated in meetings and
+                     contributed to discussions. These individuals were:
+
+                 Stephen Balter, Columbia Medical Center (IEC Liaison)
+                     Patrick C. Brennan, University College, Dublin
+                             Martin Darms, Swissray Medical
+                               Uri Feldman, ICR Company
+                      Bernhard Geiger, Siemens Medical Solutions
+                                Kadri Jabri, GE Healthcare
+                              David Leong, Analogic Corp.
+                      Stephen W. Meyer, Canon Medical Systems
+                          Christopher R. Mitchell, ALARA, Inc.
+             Ulrich Neitzel, Philips Medical Systems, DIN/NAR, IEC WG43
+         Ralph Schaetzing, Agfa Corporation (now with Carestream Health, Inc.)
+          Robert A. Uzenoff, Fujifilm Medical Systems USA (Liaison: Fujifilm,
+                               MITA CR & DR committee)
+                  Rich Van Metter (Formerly Carestream Health, Inc.)
+             Stephen Vastagh, National Electrical Manufacturers Association
+                 Darren Werner, Konica Minolta Medical Imaging USA
+                      Robin Winsor, Imaging Dynamics Company
+                         John Yorkston, Carestream Health, Inc.
+                        Wei Zhao, State University of New York
+                                                             CONTENTS
+
+
+
+
+       Abstract.............................................................................................................................   1
+I.      Introduction ....................................................................................................................      1
+II.     Definition of Terms..........................................................................................................          4
+III. Recommendations...........................................................................................................                7
+IV.     Standard Radiation Exposure Conditions ....................................................................                            8
+        A.      Standard Beam Spectrum .........................................................................................                8
+        B.      Standard Beam Geometry and Calibration Verification Procedure...........................                                       9
+V.      Assessment of Indicated Equivalent Air Kerma (KIND) ................................................                                   12
+VI. Reporting Deviation Index (DI) .....................................................................................                       14
+VII. Clinical Use of the Deviation Index (DI).........................................................................                         15
+VIII. Exposure Indicator and Radiographic Techniques ......................................................                                    16
+IX. KIND and Automatic Exposure Control (AEC) Systems ...............................................                                          18
+X.      Inappropriate Clinical Use of DI....................................................................................                   19
+XI. Recommended Optional Features..................................................................................                            19
+XII. Application to Dedicated Chest, Mammography,Veterinary,
+     and Dental Radiography.................................................................................................                   20
+References ................................................................................................................................. 21
+Appendices
+       A        RQA5 vs.TG-116 Standard Beam Conditions,
+                XSPECT 3.5b Computation Simulation ...............................................................                             23
+       B        Comparison of Pure Aluminum vs. Commercially Available
+                Types 1100 and 1190 Aluminum and a Copper/Aluminum Alternative
+                for RQA5 .................................................................................................................     33
+       C        Current Status of Exposure Indices.......................................................................                      41
+       D        Agfa CR...................................................................................................................     47
+       E        Fujifilm FCR ..........................................................................................................        49
+       F        Kodak CR (now Carestream Health, Inc.) ............................................................                            51
+       G        Konica Minolta CR.................................................................................................             59
+       H        Imaging Dynamics .................................................................................................             61
+       I        Philips DigitalDiagnost Exposure Index ..............................................................                          63
+
+
+                                                                        v
+                                           CONTENTS (cont.)
+
+J   GE Healthcare ........................................................................................................         67
+K   Alara CR .................................................................................................................     69
+L   Siemens Medical Systems ......................................................................................                 71
+M   iCRco.......................................................................................................................   73
+N   Canon Medical Systems .........................................................................................                77
+O   SwissVision Dose Indicator....................................................................................                 85
+
+
+
+
+                                                           vi
+                                                   Abstract
+
+    Digital radiographic imaging systems, such as those using photostimulable storage phosphor (PSP),
+    amorphous selenium, amorphous silicon, charge-coupled device (CCD), and metal oxide semicon-
+    ductor-field effect transistor (MOSFET) technology, can produce adequate image quality over a
+    much broader range of exposure levels than that of screen/film imaging systems. In screen/film
+    imaging, the final image brightness and contrast are indicative of over- and underexposure. In digital
+    imaging, brightness and contrast are often determined entirely by digital post-processing of the
+    acquired image data. Over- and underexposures are not readily recognizable. As a result, patient dose
+    has a tendency to increase gradually over time after a department converts from screen/film-based
+    imaging to digital radiographic imaging. The purpose of this report is to recommend a standard indi-
+    cator which reflects the radiation exposure that is incident on a detector after every exposure event
+    and that reflects the noise levels present in the image data. The intent is to facilitate the production of
+    consistent, high-quality digital radiographic images at acceptable patient doses. This should be based
+    not on image optical density or brightness, but on feedback regarding the detector exposure provided
+    and actively monitored by the imaging system. A standard beam calibration condition is recom-
+    mended that is based on RQA5, but uses filtration materials that are commonly available and simple
+    to use. Recommendations on clinical implementation of the indices to control image quality and
+    patient dose are derived from historical tolerance limits and presented as guidelines.
+
+    Key words: digital radiography, direct digital radiography, indirect digital radiography, computed
+    radiography, photostimulable storage phosphor, image quality, image noise, exposure index, quality
+    control, quality assurance, acceptance testing.
+
+
+
+I. Introduction
+The charge of Task Group 116 (TG-116), as approved by the Science Council of the American
+Association of Physicists in Medicine (AAPM) was to identify a method of providing feedback, in
+the form of a standard index, to operators of digital radiographic systems, which reflects the ade-
+quacy of the exposure that has reached the detector after every exposure event. This report is the
+answer to that charge and will cover all digital radiographic image detector systems, leaving digital
+fluorography or fluoroscopy (radioscopy) for future consideration.
+     Unlike screen/film imaging, image display in digital radiography is independent of image acqui-
+sition. Inadequate or excessive exposure is manifested as higher or lower image noise levels instead
+of as a light or a dark image. The final brightness of the image is controlled not by the exposure to the
+detector, but by post-processing applied to the acquired image data. Consequently, overexposed
+images may not necessarily be dark, and underexposed images may not appear light. This may be a
+new and confusing concept for operators of digital radiographic systems who are accustomed to
+screen/film imaging.
+     For more than a decade, the phenomenon of “exposure creep” in photostimulable storage phos-
+phor (PSP) imaging has been reported.[1,2,3] This is attributed to the fact that digital imaging systems
+can produce adequate image contrast over a much broader range of exposure levels than screen/film
+imaging systems. This broad dynamic range is one of the benefits of digital detectors. However, if the
+detector is underexposed, higher noise levels may obscure the presence of subtle details in the
+
+                                                        1
+AAPM REPORT NO. 116
+
+
+image. Excessive detector exposures may produce high-quality images with improved noise charac-
+teristics but at the expense of increased patient dose. In extreme cases, excessive detector exposures
+may result in artifacts. As a result, most radiologists tend to complain about underexposed images
+but remain silent when images are acquired at higher dose levels unless apparent saturation has
+occurred. Technologists quickly learn that they can produce images of better quality if they increase
+their exposure techniques, resulting in less noisy images and avoiding radiologist complaints about
+noisy images. Average exposure levels tend to creep up over time if a clear indicator of exposure is
+not provided and routinely monitored.
+     Techniques required to achieve optimal radiographic imaging in Digital Radiography (DR) may
+be different from those used for screen/film imaging. In addition, different DR detectors may require
+different technique factors due to differences in the energy dependence of the detector materials in
+use (see Figure 1).[4] These differences in technique among DR systems may cause confusion and
+suboptimal image quality at sites where more than one type of system is in use. Operators need a
+clear set of rules to produce consistent, high-quality digital radiographic imaging, based not on
+image density but on feedback regarding the detector exposure provided.
+     Several manufacturers currently use an exposure indicator that parallels the concept of “speed”
+or “speed class” used by film manufacturers. In addition, many manufacturers and users have
+become accustomed to characterizing their systems as functioning within a given speed class. This
+has created some misunderstandings and scientific inaccuracies, which have been discussed in the
+literature.[5]
+
+
+
+
+Figure 1. Energy dependence of common detector materials.
+
+                                                  2
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+     TG-116 recommends avoiding the concept of “speed class” when referring to DR system per-
+formance. The definition of radiographic speed according to ISO 9236-1[6] is based on the radiation
+exposure required to achieve a net optical density of 1.0 on the developed film. With DR there is no
+fixed relationship between the radiation exposure and the resultant density in the image. With
+screen/film detectors a change in speed may also result in a change in the spatial resolution proper-
+ties of the detector. This same relationship does not hold true with digital detectors since sharpness is
+independent of the amount of exposure used to acquire the digital image.
+     The characterization of a digital radiographic system as being in a given speed class may give the
+false indication that it should always be operated at a specific exposure level. It may also give the
+false impression that the resulting digital image will have the same noise and resolution characteris-
+tics as that acquired with an equal speed class screen/film system. The digital system in reality can be
+operated over a broad range of sensitivity since the amount of radiation exposure determines only the
+level of quantum mottle and not the brightness of the image. From this context the level of radiation
+exposure, and thus the so-called “speed class,” should be dependent upon the imaging task and upon
+the observer’s tolerance of image noise. As a general rule, the As Low As Reasonably Achievable
+(ALARA) concept should prevail in that the minimum amount of exposure, and hence the maximum
+tolerable noise content, should be used to achieve the necessary diagnostic information.[7] Using the
+speed class characterization for given digital imaging systems may increase the possibility that
+ALARA is violated for some imaging tasks.
+     An index of detector exposure is appropriate because it is reflective of the noise content, and thus
+the signal-to-noise ratio (SNR) in the image. For DR systems, the appropriate incident exposure is
+variable based on the desired SNR rather than on the resulting optical density of a radiograph.
+Different digital detectors may require more or less radiation exposure to achieve the same noise
+content depending upon the detective quantum efficiency (DQE) of the detector technology in use.
+For a given system, the image noise content will track inversely with the detector exposure. As radia-
+tion exposure to the detector increases, image noise will decrease and SNR will increase.
+     A standardized indicator of the exposure incident on a DR detector that is consistent from manu-
+facturer to manufacturer and model to model is needed. This could be used to monitor differences in
+exposure between DR systems at a given institution, to compare techniques between institutions, or
+to estimate the quality of images from a given radiographic system. It could also provide quality con-
+trol (QC) data if software is provided to record and retrospectively analyze exposure data from all
+systems.
+     A standard indicator that reflects the radiation exposure that is incident on a detector after every
+exposure event is appropriate. The detector exposure indicator is intended to reflect the noise levels
+present in image data. An adequate exposure is one that results in an appropriate noise level in the
+image as determined by the clinic where the system is in use. This report does not make recommen-
+dations on exposure adequacy, nor does the indicator represent exposure to the patient.
+     TG-116 considers the recommendations in this report to be achievable and important. It recog-
+nizes that a parallel standard was recently completed within the International Electrotechnical
+Commission (IEC), designated IEC 62494-1 Ed. 1: Medical electrical equipment - Exposure index of
+digital x-ray imaging systems - Part 1: Definitions and requirements for general radiography. This
+IEC standard specifies the definitions and calibration conditions for the detector exposure indices of
+DR systems. The leadership of TG-116 participated in this IEC effort since its inception and served as
+U.S. National Committee experts in IEC Working Group 43. The concepts and calibration conditions
+
+                                                   3
+AAPM REPORT NO. 116
+
+
+
+
+Figure 2. Essential processes in the acquisition of a digital radiograph. KIND and DI are computed from Q values
+using segmentation information.
+
+
+
+in the IEC working draft are consistent with those in this report. While the terminology and definitions
+in the IEC standard may differ in scale and nomenclature from those in this report, the IEC standard is
+completely consistent with this report. Absolute adherence to the nomenclature, symbols, and multi-
+plicative factors of scale in this report are inconsequential to achieving the ultimate benefit of these
+recommendations as long as all manufacturers adhere to the IEC standard definitions. Users should
+be able to rely on a manufacturer’s claim of conformance to the IEC standard to identify equipment
+offering a standard exposure index as described in this report.
+
+
+
+II. Definition of Terms
+DR systems utilize a series of computational processes to transform the raw data of the detector into
+an image intended for presentation. These processes include those used to assess the average
+response of the detector and its relation to the incident x-ray exposure.
+    The image formation process (Figure 2) begins with the extraction of raw data from the detector
+immediately following an exposure event. That data must be corrected for imperfections in the
+detector array such as the presence of bad pixel elements, dark current corrections, and gain correc-
+tions that may be applied on a pixel-by-pixel basis. After these corrections have been applied, the
+resulting pixel values are ready to be processed by the system and are referred to as “for-processing”
+pixel or “Q” values. The system then attempts to identify which of these pixels contain information
+that is of interest to the user, typically those that contain information relevant to the anatomy being
+examined. This process is called segmentation. It is from the segmented image values that TG-116
+
+                                                       4
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+proposes the exposure indicators be determined. The final image for display results from grayscale
+transformations, broad area equalization, edge restoration, noise reduction, or other image-related
+processes that are performed on the “for-processing” Q values resulting in “for-presentation” QP val-
+ues. QP values are typically stored in a Picture Archiving and Communications System (PACS) and
+transmitted to a printer or workstation for display. The remainder of this section defines the terms
+used in this document that relate to the DR processes just described.
+
+Digital Radiography
+
+   Radiographic imaging technology producing digital projection images such as those using photo-
+   stimulable storage phosphor (computed radiography, or CR), amorphous selenium, amorphous sil-
+   icon, CCD, or MOSFET technology.
+
+Standardized Radiation Exposure (KSTD)
+
+   The air kerma at the detector of a DR system produced by a uniform field radiation exposure
+   using a nominal radiographic kVP and specific added filtration resulting in a specific beam half-
+   value layer (HVL). (See section IV. Standard Radiation Exposure Conditions.)
+
+For-Processing Pixel Values (Q)
+
+   For-processing pixel values are the image pixel values produced by a DR system after necessary
+   corrections have been applied to the initially recorded raw data to compensate for these types of
+   effects [see IEC 62220-1 Ed.1 for a complete description of appropriate correction methods].[7]
+   The following corrections may be applied:
+      1.   Defective pixels may be replaced by appropriate data.
+      2.   Flat-field correction.
+      3.   Correction for the gain and offset of single pixels.
+      4.   Geometric distortion.
+
+   The relationship between Q and KSTD may vary for different DR systems. Manufacturers are
+   expected to provide access to Q data and to provide information on this relationship as a part of nor-
+   mal system documentation. Images with Q values would typically be processed by the DR system
+   in order to produce images for presentation.
+
+Normalized For-Processing Pixel Values (QK)
+
+   Normalized for-processing pixel values, QK, are for-processing pixel values, Q, which have been
+   converted to have a specific relation to a standardized radiation exposure (KSTD). Q values are con-
+   verted to QK using the DR system’s relationship between Q and KSTD. After conversion of Q to QK,
+   the relationship between air kerma at the input surface of the detector and the QK value is
+
+                                                        ⎡ K STD ⎤
+                                  QK = 1000 * log10 ⎢           ⎥                                    (1)
+                                                        ⎣ K0 ⎦
+   where KSTD is in microgray units, K0 = 0.001 μGy, and KSTD ≥ K0.
+
+
+                                                   5
+AAPM REPORT NO. 116
+
+
+For-Processing Image Values (QP)
+
+   For-processing pixel values (Q) are typically modified by image processing to produce an image
+   with values suitable for display (QP). This processing generally determines the useful values for
+   display and applies a grayscale transformation. The processing may also provide broad area equal-
+   ization, edge restoration, or noise reduction.
+
+Indicated Equivalent Air Kerma (KIND)
+
+   An indicator of the quantity of radiation that was incident on regions of the detector for each expo-
+   sure made. The value reported may be computed from the median for-processing pixel values in
+   defined regions of an image that correlate with an exposure to the detector. The median value is then
+   converted to the air kerma, KSTD, from a standardized radiation exposure that would produce the
+   same detector response, i.e., result in the same median for-processing signal value, Q, in a pre-
+   defined region of interest (ROI). The regions from which the median is determined may be defined
+   in different ways (see section V. Assessment of Indicated Equivalent Air Kerma, KIND). The value
+   should be reported in microgray units with three significant figures of precision.
+
+Image Values of Interest (VOI)
+
+   Pixel values in the original image (Q) that correspond to the region in the recorded image area for a
+   particular body part and anatomical view. KIND may be calculated from a subset of pixels within the
+   VOI.
+        Not all pixel values in an image are associated with objects that are of interest to the viewer
+   for the purposes of diagnosis. Those that are of interest are referred to as the “values of interest”
+   (or VOI). The pixels that are associated with the VOI are typically identified based on their phys-
+   ical location and their relative signal strength characteristics. This identification process is
+   referred to as segmentation. Specification of a standard method to be used for segmentation is
+   not within the charge of this task group. Further, to recommend one standard method above all
+   others may impede the development of more sophisticated methods that yield more stable results
+   in the future.
+        Detector values suitable for presentation (QP) are typically sent to display devices (printers or
+   workstations) or image archives. Digital Imaging and Communications in Medicine (DICOM)
+   standards, including DICOM PS3.14, define these as presentation values, or P-values.[8]
+
+Target Equivalent Air Kerma Value (KTGT)
+
+   The optimum KIND value that should result from any image when the detector is properly exposed.
+   KTGT values will typically be established by the user and/or DR system manufacturer and stored as
+   a table within the DR system. The table is referred to in this document as KTGT(b,v) where b and v
+   are table indices for specific body parts and views.
+
+Deviation Index (DI)
+
+   An indicator as to whether the detector response for a specific image, KIND, agrees with KTGT(b,v).
+   Relative exposure indices are to be reported as:
+
+                                                   6
+                                                        AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+                                                      ⎡ K IND ⎤
+                                      DI = 10 * log10 ⎢              ⎥                             (2)
+                                                      ⎢⎣ K TGT(b,v) ⎥⎦
+
+   with one significant decimal of precision (i.e., 0.0, 0.6, −1.3, etc.). DI is intended as an indi-
+   cator for radiographers and radiologists for whether or not the technique used to acquire a
+   radiograph was correct. This definition results in a DI of 0.0 when the reported KIND equals
+   KTGT (a perfect exposure). The index changes by ±1.0 for each +25%/−20% change of the
+   reported KIND.
+
+
+III. Recomendations
+This report makes the following specific recommendations regarding the indicator of exposure for
+DR systems:
+
+   • It is recommended that all DR systems (regardless of detector design) provide an indicator of
+       the x-ray beam air kerma (expressed in μGy) that is incident on the digital detector and used to
+       create the radiographic image. This indicator shall be called the Indicated Equivalent Air
+       Kerma (KIND). It is further recommended that the DICOM standard incorporate a new ele-
+       ment for DR that is specifically defined as the Indicated Equivalent Air Kerma. The indicator
+       value shall be included in the DICOM header of every image as a floating point value with
+       three significant figures.
+   •   In addition to the Indicated Equivalent Air Kerma, it is recommended that the relative devia-
+       tion from the value targeted by the system for a particular body part and view be reported. This
+       index, the Deviation Index (DI), should be prominently displayed to the operator of the DR
+       system immediately after every exposure and immediately after any modification of the
+       detected image VOI. It is further recommended that the DICOM standard incorporate a new
+       element for DR that is specifically defined as the Deviation Index. This indicator value shall
+       be included in the DICOM header of every image as a signed decimal string value between −
+       9.9 and +9.9 with one significant digit after the decimal.
+   •   The Indicated Equivalent Air Kerma and the Deviation Index are determined from the seg-
+       mentation image pixels (see section V. Assessment of Indicated Equivalent Air Kerma,
+       KIND). It is recommended that systems provide display functions to delineate the segmented
+       image pixels optionally as an overlay on the recorded image that is otherwise normally pre-
+       sented for approval by the operator. Additionally, this overlay region can be incorporated in
+       any images exported for archive or viewing using DICOM services. DICOM Segmentation
+       Storage SOP Class (Supplement 111) forms the basis for achieving this functionality.[9]
+       Alternatively, this could be accomplished with overlay and annotations that are part of Gray
+       Scale Presentation State Storage objects described in DICOM Supplement 33.[10]
+   •   Vendors should provide appropriate analytical tools (see section XI. Recommended
+       Optional Features) and allow for-processing image data (Q values), or exposure values nor-
+       malized to the standard beam conditions (QK), to be displayed and analyzed on the system
+       console. It is also important that the vendor allow these data to be exported in DICOM format
+       for off-line analysis. To accomplish this, all DR systems should provide access to images
+
+                                                    7
+AAPM REPORT NO. 116
+
+
+        containing for-processing pixel values, Q. This can be provided by support for DICOM
+        export services of DX for-processing images containing normalized for-processing values,
+        QK. Alternatively, images of either QK or Q can be made available in DICOM PS3.10[11] for-
+        mat on a media storage device.
+    •   The relationship between QK values and the standardized radiation exposure incident to
+        the DR detector is required for tests of system performance. It is recommended that this
+        relationship be provided by the system manufacturer over the full range of radiation expo-
+        sures that the system is capable of recording.
+    •   For tests of system performance, it is useful to view and analyze the for-processing image
+        values of acquired test radiographs. It is recommended that systems provide functions to
+        display images without image processing (i.e., Q values) and to report the mean, median,
+        mode, standard deviation, and pixel count of values within graphically defined regions.
+        Interactively drawn circular or rectangular regions are appropriate for this purpose.
+    •   For testing of systems, it is recommended that manufacturers provide methods to remove
+        the anti-scatter grid without otherwise changing the detectors response or provide grid
+        attenuation factors to be used in calibration.
+
+
+IV. Standard Radiation Exposure Conditions
+
+A. Standard Beam Spectrum
+
+A uniform field radiation exposure made to the detector of a DR system is used to assess the relation
+between for-processing image values recorded by the detector (Q) and the quantity of radiation incident
+on the detector (KSTD). The radiographic technique used to make the exposure is intended to provide a
+beam quality typical of that for most examinations for which the system is used. This is done by using
+additional filtration to emulate the beam hardening of a patient. This section recommends standardized
+radiation conditions to be used for this purpose and addresses only general radiographic systems.
+     The IEC and ISO have previously made recommendations for standard radiation conditions for use
+in testing medical diagnostic x-ray systems.[6,12,13] A variety of conditions with different beam quality
+are recommended and labeled with “RQA” prefixes. However, these conditions require thick filters
+composed of 99.9% aluminum (Al), which is impractical for field measurements. Alloy 1190 falls into
+the category of scientific grade (also called ultra pure aluminum) and is available only through spe-
+cialty metals companies for a high price, in small quantities, and limited form. Alloy 1100 is a 99.0%
+pure Al alloy that is widely available on the market.
+     The use of copper (Cu) as a component of the added filtration is recommended in order to reduce
+the overall thickness of added material. In prior publications, 0.5 mm of Cu was found to minimize the
+variability in the response of a CR system as kVP was varied within 80 kVP±10%.[14,15] The addition of
+Al material allows a HVL near the desired nominal to be achieved while keeping the Cu thickness at a
+value that is readily available from metal foil suppliers. The added Al material should be on the beam
+exit surface of the Cu so that any Cu characteristic radiation is absorbed in the aluminum.
+     Typically, clinical tubes in use at modern facilities contain enough inherent+added filtration to
+exceed the IEC open beam HVL specification of 2.5 mm Al at 70 kVP (RQR5). If this is the case, the fil-
+tration to be added to the beam should be reduced to satisfy RQA5 by removal of all or part of the alu-
+
+                                                   8
+                                                         AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+minum. If the open beam HVL falls below the specification of 2.5 mm Al at 70 kVP, the filtration to be
+added to the beam should be increased to satisfy RQA5 by addition of up to 4 mm Al. If the unfiltered
+beam is generated using exotic added filtration, it is recommended that added filtration be replaced
+with enough aluminum to meet the requirements of RQR5. The kVP may also be adjusted, if necessary.
+      Added filtration with 0.5 mm Cu plus 3−4 mm Al is suitable for x-ray tubes with modest intrinsic
+filtration. For an unfiltered x-ray tube spectra with HVL of 2.58 mm Al at 70 kVP (RQR5), computa-
+tional simulations (see appendices A and B) indicate that a similar beam quality with HVL = 6.8 mm Al
+is obtained using added filtration of either 21 mm of pure aluminum as specified for RQA5, 0.5 mm Cu
+plus 3 mm Al (type 1100), or 24 cm of muscle.
+      The following types of brass (30%−50% zinc with traces of tin) are also considered acceptable to be
+used in place of the copper: admiralty brass (30% zinc and 1% tin), alpha brass (less than 35% zinc),
+alpha-beta brass or duplex brass (35%−45% zinc), arsenical brass or DZR brass, beta brass (45%−50%
+zinc), cartridge brass (30% zinc), common brass or rivet brass (37% zinc), high brass (35% zinc), low
+brass (20% zinc), naval brass (40% zinc brass and 1% tin), red brass (gunmetal), or yellow brass (33%
+zinc). Use of leaded brass, aluminum brass, white brass, or gilding metal is not recommended.
+      For the first edition of IEC 61267, kVP was to be adjusted to achieve a desired beam HVL.[11] For
+the second edition, more stringent constraints were placed on the beam quality before added filtration
+rather than allowing kVP adjustments. As a consequence, the conditions recommended in the second
+edition are applicable only to laboratory facilities. It has also been reported that CR system response
+varies by approximately 10% over a limited a range of kV.[14] Measurements made by task group mem-
+bers on a variety of clinical systems (both CR and DR) indicate that system response is very consistent
+within the recommended ranges of HVL, kV, and added filtration (see appendix B). System response in
+terms of for-processing signal per unit exposure varied by less than or equal to 6% with kVP/filter com-
+binations as low as 67 kVP with 0 mm Al (5.93 mm Al HVL) to 73 kVP with 8 mm Al (8.62 mm Al HVL).
+Similar results have been found by others and reported in the literature (see Figure 1).[4] For this limited
+range of kV, 5% tolerance seems reasonable.
+      While use of the RQA5 beam is acceptable for calibration, TG-116 recommends standard beam
+conditions using copper foil and highly available type 1100 aluminum with a specified kVP range
+whose accuracy has been independently verified to be within 3% of the indicated value (see Table 1).
+The target HVL is intended to be reasonably close to RQA5 (6.8±0.25 mm Al). Minor adjustments in
+indicated kVP and added filtration are permitted to achieve the target beam quality. While not required,
+it is acceptable to vary the kVP by up to ±5% and the amount of added aluminum within the listed range
+to achieve a beam quality that is as close as possible to the listed target HVL. The generator used for the
+standard beam must be capable of maintaining a constant kV throughout the entire exposure.
+
+
+B. Standard Beam Geometry and Calibration Verification Procedure
+
+This section describes the measurement geometry to be used to determine KSTD under the standard
+radiation exposure conditions shown in Figure 3. The steps to use when making these measurements
+are summarized below.
+
+    1. Prior to any measurements verify that the x-ray source has acceptable exposure repro-
+       ducibility (coefficient of variation < 0.03) and kV accuracy (±3%) at the standardized
+
+
+                                                     9
+AAPM REPORT NO. 116
+
+
+Table 1. Standard Beam Radiographic Conditions
+                             Added                    Nominal         IEC
+kVP                         Filtration                  HVL        Surrogate
+66-74                0.5 mm Cu + (0-4) mm Al*         6.8 mm Al*     RQA5
+                         or 21 mm pure Al
+*Type 1100
+
+
+
+
+Figure 3. Standard beam geometry.
+
+
+
+
+                                                 10
+                                                   AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+       condition. During any exposure for which an image is not acquired, the image receptor
+       should be protected from exposure to the primary beam.
+   2. The detector should be placed as far from the x-ray source as is practical, at least 100 cm.
+       a. If the detector is a CR plate, the cassette should be separated from any surface that
+           may increase backscatter from that surface entering the cassette (see Figure 3), as rec-
+           ommended in AAPM Report No. 93.[15]
+       b. If present, and if possible, remove the anti-scatter grid and any other system compo-
+           nents present between the ion chamber and the image detector without otherwise mod-
+           ifying the response of the detector. If any components cannot be removed, obtain the
+           attenuation factors from the DR system or component vendor.
+       c. If the detector is not square, the long axis of the detector should be perpendicular to
+           the x-ray tube anode-cathode axis.
+   3. Place a calibrated ion chamber at the center of the beam approximately midway between the
+       source and detector (see position A in Figure 3). The distances should be measured to the
+       center of the chamber and to the surface to the detector. The distance from the x-ray source
+       to the center of the ion chamber and the surface of the detector must be known. If the dis-
+       tance from the detector housing surface to the detector is not labeled, consult the manufac-
+       turer for this measurement.
+   4. Collimate the x-ray beam to only cover the ion chamber with no more than 1 in. margins.
+   5. Add 0.5 mm Cu filtration at the face of the collimator.
+   6. Cover the detector with a lead apron or similar barrier to preclude exposure to the detector.
+       Measure the HVL of the filtered beam and adjust the kVp and/or Al filtration within the
+       limits specified in Table 1 to obtain a HVL as close as possible to 6.8 mm Al.
+   7. Make an exposure and determine the air kerma at the detector (KSTD) using an inverse
+       square correction and applying the grid attenuation factor, if appropriate. Repeat the expo-
+       sure at a new mAs setting that will deliver the desired air kerma to the detector. In general,
+       the desired air kerma will produce a value of KSTD that is in the middle of the detector
+       response range.
+   8. Move the ion chamber perpendicular to the tube axis such that it is outside the detector field
+       of view (see position B in Figure 3).
+   9. Remove the filtration and open the collimator so the x-ray beam will cover the entire detec-
+       tor and includes a margin large enough to cover the ion chamber. If the system does not
+       allow the collimator to be opened beyond the detector size, open the collimator as large as
+       possible and place the ion chamber as close to the edge of the x-ray beam as possible within
+       the field of view of the detector. Ensure that the entire ion chamber is in the radiation beam
+       and is not shadowed by a collimator blade. Replace the filtration.
+   10. Remove the protective lead apron and make an exposure using the mAs found in step 7
+       above. Determine the ratio of the air kerma at position A to that at position B.
+
+When making standardized radiation exposures using this geometry, the air kerma recorded by the
+ion chamber is converted to KSTD for each exposure using the KA/KB ratio determined and the
+inverse square correction.
+
+
+
+
+                                                11
+AAPM REPORT NO. 116
+
+
+    Some manufacturers have specified other requirements in addition to beam quality, such as
+readout time delay after exposure with CR systems. These requirements should be adhered to as
+long as the standard beam conditions specified in this part are not affected.
+
+
+
+V. Assessment of Indicated Equivalent Air Kerma (KIND)
+It is expected that manufacturers of DR systems will establish the relationship between for-processing
+image values (Q) and standardized radiation exposure (KSTD), i.e., Q as a function of KSTD. This rela-
+tionship should be specified over the full range of exposures for which the system is designed to
+respond. If individual systems vary in response, information provided with the system should include
+the acceptable variation specific to a particular system. As a part of acceptance testing, physicists may
+wish to verify this relationship by recording images of a uniform field obtained using standard beam
+exposures made with an appropriate set of mAs values.
+      For validating Q as a function of KSTD, the incident air kerma should be measured using the
+methods described in section IV.B for which KSTD reflects the radiation incident to the central region
+of the detector. For each image recorded, either the for-processing image pixel values, Q, or the nor-
+malized for-processing image pixel values, QK, should be analyzed to determine the median value
+from a central region of interest (<Q> and <QK>).
+      For determining the indicated equivalent air kerma from an individual clinical image, KIND is
+computed as the KSTD corresponding to the <Q> value in a defined region of a recorded image (see
+Figure 4). The median of image values is computed and transformed using the known relationship
+between for-processing image pixel values (Q) and exposure. The median is recommended rather
+than mean or mode because it is less affected by data extremes and outliers. Rectangular or circular
+regions having an area greater than or equal to about 4% of the active detector area should be used.
+The median value can be determined using vendor-supplied analysis tools designed specifically for
+evaluating the test image or by exporting the test image as a DICOM object to an external work-
+station for evaluation. The median Q value and the median KSTD value are thus the same as long as
+the transformation is monotonic. Additionally, the median value can be determined from the his-
+togram of values within the defined region.
+      The region used to compute KIND should be defined such that the indicated equivalent air kerma
+reflects the median exposure within the segmentation image pixels in the recorded image. The segmen-
+tation image pixels will vary depending on the purpose of the radiograph. For example, the primary
+anatomic region of interest in a chest radiograph is the lung parenchyma, whereas the mediastinal and
+subdiaphragmatic portions of the image would be secondary regions. However, the mediastinum
+would be a primary region for a thoracic spine radiograph. Hence the segmentation image pixels for the
+PA Chest exam and for the PA T-Spine, even if collimated identically, would not comprise the same set
+of image pixels.
+      For some existing systems the segmentation image pixels are defined by the portions of the
+image for which body tissue has attenuated the beam. Unattenuated regions of direct exposure are
+excluded along with regions outside of the collimated primary beam that receive only scattered and
+off-focus radiation. Other systems have used geometric regions (circles, rectangles, etc.) positioned
+in the general area of the primary anatomic region. These can be systematically placed in the field
+such as for the position of a central Automatic Exposure Control (AEC) cell.
+
+                                                   12
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+
+
+Figure 4. Example of a method to determine KIND from an analysis of the image histogram.
+
+
+
+
+    More robust scene recognition algorithms may be used to identify the segmentation image pix-
+els. Robust region definition methods typically require advanced image segmentation algorithms
+that have generally not been fully disclosed by manufacturers. In most cases, these methods occa-
+sionally fail under certain clinical conditions. To aid users in identifying recordings for which the
+segmentation may have failed, it is recommended that systems provide functions to display an over-
+lay of the segmentation image pixels. If provided, this overlay should be accurately registered to the
+image pixels. Additionally, methods to modify the selection of segmentation of the image pixels after
+the automated segmentation algorithm is performed should be provided.
+    For many systems, region definition is used to identify that portion of the image that should be
+rendered in the mid-portion of the grayscale transformation. In recent reports, it has been suggested
+that the “for-presentation” image pixel values (QP) be used to define the region for computation of
+KIND.[16] In this work, pixels of the for-presentation image (QP) within a fixed range of presentation
+values are used to define the region for computation of KIND (see Figure 5). For example, presenta-
+tion values from 45% to 55% of the full range of values are in the mid-gray regions of the image,
+which normally correspond to the anatomic regions of highest interest to be rendered with maximum
+contrast. The value of KIND is computed from pixels in the for-processing image that correspond to
+this range. Regardless of the method used to define the region that is used to compute KIND, its value
+should reflect any changes to the segmentation image pixels that are made by the operator.
+    This report does not make recommendations as to how the segmentation image pixels are to be
+defined. Rather, the scope of recommendations is restricted to recommendations directed at stan-
+dardizing the terminology and beam conditions associated with reporting indices of exposure. It is
+expected that conformance in these areas can be achieved in the near future. The task group recog-
+nizes that the defined region from which KIND is computed has strong influence on the result. A com-
+pletely satisfactory solution for this difficult engineering problem remains unidentified. In light of
+this, the consensus of the task group is that it would be inappropriate to limit further development of
+
+                                                    13
+AAPM REPORT NO. 116
+
+
+
+
+Figure 5. Example of a method to determine KIND from QP of a processed image.[16]
+
+
+
+
+more robust segmentation algorithms by establishing a standard method for defining segmentation
+pixels at this time.
+    The Indicated Equivalent Air Kerma, KIND, is an indicator of the detector response in regions
+where anatomically important tissues have been recorded by a DR detector. KIND is not equal to the
+incident exposure for the radiograph recorded. Rather, it is associated with the incident exposure from
+a standard reference beam that would have produced the same detector response. For this reason, it is
+referred to as an “equivalent” air kerma. For the general radiography standard beam conditions, the
+incident exposure required for the same receptor response in a typical DR detector varies modestly for
+peak tube potential values in the range from 55 to 90 kVP.[4] In general, the actual incident exposure
+required to produce the same detector response will change with varying tube potential for radiographs
+of a specific object.
+
+
+VI. Reporting Deviation Index (DI)
+For radiographs of different body parts and/or views, the value of KIND required to obtain acceptable
+image quality may vary. Additionally, the purpose and clinical diagnostic indications expected for a
+particular procedure may influence what is considered acceptable. For this reason, it is recommended
+that manufacturers automatically reference the appropriate standard beam condition (based on body
+
+                                                   14
+                                                      AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+part and anatomical view) when determining KIND, and deduce the recorded relative exposure from
+the appropriate KIND in relation to that targeted for the body part and view of the radiograph.
+    The DI is intended to indicate the acceptability of SNR conditions in the segmentation image (as
+compared to high or low) to persons performing or interpreting radiographic examinations. How this
+index is calculated and the information displayed to these groups has an influence on how it is inter-
+preted. Several options were considered by the task group for the nature of this index. Some were of
+the opinion that an index that varies linearly with KIND/KTGT(b,v) would be more understandable to
+both radiologists and technologists. However, this approach suffers from the fact that such an index
+would asymptotically approach 0 as exposures decreased to 0, thus minimizing the apparent impact
+that underexposure has on image quality. Another consideration is the fact that image noise is loga-
+rithmically related to exposure. For underexposed images, use of a linear indicator would not reflect
+the magnitude of the change necessary to bring about a corresponding improvement in noise. It was
+decided that a logarithmic scale in base 10 would provide appropriate information in terms of both
+direction (over- or underexposure indicated by a positive or negative value, respectively) and magni-
+tude (+1 is approximately 125% of the intended exposure, −1 is 80% of the intended exposure) on
+needed technique corrections. An exposure resulting in a DI value of +1 would require an adjustment
+of −1 step on the density or mAs control of a properly calibrated modern radiographic system.
+    Tables of targeted values may be provided by manufacturers with values reflecting typically
+acceptable KIND values for the detector technology being used. Typically, these will be lower for
+detector technology that has higher DQE. Provisions must be available for imaging centers to adjust
+the KTGT values based on an individual facility's criterion for image quality. Systems should provide
+a mechanism to export and import tables in a consistent format so that tables could be shared
+between imaging facilities using the same DR system. A process for updating the tables of all sys-
+tems within a facility that is managed via a network would be extremely valuable so that changes in
+KTGT values can be readily disseminated to distributed systems. DR systems should also provide the
+means to save the associated KTGT(b,v) for any body part and view as the default target value auto-
+matically when invoked by an appropriately privileged operator.
+
+
+
+VII. Clinical Use of the Deviation Index (DI)
+The clinical use of the DI is essentially the same as that of film optical density: it serves as an indica-
+tor of proper radiographic exposure. For screen/film images, the optical density of the image itself is
+used to indicate proper exposure according to the clinical preferences of the facility. By de-linking
+image appearance (in terms of brightness or contrast) from the amount of radiation exposure used to
+produce it, digital imaging alleviates the dynamic range limitation suffered by film. The drawback is
+that the direct visual feedback as to proper exposure is also severed. As has been noted before, the
+result can be widely varying clinical techniques, with consequences to both image quality and
+patient radiation exposure. The primary concern with DR image quality as it relates to detector expo-
+sure is with image noise (quantum mottle). DR post-processing and “QC” workstations generally
+utilize displays of lower resolution (1024×1024 or less), lower brightness, and capable of rendering
+fewer gray levels than those to be used for primary diagnostic interpretation. These “secondary”[17]
+workstations are also rarely calibrated to DICOM PS3.14. As a result, it is often the case that image
+noise is not well appreciated on such displays. What might appear acceptable on the QC workstation
+
+                                                   15
+AAPM REPORT NO. 116
+
+
+may be diagnostically unacceptable to the radiologist reading on a display calibrated to DICOM
+PS3.14. The DI can be used clinically to ensure that the amount of radiation delivered to the detector
+and, hence, the noise content in the image, is appropriate for a given imaging task.
+     The reader should be cautioned that possible system errors in the segmentation may cause the DI
+to incorrectly reflect the adequacy of the exposure. Causes of errors in segmentation will vary by ven-
+dor—some examples include the presence of prostheses or gonadal shielding, failure in identification
+of collimated area due to scatter or off-focus radiation, and unexpected positioning of a body part in
+the field of view. Poorly defined collimation may lower the DI, depending on the exam and projection.
+Undercollimation that causes unusually large amounts of the image to be unattenuated by the patient
+may increase the DI. Both of these interferences can result in a false DI. If any of these is the case and
+the reported DI is out of acceptable range, a repeated exposure may not be necessary. The technolo-
+gist should closely scrutinize every image for noise content, using zoom and pan utilities if available.
+DI values should be treated more like a guide instead of an absolute measure of image quality. Until
+segmentation becomes more robust, the technologist should judge image quality on noise content
+and not depend solely on the exposure index value.
+
+
+VIII. Exposure Indicator and Radiographic Techniques
+The KIND indicator serves as a means of establishing appropriate radiographic techniques that might
+otherwise drift widely from desired levels. Adhering to target ranges for the particular DI values can
+be a valuable tool for standardization and stabilization of manual techniques. For departments
+involved in clinical aspects of radiologic technology training programs, DI can also be used as an aid
+to instruct students in proper manual technique selection and for evaluation of trainee performance
+in this regard.
+     DI values are determined for each body part and anatomical view being imaged on an exposure
+by exposure basis by comparing the KIND value for a given exposure to the target KTGT(b,v) values
+stored on the system. These KTGT(b,v) values are the optimal exposure values determined either by
+the vendor or by the site system administrator for each body part and anatomical view being imaged.
+The KTGT(b,v) values should be set according to clinical preferences and specific exam needs. This
+
+Table 2. Exposure Indicator DI Control Limits for Clinical Images
+                     DI                                                  Range Action
+                   > +3.0                                      Excessive patient radiation exposure
+                                                               Repeat only if relevant anatomy is clipped
+                                                                or “burned out”
+                                                               Require immediate management follow-up.
+
+                 +1 to +3.0                                    Overexposure:
+                                                               Repeat only if relevant anatomy is clipped
+                                                                or “burned out”
+
+                 −0.5 to +0.5                                  Target range
+
+               Less than −1.0                                  Underexposed:
+                                                               Consult radiologist for repeat
+
+               Less than −3.0                                  Repeat
+
+
+                                                      16
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+approach is consistent with maintaining exposures in a range that is as low as reasonably achievable
+(ALARA). The KTGT(b,v) values associated with each body part and view, if present, should auto-
+matically be invoked when the body part and view for post-processing are selected by the operator at
+the processing system console.
+    Once KTGT(b,v) levels are set, it is useful to identify several types of “control limits” on DI: a tar-
+get range, a “management trigger” range, or a “repeat” range (see Table 2). The reason for this is that
+unlike filmed images, in which inadequate or excessive image optical density is a determinant of
+when a repeated film is needed, the reason for repeating a digital image is primarily noise related.
+What would be an underexposed film image may be of adequate diagnostic value in digital form.
+Similarly, it is never appropriate to repeat overexposed digital images unless analog-to-digital con-
+verter saturation has occurred, which may cause relevant parts of the image to be “burned out” or
+“clipped” (that is, all pixels in the affected region are forced to the maximum digital value and thus
+containing no information) or contrast to be affected in excessively exposed regions of the image.
+Since this judgment depends upon the diagnostic task, it is appropriate to seek consultation with a
+radiologist for certain ranges of DI-indicated under- and overexposure prior to repeating.
+    A properly functioning AEC system will produce optical densities of ±0.15 OD under varying
+combinations of kVP and phantom thickness (adjusting mA to result in exposure times greater than
+10 ms).[18] For a screen/film combination, optical density in the straight-line portion of the H&D
+curve is related to detector exposure (or KIND) as follows:
+
+                                                        ⎛ K IND ⎞
+                                       ΔOD = γ log10 ⎜         2
+                                                                 ⎟.                                    (3)
+                                                        ⎝ K IND1 ⎠
+
+
+   Combining equations (2) and (3), the range of deviation indices corresponding to a given OD
+range would be:
+                                                ⎛ 10 ⎞
+                                        ΔDI = ⎜        × ΔOD.
+                                                ⎝ γ ⎟⎠                                                 (4)
+
+    For a screen/film combination with a gamma of 2.85 (a fairly common gamma in clinical use),
+the acceptable DI range would be:
+                                               ⎛ 10 ⎞
+                                        ΔDI = ⎜          × 0.3
+                                               ⎝ 2.85 ⎟⎠
+                                             = 1.05                                                   (4a)
+                                             = ±0.5.
+
+    The task group recommends the action levels shown in Table 2.
+    To be effective, care must be taken to assure that appropriate targets and limits are posted and
+the radiographers are educated and periodically re-educated as to their meaning.A substantial devi-
+ation from the established target range should require management oversight to determine the cause
+for the deviation and to implement appropriate corrective action such as retraining, recalibration of
+the equipment, or reassessment of the target value. Operators should be instructed that high DI val-
+ues are associated with excessive radiation dose but have good image quality with respect to noise.
+Tighter limits on DI may be difficult to achieve in practice due to variations and drifts in CR reader
+
+                                                   17
+AAPM REPORT NO. 116
+
+
+calibration (especially with multiple readers), variations between detectors, as well as traditional
+differences between x-ray rooms (generator design, calibration, and tube filtration).
+
+
+IX. KIND and Automatic Exposure Control (AEC) Systems
+In regard to maintaining appropriate image quality and patient exposures, it is clear that AEC systems
+are just as important to digital imaging as for screen/film imaging, despite the wide dynamic range of
+DR. Regardless of detector type, AEC systems are designed to (and must be appropriately calibrated
+to) terminate an x-ray exposure once a predetermined radiation exposure is recorded at the detector.
+Like screen/film systems, digital detectors have energy dependence, which in general differs from
+that of the AEC sensors (see Figure 1).[4] Depending on design and calibration of the AEC, the result
+can be digital image levels that vary from the desired level.
+     A well-designed AEC should be capable of modifying required detector exposures based on
+exposure conditions (typically selected kVP and mA) to compensate for energy dependence and
+exposure rate and thereby maintain a consistent image SNR.[19] Assuming that AEC performance
+is evaluated under clinically relevant conditions which can be simulated by various thicknesses of
+acrylic and kVP ranging from 60 to 120,[19] the KIND can serve as the indicator of image signal
+level for this purpose, just as optical density did for film. Adequate AEC performance with
+screen/film is considered to be a density variation of ±0.15 OD on a system using film with a
+gamma of 2.5. For equivalent performance on a DR system using AEC, one would expect KIND
+to remain constant with varying thickness and kVP (adjusting mA to result in exposure times
+greater than 10 ms) within ±7%.
+     In using KIND’s during AEC performance evaluation, several caveats must be noted. First, the
+KIND may be associated with a different image region from that used by AEC sensors; second, the
+size of the area used by KIND determination may introduce different field size and energy-related
+effects from those affecting the AEC; and third, many of the conventional radiographic systems
+used with DR were designed to compensate for screen/film energy dependencies, and may not be
+capable of providing constant response for DR.
+     Many radiographic systems in use today incorporate AEC systems designed for use with
+screen/film systems and may allow for energy compensation appropriate for screen/film. Such
+compensation may be hard-wired and unalterable, or may have insufficient ability to compensate
+appropriately for DR. In particular, it is often the case that KIND’s tend to be higher for AEC-
+based exposures at lower kV P’s, because the AEC compensation intended for rare-earth
+screen/film systems overcorrects for lower kVP’s.[20] If this is the case, KTGT(b,v) values for DI
+may need to be adjusted upward to reflect this energy dependence appropriately.
+     Appropriate KTGT(b,v) ranges for AEC performance evaluation must therefore take into
+account the age and pedigree of the radiographic system. Derived KTGT(b,v) limits for AEC test-
+ing are equivalent to those that are used for film (for example, ±0.15 optical density units).[21]
+Certainly, the much narrower latitude of screen/film calls for fairly tight AEC performance limits
+for reliable clinical results. Although desirable for DR as well, this may not be achievable in prac-
+tice at this time.
+
+
+
+
+                                                 18
+                                                      AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+X. Inappropriate Clinical Use of DI
+A final note regarding DIs and clinical techniques: even if images being produced clinically have cor-
+responding DIs well with the target range, the clinical techniques used may still not be appropriate.
+One can just as readily achieve an acceptable DI for an AP L-Spine view with 65 kVP as with 85 kVP;
+evidence of underpenetration and concomitant excess patient exposure with the lower kVP may be
+clear from the contrast and underexposure of the spine regions, but may be windowed and leveled out
+in a digital image. Similarly, poor collimation, unusual patient body habitus, the presence of pros-
+thetic devices, or the presence of gonadal shielding in the image may raise or lower DIs (depending on
+the exam and projection) and perhaps hide an inappropriate technique.[22,23,24,25] It is essential that all
+aspects of good clinical technique be adhered to and an appropriate DI value should not be interpreted
+as proof of good work.
+
+
+XI. Recommended Optional Features
+In addition to implementation of this standardized exposure indicator, there are opportunities for
+other useful tools to facilitate presentation of image processing-related information and to improve
+the overall quality of the imaging operation.
+    For instance, section III calls for an overlay that graphically illustrates the pixels in a given
+image that have been used to calculate QK. This is intended to provide a very quick method of
+determining that the automated segmentation software performed correctly for any image. A simi-
+lar feature would be to create a pop-up display of the Q histogram with the locations of the seg-
+mentation image pixels min and max overlaid on it showing the minimum and maximum Q values
+used for QK determination. Finally, there are many clever ways to indicate the DI for every image
+using a sliding bar or color-coded tool with position and/or color linked to the magnitude of DI.
+    Other highly desirable features are logs of the DI values and logs of the reasons for rejected
+and repeated images stored on the system. The anatomical view selection and technique factor
+information for every rejected image as well as the images themselves should also be stored on
+the system. Software to analyze these logs to assist with process improvement by identifying
+potential problematic exams, problems with equipment, and technologists in need of continuing
+education is also invaluable to the user community.
+    As already mentioned in section III, systems should provide a mechanism to export and
+import tables in a consistent format so that tables could be shared between imaging facilities using
+the same DR system. A process for updating the tables of all systems within a facility that is man-
+aged via a network would be extremely valuable so that changes in KTGT values can be readily dis-
+seminated to distributed systems.
+    For each clinical mode of operation other than general radiography for which a system is
+designed, the calibration conditions should be specified by the manufacturer (see section IX). The
+manufacturer should also provide the following:
+
+    • filter(s) to be utilized for establishing KSTD for general radiography as well as for other
+        modes of operation and should specify which body parts and views are associated with
+        each filter (see section XII),
+
+
+
+                                                   19
+AAPM REPORT NO. 116
+
+
+    • a means to readily mount/dismount the filter(s) on an x-ray collimator,
+    • mA, time/mAs, source-to-image distance (SID), grid or no grid, and system protocol set-
+        tings for calibration conditions,
+    •   the grid transmission factor associated with each beam condition (if present),
+    •   exact specification of how to configure the system to obtain the “for-processing” image
+        data,
+    •   written, step-by-step calibration protocol and recommended frequency of calibration,
+    •   full disclosure of the KTGT values associated with each body part and view,
+    •   specification of the accuracy and reproducibility of the KSTD for the standard beam con-
+        dition and the expected change in KIND for other beam conditions.
+
+The task group strongly recommends implementation of all of these ideas and anticipates the cre-
+ation of many more once the efforts of the equipment manufacturing community are brought to
+bear on these issues.
+
+
+XII. Application to Dedicated Chest, Mammography, Veterinary,
+and Dental Radiography
+KIND is intended to be used as a measure of image quality with respect to image noise. For low-
+energy x-rays, more incident radiation is required to create the same detector response as for high-
+energy x-rays. The variation in detector response for kVP values between 55 and 90 is sufficiently
+small to make KIND an effective indicator of image quality with respect to the recorded noise in the
+image.[4] For higher energies, this may not be the case. To maintain a consistent relationship between
+image noise and the indicator, it is possible that two standard beam conditions could be defined: one
+for imaging of the chest at tube potential settings above 100 kVP and one for all other radiographic
+images. This higher energy standard beam should be reasonably close to RQA9 (see Table 3).
+    For a tube with HVL of 5.00 at 120 kVP (RQR9), similar beam quality with HVL = 11.6 mm
+is obtained with 40 mm of pure aluminum as specified for RQA9 or with 1.0 mm Cu plus 4 mm
+Al (type 1100). If 11.6 mm Al HVL cannot be achieved at 120 kVP with the recommended filtra-
+tion, the additional aluminum filtration may be reduced and the kVP adjusted to achieve the
+required HVL.
+    Digital mammography, veterinary, and dental radiography can all potentially benefit from a
+universal exposure indicator for the same reasons discussed in this report. DR in these fields suf-
+fers the same problems with manufacturer-specific exposure indices from which DR suffers.
+Application to these areas would require modification of the calibration beam conditions to reflect
+the differences in typical beam attenuation and beam energies in clinical use.
+
+
+
+Table 3. A Standard Beam Condition for Dedicated Chest Imaging Systems
+                                                  Added                                   IEC
+Application               kVP                    Filtration              Target HVL    Surrogate
+Dedicated Chest         114−126          1.0 mm Cu + (0−4.0) mm Al*       11.6 ± 0.3     RQA9
+                                              or 40 mm pure Al             mm Al*
+* Type 1100
+
+
+                                                   20
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+   The conditions for general radiographic systems differ substantially from those for mammo-
+graphy systems. Developing a universal exposure indicator for mammography would be useful for
+providing technologists feedback about exposure adequacy, especially for institutions with digital
+mammography units from different manufacturers.
+
+
+References
+    1. Freedman, M., E. Pe, S.K. Mun, S.-C.B. Lo, and M. Nelson. (1993). “The potential for unnecessary
+       patient exposure from the use of storage phosphor imaging systems.” SPIE 1897:472−479 (1993).
+    2. Gur, D., C.R. Fuhman, J.H. Feist, R. Slifko, and B. Peace. “Natural Migration to a Higher Dose in CR
+       Imaging” in Proceedings of the Eighth European Congress of Radiology, Vienna, Sep 12−17, p. 154,
+       1993.
+    3. Seibert, J.A., D.K. Shelton, and E.H. Moore. (1996). “Computed radiography x-ray exposure trends.”
+       Acad Radiol 4:313−318.
+    4. Van Metter, R., and J. Yorkston. “Applying a Proposed Definition for Receptor Dose to Digital
+       Projection Images” in Proceedings of SPIE -- Medical Imaging 2006: Physics of Medical Imaging.
+       M. J. Flynn and J. Hsieh (eds.). vol. 6142, pp. 426−444, March 2006.
+    5. Huda, W. (2005). “The current concept of speed should not be used to describe digital imaging systems.”
+       Radiology 234: 345−346.
+    6. International Organization for Standardization (ISO). ISO 9236-1:2004. “Photography -
+       Sensitometry of Screen/Film Systems for Medical Radiography − Part 1: Determination of sensito-
+       metric curve shape, speed and average gradient.” Geneva: ISO, 2004.
+    7. Willis, C.E., and T.L. Slovis. (2004). “The ALARA concept in pediatric CR and DR: Dose reduction
+       in pediatric radiographic exams - A white paper conference executive summary.” Pediatr Radiol 34
+       (Suppl 3):S162−S164.
+    8. Digital Imaging Communications in Medicine (DICOM) 3.0, Performance Standard (PS) 3.14,
+       Grayscale Standard Display Function. Rosslyn, VA: National Electrical Manufacturers Association
+       (NEMA),2007.
+    9. Digital Imaging Communications in Medicine (DICOM) 3.0, Supplement 111: Segmentation
+       Storage SOP Class. Rosslyn, VA: National Electrical Manufacturers Association (NEMA), 2007.
+   10. Digital Imaging Communications in Medicine (DICOM) 3.0, Supplement 33: Grayscale Softcopy
+       Presentation State Storage. Rosslyn, VA: National Electrical Manufacturers Association (NEMA),
+       2007.
+   11. Digital Imaging Communications in Medicine (DICOM) 3.0, Performance Standard (PS) 3.10,
+       Media Storage and File Format for Media Interchange. Rosslyn, VA: National Electrical
+       Manufacturers Association (NEMA), 2007.
+   12. International Electrotechnical Commission (IEC). IEC 61267 (2005-11), Medical Diagnostic X-Ray
+       Equipment - Radiation Conditions for Use in the Determination of Characteristics. Geneva: IEC,
+       2005.
+   13. International Electrotechnical Commission (IEC). IEC 62220-1 Ed.1 (2003-10), Medical Electrical
+       Equipment - Characteristics of Digital X-Ray Imaging Devices - Part 1: Determination of the
+       Detective Quantum Efficiency Geneva: IEC, 2003.
+   14. Samei, E., J.A. Seibert, C. Willis, M. Flynn, E. Mah, and K. Junck. (2001). “Performance evaluation
+       of computed radiography systems.” Med Phys 28:361−371.
+   15. Seibert, J.A., T. Bogucki, T. Ciona, W. Huda, A. Karellas, J. Mercier, E. Samei, S.J. Shepard, B.
+       Stewart, K. Strauss, O. Suleiman, D. Tucker, R. Uzenoff, J. Weiser, and C. Willis. AAPM Report #93,
+
+                                                    21
+AAPM REPORT NO. 116
+
+
+       Quality Control and Acceptance Testing of Photostimulable Storage Phosphor Imaging Systems,
+       American Association of Physicists in Medicine, 2006
+   16. Van Metter, R., and J. Yorkston. “Toward a Universal Definition of Speed for Digitally Acquired
+       Projection Images.” Proceedings of SPIE -- Medical Imaging 2005: Physics of Medical Imaging.
+       M.J. Flynn (ed.). vol 5745, pp. 442-457, April 2005.
+   17. Samei, E., A. Badano, D. Chakraborty, K. Compton, C. Cornelius, K. Corrigan, M. Flynn, B.
+       Hemminger, N. Hangiandreou, J. Johnson, D. Moxley-Stevens, W. Pavlicek, H. Roehrig, L. Rutz, E.
+       Samei, S. J. Shepard, R. Uzenoff, J. Wang, and C. Willis. Assessment of Display Performance for
+       Medical Imaging Ssystems, AAPM Report OR-3, American Association of Physicists in Medicine,
+       2005.
+   18. Hendee, W.R., and R.P. Rossi. Quality Assurance for Radiographic X-ray Units and Associated
+       Equipment. DHEW Publications (USFDA) 79-8094, 1979.
+   19. Christodoulou, E.G., M.M. Goodsitt, H.-P. Chan, and T. W. Hepburn. (2000). “Phototimer setup for
+       CR imaging.” Med Phys 27(12):2652−2658.
+   20. Goldman, L.W. “Speed Values, AEC Performance Evaluation and Quality Control with Digital
+       Receptors” in Specifications, Performance Evaluations, and Quality Assurance for Radiographic
+       and Fluoroscopic Equipment in the Digital Era. L.W. Goldman and M.V. Yester (eds.). AAPM
+       Medical Physics Monograph #30. Madison, WI: Medical Physics Publishing, pp. 271−297,2004.
+   21. Wilkinson, L.E., and J. C. P. Heggie. (1997). “Determination of correct AEC function with computed
+       radiography cassettes.” Australas Phys Eng Sci Med 20(3):186−191.
+   22. Willis, C.E., J. C. Weiser, R.G. Leckie, J. Romlein, and G. Norton. “Optimization and Quality Control
+       of Computed Radiography,” SPIE Medical Imaging VI: PACS Design and Evaluation, vol. 2164, pp.
+       178−185, 1994.
+   23. Willis, C.E., R.G. Leckie, J. Carter, M.P. Williamson, S.D. Scotti, and G. Norton. “Objective
+       Measures of Quality Assurance in a Computed Radiography-based Radiology Department.” SPIE
+       Medical Imaging 1995: Physics of Medical Imaging, vol. 2432, pp. 588−599, 1995.
+   24. Chotas, H.G., and C.E. Ravin. (1992). “Digital radiography with photostimulable storage phosphors:
+       control of detector latitude in chest imaging,” Invest Radiol 27:823−828.
+   25. Arreola, M., and L. Rill. (2004). “Management of pediatric radiation dose using Canon digital radi-
+       ography.” Pediatr Radiol 34(Suppl 3):S221−S226 (2004).
+
+
+
+
+                                                   22
+                                                    AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+                                         Appendix A
+               RQA5 vs. TG-116 Standard Beam Conditions,
+                 XSPECT 3.5b Computation Simulation
+
+                                   M. Flynn, 15 July 2007
+
+
+Simulation of Standard Beam Conditions
+Computational simulations using the XSPECT toolkit were used to simulate:
+
+   • the x-ray spectrum emitted by typical x-ray tube and collimator assemblies
+   • the attenuation of the spectrum by various amounts of added filtration
+   • the half-value of the x-ray spectrum
+       o incident on the added filtration
+       o incident on a detector
+   •   the signal and noise of a digital radiography detector.
+
+X-ray Source Conditions
+Three x-ray sources were considered based on their HVL at 70 kVP:
+   A. IEC RQR5 - 2.58 mm Al, 70 kVP, Al intrinsic filtration
+   B. Henry Ford Health System (HFHS) Rm 3 - 3.02 mm Al, 70 kVP, Al/Cu intrinsic filtration
+   C. HVL 4 - 4.00 mm Al, 70 kVP, Al/Cu intrinsic filtration
+
+   Source A is a lightly filtered source based on the IEC RQR5 specifications. Source B is based
+   on a clinical system at HFHS for which the HVL has been experimentally measured. Source C
+   is a hypothetical system with relatively heavy intrinsic filtration.
+
+
+Added Filtration
+Three added filtration configurations were considered:
+
+   A. 21 mm aluminum (99.9%, RQA5).
+   B. 0.5 mm copper and 2.8 mm aluminum (99.0% Al).
+   C. 24.5 cm muscle (National Bureau of Standards (NBS) muscle composition).[A1]
+   Added filtration A is based on the RQA5 standard and filtration B on the TG-116 standard. For
+   filtration B, the aluminum thickness is specified as 2.8 mm, based on results indicating that the
+   HVL matches at the same kVP. The added aluminum was iteratively changed to determine this
+   value. Additionally, the relation between added aluminum and the kVP needed to obtain a HVL
+   of 6.8 was determined. Similarly, 24.5 cm of muscle is chosen to match the HVL at the same kVP.
+
+
+
+
+                                                 23
+AAPM REPORT NO. 116
+
+
+    The results are summarized as
+
+    • The three added filtration conditions produce nearly identical spectra at the same kVP when
+        the kVP is adjusted to obtain a HVL of 6.8 (see Figure A1)
+    •   The HVL increases/decreases by about 0.1 for a 1 kVP change (see Figure A2)
+    •   The kVP for which a HVL of 6.8 is produced is related to the HVL of the source with a slope
+        of −2.5 kV/mm (73.6 kVP at 2.58, 72.6 at 3.02, 70.1 at 4.00 mm)
+    •   The detected signal and SNR in relation to kVP is nearly identical for added filtrations A
+        and B above (see Figure A3).
+
+
+
+
+Figure A1a. Using a source with HVL=3.02 mm Al, the spectra for alternative additive filtrations are shown. Both
+spectra are for kV=72.59 and both have HVL=6.80. The points have been adjusted as indicated to produce the same
+exposure (mR) as the line. The spectral units are in #/mAs-cm2-keV. The spectra for 21 mm added aluminum (type
+1090, 99.9%) is shown as a solid curve.
+
+
+
+
+                                                      24
+                                                                                                  APPENDIX A
+
+
+
+
+Figure A1b. The spectrum with added filtration of 24.5 cm of muscle (NBS) is shown as points. These values have
+been increased by a factor of 43.7 to normalize the exposure.
+
+
+
+
+                                                     25
+AAPM REPORT NO. 116
+
+
+
+
+Figure A2a. The points are for 0.5 mm Cu plus 2.8 mm Al (type 1100) added filtration. The HVL of both is 6.8 at
+a kV of 72.59. For both, the slope of the relation with kV is 0.094 mm/kV. As a rule of thumb, a 1 kV increase will
+produce a 0.1 increase in HVL.
+
+
+
+
+                                                       26
+                                                                                                   APPENDIX A
+
+
+
+
+Figure A2b. The points are for 24.5 cm muscle (NBS) added filtration. The sensitivity of HVL in relation to kV is
+slightly more compared with that for 21 mm Al added filtration.
+
+
+
+
+                                                      27
+AAPM REPORT NO. 116
+
+
+
+
+Figure A3a. Using a source with HVL=3.02 mm Al, the detected NEQ (i.e., SNR2) for alternative additive filtra-
+tions are shown in relation to kV. The response for 21 mm added aluminum (type 1090, 99.9%) is shown as a solid
+curve. The points are for 0.5 mm Cu plus 2.8 mm Al (1100) added filtration. The two conditions produce nearly iden-
+tical response. As expected, there is a slow decrease as kV is increased.
+
+
+
+
+XSPECT Computational Tools
+Half-Value Layer (HVL, aluminum) was computed using the XSPECT toolkit for modeling x-ray
+transmission imaging. This toolkit contains programs for generating and modifying x-ray spectra
+stored in a common format. Utility programs modify the spectra to account for primary beam attenua-
+tion, unit conversion, and distance effects. Other programs compute the exposure in mR, the HVL of
+the x-ray spectrum, and the response of a detector in terms of the recorded signal and noise in units of
+electrons. The toolkit is presently being used in a graduate laboratory course on radiation imaging
+(NERS 580, University of Michigan, http://www.engin.umich.edu/class/ners580).
+
+
+
+
+                                                       28
+                                                                                                       APPENDIX A
+
+
+
+
+Figure A3b. With similar conditions as for Figure A3a, the detected signal (electrons) per incident mR (scatter free)
+is seen to vary slowly with kV.
+
+
+
+
+X-Ray Emission Spectrum (SPECT_GEN)
+X-ray emission spectra in units of photons/(keV-sr-mA-s) are obtained from the SPECT_GEN mod-
+ule. In generating a spectrum, the user defines the kVP, atomic number, tube angle, voltage waveform,
+and spectral increment. The program then generates a spectrum of bremsstrahlung and characteristic
+radiations and corrects them for self-absorption. The spectral calculations are based on equations
+from Storm[A2,A3] and contain empirical corrections for tube angle and voltage ripple. The results
+from XSPECT have been crosschecked for molybdenum and tungsten tubes against Fewell’s data
+published by the U.S. Food and Drug Administration (FDA) through the Bureau of Radiological
+Health.[A4].
+
+
+
+
+                                                        29
+AAPM REPORT NO. 116
+
+
+Primary Beam Attenuation (ATTEN)
+Attenuation of the emission spectrum by various layers of materials is done using the program ATTEN
+that applies Beer’s law to the primary beam based on the material composition of the layer. Material
+compositions are stored in material files having a standardized format and maintained in a material
+library. Photoelectric cross sections for the elements were obtained from the work of Biggs.[A5] The
+coherent and incoherent cross sections were taken from the work of McMaster.[A6] For aluminum
+materials, type 1100 was used for 99.0% purity material and type 1090 for 99.9% purity material.
+Typical impurities were taken from matweb.[A7]
+
+
+Entrance Exposure (mR)
+After the beam is attenuated, a simple inverse square law is applied to yield the spectrum at the
+entrance point to the patient. The mR program then computes the exposure at this point. The computa-
+tion of exposure involved summing the product of energy fluence (ergs/cm2/keV) and the air energy
+absorption coefficient over the range of spectral energies.[A6] A conversion factor of 87.643
+(ergs/gm)/roentgen is used along with the air ionization factor of 33.97 joules/coulomb.
+
+
+
+Detector Response (DETECT)
+The DETECT routine is used to compute detector signal by a weighted numeric integral of the x-ray
+energy spectrum incident on the detector assembly, φd (E) (photons/{keV-cm2-mA-s}):
+
+                       kVP                                       kVP
+               S = Ap ∫ ηS ( E ) Eφd ( E ) dE       σ S2 = A p   ∫ (ησ ( E )) E φd ( E ) dE,
+                                                                            2   2
+
+                        0                                         0
+
+where Ap is the pixel area in cm2 and S has units of electrons/(pixel-mA-s). The signal transfer effi-
+ciency, ηs(E) (electrons/keV), represents the average number of electrons produced in the detector by
+an incident x-ray with energy E. If ηs(E) equals 1.0 for all energies, the signal computed is that for an
+ideal energy integrating detector, Si.
+    The noise variance of the detector signal was computed using a similar integration (see equation
+above). The noise variance, σ S2 , has units of electrons2/(pixel-mA-s). The noise transfer efficiency,
+(ηs(E))2 (electrons2/keV)2, represents the average contribution to the signal variance of a pixel by an
+incident x-ray with energy E. The noise computed for an ideal detector is similarly obtained by setting
+ηs(E)=1. The signal-to-noise ratio, S/σS , is seen to be proportional to Ap as expected.
+                                                                          12
+
+    The accuracy of the signal and noise estimate computed by the DETECT routine depends on an
+accurate knowledge of the transfer efficiencies ηs(E) and σ S2 . For this work, both were determined by
+using a Monte Carlo analysis to estimate the detector's signal probability distribution function,
+p(q,E)dq, that describes the probability of collecting q electrons when an x-ray of energy E is incident
+on the detector. The detector tables for a 500-micron thick selenium direct DR detector were used in
+this comparison.
+
+
+
+                                                   30
+                                                                                             APPENDIX A
+
+
+References
+  A1. Hubbell, J.H. Photon Cross Sections, Attenuation Coefficients, and Energy Absorption Coefficients
+      from 10 keV to 100 GeV. NBS 29. Washington, DC: National Bureau of Standards (NBS), 1969.
+  A2. Storm, E. (1978). “Calculated bremsstrahlung spectra from thick tungsten targets.” Phys Rev A 5(6):
+      2328-2338.
+  A3. Storm, E. (1972). “Emission of characteristic L and K radiation from thick tungsten targets.” J Appl
+      Phys 43(6):2790-2796.
+  A4. Fewell, T.R., and R.E. Shuping. Handbook of Mammographic X-ray Spectra. HEW publication (FDA)
+      79-8071, 1978 (Revised data tables obtained from BRH).
+  A5. Biggs, F., and R. Lighthill. “Analytical Approximations for X-Ray Cross Sections.” Part II, SC-RR-
+      710507. Sandia Laboratories, Albuquerque, New Mexico, 1971.
+  A6. McMaster, W.H., N.K. Del Grande, J.H. Mallett, and J.H. Hubbell. “Compilation of X-Ray Cross
+      Sections.” Sec. 2, Rev. 1, University of California, Livermore, U. S. Atomic Energy Commission
+      Report UCRL-50174, 1969.
+  A7. www.matweb.com accessed 25 June 2008.
+
+
+
+
+                                                  31
+                                                                                          APPENDIX B
+
+
+                                         Appendix B
+
+     Comparison of Pure Aluminum vs. Commercially Available
+                Types 1100 and 1190 Aluminum
+         and a Copper/Aluminum Alternative for RQA5
+                       David L. Leong, Wei Zhao, Patrick C. Brennan
+                                   November 25, 2007
+
+Introduction
+Task Group 116 has recommended 0.5 mm copper (Cu) with 0 to 4 mm of Alloy 1100 aluminum (Al) as
+an alternative x-ray beam hardener to obtain the same RQA5 spectrum as specified in IEC
+61267:2005.[B1] IEC 61267 requires the use of 99.9% pure aluminum for the RQA5 radiation qualities.
+    Alloy 1190 is a 99.9% pure Al alloy that meets the requirements of IEC 61267. In attempts to pur-
+chase Alloy 1190, the authors were unsuccessful in finding an off-the-shelf source; alternatively
+Alloy 1100 is a 99.0% pure Al alloy that is widely available on the market. Alloy 1190 is registered
+with 99.9% purity, which is higher than what is considered the highest purity commercial grade Al
+with 99.45%.[B2] Alloy 1190 falls into the category of scientific grade (also called ultra pure alu-
+minum) and is available only through specialty metals companies for a high price, in small quantities
+and limited form.
+    What is currently unknown is the impact of using the widely available Alloy 1100 compared with
+the specified Alloy 1190.
+
+
+Materials and Methods
+Since aluminum composition will vary from batch to batch and from the source of the raw materials,
+the first goal using simulation is to determine mixture compositions that reflect the maximum, mini-
+mum, and median attenuation possible for Alloys 1100 and 1190. Since it is not possible to simulate
+all the possible combinations of elements in a specific batch, mixture modeling theory was used to
+select a reasonable set of mixtures as input to the simulation model to produce a prediction formula.
+     To perform the mixture modeling, the custom design platform in JMP 6 software (SAS Institute,
+Cary, NC) was used. A total of 1395 mixtures for each alloy using 30 elements were made in order to
+develop an accurate prediction formula.
+     Once the mixtures were selected in JMP, radiation quality simulation was performed using IDL
+6.4 (IIT Visual Solution, Boulder, CO). The initial beam spectrum was calculated using the method
+developed by Boone and Seibert,[B3] and to this beam different filters were applied depending on the
+results desired. As the filters were applied, the attenuation was calculated with 1 keV interval from
+1 to 70 keV.
+     The mass attenuation coefficients used in the simulation were taken from Cullen et al.[B4], with
+the exception of vanadium which was from the National Institute of Standards and Technology
+(NIST)[B5] mass attenuation coefficients dataset. For a composite material like Alloy 1100, the linear
+attenuation coefficient μ was calculated according to the weight fraction of each element.
+                                                 33
+AAPM REPORT NO. 116
+
+
+Table B1. Simulated HVL Results from the Various Alloy Batches
+              Pure Al          Alloy 1190      Alloy 1100        0.5Cu/1Al     0.5Cu/2Al        0.5Cu/3Al
+Mean           6.7638          6.7885           6.8803            6.6567         6.7539          6.8460
+Std Dev        --              0.0006293        0.0141664         0.0007604      0.0014424       0.0020562
+Mean-Target   −0.0362         −0.0115           0.0803           −0.1433        −0.0461          0.046
+
+
+
+    To determine the half-value layer (HVL) for each Al Alloy mixture model, the initial x-ray spec-
+trum was hardened to RQR5 with pure Al to achieve a HVL of 2.58 mm Al. Then the composite filter
+was added and a new beam spectrum calculated. Last, the HVL was determined for the new beam
+using 100% pure Al. For the calculation of Cu/Al filters, pure copper was used first and then the 1100
+Alloy.
+    Once simulated values were determined for each mixture, JMP 7 software (SAS Institute, Cary,
+NC) was used to develop a HVL prediction formula. Next, the HVL for 5000 simulated batches of
+each Alloy was generated using the HVL prediction formula.
+
+
+
+Results and Discussion
+The numeric details of the distribution of the 5000 simulated samples of both Alloys 1100 and 1190
+are listed in Table B1. It is important to note that the standard deviation of Alloy 1100 is 22.5 times
+greater than that of Alloy 1190, but the ±3 standard deviation is still only ±0.0425 mm Al. The last line
+in the table shows the deviation of the mean from the RQA5 target of 6.8 mm Al.
+      From the simulation results, we see that the HVL using pure Al is slightly lower than the target of
+6.8, but the rounding to one decimal point is 6.8. Out of all alloys tested, 1190 provides a HVL that is
+the closest to the target with a mean difference of just 0.01 mm Al. The standard deviation is negligi-
+ble, so it can be expected that any batch of Alloy 1190 would produce a HVL value rounded to 6.79
+mm Al. HVL for Alloy 1100 had a noticeable shift from the target of 6.8, which may be attributed to
+the addition of Cu and iron (Fe) to the alloy. With a range of 6.8803±0.0283 mm Al covering 95% of all
+batches, we have a range of 6.8525 to 6.9081 mm Al. The 0.1 mm Al error margin is acceptable for
+clinical use and well within the ±0.25 mm Al proposed by TG-116.
+     Figure B1 shows the comparison between the mean beam spectrum for Alloy 1100 and that of pure
+Al. Alloy 1100 absorbs slightly less radiation, and the beam quality is shifted slightly harder. This can
+also be seen in Table B1 with the mean having a difference of 0.1165 mm Al. A normalized plot of the
+two spectra makes it easier to see the difference in beam hardness.
+     Figure B2 compares the spectrum for 21 mm pure Al to that for Cu/Al combination⎯there is a large
+difference in the height of the beam spectra. Using the 0.5 mm Cu and 2 mm Al filter combination, there
+are over two times more photons. Figures B3a and B3b show the spectra for different Cu/Al filters nor-
+malized to the output of pure Al. It can be seen that there is a left shift with 2 mm Al, and with 3 mm Al,
+the spectra are nearly identical. The HVL values in Table B1 show that 2.5 mm Al with 0.5 mm Cu
+would have essentially the same HVL as 21 mm pure Al.
+     In addition to the investigation by the authors, several TG-116 members performed testing of x-ray
+systems at their institutions to determine if the target HVL of 6.8 mm Al can be achieved using 0.5 mm
+Cu filter in combination with an Al filter ranging in thickness from 0 to 4 mm. A total of 25 systems
+
+                                                    34
+                                                                                              APPENDIX B
+
+
+
+
+Figure B1a. Simulated beam spectrum comparison of 21 mm 100% Al and the mean of 21 mm Alloy 1100 at 70 kVP.
+
+
+
+
+Figure B1b. Simulated beam spectrum comparison of 21 mm 100% Al and the mean of 21 mm Alloy 1100 at
+70 kVP normalized to the 100% Al spectrum to allow for better visualization of the differences.
+
+
+                                                    35
+AAPM REPORT NO. 116
+
+
+
+
+Figure B2. Simulated beam spectrum comparison of 0.5 mm Cu & 2.0 mm Alloy 1100 and 21 mm 100% Al at
+70 kVP.
+
+
+
+
+Figure B3a. Simulated beam spectrum comparison of 0.5 mm Cu & 2.0 mm Alloy 1100 and 21 mm 100% Al at
+70 kVP normalized to the 100% Al spectrum to allow for better visualization of the differences.
+
+
+                                                36
+                                                                                             APPENDIX B
+
+
+
+
+Figure B3b. Simulated beam spectrum comparison of 0.5 mm Cu & 3.0 mm Alloy 1100 and 21 mm 100% Al at
+70 kVP normalized to the 100% Al spectrum to allow for better visualization of the differences.
+
+
+
+
+were tested. The initial filtration was measured for all 25 systems and the results are plotted in Figure
+B4.[B6] It is important to note that out of the 25 systems only 6 had initial HVLs of less than the maxi-
+mum of 2.58 mm Al specified in IEC 61267.
+
+
+
+
+Figure B4. Initial x-ray system HVL at 70 kVP.
+
+                                                   37
+AAPM REPORT NO. 116
+
+
+
+
+Figure B5. Approximate Al to add to 0.5 mm Cu for RQA5 at 70 kVP.
+
+
+
+
+        Since it is usually difficult to remove filtration in a clinical setting, it is much more practical
+to adjust the added filtration to reach the target HVL of 6.8 mm Al. The AAPM recommendation of
+varying the amount of Al in the Cu/Al filter combination is an appropriate method. Figure B5 plots the
+amount of additional Al needed to achieve the target HVL of 6.8 mm for different initial HVL values.
+
+
+Conclusion
+We conclude that the IEC 61267 requirement to use 99.9% pure Al is unrealistic and is unnecessary.
+While the use of 21 mm of Alloy 1100 Al is a close substitute, a slightly thinner filter would be appro-
+priate to achieve the target HVL of 6.8 mm Al.
+     The use of a Cu/Al combination filter is an adequate alternative. Our simulation results show that
+0.5 mm Cu and 3.0 mm Al provide the same HVL as 21 mm of pure Al. A side benefit of using Cu/Al
+combination is that it requires half of the exposure to achieve the same exposure as a 21 mm pure Al
+filter.
+
+
+
+
+                                                    38
+                                                                                               APPENDIX B
+
+
+References
+  B1. International Electrotechnical Commission (IEC). IEC 61267. “Medical Diagnostic X-Ray
+      Equipment - Radiation Conditions for Use in the Determination of Characteristics.” Geneva: IEC,
+      2005 .
+  B2. Mineral Facts and Problems. United States Department of the Interior, Preprint from Bulletin 675,
+      Aluminum, pp. 3−4, Washington, D.C.: Bureau of Mines, 1985.
+  B3. Boone, J.M., and J.A. Seibert. (1997). “An accurate method for computer-generating tungsten anode
+      x-ray spectra from 30 to 140 kV.” Med Phys 24:1661−1670.
+  B4. Cullen, D.E., M.H. Chen, J.H. Hubbell, S.T. Perkins, E.F. Plechaty, J.A. Rathkopf, and J. H. Scofield.
+      “Tables and Graphs of Photon-Interaction Cross Sections from 10 eV to 100 GeV Derived from the
+      LLNL Evaluated Photon Data Library. Part A: Z=1 to 50. Part B: Z=51 to 100.” Lawrence Livermore
+      National Laboratory Report No. UCRL-50400, 1989.
+  B5. Hubbell, J. H., and S. M. Seltzer. Tables of X-Ray Mass Attenuation Coefficients and Mass Energy-
+      Absorption Coefficients (version 1.4). National Institute of Standards and Technology (NIST), 2004,
+      http://physics.nist.gov/xaamdi.
+  B6. Shepard, J.S., M.D. Anderson Cancer Center, Houston, TX. Private communication.
+
+
+
+
+                                                   39
+                                                                                              APPENDIX C
+
+
+                                           Appendix C
+                        Current Status of Exposure Indices
+
+A variety of exposure indicators have been provided by manufacturers of DR systems. Some of these
+are summarized in Table C1, which illustrates the wide variation in terms, units, mathematical forms,
+and calibration conditions of these exposure indicators. Inconsistency among manufacturers is the
+primary drawback for clinical use of exposure indices at present. Inconsistency creates confusion for
+practitioners who work with systems from more than one vendor, or those who have been trained on
+one system, but practice using another.
+     Appendices D−O present detailed descriptions of the exposure indices provided by some of the
+digital radiography vendors.
+     The use of exposure indicators began with the cassette-based computed radiography (CR) sys-
+tems. Because of the extremely wide dynamic range of the CR detectors and the relatively narrow
+dynamic range of exposures in the radiographic projection, the first exposure indicators were devel-
+oped to estimate the exposure to the detector in order to modify the gain for harvesting the latent
+image. Later cassette-based systems employed the same sort of estimates to re-scale the digitized data
+to increase contrast and to compensate for variations in exposure factor. Although not originally
+intended by the manufacturers to be used for quality control purposes, practitioners soon recognized
+that the exposure indicator was a useful means to evaluate the adequacy of radiation exposure to the
+detector and, thus indirectly, the appropriateness of selected technique factors. Not only was this use-
+ful to the technologists when setting technique factors, but, from a more global perspective, it allowed
+hospitals and clinics to analyze overall exposure trends.[C1] QC programs based on exposure indicator
+monitoring have been shown to moderate exposure in actual clinical practice.[C2] This practice has
+matured to the point where some manufacturers now offer automated tools to log and report exposure
+indicator statistical information for the purposes of QC analysis.
+     Exposure indicators for cassette-based CR systems from several manufacturers are presented in
+appendices D through G, K, and M.
+     Fujifilm’s so-called “Sensitivity” or “S-number” is the oldest exposure indicator. It closely mim-
+ics the concept of “speed class” that is familiar to technologists. That is, when operated in Automatic
+or Semi-automatic Exposure Data Recognizer (EDR) mode, the index value increases with a decrease
+in exposure to the detector and vice versa. In an absolute sense, the numerical value of the indicator
+does not correspond exactly with the ISO 9236-1 definition of speed, so there is some confusion with
+the nomenclature.[C3] Accurate interpretation of the S-number is limited without knowledge of the
+value of “Latitude” or “L-number” for the particular image.[C4] Approximately 2.5 times as much
+exposure is required to produce the same S-number on a high resolution (HR) cassette as with a stan-
+dard resolution (ST) cassette. The QC value of this indicator is compromised in the vendor’s most
+recent software in that the user can retrospectively modify the S-number value. This feature creates
+uncertainty in the validity of the S-number in representing exposure trends.
+     Kodak CR uses an exposure indicator known as the “Exposure Index,” or “EI,” which represents the
+average pixel value of the clinical region of interest. Because of the characteristic function of the digi-
+tized image, a change of 300 in the value of EI indicates a change of a factor of 2 in exposure to the
+
+
+                                                    41
+AAPM REPORT NO. 116
+
+
+Table C1. DR Exposure Indicators, Units, and Calibration Conditions (Adapted from reference [C5])
+
+
+
+
+                                                     42
+                                                                                              APPENDIX C
+
+
+detector. Therefore, EI can be considered to be expressed in units of “mbels.” It is important to note that
+the target EI value differs for general purpose (GP) and detail (HR) cassettes for this manufacturer.
+     Agfa CR uses an exposure indicator known as “lgM” which represents the logarithm of the
+median exposure value within a region of interest (ROI). Each image is assigned a user-selected
+speed class that determines the gain at which the image will be processed. Because of this, the actual
+radiation exposure required to produce a specific lgM value differs with different speed class setting.
+When the numerical value of lgM changes by 0.301 (the logarithm of 2), this indicates a factor of 2
+difference in the exposure to the detector. Therefore, lgM can be considered to be expressed in units
+of “bels.”
+     For the most part cassetteless DR manufacturers have been slow in developing exposure indices.
+Several of the vendors did not originally, and some still do not, incorporate a “true” exposure indica-
+tor, i.e., a quantity that reports radiation exposure to the detector. Instead, they relied on dose-area
+product (DAP), kerma-area product (KAP), or other quantities that represent an estimate of dose to
+the patient. These values were straightforward for the manufacturers to implement because the inte-
+grated systems allowed for knowledge of the generator settings, collimator field size, etc., which
+were used to calculate the value and are now required by IEC (and, hence, National Electrical
+Manufacturers Association [NEMA]). While these values may be of some use for calculating patient
+dose, they provide no useful information to the technologist with respect to the adequacy of radiation
+exposure to the detector.
+     Of those cassetteless DR systems utilizing detector exposure indicators, four are presented in the
+appendices: Imaging Dynamics; Philips; GE Healthcare; and Siemens Medical Systems. Not to be
+confused with the Kodak “EI,” Philips uses an exposure index, “EI,” that is inversely proportional to
+the air kerma, so that it somewhat parallels the S-number described above for Fujifilm. Unlike the
+Fujifilm approach, Philips conforms to the ISO 9236-1 convention for speed. The Philips EI also dif-
+fers from Fujifilm S-number in that the scale used for EI is represented in bigger discrete steps (e.g.,
+100, 125, 160, 200, 250, 320, 400, 500, etc.). The EI steps are such that it takes approximately a 25%
+change in exposure for a change in EI step to occur, thus smaller changes in technique factor selection
+go undetected from an EI standpoint.
+     One of the key steps in calculation of any exposure indicator is the segmentation of anatomy or
+determination of the ROI. The determination of exposure indicator is oftentimes done with the same
+segmentation as that used for data scaling and grayscale processing. Many indices are quite sensitive
+to anatomical menu selection because the segmentation process is dependent on anatomical menu
+selection. In its more recent versions, Philips has improved upon this by decoupling the EI calculation
+from segmentation.
+     Imaging Dynamics has introduced a unique index called “f #.” The value of the f # is a dimension-
+less scalar providing the technologist with an indication of the direction and magnitude of their tech-
+nique selection versus an established target. Negative values represent underexposure and positive
+values indicate overexposure. The absolute value represents the deviation from the target exposure by
+factors of 2.
+     Canon introduced a cassette-based DR system for retrofitting existing x-ray generators. As such,
+the detector system had limited knowledge of exposure factors similar to that of cassette-based CR
+systems. Canon DR provided an exposure indicator called “Reached Exposure Value” or “REX.” The
+numerical value of REX is a function of the “brightness” and “contrast” selected by the operator. For a
+
+
+                                                   43
+AAPM REPORT NO. 116
+
+
+brightness setting of 16 and a contrast setting of 10, our empirical data at 70 kVP plus 1.5 mm Cu indi-
+cates a REX of approximately 100 per mR with a correlation coefficient of 0.998. By admonishing the
+technologists against modifying brightness and contrast, REX has been demonstrated to have utility
+in oversight of exposure factor.[C6]
+     GE delayed introduction of a detector exposure indicator, instead using DAP for patient dose esti-
+mates as described above. However, on its most recent announced cassetteless DR product, GE incor-
+porates three additional parameters indicating detector exposure, including a “Detector Exposure
+Index,” or “DEI,” which is a unitless metric comparing detector exposure to the expected exposure
+value.
+     All of these exposure indices share certain limitations. Calibration of the exposure indicator is one
+of the significant sources of variability among manufacturers. The accuracy of each indicator depends
+on proper calibration to a specific set of exposure conditions.[C7] The exposure conditions differ dras-
+tically among the manufacturers primarily with regard to use of added filtration or its absence. It has
+been shown that a hardened x-ray beam minimizes the sensitivity of the pixel value, and thus exposure
+indicator, to kVP and beam energy variations.[C8] A filtered x-ray beam also gives a better clinical rep-
+resentation in that the energy spectrum is more similar to that exiting a patient and incident on the
+detector during clinical use.
+     Another limitation shared by the various exposure indices is sensitivity to the mathematical
+processes used to identify collimation boundaries and segmentation of the anatomically relevant data.
+The determination of the VOI is a key step in determining the exposure index. The mathematical algo-
+rithms should be robust enough to provide a reasonably accurate and reliable estimate of the exposure
+indicator regardless of collimation boundaries, anatomical positioning, inclusion of foreign bodies,
+etc., but this is not always the case. In addition, if these processes are performed in conjunction with
+the segmentation done for image processing purposes, the exposure indicator will be dependent upon
+the anatomical menu selection.
+     Some cassetteless DR vendors have implemented methods to address this issue. These methods,
+having evolved independently by different groups and based on different technologies and system
+architectures, vary widely. All methods in use today share a common end result: they all report a
+value that reflects the system sensitivity for a given exposure. This may be used to determine the
+exposure incident on the image detector. The value should be accurate, consistent, and reproducible.
+A system that provides inconsistent feedback may result in inconsistent image quality and causes
+confusion and frustration for the radiologists and the technical staff. Some systems only indicate the
+DAP to an ideal patient, which is of no use in managing image quality and only satisfies certain reg-
+ulatory requirements.
+     The additional appendices contain more detailed descriptions of some of the approaches that have
+been developed by the various manufacturers.
+
+
+
+
+                                                   44
+                                                                                                APPENDIX C
+
+
+References
+  C1. Willis, C.E., J.C. Weiser, R.G. Leckie, J. Romlein, and G. Norton. “Optimization and Quality Control
+      of Computed Radiography.” SPIE Medical Imaging VI: PACS Design and Evaluation, vol. 2164, pp.
+      178−185,1994.
+  C2. Seibert, J.A., D.K. Shelton, and E.H. Moore. (1996). “Computed radiography x-ray exposure trends.”
+      Acad Radiol 4:313−318.
+  C3. Huda, W. (2005). “The current concept of speed should not be used to describe digital imaging systems.”
+      Radiology 234:345−346.
+  C4. Chotas, H.G., and C.E. Ravin. (1992). “Digital radiography with photostimulable storage phosphors:
+      control of detector latitude in chest imaging.” Invest Radiol 27:823−828.
+  C5. Willis, C.E. (2004). “Strategies for dose reduction in ordinary radiographic examinations using CR
+      and DR.” Pediatr Radiol 34(Suppl 3):S196−S200.
+  C6. Arreola, M., and L. Rill. (2004). “Management of pediatric radiation dose using Canon digital radiog-
+      raphy.” Pediatr Radiol 34(Suppl 3): S221−S226.
+  C7. Goldman, L.W. “Speed Values, AEC Performance Evaluation and Quality Control with Digital
+      Receptors” in Specifications, Performance Evaluations, and Quality Assurance for Radiographic and
+      Fluoroscopic Equipment in the Digital Era. L.W. Goldman and M.V. Yester (eds.). AAPM Medical
+      Physics Monograph No. 30. Madison, WI: Medical Physics Publishing, pp. 271−297, 2004.
+  C8. Tucker, D.M., and P.S. Rezentes. (1997). “The relationship between pixel value and beam quality in
+      photostimulable phosphor imaging.” Med Phys 24(6):887−893.
+
+
+
+
+                                                   45
+                                                                                              APPENDIX D
+
+
+                                           Appendix D
+                                              Agfa CR
+
+Agfa CR systems provide exposure feedback for each acquired image in the form of a dose index
+called lgM. The lgM value indicates the deviation, expressed as the logarithm of the median exposure
+level in a calculated region of interest from the expected value. Similar to conventional radiography,
+the user selects this expected exposure value during the image acquisition process by choosing a speed
+class in the user interface. The speed class defines the operating point of the acquisition system.
+         For example, according to ISO 9236-1, a 400-speed screen/film system requires an average
+detector dose of 2.5 µGy to achieve a predefined aim density under specified exposure conditions. A
+speed class of 400 indicates that the CR system is adjusted to expect about 2.5 µGy detector dose at the
+center of its much wider (~500:1, or ~2.7 logE) operating range. The relationship between lgM, calcu-
+lated detector dose, and speed class can be expressed as follows:
+
+                                            ⎛ Dose ( μ Gy ) ⎞       ⎛ Speed Class ⎞
+                      1gM = 1.9607 + log ⎜                  ⎟ + log ⎜             ⎟⎠ .
+                                            ⎝    2.5        ⎠       ⎝    400
+
+    Thus, if the calculated (median) detector dose for an image taken with speed class = 400 is 2.5 µGy,
+lgM will have its baseline, or reference value of 1.9607. If the detector dose is twice as high as expected
+for the selected speed class, lgM will increase by 0.301 (log2). If the detector dose is half as high
+as expected for the selected speed class, lgM will decrease by 0.301. Note that whenever
+Dose(µGy)*Speed Class = 1000 (analogous to ISO 9236-1), lgM always takes on its reference value.
+These relationships assume that the system's signal response (gray level vs. dose) has been calibrated
+according to Agfa's recommended procedure (which uses 75 kVP, 1.5 mm Cu).
+    The calculation of lgM is based on a histogram analysis of the acquired (12-bit) image. The gray
+levels (called Scanned Average Level, or SAL in Agfa parlance) of this 12-bit image represent the
+square root of exposure, rather than the more commonly used log. This quantization scheme removes
+the signal dependence of the (Poisson) noise in the image, producing uniform noise amplitude every-
+where. Regardless of the quantization scheme, histograms of radiographic images usually contain
+several peaks, corresponding, for example, to areas of beam collimation (low exposure), direct x-ray
+background (high exposure), and the anatomical region of interest between them (see Figure D1).
+Through spatial image segmentation and histogram analysis, the lgM algorithm first identifies the
+peak in the histogram (if there is one) corresponding to collimated areas and eliminates it from further
+consideration. By looking at the shape and amplitude of other peaks in the histogram, it then finds and
+analyzes the peak corresponding to direct x-ray background (if there is one). The remaining typically
+broader main peak is assumed to contain the relevant clinical information. This is the region of interest
+in which lgM is calculated. The algorithm first derives reasonable endpoints for this main histogram
+lobe, and finds its median value, which defines the lgM value for that image. By comparing the lgM
+value to the reference lgM value, the deviation from the expected detector exposure can be found. This
+information is stored in the image header and displayed on the output image.
+
+
+
+                                                    47
+AAPM REPORT NO. 116
+
+
+
+
+Figure D1. Schematic drawing of the histogram of a typical radiographic image.
+
+
+
+    In addition to providing per-image dose feedback, Agfa CR systems also provide tools to monitor
+dose per exam over time. The dose monitoring software enables each facility to set up reference dose
+(lgMref) values for up to 200 exam categories. This can be done by simply defining the expected val-
+ues, or empirically during a learning phase, in which the software compiles statistics for and registers
+lgM values for 50 consecutive images in each category. When the lgM value of a newly acquired
+image deviates from the stored reference value for that exam category, the image is flagged, and the
+output image contains a numerical and visual (bar graph) display of the lgM value relative to the refer-
+ence value that shows the extent of over- or underexposure. The software also maintains a history file
+containing dose (lgM) information for the last 50 exposures in each exam category so that radiolo-
+gists, radiology administrators, or physicists can monitor exposure consistency and investigate/
+correct any occasional or systematic deviations.
+
+
+
+
+                                                     48
+                                                                                                  APPRNDIX E
+
+
+                                            Appendix E
+                                            Fujifilm FCR
+
+      Note: The following explanation is specific for FCR systems with 10-bit data output. The expla-
+      nation is applicable in principle to FCR systems with greater than 10-bit output, recognizing that
+      the 10-bit-specific references (e.g., 210 and 1023) would be replaced with values appropriate for
+      the output for the specific FCR system of interest.
+
+
+Histogram analysis is used to define the wanted versus unwanted signals in a scanned image plate for
+a particular incident exposure and examination type. As the linear exposure latitude for the imaging
+plate is very wide, a variable reading sensitivity (sensitivity number, S) is necessary to map the stimu-
+lated luminescence of the imaging plate to a range of output digital numbers within a 10-bit range
+(1024 discrete gray levels).
+     In the Automatic mode, the PSP reader determines the latitude as well as the minimum and max-
+imum stimulated luminescence values of the information extracted by the EDR process. The imag-
+ing plate is scanned directly using a combination of an analog logarithmic amplifier and a 12-bit
+(4096 gray levels) ADC encompassing the full dynamic range of the stimulated luminescence inten-
+sity at a fixed photomultiplier tube (PMT) sensitivity and gain. In order to normalize the image data
+and extract the desired range, an “electronic” EDR process is applied to the resultant data. Final
+image output is described by 10 bits (1024 gray levels). Values identified by the EDR process
+include the maximum and minimum log photostimulated luminescence (PSL) signals (S1 and S2,
+respectively) in the image histogram as shown in Figure E1. Examination-specific algorithms eval-
+uate the shape of the histogram to determine the “useful” signal range. Within this range, the median
+input digital value, Sk, is “mapped” to the digital output value 511 in the 10-bit digital range. The
+Sensitivity number, S, is calculated as: S = 4 × 10(4-Sk), and is an index indicating the reading sensi-
+tivity and is inversely proportional to the incident exposure on the plate. The approximate relation-
+ship to the mean incident exposure is given as: exposure (mR) ≅ 200/S for standard x-ray beam
+conditions (80 kVP, 3 mm Al total filtration equivalent). The latitude number, L, is an index repre-
+senting the logarithmic range of digitization of the stimulated luminescence signals about the
+median value, Sk. L is calculated from the maximum and minimum luminescence values within the
+defined image area and the corresponding digital output values of the reading unit as:
+
+                                    L = 1023 × (S1 − S2) / (Q1 − Q2),
+
+where Q1 and Q2 are the digital values corresponding to the log PSL output signals S1 and S2 of the
+reading unit, respectively. An example of an image histogram with the above-mentioned parameters
+is illustrated in Figure E1. An Sk value of 2.30 corresponds to an incident exposure of 1.0 mR. The
+latitude of the image reader and ST image plate usually ranges from a logarithmic PSL intensity of
+0.3 (0.01 mR) to 4.3 (100 mR).
+
+
+
+
+                                                     49
+AAPM REPORT NO. 116
+
+
+
+
+Figure E1. Sensitivity and Latitude numbers defined for the Fujifilm PSP system output parameters as related to the
+image histogram.
+
+
+
+
+                                                       50
+                                                                                                      APPENDIX F
+
+
+                                               Appendix F
+
+                       Kodak CR (now Carestream Health,Inc.)
+
+
+Kodak DirectView DR and Kodak DirectView CR products provide the user with an EXPOSURE
+INDEX for each clinical image, which is a calibrated measure of the exposure incident on the detec-
+tor. The following description of the EXPOSURE INDEX applies to CsI-based Kodak DirectView DR
+systems and Kodak DirectView CR systems used for general radiography applications. The com-
+mon measure of receptor exposure reflects a highly integrated design philosophy for these prod-
+ucts, which extends to the user interface and the underlying image data handling.
+
+
+For-Processing Image
+A FOR-PROCESSING IMAGE is computed from the RAW IMAGE DATA acquired for each image. The details of
+the computation depend on the technology. It is quite different for storage-phosphor-based CR images
+than it is for flat-panel DR images. However, in both cases the result is a FOR-PROCESSING IMAGE that is
+calibrated to an x-ray exposure under a STANDARD CALIBRATION CONDITION and represented on a com-
+mon logarithmic scale. Kodak CR and DR systems allow users access to the FOR-PROCESSING IMAGE.
+
+System Calibration
+It is very useful to have a simple-to-reproduce, scatter-free exposure condition to calibrate digital
+detectors. Kodak CR and DR systems are calibrated at 80 kVP with a 0.5 mm Cu and 1.0 mm Al added
+filtration at the x-ray tube housing. This choice for a STANDARD CALIBRATION CONDITION has been
+shown to minimize the sensitivity to small errors in kVP1 as well as to mitigate the effects of expected
+differences in inherent tube filtration. Kodak CR and DR systems are calibrated to produce a relation-
+ship between the FOR-PROCESSING IMAGE pixel values and the incident x-ray exposure given by
+                                                        ⎛ K⎞
+                                       P = 1000 ⋅ log10 ⎜        + 1059,
+                                                        ⎝ K 0 ⎟⎠
+where P is the pixel value, K is the incident air kerma in μGy, and K0 is 1.0 μGy. Measurement of the
+incident exposure excludes the effects of backscatter from the CR or DR detector. CR values are for
+GP-25 storage phosphor plates and require a 5-minute delay between exposure and processing to be
+observed.
+    If measurements are made in milliroentgens, an alternate expression,
+                                                         ⎛ E⎞
+                                        P = 1000 ⋅ log10 ⎜ ⎟ + 2000,
+                                                         ⎝ E0 ⎠
+where P is the pixel value, E is the incident exposure in mR, and E0 is 1.0 mR, can be used.
+
+
+
+1 Samei, E., J.A. Seibert, C.E. Willis, M.J. Flynn, E. Mah, and K.L. Junck. (2001). “Performance evaluation of com-
+
+puted radiography systems.” Med Phys 28:361-371.
+
+
+                                                       51
+AAPM REPORT NO. 116
+
+
+Exposure Index
+Image segmentation is a key step in processing the FOR-PROCESSING IMAGE of clinical images to create a
+FOR-PRESENTATION image that will be sent to a printer or to a Picture Archiving and Communications
+system (PACS). The purpose of segmentation is to identify an ANATOMICAL REGION OF INTEREST for each
+image. Proprietary algorithms detect and eliminate the FOREGROUND and BACKGROUND regions from
+consideration. FOREGROUND is that area of the image that is occluded by collimation. BACKGROUND is
+the image area that receives the x-ray exposure unattenuated by the patient. The remaining image area is
+evaluated with pixel-value and texture-sensitive algorithms to derive the unique ANATOMICAL REGION OF
+INTEREST for that image. Optimal tonal rendering is derived from histogram analysis of pixel values in
+the ANATOMICAL REGION OF INTEREST. The EXPOSURE INDEX for each image is the average pixel value of
+the FOR-PROCESSING IMAGE within the ANATOMICAL REGION OF INTEREST .
+
+
+Exposure Index Reporting and Documentation
+The EXPOSURE INDEX for each image is displayed on the graphical user interface of Kodak CR and DR
+systems. It is also incorporated into the DICOM header created for each image as DICOM tag
+(0018,1405). Other exposure-relevant information recorded in the DICOM header includes: kVP
+(0018,0060), tube current (0018,1151), exposure duration (0018,1150), and the current-time product
+in mAs (0018,1152). The EXPOSURE INDEX for each image acquired is also entered into a log file on the
+acquisition system along with other relevant information, including the date, time, patient ID, body
+part, view, accession number, and image-reject comments (if any). Summary information is accessible
+to key operators (normally the chief radiographer or department administrator).
+
+
+X-Ray Spectrum Dependence of Exposure Index
+The response of DR systems is characterized by the relationship between incident air kerma dose and
+the pixel values in original images. Because system responses are x-ray-spectrum dependent, it is
+instructive to use the ISO 9236-1 standard, which specifies four x-ray beam conditions that span the
+range of common clinical examinations. These are intended to represent the beam conditions (includ-
+ing scatter) incident upon the detector for projection radiography of the extremities (ISO I), the skull
+(ISO II), the lumbar spine (ISO III), and the chest (ISO IV). The system response for the four ISO beam
+conditions, as well as the STANDARD CALIBRATION CONDITION, is given as an algebraic equation, repre-
+sented in tabular form, and shown graphically below.
+
+Algebraic Representation
+The relationship between pixel value of the FOR-PROCESSING IMAGE and incident exposure can be
+summarized as
+                                                   ⎛ K⎞
+                                    P = 1000 ⋅ log ⎜        + B,
+                                                   ⎝ K 0 ⎟⎠
+
+where K is the incident air kerma in μGy, K0 is 1.0 μGy, and B is a beam quality offset that depends
+upon the incident x-ray beam condition, or as
+
+                                                   52
+                                                                                              APPENDIX F
+
+
+                                                      ⎛ E⎞
+                                       P = 1000 ⋅ log ⎜ ⎟ + C,
+                                                      ⎝ E0 ⎠
+
+where P is the pixel value, E is the incident exposure in mR, E0 is 1.0 mR, and C is a beam quality off-
+set that depends upon the incident x-ray beam condition. The constants for each beam condition are
+given in Table F1.
+
+
+Table F1. Exposure Response Constants for Kodak’s CR and DR Systems
+                                       Kodak CR System                      Kodak DR System
+X-Ray Beam                              B            C                       B            C
+ISO − I                                839         1780                     648         1589
+ISO − II                              1059         2000                     973         1914
+ISO − III                             1071         2012                    1039         1980
+ISO − IV                              1059         2000                    1025         1966
+STD Calibration Condition             1059         2000                    1059         2000
+
+
+
+
+Tabulation
+The relationship between pixel value in the FOR-PROCESSING IMAGE and the incident exposure is illus-
+trated for Kodak CR and DR systems in Table F2 and Table F3, respectively. The values for the STAN-
+DARD CALIBRATION CONDITION (labeled STD) are by design the same for CR and DR systems. However,
+because of the differences in detector technology, the responses to the ISO beams differ.
+
+
+
+
+                                                  53
+AAPM REPORT NO. 116
+
+
+Table F2. Kodak CR Systems (GP-25 Cassette): FOR-PROCESSING IMAGE Pixel Values vs. Incident Exposure
+
+
+
+
+                                                  54
+                                                                                      APPENDIX F
+
+
+Table F3. Kodak DR Systems: FOR-PROCESSING IMAGE Pixel Values vs. Incident Exposure
+
+
+
+
+                                                 55
+AAPM REPORT NO. 116
+
+
+Graphical Representation
+The dependence of pixel value on incident exposure for the STANDARD CALIBRATION CONDITION as well
+as the four ISO beam conditions is shown graphically in Figure F1 for the Kodak CR systems and in
+Figure F2 for Kodak DR systems. For the CR systems, only the ISO-I (extremity) condition results in a
+significantly different response. The other three ISO beam conditions and the calibration beam all
+result in system responses that are nearly identical and therefore are plotted as a single line.
+
+
+
+
+Figure F1. Kodak CR systems (GP-25 cassette): FOR-PROCESSING IMAGE pixel values vs. incident exposure.
+
+
+
+
+                                                  56
+                                                                                        APPENDIX F
+
+
+
+
+Figure F2. Kodak DR Systems: FOR-PROCESSING IMAGE pixel values vs. incident exposure.
+
+
+
+
+                                                  57
+                                                                                       APPENDIX G
+
+
+                                        Appendix G
+
+                                   Konica Minolta CR
+
+The amount of photostimulable light emission versus incident x-ray dose exhibits good linearity
+over a range of over 4 orders of magnitude. The REGIUS 12-bit (4096 level) quantization range
+(QR) is specified by a QR parameter such the range of quantized exposures X is according to the
+relationship:
+                       200/QR×1[mR]×10−1.5 < X < 200/QR×1[mR]×10+2.5.                           (a)
+For example, if QR=200, the quantized range is 10−1.5 to 10+2.5 mR, or 0.0316 to 316 mR. Output
+signals are proportional to log10 (mR), so an incident detector exposure of 0.0316 mR is mapped
+to value 0, and of an exposure of 1 mR is mapped to an output signal 1535. (The REGIUS is cal-
+ibrated using the image from an exposure corresponding to a beam quality of 80 kV, 2.0 m).
+    The QR parameter is related to an equivalent screen/film system speed (referred to as an
+S-value) as follows. Let R be the incident x-ray exposure that produces a REGIUS output value of
+1535 and a printed film optical density (using a fixed printer mapping) of 1.2 within a specified
+image area of interest. From expression (a) above, the corresponding exposure is readily deter-
+mined as:
+                                       X = R = 200/QR.                                          (b)
+If read out with QR=200, R equals 1 mR; if read with QR=400, R is 0.5 mR, etc. Suppose it is
+desired to darken (or lighten) the printed film such that some other pixel value within a different
+area of interest is printed with an optical density of 1.2. REGIUS gradation processing uses an
+S-value to adjust output pixel values to achieve the corresponding darker or lighter printed image
+(using the same printer mapping). Let R` be the actual x-ray dose required to produce a screen/
+film image optical density of 1.2 in the desired region. This S-value is then defined as:
+                                         S = QR×R/R`                                            (c)
+where R depends on the QR parameter as given in expression (b) above. From its definition and
+the above discussion, we observe the following properties of the S-value:
+
+   (1) S-value is independent of the QR parameter; by substitution of (b) into (c), S = 200/R.
+   (2) S-value is determined from pixel values obtained following gradation processing. Grad-
+       ation processing is determined by Konica Minolta’s original auto-gradation processing
+       algorithm; however, this can be manually changed by the operator.
+   (3) S-value is in inverse proportional to x-ray dose; i.e., for exposures of the same object
+       under identical conditions, if the x-ray dose is n-times, the S-value will be 1/n-times.
+   (4) When S-value of the image is 200, the incident x-ray exposure to the object area (espe-
+       cially the region of interest) output with a printed film density 1.2 is 1 mR.
+
+A consequence of property (2) is that S-value is not uniquely determined by the amount of x-ray
+exposure. However, for any particular (exam type-specific) suitable gradation processing, proper-
+ties (1) and (2) allow the S-value to serve as a very useful relative exposure index.
+
+
+                                                59
+                                                                                          APPENDIX H
+
+
+                                         Appendix H
+
+                                    Imaging Dynamics
+
+The goal is to determine a method for providing an index of exposure which was easy for the tech-
+nologist to understand and which would be traceably related to an existing and well-recognized
+standard.
+    An exposure of 1 mR will produce a mid-range optical density on a 200-speed screen/film
+system. An exposure of 0.5 mR will produce the same optical density on a 400-speed screen/film
+system. Our exposure index is based on this relationship. We determine for an image the estimated
+radiation input to produce its mid-range density and relate that to the screen/film system speed
+that would have responded in a similar fashion.
+    The first requirement is a calibration of the digital system’s response to input radiation. To
+emulate the typical exit spectra from a patient’s body, we harden the beam by adding 1 mm of cop-
+per filtration. Measurements are then made at 80 kVP to determine the system input/output char-
+acteristic in terms of milliroentgens per digital number (mR/DN). This input/output ratio, R1O, is
+stored as a system characteristic and does not need to be recalculated on an image-by-image basis.
+    To calculate the exposure index, which we refer to as the f# due to its similarity to aperture f-
+stops on a lens, we segment the image to exclude areas of direct exposure and areas outside the
+exposed region. The remainder represents the patient anatomy. The median value, IMed, of the
+anatomy histogram is found. Experimental data has shown that using the median value will in
+most cases give an accurate representation of the mid-range optical density in the image. It is not
+unduly skewed by small errors in image segmentation. This is not the case if the mean is used,
+where a significant shift in value occurs if the segmentation happens to include some areas of
+direct exposure.
+    Using the input/output ratio R1O and the median value IMed, we calculate:
+
+                                           XMed = IMed . R1O,
+
+where XMed is the radiation level which resulted in the mid-range density.
+   Effective speed, SE is therefore given by:
+                                                200
+                                         SE =         .
+                                                X Med
+
+    In clinical practice, different screen/film types are used for different examinations. A 400-speed
+system is common for chest exams, while 100 speed is common for extremities such as hands. The
+slower speed gives finer detail.
+    Our exposure index takes this into account by relating the effective speed SE to a target speed
+ST. The target speed is determined on an institutional basis and is stored in an anatomical param-
+eters database for reference when processing each image.
+
+
+
+
+                                                  61
+AAPM REPORT NO. 116
+
+
+    The radiation technologist should not be required to remember what the correct screen/film
+speed equivalent is for each anatomy in assessing the exposure index. We therefore calculate the
+relationship of the effective speed to the target speed. By expressing this as a log base 2, thus:
+                                                     ⎛S ⎞
+                                         f # = log 2 ⎜ T ⎟ .
+                                                     ⎝ SE ⎠
+    The resultant index is dimensionless and applies equally regardless of the target speed. The
+radiation technologist knows that they are aiming for an f # of zero. Underexposure by a factor of
+2 will give a value of −1, by a factor of 4 will give −2. Overexposure by two times will give a value
+of 1; by four times will give a value of 2. In practical terms, the technologist can reasonably expect
+that if an image with f # between −1 and +1 is obtained, the exposure will be of reasonable diag-
+nostic quality. It is worth noting that no exposure index derived solely from the properties of the
+image can be completely reliable in clinical use. There will always be a small number of cases
+where unusual pathology or implants will alter the overall balance such that the image will give a
+misleading index. Technologists should be advised to use their own best judgment in conjunction
+with the exposure index to determine if an image needs to be repeated. It would be inappropriate,
+for example, to repeat an image based on a high f # simply because it lies outside the institution’s
+guidelines if the resulting image is of very high quality.
+    One advantage of this numbering system is that technologists are generally familiar with the
+range of density settings on the automatic exposure control (AEC), or phototimer system. The f#’s
+described here may be thought of as somewhat analogous, with plus and minus densities. By using
+a system that echoes an already familiar numbering scheme, the technologists are more likely to
+be comfortable with it and pay closer attention to the results. By contrast, other exposure indices
+in use today require the technologist to understand less intuitive numbering schemes. For exam-
+ple, one widely used system displays the log median value and asks the technologist to target a
+proper exposure around 2.2.
+    Each 0.3 increment or decrement represents a doubling or halving of exposure, respectively.
+While this is certainly a viable scheme, it is not intuitive.
+
+
+
+
+                                                 62
+                                                                                               APPENDIX I
+
+
+                                            Appendix I
+
+                      Philips DigitalDiagnost Exposure Index
+
+
+General
+The Philips DigitalDiagnost flat-panel DR system calculates an exposure index (EI) for every image.
+The EI is inversely proportional to the detector air kerma, K, and is derived from a “characteristic” pixel
+value of the image.
+    The scaling of the EI is defined in a way similar to screen/film speed (ISO 9236-1):
+
+                                                EI = 1000 / K                                          (1)
+
+where K is the air kerma in µGy at the detector entrance.
+    The air kerma K is obtained from the characteristic pixel value PVc and the sensitivity SENS of the
+detector, expressed in digital numbers per µGy:
+
+                                                K = PVc / SENS.                                        (2)
+
+    The sensitivity of the flat-panel detector after applying the standard detector-specific corrections is
+SENS = 207 µGy−1, for a beam quality corresponding to RQA5 according to IEC 61267 (70 kV, 21 mm
+Al added filtration, HVL 7.1 mm Al).
+
+Exposure Index Values
+The exposure index for the DigitalDiagnost is intentionally confined to values that follow the ISO R'10
+scale, well-known from, e.g., screen/film speeds. The numbers calculated according to equations (1)
+and (2) are thus rounded to the values …, 100, 125, 160, 200, 250, 320, 400,… (see Table I1). Each step
+correponds to a factor of 100.1 (or an increase by about 25%).
+    The rationale for this grading is the following:
+
+    • under clinical conditions the reproducibility of the EI for fixed detector exposure conditions
+        is approximately of this size, owing mainly to variations in image/histogram evaluation for
+        different patients/examinations;
+    •   one step of the ISO R’10 scale corresponds to one “exposure point,” which is a scale well-
+        known to most x-ray techs and is, for example, also used for the grading of the mAs scale on
+        many x-ray generators.
+
+
+
+
+                                                    63
+AAPM REPORT NO. 116
+
+
+Table I1. Relation between Detector Exposure/Air Kerma, Pixel Value, and Exposure Index(for Beam Quality RQA5)
+
+
+
+
+                                                      64
+                                                                                             APPENDIX I
+
+
+Determination of Characteristic Pixel Value
+An x-ray image usually contains a wide range of pixel values. An important step in the calculation of
+the exposure index according to equations (1) and (2) is to determine a characteristic pixel value PVc,
+i.e., a pixel value that corresponds to the average detector signal representing the target area of the
+examination.
+     This process usually comprises two steps:
+
+    • the determination of an subarea (ROI) of the full image, containing the target area;
+    • the determination of the characteristic pixel value in this ROI. This can be the average or the
+       median pixel in this subarea; however other, more sophisticated algorithms involving the
+       pixel histogram may also be used.
+
+     Slightly different approaches are used in different software releases of the DigitalDiagnost. Up
+to and including release 1.2 the determination of the characteristic pixel value is coupled to the
+“ranging” algorithm which detects the exposed area and finds specific pixel values from the (cumu-
+lative) histogram, used to adapt the display look-up table (LUT). Since the LUT adaptation may be
+dependent on the selected image type (examination/anatomy), the characteristic pixel value and such
+the EI may depend on the type of examination, even for similar histograms.
+     Starting with release 1.3 the determination of the characteristic pixel value for the EI-determina-
+tion is decoupled from the determination of ranging parameters and is independent of the type of
+examination.
+     For images with automatic exposure control (AEC), PVc is determined as the median pixel value
+in the area(s) corresponding to the activated measuring field(s) of the AEC.
+     For images with manual selection of exposure parameters, the area in which PVc is determined is
+defined as follows: the characteristic pixel value is defined as the median pixel value of the center
+25% area of the image (called the “quarter field”). Collimated and direct radiation areas are masked
+out before calculating the median.
+
+
+
+kV Correction
+As the sensitivity of the detector changes with x-ray photon energy, the relation between pixel value
+and incident air kerma is not fixed for different beam qualities. Consequently, a given EI will corre-
+spond to different exposure values (air kerma values) for different kilovoltages. This effect is most
+pronounced for low kVP, where the sensitivity (pixel value/µGy) may be only 30% of that at 70 kV. To
+mitigate this effect, a kV correction factor is applied in the EI calculation in the DigitalDiagnost
+(starting with release 1.2), which compensates for changes in the sensitivity (see Figure I1).
+
+
+
+
+                                                  65
+AAPM REPORT NO. 116
+
+
+
+
+Figure I1. kV correction factor for the Exposure Index as used in the DigitalDiagnost.
+
+
+
+
+                                                      66
+                                                                                        APPENDIX J
+
+
+                                        Appendix J
+
+                                      GE Healthcare
+
+
+Definium Systems
+GE digital radiography Definium systems provide the user with three values related to the incident
+exposure (air kerma) to the digital detector:
+
+   • Uncompensated Detector Exposure (UDExp) in μGy
+   • Compensated Detector Exposure (CDExp) in μGy
+   • Detector Exposure Index (DEI), unitless
+    UDExp, CDExp, and DEI are displayed as (optional) image annotations on the acquisition work-
+station and are stored in the image DICOM header. DEI is also displayed on the acquisition user
+interface in order to provide quick feedback to the radiography technologist.
+
+   1. Anatomy Segmentation: As a preliminary step, the anatomy regions are identified in the raw
+      image and a Median Anatomy Value (AM) in unit of counts is determined. (The raw image is the
+      image read from the digital detector after bad pixel, offset, and gain correction.)
+
+   2. Detector Sensitivity: Two sensitivity values are estimated for the digital detector based on
+      calibrations at the manufacturer and/or by field engineers.
+      o Uncompensated Detector Sensitivity, USens, is defined as the conversion efficiency of
+         the detector in units of counts/μGy at 80 kVP (with a standard filtration and no anti-
+         scatter grid).
+      o Compensated Detector Sensitivity, CSens, is equal to USens after compensation for
+          kVP, presence of anti-scatter grid, and user-selected additional collimator Cu filtration.
+
+   3. Detector Exposure: Two exposure values are calculated using USens and CSens.
+      o Uncompensated Detector Exposure, UDExp =AM/USens
+      o Compensated Detector Exposure, CDExp =AM/CSens
+
+   4. Detector Exposure Index: DEI is a unitless normalized metric relating obtained median
+      anatomy count value (AM) to expected count value for the used technique (kVP, filtration,
+      and anti-scatter grid). Expected count values are derived using the Automatic Exposure
+      Control (AEC) with standard acrylic phantoms, appropriate over the kVP range.
+       Hence, DEI can be effectively used for indicating
+       o Over-/underexposure due to patient mispositioning or incorrect selection of ion cham-
+         bers with AEC acquisitions, and
+       o Over-/underexposure due to inappropriate technique selection with fixed-time
+         acquisitions.
+       o Over-/underexposure due to other operator-related or system-related events.
+
+
+                                                67
+AAPM REPORT NO. 116
+
+
+       DEI values are displayed on the acquisition user interface after each acquisition, along with a
+       DEI Lower Limit and a DEI Upper limit that are user-configurable for each anatomical view
+       and patient type (Adult vs. Pediatric).
+    For each acquisition performed on the system, UDExp, CDExp, and DEI, along with other
+technique and acquisition information, are logged on the system and can be exported to a .csv file
+on CD at any time.
+
+
+General Properties
+
+   • UDExp, CDExp, and DEI are independent of image processing and reprocessing. The
+       values, once calculated, are stored in the DICOM header and cannot be modified by the
+       user.
+   •   UDExp, CDExp, and DEI are potentially affected by errors in the identification of the
+       anatomical regions in the image, the identification of collimated regions in the image
+       (auto-shuttering), or the presence of large-area prosthesis/shielding. Before closing an
+       exam, the user has the option of modifying/correcting the auto-shuttering and reprocess-
+       ing the image to get more accurate UDExp, CDExp, and DEI values. (Note: The image
+       processing will NOT affect the DEI metrics. Only the shutter location will.)
+
+
+Technical Mode
+A user with administrative privileges on the system can select the Technical Mode for detector expo-
+sure metrics, whereby all metrics are calculated based on a 512×512 pixel square in the center of the
+image. In this mode, the result of Anatomy Segmentation is not used in the calculations. This mode
+can be useful when imaging non-humanoid phantoms.
+
+
+
+XR/d and XQ/i Systems
+The GE XQ/i and XR/d digital detector systems do not directly report a detector-exposure or sensitivity
+index to the operator. A “Sensitivity” value is embedded in the DICOM header. This value is related to
+detector exposure through the original pixel value.
+    For images other than those of Chest exams, feedback is given to the operators on adequacy of
+technique by darkening or lightening the final image depending on what raw mean signal value in the
+recognized image histogram is present in the image relative to the expected value for the selected
+anatomical view (this behavior no longer applies in the new Definium systems, which provide detector
+exposure metrics).
+
+
+
+
+                                                  68
+                                                                                           APPENDIX K
+
+
+                                            Appendix K
+
+                                              Alara CR
+
+In order to optimize radiation dose, image quality, and use of the CR reader’s dynamic range for a
+wide variety of radiographic studies, Alara’s CR product provides the capability of changing system
+gain. Analogous to screen/film radiography, we have called the various gain settings Speed Classes
+(SC). The nominal or target x-ray exposure for each SC is summarized in Table K1.
+
+
+Table K1. Target X-Ray Exposures for Various Speed Classes
+                                                                    Target Exposure
+                 Speed Class                                             (mR)
+                       50                                                    4.0
+                       75                                                    2.67
+                      100                                                    2.0
+                      200                                                    1.0
+                      300                                                    0.67
+                      400                                                    0.5
+                      800                                                    0.25
+
+
+
+
+    For each image, an Exposure Indicator Value (EIV) is computed. For all speed classes, and for
+Standard and High Resolution modes, the target EIV is 2000. The EIV is logarithmically related to
+the energy deposited in the plate: changes of 300 in the EIV correspond to changes by factors of 2 in
+exposure.
+    The EIV for each Alara CR device is calibrated using an RQA5 x-ray spectrum (70 kV, 21 mm Al
+added filtration, HVL = 7.1 mm Al; IEC 61267:1994). The gains (PMT voltage settings) required to
+achieve a target digital count for each of the Target Exposures listed in Table K1 are determined. Thus
+for a particular device, a table of PMT voltage settings by Speed Class is generated. At system instal-
+lation, each exam type is assigned a speed class according to site preferences. Subsequent selection
+of exam type automatically selects the speed class.
+    Prior to image processing, the EIV is computed from the 16-bit, linear-with-exposure image
+according to the following basic steps:
+
+    1. Using a combination of histogram and morphological analysis, image regions correspon-
+       ding to overscan, x-ray beam collimation, and direct exposure are identified.
+
+    2. The mean pixel value of the remaining region, which corresponds to anatomy, is computed
+       and converted to mR via the RQA5 calibration mentioned previously.
+
+    3. EIV is computed according to:
+                                                    ⎡            SC ⋅ mR ⎤
+                               EIV = 1000 ⋅ log10 ⎢ ResScale ⋅
+                                                    ⎣               2 ⎥⎦
+
+                                                    69
+AAPM REPORT NO. 116
+
+
+
+      where ResScale accounts for the slightly different system response at Standard and High
+      Resolution. SC and mR refer to the system speed class and the mean anatomy exposure in
+      mR, respectively.
+         The EIV is displayed as a numerical value on the image on the QC workstation, and is
+      shown graphically on a horizontal scale along the bottom of the thumbnail views of the
+      images. The EIV is also stored in DICOM tag (0018,1405) (Relative X-Ray Exposure).
+      Alara provides tools to analyze EIV trends.
+
+
+
+
+                                            70
+                                                                                                                 APPENDIX L
+
+
+                                                    Appendix L
+
+                                      Siemens Medical Systems
+
+Description of the exposure index from Siemens Medical System's digital radiographic systems is
+summarized in Table L1.
+
+Table L1. Exposure Index Description for Siemen’s DR Systems
+Nr.          Question                                    Device
+1.1          Company                                     Siemens AG Medical Solutions
+1.2          X-ray equipment type                        AXIOM Aristos (FX, MX, TX, VX)
+                                                         Digital Flat-Detector
+2            Name of the exposure index (if more         Exposure Index,
+             than one, please add an extra sheet         abbrev.: EXI
+             for each)
+3            What is the notation in the DICOM           DICOM Group/Element: 0018,1405 Relative x-ray exposure;
+             header and what does the number             Direct declaration of the EXI-value as data type IS,
+             mean?                                       no conversion needed.
+4            Where is the exposure index?                It is displayed as image-legend on softcopy and hardcopy devices.
+5            Definition of the used exposure index       The exposed field is subdivided in a 3×3 matrix, where the central
+                                                         segment is defined as the region of interest.The exposure index is
+                                                         calculated as the average out of the original pixel values in the
+                                                         central segment.
+                                                         The calculation scheme is independent of the selected organ
+                                                         program, the exposure method, the measuring field (when using
+                                                         AEC), and the image processing parameters.
+5.1          Functional relationship between             The EXI-value is a relative value, directly proportional to the dose.
+             exposure index and dose                     Doubling of the absorbed dose in the image receptor results in a
+                                                         doubling of the EXI-value.
+5.2          Calibration conditions                      For 70 kV and an added filter of 0.6 mm Cu (following beam quality
+                                                         RQA5 in IEC 61267:1994-09), a calibration factor c is determined
+                                                         and documented in the system manual: Air Kerma [Gy] = c × EXI.
+5.3          Dependence                                  Depends on:
+             (e.g., tube voltage, collimating,           collimation, beam quality, examined organ.
+             organ range, selected organ program,...)    Depends not on:
+                                                         organ program name, selected exposure method (manually or
+                                                         automatically), selected measuring field.
+5.4          Accuracy of the exposure index              Calibration factor c: ±10% (uncertainty of dose measurement)
+             (accuracy of calibration, relationship to   at calibration conditions.
+             image receptor dose or speed)               Absolute values at identical doses: the tolerance of the
+                                                         conversion factor (Pixel value/dose) for different detectors is ±15%.
+5.5          Reproducibility                             <5% (limited by reproducibility of generator and automatic
+                                                         exposure control, respectively).
+5.6          Using at technical exposures                Currently available test phantoms for acceptance and
+                                                         constancy testing can be used without modification.
+                                                         At similar positioning of the test phantom, collimation, and
+                                                         exposure parameters,a deviation of ±10% indicates a
+                                                         significant change.
+                                                                                                                   (Continued)
+
+                                                           71
+AAPM REPORT NO. 116
+
+
+Table L1. Exposure Index Description for Siemen’s DR Systems (Continued)
+Nr.          Question                                Device
+5.7          Precision of the exposure index in      Scaling: EXI-values are scaled as the original 14-bit pixel values.
+             constancy tests (and at constancy       (quod vide 5.5 and 5.6)
+             conditions)
+6            What statements are possible with       The EXI-value is a relative measure for images of the same type,
+             the exposure index in the medical       acquired at user-defined standard protocols.
+             image and what conditons and            The EXI-values can vary for different organs and projections.
+             limits are valid?                       With the EXI-value it is possible to discover:
+                                                      − changes in the dose-presettings (speed)
+                                                      − changes in the selection of measuring fields
+                                                      − wrong positioning of the measuring field w.r.t.the organ.
+7            That does the company think about       1. Control of the system components “AEC” and “image
+             aims of the statement or usage of the   receptor” for constancy test.
+             discussed exposure index?               2. Control of the exposure parameters in clinical routine.
+
+
+
+
+                                                       72
+                                                                                            APPENDIX M
+
+
+                                          Appendix M
+
+                                               iCRco
+
+The exposure index is the key link between the x-ray physics at the site and the specific capture
+device. It represents an estimate of the radiation a patient receives from an x-ray exposure. In con-
+ventional screen/film x-ray, the dose can be estimated by the darkness of the x-ray film itself. For CR
+systems, the appearance of the digital x-ray image on a computer monitor does not depend on the
+dose level. However, the actual pixel values recorded by the PMTs correlate well with the actual
+x-ray dose. Therefore, it is possible to calibrate a CR device to act as a dosimeter: for example, the
+dose captured by the phosphor plate can be accurately measured using an iCRco CR scanner and
+translated into an exposure number.
+
+
+A Generalized and Practical Aproach
+The mature status of CR technologies combined with the competitive nature of the marketplace has
+resulted in vendor-specific methodologies for computing exposure index. This has detracted from the
+original purpose of the exposure index: to provide a level of confidence of image quality to the technol-
+ogists while minimizing radiation to the patient. This creates confusion and an unnecessary barrier in
+the migration to digital.
+    iCRco has developed an approach that accomplishes two important goals: (1) it facilitates migra-
+tion towards a generalized standard, and (2) it provides a practical easy-to-use metric for end-users to
+apply in a clinical environment.
+    Our method provides a dimensionless number representing a level 0 performance relative to an
+expected anatomy-specific exposure. This is not too different from the number generated by the
+method developed by Imaging Dynamics Company (IDC). For example, in IDC’s approach, an expo-
+sure of −2 is a 4 times underexposure, −1 is 2 times underexposure, 0 is perfectly exposed, +1 is 2 times
+overexposed, and +2 is 4 times overexposed.
+    The analytics behind our approach have the fine precision required for an exact continuous numer-
+ical indicator if required. However, for practical applications we have simplified the display by group-
+ing “performance ranges” into a discrete number ranging from −2, −1, 0, +1, +2, see Figure M1. The
+goal for the user is to keep the images in the neutral range (around 0) independent of the anatomical
+view.
+    Graphically, we have color coded the number shown on the computer screen, if the level is within
+the −2 to +2 range, the number is shown in green (as shown in Figure M2). If the level is outside the −2
+or +2 range, the number is shown in red.
+
+
+
+
+                                                   73
+AAPM REPORT NO. 116
+
+
+
+
+Figure M1. Relative exposure index as a function of plate dose in mR.
+
+
+
+
+Figure M2. Magnified view of display of exposure index. For values in the −2.0 to +2.0 range the exposure index is
+displayed in green; if outside the range, the value is displayed in red to signal to the technician that the exposure is
+out of range.
+
+
+
+
+                                                          74
+                                                                                                     APPENDIX M
+
+
+Exposure Index Calibration Wizard
+iCRco’s equipment comes with a built-in software module which calibrates the CR device to the x-ray
+at the site. The software presents an interactive step-by-step procedure that can be performed during
+installation and maintenance. Reference exposures are taken at progressively increasing levels of dose
+and measured using a dosimeter. These calibrated exposures serve as the reference levels for the expo-
+sure index. The objective is to calibrate the device around an 80 kVP source, hardened with 1.5 mm Cu
+at the x-ray source. The pixel analysis is performed on an area corresponding to 80% of a 14 by 17 in.
+cassette. The software performs a regression by which the linearity of the system is evaluated as a func-
+tion of dose, as shown in Figure M3.
+
+
+
+
+Figure M3. Linearity of the exposure index is shown as a function of log of dose and its corresponding pixel value.
+
+
+
+
+There is a built-in table of anatomy-specific target exposures which serve as reference.
+    The resulting exposure index is a ratio of the pixel value analysis as described above and the
+expected reference value for the given anatomy. The exposure index represents a deviation from the
+reference. Of course, the reference levels can be adjusted based on the policy and tastes of users at the
+site.
+    To facilitate and demonstrate the generalized approach, in our system we have implemented
+translation of our numbers into exposure numbers of other vendors including Fujifilm S Number and
+Agfa IgM. Translation into other methodologies can be implemented as well.
+
+
+
+
+                                                       75
+                                                                                             APPENDIX N
+
+
+
+                                           Appendix N
+
+                                 Canon Medical Systems
+
+
+REX Value and Exposure
+With digital x-ray systems, including the CXDI system, by using the analysis explained in the previous
+section, the density of the image is always automatically adjusted to a specific level regardless of the
+dose amount. Even if the density is constant, however, when the dose is high, a clear image with good
+SNR is produced, and when it is low, noise is conspicuous in the resulting image.
+    The level of the dose is determined by the level of the image quality allowed by the doctor for exam-
+ination and diagnosis.
+    If the image is always output with a constant density, particularly with phototimer radiography, it is
+not known at what level of dose the image was actually taken.
+    For this reason, an index is needed as a guide to the level of dose used.
+    The REX value (Reached EXposure Value) is defined as having the purpose of indicating the dose.
+    Before explaining the REX value, a typical example of the dose index using the two-point method
+for analysis is shown in Figure N1.
+    As shown in the figure, with the two-point method, the largest and smallest pixel values correspon-
+ding to the image are obtained from the histogram and the midpoint is taken as the dose index.
+    With the one-point method, on the other hand, the simplest method is to use the pixel values
+obtained by analysis directly.
+
+
+
+
+                                               Figure N1.
+
+
+                                                   77
+AAPM REPORT NO. 116
+
+
+     If this method is used, however, the pixel value obtained by analysis is completely different for each
+region and the stability of the analysis is directly affected, making it an ambiguous standard for the dose
+index.
+     With the CXDI system, therefore, as shown in Figure N2, without directly using the pixel value
+obtained by analysis, the reference density is specified as 0.75D and the pixel value that gives this den-
+sity is used as the dose index. This is called the REX value.
+     However, as a proportional relation with the dose is not established when the pixel value after log
+conversion is used, the pixel value before log conversion is used as the REX value.
+     The definition of the REX value is explained here using detailed illustrations. Figure N3 shows the
+definition of the REX value using a thoracic image as the example.
+     The 1st-4th quadrants are defined by counterclockwise rotation, where the 1st quadrant is on the top
+right. The 1st quadrant is the LUT curve showing the relation between system output and film density;
+the 3rd quadrant is the sensor characteristic curve showing the relation between the dose detected by the
+sensor and the sensor output value; and the 4th quadrant is the linear-log curve for converting the sensor
+output value proportional to the dose into the system output proportional to the logarithm of the dose.
+     The following is a brief explanation using only the 3rd and 4th quadrants in the right half of the
+figure.
+     First, to explain the algorithm by which the LUT curve is determined.
+     The CXDI determines the feature pixel value of the target chest image by automated analysis.
+     In this figure, it is assumed that the sensor output value corresponding to this pixel value (pixel
+value before log conversion) is 1220.
+
+
+
+
+                                                Figure N2.
+
+
+                                                    78
+                                                                                          APPENDIX N
+
+
+
+
+                                             Figure N3.
+
+
+
+    It is also assumed that the corresponding density showing the film density at the position of this
+pixel is designated as 1.9D.
+    According to these assumptions, the LUT curve is shifted horizontally, the amount of shift being
+determined at the position where the arrow from the feature pixel value and the arrow from the corre-
+sponding density intersect.
+    Next is an explanation of the algorithm by which the REX value is determined.
+    The REX value is determined at the position where the arrow from the reference density 0.75D
+(fixed) meets the sensor output axis.
+    In other words, the REX value denotes sensor output at the position expressed by density 0.75D on
+the film output by the CXDI.
+    Next is an explanation of the REX value in proportion to the x-ray dose. Figure N4 shows the
+change in the REX value when the dose is low.
+    In Figure N4, it is assumed that the sensor output corresponding to the feature pixel value deter-
+mined by analysis is 650, the patient exposure dose is 650/1220=0.53 times, and the corresponding
+density is 1.9D, the same as in Figure N3.
+    As the dose is small, in this figure the characteristic value is 650.
+
+
+
+                                                 79
+AAPM REPORT NO. 116
+
+
+
+
+                                                 Figure N4.
+
+
+
+
+     As the density is constant, the LUT curve moves to the position where the arrow from the sensor
+output value 650 and the arrow from the corresponding density 1.9D intersect, and is shifted to the posi-
+tion indicated by the dotted line.
+     Corresponding to this shift in the LUT curve, the REX value decreases to 200.
+     At this time the relation 1220/650=375/200 is maintained.
+     As a result, if the shape of the LUT curve is identical and it is only a case of a shift in position, the
+REX value is in proportion to the radiographic dose.
+     On the other hand, it is possible that the REX value denotes (the reciprocal of) the system sensitivity.
+     The REX value is reduced to the extent that the LUT curve shifts to the left of the figure, and the
+high sensitivity radiography could be said to correspond to the low dose.
+     In the case of screen/film systems, as the LUT curve does not shift, when the dose is low, the density
+is simply low.
+     However, with the CXDI, the system sensitivity changes and the density is always constant.
+     Consequently, the REX value could be said to be (the reciprocal of) the system sensitivity.
+     As shown above, the relation between the REX value and the x-ray dose is proportional.
+     However, although the REX value is the x-ray dose index, it is not the absolute index.
+
+
+                                                     80
+                                                                                             APPENDIX N
+
+
+
+
+                                               Figure N5.
+
+
+
+
+    The REX value assumes that adjustment, including interactive adjustment, is finished and the QA
+image has been defined.
+    If the QA image has been defined and the LUT is the same as always, the proportional relation with
+the x-ray dose will be established, but if the density and contrast change, the REX value also fluctuates.
+    Figure N5 shows this fluctuation of the REX value due to changes in density.
+    The REX value decreases as the specified density and the density increase, and the REX value
+increases as they decrease.
+    Figure N6 shows the fluctuations in the REX value due to changes in the contrast.
+    If the contrast is increased when the specified density is higher than the REX reference density, the
+REX value will increase, and if the contrast is reduced, the REX value will also be reduced.
+    For the above reason, the REX value fluctuates when the specified density and contrast change,
+which means that the REX value is determined when all image processing parameters are fixed.
+    The REX value is only meaningful when adjustment is finished and the QA image is defined.
+    Furthermore, even if the REX value is moved when the LUT is varied by the doctor or x-ray techni-
+cian, or according to the x-rayed body part, the actual dose amount cannot be judged simply by compar-
+ing the REX value.
+
+                                                   81
+AAPM REPORT NO. 116
+
+
+
+
+                      Figure N6.
+
+
+
+
+                      Figure N7.
+
+                         82
+                                                                                              APPENDIX O
+
+
+    Finally, the following explains the correction method using the REX value (REX adjustment) in the
+event of analysis failure.
+    Figure N7 shows a bright image due to analysis failure.
+    If the image is white due to analysis failure, the LUT curve has been shifted to the right (to a higher
+pixel value) in relation to the range in which the image exists.
+    As for the REX value at this time, large values are displayed.
+    Consequently, if the REX value is corrected to a smaller value, the LUT curve is shifted to the left to
+the range of the image and the correct density is achieved.
+    Alternatively, if the image is black, it can be corrected to the appropriate density by correcting the
+REX value to a higher value.
+
+
+
+
+                                                    83
+                                                      AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+                                           Appendix O
+
+                              SwissVision Dose Indicator
+
+The dose indicator in the SwissVision implementation will be calculated, based on the window cen-
+ter value, provided by the MUSICA processing. This window center value describes the center of
+area of the logarithmically scaled histogram. The conversion from the linear 12-bit and 16-bit range
+to the logarithmic scale is calculated as follows:
+
+                 log12bit = 3.2767 + log10(lin12bit/4095)      valid range: 0.0 − 3.28
+                 log16bit = 3.2767 + log10(lin16bit/65535)     valid range: 0.0 − 3.28
+
+Swissray formula for DI:
+
+       PixelValuecenter = 10 (WindowCenter − 3.2767) * 212
+       DI = round (30*(log10(PixelValuecenter /216)+3.2767) +1)        if PixelValuecenter > 34.3
+
+            =1                                                         if PixelValuecenter < 34.3
+
+
+       Legend:
+
+       “WindowCenter”           MUSICA output
+       DI                       Dose Indicator
+
+
+
+
+                                                   85
+

@@ -1,0 +1,3182 @@
+Report of the Task Group 186 on model-based dose calculation methods
+in brachytherapy beyond the TG-43 formalism: Current status
+and recommendations for clinical implementation
+Luc Beaulieua)
+Département de Radio-Oncologie et Centre de Recherche en Cancérologie de l’Université Laval, Centre
+hospitalier universitaire de Québec, Québec, Québec G1R 2J6, Canada and Département de Physique,
+de Génie Physique et d’Optique, Université Laval, Québec, Québec G1R 2J6, Canada
+
+Åsa Carlsson Tedgren
+Department of Medical and Health Sciences (IMH), Radiation Physics, Faculty of Health Sciences,
+Linköping University, SE-581 85 Linköping, Sweden and Swedish Radiation Safety Authority,
+SE-171 16 Stockholm, Sweden
+
+Jean-François Carrier
+Département de radio-oncologie, CRCHUM, Centre hospitalier de l’Université de Montréal,
+Montréal, Québec H2L 4M1, Canada and Département de physique, Université de Montréal,
+Montréal, Québec H3C 3J7, Canada
+
+Stephen D. Davis
+Department of Medical Physics, University of Wisconsin-Madison, Madison, Wisconsin 53705 and
+Department of Medical Physics, McGill University Health Centre, Montréal, Québec H3G 1A4, Canada
+
+Firas Mourtada
+Radiation Oncology, Helen F. Graham Cancer Center, Christiana Care Health System,
+Newark, Delaware 19899
+
+Mark J. Rivard
+Department of Radiation Oncology, Tufts University School of Medicine, Boston, Massachusetts 02111
+
+Rowan M. Thomson
+Carleton Laboratory for Radiotherapy Physics, Department of Physics, Carleton University,
+Ottawa, Ontario K1S 5B6, Canada
+
+Frank Verhaegen
+Department of Radiation Oncology (MAASTRO), GROW, School for Oncology and Developmental Biology,
+Maastricht University Medical Center, Maastricht 6201 BN, the Netherlands and Department of Medical
+Physics, McGill University Health Centre, Montréal, Québec H3G 1A4, Canada
+
+Todd A. Wareing
+Transpire Inc., 6659 Kimball Drive, Suite D-404, Gig Harbor, Washington 98335
+
+Jeffrey F. Williamson
+Department of Radiation Oncology, Virginia Commonwealth University, Richmond, Virginia 23298
+
+(Received 7 May 2012; revised 26 July 2012; accepted for publication 2 August 2012;
+published 25 September 2012)
+The charge of Task Group 186 (TG-186) is to provide guidance for early adopters of model-based
+dose calculation algorithms (MBDCAs) for brachytherapy (BT) dose calculations to ensure practice
+uniformity. Contrary to external beam radiotherapy, heterogeneity correction algorithms have only
+recently been made available to the BT community. Yet, BT dose calculation accuracy is highly
+dependent on scatter conditions and photoelectric effect cross-sections relative to water. In specific
+situations, differences between the current water-based BT dose calculation formalism (TG-43) and
+MBDCAs can lead to differences in calculated doses exceeding a factor of 10. MBDCAs raise three
+major issues that are not addressed by current guidance documents: (1) MBDCA calculated doses
+are sensitive to the dose specification medium, resulting in energy-dependent differences between
+dose calculated to water in a homogeneous water geometry (TG-43), dose calculated to the local
+medium in the heterogeneous medium, and the intermediate scenario of dose calculated to a small
+volume of water in the heterogeneous medium. (2) MBDCA doses are sensitive to voxel-by-voxel
+interaction cross sections. Neither conventional single-energy CT nor ICRU/ICRP tissue composition compilations provide useful guidance for the task of assigning interaction cross sections to each
+voxel. (3) Since each patient-source-applicator combination is unique, having reference data for each
+possible combination to benchmark MBDCAs is an impractical strategy. Hence, a new commissioning process is required. TG-186 addresses in detail the above issues through the literature review
+
+6208
+
+Med. Phys. 39 (10), October 2012
+
+0094-2405/2012/39(10)/6208/29/$30.00
+
+© 2012 Am. Assoc. Phys. Med.
+
+6208
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+6209
+
+and provides explicit recommendations based on the current state of knowledge. TG-43-based dose
+prescription and dose calculation remain in effect, with MBDCA dose reporting performed in parallel when available. In using MBDCAs, it is recommended that the radiation transport should be
+performed in the heterogeneous medium and, at minimum, the dose to the local medium be reported
+along with the TG-43 calculated doses. Assignments of voxel-by-voxel cross sections represent a
+particular challenge. Electron density information is readily extracted from CT imaging, but cannot
+be used to distinguish between different materials having the same density. Therefore, a recommendation is made to use a number of standardized materials to maintain uniformity across institutions.
+Sensitivity analysis shows that this recommendation offers increased accuracy over TG-43. MBDCA
+commissioning will share commonalities with current TG-43-based systems, but in addition there
+will be algorithm-specific tasks. Two levels of commissioning are recommended: reproducing TG-43
+dose parameters and testing the advanced capabilities of MBDCAs. For validation of heterogeneity
+and scatter conditions, MBDCAs should mimic the 3D dose distributions from reference virtual geometries. Potential changes in BT dose prescriptions and MBDCA limitations are discussed. When
+data required for full MBDCA implementation are insufficient, interim recommendations are made
+and potential areas of research are identified. Application of TG-186 guidance should retain practice
+uniformity in transitioning from the TG-43 to the MBDCA approach. © 2012 American Association
+of Physicists in Medicine. [http://dx.doi.org/10.1118/1.4747264]
+Key words: brachytherapy, treatment planning, dose calculation, radiation transport, commissioning,
+dose scoring, heterogeneities, material assignments
+TABLE OF CONTENTS
+I
+
+INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6210
+I.A Problem description . . . . . . . . . . . . . . . . . . . . . 6210
+I.B Report overview and rationale . . . . . . . . . . . . 6210
+I.C Review of tissue and applicator material
+heterogeneity effects . . . . . . . . . . . . . . . . . . . . 6211
+I.C.1 Low energy regime, seeds, and
+miniature
+x-ray sources . . . . . . . . . . . . . . . . . . . 6211
+I.C.2 Intermediate energies: 169 Yb . . . . . 6212
+I.C.3 Higher energies: 192 Ir . . . . . . . . . . . . 6213
+I.C.4 Cone beam computed tomography 6213
+II REVIEW OF MODEL-BASED
+BRACHYTHERAPY DOSE-CALCULATION
+ALGORITHMS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6213
+II.A Semiempirical approaches . . . . . . . . . . . . . . . 6213
+II.B Model-based algorithms . . . . . . . . . . . . . . . . . 6214
+II.B.1 Collapsed-cone
+superposition/convolution method 6214
+II.B.2 Deterministic solutions to the
+linear Boltzmann transport
+equation . . . . . . . . . . . . . . . . . . . . . . . . 6214
+II.B.3 Monte Carlo simulations . . . . . . . . . 6214
+III DOSE SPECIFICATION MEDIUM SELECTION 6214
+III.A Relationship between Dm,m and Dw,m in the
+large cavity regime . . . . . . . . . . . . . . . . . . . . . . 6216
+III.B Dm,m and Dw,m relationships in the small
+and intermediate cavity regimes . . . . . . . . . . 6216
+III.C Recommendations . . . . . . . . . . . . . . . . . . . . . . 6217
+III.D Areas of research . . . . . . . . . . . . . . . . . . . . . . . 6218
+IV CT IMAGING AND PATIENT MODELING . . . . 6218
+IV.A Literature review . . . . . . . . . . . . . . . . . . . . . . . 6218
+IV.A.1 Material characterization . . . . . . . . . 6219
+IV.A.2 CT segmentation . . . . . . . . . . . . . . . . 6220
+
+Medical Physics, Vol. 39, No. 10, October 2012
+
+IV.A.3 CBCT segmentation . . . . . . . . . . . . . 6220
+IV.A.4 Dual energy CT and spectral CT . . 6220
+IV.A.5 CT artifacts . . . . . . . . . . . . . . . . . . . . . 6221
+IV.A.6 Other imaging modalities . . . . . . . . 6221
+IV.B Recommendations . . . . . . . . . . . . . . . . . . . . . . 6221
+IV.B.1 Consensus material definition . . . . 6221
+IV.B.1.a Prostate . . . . . . . . . . . . . . . . 6221
+IV.B.1.b Breast . . . . . . . . . . . . . . . . . 6222
+IV.B.1.c Calcifications . . . . . . . . . . . 6222
+IV.B.1.d Other materials . . . . . . . . . 6222
+IV.B.1.e Applicators, sources, and
+other devices . . . . . . . . . . . 6222
+IV.B.2 Material assignment method . . . . . . 6223
+IV.B.2.a Use of other imaging
+modalities . . . . . . . . . . . . . . 6224
+IV.B.3 CT/CBCT artifact removal . . . . . . . 6224
+IV.C Areas of research . . . . . . . . . . . . . . . . . . . . . . . 6224
+IV.C.1 Determination of tissue
+composition . . . . . . . . . . . . . . . . . . . . 6224
+IV.C.2 Segmentation methods . . . . . . . . . . . 6224
+IV.C.3 CT artifact removal . . . . . . . . . . . . . . 6224
+V MBDCA COMMISSIONING . . . . . . . . . . . . . . . . . . 6225
+V.A Literature review . . . . . . . . . . . . . . . . . . . . . . . 6225
+V.B From TG-43 to MBDCA-based
+commissioning . . . . . . . . . . . . . . . . . . . . . . . . . 6225
+V.B.1 MBDCA commissioning level 1 . . 6225
+V.B.2 MBDCA commissioning level 2 . . 6225
+V.B.3 MBDCA commissioning workflow 6226
+V.B.3.a Test case plans and data
+availability . . . . . . . . . . . . . 6226
+V.B.3.b DICOM test case
+importing . . . . . . . . . . . . . . 6227
+V.B.3.c TG-43-based dose
+calculation tests . . . . . . . . . 6227
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6209
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+V.B.3.d MBDCA-based dose
+calculation tests . . . . . . . . . 6227
+V.B.3.e Reference CT scanner
+calibration data . . . . . . . . . 6227
+V.B.3.f Select dose scoring
+medium type . . . . . . . . . . . 6227
+V.C Areas of research . . . . . . . . . . . . . . . . . . . . . . . 6227
+V.C.1 Workflow . . . . . . . . . . . . . . . . . . . . . . 6227
+V.C.2 Test cases . . . . . . . . . . . . . . . . . . . . . . 6227
+V.C.3 Gamma-index comparisons . . . . . . 6227
+V.C.4 Phantom development . . . . . . . . . . . 6228
+VI OTHER ISSUES AND LIMITATIONS . . . . . . . . . . 6228
+VI.A Uncertainties related to MBDCA . . . . . . . . . 6228
+VI.B Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6229
+VI.C Considerations for changing brachytherapy
+dose prescriptions . . . . . . . . . . . . . . . . . . . . . . 6229
+VII CONCLUSIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6230
+Acknowledgements . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6230
+APPENDIX A: GLOSSARY OF TERMS . . . . . . . . 6230
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6231
+
+I. INTRODUCTION
+I.A. Problem description
+
+Brachytherapy plays an important role in the curative
+management of cancers in a variety of disease sites,1 most
+prominently, gynecological malignancies, breast cancer, and
+prostate cancer. Commonly used radionuclides include 137 Cs
+for low dose-rate (LDR) intracavitary brachytherapy; 192 Ir
+in the form of wires or seeds in ribbons for temporary
+LDR interstitial implants, and 192 Ir for high dose-rate (HDR)
+brachytherapy. Starting in the late 1960s with 125 I seeds,2 and
+continuing with 103 Pd, and more recently 131 Cs, new lowenergy (LE) radionuclides were introduced into clinical practice, revolutionizing the practice of permanent implantation.
+In conjunction with transrectal ultrasound (US) image guidance, LE permanent seed implantation is now one of the leading therapeutic approaches for the treatment of early stage
+prostate carcinoma. These radionuclides have practical advantages such as reduced shielding requirements and short halflives, making them easier to manipulate and dispose of. In
+addition, a new type of LE brachytherapy source has been
+developed: the electronic brachytherapy source (EBS), essentially a miniaturized 50 kVp x-ray tube.
+The 1995 AAPM Task Group No. 43 (TG-43) report,3 and
+its more recent TG-43U1 (Ref. 4) and TG-43U1S1 (Ref. 5)
+updates, are currently recognized as the worldwide standard
+for LE photon-emitting brachytherapy dose calculation. The
+TG-43 approach has been widely adopted for HDR 192 Ir
+remote afterloading brachytherapy dose planning. Using a
+table-based approach that uses a geometric dose falloff model
+to facilitate accurate linear interpolation on a coarse grid, the
+TG-43 dose calculation formalism describes dose deposition
+around a single source centrally positioned in a spherical
+water phantom.4 The current approach for estimating doses
+in brachytherapy treatment planning is to superpose precalculated dose distributions for single sources in water according
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6210
+
+to the pattern of the source placement and the source
+dwell-time. The single-source data are derived from one-time
+source-model specific Monte Carlo (MC) simulations or thermoluminescent dosimetry (TLD) measurements according to
+specifications outlined in the AAPM TG-43U1 report, and
+are strictly valid only for a homogeneous water phantom
+of the size and shape used for data derivation. This method
+is fast and practical in the clinic. However, the influence of
+tissue and applicator heterogeneities, interseed attenuation,
+and finite patient dimensions are all ignored. An exception is
+the occasional use of one-dimensional (1D) “effective path
+length” algorithms6 applied to the total dose to account for
+applicators incorporating high atomic number (Z) shielding
+materials.7, 8 These algorithms are appropriate for the primary
+dose (i.e., dose contributed by direct, nonscattered photons),
+but fail to describe the scatter-dose component dependence
+on the full three-dimensional (3D) geometry. 3D scatterintegration, superposition/convolution, or transport-equation
+solution methods are required for acceptable accuracy.9–11
+In a 2009 Medical Physics Vision 20/20 article, Rivard et al.
+performed a review of the literature and concluded that
+accepted clinical dose parameters can be over- or underestimated by at least 5% (and by as much as factor-of-10)
+in numerous situations.12 Based on the energy range, they
+compiled a table (Table I of that paper) describing categories
+of clinical applications for which the current dose calculation
+standard would lead to significant deviations. These effects
+are reviewed in more detail in Sec. I.C of the present report.
+In contrast, model-based dose-calculation algorithms
+(MBDCAs) offer the possibility of departing from water-only
+geometries by modeling radiation transport in nonwater media (tissues, applicators, air-tissue interfaces), resulting in a
+much more physically accurate reconstruction of the dose distribution actually delivered to the patient.
+I.B. Report overview and rationale
+
+Clinical application of material heterogeneity corrections
+in external beam radiation therapy (EBRT) is now the standard of practice for many modalities, e.g., IMRT and hypofractionated early stage lung cancer.13 This transition has
+been made possible by the emergence of MBDCAs (Ref. 14)
+such as collapsed-cone (CC) convolution,15 superpositionconvolution,16 MC methods,17 and more recently grid-based
+Boltzmann solver (GBBS),18, 19 all of which can now be found
+in commercial planning software packages, as well as new
+treatment techniques and dose-time-fractionation schedules
+which require a more realistic appraisal of delivered absorbed
+dose. In contrast, relatively little use of heterogeneity corrections has been made in brachytherapy.
+From a fundamental physics perspective, the photon interaction processes, which are dominated by Compton scattering
+in EBRT, are more forgiving in EBRT than for brachytherapy
+where the photoelectric effect dominates energy deposition
+for LE brachytherapy sources, and to a lesser degree for highenergy (HE) sources. Thus, the all-water approximation for
+dose calculations is much poorer at low (E < 50 keV) and
+intermediate (50 keV < E < 200 keV) energies than at high
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6210
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+energies (E > 200 keV). Even for intermediate- and HE photons, the scatter-to-primary ratio is at its maximum in materials of low Z and therefore appropriate 3D modeling of the
+scatter component is important. The cases of superficial implants and shielded vaginal applicators are good examples.
+Tissue composition heterogeneities could become critical for
+electronic HDR sources where mean photon energies are generally about 30 keV and the dosimetric points of interest or
+organs at risks (OAR) can be located many centimeters from
+the source.
+In this context, the clinical introduction of advanced
+dosimetry algorithms beyond the current AAPM TG-43 formalism for sealed source brachytherapy dose calculations is
+highly desirable. While all of the issues mentioned previously
+can be tackled by MBDCAs, this adds a new layer of complexity to current treatment planning systems (TPS). In order
+to account for all sources of scatter and heterogeneities, accurate geometrical descriptions of the patient and implanted
+applicators, including assignment of cross sections to all media, must be provided on a voxel-by-voxel or component-bycomponent basis. In other words, the location and material
+composition of each unique geometric element considered
+in the dose calculation must be known. In current practice,
+CT images are used simply to perform anatomy delineation.
+For MBDCAs, the CT images will become a source of dosecalculation algorithm input data that are critical for dosimetric
+accuracy. Furthermore, this same information must be available for applicators, shields, and sources if intersource attenuation needs to be considered. The output of a MBDCA
+is highly dependent on how imaging and applicator structure information is obtained and used by the algorithm. Thus,
+whereas the TG-43 dosimetry formalism, despite its inherent
+limitations, provides the community with an intrinsic consistency in dose calculation, MBDCAs for all their advantages
+can lead to large center-to-center dose-calculation variations
+if specific guidance is not provided.
+This report addresses three major issues associated with
+the advent of MBDCAs, namely,
+(1) Choice of dose specification medium (Sec. III), because there are energy-dependent differences even
+when nonwater materials are included in the radiationtransport model depending on whether dose is specified to a water reference medium or the local tissue
+medium.
+(2) Voxel-by-voxel cross-section assignment, as neither
+conventional single-energy CT nor ICRU/ICRP tissue
+composition recipes are de facto accurate guides for
+the task (Sec. IV).
+(3) Commissioning procedures for MBDCAs (Sec. V).
+Each section presents its own literature review, recommendations, and related topics for future research. The report is
+concluded (Sec. VI) by discussing changes in dose prescription that may result from transitioning from TG-43 dose computations to more realistic MBDCA dose estimates, and the
+uncertainties and limitations associated with MBDCAs.
+These recommendations have been reviewed by members
+of the AAPM Brachytherapy Subcommittee, AAPM TherMedical Physics, Vol. 39, No. 10, October 2012
+
+6211
+
+apy Physics Committee, the GEC-ESTRO Brachytherapy
+Physics Quality Subcommittee (BRAPHYQS), ESTRO-EIR,
+the American Brachytherapy Society (ABS) physics committee, and the Australasian Brachytherapy Group (ABG). This
+report has been approved and is endorsed by the AAPM,
+ESTRO, ABS, and ABG. While certain commercial products are identified in this report, such identification implies
+neither recommendation nor endorsement by the AAPM,
+ESTRO, ABS, or ABG. Nor does it imply that the product
+is necessarily the best available for these purposes. This report is intended for the experienced brachytherapy physicist
+and physician considering early adoption of MBDCAs.
+I.C. Review of tissue and applicator material
+heterogeneity effects
+
+A short review of early literature on the impact of dosimetry from taking heterogeneity effects into account is provided
+below. For a more in-depth review, the reader is referred to
+Rivard et al.12 Options for dose scoring/reporting and notation are summarized in Table I. Dosimetric errors incurred
+with the TG-43 approach and the magnitudes of differences
+between the various doses listed in Table I depend on photon energy. For LE sources, the photoelectric process is dominant; differences in mass-energy absorption coefficients between various tissues and water (see Fig. 1)20 can result in
+significant dose differences depending on the medium chosen
+for radiation transport and energy deposition.
+Note that the studies reviewed in Sec. I.C.1 compare dose
+calculations in homogeneous water Dw,w with results of MC
+simulations reporting dose to the local transport medium,
+Dm,m (cf. Table I). More recent studies investigating the effect of using other media for dose reporting are reviewed in
+Sec. III.
+I.C.1. Low energy regime, seeds, and miniature
+x-ray sources
+
+Taylor demonstrated differences of up to 25% between
+Dm,m and Dw,w for breast tissue for the Xoft electronic miniature x-ray source with the dose ratio changing by nearly 25%
+over 5 cm.21 For prostate tissue, Dm,m and Dw,w differ by 10%
+for 125 I and 103 Pd sources, with gradients of up to 20% over
+5 cm in Dm,m /Dw,w .21 Thomson et al. explored differences
+in Dm,m and Dw,w for a few different eye tissues for 125 I or
+103
+Pd seeds in the standardized eye plaques of the Collaborative Ocular Melanoma Study (COMS) and found that Dm,m
+differed by up to 9% from Dw,w .22 Chibani and Williamson
+evaluated the impact of tissue composition on dose distributions and dose-volume histograms (DVHs) in the prostate for
+125
+I and 103 Pd idealized implants.23 For a 103 Pd-based preimplant plan, the dose Dm,m delivered to 100% of the prostate
+volume, D100 , was 6% lower for a prostate modeled as soft tissue than for the same prostate modeled as pure water (i.e., as
+Dw,w ). Carrier et al. evaluated the impact of prostate treatment
+plans with 125 I permanent seed implants using MC methods,24
+comparing dose distributions for a TG-43 calculation, full
+MC with water prostate, and full MC with realistic prostate
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6211
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+6212
+
+TABLE I. Summary of dose reporting possibilities. The notation for absorbed dose estimation at location r is Dx, y − Z (r), where x denotes the choice of dosespecification medium (either water or local medium at r); y denotes the choice of voxel composition assignments used to perform the radiation transport
+calculations (either homogeneous water; all biological tissue approximated by water except for applicators and air-tissue interfaces; applicators and air-tissue
+interfaces with actual tissue compositions and densities); and Z denotes the choice of algorithm (either MBDCA or TG43).
+Notation
+1
+
+Dw,w-TG43
+
+2
+
+Dw,w/appl/air-MBDC
+
+3
+
+Dm,m-MBDC = Dm,m
+
+4
+
+Dw,m-MBDC = Dw,m
+
+Method for dose calculation
+
+Comment
+
+Superposition of single-source absorbed dose-to-water
+distributions derived from a transport geometry
+consisting of a 30 cm liquid water sphere (<50 keV
+sources) or unbounded water medium (≥50 keV
+sources)
+MBDCA absorbed dose-to-water estimation assuming a
+transport geometry that realistically represents the
+geometry, composition, and density of applicators,
+sources, and air-tissue interfaces but assumes that all
+biological tissues, including bony tissues, are
+approximated by unit-density liquid water. Neglects any
+differences due to deviations of tissue composition from
+water.
+MBDCA accounting for nonwater tissue composition
+and density as well as patient skin contour, applicator,
+and shields. Reporting dose to local medium.
+MBDC radiation transport as in 3 but dose to bulk
+medium is converted to dose-to-water using cavity
+theory (conversion method to be indicated) or dose to
+water is scored.
+
+tissue. For clinical treatment plans, differences of 4%–5% for
+D90 (the minimum dose deposited in 90% of the prostate volume) between MC simulations in water (Dw,w ) and in prostate
+tissue (Dm,m ) were found.24 In a later study of postimplant
+dosimetry for 28 patients, Carrier et al. compared MC sim-
+
+F IG . 1. Mass energy absorption coefficients for the materials indicated relative to those for water for energies from 5 to 200 keV, calculated with the
+EGSnrc user-code “g.” Atomic compositions and densities are those from
+ICRU Report 44 (Ref. 20) and ICRP Report 89 (Ref. 120). The composition
+of the soft tissue is that for average soft tissue male (Ref. 20); the composition of the RBM (YBM) is that for “active marrow” (“inactive marrow”)
+(Ref. 119).
+Medical Physics, Vol. 39, No. 10, October 2012
+
+Clinical experience is with this quantity. However,
+intersource attenuation, applicator attenuation, tissue
+heterogeneities, and skin contours are all ignored.
+
+A major improvement over Dw,w because applicator
+shielding effects, interseed attenuation, and the influence of
+patient skin counter are all taken into account. These are the
+major effects for higher energy brachytherapy, e.g., HDR
+192 Ir, and also for low energy brachytherapy in the presence
+of applicators. Ignores nonwater composition of tissue,
+which may dominate low-energy brachytherapy
+applications for some sites.
+Requires knowledge of patient media composition
+(estimated CT, see Sec. IV). Natural dose specification
+choice for MC, CC, or GBBS MBDCAs.
+Concern relating to conversion methods may arise at
+energies when sensitive target dimensions are similar to or
+smaller than secondary electron ranges, e.g., for low energy
+brachytherapy sources
+
+ulations using patient data (with media density set according to CT attenuation data) to clinical TG-43 calculations
+(Dw,w-TG43 ).25 For D90 , the mean difference between the clinical technique (Dw,w-TG43 ) and the MC method (Dm,m ) was
+7%, of which 3% was due to tissue composition and the remaining 4% to interseed attenuation. The clinical calculation
+technique (TG-43 formalism) overestimated doses deposited
+in the prostate and OAR when compared to MC. Considerations for changing brachytherapy prescriptions are discussed
+in Sec. VI.C.
+Two recent studies have investigated differences between
+Dm,m and TG-43 doses in the context of lung brachytherapy. Yang and Rivard investigated the effect of nonwater tissues using Monte Carlo simulations of a phantom comprised
+of soft tissue, lung, and cortical bone.26 Modeling photon
+sources with energies between 20 keV and 400 keV, they
+concluded that TG-43 overestimates PTV dose and underestimates dose to bone and healthy tissue. Sutherland et al.
+performed Monte Carlo simulations with BrachyDose using
+patient CT data for patients treated with intraoperative 125 I
+lung brachytherapy.27 Significant dose differences were observed between full modeling of patient tissues (calculating
+Dm,m ) and TG-43 calculations (Dw,w-TG43 ); TG-43 underestimates the dose (by up to 36% of D90 ) in larger volumes containing higher proportions of healthy lung tissue.
+
+I.C.2. Intermediate energies: 169 Yb
+
+At intermediate energies (between around 50–150 keV),
+effects due to varying scatter conditions are maximal for soft
+tissues. The differences between different media are greater
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6212
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+than at high energies although less than at low energies. Lymperopoulou et al. have shown that 169 Yb breast brachytherapy
+doses calculated with the TG-43 approach, Dw,w-TG43 , can be
+5% larger than MC calculated values of Dm,m at the surface
+of the planning target volume (PTV), 15%–25% larger at the
+breast skin and 30% larger in the lung.28 Contrast medium in
+R
+balloon enlarges differences with the TG-43
+a MammoSite
+29
+approach.
+
+I.C.3. Higher energies: 192 Ir
+
+Anagnostopoulos et al.30 reported on an esophageal 192 Ir
+brachytherapy study that showed no differences within the
+target region between Dw,w-TG43 and MC-calculated Dm,m ,
+but revealed Dw,w-TG43 dose overestimations of up to 13%
+to the spinal cord and 15% underestimations to the sternum
+bone.
+Lymperopoulou et al. showed Dw,w-TG43 calculated doses
+to agree with MC calculated values of Dm,m in the PTV of an
+192
+Ir breast implant. However, doses calculated by Dw,w-TG43
+were up to 5% larger than MC calculated values of Dm,m for
+the skin and up to 10% larger for the lung.28
+Poon et al. used the PTRAN_CT MC code to calculate Dw,w and dose to medium Dm,m for HDR endorectal
+brachytherapy with a shielded intracavitary applicator.31, 32
+Two separate CT-based simulations were performed for each
+patient, one in which all CT voxels were assumed to consist
+of water and another with materials assigned according to the
+CT-numbers; in both cases the applicator and shielding were
+simulated. In soft tissues, differences between Dw,w and Dm,m
+were less than 2%. Differences between Dw,w and Dm,m were
+18%–23% in cortical bone, 3%–3.5% in spongiosa, and 5%–
+7% in femoral bone.
+Poon and Verhaegen found that use of Dw,w-TG43 in dose
+calculation for breast implants (HDR 192 Ir brachytherapy)
+overestimated the target coverage by 2% on average, and the
+dose to the skin by 5% relative to TG-43.33
+
+I.C.4. Cone beam computed tomography
+
+Insights into dosimetry issues for extreme tissue heterogeneities, such as bone, may be obtained from MC estimates
+of cone-beam computed tomography (CBCT) patient dose,
+since CBCT energy spectra overlap the low and intermediate brachytherapy photon-energy ranges. Ding et al.34 and
+Ding and Coffey35 observed that dose to bone was two to
+four times greater than dose to soft tissue for a Varian OBI
+CBCT system (40 kVp–125 kVp with mean energy of about
+60 keV); these differences are expected based on the large
+differences in mass-energy absorption coefficients (Fig. 1).
+Walters et al.36 reported that the elevated bone dose results
+in an elevated dose to bone surface cells (osteogenic cells on
+the endosteal surfaces), identified by the ICRP as OAR within
+the skeleton, due to LE electrons liberated in photoelectric
+events in the trabecular bone. These results indicate that skeletal doses are highly sensitive to the geometry and composition
+of soft-tissue cavities and bone-mineral matrix assumed, indiMedical Physics, Vol. 39, No. 10, October 2012
+
+6213
+
+cating that biologically relevant and accurate skeletal dosimetry is complex and may require special considerations.
+
+II. REVIEW OF MODEL-BASED BRACHYTHERAPY
+DOSE-CALCULATION ALGORITHMS
+This section briefly reviews model-based calculation
+algorithms for brachytherapy dose calculations taking into
+account heterogeneous geometries. While first-principles approaches (Sec. II.B) are the most accurate, the semiempirical
+methods reviewed in Sec. II.A address to varying degrees the
+clinical need for improved accuracy with high computational
+efficiency compared to the TG-43 method, e.g., in optimizing
+source placement and dwell times. A more detailed overview
+of calculation algorithms can be found in a 2009 Medical
+Physics Vision 20/20 paper by Rivard et al.12 and in two book
+chapters from the 2005 AAPM/ABS Brachytherapy Summer
+School Proceedings.37, 38
+Collision kerma from primary photons (interacting for the
+first time outside the source) can be calculated using 1D
+ray-tracing and accurately approximates primary-photon absorbed dose under charged-particle equilibrium (CPE). CPE
+is valid for treatment planning of brachytherapy except very
+close to sources39, 40 or to metal-tissue interfaces41, 42 and
+hence the primary dose around brachytherapy sources can be
+derived with full accuracy using 1D methods. The scatter dose
+(dose contributed by photons interacting for a second time or
+more), depends, however, on the full 3D geometry and requires use of 3D scatter integration methods to be accurately
+estimated.
+
+II.A. Semiempirical approaches
+
+Methods that apply 1D ray-tracing with scaling for correcting total doses due to the presence of high-Z shields
+around 137 Cs were developed early and are also used for
+192 8, 43
+Ir.
+Several methods of varying complexity (none, however, being fully 3D) that separate the primary and scatter
+dose components have been developed using 1D ray-tracing
+for the primary dose calculation and estimating the scatter
+dose component.11, 43–50 Another approach, tested for 192 Ir
+sources,32, 51 is based on MC precalculated applicator-specific
+dose in water distributions aiming at accounting for highZ shields but considering the patient to be water equivalent. An additional approach uses a TG-43 hybrid technique
+where MC calculations for rigid brachytherapy geometries
+are performed for input to conventional brachytherapy planning systems.52–56 This technique has been performed for
+HDR 192 Ir gynecological implants, skin applicators, deepseated breast lumpectomy cavities, and for LDR eye plaque
+brachytherapy planning.
+These semiempirical approaches allow brachytherapy
+treatment plans to be generated in the same timescales observed for conventional TG-43-based plans yet with markedly
+increased accuracy to represent the physical implant. Dose
+may be determined in any medium to any medium due to the
+precalculated MC dose kernels.
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6213
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+II.B. Model-based algorithms
+
+Model-based approaches either explicitly simulate the
+transport of radiation in the actual media or employ multipledimensional scatter integration techniques to account for the
+dependence of scatter dose on the 3D geometry. The three
+methods of current interest to brachytherapy treatment planning are CC superposition/convolution, GBBS, and MC simulations.
+II.B.1. Collapsed-cone superposition/convolution
+method
+
+CC is a kernel superposition method designed for treatment planning applications and optimized for calculation efficiency through angular discretization (“collapsed cones”) of
+the kernels along a radiation transport grid.15 The kernels map
+the spatial energy deposition response of scattered photons
+and charged secondaries for a reference medium, commonly
+water. The common approach in EBRT, where CC has long
+been used,14 is to use two kernels, one for the primary dose
+and one for the scatter dose, both operating on the energy released by primary photons. In brachytherapy, the approach is
+to calculate the primary dose through a direct raytrace of the
+primary photons using the kerma approximation, and use a
+scatter order driven process to calculate dose from first scatter
+and multiple scatter separately with different kernels,9, 57–59
+using the raytrace results for the primary dose as a source term
+for scattering. Raytracing operations are used to scale both the
+primary dose and all kernels for heterogeneities based on the
+density scaling theorem of O’Connor60 and methods going
+beyond density scaling have been developed to scale kernels
+for heterogeneities of high atomic numbers.58 For the primary
+and first scatter doses, this does not impose any approximations other than discretization effects, but is more approximate for the multiple scattering dose. The source characterization data needed for the raytracing of the primary dose can
+effectively be derived from precalculated primary dose distributions in water, which have motivated the suggestion of a
+primary and scatter separation (PSS) formalism61 for source
+characterization that also provides backwards compatibility
+with the TG-43 tabulations. The BT collapsed cone algorithm
+is currently being integrated to the Oncentra Brachy TPS from
+Elekta (Veenendaal, The Netherlands).62
+II.B.2. Deterministic solutions to the linear Boltzmann
+transport equation
+
+Deterministic methods for solving the linear Boltzmann
+transport equation (LBTE) in integral or differential form
+yield approximate solutions that converge to the true continuous LBTE solution in the limit of very fine phase-space
+mesh spacing. There are several common approaches used,63
+including method-of-characteristics, spherical harmonics, and
+discrete ordinates.
+Deterministic approaches solve the LBTE by systematically discretizing spatial (via finite difference or element
+meshes), angular (via discrete ordinates, spherical harmonics,
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6214
+
+etc.), and energy variables (via multigroup approximation),
+which results in a linear system of equations, which are iteratively solved. Because these methods are all based on phasespace discretization, TG-186 categorizes them as grid-based
+Boltzmann equation solvers (GBBS). Zhou and Inanc developed a GBBS, which they applied to LE brachytherapy,64
+based on direct evaluation of the integral LBTE, expanded
+in orders of scattering. Daskalov et al. applied a 2D discreteordinates GBBS (from DANTSYS) (Ref. 65) for the dosimetric modeling of 125 I and 192 Ir brachytherapy sources.66, 67 FurR
+rather studies have been performed using the 3D Attila
+diation transport software (Transpire Inc, Gig Harbor, WA),
+for which a third-order linear discontinuous finite-element
+method (DFEM) is used for spatial discretization. Like
+R
+discretizes angular and energy phaseDANTSYS, Attila
+space variables via the discrete-ordinates and multigroup
+approximations, respectively. Mourtada et al. reported on
+R
+dose distributions around a 137 Cs shielded colpostat
+Attila
+and compared the results to MC simulations in liquid water.68
+Further optimizations and refinements were performed by
+R
+and MCNPX 3D
+Gifford et al.18, 69 who compared Attila
+192
+137
+dose distributions for Ir and Cs sources. More recently,
+Transpire Inc has created an optimized radiation-therapy speR
+R
+GBBS called Acuros
+first for
+cific version of the Attila
+R
+70–72
+19, 73–75
+and later for EBRT.
+Acuros
+HDR brachytherapy
+was introduced commercially by Varian Medical Systems
+(Palo Alto, CA).
+II.B.3. Monte Carlo simulations
+
+The MC simulation solves the linear LBTE by random
+sampling and is the current state of the art in computational dosimetry. The first MC code with an advanced geometry package specific to brachytherapy sources having several nonanalog estimators (to increase computational speed)
+was PTRAN.76 PTRAN can calculate the primary dose analytically and perform MC simulations for the scatter dose
+part.2, 77 For treatment planning applications increasing computational efficiency through correlated sampling has been
+investigated.78, 79 Chibani and Williamson have presented a
+fast MC code intended as a dose calculation engine for
+LE brachytherapy seeds.80 BrachyDose is an extension to
+EGSnrc allowing for use of a track-length estimator and modeling of clinical sources.81, 82 GEANT4 has also been used for
+postimplant treatment planning.25 Most brachytherapy treatment planning applications are based on the assumption of
+CPE and implement the equivalence of absorbed dose and collisional kerma using track-length estimators, and may employ
+phase-space files to characterize sources before “run-time.”
+Further references to such applications are given in Sec. III.
+The readers are referred to Sec VI.A for a discussion of the
+differences between MC and GBBS.
+III. DOSE SPECIFICATION MEDIUM SELECTION
+MC simulations and other MBDCA methods offer the possibility of realistic modeling of the absorbed dose distribution in patient treatment geometries, including the impact of
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6214
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+applicator materials, skin surface contour, and deviation of
+tissue composition and density from those of liquid water.
+As in megavoltage EBRT,83, 84 modeling radiation transport
+in nonwater media confronts the medical physicist with another decision: the selection of dose specification medium.
+Absorbed dose can be reported either to the local tissue composing each voxel, Dm,m , or to a fixed reference medium
+(usually but not necessarily water), Dw,m , regardless of the
+composition of the underlying voxels. As summarized in
+Table I, choices for absorbed dose estimation at location r
+may be represented by Dx,y-Z (r) where: x denotes the choice
+of dose-specification medium (either water or local medium
+at r); y denotes the choice of voxel composition assignment
+used to perform the radiation transport or scatter-integration
+calculations (cf. Table I); and Z denotes the algorithm (either
+MBDCA or TG-43). In the TG-43 protocol, both the transport
+geometry and the dose-specification medium are taken to be
+water:Dw,w-TG43 (r).
+Choosing between the competing Dw,m and Dm,m alternatives in brachytherapy parallels the controversy this issue
+has engendered in megavoltage EBRT planning; arguments
+from the EBRT debate are briefly reviewed in the present
+paragraph.83–85 For EBRT, one argument for reporting Dw,m
+is maintaining consistency with earlier calculation methods
+that reported dose to water.83, 84 A more recent argument in
+support of Dw,m reporting is that the biological targets of interest, i.e., cells or cell nuclei, consist mainly of water85, 86 and
+are likely to vary less between tissue types due to their functional similarity than the tissue-averaged composition. Proponents of Dm,m for EBRT reporting argue that: Dm,m is the
+quantity inherently computed with Monte Carlo simulations
+and some other MBDCA; that conversion from Dm,m to Dw,m
+adds unnecessary uncertainties; and that energy deposited to
+macroscopic regions of interest dominates complications and
+tumor control. The AAPM TG-105 report on MC EBRT treatment planning does not take a position in favor of reporting
+either Dm,m or Dw,m ;85 however, it recommends that publications clearly state which quantity is reported and provide
+information to allow conversion between them. These conversions of Dm,m to Dw,m and vice versa employ Bragg-Gray
+(small cavity) theory and ratios (water to medium) of mass
+collision stopping powers (e.g., see review in TG-105 report85
+and recent discussion by Ma and Li87 ). With the exception of
+specifying clinically meaningful doses to bone,88 the controversy regarding the medium for dose specification in EBRT
+is largely academic since the differences between Dw,m and
+Dm,m are limited to 2% for all soft tissues,89–92 with similar
+results obtained for proton beams.93
+Somewhat different issues need to be considered in selecting the dose-reporting medium for brachytherapy and other
+keV photon field applications. While secondary charged particle ranges of the order of several centimeters are common in megavoltage photon EBRT, they are much shorter
+in photon brachytherapy (cf. Table II). Thus, in brachytherapy, CPE is generally a valid assumption for dose calculations using common treatment planning voxel grids. Under
+CPE, absorbed dose equals collision kerma and can be approximated by kerma since brachytherapy energies are suffiMedical Physics, Vol. 39, No. 10, October 2012
+
+6215
+
+TABLE II. CSDA ranges of secondary electrons in unit density water [calculated with ESTAR (Ref. 94)] at selected energies relevant for brachytherapy.
+Electron energy [keV]
+10
+30
+90
+350
+1000
+3000
+
+CSDA range in water [cm]
+2.5 × 10−4
+1.8 × 10−3
+1.2 × 10−2
+1.1 × 10−1
+4.4 × 10−1
+1.5 × 100
+
+ciently low to yield negligible radiative energy losses: Dw,m =
+coll
+coll
+≈ Kw,m and Dm,m = Km,m
+≈ Km,m , where Kcoll and K
+Kw,m
+denote collision kerma and kerma, respectively. In EBRT,
+cellular and subcellular biological targets can be considered small cavities with small dimensions in relation to secondary charged-particle range; this is not generally the case in
+brachytherapy. In addition, LE brachytherapy dose distributions are highly sensitive to the atomic compositions of media
+(Fig. 1).
+In EBRT, unrestricted mass collision stopping power ratios are often used to convert Dm,m into Dw,m , an approach
+that is valid only if the water cavity is a Bragg-Gray cavity, i.e., small enough to not perturb the fluence of secondary
+electrons generated in the medium. Although the appropriate water volume (cavity) size remains to be determined, the
+Bragg-Gray assumption implies that these cavities are much
+smaller than the 3–5 mm-sized voxels typically used for dose
+calculation, e.g., cavities may represent cellular structures or
+micrometer-size radiosensitive targets (e.g., soft tissue structures within trabecular bone).36, 86, 88 In the context of proton
+therapy, Paganetti discussed the conversion of dose to a patient voxel (of local medium) to dose to water for an infinitesimal volume of water within that voxel.93 While Dw,m may be
+computed on-the-fly for some MC dose codes, e.g., by multiplying the energy loss from each electron condensed history
+step by the water-to-medium ratio of restricted mass collision
+stopping powers, the conversion of Dm,m into Dw,m is typically performed as a postprocessing step which occurs after
+calculation of Dm,m on a mm-sized voxel grid.85
+The ranges of secondary electrons set in motion by photons from brachytherapy sources are generally shorter than
+those for EBRT and vary considerably between the different brachytherapy energy regimes (see Table II for continuous slowing down approximation (CSDA) ranges of electrons
+in water for electron energies between 10 keV and 3 MeV).94
+If radiation target volumes (“cavities”) are considered to be
+macroscopic millimeter-sized voxels, then the range of secondary electrons may generally be considered short in comparison with the cavity size (for 192 Ir energies and below);
+hence large cavity theory using ratios (water to medium) of
+mass-energy absorption coefficients could be used for the
+postprocessing Dm,m to Dw,m conversion; direct computation
+of Dw,m using the collision kerma approximation should yield
+identical results. While a cavity of cellular dimensions might
+be considered “Bragg-Gray-like” for 192 Ir at 380 keV or
+for MeV photons (EBRT), the situation is different below
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6215
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+50 keV: cellular dimensions are comparable to the ranges of
+secondary electrons (mammalian cell diameters are generally
+of order 10–20 μm; cell nuclei diameters range from a few
+micrometers to upwards of 10 μm),95 rendering both large
+and small cavity theory assumptions suspect. For example, for
+125
+I sources, secondary electron ranges vary from 3 to 20 μm
+(Table II). Thus, depending on the size of an assumed biological target in relation to photon energy, different calculation techniques are required to compute Dw,m . In addition, for
+LE brachytherapy the two quantities Dw,m and Dw,w-TG43 differ considerably regardless of the method used to compute
+Dw,m (see Sec. III.A) and hence, for this energy regime, one
+cannot motivate reporting Dw,m to connect with previous clinical experience. However, for HE brachytherapy sources, the
+situation is more similar to EBRT.
+Sections III.A and III.B discuss the relationships between
+Dm,m and Dw,m in the context of cavity theory. Section III.A
+focuses on the large cavity regime and reviews recent publications which compare Dm,m and Dw,m under this assumption. This is followed in Sec. III.B with a cavity theory analysis of cellular and subcellular target dosimetry and a discussion of issues related to the choice of dosimetric medium,
+based on ongoing and recent research by Thomson et al.96
+and Enger et al.,97 designed to determine which choice of
+macroscopic dose specification medium might better correlate with absorbed dose to biologically relevant cellular or
+subcellular targets. After reviewing the scientific research in
+Secs. III.A and III.B, Sec. III.C presents the recommendation
+of TG-186 on the medium for dose specification. Areas for
+future research appear in Sec. III.D.
+III.A. Relationship between Dm,m and Dw,m in the large
+cavity regime
+
+Recently published studies27, 98, 99 comparing Dm,m and
+Dw,m either assume that Dw,m and Dm,m are related by
+the mean ratio of mass-energy
+absorption coefficients (waw
+ter/medium), μen /ρ m , or directly compute (under the ascoll
+coll
+sumption of CPE) both Dw,m = Kw,m
+and Dm,m = Km,m
+. The
+latter are derived by application of the mass-energy absorption coefficients for water or medium, m, to the photon energy
+fluence,  m (E, r) at the point of interest, r, found by transporting photons through the actual heterogeneous geometry
+
+coll
+(r) =
+Dtarg (r) ≈ Kw,m
+
+m (E, r) (μen (E, r)/ρ)w dE
+
+coll
+w
+= (μen (r)/ρ)w
+m Km,m (r) = (μen (r)/ρ)m Dm,m (r),
+
+(1)
+where Dtarg (r) denotes the absorbed dose to the biologically
+relevant target at location r. Equation (1) assumes both that
+this target cavity is water equivalent and that its minimum
+linear dimension is large in relation to the secondary electron
+ranges.
+Large differences between Dm,m and Dw,m are expected for
+certain media at low energies based on the behavior of massenergy absorption coefficients at low energies (Fig. 1), an exMedical Physics, Vol. 39, No. 10, October 2012
+
+6216
+
+pectation confirmed by recent studies.27, 98–100 Differences between Dm,m and Dw,m are most significant for photons below
+50 keV and can be as high as 70%–80% for soft tissues, rising up as high as a factor of 7 for bone.98–100 Landry et al.
+reported that the large cavity conversion factors for going between Dm,m and Dw,m (i.e., ratios of mass energy absorption
+coefficients) for LE brachytherapy sources (125 I, 103 Pd, 131 Cs,
+and an electronic brachytherapy source operating at 50 kV)
+do not vary significantly with distance from the source for
+distances up to 6 cm in a variety of tissues (adipose, mammary gland, prostate, muscle, skin).98 Differences between
+Dm,m and Dw,m are within 3%–5% for soft tissues at the higher
+192
+Ir energy, rising to around 15%–25% in bone.99
+For biological targets having dimensions on the order of
+10 μm, it is only for the lowest energy sources that the large
+cavity theory may make biological sense.97 For higher energy
+192
+Ir and 137 Cs sources, the large cavity assumption implies
+that targets have dimensions on the order of 1 mm and thus
+excludes the interpretation of the target being the cell or a
+part thereof.
+
+III.B. Dm,m and Dw,m relationships in the small
+and intermediate cavity regimes
+
+For a water-equivalent target that is much smaller than
+the secondary electron range, located at position r, and surrounded by a homogeneous nonwater medium of macroscopic
+dimensions, the absorbed dose to the target is
+Dtarg (r) ≈ Dw,m (r) = (Scol (r)/ρ)w
+m Dm,m (r)
+coll
+= (Scol (r)/ρ)w
+m Km,m (r),
+
+(2)
+
+where (Scol (r)/ρ)w
+m is the average over the photon energy
+fluence spectrum of Scol (E, r)/ρ, the mass collision stopping power averaged over the slowing-down spectrum arising from secondary electrons liberated by collisions at r of
+photons with energy E. Equation (2) was derived using the
+fact that (Scol (E)/ρ)m
+w is independent of electron energy to
+first approximation (Fig. 2, generated using the EGSnrc usercode examin101 ). Unlike the large cavity conversion factor
+(μen (r)/ρ)w
+m [Eq. (1)], which can vary by as much as an order
+of magnitude from one tissue to another for LE brachytherapy
+(Fig. 1), the small cavity conversion factor, (Scol (r)/ρ)w
+m , deviates from unity by no more than ±5% for soft tissues over
+the brachytherapy energy range. Except for the very lowest
+energies where biological targets of the order of 2–10 μm
+are comparable to secondary electron ranges, Eq. (2) suggests
+that for kerma-based MBDCAs, Km,m is a more logical quantity to score than Kw,m .
+A review of cellular morphology (size and composition of
+cellular components) reveals that nuclei and cytoplasm contain significant mass fractions of proteins, inorganic elements
+(ranging from sodium to calcium), and lipids (adipose cells
+only) and that these fractions vary widely with cell type.96
+Values of (μen (r)/ρ)w
+m for cytoplasm and nuclear media (for
+many soft tissues and tumor types) deviate from unity (up to
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6216
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+6217
+
+the relevant biological target is the nucleus. For photons with
+energies less than 50 keV, this is a very complex situation in
+which the target can approximately be modeled as a BraggGray cavity, but where secondary electrons arise from photon collisions in two different compartments (lipid droplet or
+cytoplasm). These compartments have significant compositional differences resulting in more than a twofold reduction
+103
+Pd–125 I energy
+in the cytoplasmic (μen (r)/ρ)m
+w ratio in the
+range, with deviations exceeding 10% persisting at energies
+as high as 90 keV. This complex situation is reminiscent of
+the two-component thick-wall ion chamber problem solved
+by Almond and Svensson.102 Following this approach:
+⎡
+nucl
+
+
+μen lip S
+coll
+× ⎣α
+Dtarg = Dnucl ≈ Km,m
+ρ m ρ
+
+F IG . 2. Unrestricted mass collision stopping power ratios for the materials indicated relative to those for water generated using the EGSnrc usercode examin (Ref. 101). Atomic compositions and densities are the same as
+Fig. 1.
+
+10%) for 103 Pd and 125 I spectra. Hence, cell targets may not
+generally be assumed to be water equivalent.
+Enger et al. used Geant4.9.4 to score dose to 14 μm diameter cavities consisting of either water, cell nucleus medium,
+or soft tissue embedded in small phantoms composed of uniform soft tissue, to compute Dw,m , Dn,m (where “n” represents cell nucleus medium; cells were not explicitly modeled), and Dm,m , respectively.97 For source energies between
+20 keV and 300 keV, it is reported that Dw,m is a “good substitute” for Dn,m for the soft tissues (breast, prostate, muscle,
+adipose) and the four cell nucleus compositions considered
+under the assumptions used in the simulations. It was concluded that there is a need for more data on tumor and healthy
+tissue cell compositions as doses to the cavities of nuclear
+media depend on their composition. Further investigations of
+issues related to cell dosimetry for brachytherapy likely require accurate simulation of media surrounding the nucleus
+as many electrons depositing dose in the nucleus are set in
+motion outside it. To this end, research by Thomson et al. involved Monte Carlo simulation of clusters of cells including
+cell nuclei, cytoplasm, and extracellular fluid.96 Their results
+(full paper under review August 2012) suggest that doses to
+cell nuclei are sensitive to the presence of the different media
+surrounding the nucleus (e.g., cytoplasm, extracellular fluid);
+nuclear doses and their relation to Dw,m and Dm,m depend on
+many factors including cell and nucleus size, cellular and bulk
+tissue compositions, and source energy.
+The complexity of the relationship between macroscopic
+and biological target doses is well illustrated by adipose cells.
+Such cells have a very large diameter, typically 100 μm, with
+each cell containing approximately 96% lipid, 2% intracellular water, and 2% electrolytes and protein. An idealized
+model of a fat cell might consist of a 33 μm thick spherical shell of lipid, enclosing a 34 μm diameter cytoplasmic
+cavity which in turn surrounds a 3 μm nucleus. Suppose that
+Medical Physics, Vol. 39, No. 10, October 2012
+
++ (1 − α)
+
+μen
+ρ
+
+cyto
+
+S
+ρ
+
+m
+
+nucl
+
+⎤
+⎦,
+
+lip
+
+(3)
+
+cyto
+
+where Dnucl is the dose to the target nucleus, α is the fraction of electron fluence crossing the nucleus (=nucl) arising
+in the lipid shell (=lip) and (1- α) is the corresponding fraction arising from the cytoplasmic shell (=cyto). Invoking the
+approximations that nucl ≈ cyto ≈ wat and m ≈ lip, Eq. (3)
+becomes
+⎡
+wat
+S
+coll
+× ⎣α
+Dtarg = Dnucl ≈ Klip,lip
+ρ
+lip
+
+
++ (1 − α)
+
+μen
+ρ
+
+wat
+.
+
+(4)
+
+lip
+
+Even in this simplistic approximation, Dtarg is the weighted
+average of a correction that is as large as two with one that is
+approximately 0.95, with weighting factors that vary strongly
+with energy and cellular dimensions. An even more complex
+analysis would arise if one were to treat the nuclear target
+as an intermediate size cavity by means of Burlin cavity theory. In this scenario, only MC methods capable of transporting both photons and secondary electrons through a complete
+microscopic-scale geometric model could quantitatively estimate a biologically meaningful target dose. While research
+investigating relations between macroscopic medium dose
+and cellular absorbed doses and employing MC methods is
+ongoing,96, 97 this example clearly shows that it is premature
+and potentially misleading to conclude that either the small or
+large cavity models can be naively applied to water-equivalent
+targets if the goal is to maximize the correlation between the
+macroscopic dose descriptor and biological effectiveness.
+III.C. Recommendations
+
+The scientific literature reviewed in Secs. I.C, III.A
+and III.B reveals that the adoption of MBDCA for brachytherapy will generally change reported doses compared to the
+previous water-based dosimetry practices (e.g., following
+the TG-43 formalism, Dw,w-TG43 ), whether Dw,m or Dm,m is
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6217
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+reported. Depending on the clinical setting (source energy,
+treatment site, biological tissues in the region of interest),
+both Dw,m and Dm,m may deviate significantly from Dw,w
+(Dw,w-TG43 ), as well as from each other, especially in the LE
+domain. Hence, it is difficult to motivate selection of dose
+specification medium on the basis of maximizing correlation
+with TG-43-era clinical dose specification. The lack of correlation of Dw,m and Dm,m with Dw,w-TG43 motivated the Task
+Group to reframe the choice of dose-specification medium
+from a debate over competing dose-specification conventions
+to a scientific question: which approach maximizes the correlation between the macroscopic dose distribution and absorbed dose to biologically relevant targets, and, ultimately,
+underlying biological response?
+At the time of writing, it is unclear (due to the lack of
+published data) whether Dw,m better tracks energy imparted
+to potential targets of subcellular dimensions than does Dm,m ,
+or vice versa. Over some of the brachytherapy energy range,
+3–10 μm biological targets are small cavities. Considering a
+simple model in which the local voxel is uniform, homogeneous (nonwater) bulk medium except for isolated biological targets of diameters much less than the secondary electron
+coll
+than
+range, dose to biological targets is better tracked by Km,m
+coll
+Kw,m [Eq. (2)]. Hence, for MBDCA invoking charged particle
+coll
+equilibrium (Dm,m ≈ Km,m
+), this simple model suggests that
+coll
+coll
+dose to biological targets is better tracked by Km,m
+than Kw,m
+.
+Thus, if Dw,m is desired, it is preferable to apply postprocessing small cavity conversions rather than to erroneously invoke
+coll
+.
+the large cavity approximation by directly computing Kw,m
+At the lowest brachytherapy energies where the small cavity approximation breaks down, the appropriate conversion
+method from Dm,m to Dw,m or Dm,m to Dtarg is unknown; nor is
+it known whether Kw,m better tracks Dtarg than Km,m . Further,
+available radiobiological data suggest that water may not be
+the most appropriate reference medium as cellular and subcellular targets contain large and variable fractions of water,
+electrolytes, proteins, and lipids.
+As available evidence does not directly support Dw,m , reporting Dm,m is preferred as it is a conceptually well-defined
+quantity, in contrast to Dw,m , which is a theoretical construct
+without a physical realization in a nonwater medium. On the
+basis of all these considerations, it is the consensus of TG-186
+to require only reporting of Dm,m when using MBDCAs. This
+does not preclude individual practitioners or protocol groups
+from reporting Dw,m or other quantities of interest along with
+Dm,m . Further, TG-186 views the required Dm,m reporting as
+an interim recommendation; a definitive recommendation requires additional research, as discussed in Subsection III.D.
+
+III.D. Areas of research
+
+To address the underlying scientific question stated above,
+namely, the question of which dose specification approach
+maximizes the correlation between macroscopic dose and
+dose to biological targets, further studies on the relationship
+between radiobiological target doses as functions of target
+geometry, cellular anatomy, and tissue anatomy are needed.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6218
+
+Through such studies, the optimal choice of dose specification medium, Dx,m , as well as a method of estimating this
+quantity from photon energy fluence or Dm,m may be identified. Current efforts36, 88, 96, 97 use idealized cell or tissue models and coupled photon-electron MC techniques to study relations between Dm,m and dose to biological targets. Future
+research should include complex multicomponent and multicellular models in which the assumptions of uniformity and
+target isolation (used in the discussion of Sec. III.B) break
+down. Investigators conducting such studies should clearly
+specify the conversion method used in going from Dm,m into
+Dw,m . Reporting conversions from Dm,m into Dw,m using both
+stopping power ratios and mass-energy absorption coefficient
+ratios could be interesting since potential conversion methods
+probably lie somewhere between these two and likely depend
+on the tissue or organ in question, as well as the photon spectrum and biological endpoint. As target composition and size
+vary from tissue-to-tissue as well as clinical endpoint, it may
+be appropriate to treat dose specification as an organ- and
+clinical-endpoint specific Km,m to Dtarg postprocessing conversion in the same spirit with which absorbed dose is converted to biologically equivalent dose (BED) using variable
+linear-quadratic model parameters.
+Comparisons of Dm,m and Dw,w-TG43 for different source
+energies and biological tissues are necessary for the recalibration of prescribed and reported doses, especially for LE
+sources. Investigations of doses to skeletal tissues, radiosensitive bone marrow, and to biologically important subcellular
+structures in adipose tissue are needed.
+
+IV. CT IMAGING AND PATIENT MODELING
+IV.A. Literature review
+
+MBDCAs generally require assignment of interaction
+cross sections on a voxel-by-voxel basis to compute dose. The
+information is taken into account in dose calculations for HE
+photons by using the electron densities ρ e (or the mass densities ρ) from CT images.103 At high energies, Compton scatter
+dominates and depends mostly on ρ e (e− /cm3 ) = ρNA Z/A.
+The ρ e can be extracted by using a calibration procedure using a phantom with known composition.
+In brachytherapy, the dose is administered by photons with
+energies <1 MeV. The lower the photon energy, the larger
+the differences between media in terms of mass-attenuation
+and mass-energy absorption coefficients due to the increasing importance of the photoelectric cross section, which is
+approximately proportional to the cube of Z and inversely
+proportional to the cube of the photon energy. Human tissues are essentially water-equivalent for dosimetric purposes
+for MV photon beams and HE sources such as 137 Cs and
+192 104
+Ir,
+but not so for LE sources such as 103 Pd, 125 I, and
+131
+Cs, and EBS.50, 105–107 Hence, for accurate LE photon
+brachytherapy dosimetry, knowledge of tissue mass (electron)
+density and the atomic number distribution of the material
+is crucial.108 In this report, “segmentation” is defined as the
+spatial delineation of different regions of a 3D image dataset
+and assignment of elemental compositions and mass (or
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6218
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+electron) densities. For brachytherapy, few studies on tissue
+segmentation are available in the literature because the TG43 formalism4 is based on a water geometry with a fixed mass
+density.
+IV.A.1. Material characterization
+
+Breast tissue is known to vary widely in its mix of adipose and glandular tissue. ICRU-46 (Ref. 109) lists the two
+tissues as mainly differing in their carbon content (glands:
+33%, adipose: 60%) and oxygen content (glands: 53%, adipose: 28%). The effective atomic number, Zeff , is 6.67 for average adipose tissue and 7.27 for average glandular tissue.110
+Therefore, for dosimetric purposes with LE photons adipose
+and glandular tissue behave very differently and it is important to be able to distinguish them. Recently, a study of several thousand women who received mammography or breast
+CT exams revealed a population average of about 20% for
+the volume breast density (VBD, defined as the fractional
+volume of glandular tissue), contrary to the commonly assumed 50%.111 The study also showed that VBD ranges from
+0% to 75%.
+A topic that deserves special attention is calcifications in
+prostate and breast. Prostate calcification may be present in
+a significant number of patients.39, 112 Using MC simulations,
+a preliminary study was performed to assess the dosimetric
+effect of calcification in prostate.23 The authors were unable
+to find a reliable reference on the composition and density
+of calcifications in the prostate; therefore, they used breast
+calcifications from ICRU Report 46 as a surrogate.109 They
+reported a decrease of up to 37% in the CTV D90 dose metric.
+Another study found that the CTV D90 parameter was lower
+than estimated by up to 17 Gy (about 12% of the 144 Gy
+prescription dose).25 More recent pathological measurements
+of calcifications in prostate have been reported.112
+Another medium that may need to be specified accurately
+is the imaging contrast agent. Kassas et al.113 looked at the
+effect of iodine-based contrast medium on dose calculations
+
+6219
+
+R
+for HDR 192 Ir partial breast irradiation with the MammoSite
+system. At 1 cm away from a 6 cm diameter balloon, they
+obtained a dose decrease of 5.7%. Metals and other materials used in applicators and shielding also need to be assigned correctly. This is often done by using an explicit solid
+model of the applicator/shielding that is added to the tissues
+extracted from the images. One recent example of this procedure is the MC dose calculations for a shielded colorectal cancer treatment.31 More examples can be found in the
+literature.51, 114–116
+Yet another issue of potential importance is the presence of
+edema in the prostate and breast, and its changing influence
+on the dose over time.117 Although considered to be largely
+water-equivalent, more studies of prostate composition and
+volume variation are warranted.
+Recently, Landry et al. studied in detail the tissue composition/density sensitivity of MC dose calculations for LE
+brachytherapy.118 Tissue composition reported in the literature varies depending on the reference. For example, the carbon content of breast adipose tissue, which largely determines
+its effective atomic number and, therefore, the fraction of photoelectric versus Compton events, has been reported to vary
+between 52% and 68%,110 leading to variations in effective
+atomic number of 6%. Similarly, for prostate tissue the carbon content reported in the literature varies widely between
+9% and 26%, leading to effective atomic number variations
+of only 2%.110, 119, 120
+Landry et al. also investigated the influence of tissue composition uncertainties on dose calculations for single sources
+of 125 I, 103 Pd, and an EBS source.118 Figure 3 shows the
+dose ratio Dw,m /Dw,w-TG-43 , where Dw,w-TG-43 is the TG-43
+water approximation and Dw,m is the dose scored with MC
+techniques by transporting photons in medium, and scoring in water (i.e., Dw,m derived under large cavity assumption). In adipose tissue, all three sources show significant
+dose deviations from TG-43 at the distances examined. The
+influence of the variation in adipose composition is also
+shown. In prostate, the effect is smaller but still noticeable.
+
+F IG . 3. Dw,m /DTG-43 as a function of radiological distance for 125 I, 103 Pd, and 50 kV EBS at three different distances from a single source, using data from
+Landry et al. (Ref. 118) For adipose the vertical boxes indicate the spread in Dw,m /DTG-43 with varying adipose composition.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6219
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+More results are discussed in Landry et al.118 For HDR 192 Ir
+brachytherapy of gynecologic cancers with standard CT/MR
+compatible applicators (no shielding), MDBCA has little impact (<5%) compared to TG-43 for most clinical
+parameters.121, 122
+IV.A.2. CT segmentation
+
+In HE photon radiotherapy, patient heterogeneities are
+modeled by ρ e derived from CT data. The accuracy of this
+approach depends on the reliability of the Hounsfield Units
+(HU), which are calibrated using tissue substitutes. The latter
+have to be used with care in brachytherapy as they often are
+designed to be tissue-equivalent only for HE photon dosimetry. In MV dose calculations, large HU errors can be tolerated
+before dose errors of a few percent are produced.123, 124 See
+also AAPM Report No. 85 by Papanikolaou et al.13
+A more sophisticated tissue segmentation method has been
+introduced—the stoichiometric method—to take into account
+the atomic composition of the phantom materials used for
+CT calibration.125, 126 The measured HU of tissue substitutes
+are used to determine linear attenuation coefficients as a
+function of ρ e and atomic number for the CT photon spectrum. This relationship is used to predict HU for tissues
+with known relative ρ e for photon dosimetry. This method
+allows the patient CT data to be used directly in the treatment planning calculations without the need for segmentation and identification of specific tissue types. However, the
+accuracy of this method for LE photon dose calculations is
+unknown.
+It is generally accepted that MC dose calculations are the
+most accurate for photon radiotherapy. The majority of MC
+codes require that in addition to mass or ρ e , a medium needs
+to be assigned to all voxels. Media assignment errors may
+lead to dosimetric errors in MC and other MBDCA calculation methods, which can cause large dose errors compared
+to simply assigning all voxels to water with a variable density. A sensitivity study was performed for CT image use in
+MC dose calculations for 250 kVp–15 MV photons.127 The
+authors found that inaccuracies in tissue segmentation caused
+dose errors of more than 40% in certain media in 250 kVp
+beams. These large errors occurred in CaCl2 solutions, mimicking bone. Schneider et al.128 showed that many different
+tissues have similar HU values (between −100 and +100) and
+hence cannot be readily resolved. They introduced a model
+where all skeletal tissues are composed of a mix of osseous
+tissue and bone marrow, and all soft tissues are a mix of fat
+and water. Other studies on HE photon dosimetry have been
+published.129–131
+For LE photons, HU studies are rare. Watanabe derived
+linear attenuation coefficients from HU for LE brachytherapy
+MC dose calculations.132 They introduced a model that relates
+HU to ρ e and Zeff accounting for both photoelectric absorption
+and Rayleigh scatter. Their technique led to errors of 10%–
+20% for the elements O, C, and Ca, and is only a moderate
+improvement over the older Rutherford formalism for high-Z
+media such as bone.133 These authors did not investigate the
+ensuing effect on dose calculations.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6220
+
+It appears that the direct extraction of interaction coefficients for LE photons from CT images is an ill-studied subject. More accurate tissue determination may be possible with
+monoenergetic synchrotron x-ray CT scanners,134, 135 but this
+remains far from an established clinical technique. Advantages would be reduced beam-hardening artifacts and possible energy tuning to match either patient dimensions or the
+K-edge of a contrast medium.134
+IV.A.3. CBCT segmentation
+
+A similar issue is the extraction of tissue information from
+cone beam CT (CBCT) scanners used in the treatment room.
+The advantage is that information on patient geometry and
+composition can be obtained at treatment time, which may
+be different than the information at the stage of CT scanning due to various factors such as weight loss, different organ filling.136, 137 CBCT scanners have been investigated to
+some extent for EBRT, both for kV and MV-CBCT,138–140 but
+not yet for brachytherapy. This discussion is limited to kVCBCT as appropriate for brachytherapy. The imaging quality in a kV-CBCT scanner is inferior to a regular fan-beam
+CT scanner due to increased photon scatter intercepted by the
+larger 2D detection panel leading to reduced imaging contrast,
+increased cupping, and streaking artifacts.139 Therefore, calibration of the kV-CBCT scanner in terms of HU versus ρ e is
+essential for dose calculations.138, 140 On the other hand, the
+spatial resolution of the CBCT scanner in the axial direction
+is superior to a fan beam CT scanner.
+A study using a kV-CBCT scanner and several calibration phantoms reported that the accuracy of EBRT dose
+calculations-based CBCT images of phantoms and patients
+was within a few percent of dose calculations based on images from a fan beam CT.140 In contrast, more recently Hatton
+et al.,138 also studying a kV-CBCT scanner attached to a linear
+accelerator, found that phantom size substantially influenced
+the HU. Compared to CT-based dose calculations, this led to
+large dose errors of up to 20% for 18 MV x-rays in bone.
+In brachytherapy, the use of a CBCT scanner in the treatment room has been investigated to a limited extent, e.g.,
+to investigate the possible use a CBCT scanner for conventional TG-43 dose to water calculations in HDR cervix
+treatment.141, 142 Dose to medium calculations in brachytherapy based on kV-CBCT imaging has not been attempted yet.
+HU calibration in kV-CBCT seems an issue that deserves
+more attention and CBCT images should not be used for
+brachytherapy dose calculations when tissue heterogeneity information needs to be taken into account.
+IV.A.4. Dual energy CT and spectral CT
+
+Nearly 40 years ago, it was proposed that dual-energy CT
+(DECT) may allow extraction of tissue characteristics in a
+more accurate way than single-energy CT.133, 143 In a similar
+vein, multienergy CT, or spectral CT, was recently advocated
+to allow more accurate tissue composition extraction.144–146
+The DECT technique is now best known for the determination of bone density.147 It may also be used to measure arterial
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6220
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+calcifications,148 or breast composition.149 The DECT underwent steady development since its inception,150, 151 which led
+to research systems and clinically available products.134, 152
+The DECT technique utilizes two x-ray CT images acquired
+using two well-separated x-ray energy spectra. This then allows obtaining an image of the mass or electron densities (i.e.,
+morphology) and another image of the atomic numbers of the
+geometry (i.e., chemical composition), which greatly aids in
+identifying tissue types. DECT can also be used to aid extraction of photon interaction coefficients more accurately than
+single energy CT.108 DECT was used to extract tissue data
+needed for MC treatment planning for MV and kV photon
+beams.153 Spectral CT may help to extract even more tissue
+information than DECT.
+To our knowledge, only one study attempted to use DECT
+for brachytherapy. The investigators proposed a method to estimate voxel-by-voxel the distribution of the photon interaction coefficients for brachytherapy energies.108 They used two
+methods: a parametric fit model and a basis vector model, of
+which they recommended the latter. No brachytherapy dose
+calculations were shown in this study. Vigorous research efforts are ongoing in DECT and spectral CT.146 It may well
+constitute an improvement over single-energy CT to derive
+tissue characteristics for brachytherapy dose calculations, but
+much research is needed to establish the technique for this
+purpose. Two recent studies showed that DECT could segment tissue phantoms more accurately than single energy
+CT.154, 155
+IV.A.5. CT artifacts
+
+The CT artifacts may lead to differences between true and
+reconstructed photon interaction coefficients. The presence of
+high-Z, high-density materials in a scanned object will lead to
+streaking artifacts which may severely degrade image quality.
+Examples specifically for brachytherapy are the presence of
+metal applicators, vaginal packing, or radioactive seeds. Usually, those metallic objects are very close to, or even within,
+the target volume. Hence, without artifact correction, it is impossible to accurately assess ρ e and the composition of some
+voxels. Streaks not only prevent accurate structure delineation
+but may also cause dose miscalculation. This is particularly
+true for MDBCA dose calculations in brachytherapy, which
+may be more sensitive to incorrect media assignment than
+other dose calculation algorithms.
+A variety of artifact correction techniques have been developed to improve image quality. The simplest approach
+that can be used for minor artifacts is to correct the
+discrepancies in the CT images themselves.156 More sophisticated approaches use one of three main techniques:
+filtered back-projection on a modified sinogram,157–159 filtering techniques,160 and iterative algorithms.160–165 The modified filtered back-projection methods often involve interpolation in the sinogram domain after high-density objects have
+been removed. The impact on MC dose calculation accuracy was assessed for a double-hip prosthesis case.166 For an
+18 MV photon dose calculation, the dose differed significantly in the corrected and noncorrected CT geomeMedical Physics, Vol. 39, No. 10, October 2012
+
+6221
+
+try. This technique was also used to reduce imaging artifacts in the presence of a Fletcher-Suit applicator for HDR
+brachytherapy,158, 163 but these authors did not perform dose
+calculations. Recent studies have looked at correction methods for metallic LDR seed implants using post processing algorithms on CT slices, virtual sinogram technique, or
+the more efficient approach processing the raw sinogram
+data.27, 167–169 The presented preliminary dosimetric results
+indicate that artifacts can lead to large discrepancies.27, 167 It
+is clear that CT artifact correction should also be encouraged
+as a field of research to improve brachytherapy dose accuracy.
+IV.A.6. Other imaging modalities
+
+Volume delineation based on imaging modalities other
+than CT can be performed, especially when the lack of electron density information is not a significant problem, e.g.,
+for a homogeneous dose calculation. Contours drawn using MRI could suffer from image distortion but can still be
+used successfully in brachytherapy planning [for example,
+prostate170 or GYN (Ref. 171) treatments]. Image fusion with
+CT often offers the best results.172 Also, US imaging has
+been used to outline organs in brachytherapy. In particular,
+transrectal US imaging is commonly used to perform LDR
+prostate seed implants.173–175 This technique clearly visualizes the prostate and the urethra, but the act of imaging the organs deforms them. The consequences for dosimetry are not
+well understood. Three-dimensional US imaging with external US transducers offers possibilities for noninvasive imageguided brachytherapy for prostate, cervix, and breast without
+geometric distortion, although these techniques are currently
+rarely used for brachytherapy.176, 177 However, none of these
+techniques can presently provide information on tissue heterogeneities as would be required within the scope of the current task group report. In US techniques, contrast-enhanced
+imaging178 and tissue typing179 are active fields of research,
+which may also play a future role in brachytherapy.
+
+IV.B. Recommendations
+
+IV.B.1. Consensus material definition
+
+The number of materials should be limited to a few. For
+prostate and breast, there is still disagreement on the composition to be used, so more tissue composition studies are required. The mass density derived from the CT scanner image
+should be used, but special measures should be taken if metal
+streaking and other CT artifacts are present. Table III lists the
+recommended tissue compositions.
+IV.B.1.a. Prostate. For noncalcified prostate, the composition from Woodard and White110 is recommended since the
+ICRP-1975 (Ref. 119) composition is dosimetrically equivalent to Woodard’s composition. The ICRP-2003 (Ref. 120)
+composition refers to “average male soft tissue,”109, 118 which
+is similar but not the same as prostate. While individual patients may differ considerably in their prostate composition,
+this causes dose differences in clinical implants of only a few
+percent.118
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6221
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+6222
+
+TABLE III. Material definitions. Water is given for comparison.
+% mass
+
+Mass density
+
+Tissue
+
+H
+
+C
+
+N
+
+O
+
+Z>8
+
+g cm−3
+
+Prostate (Ref. 110)
+Mean adipose (Ref. 110)
+Mean gland (Ref. 110)
+Mean male soft tissue (Ref. 109)
+Mean female soft tissue (Ref. 109)
+Mean skin (Ref. 109)
+Cortical bone (Ref. 109)
+Eye lens (Ref. 109)
+Lung (inflated) (Ref. 109)
+Liver (Ref. 109)
+Heart (Ref. 109)
+Water
+
+10.5
+11.4
+10.6
+10.5
+10.6
+10.0
+3.4
+9.6
+10.3
+10.2
+10.4
+11.2
+
+8.9
+59.8
+33.2
+25.6
+31.5
+20.4
+15.5
+19.5
+10.5
+13.9
+13.9
+
+2.5
+0.7
+3.0
+2.7
+2.4
+4.2
+4.2
+5.7
+3.1
+3.0
+2.9
+
+77.4
+27.8
+52.7
+60.2
+54.7
+64.5
+43.5
+64.6
+74.9
+71.6
+71.8
+88.8
+
+Na(0.2), P(0.1), S(0.2), K(0.2)
+Na(0.1), S(0.1), Cl(0.1)
+Na(0.1), P(0.1), S(0.2), Cl(0.1)
+Na(0.1), P(0.2), S(0.3), Cl(0.2), K(0.2)
+Na(0.1), P(0.2), S(0.2), Cl(0.1), K(0.2)
+Na(0.2), P(0.1), S(0.2), Cl(0.3), K(0.1)
+Na (0.1), Mg (0.2), P (10.3), S (0.3), Ca(22.5)
+Na(0.1), P(0.1), S(0.3), Cl(0.1)
+Na(0.2), P(0.2), S(0.3), Cl(0.3), K(0.2)
+Na(0.2), P(0.3), S(0.3), Cl(0.2), K(0.3)
+Na(0.1), P(0.2), S(0.2), Cl(0.2), K(0.3)
+
+1.04
+0.95
+1.02
+1.03
+1.02
+1.09
+1.92
+1.07
+0.26
+1.06
+1.05
+1.00
+
+IV.B.1.b. Breast. Breast tissue is a nonuniform mixture
+of two distinct tissues: adipose and gland. It is clear from
+the literature118 that both tissues also have their own range
+of compositions. If the adipose and glandular regions can
+be distinguished then each region can be assigned to the
+respective media as recommended in Table III. With current CT technology this may not always be feasible. If the
+adipose and glandular regions cannot be distinguished reliably, a single mean composition (for noncalcified breast)
+is recommended for the whole breast, corresponding to the
+mean gland and adipose compositions reported in the literature (Table III). From the breast CT HU, the mean overall breast density may be extracted from which the relative
+mass fractions of adipose and glands may be derived (see
+Sec IV.B.2). Using a generic breast composition is not recommended due to the large spread in breast tissue composition
+in the population.180, 181 If no information at all can be extracted from the CT images, then we recommend using a 20%
+glandular/80% adipose composition (fractions by weight) as
+a population average.111
+IV.B.1.c. Calcifications. The literature is sparse on the
+composition of calcifications as may be present in breast
+and prostate. Chibani and Williamson performed MC calculations for calcified prostate.80 They assumed that prostate
+calcifications are similar to breast calcifications for which
+they used the composition reported by the ICRU 46 report.109
+This report lists as constituents of breast calcifications hydroxyapatite, tri-calcium phosphate, and protein (e.g., their
+Table 2.1). From this, Chibani and Williamson listed as the
+elemental composition and their weight fractions H (0.3%),
+C (1.6%), N (0.5%), O (40.7%), P (18.7%), and Ca (38.2%)
+with an average density 3.06 g/cm3 .80 If another calcification
+composition assignment is made, then it should be clearly
+reported.
+IV.B.1.d. Other materials. Table III gives a few more examples of recommended tissues, listed with their mean composition; data for other media can also be found in Woodard
+and White110 and also in ICRU Report 46.109 However, we
+recommend that any other tissue compositions not shown in
+Table III be taken from the ICRU 46 report, until more deMedical Physics, Vol. 39, No. 10, October 2012
+
+tailed and accurate tissue composition data become available
+to the community.
+IV.B.1.e. Applicators, sources, and other devices. MBDCAs require explicit specification of geometry, atomic
+composition, and density of all nonwater materials, including
+the internal structure of sources and applicators that can
+influence the dose distribution. In contrast, the end user of
+TG-43 single-source dose distributions need not directly
+validate the source geometry used by a MBDCA since source
+structure is implicitly included in the dose-rate measurements
+and MC calculations from which the TG-43 parameters are
+derived. As long as single-source MBDCA calculations are
+carefully validated against published TG-43 models, one can
+consider the MBDCA geometric assumptions indirectly but
+adequately validated. However, because reference-quality
+dose-rate distributions for each potential source-applicator
+combination are lacking, indirect dosimetric validation of
+MBDCA shielded applicator geometries is not a feasible
+strategy. The possibility that source and applicator geometry
+models in the planning system may not accurately describe
+the devices actually used in the clinic creates new and highly
+significant error pathways. This may affect treatment outcomes of many patients to the extent that completely ignoring
+source/applicator geometries could be less deleterious than
+making clinical decisions based upon inaccurate models. To
+guide both vendors and early adopters of MBDCAs, the Task
+Group makes the following recommendations:
+(1) It is the responsibility of the end-user clinical physicist
+to confirm that MBDCA dose predictions are based
+upon sufficiently accurate and spatially resolved applicator and source models, including correct material assignments, to avoid clinically significant dose-delivery
+error prior to implementing the dose algorithm in the
+clinic.
+(2) Patient CT grids, which typically have cubic spatial resolutions no better than 1 mm, are not adequate for accurate modeling on the spatial scale of
+brachytherapy sources and applicators. Dose distributions from LE sources are particularly sensitive to
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6222
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+simplistic geometric approximations. MBDCA vendors should use analytic modeling schemes or recursively specify meshes with 1–10 μm spatial resolution as required to accurately depict LE seed geometry.
+Otherwise, nuances of seed geometry will be lost and
+resultant dose distributions will be in error.
+(3) With regards to MBDCAs, the Task Group takes the
+position that it is the responsibility of the manufacturers of seeds and applicators to disclose their
+geometry, material assignments, and manufacturing
+tolerances to both end users and TPS vendors (if responsible for data entry and maintenance), as this information is needed to accurately model dose around
+these devices. The device vendor disclosure must have
+sufficient detail to enable the end user to verify correct
+entry into the TPS. Furthermore, it is the responsibility
+of the TPS vendors to incorporate the device in the system or provide a simple means to the end user to do so.
+(4) Prior to accepting a device vendor’s disclosed source
+or applicator geometry for clinical application, it
+must be verified by an independent investigator (as
+defined by TG-43U1). As described by TG-43U1
+appropriate verification techniques include transmission radiography and autoradiography, direct
+mechanical measurements, microphotography of
+disassembled applicator/source components, and
+electron microscopy of source components. MC parametric studies can be used to assess significance of
+geometric uncertainties.165, 182, 183 If a peer-reviewed
+publication of the applicator or source geometry of
+interest is not available, the responsibility for performing the independent assessment falls to the end
+user.
+(5) TPS vendors are nowadays increasingly providing libraries of applicators, which will ease the verification
+task. When such libraries are provided, it is the responsibility of the vendor to also provide visualization
+or reporting tools that enable the end user to verify
+the correctness of each included applicator and source
+model against independent design specifications. In
+addition, TPS vendors must disclose sufficient information to the user regarding the model or recursive
+mesh generation to allow verification of the spatial resolution requirement specified in recommendation (2).
+(6) For each individual source model used clinically, during commissioning, the end user should compare MBDCA single-source dose distributions in water to directly calculated TG-43 benchmarks as described in
+Sec. V.B. TPS vendors should disclose the dose calculation grid sizes used and provide tools to correct for
+volume averaging near sources so that unambiguous
+comparisons between TG-43 and MBDCA dose distributions can be performed.
+It is the intention of the joint AAPM/ESTRO/ABG Working Group on MBDCA to provide benchmarking data on
+a registry to assist with the verification process as stated
+in Sec. V.C.2.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6223
+
+IV.B.2. Material assignment method
+
+For any application of brachytherapy dosimetry in nonwater media, tissue composition is required to compute dose. For
+a given organ, it is recommended that the tissue composition
+assignment be guided by contours approved by the radiation
+oncologist. In case CT images are available, for all voxels
+inside a given contour we recommend using the CT derived
+densities with a uniform tissue composition. TG-186 recommends the mean tissue compositions listed in Table III. These
+should be used whenever possible. In case different compositions than the recommended ones in Table III are used, calculations should also be provided with the recommended compositions to allow intercomparisons.
+In any publication for which the results depend on material heterogeneities, each material composition must be specified and its origin described, e.g., citation from the literature
+or the authors’ determination. For each material, either the
+mass density assumed shall be specified, or if derived from
+CT imaging (recommended approach), the scanner calibration method and HU-to-density and/or composition conversion technique shall be described. For the latter, the CT calibration curve depends on the CT x-ray tube kV value that
+is used; the appropriate calibration curve for the kV used to
+record the images shall be reported. However, before relying
+on CT-to-density conversions clinically, the confounding influence of residual streaking artifacts must be ruled out. If
+imaging artifacts are present, we recommend a complete override of the tissue in question with a uniform density, which
+may be the average of neighboring pixels. For prostate seed
+brachytherapy, it may be prudent to rely on the density from
+a preimplant CT that is free from metal artifacts.
+Typical CT simulators have calibration curves for HU versus electron density relative to water, ρ e,rel , with the latter defined as
+ρe, rel = ρNg /(ρNg )w ,
+
+(5)
+
+where Ng stands for the electron density per unit mass (#e/g), and the subscript w denotes water. Since Ng for bodily
+tissues, taken from ICRP23 (Ref. 119) and listed in Schneider et al.,126 vary little over the whole range of human tissues (standard deviation 2%), the relationship between ρ and
+ρ e,rel is nearly linear. When all the tissues (excluding “inflated
+lung”) are fit to a straight line, the following relation is obtained:
+ρ = −0.1746 + 1.176ρe,rel
+
+(R 2 = 0.99992),
+
+(6)
+
+which has a maximum error of less than 1% (ρ e,rel is dimensionless, ρ is in g cm−3 ). For “inflated lung” usually ρ
+= 0.26 g cm−3 or ρ e,rel = 0.26 is used.
+A possible exception to filling structure contours with a
+single uniform tissue might be breast. If adipose and glandular tissues can be distinguished in the CT images, e.g.,
+by a thresholding algorithm, or by registration with another
+imaging modality, the regions segmented as either adipose or
+gland may be assigned with their proper mean composition
+(Table III) and voxel mass densities.181, 184 If the adipose and
+glandular regions cannot be distinguished reliably, then the
+whole breast should be assigned to a uniform medium, which
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6223
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+should be a mix of adipose and gland, since it is well known
+that a wide, age-dependent range of mixes exists among the
+female population.111 From the breast mean mass density
+ρ obtained from the CT scan and the known (or assumed)
+mean mass densities for adipose ρ A and glandular tissue ρ G
+(Table III), the fractional weight of glandular wG and adipose
+tissue wA can be estimated from
+wG = (1 − ρA /ρ)/(1 − ρA /ρG ),
+
+(7)
+
+wA = 1 − wG .
+
+(8)
+
+Although a mean breast density ρ is used to determine the
+fractional weight composition, the CT-based voxel mass densities are recommended.
+Bone, possibly comprising bone marrow, is a special case
+with many possible compositions. Voxel mass density should
+be taken from CT images. The composition of cortical bone
+in Table III is recommended, but it should be pointed out
+that bone rarely plays an import role in brachytherapy dose
+calculations. In case another composition is used, it should
+be documented and a comparison with the composition of
+Table III should be provided for intercomparison purposes.
+In case CT images are available, for all voxels outside contours, we recommend using the CT densities with a composition of “mean soft tissue” as defined in Table III. If adequately
+visualized and segmented, fat-like tissues can be contoured
+and used in the calculation. The mean adipose tissue listed in
+Table III may be used; if an alternative composition is used it
+should be documented.
+IV.B.2.a. Use of other imaging modalities. In case no CT
+images of the target geometry are available, the Task Group
+recommends:
+
+6224
+
+IV.B.3. CT/CBCT artifact removal
+
+For MBDCA dose calculations, it is recommended to first
+remove visible artifacts. In the simplest approach, a manual
+override of the tissue composition and density (see “Use of
+other imaging modalities” above) should be performed and
+documented. The use of advanced algorithms for artifact removal, as described in Sec. IV.A.5, is not the standard of care
+and should be used cautiously. For any application, the user
+shall clearly describe the CT artifact removal method used,
+if any.
+
+IV.C. Areas of research
+
+IV.C.1. Determination of tissue composition
+
+The consensus list of tissue composition and density needs
+to be validated and refined. It needs to represent the tissues
+from typical cancer patients more accurately than the poorly
+validated recommendations from ICRU, ICRP, and other
+groups. Further experimental investigation into tissue compositions, including their interpatient and intraorgan variations, with an emphasis on dosimetric applications, is strongly
+encouraged. Research is needed to characterize prostate and
+breast calcifications more accurately. Tissue composition of
+organs in cancer patients and healthy subjects may not be
+the same. Ideally, the tissue composition and mass density of
+all voxels should be known for individual patients. With the
+current state-of-the-art in CT imaging, this has not yet been
+realized. Hence, further research into more sophisticated CT
+imaging methods such as dual-energy or spectral x-ray imaging and diffraction imaging is needed. Research into alternate
+quantitative imaging methods such as MRI and US is also
+needed.
+
+r Using bulk tissue densities and compositions recommended previously based on contoured organs if possible.
+r For LE brachytherapy, if US images are used (e.g.,
+prostate seed implants), tissues outside the prostate contours should be set to mean soft tissues as described
+previously.
+r For a multiple source implant, individual sources should
+be modeled.
+r For HE sources (e.g., 192 Ir), MRI and US images can
+also be used provided that caution is exercised when extracting contours because of possible image distortions
+(MRI) and the nonquantitative nature of the image content. Furthermore, all tissues could be set either to the
+recommended bulk tissues densities and compositions
+from contours or alternatively to water with unit mass
+density. However, high-Z materials, such as applicators,
+should be taken into account as described in Sec. IV.B.1
+and low-density media such as air must be included in
+the calculation to account for scatter conditions.
+Finally, it is expected that TPS vendors will provide easyto-use or automated tools to help clinical users accomplish
+these tasks.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+IV.C.2. Segmentation methods
+
+Research efforts are ongoing in DECT and spectral CT.
+Whether this constitutes an improvement over single-energy
+CT to derive tissue characteristics for brachytherapy dose
+calculations remains to be seen.154, 155 HU calibration in
+kV-CBCT is an issue that deserves more attention before CBCT images can be used reliably for brachytherapy dose calculations taking tissue heterogeneities into account. Tissue segmentation methods based on feature recognition and/or anatomy atlases should also be pursued in
+brachytherapy.
+
+IV.C.3. CT artifact removal
+
+It is clear that robust CT artifact correction algorithms are
+needed for accurate LE brachytherapy MBDCA dose calculations. Most efforts have been devoted to improving image
+quality and pattern recognition. Specific research efforts for
+improving dose calculations are needed. These methods are
+not yet commonly available and their potential to improve
+dose accuracy needs to be established.
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6224
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+V. MBDCA COMMISSIONING
+The commissioning of a brachytherapy TPS includes tasks
+outlined in the AAPM TG-40, TG-56, and TG-64 reports with
+specifics provided on HDR 192 Ir systems and LDR permanent prostate brachytherapy covered in TG-59 and TG-64,
+respectively.39, 185–187 The majority of these recommendations
+address treatment-specific QA tasks, and all of these reports
+presume the AAPM TG-43 formalism.3, 4 As the focus of this
+report is advanced brachytherapy dose calculation algorithms,
+this section will therefore focus only on QA tasks related
+to MBDCAs. Commissioning brachytherapy MBDCAs will
+have many aspects in common with TG-43-based systems, but
+will require algorithm-specific tasks described below.
+V.A. Literature review
+
+The literature is growing on MBDCAs and the dosimetric
+effects supporting their use for certain disease sites. However,
+to our knowledge, there is currently little literature providing
+quantitative information or practical guidance on the commissioning of brachytherapy MBDCAs for clinical use.70–72
+Consequently, there is an opportunity to establish uniform
+commissioning procedures for various MBDCAs and across
+institutions.
+V.B. From TG-43 to MBDCA-based commissioning
+
+The AAPM, ESTRO, ABS, and ABG recommend minimum commissioning standards that are designed to evaluate MBDCAs under conditions similar to those encountered
+in clinical brachytherapy practice, based on the established
+TG-43 dose calculation formalism and the new MBDCA. In
+this section, two levels of commissioning tests that should be
+performed in addition to TPS QC/QA recommendations already in place based on societal guidelines are described.
+All code implementations of MC, CC, or GBBS methods
+as MBDCA dose engines involve compromises between computational speed and sufficient dose calculation accuracy and,
+therefore, the resulting solutions will have a certain amount
+of uncertainty. These code implementations must be carefully
+benchmarked against MC or experimentally when uncertainties adequately permit to ensure sufficiently accurate dose prediction within the intended domain.
+
+6225
+
+determine agreement of MBDCA TPS-derived absolute dose
+or dose rate in comparison with the dose or dose rate produced in the TPS using the AAPM consensus TG-43 dosimetry parameters for a given brachytherapy source model. Furthermore, hand calculations should be performed for several
+points-of-interest covering the range of r and θ to be used
+in clinical practice. As recommended in the 2004 AAPM
+TG-43U1 report, a 2.0% tolerance should be used for agreement with AAPM consensus TG-43 dosimetry parameters.
+Any deviations >2.0% should be carefully examined (see
+Example 1), and the clinical impact understood and documented before patient use.
+A direct comparison of the MBDCA-based TPS output
+in a reference-sized homogenous water phantom to AAPM
+consensus data is helpful for physicists during transition to
+MBDCA-based TPS. Calculations should be conducted under
+reference conditions, i.e., water medium providing full scatter conditions,99, 188 at distances up to 10 cm away from the
+source. Comparing TG-43 dosimetry parameters is a necessary first step since these parameters describe the spatial dose
+distribution due to the physical source model without significant consideration of the surrounding environment. An example of this comparison is shown below.
+Example 1:
+Mikell and Mourtada reported on the dose distributions of
+a HDR 192 Ir source in a homogeneous water geometry calculated using BrachyVision (BV) TPS (BrachyVision v8.8,
+Varian Medical Systems, Palo Alto, CA) with the MBDCAR
+system.71 The percent dose difference (%D)
+based Acuros
+of GBBS was determined for three cases:
+(1) published TG-43 data,189
+(2) MCNPX simulations of the model VS2000 HDR 192 Ir
+source centered in a spherical water phantom of radius
+R = 15 cm, and
+(3) output from a TG-43-based TPS using vendor supplied
+F(r, θ ) tables.
+R
+and TG-43Dose differences >20% between Acuros
+based dosimetry near the source delivery cable were observed.
+R
+using a 0.1 cm long delivery
+This was attributed to Acuros
+cable, while the TG-43-based TPS algorithm used data based
+on a 15 cm long cable. While these dose differences were
+large near the cable, the impact on clinical outcomes was negligible with dose differences of less than 3% reported.
+
+V.B.1. MBDCA commissioning level 1
+
+The AAPM TG-43 dose calculation formalism is based on
+the assumption that photon-emitting brachytherapy sources
+are cylindrically symmetric, enabling single-source dose distributions to be parameterized as functions of radial distance
+r and polar angle θ from the source long-axis in spherical, homogenous water phantoms having outer radii R of 15 cm and
+40 cm for LE and HE photon emitters, respectively. Analogous to current TPS based on the TG-43 formalism, any TPS
+using a MBDCA should allow direct dose or dose rate comparisons using the same dose grid size of TG-43 to facilitate direct evaluation. The clinical medical physicist should
+Medical Physics, Vol. 39, No. 10, October 2012
+
+V.B.2. MBDCA commissioning level 2
+
+Brachytherapy treatment planning that accounts for radiation scatter conditions and the radiological influence of material heterogeneities differing from liquid water is beyond
+the AAPM TG-43 dosimetry formalism. However, these effects are real and potentially produce clinically relevant differences between calculated dose distributions of TG-43-based
+and MBDCA-based TPS. Consequently, tests of these effects
+on TPS results are required. Comparisons of the 3D dose distributions calculated with the clinical MBDCA-based TPS on
+specific virtual phantoms mimicking clinical scenarios should
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6225
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+be independently verified against benchmark dose distributions derived from the same phantom geometries. Based on
+the TPS dose output type, Dm,m or Dw,m , the independent dose
+calculation should be consistent with the TPS style option. At
+this time, clinical physicists should be aware that such benchmark dose distributions should only be obtained via the use
+of a well-documented MC code. Direct comparison of the
+MBDCA output to a reference treatment plan having identical heterogeneous conditions is mandatory for physicists to
+commission MBDCA-based TPS.
+For LE photon-emitting brachytherapy sources such as
+125
+I, the influence of radiation backscatter is often negligible in comparison to the impact of varying tissue composition. For HE photon-emitting brachytherapy sources, such as
+192
+Ir, radiation scatter plays a major role. While variations in
+soft tissue composition cause minimal changes in dose calculation, applicators having components with mass density
+>2 g/cm3 are dosimetrically important. For both energy
+regimes, any deviations between the MBDCA-based TPS results and the reference treatment plan should be documented,
+and the clinical significance understood. Example 2 for LE
+sources, and Examples 3 and 4 for HE sources, illustrate comparisons between reference (MC-based) treatment plans and
+MBDCA-based TPS results.
+Example 2:
+Dose distributions around the 16 mm COMS eye plaque,
+using a fixed geometry of 125 I seeds, have recently been examined by two independent groups.22, 190 Both investigation
+teams calculated 3D Dm,m dose distributions accounting for
+plaque material heterogeneities, but set the eye composition to
+liquid water. Dosimetric agreement on the plaque central-axis
+between these groups has recently been shown to be 0.991
+± 0.019 (k = 2).191 The data of Melhus and Rivard were entered into the Pinnacle TPS using a MBDCA with a hybrid
+TG-43 MBDCA approach assuming cylindrically symmetric
+plaque dose distributions.54 The TPS agreement with the reference data was 0.999 ± 0.004 (k = 2) for distances ranging
+from 0.0 to 24.3 mm from the plaque/eye interface along the
+plaque central-axis.
+
+6226
+
+cator (GM11004380, Varian Brachytherapy, Charlottesville,
+VA) were compared to corresponding MC simulation results,
+as well as experimental results obtained using the VIP polymer gel-MRI three-dimensional dosimetry method with a
+custom-made phantom. The TPS and MC dose distributions
+were found in agreement, mostly within 2%. However, differences between the TPS and MC results (>2%) were observed at points in the penumbra of the shields (i.e., close
+to the edges of the “shielded” segment of the geometries).
+These differences were experimentally verified and therefore
+attributed to the TPS. Apart from these regions, experimental
+and TPS dose distributions were found in agreement within 2
+mm distance-to-agreement and 5% individual point dose difference criteria.
+V.B.3. MBDCA commissioning workflow
+
+New clinical tools often require new workflows for proper
+integration into clinical practice. Figure 4 illustrates how one
+might perform MBDCA validation. It should be noted for
+the early adopters of MBDCAs that test cases as proposed in
+Sec. V.B.3.a below might not be available, hence, users should
+perform their own verifications using independent methods
+(experimental or theoretical) to verify the MBDCA dose results under situations similar to the clinical situation, for
+R
+example, for partial breast irradiation with MammoSite
+R
+(Hologic Inc., Bedford, MA) vs SAVI
+(Cianna Medical, Aliso Viejo, CA) applicators, which is different than gynecological cases using shielded colpostats or cylinders.
+V.B.3.a. Test case plans and data availability. Test case
+plans should be made available beyond the scientific, peerreviewed literature via the web. This could be accomplished
+
+Example 3:
+R
+) to
+Zourari et al. tested a MBDCA-based TPS (Acuros
+account for the altered scatter conditions generated by the
+proximity of a HDR 192 Ir brachytherapy source to the boundary of a R = 15 cm water phantom in comparison to MC
+results.70 Dose distributions with the source shifted 5 cm and
+12.5 cm from the phantom center differed by more than 20%
+in comparison to the TG-43 results, but showed agreement
+within 3% (k = 2) of MC results, with the largest errors along
+the source long-axis.
+Example 4:
+Petrokokkinos et al. reported on the dosimetric validaR
+for multiple 192 Ir source dwell position
+tion of Acuros
+brachytherapy applications employing a shielded applicator
+in homogeneous water geometries.72 Seven VS2000 HDR
+192
+Ir source dwell positions and a partially shielded appliMedical Physics, Vol. 39, No. 10, October 2012
+
+F IG . 4. MBDCA commissioning workflow for heterogeneous dose distributions calculated by a MBDCA-based TPS. Major process flow components
+(a)–(f) are discussed in the text.
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6226
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+through expansion of the joint AAPM/RPC Brachytherapy
+Source Registry as described by Rivard et al.99 This Registry currently houses a list of sources (both LE and HDR
+192
+Ir), which meet the minimum dosimetric prerequisites
+and calibration frequencies recommended by the AAPM.
+This Registry, or some complementary international counterpart, should be expanded to include quantitative data on
+brachytherapy source benchmarks in easily accessible electronic format to facilitate comparisons with TPS outputs from
+MBDCAs beyond the current approach of pointing medical physicists to the published literature. Further, test cases
+should be developed with uniformity amongst vendors (when
+appropriate) for inclusion in their commissioning test procedures to depict dose calculations with and without MBDCAs.
+However, such development is beyond the scope of this Task
+Group and is left as an area of research (Sec. V.C).
+Having an independent repository to house the reference data (such as the Registry) would help facilitate this
+process efficiently—especially with international accessibility. By submitting engineering drawings of the source and
+source-applicator combinations, manufacturers will facilitate
+accuracy and ease of simulations to raise the standards for
+brachytherapy dose calculations.
+V.B.3.b. DICOM test case importing. During the MBDCA TPS commissioning process, the physicist downloads
+and imports DICOM files of virtual phantoms as test cases
+(see above) from a secure website. Such files include the
+geometry, precontoured DICOM-RT ROIs, points-of-interest
+(POIs), the RT-Plan, explicit material definitions (for crosssection assignments) and a description of the source strength,
+dwell positions, dwell times, and other information as found
+in the DICOM-RT structure.
+V.B.3.c. TG-43-based dose calculation tests. Once the
+test case plan is imported, the first step is to copy the plan
+for comparison under TG-43 conditions. Reported POI results
+should be quantitatively compared to the plan report obtained
+from the Registry. This step allows for verification that all
+treatment plan parameters, such as source strength, loading
+configuration, match the test case plan prior to running the
+more complex MBDCA dose engine.
+V.B.3.d. MBDCA-based dose calculation tests. After the
+initial TG-43 plan verifications, the physicist copies the test
+case plan and reruns the dose calculation using the MBDCA.
+Using the TPS plan evaluation tools, comparisons between
+the reference data and the institutional results are made of
+ROI DVHs, POI doses, etc. If the MBDCA-based TPS allows
+users to insert a solid brachytherapy applicator in a plan, the
+physicist should use the TPS measuring tools (distance and
+angle rulers) to compare vendor drawings to the outer and inner dimensions in the applicator library. At a minimum, the
+physicist should measure a few dimensions of the applicator(s) used in the clinic with mechanical calipers or radiographic imaging.186 Given established tolerances, the physicist will release the system for general clinical use or inclusion in cooperative clinical trials.
+V.B.3.e. Reference CT scanner calibration data. An important input for the MBDCA-based TPS is the reference CT
+scanner calibration function, especially for LE brachytherapy
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6227
+
+sources as discussed in Sec. IV. The physicist should copy this
+calibration curve from the Registry for TPS entry. This is not
+intended to replace the institution’s CT calibration curve but
+is only for the purpose of comparing to the reference datasets.
+Also, the physicist should verify that the materials used in the
+TPS are consistent with those provided in the test case.
+V.B.3.f. Select dose scoring medium type. User should
+specify dose scoring medium (to medium or water) following the recommendation of Sec. IV.
+
+V.C. Areas of research
+
+V.C.1. Workflow
+
+The recommended commissioning workflow is general
+enough to be applicable to any MBDCA TPS. It contains multiple checks against the current, well-known TG-43 standard
+to ensure consistency of the process. However, commissioning of a MBDCA currently represents a particular challenge
+on multiple counts. Presently, there is only a single commerR
+.
+cial MBDCA-based TPS available, Acuros
+
+V.C.2. Test cases
+
+It is not reasonable to validate MBDCA implementation
+for all possible combinations of source-applicator-geometry.
+Thus, exploring MBDCA limitations is an important undertaking among early adopters,70–72 and must be expanded to
+various tumor sites and treatment geometries. It is expected
+that this exercise will be repeated for other MBDCAs as
+they become available. In this regard, creation of a Registry (proposed previously) should help early adopters as well
+as clinical medical physicists. Developers of new test cases
+are strongly encouraged to share their validation geometries
+through the Registry. To achieve this goal, TG-186 recommends creation of a Working Group with international membership. This Working Group will determine the submission
+modality or prerequisites, review submission prior to availability and propose a first set of test cases to help the community in this crucial process.
+
+V.C.3. Gamma-index comparisons
+
+It will be critical to refine the dose accuracy tolerance
+requirements for MBDCAs. The gamma-index concept
+(concurrently evaluating percentage agreement and distanceto-agreement) has been used for several years in EBRT
+dosimetry quality analysis.192, 193 Considering a gammaindex metric for brachytherapy dosimetry is an important first
+step. A simple ±2% tolerance level dates from 1994.185 The
+2004 AAPM TG-43U1 report further recommended a 2%
+tolerance for agreement of reference dosimetry parameters
+and overall dose calculation.4 However, a tolerance criterion
+has not been specified for the distance-to-agreement between
+the reference dataset and that being evaluated. Further, an
+explicit method for performing this evaluation over the range
+of all clinical points of interest was not specified.
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6227
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+Since then, a number of investigators have applied the
+gamma-index concept to brachytherapy. Yang et al.56 compared MC dosimetry results for HDR 192 Ir breast applicator
+to those obtained using a TG-43 hybrid MBDCA approach
+and found a 99.24% gamma-index pass rate with 1% and
+1 mm criterion, and a 99.95% pass rate for a 2% and 2 mm
+criterion. Petrokokkinos et al.72 examined the accuracy of the
+R
+system in comparison to MCNPX-based MC simuAcuros
+lations for the dose distribution from a HDR 192 Ir source in
+the presence of a shielded vaginal applicator. The large majority of points on the transverse and coronal planes met the
+gamma index 5% and 2 mm pass rate criterion. Bannon et al.
+examined 103 Pd and 192 Ir sources using a 0.5 mm dose grid
+and a 2% and 2 mm criterion, and obtained passing rates of
+99.6% and 99.9% for linear sources and 98.9% and 100% for
+toroidal sources, respectively.194
+Based on this literature and observations made when creating the AAPM TG-43U1 report, a gamma index criterion of
+2.0% and 2.0 mm with a ≥99% pass rate for clinically relevant points may generally be used to evaluate agreement of
+MBDCA-based TPS results with reference treatment plans.
+At the same time, setting tolerance levels is a major endeavor
+and the set of criteria for acceptability might need to be adjusted depending on the complexity of the case, such as in
+Venselaar et al.195 Hence, more research, similar to the study
+by Stock et al. is needed to establish clear sets of criteria,196
+and further validation and cross comparison with MC and
+other MBDCAs should be a major area of research.
+V.C.4. Phantom development
+
+Finally, there is a need to design and implement relevant
+physical phantom geometries with known materials, possibly
+adding various applicator/shield inserts. For these phantoms,
+it is necessary to assess the dose distributions experimentally
+
+6228
+
+(e.g., using TLDs, radiochromic film, or GEL dosimeters) and
+compare the results with a virtual representation within a MBDCA TPS.72 This process would generate sets of “true” independent reference data against which clinical medical physicists can validate their TPS and for which new systems can
+be benchmarked. Again, the proposed Registry would play a
+central role in this process.
+
+VI. OTHER ISSUES AND LIMITATIONS
+VI.A. Uncertainties related to MBDCA
+
+There are several sources of MBDCA dosimetric uncertainties; many are common to all calculation methods. In
+this section, both general and method-specific dosimetric uncertainties are identified. A list of dosimetric uncertainty
+components in approximate chronological order is given in
+Table IV, and includes several items and expands upon
+those from the joint AAPM/ESTRO TG-138 report for direct
+MC simulations of brachytherapy source dosimetry.197 While
+quantitative uncertainties are not recommended due to the
+paucity of the literature on this topic and the variability of results based on different possibilities of applicator/source/site,
+an indication of which items are generally guided by MBDCA
+design or the physicist is made available. Based on presently
+available choices within the TPS, responsibility for some of
+these components may fall to the medical physicist.
+For all MBDCA approaches to brachytherapy treatment
+planning, Type B dosimetric uncertainties (nonstatistical or
+systematic) are present. Specific to MC methods, statistical,
+or Type A, uncertainties become more pronounced with
+limited particle histories, while Type B uncertainties may
+occur if certain variance reduction techniques are used,
+which introduce biases, such as the MC condensed-history
+algorithm for charged particle transport. Specific to GBBS
+
+TABLE IV. Dosimetric uncertainties for MBDCA, with control over a given uncertainty component indicated by the responsible party.
+#
+
+Dosimetric uncertainty components
+
+Responsible party
+
+1
+
+Source (seed) modeling such as geometry, material specifications, etc. For HDR and PDR 192 Ir sources, the length of
+cable modeled with the source also leads to uncertainties (Ref. 71). Also for HDR 192 Ir sources, often times virtual
+sources are used where such geometric approximations can lead to dosimetric uncertainties.
+Applicator modeling (if applicable) such as geometries, material specifications (especially denser materials such as lead
+or tungsten alloys).
+Source and applicator characterization grid size resolution if not explicitly modeled.
+Source and/or applicator positioning in the patient anatomy, which is extremely important for shadowing effects behind
+dense materials, such as additional seeds (if applicable), dense shielding materials, or light material streaming paths
+such as through catheters.
+Modeling of brachytherapy source radiation emissions.
+Patient geometry and limitations to simulate the realistic geometry.
+Material voxels grid resolution size (based on CT scanning).
+Determination of patient composition through correlation of CT HU to material and density mapping.
+Fundamental material interaction data used (cross sections).
+MBDCA model and potential simplifications away from realistic physics models.
+Use of collision kerma versus absorbed dose, especially in tissue areas where CPE assumption is not true (near
+interfaces of applicator and gas/tissue interface).
+Output voxel grid resolution size.
+
+Vendor
+
+2
+3
+4
+
+5
+6
+7
+8
+9
+10
+11
+12
+
+Medical Physics, Vol. 39, No. 10, October 2012
+
+Vendor
+Physicist
+Physicist
+
+Vendor
+Physicist
+Physicist
+Vendor and physicist
+Vendor
+Vendor
+Vendor
+Physicist
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6228
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+methods, systematic uncertainties arise from spatial, angular,
+and energy discretization due to use of a finite grid. Specific
+to CC methods, systematic uncertainties arise from the use
+of angular discretization (i.e., collapsed point-spread kernels)
+combined with a finite grid.
+MBDCAs using MC or GBBS methods are similar
+as both methods converge to the LBTE solution. Therefore, uncertainties for MC and GBBS can be reduced by
+increasing the number of particles or the resolution in
+space, angle, and energy, respectively. Based on point-kernel
+superposition,9, 10, 16, 57, 58, 198, 199 the CC method involves no
+approximations up to and including the dose from once scattered photons. However, dose from multiply scattered photons calculated by CC involves an approximation related to
+phantom size from initial generation of point kernels for multiply scattered photons and use of rectilinear methods to scale
+the multiple-scatter kernel for material heterogeneities. Dosimetric uncertainties for MC, GBBS, and CC usually increase
+with increasing distance from the source and with decreasing
+voxel dimensions, and can be reduced at the expense of increased calculation time through use of more histories (MC)
+or denser grids (GBBS, CC).
+In trying to limit some of these uncertainties, a calculation voxel size no larger than (2 mm)3 should be used at all
+times. If allowed by the imaging data set resolution, smaller
+voxel sizes [< (1 mm)3 ] could be used. This would be of
+particular interest in close proximity to sources and interfaces. Furthermore, dose uncertainties obtained using MC
+MBDCAs for the volume of interest (e.g., CTV, PTV, etc.)
+should be reported systematically. For the time being, the approach of Sec. III.D.1 of TG-105 (Ref. 85) is recommended,
+with a threshold of using voxels with dose values 25% or
+greater than the prescription dose. This change in threshold
+is needed since brachytherapy has steeper dose gradients than
+EBRT.
+
+VI.B. Limitations
+
+There may be certain limitations imposed by each of the
+MBDC engines as implemented in TPS software. Examples
+of such limitations include:
+(1) Limits on which brachytherapy seeds are supported.
+(2) Limits on the types of brachytherapy sources supported (i.e., HDR or PDR versus LDR).
+(3) Limits on the applicators supported (if applicable).
+(4) Limits on the materials (and associated compositions)
+that can be assigned.
+(5) Nonchangeable CT HU to material and density conversions.
+(6) Only dose reporting as Dm,m or Dw,m may be supported
+and not both.
+(7) Upper and lower limits may be placed on the dose grid
+resolution size.
+(8) Limits on the extent of the patient geometry may be
+imposed.
+(9) User control over algorithm parameters may be
+limited.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6229
+
+Through coordination amongst clinical professional societies, TPS vendors, and source manufacturers, it is hoped that
+many of the current limitations will be overcome in the near
+future.
+VI.C. Considerations for changing brachytherapy
+dose prescriptions
+
+There is a long history in the field of brachytherapy of
+safely changing prescriptions based on dosimetric advancements. Source strength units have evolved from mg-Ra-eq
+to apparent activity to air-kerma strength, SK and reference air-kerma rate, the currently accepted two measures of
+source strength for LE and HE photon-emitting brachytherapy
+sources.200 These changes have primarily resulted in prescriptions using absorbed dose instead of specification in terms of
+source strength and implant duration. More recently, establishment of the AAPM TG-43 formalism and migration of
+the LE SK standard to the NIST WAFAC has resulted in prescription dose changes of about −10% for LDR 125 I seeds,
+with permanent prostate implant prescriptions changing from
+160 Gy to 145 Gy,201 and COMS eye plaque application prescriptions from 100 Gy to 85 Gy.202 Further, when accounting
+for COMS eye plaque material heterogeneities and radiation
+scatter conditions between Dw,w-TG43 and Dw,m , the prescribed
+dose of 85 Gy corresponds to an administered dose of 76 Gy
+for 125 I (−11%) and 67 Gy for 103 Pd (−21%) sources.191 Such
+large dose changes are not expected for HE photon-emitting
+brachytherapy sources.
+A dose tolerance of ±5% was adopted by the ABS
+for addressing dosimetric changes upon implementing
+dosimetry recommendations of the 2004 AAPM TG-43U1
+report.4, 5, 203, 204 As more data become available on differences between prescribed and administered doses, the
+brachytherapy community will be better positioned to evaluate whether prescription changes are warranted for specific
+disease-sites.
+Based on the significance of heterogeneity effects, the
+AAPM, ESTRO, ABS, and ABG recommend for those clinics that have the necessary resources that dose calculations
+be performed not only according to the TG-43 formalism,
+but also using the more accurate heterogeneous calculations.
+For the latter, the recommendations made in the previous sections should be followed closely. These dose estimates should
+be kept on file for a clinical evaluation in anticipation of
+sufficient heterogeneity-enabled brachytherapy TPS. While
+there remain significant dosimetric uncertainties and limitations as examined in Subsections VI.A and VI.B, the capabilities of MBDCAs to account for material heterogeneities,
+patient scatter conditions, and attenuation amongst sources
+and by high-Z applicators require the radiation oncologist to
+assess the clinical practice of brachytherapy using MBDCAbased dosimetry. Until sufficient clinical data become available to issue specific societal recommendations on dose prescriptions, the AAPM, ESTRO, ABS, and ABG recommend
+that prescriptions based on the TG-43 dose calculation formalism remain in effect. Similarly, for the time being MBDCAs are generally impractical (from a computational time
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6229
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+perspective) for dose optimization and the TG-43 formalism
+remains the standard of practice for this task.
+
+APPENDIX A: GLOSSARY OF TERMS
+AAPM
+
+VII. CONCLUSIONS
+The AAPM TG-43 dose calculation formalism has provided the brachytherapy community with clear processes in
+terms of source strength specification and efficient dose calculations that made it easier to compare dose-outcome relationships among different institutions. For the time being, the
+TG-43 formalism will remain an important part of clinical
+brachytherapy. This report recognizes the benefit of the current standard and has built upon the developed infrastructure
+with specific recommendations to help move the brachytherapy field towards greater adoption of more accurate, advanced
+model-based dose calculation algorithms. Application of TG186 guidance should help to ensure that the shared worldwide experience in using the TG-43 formalism is not lost in
+the process of seeking better brachytherapy dose calculation
+tools. The report also underlines specific research areas that
+brachytherapy physicists and physicians should tackle expeditiously, perhaps through consortium efforts to provide data
+required to move forward with MBDCAs.
+Furthermore, it is important to acknowledge that the bulk
+of clinical brachytherapy dosimetry experience is with radiation transport and energy deposition in water, with dose to water reported (as calculated under the TG-43 approach). Hence,
+for the time being the recommendation that TG-43 calculations be performed in parallel with model-based dose calculations is crucial. Only in this way will the radiation therapy
+community become familiar with dose differences, including
+the impact on prescription dose and doses to points, organs,
+and regions of interest. This will enable assessment of the implications of adopting MBDCAs for treatment planning, and
+help the brachytherapy community to understand new study
+results and place them in the context of previous dose calculations, treatment planning, and research.
+ACKNOWLEDGMENTS
+The authors wish to acknowledge the contribution to comments and reviews by Dr. Annette Haworth on behalf of the
+Australasian Brachytherapy Group. The authors further acknowledge Dr. Jack Venselaar (liaison between GEC-ESTRO
+and AAPM-BTSC) and Dr. Frank-André Siebert (chair of
+BRAPHYQS) for pursuing the review effort within ESTRO.
+The final approval of this document by ESTRO would not
+have been possible without the support of Dr. Christine HaieMeder (Chair of GEC-ESTRO) and Dr. Jean Bourhis (former President of ESTRO). Similarly, the authors acknowledge
+Mr. Zoubir Ouhib as chair of the ABS physics committee for
+seeking support of this report within the ABS. The authors finally wish to thank Dr. Facundo Ballester, Dr. Joseph Bucci,
+Dr. José Perez-Calatayud, Dr. Dean Cutajar, Dr. Martin Ebert,
+Dr. Moyed Miften, Dr. Jean Moran, Dr. Panagiottis Papagiannis, Dr. Niko Papanikolaou, Dr. Chet Reft, Dr. Theadore
+Robin, Jr., Dr. Ronald Sloboda, and Dr. Ning J. Yue for the
+careful review of this report.
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6230
+
+ABS
+ABG
+BV
+BT
+CBCT
+CC
+COMS
+CPE
+CSDA
+CT
+DECT
+DICOM
+
+DICOM-RT
+DVH
+EBRT
+EBS
+ESTRO
+ESTRO-EIR
+GBBS
+GEC-ESTRO
+
+GYN
+HDR
+HU
+ICRU
+ICRP
+kV
+LBTE
+LDR
+MC
+MBDCA
+
+MRI
+MV
+NIST
+PDR
+POI
+Primary dose
+
+American Association of Physicists in
+Medicine
+American Brachytherapy Society
+Australasian Brachytherapy Group
+BrachyVision
+brachytherapy
+Cone beam computed tomography
+Collapsed cone
+Collaborative Ocular Melanoma Study
+Charged particle equilibrium
+Continuous slowing down approximation
+Computed tomography
+Dual-energy CT
+Digital imaging and communications in
+medicine, the standard used for medical images and many other forms of digital data in
+radiotherapy
+An extension of the DICOM standard that
+handles the radiotherapy modality
+Dose-volume histogram
+External beam radiation therapy
+Electronic brachytherapy source
+European Society for Radiotherapy and Oncology
+European Institute of Radiotherapy; A
+standing committee of ESTRO
+Grid-based Boltzmann equation solver,
+R
+system
+such as used by the Acuros
+Groupe Européen de Curiethérapie; A
+standing committee of ESTRO; representing brachytherapy
+Gynecological
+High dose-rate
+Hounsfield unit
+International Commission on Radiation
+Units and Measurements
+International Commission on Radiological
+Protection
+Kilovoltage
+Linear Boltzmann transport equation
+Low dose-rate
+Monte Carlo
+Model-based dose calculation algorithm
+An algorithm that uses source models and
+details of the patient and applicator geometry to calculate a three-dimensional dose
+distribution in the patient as opposed to
+look-up tables based on a water geometry
+Magnetic resonance imaging
+Megavoltage
+National Institute of Standards and Technology
+Pulsed dose rate
+Point of interest
+Dose contributed by direct, nonscattered
+photons
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6230
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+QA
+QC
+ROI
+RPC
+Scatter dose
+Segmentation
+
+TLD
+TPS
+TG
+US
+VBD
+WAFAC
+
+Quality assurance
+Quality control
+Region of interest
+Radiological Physics Center
+Dose contributed by scattered photons
+When applied to tissues, the spatial delineation of different regions of a 3D image
+dataset and assignment of elemental compositions and mass (or electron) densities
+Thermoluminescent dosimeter
+Treatment planning system
+Task group
+Ultrasound (imaging)
+Volume breast density, defined as the fractional volume of glandular tissue
+Wide-angle free-air chamber
+
+a) Author to whom correspondence should be addressed. Electronic mail:
+
+beaulieu@phy.ulaval.ca
+1 B. R. Thomadsen, J. F. Williamson, M. J. Rivard, and A. S. Meigooni,
+
+“Anniversary paper: Past and current issues, and trends in brachytherapy
+physics,” Med. Phys. 35, 4708–4723 (2008).
+2 B. S. Hilaris, U. K. Henschke, and J. G. Holt, “Clinical experience with
+long half-life and low-energy encapsulated radioactive sources in cancer
+radiation therapy,” Radiology 91, 1163–1167 (1968).
+3 R. Nath, L. L. Anderson, G. Luxton, K. A. Weaver, J. F. Williamson, and
+A. S. Meigooni, “Dosimetry of interstitial brachytherapy sources: Recommendations of the AAPM Radiation Therapy Committee Task Group No.
+43,” Med. Phys. 22, 209–234 (1995).
+4 M. J. Rivard, B. M. Coursey, L. A. DeWerd, W. F. Hanson, M. S. Huq,
+G. S. Ibbott, M. G. Mitch, R. Nath, and J. F. Williamson, “Update of AAPM Task Group No. 43 Report: A revised AAPM protocol for brachytherapy dose calculations,” Med. Phys. 31, 633–674
+(2004).
+5 M. J. Rivard, W. M. Butler, L. A. DeWerd, M. S. Huq, G. S. Ibbott,
+A. S. Meigooni, C. S. Melhus, M. G. Mitch, R. Nath, and J. F. Williamson,
+“Supplement to the 2004 update of the AAPM Task Group No. 43 Report,”
+Med. Phys. 34, 2187–2205 (2007).
+6 J. F. Williamson, “The Sievert integral revisited: Evaluation and extension
+to 125 I, 169 Yb, and 192 Ir brachytherapy sources,” Int. J. Radiat. Oncol.,
+Biol., Phys. 36, 1239–1250 (1996).
+7 H. Meertens and R. van der Laarse, “Screens in ovoids of a Selectron
+cervix applicator,” Radiother. Oncol. 3, 69–80 (1985).
+8 K. J. Weeks and J. C. Dennett, “Dose calculation and measurements for a
+CT compatible version of the Fletcher applicator,” Int. J. Radiat. Oncol.,
+Biol., Phys. 18, 1191–1198 (1990).
+9 Å. K. Carlsson and A. Ahnesjö, “The collapsed cone superposition algorithm applied to scatter dose calculations in brachytherapy,” Med. Phys.
+27, 2320–2332 (2000).
+10 J. F. Williamson, R. S. Baker, and Z. Li, “A convolution algorithm for
+brachytherapy dose computations in heterogeneous geometries,” Med.
+Phys. 18, 1256–1265 (1991).
+11 J. F. Williamson, Z. Li, and J. W. Wong, “One-dimensional scattersubtraction method for brachytherapy dose calculation near bounded heterogeneities,” Med. Phys. 20, 233–244 (1993).
+12 M. J. Rivard, J. L. M. Venselaar, and L. Beaulieu, “The evolution of brachytherapy treatment planning,” Med. Phys. 36, 2136–2153
+(2009).
+13 N. Papanikolaou, J. J. Battista, A. L. Boyer, C. Kappas, E. Klein, T.
+R. Mackie, M. Sharpe, and J. Van Dyk, “AAPM Report No. 85: Tissue inhomogeneity corrections for megavoltage photon beams,” AAPM Report
+No. 85 (Medical Physics, Madison, WI, 2004), pp. 1–135.
+14 A. Ahnesjö and M. M. Aspradakis, “Dose calculations for external photon
+beams in radiotherapy,” Phys. Med. Biol. 44, R99–R155 (1999).
+15 A. Ahnesjö, “Collapsed cone convolution of radiant energy for photon dose calculation in heterogenous media,” Med. Phys. 16, 577–592
+(1989).
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6231
+
+16 T. R. Mackie, J. W. Scrimger, and J. J. Battista, “A convolution method of
+
+calculating dose for 15-MV x rays,” Med. Phys. 12, 188–196 (1985).
+17 D. W. O. Rogers, “Fifty years of Monte Carlo simulations for medical
+
+physics,” Phys. Med. Biol. 51, R287–R301 (2006).
+18 K. A. Gifford, J. L. Horton, Jr., T. A. Wareing, G. Failla, and F. Mourtada,
+
+“Comparison of a finite-element multigroup discrete-ordinates code with
+Monte Carlo for radiotherapy calculations,” Phys. Med. Biol. 51, 2253–
+2265 (2006).
+19 O. N. Vassiliev, T. A. Wareing, J. McGhee, G. Failla, M. R. Salehpour, and
+F. Mourtada, “Validation of a new grid-based Boltzmann equation solver
+for dose calculation in radiotherapy with photon beams,” Phys. Med. Biol.
+55, 581–598 (2010).
+20 International Commission on Radiation Units and Measurements, “Tissue
+substitutes in radiation dosimetry and measurement,” ICRU Report No. 44
+(ICRU Publications, Bethesda, MD, 1989).
+21 R. E. P. Taylor, “Monte Carlo calculations for brachytherapy,” M.Sc. thesis, Carleton University, Ottawa, Canada, 2006.
+22 R. M. Thomson, R. E. P. Taylor, and D. W. O. Rogers, “Monte Carlo
+dosimetry for 125 I and 103 Pd eye plaque brachytherapy,” Med. Phys. 35,
+5530–5543 (2008).
+23 O. Chibani, J. F. Williamson, and D. Todor, “Dosimetric effects of seed
+anisotropy and interseed attenuation for 103 Pd and 125 I prostate implants,”
+Med. Phys. 32, 2557–2566 (2005).
+24 J. F. Carrier, L. Beaulieu, F. Therriault-Proulx, and R. Roy, “Impact of
+interseed attenuation and tissue composition for permanent prostate implants,” Med. Phys. 33, 595–604 (2006).
+25 J. F. Carrier, M. D’Amours, F. Verhaegen, B. Reniers, A. G. Martin, E. Vigneault, and L. Beaulieu, “Postimplant dosimetry using a Monte Carlo
+dose calculation engine: A new clinical standard,” Int. J. Radiat. Oncol.,
+Biol., Phys. 68, 1190–1198 (2007).
+26 Y. Yang and M. J. Rivard, “Evaluation of brachytherapy lung implant dose
+distributions from photon-emitting sources due to tissue heterogeneities,”
+Med. Phys. 38, 5857–5862 (2011).
+27 J. G. H. Sutherland, K. M. Furutani, Y. I. Garces, and R. M. Thomson,
+“Model-based dose calculations for 125 I lung brachytherapy,” Med. Phys.
+39, 4365–4377 (2012).
+28 G. Lymperopoulou, P. Papagiannis, A. Angelopoulos, P. Karaiskos,
+E. Georgiou, and D. Baltas, “A dosimetric comparison of 169 Yb and 192 Ir
+for HDR brachytherapy of the breast, accounting for the effect of finite patient dimensions and tissue inhomogeneities,” Med. Phys. 33, 4583–4589
+(2006).
+29 P. Papagiannis, P. Karaiskos, E. Georgiou, D. Baltas, G. Lymperopoulou,
+E. Pantelis, and L. Sakelliou, “On the use of high dose rate 192 Ir and 169 Yb
+R
+radiation therapy system,” Med. Phys. 34,
+sources with the Mammosite
+3614–3619 (2007).
+30 G. Anagnostopoulos, D. Baltas, E. Pantelis, P. Papagiannis, and L. Sakelliou, “The effect of patient inhomogeneities in oesophageal 192 Ir HDR
+brachytherapy: A Monte Carlo and analytical dosimetry study,” Phys.
+Med. Biol. 49, 2675–2685 (2004).
+31 E. Poon, J. F. Williamson, T. Vuong, and F. Verhaegen, “Patient-specific
+Monte Carlo dose calculations for high-dose-rate endorectal brachytherapy with shielded intracavitary applicator,” Int. J. Radiat. Oncol., Biol.,
+Phys. 72, 1259–1266 (2008).
+32 X. Yan, E. Poon, B. Reniers, T. Vuong, and F. Verhaegen, “Comparison of dose calculation algorithms for colorectal cancer brachytherapy treatment with a shielded applicator,” Med. Phys. 35, 4824–4830
+(2008).
+33 E. Poon and F. Verhaegen, “Development of a scatter correction technique
+and its application to HDR 192 Ir multicatheter breast brachytherapy,” Med.
+Phys. 36, 3703–3713 (2009).
+34 G. X. Ding, D. M. Duggan, and C. W. Coffey, “Accurate patient dosimetry
+of kilovoltage cone-beam CT in radiation therapy,” Med. Phys. 35, 1135–
+1144 (2008).
+35 G. X. Ding and C. W. Coffey, “Radiation dose from kilovoltage cone beam
+computed tomography in an image-guided radiotherapy procedure,” Int. J.
+Radiat. Oncol., Biol., Phys. 73, 610–617 (2009).
+36 B. R. B. Walters, G. X. Ding, R. Kramer, and I. Kawrakow, “Skeletal
+dosimetry in cone beam computed tomography,” Med. Phys. 36, 2915–
+2922 (2009).
+37 J. F. Williamson, “Semiempirical dose-calculation models in brachytherapy,” in Brachytherapy Physics, 2nd ed., edited by B. R. Thomadsen,
+M. J. Rivard, and W. M. Butler (Medical Physics, Madison, WI, 2005),
+pp. 201–232.
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6231
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+38 J.
+
+F. Williamson and M. J. Rivard, “Quantitative dosimetry methods for brachytherapy,” in Brachytherapy Physics, 2nd ed., edited by
+B. R. Thomadsen, M. J. Rivard, and W. M. Butler (Medical Physics, Madison, WI, 2005), pp. 233–294.
+39 Y. Yu, L. L. Anderson, Z. Li, D. E. Mellenberg, R. Nath, M. C. Schell,
+F. M. Waterman, A. Wu, and J. C. Blasko, “Permanent prostate seed implant brachytherapy: Report of the American Association of Physicists in
+Medicine Task Group No. 64,” Med. Phys. 26, 2054–2076 (1999).
+40 F. Ballester, D. Granero, J. Pérez-Calatayud, C. S. Melhus, and M. J.
+Rivard, “Evaluation of high-energy brachytherapy source electronic disequilibrium and dose from emitted electrons,” Med. Phys. 36, 4250–4256
+(2009).
+41 C. C. Ling and E. D. Yorke, “Interface dosimetry for I-125 sources,” Med.
+Phys. 16, 376–381 (1989).
+42 E. D. Yorke, Y. C. D. Huang, M. C. Schell, R. Wong, and C. C. Ling,
+“Clinical implications of I-125 dosimetry of bone and bone-soft tissue interfaces,” Int. J. Radiat. Oncol., Biol., Phys. 21, 1613–1619 (1991).
+43 J. F. Williamson, “Dose calculations about shielded gynecological colpostats,” Int. J. Radiat. Oncol., Biol., Phys. 19, 167–178 (1990).
+44 R. Nath, C. H. Park, C. R. King, and P. Muench, “A dose computation model for 241 Am vaginal applicators including the source-to-source
+shielding effects,” Med. Phys. 17, 833–842 (1990).
+45 A. S. Kirov and J. F. Williamson, “Two-dimensional scatter integration
+method for brachytherapy dose calculations in 3D geometry,” Phys. Med.
+Biol. 42, 2119–2135 (1997).
+46 G. M. Daskalov, A. S. Kirov, and J. F. Williamson, “Analytical approach to
+heterogeneity correction factor calculation for brachytherapy,” Med. Phys.
+25, 722–735 (1998).
+47 G. Anagnostopoulos, D. Baltas, P. Karaiskos, E. Pantelis, P. Papagiannis,
+and L. Sakelliou, “An analytical dosimetry model as a step towards accounting for inhomogeneities and bounded geometries in 192 Ir brachytherapy treatment planning,” Phys. Med. Biol. 48, 1625–1647 (2003).
+48 R. Wang and R. S. Sloboda, “Brachytherapy scatter dose calculation in
+heterogeneous media: I. A microbeam ray-tracing method for the singlescatter contribution,” Phys. Med. Biol. 52, 5619–5636 (2007).
+49 R. Wang and R. S. Sloboda, “Brachytherapy scatter dose calculation in
+heterogeneous media: II. Empirical formulation for the multiple-scatter
+contribution,” Phys. Med. Biol. 52, 5637–5654 (2007).
+50 C. Furstoss, B. Reniers, M. J. Bertrand, E. Poon, J. F. Carrier, B. M. Keller,
+J.-P. Pignol, L. Beaulieu, and F. Verhaegen, “Monte Carlo study of LDR
+seed dosimetry with an application in a clinical brachytherapy breast implant,” Med. Phys. 36, 1848–1858 (2009).
+51 J. Markman, J. F. Williamson, J. F. Dempsey, and D. A. Low, “On the
+validity of the superposition principle in dose calculations for intracavitary implants with shielded vaginal colpostats,” Med. Phys. 28, 147–155
+(2001).
+52 M. D’Amours, J. Carrier, E. Lessard, J. Pouliot, F. Verhaegen, and
+L. Beaulieu, “A new approach for afterloading brachytherapy inverse
+planned dose optimization based on the accurate Monte Carlo method,”
+Med. Phys. 35, 2969 (2008) (abstract).
+53 M. D’Amours, J. Pouliot, A. Dagnault, F. Verhaegen, and L. Beaulieu,
+“Patient-specific Monte Carlo-based dose-kernel approach for inverse
+planning in afterloading brachytherapy,” Int. J. Radiat. Oncol., Biol., Phys.
+81, 1582–1589 (2011).
+54 M. J. Rivard, C. S. Melhus, D. Granero, J. Perez-Calatayud, and
+F. Ballester, “An approach to using conventional brachytherapy software for clinical treatment planning of complex, Monte Carlo-based
+brachytherapy dose distributions,” Med. Phys. 36, 1968–1975 (2009).
+55 M. J. Price and F. Mourtada, “A 3D forward treatment planning algorithm using pre-calculated Monte Carlo data sets for HDR/PDR tandem
+and ovoid intracavitary systems,” Brachytherapy 6, S89 (2007) (abstract).
+56 Y. Yang, C. S. Melhus, S. Sioshansi, and M. J. Rivard, “Treatment planning of a skin-sparing conical breast brachytherapy applicator using conventional brachytherapy software,” Med. Phys. 38, 1519–1525 (2011).
+57 Å. K. Carlsson and A. Ahnesjö, “Point kernels and superposition methods
+for scatter dose calculations in brachytherapy,” Phys. Med. Biol. 45, 357–
+382 (2000).
+58 Å. K. Carlsson Tedgren and A. Ahnesjö, “Accounting for high Z shields
+in brachytherapy using collapsed cone superposition for scatter dose calculation,” Med. Phys. 30, 2206–2217 (2003).
+59 Å. K. Carlsson Tedgren and A. Ahnesjö, “Optimization of the computational efficiency of a 3D, collapsed cone dose calculation algorithm for
+brachytherapy,” Med. Phys. 35, 1611–1618 (2008).
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6232
+
+60 J. E. O’Connor, “The variation of scattered x-rays with density in an irra-
+
+diated body,” Phys. Med. Biol. 1, 352–369 (1957).
+61 K. R. Russell, Å. K. Carlsson Tedgren, and A. Ahnesjö, “Brachytherapy
+
+source characterization for improved dose calculations using primary and
+scatter dose separation,” Med. Phys. 32, 2739–2752 (2005).
+62 B. van Veelen, “Collapsed cone dose calculations for model
+based brachytherapy utilizing Monte Carlo source characterization data,” in Proceedings of the International Workshop on Recent Advances in Monte Carlo techniques for radiation therapy,
+McGill University, Montreal, Quebec, Canada (2011), available at
+http://www.medphys.mcgill.ca/~ws2011/Abstract_book.html.
+63 E. E. Lewis and W. F. Miller, Computational Methods of Neutron Transport (Wiley, New York, 1984).
+64 C. Zhou and F. Inanc, “Integral-transport-based deterministic brachytherapy dose calculations,” Phys. Med. Biol. 48, 73–93 (2003).
+65 R. E. Alcouffe, R. S. Baker, F. W. Brinkley, D. R. Marr, R. D. O’Dell,
+and W. F. Walters, “DANTSYS: a diffusion accelerated neutral particle
+transport code system,” Los Alamos National Laboratory Report No. LA12969-M, Los Alamos, NM, 1995.
+66 G. M. Daskalov, R. S. Baker, D. W. O Rogers, and J. F. Williamson,
+“Dosimetric modeling of the microselectron high-dose rate 192 Ir source
+by the multigroup discrete ordinates method,” Med. Phys. 27, 2307–2319
+(2000).
+67 G. M. Daskalov, R. S. Baker, D. W. O. Rogers, and J. F. Williamson,
+“Multigroup discrete ordinates modeling of 125 I 6702 seed dose distributions using a broad energy-group cross section representation,” Med. Phys.
+29, 113–124 (2002).
+68 F. Mourtada, T. Wareing, J. L. Horton, Jr., J. McGhee, D. Barnett, K. Gifford, G. Failla, and R. Mohan, “A deterministic dose calculation method
+applied to the dosimetry of shielded intracavitary brachytherapy applicators,” Med. Phys. 31, 1807–1808 (2004) (abstract).
+69 K. A. Gifford, M. J. Price, J. L. Horton, Jr., T. A. Wareing, and F. Mourtada, “Optimization of deterministic transport parameters for the calculation of the dose distribution around a high dose-rate 192 Ir brachytherapy
+source,” Med. Phys. 35, 2279–2285 (2008).
+70 K. Zourari, E. Pantelis, A. Moutsatsos, L. Petrokokkinos, P. Karaiskos,
+L. Sakelliou, E. Georgiou, and P. Papagiannis, “Dosimetric accuracy of a
+deterministic radiation transport based 192 Ir brachytherapy treatment planning system. Part I: Single sources and bounded homogeneous geometries,” Med. Phys. 37, 649–661 (2010).
+71 J. K. Mikell and F. Mourtada, “Dosimetric impact of an 192 Ir brachytherapy source cable length modeled using a grid-based Boltzmann transport
+equation solver,” Med. Phys. 37, 4733–4743 (2010).
+72 L. Petrokokkinos, K. Zourari, E. Pantelis, A. Moutsatsos, P. Karaiskos,
+L. Sakelliou, I. Seimenis, E. Georgiou, and P. Papagiannis, “Dosimetric
+accuracy of a deterministic radiation transport based 192 Ir brachytherapy
+treatment planning system. Part II: Monte Carlo and experimental verification of a multiple source dwell position plan employing a shielded
+applicator,” Med. Phys. 38, 1981–1992 (2011).
+73 K. Bush, I. M. Gagne, S. Zavgorodni, W. Ansbacher, and W. Beckham,
+R
+XB with Monte Carlo methods for
+“Dosimetric validation of Acuros
+photon dose calculations,” Med. Phys. 38, 2208–2221 (2011).
+74 T. Han, J. K. Mikell, M. Salehpour, and F. Mourtada, “Dosimetric comparison of Acuros XB deterministic radiation transport method with Monte
+Carlo and model-based convolution methods in heterogeneous media,”
+Med. Phys. 38, 2651–2664 (2011).
+75 A. Fogliata, G. Nicolini, A. Clivio, E. Vanetti, P. Mancosu, and L. Cozzi,
+“Dosimetric validation of the Acuros XB advanced dose calculation algorithm: Fundamental characterization in water,” Phys. Med. Biol. 56, 1879–
+1904 (2011).
+76 J. F. Williamson, “Monte Carlo evaluation of kerma at a point for photon
+transport problems,” Med. Phys. 14, 567–576 (1987).
+77 J. F. Williamson and M. J. Rivard, “Thermoluminescent detector and
+Monte Carlo techniques for reference-quality brachytherapy dosimetry,”
+in Clinical Dosimetry Measurements in Radiotherapy, edited by D. W.
+O. Rogers and J. E. Cygler (Medical Physics, Madison, WI, 2009),
+pp. 437–499.
+78 H. Hedtjärn, G. Alm Carlsson, and J. F. Williamson, “Accelerated Monte
+Carlo based dose calculations for brachytherapy planning using correlated
+sampling,” Phys. Med. Biol. 47, 351–376 (2002).
+79 A. Sampson, Y. Le, D. Todor, and J. F. Williamson, “Using correlated sampling to accelerate CT-based Monte Carlo dose calculations
+for brachytherapy treatment planning,” in Proceedings from the World
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6232
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+Congress on Medical Physics and Biomedical Engineering (11th International Congress of the IUPESM), Munich, Germany, edited by
+O. Dössel and W. C. Schlegel (Springer, Chennai, India, 2009), Vol. 25,
+pp. 311–314.
+c
+80 O. Chibani and J. F. Williamson, “MCPI
+: A sub-minute Monte Carlo
+dose calculation engine for prostate implants,” Med. Phys. 32, 3688–3698
+(2005).
+81 R. E. P. Taylor, G. Yegin, and D. W. O. Rogers, “Benchmarking BrachyDose: Voxel based EGSnrc Monte Carlo calculations of TG-43 dosimetry
+parameters,” Med. Phys. 34, 445–457 (2007).
+82 R. M. Thomson, G. Yegin, R. E. P. Taylor, J. G. H. Sutherland, and D. W.
+O. Rogers, “Fast Monte Carlo dose calculations for brachytherapy with
+BrachyDose,” Med. Phys. 37, 3910 (2010) (abstract).
+83 H. H. Liu, “D rather than D should be used in Monte Carlo treatment
+m
+w
+planning: For the proposition,” Med. Phys. 29, 922–923 (2002).
+84 P. Keall, “D rather than D should be used in Monte Carlo treatm
+w
+ment planning: Against the proposition,” Med. Phys. 29, 923–924
+(2002).
+85 I. J. Chetty, B. Curran, J. E. Cygler, J. J. DeMarco, G. Ezzell, B. A. Faddegon, I. Kawrakow, P. J. Keall, H. Liu, C.-M. C. Ma, D. W. O. Rogers, J.
+Seuntjens, D. Sheikh-Bagheri, and J. V. Siebers, “Report of the AAPM
+Task Group No. 105: Issues associated with clinical implementation of
+Monte Carlo-based photon and electron external beam treatment planning,” Med. Phys. 34, 4818–4853 (2007).
+86 V. Gregoire, T. R. Mackie, W. De Neve, M. Gospodarowicz, J. A. Purdy,
+M. van Herk, A. Niemierko, A. Ahnesjö, M. Goitein, N. Gupta, and
+T. Landberg, “ICRU Report 83: Prescribing, recording, and reporting
+photon-beam intensity-modulated radiation therapy (IMRT),” J. ICRU 10,
+1–106 (2010).
+87 C.-M. Ma and J. Li, “Dose specification for radiation therapy: Dose to
+water or dose to medium?,” Phys. Med. Biol. 56, 3073–3089 (2011).
+88 B. R. B. Walters, R. Kramer, and I. Kawrakow, “Dose to medium versus
+dose to water as an estimator of dose to sensitive skeletal tissue,” Phys.
+Med. Biol. 55, 4535–4546 (2010).
+89 J. V. Siebers, P. J. Keall, A. E. Nahum, and R. Mohan, “Converting
+absorbed dose to medium to absorbed dose to water for Monte Carlo
+based photon beam dose calculations,” Phys. Med. Biol. 45, 983–995
+(2000).
+90 J. V. Siebers, P. J. Keall, A. E. Nahum, and R. Mohan, “Reply to: ‘Comments on “Converting absorbed dose to medium to absorbed dose to water
+for Monte Carlo based photon beam dose calculations”’,” Med. Phys. 45,
+L18–L19 (2000).
+91 M. Fippel and F. Nüsslin, “Comments on ‘Converting absorbed dose to
+medium to absorbed dose to water for Monte Carlo based photon beam
+dose calculations’,” Phys. Med. Biol. 45, L17–L18 (2000).
+92 N. Dogan, J. V. Siebers, and P. Keall, “Clinical comparison of head and
+neck and prostate IMRT plans using absorbed dose to medium and absorbed dose to water,” Med. Phys. 51, 4967–4980 (2006).
+93 H. Paganetti, “Dose to water versus dose to medium in proton beam therapy,” Phys. Med. Biol. 54, 4399–4421 (2009).
+94 M. J. Berger, J. S. Coursey, M. A. Zucker, and J. Chang, ESTAR , PSTAR ,
+and ASTAR: Computer programs for calculating stopping-power and range
+tables for electrons, protons, and helium ions (version 1.2.3, online), National Institute of Standards and Technology, Gaithersburg, MD, 2005
+(available URL: http://physics.nist.gov/Star).
+95 E. J. Hall and A. J. Giaccia, Radiobiology for the Radiologist, 7th ed.
+(Lippincott, Philadelphia, PA, 2012).
+96 R. M. Thomson, A. Carlsson Tedgren, and J. Williamson, “Comparison of bulk medium dose descriptors and cellular absorbed doses for
+brachytherapy,” in Proceedings of the International Workshop on Recent Advances in Monte Carlo techniques for radiation therapy, McGill
+University, Quebec, Canada, (2011), available at http://www.medphys.
+mcgill.ca/~ws2011/Abstract_book.html.
+97 S. A. Enger, A. Ahnesjö, F. Verhaegen, and L. Beaulieu, “Dose to tissue medium or water cavities as surrogate for the dose to cell nuclei
+at brachytherapy photon energies,” Phys. Med. Biol. 57, 4489–4500
+(2012).
+98 G. Landry, B. Reniers, J.-P. Pignol, L. Beaulieu, and F. Verhaegen, “The
+difference of scoring dose to water or tissues in Monte Carlo dose calculations for low energy brachytherapy photon sources,” Med. Phys. 38,
+1526–1533 (2011).
+99 M. J. Rivard, L. Beaulieu, and F. Mourtada, “Enhancements to commissioning techniques and quality assurance of brachytherapy treatment planMedical Physics, Vol. 39, No. 10, October 2012
+
+6233
+
+ning systems that use model-based dose calculation algorithms,” Med.
+Phys. 37, 2645–2658 (2010).
+100 A. Sampson, Y. Le, and J. F. Williamson, “Fast patient-specific Monte
+Carlo brachytherapy dose calculations via the correlated sampling variance reduction technique,” Med. Phys. 39, 1058–1068 (2012).
+101 I. Kawrakow, E. Mainegra-HIng, D. W. O. Rogers, F. Tessier, and
+B. R. B. Walters, “The EGSnrc code system: Monte Carlo simulation
+of photon and electron transport,” Technical Report No. PIRS-701 (National Research Council Canada, Ottawa, ON, 2011) (available URL:
+http://irs.inms.nrc.ca/software/egsnrc/documentation/pirs701/).
+102 P. R. Almond and H. Svensson, “Ionization chamber dosimetry for photon
+and electron beams. Theoretical considerations,” Acta Radiol. Ther. Phys.
+Biol. 16, 177–186 (1977).
+103 F. H. Attix, Introduction to Radiological Physics and Radiation Dosimetry
+(Wiley, New York, 1986).
+104 E. Poon and F. Verhaegen, “A CT-based analytical dose calculation
+method for HDR 192 Ir brachytherapy,” Med. Phys. 36, 3982–3994 (2009).
+105 D. Y. C. Huang, M. C. Schell, K. A. Weaver, and C. C. Ling, “Dose distribution of 125 I sources in different tissues,” Med. Phys. 17, 826–832
+(1990).
+106 A. S. Meigooni and R. Nath, “Tissue inhomogeneity correction for
+brachytherapy sources in a heterogeneous phantom with cylindrical symmetry,” Med. Phys. 19, 401–407 (1992).
+107 B. Reniers, F. Verhaegen, and S. Vynckier, “The radial dose function of
+low-energy brachytherapy seeds in different solid phantoms: Comparison
+between calculations with the EGSnrc and MCNP4C Monte Carlo codes
+and measurements,” Phys. Med. Biol. 49, 1569–1582 (2004).
+108 J. F. Williamson, S. Li, S. Devic, B. R. Whiting, and F. A. Lerma, “On twoparameter models of photon cross sections: Application to dual-energy CT
+imaging,” Med. Phys. 33, 4115–4129 (2006).
+109 International Commission on Radiation Units and Measurements, “Photon, electron, proton and neutron interaction data for body tissues,” Report
+No. 46 (ICRU Publications, Bethesda, MD, 1992).
+110 H. Q. Woodard and D. R. White, “The composition of body tissues,” Br.
+J. Radiol. 59, 1209–1218 (1986).
+111 M. J. Yaffe, J. M. Boone, N. Packard, O. Alonzo-Proulx, S.-Y. Huang,
+C. L. Peressotti, A. Al-Mayah, and K. Brock, “The myth of the 50-50
+breast,” Med. Phys. 36, 5437–5443 (2009).
+112 J. H. Suh, J. M. Gardner, K. H. Kee, S. Shen, A. G. Ayala, and J. Y. Ro,
+“Calcifications in prostate and ejaculatory system: A study on 298 consecutive whole mount sections of prostate from radical prostatectomy
+or cystoprostatectomy specimens,” Ann. Diagn. Pathol. 12, 165–170
+(2008).
+113 B. Kassas, F. Mourtada, J. L. Horton, Jr., and R. G. Lane, “Contrast effects
+on dosimetry of a partial breast irradiation system,” Med. Phys. 31, 1976–
+1979 (2004).
+114 K. J. Weeks, “Monte Carlo dose calculations for a new ovoid shield system
+for carcinoma of the uterine cervix,” Med. Phys. 25, 2288–2292 (1998).
+115 M. J. Price, E. F. Jackson, K. A. Gifford, P. J. Eifel, and F. Mourtada,
+“Development of prototype shielded cervical intracavitary brachytherapy
+applicators compatible with CT and MR imaging,” Med. Phys. 36, 5515–
+5524 (2009).
+116 M. J. Price, J. L. Horton, K. A. Gifford, P. J. Eifel, A. Jhingran,
+A. A. Lawyer, P. A. Berner, and F. Mourtada, “Dosimetric evaluation
+of the Fletcher-Williamson ovoid for pulsed-dose-rate brachytherapy: A
+Monte Carlo study,” Phys. Med. Biol. 50, 5075–5087 (2005).
+117 G. Leclerc, M.-C. Lavallée, R. Roy, E. Vigneault, and L. Beaulieu, “Prostatic edema in 125 I permanent prostate implants: Dynamical dosimetry
+taking volume changes into account,” Med. Phys. 33, 574–583 (2006).
+118 G. Landry, B. Reniers, L. Murrer, L. Lutgens, E. Bloemen-Van Gurp,
+J.-P. Pignol, B. Keller, L. Beaulieu, and F. Verhaegen, “Sensitivity of low
+energy brachytherapy Monte Carlo dose calculations to uncertainties in
+human tissue composition,” Med. Phys. 37, 5188–5198 (2010).
+119 International Commission on Radiological Protection, “Report on the Task
+Group on Reference Man,” ICRP Publication No. 23 (Pergamon, Oxford,
+1975).
+120 International Commission on Radiological Protection, “Basic anatomical
+and physiological data for use in radiological protection: Reference values,” ICRP Publication No. 89 (Pergamon, Oxford, 2002).
+121 M. Desbiens, M. D’Amours, H. Afsharpour, I. Thibault, E. Vigneault, and
+L. Beaulieu, “Monte Carlo dosimetry of high dose rate gynecologic interstitial brachytherapy,” in Proceedings of the International Workshop
+on Recent Advances in Monte Carlo techniques for radiation therapy,
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6233
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+McGill, Quebec, Canada (2011), available at http://www.medphys.
+mcgill.ca/~ws2011/Abstract_book.html.
+122 J. K. Mikell, A. H. Klopp, G. M. N. Gonzalez, K. D. Kisling, M. J. Price,
+P. A. Berner, P. J. Eifel, and F. Mourtada, “Impact of heterogeneitybased dose calculation using a deterministic grid-based Boltzmann equation solver for intracavitary brachytherapy,” Int. J. Radiat. Oncol., Biol.,
+Phys. 83, e417–e422 (2012).
+123 W. Kilby, J. Sage, and V. Rabett, “Tolerance levels for quality assurance
+of electron density values generated from CT in radiotherapy treatment
+planning,” Phys. Med. Biol. 47, 1485–1492 (2002).
+124 S. J. Thomas, “Relative electron density calibration of CT scanners for
+radiotherapy treatment planning,” Br. J. Radiol. 72, 781–786 (1999).
+125 B. Schaffner and E. Pedroni, “The precision of proton range calculations in
+proton radiotherapy treatment planning: Experimental verification of the
+relation between CT-HU and proton stopping power,” Phys. Med. Biol.
+43, 1579–1592 (1998).
+126 U. Schneider, E. Pedroni, and A. Lomax, “The calibration of CT
+Hounsfield units for radiotherapy treatment planning,” Phys. Med. Biol.
+41, 111–124 (1996).
+127 F. Verhaegen and S. Devic, “Sensitivity study for CT image use in Monte
+Carlo treatment planning,” Phys. Med. Biol. 50, 937–946 (2005).
+128 W. Schneider, T. Bortfeld, and W. Schlegel, “Correlation between CT
+numbers and tissue parameters needed for Monte Carlo simulations of
+clinical dose distributions,” Phys. Med. Biol. 45, 459–478 (2000).
+129 F. C. P. du Plessis, C. A. Willemse, M. G. Lötter, and L. Goedhals, “The
+indirect use of CT numbers to establish material properties needed for
+Monte Carlo calculation of dose distributions in patients,” Med. Phys. 25,
+1195–1201 (1998).
+130 N. Kanematsu, N. Matsufuji, R. Kohno, S. Minohara, and T. Kanai, “A CT
+calibration method based on the polybinary tissue model for radiotherapy
+treatment planning,” Phys. Med. Biol. 48, 1053–1064 (2003).
+131 B. Vanderstraeten, P. W. Chin, M. Fix, A. Leal, G. Mora, N. Reynaert,
+J. Seco, M. Soukup, E. Spezi, W. De Neve, and H. Thierens, “Conversion
+of CT numbers into tissue parameters for Monte Carlo dose calculations:
+A multi-centre study,” Phys. Med. Biol. 52, 539–562 (2007).
+132 Y. Watanabe, “Derivation of linear attenuation coefficients from CT numbers for low-energy photons,” Phys. Med. Biol. 44, 2201–2211 (1999).
+133 R. A. Rutherford, B. R. Pullan, and I. Isherwood, “Measurement of effective atomic number and electron density using an EMI scanner,” Neuroradiology 11, 15–21 (1976).
+134 F. A. Dilmanian, X. Y. Wu, E. C. Parsons, B. Ren, J. Kress, T. M. Button, L. D. Chapman, J. A. Coderre, F. Giron, D. Greenberg, D. J. Krus,
+Z. Liang, S. Marcovici, M. J. Petersen, C. T. Roque, M. Shleifer,
+D. N. Slatkin, W. C. Thomlinson, K. Yamamoto, and Z. Zhong, “Singleand dual-energy CT with monochromatic synchrotron x-rays,” Phys. Med.
+Biol. 42, 371–387 (1997).
+135 B. J. Kirby, J. R. Davis, J. A. Grant, and M. J. Morgan, “Extracting material parameters from x-ray attenuation: A CT feasibility study using kilovoltage synchrotron x-rays incident upon low atomic number absorbers,”
+Phys. Med. Biol. 48, 3389–3409 (2003).
+136 E. D. Yorke, P. Keall, and F. Verhaegen, “Anniversary paper: Role of medical physicists and the AAPM in improving geometric aspects of treatment
+accuracy and precision,” Med. Phys. 35, 828–839 (2008).
+137 C. J. Moore, A. Amer, T. Marchant, J. R. Sykes, J. Davies, J. Stratford,
+C. McCarthy, C. MacBain, A. Henry, P. Price, and P. C. Williams, “Developments in and experience of kilovoltage x-ray cone beam image-guided
+radiotherapy,” Br. J. Radiol. 79, S66–S78 (2006).
+138 J. Hatton, B. McCurdy, and P. B. Greer, “Cone beam computerized tomography: The effect of calibration of the Hounsfield unit number to electron
+density on dose calculation accuracy for adaptive radiation therapy,” Phys.
+Med. Biol. 54, N329–N346 (2009).
+139 J. H. Siewerdsen and D. A. Jaffray, “Cone-beam computed tomography
+with a flat-panel imager: Magnitude and effects of x-ray scatter,” Med.
+Phys. 28, 220–231 (2001).
+140 Y. Yang, E. Schreibmann, T. Li, C. Wang, and L. Xing, “Evaluation of
+on-board kV cone beam CT (CBCT)-based dose calculation,” Phys. Med.
+Biol. 52, 685–705 (2007).
+141 B. Reniers and F. Verhaegen, “3D image-guided brachytherapy using cone
+beam CT,” Brachytherapy 7, 155–156 (2008) (abstract).
+142 H. Al-Halabi, L. Portelance, M. Duclos, B. Reniers, B. Bahoric, and
+L. Souhami, “Cone beam CT-based three-dimensional planning in highdose-rate brachytherapy for cervical cancer,” Int. J. Radiat. Oncol., Biol.,
+Phys. 77, 1092–1097 (2010).
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6234
+
+143 R. E. Alvarez and A. Macovski, “Energy-selective reconstructions in x-ray
+
+computerized tomography,” Phys. Med. Biol. 21, 733–744 (1976).
+144 J. Giersch, D. Niederlöhner, and G. Anton, “The influence of energy
+
+weighting on x-ray imaging quality,” Nucl. Instrum. Methods Phys. Res.
+A 531, 68–74 (2004).
+145 P. V. Granton, S. I. Pollmann, N. L. Ford, M. Drangova, and
+D. W. Holdsworth, “Implementation of dual- and triple-energy cone-beam
+micro-CT for postreconstruction material decomposition,” Med. Phys. 35,
+5030–5042 (2008).
+146 J. P. Schlomka, E. Roessl, R. Dorscheid, S. Dill, G. Martens, T. Istel, C. Bäumer, C. Herrmann, R. Steadman, G. Zeitler, A. Livne, and
+R. Proksa, “Experimental feasibility of multi-energy photon-counting Kedge imaging in pre-clinical computed tomography,” Phys. Med. Biol. 53,
+4031–4047 (2008).
+147 J. F. Sutcliffe, “A review of in vivo experimental methods to determine
+the composition of the human body,” Phys. Med. Biol. 41, 791–833
+(1996).
+148 T. Xu, J. L. Ducote, J. T. Wong, and S. Molloi, “Feasibility of real time
+dual-energy imaging based on a flat panel detector for coronary artery
+calcium quantification,” Med. Phys. 33, 1612–1622 (2006).
+149 A. Laidevant, S. Malkov, C. I. Flowers, K. Kerlikowske, and J. A. Shepherd, “Compositional breast imaging using a dual-energy mammography
+protocol,” Med. Phys. 37, 164–174 (2010).
+150 B. J. Heismann, J. Leppert, and K. Stierstorfer, “Density and atomic number measurements with spectral x-ray attenuation method,” J. Appl. Phys.
+94, 2073–2079 (2003).
+151 C. Rizescu, C. Beşliu, and A. Jipa, “Determination of local density and
+effective atomic number by the dual-energy computerized tomography
+method with the 192 Ir radioisotope,” Nucl. Instrum. Methods Phys. Res.
+A 465, 584–599 (2001).
+152 W. A. Kalender, W. H. Perman, J. R. Vetter, and E. Klotz, “Evaluation
+of a prototype dual-energy computed tomographic apparatus. I. Phantom
+studies,” Med. Phys. 13, 334–339 (1986).
+153 M. Bazalova, J. F. Carrier, L. Beaulieu, and F. Verhaegen, “Dual-energy
+CT-based material extraction for tissue segmentation in Monte Carlo dose
+calculations,” Phys. Med. Biol. 53, 2439–2456 (2008).
+154 G. Landry, B. Reniers, P. V. Granton, B. van Rooijen, L. Beaulieu,
+J. E. Wildberger, and F. Verhaegen, “Extracting atomic numbers and electron densities from a dual source dual energy CT scanner: Experiments
+and a simulation model,” Radiother. Oncol. 100, 375–379 (2011).
+155 G. Landry, P. V. Granton, B. Reniers, M. C. Öllers, L. Beaulieu, J. E. Wildberger, and F. Verhaegen, “Simulation study on potential accuracy gains
+from dual energy CT tissue segmentation for low-energy brachytherapy
+Monte Carlo dose calculations,” Phys. Med. Biol. 56, 6257–6278 (2011).
+156 T. Pawlicki and C.-M. Ma, “Effect of CT streaking artifacts in Monte
+Carlo dose distributions for head and neck cancer,” in The Use of Computers in Radiation Therapy: XIIIth International Conference, edited by
+W. Schlegel and T. Bortfeld (Springer-Verlag, Heidelberg, 2000), pp. 414–
+416.
+157 W. A. Kalender, R. Hebel, and J. Ebersberger, “Reduction of CT artifacts
+caused by metallic implants,” Radiology 164, 576–577 (1987).
+158 J. C. Roeske, C. Lund, C. A. Pelizzari, X. Pan, and A. J. Mundt, “Reduction of computed tomography metal artifacts due to the Fletcher-Suit
+applicator in gynecology patients receiving intracavitary brachytherapy,”
+Brachytherapy 2, 207–214 (2003).
+159 M. Yazdi, L. Gingras, and L. Beaulieu, “An adaptive approach to metal
+artifact reduction in helical computed tomography for radiation therapy
+treatment planning: Experimental and clinical studies,” Int. J. Radiat. Oncol., Biol., Phys. 62, 1224–1231 (2005).
+160 J. Hsieh, “Adaptive streak artifact reduction in computed tomography resulting from excessive x-ray photon noise,” Med. Phys. 25, 2139–2147
+(1998).
+161 B. De Man, J. Nuyts, P. Dupont, G. Marchal, and P. Suetens, “An iterative
+maximum-likelihood polychromatic algorithm for CT,” IEEE Trans. Med.
+Imaging 20, 999–1008 (2001).
+162 P. J. Keall, L. B. Chock, R. Jeraj, J. V. Siebers, and R. Mohan, “Image
+reconstruction and the effect on dose calculation for hip prostheses,” Med.
+Dosim. 28, 113–117 (2003).
+163 D. Xia, J. C. Roeske, L. Yu, C. A. Pelizzari, A. J. Mundt, and X. Pan,
+“A hybrid approach to reducing computed tomography metal artifacts in
+intracavitary brachytherapy,” Brachytherapy 4, 18–23 (2005).
+164 R. Murphy, D. L. Snyder, B. R. Whiting, D. G. Politte, and
+J. F. Williamson, “Incorporating known information into image
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6234
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+reconstruction algorithms for transmission tomography,” Proc. SPIE 4684,
+29–37 (2002).
+165 J. F. Williamson, B. R. Whiting, J. Benac, R. J. Murphy, G. J. Blaine,
+J. A. O’Sullivan, D. G. Politte, and D. L. Snyder, “Prospects for quantitative computed tomography imaging in the presence of foreign metal
+bodies using statistical image reconstruction,” Med. Phys. 29, 2404–2418
+(2002).
+166 M. Bazalova, L. Beaulieu, S. Palefsky, and F. Verhaegen, “Correction of
+CT artifacts and its influence on Monte Carlo dose calculations,” Med.
+Phys. 34, 2119–2132 (2007).
+167 C. Xu, F. Verhaegen, D. Laurendeau, S. A. Enger, and L. Beaulieu, “An algorithm for efficient metal artifact reductions in permanent seed implants,”
+Med. Phys. 38, 47–56 (2011).
+168 P. S. Basran, A. Robertson, and D. Wells, “CT image artifacts from
+brachytherapy seed implants: A postprocessing 3D adaptive median filter,” Med. Phys. 38, 712–718 (2011).
+169 A. K. H. Robertson, P. S. Basran, S. D. Thomas, and D. Wells, “CT, MR,
+and ultrasound image artifacts from prostate brachytherapy seed implants:
+The impact of seed size,” Med. Phys. 39, 2061–2068 (2012).
+170 C. Ménard, R. C. Susil, P. Choyke, G. S. Gustafson, W. Kammerer,
+H. Ning, R. W. Miller, K. L. Ullman, N. Sears Crouse, S. Smith,
+E. Lessard, J. Pouliot, V. Wright, E. McVeigh, C. N. Coleman, and
+K. Camphausen, “MRI-guided HDR prostate brachytherapy in standard 1.5T scanner,” Int. J. Radiat. Oncol., Biol., Phys. 59, 1414–1423
+(2004).
+171 C. Haie-Meder, R. Pötter, E. Van Limbergen, E. Briot, M. De Brabandere, J. Dimopoulos, I. Dumas, T. P. Hellebust, C. Kirisits, S. Lang,
+S. Muschitz, J. Nevinson, A. Nulens, P. Petrow, and N. WachterGerstner, “Recommendations from gynaecological (GYN) GEC-ESTRO
+Working Group (I): Concepts and terms in 3D image based 3D
+treatment planning in cervix cancer brachytherapy with emphasis on
+MRI assessment of GTV and CTV,” Radiother. Oncol. 74, 235–245
+(2005).
+172 R. C. Krempien, S. Daeuber, F. W. Hensley, M. Wannenmacher, and
+W. Harms, “Image fusion of CT and MRI data enables improved target
+volume definition in 3D-brachytherapy treatment planning,” Brachytherapy 2, 164–171 (2003).
+173 M.-S. Chew, J. Xue, C. Houser, V. Misic, J. Cao, T. Cornwell, J. Handler,
+Y. Yu, and E. Gressen, “Impact of transrectal ultrasound- and computed
+tomography-based seed localization on postimplant dosimetry in prostate
+brachytherapy,” Brachytherapy 8, 255–264 (2009).
+174 G. Fichtinger, E. C. Burdette, A. Tanacs, A. Patriciu, D. Mazilu,
+L. L. Whitcomb, and D. Stoianovici, “Robotically assisted prostate
+brachytherapy with transrectal ultrasound guidance—Phantom experiments,” Brachytherapy 5, 14–26 (2006).
+175 I. B. Tutar, L. Gong, S. Narayanan, S. D. Pathak, P. S. Cho, K. Wallner,
+and Y. Kim, “Seed-based transrectal ultrasound-fluoroscopy registration
+method for intraoperative dosimetry analysis of prostate brachytherapy,”
+Med. Phys. 35, 840–848 (2008).
+176 J. Boda-Heggemann, F. M. Köhler, B. Küpper, D. Wolff, H. Wertz, S. Mai,
+J. Hesser, F. Lohr, and F. Wenz, “Accuracy of ultrasound-based (BAT)
+prostate-repositioning: A three-dimensional on-line fiducial-based assessment with cone-beam computed tomography,” Int. J. Radiat. Oncol., Biol.,
+Phys. 70, 1247–1255 (2008).
+177 D. Fraser, Y. Chen, E. Poon, F. L. Cury, T. Falco, and F. Verhaegen, “Dosimetric consequences of misalignment and realignment in prostate 3DCRT
+using intramodality ultrasound image guidance,” Med. Phys. 37, 2787–
+2795 (2010).
+178 M. Krix, C. Plathow, M. Essig, K. Herfarth, J. Debus, H.-U. Kauczor, and
+S. Delorme, “Monitoring of liver metastases after stereotactic radiotherapy
+using low-MI contrast-enhanced ultrasound—Initial results,” Eur. Radiol.
+15, 677–684 (2005).
+179 J. Zhou, P. Zhang, K. S. Osterman, S. A. Woodhouse, P. B. Schiff, E.
+J. Yoshida, Z. F. Lu, E. R. Pile-Spellman, G. J. Kutcher, and T. Liu, “Implementation and validation of an ultrasonic tissue characterization technique for quantitative assessment of normal-tissue toxicity in radiation
+therapy,” Med. Phys. 36, 1643–1650 (2009).
+180 J. G. H. Sutherland, R. M. Thomson, and D. W. O. Rogers, “Changes in
+dose with segmentation of breast tissues in Monte Carlo calculations for
+low-energy brachytherapy,” Med. Phys. 38, 4858–4865 (2011).
+181 H. Afsharpour, G. Landry, B. Reniers, J.-P. Pignol, L. Beaulieu, and F. Verhaegen, “Tissue modeling schemes in low energy breast brachytherapy,”
+Phys. Med. Biol. 56, 7045–7060 (2011).
+Medical Physics, Vol. 39, No. 10, October 2012
+
+6235
+
+182 M. J. Rivard, “Monte Carlo calculations of AAPM Task Group Report No.
+
+43 dosimetry parameters for the MED3631-A/M 125 I source,” Med. Phys.
+28, 629–637 (2001).
+183 J. F. Williamson, “Dosimetric characteristics of the DRAXIMAGE model
+LS-1 I-125 interstitial brachytherapy source design: A Monte Carlo investigation,” Med. Phys. 29, 509–521 (2002).
+184 S.-Y. Huang, J. M. Boone, K. Yang, N. J. Packard, S. E. McKenney,
+N. D. Prionas, K. K. Lindfors, and M. J. Yaffe, “The characterization
+of breast anatomical metrics using dedicated breast CT,” Med. Phys. 38,
+2180–2191 (2011).
+185 G. J. Kutcher, L. Coia, M. Gillin, W. F. Hanson, S. Leibel, R. J. Morton, J. R. Palta, J. A. Purdy, L. E. Reinstein, G. K. Svensson, M. Weller,
+and L. Wingfield, “Comprehensive QA for radiation oncology: Report of
+AAPM Radiation Therapy Committee Task Group 40,” Med. Phys. 21,
+581–618 (1994).
+186 R. Nath, L. L. Anderson, J. A. Meli, A. J. Olch, J. A. Stitt, and
+J. F. Williamson, “Code of practice for brachytherapy physics: Report
+of the AAPM Radiation Therapy Committee Task Group No. 56,” Med.
+Phys. 24, 1557–1598 (1997).
+187 H. D. Kubo, G. P. Glasgow, T. D. Pethel, B. R. Thomadsen, and
+J. F. Williamson, “High dose-rate brachytherapy treatment delivery: Report of the AAPM Radiation Therapy Committee Task Group No. 59,”
+Med. Phys. 25, 375–403 (1998).
+188 J. Perez-Calatayud, F. Ballester, R. K. Das, L. A. DeWerd, G. S. Ibbott, A. S. Meigooni, Z. Ouhib, M. J. Rivard, R. S. Sloboda, and
+J. F. Williamson, “Dose calculation for photon-emitting brachytherapy
+sources with average energy higher than 50 keV: Report of the AAPM
+and ESTRO,” Med. Phys. 39, 2904–2929 (2012).
+189 A. Angelopoulos, P. Baras, L. Sakelliou, P. Karaiskos, and P. Sandilos,
+“Monte Carlo dosimetry of a new 192 Ir high dose rate brachytherapy
+source,” Med. Phys. 27, 2521–2527 (2000).
+190 C. S. Melhus and M. J. Rivard, “COMS eye plaque brachytherapy dosimetry simulations for 103 Pd, 125 I, and 131 Cs,” Med. Phys. 35, 3364–3371
+(2008).
+191 M. J. Rivard, S.-T. Chiu-Tsao, P. T. Finger, A. S. Meigooni, C. S. Melhus,
+F. Mourtada, M. E. Napolitano, D. W. O. Rogers, R. M. Thomson, and
+R. Nath, “Comparison of dose calculation methods for brachytherapy of
+intraocular tumors,” Med. Phys. 38, 306–316 (2011).
+192 D. A. Low and J. F. Dempsey, “Evaluation of the gamma dose distribution
+comparison method,” Med. Phys. 30, 2455–2464 (2003).
+193 D. A. Low, J. M. Moran, J. F. Dempsey, L. Dong, and M. Oldham,
+“Dosimetry tools and techniques for IMRT,” Med. Phys. 38, 1313–1338
+(2011).
+194 E. A. Bannon, Y. Yang, and M. J. Rivard, “Accuracy assessment of the
+superposition principle for evaluating dose distributions of elongated and
+curved 103 Pd and 192 Ir brachytherapy sources,” Med. Phys. 38, 2957–2963
+(2011).
+195 J. Venselaar, H. Welleweerd, and B. Mijnheer, “Tolerances for the accuracy of photon beam dose calculations of treatment planning systems,”
+Radiother. Oncol. 60, 191–201 (2001).
+196 M. Stock, B. Kroupa, and D. Georg, “Interpretation and evaluation of the
+γ index and the γ index angle for the verification of IMRT hybrid plans,”
+Phys. Med. Biol. 50, 399–411 (2005).
+197 L. A. DeWerd, G. S. Ibbott, A. S. Meigooni, M. G. Mitch, M. J. Rivard,
+K. E. Stump, B. R. Thomadsen, and J. L. M. Venselaar, “A dosimetric
+uncertainty analysis for photon-emitting brachytherapy sources: Report of
+AAPM Task Group No. 138 and GEC-ESTRO,” Med. Phys. 38, 782–801
+(2011).
+198 R. Mohan, C. Chui, and L. Lidofsky, “Differential pencil beam dose computation model for photons,” Med. Phys. 13, 64–73 (1986).
+199 A. Ahnesjö, P. Andreo, and A. Brahme, “Calculation and application of
+point spread functions for treatment planning with high energy photon
+beams,” Acta Oncol. 26, 49–56 (1987).
+200 R. Nath, L. Anderson, D. Jones, C. Ling, R. Loevinger, J. Williamson,
+and W. Hanson, “Specification of brachytherapy source strength: Report
+of AAPM Task Group No. 32,” AAPM Report No. 21 (American Institute
+of Physics, New York, 1987).
+201 S. Nag, D. Beyer, J. Friedland, P. Grimm, and R. Nath, “American
+Brachytherapy Society (ABS) recommendations for transperineal permanent brachytherapy of prostate cancer,” Int. J. Radiat. Oncol., Biol., Phys.
+44, 789–799 (1999).
+202 R. Kline and J. Earle, “Implications of TG-43 for dose prescription and
+calculation for I-125 eye plaques,” Med. Phys. 23, 1054 (1996) (abstract).
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6235
+
+Beaulieu et al.: TG-186: Model-based dose calculation techniques in brachytherapy
+
+203 J. F. Williamson, W. Butler, L. A. Dewerd, M. S. Huq, G. S. Ibbott, Z. Li,
+
+M. G. Mitch, R. Nath, M. J. Rivard, and D. Todor, “Recommendations
+of the American Association of Physicists in Medicine regarding the impact of implementing the 2004 Task Group 43 report on dose specification
+for 103 Pd and 125 I interstitial brachytherapy,” Med. Phys. 32, 1424–1439
+(2005).
+
+Medical Physics, Vol. 39, No. 10, October 2012
+
+204 M.
+
+6236
+
+J. Rivard, W. M. Butler, P. M. Devlin, J. K. Hayes Jr.,
+R. A. Hearn, E. P. Lief, A. S. Meigooni, G. S. Merrick, and
+J. F. Williamson, “American Brachytherapy Society recommends
+no change for prostate permanent implant dose prescriptions
+using iodine-125 or palladium-103,” Brachytherapy 6, 34–37
+(2007).
+
+24734209, 2012, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.4747264, Wiley Online Library on [02/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+6236
+
+

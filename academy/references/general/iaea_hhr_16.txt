@@ -1,0 +1,3824 @@
+IAEA HUMAN HEALTH REPORTS No. 16
+
+Introduction of
+Image Guided Radiotherapy
+into Clinical Practice
+
+@
+
+IAEA HUMAN HEALTH SERIES PUBLICATIONS
+The mandate of the IAEA human health programme originates from Article II of
+its Statute, which states that the “Agency shall seek to accelerate and enlarge the
+contribution of atomic energy to peace, health and prosperity throughout the world”.
+The main objective of the human health programme is to enhance the capabilities of
+IAEA Member States in addressing issues related to the prevention, diagnosis and
+treatment of health problems through the development and application of nuclear
+techniques, within a framework of quality assurance.
+Publications in the IAEA Human Health Series provide information in the areas
+of: radiation medicine, including diagnostic radiology, diagnostic and therapeutic nuclear
+medicine, and radiation therapy; dosimetry and medical radiation physics; and stable
+isotope techniques and other nuclear applications in nutrition. The publications have a
+broad readership and are aimed at medical practitioners, researchers and other
+professionals. International experts assist the IAEA Secretariat in drafting and reviewing
+these publications. Some of the publications in this series may also be endorsed or cosponsored by international organizations and professional societies active in the relevant
+fields.
+There are two categories of publications in this series:
+IAEA HUMAN HEALTH SERIES
+Publications in this category present analyses or provide information of an
+advisory nature, for example guidelines, codes and standards of practice, and quality
+assurance manuals. Monographs and high level educational material, such as graduate
+texts, are also published in this series.
+IAEA HUMAN HEALTH REPORTS
+Human Health Reports complement information published in the IAEA Human
+Health Series in areas of radiation medicine, dosimetry and medical radiation physics,
+and nutrition. These publications include reports of technical meetings, the results of
+IAEA coordinated research projects, interim reports on IAEA projects, and educational
+material compiled for IAEA training courses dealing with human health related subjects.
+In some cases, these reports may provide supporting material relating to publications
+issued in the IAEA Human Health Series.
+All of these publications can be downloaded cost free from the IAEA web site:
+http://www.iaea.org/Publications/index.html
+Further information is available from:
+Marketing and Sales Unit
+International Atomic Energy Agency
+Vienna International Centre
+PO Box 100
+1400 Vienna, Austria
+Readers are invited to provide their impressions on these publications.
+Information may be provided via the IAEA web site, by mail at the address given above,
+or by email to:
+Official.Mail@iaea.org.
+
+INTERNATIONAL ATOMIC ENERGY AGENCY
+VIENNA
+ISBN 978–92–0–XXXXXX–X
+ISSN 2074–7667
+
+INTRODUCTION OF
+IMAGE GUIDED RADIOTHERAPY
+INTO CLINICAL PRACTICE
+
+The following States are Members of the International Atomic Energy Agency:
+AFGHANISTAN
+ALBANIA
+ALGERIA
+ANGOLA
+ANTIGUA AND BARBUDA
+ARGENTINA
+ARMENIA
+AUSTRALIA
+AUSTRIA
+AZERBAIJAN
+BAHAMAS
+BAHRAIN
+BANGLADESH
+BARBADOS
+BELARUS
+BELGIUM
+BELIZE
+BENIN
+BOLIVIA, PLURINATIONAL
+STATE OF
+BOSNIA AND HERZEGOVINA
+BOTSWANA
+BRAZIL
+BRUNEI DARUSSALAM
+BULGARIA
+BURKINA FASO
+BURUNDI
+CAMBODIA
+CAMEROON
+CANADA
+CENTRAL AFRICAN
+REPUBLIC
+CHAD
+CHILE
+CHINA
+COLOMBIA
+CONGO
+COSTA RICA
+CÔTE D’IVOIRE
+CROATIA
+CUBA
+CYPRUS
+CZECH REPUBLIC
+DEMOCRATIC REPUBLIC
+OF THE CONGO
+DENMARK
+DJIBOUTI
+DOMINICA
+DOMINICAN REPUBLIC
+ECUADOR
+EGYPT
+EL SALVADOR
+ERITREA
+ESTONIA
+ESWATINI
+ETHIOPIA
+FIJI
+FINLAND
+FRANCE
+GABON
+GEORGIA
+
+GERMANY
+GHANA
+GREECE
+GRENADA
+GUATEMALA
+GUYANA
+HAITI
+HOLY SEE
+HONDURAS
+HUNGARY
+ICELAND
+INDIA
+INDONESIA
+IRAN, ISLAMIC REPUBLIC OF
+IRAQ
+IRELAND
+ISRAEL
+ITALY
+JAMAICA
+JAPAN
+JORDAN
+KAZAKHSTAN
+KENYA
+KOREA, REPUBLIC OF
+KUWAIT
+KYRGYZSTAN
+LAO PEOPLE’S DEMOCRATIC
+REPUBLIC
+LATVIA
+LEBANON
+LESOTHO
+LIBERIA
+LIBYA
+LIECHTENSTEIN
+LITHUANIA
+LUXEMBOURG
+MADAGASCAR
+MALAWI
+MALAYSIA
+MALI
+MALTA
+MARSHALL ISLANDS
+MAURITANIA
+MAURITIUS
+MEXICO
+MONACO
+MONGOLIA
+MONTENEGRO
+MOROCCO
+MOZAMBIQUE
+MYANMAR
+NAMIBIA
+NEPAL
+NETHERLANDS
+NEW ZEALAND
+NICARAGUA
+NIGER
+NIGERIA
+NORWAY
+OMAN
+PAKISTAN
+
+PALAU
+PANAMA
+PAPUA NEW GUINEA
+PARAGUAY
+PERU
+PHILIPPINES
+POLAND
+PORTUGAL
+QATAR
+REPUBLIC OF MOLDOVA
+ROMANIA
+RUSSIAN FEDERATION
+RWANDA
+SAINT VINCENT AND
+THE GRENADINES
+SAN MARINO
+SAUDI ARABIA
+SENEGAL
+SERBIA
+SEYCHELLES
+SIERRA LEONE
+SINGAPORE
+SLOVAKIA
+SLOVENIA
+SOUTH AFRICA
+SPAIN
+SRI LANKA
+SUDAN
+SWEDEN
+SWITZERLAND
+SYRIAN ARAB REPUBLIC
+TAJIKISTAN
+THAILAND
+THE FORMER YUGOSLAV
+REPUBLIC OF MACEDONIA
+TOGO
+TRINIDAD AND TOBAGO
+TUNISIA
+TURKEY
+TURKMENISTAN
+UGANDA
+UKRAINE
+UNITED ARAB EMIRATES
+UNITED KINGDOM OF
+GREAT BRITAIN AND
+NORTHERN IRELAND
+UNITED REPUBLIC
+OF TANZANIA
+UNITED STATES OF AMERICA
+URUGUAY
+UZBEKISTAN
+VANUATU
+VENEZUELA, BOLIVARIAN
+REPUBLIC OF
+VIET NAM
+YEMEN
+ZAMBIA
+ZIMBABWE
+
+The Agency’s Statute was approved on 23 October 1956 by the Conference on the Statute of the
+IAEA held at United Nations Headquarters, New York; it entered into force on 29 July 1957.
+The Headquarters of the Agency are situated in Vienna. Its principal objective is “to accelerate and enlarge
+the contribution of atomic energy to peace, health and prosperity throughout the world’’.
+
+IAEA HUMAN HEALTH REPORTS No. 16
+
+INTRODUCTION OF
+IMAGE GUIDED RADIOTHERAPY
+INTO CLINICAL PRACTICE
+
+INTERNATIONAL ATOMIC ENERGY AGENCY
+VIENNA, 2019
+
+COPYRIGHT NOTICE
+All IAEA scientific and technical publications are protected by the terms of
+the Universal Copyright Convention as adopted in 1952 (Berne) and as revised
+in 1972 (Paris). The copyright has since been extended by the World Intellectual
+Property Organization (Geneva) to include electronic and virtual intellectual
+property. Permission to use whole or parts of texts contained in IAEA publications
+in printed or electronic form must be obtained and is usually subject to royalty
+agreements. Proposals for non-commercial reproductions and translations are
+welcomed and considered on a case-by-case basis. Enquiries should be addressed
+to the IAEA Publishing Section at:
+Marketing and Sales Unit, Publishing Section
+International Atomic Energy Agency
+Vienna International Centre
+PO Box 100
+1400 Vienna, Austria
+fax: +43 1 26007 22529
+tel.: +43 1 2600 22417
+email: sales.publications@iaea.org
+www.iaea.org/books
+© IAEA, 2019
+Printed by the IAEA in Austria
+February 2019
+STI/PUB/1827
+
+IAEA Library Cataloguing in Publication Data
+Names: International Atomic Energy Agency.
+Title: Introduction of image guided radiotherapy into clinical practice / International
+Atomic Energy Agency.
+Description: Vienna : International Atomic Energy Agency, 2019. | Series: IAEA
+human health reports ; ISSN 2074–7667 ; no. 16 | Includes bibliographical
+references.
+Identifiers: IAEAL 19-01217 | ISBN 978–92–0–103218–8 (paperback : alk. paper)
+Subjects: LCSH: Image guided radiotherapy. | Cancer — Radiotherapy | Diagnostic
+imaging.
+Classification: UDC 615.849 | STI/PUB/1827
+
+FOREWORD
+Radiotherapy is an essential component in the treatment management of cancer patients, either alone or in
+combination with surgery or chemotherapy, and for both cure and palliation. Imaging the patient has always been
+part of safe and effective radiotherapy, and recent advances in technology have allowed frequent imaging of the
+patient in the treatment room in the treatment position at the time of treatment. This process of in-room imaging
+and its associated actions are referred to in the radiotherapy community as image guided radiotherapy (IGRT).
+In external beam radiotherapy, intensity modulated radiotherapy (IMRT) has been introduced in many
+radiotherapy departments, but there is a recognition that IMRT without some form of in-room image guidance
+can lead to compromised treatment. Technological advances have meant that verification of the positioning of the
+patient has progressed from radiographic film analysed after treatment (off-line) to advanced imaging of the patient
+volume at the time of treatment with immediate on-line corrective strategies as part of IGRT. Three dimensional
+conformal radiotherapy (3-D CRT) or IMRT with IGRT requires more technology, equipment, staff and training
+resources. Advanced IGRT with motion management and treatment gating requires even more investment in
+resources.
+The IAEA has received a number of requests for guidance from radiotherapy departments that wish to
+upgrade their facilities to IGRT through the technical cooperation programme. These requests are expected to
+increase in the near future. Since the introduction of image guidance technology is complex, there is a recognition
+that departments need guidance on the preparation, resources and commissioning processes involved. In addition,
+the current status of the evidence supporting the use of IGRT in terms of patient outcomes has to be considered
+when planning to invest in these technologies.
+To respond to the need of Member States to establish guidelines for the introduction of IGRT into clinical
+practice, a consultants meeting was convened to discuss the necessary steps and the milestones for the transition to
+IGRT. The recommendations made by the international experts and described here supplement IAEA publications
+on setting up a radiotherapy programme and making the transition to 3-D CRT and IMRT. Taken together, the
+publications provide a comprehensive overview of the required radiotherapy infrastructure and processes for a
+broad spectrum of radiotherapy services.
+This publication is addressed to those professionals and administrators involved in the development,
+implementation and management of radiotherapy programmes who seek to improve their practice by incorporating
+imaging with the explicit aim of achieving reduced uncertainties and increased accuracy. The publication provides
+guidelines for the introduction of IGRT and highlights the milestones to be reached by radiotherapy departments.
+These guidelines and milestones facilitate the process and represent the continuation of the work being undertaken
+by the IAEA to provide access to safer and higher quality treatment for the steadily increasing number of cancer
+patients in Member States.
+The IAEA officer responsible for this publication was B. Healy of the Division of Human Health.
+
+EDITORIAL NOTE
+Although great care has been taken to maintain the accuracy of information contained in this publication, neither the IAEA nor
+its Member States assume any responsibility for consequences which may arise from its use.
+This publication does not address questions of responsibility, legal or otherwise, for acts or omissions on the part of any person.
+Guidance provided here, describing good practices, represents expert opinion but does not constitute recommendations made on
+the basis of a consensus of Member States.
+The use of particular designations of countries or territories does not imply any judgement by the publisher, the IAEA, as to the
+legal status of such countries or territories, of their authorities and institutions or of the delimitation of their boundaries.
+The mention of names of specific companies or products (whether or not indicated as registered) does not imply any intention to
+infringe proprietary rights, nor should it be construed as an endorsement or recommendation on the part of the IAEA.
+The IAEA has no responsibility for the persistence or accuracy of URLs for external or third party Internet web sites referred to
+in this book and does not guarantee that any content on such web sites is, or will remain, accurate or appropriate..
+
+CONTENTS
+1.
+
+INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+1
+
+1.1.
+1.2.
+1.3.
+1.4.
+
+Background  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Objective  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Scope  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+1
+1
+1
+3
+
+2.
+
+CLINICAL EVIDENCE FOR IMAGE GUIDED RADIOTHERAPY . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+3
+
+3.
+
+TECHNOLOGY OF IMAGE GUIDED RADIOTHERAPY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+4
+
+3.1. Imaging . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+3.1.1. Cone-beam computed tomography systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+3.1.2. Fan-beam computed tomography systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+3.1.3. Planar imaging systems  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+3.1.4. Non-ionizing visualization systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+3.2. Treatment correction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+4
+4
+5
+5
+5
+
+IMAGE GUIDED RADIOTHERAPY PROGRAMME . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+6
+
+4.1. Establishing the programme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.1. Imaging for planning  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.2. Immobilization equipment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.3. 3-D treatment planning system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.4. Treatment unit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.5. Record and verify system and network system  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.6. Image review  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.7. Quality assurance tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.8. Indicative costs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.1.9. Image guided radiotherapy protocols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.2. External beam radiotherapy with image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.2.1. Implantation of fiducial markers  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.2.2. Image guidance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.2.3. Verification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+4.2.4. Treatment delivery and post-treatment imaging . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+6
+6
+6
+7
+7
+7
+8
+8
+8
+9
+11
+11
+11
+14
+14
+
+IMAGE GUIDED RADIOTHERAPY STAFF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+14
+
+5.1. Roles and responsibilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.1.1. Radiation therapists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.1.2. Medical physicists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.1.3. Radiation oncologists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.2. Staff training . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.2.1. Radiation therapists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.2.2. Medical physicists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.2.3. Radiation oncologists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+5.3. Staffing requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+14
+14
+15
+16
+16
+16
+17
+17
+18
+
+IMAGE GUIDED RADIOTHERAPY IN CLINICAL PRACTICE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+18
+
+4.
+
+5.
+
+6.
+
+6.1. Milestones for image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.2. Clinical implementation of image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.2.1. Acceptance testing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.2.2. Commissioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.3. Quality assurance of image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.3.1. Equipment quality assurance  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.3.2. End to end tests for image guided radiotherapy processes . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.3.3. External review and audit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.4. Uncertainties in image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.5. Impact of image guided radiotherapy on planning margins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.6. Justification and optimization in image guided radiotherapy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6.7. Clinical outcome monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.8. Special consideration of respiratory motion management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.8.1. Motion management in patient set-up  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.8.2. Motion management in treatment planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.8.3. Motion verification prior to treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+6.8.4. Motion management in treatment delivery . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+18
+19
+20
+20
+21
+21
+22
+22
+25
+25
+26
+27
+27
+27
+27
+28
+28
+
+APPENDIX I: SELF-ASSESSMENT QUESTIONNAIRE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+29
+
+APPENDIX II: EXAMPLE CALCULATION OF A CTV TO PTV MARGIN  . . . . . . . . . . . . . . . . . . . . . . . 
+
+30
+
+REFERENCES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ABBREVIATIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+CONTRIBUTORS TO DRAFTING AND REVIEW . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+33
+37
+39
+
+1. INTRODUCTION
+1.1. BACKGROUND
+Although there is no uniformly accepted definition as to where conventional verification imaging ends and
+image guided radiotherapy (IGRT) begins, there is general agreement that the key features are as follows [1]:
+(a)
+(b)
+(c)
+
+The availability of high quality imaging equipment in the treatment room.
+The ability to visualize key anatomical structures, including the target, with the patient in the treatment
+position, with the main objective being to inform beam placement. Appropriate surrogates may be used to
+infer the positions of organs relative to each other.
+A protocol to act on the findings. This could be done on-line (i.e. prior to turning on the radiation beam) or
+off-line between fractions.
+
+For the purposes of this publication, the complexity of IGRT is captured by a number of levels (see Table 1).
+The transition from Level 1 to Level 2 is the main focus of this publication. Level 3 is an advanced level with
+significantly increased complexity and it is beyond the scope of this publication to describe it in full.
+In this publication, Level 1 is the level of radiotherapy necessary before embarking on an IGRT programme.
+Three dimensional conformal radiotherapy (3-D CRT) is the basis of this level, with dose prescribing, reporting and
+recording as recommended by the International Commission on Radiation Units and Measurements (ICRU) [2].
+Level 1 involves the off-line review of megavoltage (MV) portal images with an electronic portal imaging device
+(EPID) or radiographic film. The portal images include beam’s eye views or orthogonal images. Level 1 in this
+publication corresponds to Level 2 3-D CRT in Ref. [5].
+Level 2 expands to include paired orthogonal kilovoltage (kV) imaging and volumetric imaging, with
+associated off-line or on-line IGRT protocols as appropriate. Fiducial markers may also be used. For Level 2,
+a linear accelerator with a multileaf collimator, EPID and a kV imaging system is required. Analysis of patient
+shifts and action levels is recommended in Level 2. Level 3 progresses to include respiratory motion management
+(e.g. gated treatment, 4-D planning and verification imaging), intrafraction target visualization and 6-D correction
+of the treatment. Meta-analysis of the aggregated patient population data is required, and options for class based
+plan adaptation should be considered.
+1.2. OBJECTIVE
+This publication covers various aspects of the introduction of IGRT, including clinical evidence, resources,
+milestones, a description of clinical processes, education, training and staffing requirements, and quality assurance
+guidelines.
+1.3. SCOPE
+This publication applies to Member States that use 3-D CRT or intensity modulated radiotherapy (IMRT). Its
+main focus is on the transition from off-line portal imaging to kV X ray volumetric and planar imaging for patient
+positioning at the time of external beam radiotherapy (EBRT). It is assumed that the basis in most departments is
+3-D CRT, since the implementation of IGRT is considered a prerequisite for IMRT. This publication is concerned
+with X ray based EBRT and not brachytherapy, where there are different issues for patient positioning relative to
+the radiation source. While the publication concentrates on kV X ray imaging for IGRT, it is acknowledged that
+there are numerous complementary solutions for imaging the patient at the time of treatment (e.g. ultrasound,
+magnetic resonance and beacon transponders). The principles set out in this publication may also be applied to the
+introduction of these technologies into clinical practice.
+Guidance provided here, describing good practices, represents expert opinion but does not constitute
+recommendations made on the basis of a consensus of Member States.
+1
+
+TABLE 1. LEVELS OF IGRT ACCORDING TO THE METHODOLOGY AND TOOLS ASSOCIATED
+WITH EACH STEP OF THE PROCEDURE
+Procedure
+
+Level 1
+3-D CRT, including off-line
+portal imaging
+
+Level 2
+Standard IGRT:
+3-D CRT/IMRT with
+off-line or on-line IGRT
+
+Level 3
+Advanced IGRT:
+3-D CRT/IMRT with
+on-line advanced IGRT
+
+Patient data acquisition; target
+and organs at risk definition
+Implanted fiducial markers
+
+Optional
+
+As appropriate for target
+imaging
+
+As appropriate for target
+imaging
+
+Immobilization
+
+Customized to the patient
+
+Same as Level 1
+
+Customized, including motion
+management
+
+Imaging methodology
+
+CT imaging without contrast
+agents, with or without fusion
+to contrast CT, MR, PET, etc.
+
+Same as Level 1
+
+Same as Level 1 plus 4-D
+capability
+
+Organs at risk definition
+
+Volume based
+
+Same as Level 1
+
+Same as Level 1
+
+Target definition
+
+Volume based
+
+Same as Level 1
+
+Customized ITV included
+
+Margins
+
+Literature/local data
+
+Same as Level 1
+
+Informed by local data
+
+Plan optimization
+
+Forward planning with 3-D
+TPS and customized blocking
+and/or MLC
+
+Forward planning (3-D CRT)
+or inverse planning (IMRT)
+with MLC
+
+Same as Level 2 plus 4-D as
+appropriate
+
+Plan evaluation
+
+Isodose lines, DVHs and dose
+constraints
+
+Same as Level 1
+Peer review recommended
+
+Same as Level 1
+Peer review
+
+Dose reporting
+
+ICRU Reports 50 [2]
+and 62 [3]
+
+ICRU Reports 50 [2], 62 [3]
+and 83 [4]
+
+ICRU Reports 50 [2], 62 [3]
+and 83 [4]
+
+Treatment delivery unit
+
+MV EBRT unit with MLC
+(desirable) or customized
+blocks
+
+MV linear accelerator with
+MLC, EPID and volumetric
+imaging capability
+
+Same as Level 2 plus motion
+management and 6-D
+corrections
+
+Initial patient positioning
+
+Move from anatomical
+reference
+
+Same as Level 1
+
+Same as Level 1 with
+consideration of motion
+management
+
+Verification reference image
+
+DRR
+
+DRR or planning CT dataset
+
+Same as Level 2 plus 4-D
+reference image
+
+Verification image
+
+MV portal images with EPID
+or radiographic film
+
+Same as Level 1 plus
+volumetric images or paired
+orthogonal kV images
+
+Same as Level 2 plus 4-D
+volumetric image
+
+Verification strategy
+
+Review off-line
+
+Off-line or on-line IGRT
+protocol
+
+On-line with options for
+adaptation of treatment plan
+
+Desirable
+
+Mandatory, including
+automated analysis of patient
+shifts in order to assess action
+levels
+
+Mandatory, including tools for
+meta-analysis of patient shifts
+to refine class based adaptive
+strategies
+
+Essential
+
+Essential
+
+Essential
+
+Treatment planning
+
+Treatment delivery
+
+Record and verify system
+with image review capability
+Follow-up evaluation
+
+Note: 3-D CRT — three dimensional conformal radiotherapy; CT — computed tomography; DRR — digitally reconstructed
+radiograph; DVH — dose volume histogram; EBRT — external beam radiotherapy; EPID — electronic portal imaging
+device; ICRU — International Commission on Radiation Units and Measurements; IGRT — image guided radiotherapy;
+IMRT — intensity modulated radiotherapy; ITV — internal target volume; kV — kilovoltage; MLC — multileaf collimator;
+MR — magnetic resonance; MV — megavoltage; PET — positron emission tomography; TPS — treatment planning system.
+
+2
+
+1.4. STRUCTURE
+Section 2 provides a brief overview of the clinical evidence for IGRT. Section 3 describes IGRT technology
+and treatment correction. Section 4 explores how an IGRT programme can be established and the equipment
+and protocols required. Section 5 lays out the roles and responsibilities of IGRT staff and the necessary training.
+Section 6 concludes with IGRT in clinical practice, including an outline of the milestones and a description of quality
+assurance, uncertainties, planning margins, and justification and optimization. Appendix I is a self-evaluation
+questionnaire to determine the state of readiness of an institution to transition to IGRT. Appendix II provides an
+example calculation of a clinical target volume (CTV) to planning target volume (PTV) margin.
+
+2. CLINICAL EVIDENCE FOR IMAGE GUIDED
+RADIOTHERAPY
+In conventional radiotherapy, set-up uncertainties are reduced through patient immobilization, and internal
+motion is estimated based on the study of analogous patient populations. Imaging using the treatment beam enables
+identification of gross misalignment. However, the target is not always visible on portal images, and the identifiable
+surrounding anatomy is often a poor surrogate for the target. In this sense, the internal motion of thoracic, abdominal
+and pelvic organs, independent of the bony anatomy, has been well demonstrated. It is also well documented that
+target motion varies from patient to patient and from day to day.
+Since the 1990s, significant technological advances have resulted in the use of more advanced imaging at
+the time of treatment delivery. It stands to reason that better target visualization at the time of treatment can either
+lead to more consistent targeting with the same PTV margins or maintain the same likelihood of appropriate target
+dosing with a smaller margin.
+Although CTV to PTV margin reduction has been the principal focus of IGRT implementation and
+research [6–9], the acquisition of serial volumetric images holds the promise of other improvements in the
+radiotherapy process. As patient anatomy changes over time, IGRT images should help to identify patients for
+whom the treatment plan must be adapted. In certain cases, such as variations in patient weight or bladder volume,
+the barriers to frequent adaptation are logistical or technical. In other cases, the barrier is an imperfect understanding
+of tumour regression — what dose should be delivered to tissue where the tumour is no longer visible on imaging?
+In addition to better targeting and adaptation, IGRT may offer other insights, such as prognostication — do patients
+with faster responding tumours have a better outcome?
+In most cases, IGRT has led to the evolution of current treatment paradigms (i.e. the reduction of margins).
+Sometimes IGRT has been more disruptive, as in the case of hypofractionated ablative radiotherapy or ‘frameless’
+cranial radiosurgery.
+The improvements in accuracy and precision achieved with IGRT have been well documented based on
+phantom and patient studies [10–13]. As with many technical advances in radiotherapy, the clinical benefits have
+not been as well documented, since some of the reductions expected in late toxicities will only be observed years
+after the radiotherapy was administered. No randomized trial has isolated IGRT as the experimental variable,
+and it is unlikely that such a trial will be performed. Retrospective review pre- and post-IGRT implementation in
+prostate and head and neck radiotherapy has documented significant reductions in toxicity (e.g. rectal bleeding and
+oesophageal stricture) [14–16]. In many other disease sites, toxicity correlates well with irradiated volume, and
+clinically significant reductions in toxicity can reasonably be expected through the use of IGRT.
+A key aspect of IGRT is the ability to generate data on set-up, organ motion and deformation for individual
+patients and groups of patients. In addition to the impact on margins, IGRT can identify trends in patients
+(e.g. reduced rectal filling towards the end of treatment) and equipment (e.g. small couch sag) that are too small to
+notice in individual treatment courses, but can still result in improvements to treatment processes. As such, the data
+generated through frequent imaging constitute an important learning opportunity.
+As the practice of IGRT with X rays and MV imaging systems involves an additional dose burden to the
+patient [17], justification for the medical exposure is required. Paragraph 3.155 of IAEA Safety Standards Series
+3
+
+No. GSR Part 3, Radiation Protection and Safety of Radiation Sources: International Basic Safety Standards [18],
+states that “medical exposures shall be justified by weighing the diagnostic or therapeutic benefits...that they are
+expected to yield against the radiation detriment that they might cause” and:
+“3.157. The justification of medical exposure for an individual patient shall be carried out by means
+of consultation between the radiological medical practitioner and the referring medical practitioner, as
+appropriate”.
+The radiation oncologist needs to prescribe the IGRT (including the type and frequency of imaging), balancing
+the clinical evidence of the benefits of IGRT against the expected dose to the patient from the IGRT procedures, as
+advised by the medical physicist. Furthermore, the benefits of IGRT need to be balanced against the costs, added
+time and general increase in treatment complexity. For most clinical scenarios, the benefits are felt to outweigh the
+costs. This balance should continue to improve with advances in the image quality, the speed of the IGRT process
+and the reduction or elimination of the imaging dose.
+
+3. TECHNOLOGY OF IMAGE GUIDED RADIOTHERAPY
+3.1. IMAGING
+The definition of IGRT used in this publication involves the application of imaging for the verification of
+radiotherapy treatments [1, 19–21]. Some uses of advanced imaging for treatment planning, such as functional
+imaging for dose painting have, at times, also been referred to as IGRT [22]. These are not the focus of this
+publication.
+3.1.1.
+
+Cone-beam computed tomography systems
+
+The imaging technology most commonly used for IGRT verification is the kV cone-beam computed
+tomography (kV-CBCT) system [23]. This is most often in addition to an EPID, which enables planar imaging
+of the treatment beam. In the most common implementation of kV-CBCT, a kV X ray tube and flat panel imager
+are mounted on the treatment machine gantry at 90 degrees to the treatment beam. At the start of treatment, the
+patient is positioned on the treatment couch and the gantry is rotated around the patient to acquire the projection
+data to enable CBCT reconstruction. The kV-CBCT system is provided with a pre-set range of imaging protocols.
+These specify quantities such as the range of gantry angles to acquire the scan data, the position of the flat panel,
+the size of the kV X ray beam and any filters used to vary the intensity profile of the X ray beam (e.g. a bow-tie
+filter). Volumetric X ray systems typically acquire scans over several seconds or even minutes. This publication
+will mainly use this type of system as the basic model to describe IGRT. The best practices described, however, are
+transferrable to other IGRT technologies.
+MV-CBCT [24] involves using the MV treatment source to acquire the cone-beam scan. Thus, it dispenses
+with the extra X ray source and imaging panel, but is in many other respects essentially equivalent to kV-CBCT.
+3.1.2. Fan-beam computed tomography systems
+Helical tomotherapy devices [25] use an MV fan beam for treatment, known as megavoltage computed
+tomography (MVCT). The patient is passed through the isocentre of the system as the fan beam rotates and the
+beam profile is varied to deliver the treatment with the same geometry as a helical computed tomography (CT) scan.
+For imaging, the beam may be rotated without intensity variation, and an array of detectors is used to image the
+radiation intensity transmitted through the patient.
+
+4
+
+3.1.3. Planar imaging systems
+The kV-CBCT system flat panels are not only used to produce orthogonal planar projections, but can also
+be used for fluoroscopy, and they can often complement 3-D and 4-D images. Of course, the EPID can be used
+for IGRT in certain situations where image quality is not a limiting factor. For example, orthogonal EPID images
+can be acquired prior to prostate cancer radiotherapy and set-up corrections made on the basis of bony anatomy or
+implanted radio-opaque fiducials [26].
+Another class of system employs room mounted, fixed kV X ray units coupled to flat panel imagers.
+Typically, two X ray units are used to image the target from different directions. This allows triangulation to define
+the target position in 3-D [19, 27]. Implanted fiducial markers, bony anatomy or, less commonly, direct tumour
+visualization are used with such systems to enable accurate 3-D location of the treatment target. Multiple images
+may be acquired during the respiratory cycle to enable the 4-D capability of Level 3 IGRT [28]. Examples of
+such systems include ExacTrac [29], Cyberknife [30] and Vero [31]. The dose to the patient would be substantial
+if imaging were performed continuously throughout a typical treatment fraction; hence, these devices are often
+pulsed and used in conjunction with a non-ionizing system.
+3.1.4.
+
+Non-ionizing visualization systems
+
+Volumetric ultrasound has been demonstrated to be useful for soft tissue targeting throughout the body, but
+its most reliable application has been in imaging the prostate [32]. With a transperineal probe, intrafraction pelvic
+imaging is now possible. Magnetic resonance imaging (MRI) based IGRT has recently been introduced to the
+clinic. It offers the promise of detailed soft tissue visualization before and during treatment. The challenges of
+combining MRI with linear accelerator systems are significant, and these systems, whether based on cobalt [33] or
+linear accelerators [34], will entail significant additional costs and complexity.
+Fiducial marker systems that are not based on X rays are becoming more readily available. These can use
+electromagnetic transponders and a radio frequency system to measure transponder positions. When they are
+implanted in the target, the transponders can provide direct feedback on tumour position or they can be used to
+track a surrogate to the target, such as the chest wall [35].
+A range of optical imaging systems are available for IGRT. One of the first was the Varian Real-Time Position
+Monitor [36], which measures breathing phases. Other systems involve detailed measurement of the patient surface
+using reflections of light projected onto the patient surface. Another example of an optical imaging system is
+Vision RT [37]. These types of system are generally used in conjunction with the radiological imaging systems
+discussed above to enable the position of the internal anatomy to be inferred from the outline image [38, 39]. An
+example is the Cyberknife system, which combines infrared marker tracking with kV X ray triangulation [30].
+3.2. TREATMENT CORRECTION
+The first stage of treatment correction is to compare the measured patient position with that in the treatment
+plan, using a reference image and image registration tools that can be translated into set-up corrections.
+For the correction of basic set-up displacements, a remotely controllable treatment couch reduces the risk
+of errors from carrying out the correction manually and reduces the time needed for the intervention. The 6-D
+treatment couch [40, 41] enables the correction of both translations and rotations in the three spatial planes. An
+alternative to patient position adjustment is to change the treatment beam position. This can involve modifying the
+start angle on a helical tomotherapy unit, the robot position on a robotic radiosurgery unit or the angle of the gimbal
+on a gimballed treatment unit [42].
+For the correction of more complex patient changes, deformable registration of treatment and reference
+images may be necessary. This requires a computer algorithm to match the images using a set of ‘goodness of
+match’ criteria [43]. A decision should then be made as to whether the patient set-up or treatment can be altered in
+response to the change, or if replanning is needed to adapt the treatment.
+A range of solutions have been developed for motion management based on imaging. Detailed discussion of,
+and recommendations for motion management, are beyond the scope of this publication. Approaches include the
+following:
+5
+
+(a)
+(b)
+(c)
+(d)
+
+Generating a plan that is optimized for the motion profile [44];
+Controlling the patient’s breathing, for example through voluntary holding of the breath [45] and active
+breathing coordination [46];
+Gating the beam to only deliver radiation during part of the breathing cycle [47];
+Tracking the beam to follow the motion [42, 48, 49].
+
+4. IMAGE GUIDED RADIOTHERAPY PROGRAMME
+4.1. ESTABLISHING THE PROGRAMME
+Starting an IGRT programme requires considerable planning. There are significant differences between
+Level 1 off-line portal imaging and Levels 2 and 3 in terms of equipment, imaging, treatment planning, image
+handling and review, and database analysis and management (see Table 1, in Section 1). The logistical steps
+necessary to establish an IGRT programme include the following:
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+(i)
+(j)
+
+Appoint an IGRT implementation committee;
+Define the scope of the programme, including preparing a structured timeline;
+Identify the necessary equipment, including software;
+Determine the possible impact on patient throughput;
+Develop a programme budget, perform market research of IGRT equipment and purchase equipment;
+Develop staffing needs for the programme and hire new staff;
+Allow a reasonable timeline to perform installation, acceptance testing and commissioning;
+Train all personnel involved in the programme;
+Develop the necessary guidelines, policies and procedures;
+Develop and implement a comprehensive quality assurance programme for IGRT.
+
+It is important to allow sufficient time for training prior to the arrival of the equipment so that trained medical
+physicists are in place to carry out acceptance testing and commissioning. Radiation oncologists and radiation
+therapists (also known as radiation therapy technologist, RTTs) also require relevant training during, or prior to,
+the commissioning phase. The equipment resources required to establish such a programme are outlined in this
+section and human resources is covered in Section 5. An estimated timeline for the introduction of IGRT is given
+in Table 2.
+4.1.1.
+
+Imaging for planning
+
+Volumetric imaging for treatment planning is a prerequisite for IGRT and this is usually achieved with CT
+(see Ref. [5] for a description of the simulation process for 3-D CRT and IMRT).
+4.1.2. Immobilization equipment
+Immobilization equipment is a prerequisite for some treatment sites. Because of the nature of CRT/IMRT
+treatment, reproducible immobilization techniques are essential to use this treatment technique safely. If the
+reproducibility that can be achieved with the immobilization system is not already known, it will be necessary to
+study it. It is important to verify that immobilization equipment is compatible with in-room imaging equipment to
+avoid collisions and interference when generating the image.
+
+6
+
+TABLE 2. TIMETABLE FOR THE INTRODUCTION OF IMAGE GUIDED RADIOTHERAPY
+Process
+
+Duration
+
+Responsibility
+
+Appoint and convene an IGRT implementation committee
+
+1 week
+
+Management
+
+Define the scope of the programme
+
+1 month
+
+IGRT committee
+
+Identify the necessary equipment, including software
+
+1 month
+
+IGRT committee
+
+Define the possible impact on patient throughput
+
+1 week
+
+IGRT committee
+
+Purchase equipment
+
+3–6 months
+
+Management
+
+Hire new staff
+
+6 months
+
+Management
+
+Installation, acceptance testing and commissioning
+
+1 month
+
+Manufacturer and
+medical physicist
+
+Train personnel
+
+3 months
+
+Management and
+IGRT committee
+
+Develop guidelines, policies and procedures
+
+3 months
+
+IGRT committee
+
+Develop quality assurance programme
+
+1 month
+
+Medical physicist and
+radiation therapist
+
+4.1.3. 3-D treatment planning system
+For IGRT, the treatment planning system needs to be capable of generating reference images (e.g. digitally
+reconstructed radiographs and CT planning image sets). It is highly desirable that the treatment planning system is
+able to attach structures or isodose lines to the reference image. The coordinates and scale need to be included in
+the reference image.
+4.1.4. Treatment unit
+A linear accelerator fitted with a multileaf collimator is required for the delivery of planned CRT/IMRT with
+IGRT. The linear accelerator will also be fitted with an EPID, which can be used for the generation of beam portals
+and for quality assurance. The EPID has traditionally been used for patient set-up verification, but has now been
+complemented by kV planar and volumetric imaging systems. It is desirable that couch translations can be initiated
+and performed from the treatment console.
+It is noted that specialized treatment units such as robotic systems, gimballed linear accelerators, helical
+tomotherapy units and units with room mounted X ray systems also include image guidance tools. It would also
+be feasible to add an X ray IGRT system to a 60Co teletherapy machine, but this is not currently commercially
+available.
+4.1.5. Record and verify system and network system
+A record and verify system (RVS) is needed to ensure, at a minimum, that the planned CRT/IMRT is delivered
+as prescribed and that the appropriate reference images are available at the treatment unit. Care needs to be taken
+to ensure that errors do not occur during the transfer of data between treatment planning systems, simulators and
+treatment machines [50, 51]. An electronic network system for data transfer from imaging facilities to the treatment
+planning system and then to the delivery systems is required and this should comply with Digital Imaging and
+Communications in Medicine (DICOM) and DICOM-RT protocols. In many radiotherapy departments, a
+comprehensive oncology information system, such as MOSAIQ or Aria, manages the flow and storage of patient
+information, including IGRT images. Special attention should be given to the integration of the IGRT system into
+the RVS (in some commercial systems the IGRT RVS is not directly connected to the linear accelerator RVS,
+7
+
+allowing different patients or treatment courses to be selected on both systems). Where the IGRT system has not
+been integrated into the linear accelerator RVS, appropriate precautions should be taken to avoid erroneous patient
+identification.
+4.1.6. Image review
+The console in the linear accelerator control area must be capable of performing image registration and
+identifying positional differences between the reference image and the verification image. Quantitative results for
+the differences need to be displayed unambiguously and stored electronically for further analysis and processing.
+It is desirable that the required patient set-up corrections can be applied remotely, in which case an additional
+verification might be considered.
+For the off-line review of verification images, a sufficient number of networked image review workstations
+with appropriate tools needs to be available. Consideration should be given to the export of the patient shift data for
+further analysis, including meta-analysis.
+In planning IGRT, it needs to be recognized that there will be significant data storage requirements for
+IGRT images. Appropriate memory space will be required, in addition to established procedures for archiving and
+retrieval.
+4.1.7.
+
+Quality assurance tools
+
+Most radiotherapy departments are not equipped with tools for imaging system quality assurance. Access to
+image quality phantoms, specific dosimeters and expertise is required. Collaboration with a radiology department
+is often recommended where appropriate. Special attention should be given to geometric precision, as this is not
+usually part of conventional quality assurance for diagnostic imaging systems. Experts recommend the use of
+dedicated phantoms to verify the coincidence between the treatment and imaging isocentres.
+4.1.8. Indicative costs
+Table 3 contains a list of IGRT equipment and indicative cost. The table excludes the costs associated with
+additional data storage requirements or upgrades to the 3-D treatment planning system, treatment unit, record and
+verify system, and network system required for IMRT capability.
+TABLE 3. INDICATIVE COSTS OF EQUIPMENT FOR
+IMAGE GUIDED RADIOTHERAPY (US $, 2016)
+Equipment
+
+Cost
+
+Upgrade of linear accelerator to kV imaging
+
+300 000
+
+CBCT option for kV imaging system
+
+100 000
+
+Fiducial markers (set of three gold seeds)
+
+100
+
+Dosimetry test kit, including kVp and HVL test equipment
+
+10 000
+
+Geometric phantom with markers
+
+3 000
+
+Image quality phantom (planar imaging)
+
+3 000
+
+Image quality phantom (volumetric imaging)
+
+10 000
+
+Note: CBCT — cone-beam computed tomography; HVL — half value layer;
+kV — kilovoltage; kVp — kilovolt peak.
+
+8
+
+4.1.9.
+
+Image guided radiotherapy protocols
+
+IGRT protocols can be broadly divided into the categories off-line and on-line. The decision of which to use
+depends on the site being treated and departmental resources, including the need to balance treatment accuracy
+with workload and expertise.
+In an off-line review, the deviations of previous fractions are considered and analysed, and this in turn helps
+to determine the set-up of subsequent fractions. Off-line protocols are efficient in the correction of systematic
+effects, which, if uncorrected, have been demonstrated to cause a shift in the cumulative dose distribution [52].
+Off-line correction protocols are therefore most suitable when the ratio of random to systematic deviation is small.
+In on-line imaging, image acquisition and corrections of necessary shifts are performed before treatment delivery.
+Random deviations can only be corrected for with an on-line IGRT protocol.
+4.1.9.1. Off-line IGRT protocols
+There are two main categories of off-line correction protocol, the ‘shrinking action level’ (SAL) protocol,
+described by Bel et al. [53] in 1993, and the ‘no action level’ (NAL) protocol, first described by de Boer and
+Heijmen [54] in 2001 and further developed into the ‘extended no action level’ (e-NAL) in 2007 [55].
+In the SAL protocol (see Fig.1), the average of the systematic uncertainty is measured. This is then compared
+to a predefined threshold or action level. If the average exceeds the threshold, then a correction is performed on
+subsequent fractions. The basis of this IGRT protocol is that the systematic effect should decrease with time, so
+
+Predetermined initial threshold or
+action level for the particular site, α
+
+Image for a number of fractions
+(not predetermined) and calculate the
+average systematic uncertainty
+
+If average displacement exceeds initial
+action level, perform correction
+
+Calculate new action level based on
+α
+N
+
+Repeat imaging as above
+
+Calculate final action level
+α
+N max
+FIG. 1. Shrinking action level (SAL) off-line IGRT protocol.
+
+9
+
+the threshold or action level decreases accordingly for the remainder of the course by the inverse square root of
+the number of fractions. This is given by α/√N, where α is the initial action level and N is the number of fractions.
+Nmax is the maximum number of subsequent fractions considered to be appropriate for a given clinical situation
+and this is what determines the final action level to be applied. No more corrections are applied once the set-up is
+consistently within tolerance.
+The SAL protocol is useful because it avoids a set-up being corrected for prematurely (i.e. a deviation which
+could be random, not systematic). However, it requires a large number of imaged fractions that are not defined
+from the outset, thereby leading to unpredictable dose and imaging workload.
+The basis of the NAL protocol is that the mean displacement yields the best estimate of the systematic effect
+after a number of treatment fractions. As seen in Fig. 2, the patient is imaged for a predefined number of fractions
+(nm ). The mean measured displacement is then calculated. The measured correction is then applied to all subsequent
+fractions and no further image acquisition occurs.
+
+Image patient for a set number of
+successive fractions (typically nm = 3)
+
+Calculate the mean
+measured displacement
+
+Apply this correction to
+all subsequent fractions
+
+No further image acquisition
+FIG. 2. No action level (NAL) off-line IGRT protocol.
+
+Image patient for a set number of
+successive fractions (typically nm = 3)
+
+Calculate the mean
+measured displacement
+
+Apply this correction to
+all subsequent fractions
+
+Image once per week for
+remaining fractions
+FIG. 3. Extended no action level (e-NAL) off-line IGRT protocol.
+
+10
+
+In the e-NAL protocol (see Fig. 3), the protocol is further expanded to include weekly imaging following the
+correction. This is to monitor any other systematic effects due to time trends or any other transitions.
+The NAL IGRT protocol requires fewer images than the SAL. However, where the ratio of random to
+systematic set-up effects is larger, its ability to estimate the systematic set-up effects quickly is likely to be limited,
+and additional imaging will be required, or an on-line approach may be considered, depending on the clinical
+scenario.
+4.1.9.2. On-line IGRT protocols
+In on-line IGRT, action is taken immediately after imaging of the patient to determine the shift of the acquired
+image from the reference image [56]. In zero action level protocols, the shift is applied to the patient set-up
+irrespective of the size of the shift. This is by way of contrast to action level protocols, where shifts are only applied
+if they are larger than a predetermined action level (e.g. 2 mm) [9]. In either case, the shifts need to be recorded
+electronically and reviewed. The on-line protocol will specify the frequency of imaging, for example, if repeat
+imaging is conducted after shifts to confirm their efficacy. Finally, consideration should be given in the protocol
+to the actions required when the size of the shift is above a certain threshold, including the RTT re-entering the
+treatment room to check the patient set-up, removing the patient from the treatment couch to correct for patient
+related factors (e.g. bladder filling) or consulting with a radiation oncologist.
+4.2. EXTERNAL BEAM RADIOTHERAPY WITH IMAGE GUIDED RADIOTHERAPY
+The process for EBRT with IGRT is illustrated in Figs 4 and 5. Only those processes that are introduced or
+modified by the introduction of Level 2 IGRT are described in this section (see Ref. [5] for a general description of
+the 3-D CRT and IMRT processes).
+4.2.1. Implantation of fiducial markers
+Fiducial markers can be used with IGRT as a surrogate for soft tissue positioning. The benefits of fiducial
+markers include:
+(a)
+(b)
+(c)
+(d)
+
+The ability to define the target position when soft tissue is difficult to visualize;
+Target localization in cases where motion of the target is a concern;
+The reduction of inter-observer variability in target positioning;
+Increased patient throughput through quick identification of the fiducial marker position in images.
+
+The implantation of fiducial markers varies, depending on the treatment site and the patient management
+stage. An appropriately trained health care professional is needed for the marker insertion procedure. Markers are
+often implanted with biopsy needles or at the time of surgery. The choice of marker depends on the imaging for
+treatment planning, IGRT and any further imaging required post-treatment. Consideration needs to be given to
+the possibility of marker migration or oedema, and thus the time between implantation and image acquisition for
+planning and treatment. Users should also recognize that the application of implanted fiducials is limited to the
+target, and positional evaluation of organs at risk is not provided.
+4.2.2. Image guidance
+The type of image guidance to be used for the patient will relate directly to the immobilization and positioning
+of the patient. Where motion of the target is expected due to respiration, experts recommend the use of time
+resolved 4-D image acquisition. Potential artefacts due to fiducial markers need to be considered.
+
+11
+
+Patient assessment
+
+Radiation oncologist
+
+Decision to treat with radiotherapy
+
+Multidisciplinary team
+
+Fiducial marker implant, if applicable
+
+Appropriate physician
+
+Immobilization, image guidance
+strategy and positioning method
+
+Imaging protocol selection
+
+Radiation oncologist, radiation therapist, advice from medical
+physicist
+
+Radiation oncologist
+
+Image acquisition for
+treatment planning
+
+Radiation therapist or medical physicist, as appropriate
+
+Target delineation
+
+Radiation oncologist
+
+Structure segmentation
+
+Prescription
+Treatment planning
+Creation of reference images
+
+Radiation oncologist (radiation therapist, dosimetrist or medical
+physicist under the guidance of a radiation oncologist)
+
+Radiation oncologist
+Medical physicist, dosimetrist or radiation therapist in
+consultation with radiation oncologist
+
+Plan approval
+Selection/prescription of
+image guidance protocol
+
+Radiation oncologist
+
+Plan check and patient specific
+quality assurance if required
+
+Medical physicist
+
+Verification of transferred
+treatment parameters
+
+Radiation therapist
+
+IGRT (see Fig. 5)
+
+Treatment delivery
+
+Radiation therapist
+
+IGRT evaluation (see Fig. 5)
+FIG. 4. A typical radiotherapy process including IGRT, with the staff involved in each step.
+
+12
+
+4
+
+Initial patient positioning
+
+Image acquisition
+Image assessment (quality and gross displacements)
+
+Radiation therapist
+
+Radiation therapist
+
+Comparison with reference image:
+Image registration
+Image evaluation and appropriate action
+(setup, gross anatomical change, marker migration)
+Motion assessment (Level 3 IGRT)
+Quantification of couch translations/rotations
+
+Off-line:
+
+On-line:
+
+Correction of gross
+displacements
+recommended (see below
+for further actions)
+
+Apply couch corrections,
+repeat imaging as
+appropriate
+
+Radiation therapist, radiation oncologist,
+medical physicist, as appropriate
+
+Radiation therapist, radiation oncologist,
+medical physicist, as appropriate
+
+Treatment delivery, including intrafraction
+imaging as appropriate
+
+Radiation therapist
+
+Post-treatment imaging, as appropriate
+
+Radiation therapist
+
+Off-line:
+
+On-line:
+
+Review images, analyse
+patient shifts and
+determine actions based on
+IGRT protocol
+(Section 4.1.9.1)
+
+Subsequent off-line review
+and analysis of images
+obtained on-line, as
+appropriate
+
+Radiation therapist, radiation oncologist,
+medical physicist, as appropriate
+
+FIG. 5. A typical IGRT process, with the staff involved in each step.
+
+4.2.2.1. Target delineation
+
+5
+The target delineation follows the same principles as 3-D CRT. As consideration of motion becomes explicit
+in IGRT, the concept of internal target volume (ITV), as defined in Ref. [3], is often useful in this context. For
+IMRT, the conventions described in Ref. [4] offer appropriate guidance. If fiducial markers are used, a clear
+correlation between the markers and target volumes needs to be established.
+
+13
+
+4.2.2.2. Reference images and image guidance protocol
+Reference images (e.g. digitally reconstructed radiographs and CT datasets) are required as a basis for images
+acquired at the time of treatment. The reference images are created in the 3-D treatment planning system and need
+to be registered to the treatment coordinate system. The transfer of contours for image registration between the
+reference and verification images is recommended. Contours may include fiducial markers and isodose volumes.
+The radiation oncologist, in consultation with the radiotherapy multidisciplinary team, chooses and prescribes
+the appropriate image guidance protocol.
+4.2.3. Verification
+If the imaging directive according to the institutional protocol is scheduled in the RVS, the correct scheduling
+has to be verified. The integration of the IGRT scheduling in the IGRT workstation and the treatment RVS should
+be verified.
+It is important to assess the acquired image immediately for image quality and to determine whether it is fit
+for its intended purpose. At this point, the images should be checked for any immediately obvious and substantial
+deviation from planned treatment, and appropriate action should be taken.
+The verification image is registered to the reference image to allow quantitative analysis of the accuracy of
+the initial patient set-up. There are a variety of methods to accomplish image registration. The final responsibility
+for implementing any change to the patient set-up rests with the RTT, and in some instances, may need input from
+the radiation oncologist. The output of this step is a record of how the patient set-up was modified (e.g. couch
+translation or rotation). Appropriate action is taken as per the specified IGRT protocol.
+For on-line IGRT protocols, image registration and quantitative analysis take place prior to patient treatment.
+It is important to verify every patient shift prior to treatment delivery. As on-line decisions have to be made in a
+timely fashion, clear protocols and workflow and good labelling are required. Integration of the on-line set-up
+procedures into the linear accelerator control console and RVS software reduces the risk of errors.
+4.2.4. Treatment delivery and post-treatment imaging
+For advanced IGRT, intrafraction motion is monitored and acted upon as appropriate (see Section 6.8).
+Post-treatment imaging may be required to check that no significant changes in patient position have occurred
+during treatment. This may influence the delivery of subsequent fractions.
+The off-line process (registration and quantitative analysis) allows for complex decision making. Timely
+review of off-line images is important to ensure optimal treatment for future fractions. In the on-line process,
+subsequent off-line review and approval of the images acquired according to the on-line protocol is a good practice
+to establish the types and sizes of effect, plus any trends, and to deduce possible causes.
+
+5. IMAGE GUIDED RADIOTHERAPY STAFF
+5.1. ROLES AND RESPONSIBILITIES
+5.1.1.
+
+Radiation therapists
+
+The RTT’s role in IGRT commences at clinical implementation, where the RTT, along with the radiation
+oncologist and medical physicist, constitute the IGRT committee. Here, consideration is given to treatment site
+selection for the initiation of IGRT, as well as market research on equipment selection.
+One or more RTTs, together with the radiotherapy multidisciplinary team, will be responsible for the
+development of education and training materials for RTTs in the initiation of IGRT. These materials should
+be revised appropriately by the RTT as IGRT is expanded to other treatment sites. These RTTs might also be
+responsible for the education and training requirements of all RTTs in the department.
+14
+
+One of the fundamental elements of IGRT implementation is the development of IGRT protocols, which
+clearly define the off-line or on-line workflow procedure, including the documentation that is to be followed
+for IGRT of each treatment site. The RTT, together with the radiation oncologist and medical physicist, need
+to contribute to such protocols to optimize the accuracy of treatment delivery. Designated RTTs will also be
+responsible for quality assurance of the image registrations performed by all departmental RTTs.
+5.1.1.1. Imaging and treatment delivery
+Treatment delivery with IGRT results in increased roles and responsibilities for the RTT. However, the
+fundamental aspects of the RTT’s role in the accurate delivery of 3-D CRT and IMRT remain unchanged and
+include: patient positioning and immobilization; accurate acquisition of pre-treatment imaging; treatment planning
+where appropriate; and all aspects of treatment delivery and care. Level 3 IGRT may require a high degree of
+patient cooperation, so the RTT should also explain the IGRT process to the patient.
+The RTT has greater responsibility and more decisions in both the selection and implementation of the
+optimal IGRT protocol. This constitutes image acquisition in the treatment room, image registration, evaluation of
+the acquired images in relation to the reference image dataset and taking action on the resultant quantified shifts
+or anatomical discrepancies, as appropriate. The RTT also has a responsibility to notify the radiation oncologist as
+appropriate when action levels are exceeded or cases present that are beyond the scope of the IGRT protocol.
+5.1.2. Medical physicists
+The role of the medical physicist depends on local practice and the availability of other staff, such as imaging
+physicists, service engineers and RTTs. Figures 4 and 5, in Section 4, provide an overview of the steps in which
+medical physicists are involved during IGRT treatments. In addition, they are key to specifying and commissioning
+the equipment, developing appropriate imaging protocols, and developing and conducting an appropriate quality
+control programme. Medical physicists are involved in the following:
+—— Determining the specifications of image guidance tools based on clinical need;
+—— Performing market research with regard to available IGRT options and their compatibility with existing
+equipment, procedures and clinical need;
+—— Advising on immobilization devices and their impact on imaging;
+—— Advising on the adequacy of fiducial markers for imaging procedures;
+—— Assessing automatic matching and registration procedures for reference and verification imaging;
+—— Reviewing the appropriateness and adequacy of reference images;
+—— Transferring, handling, storing and archiving images;
+—— Developing protocols for motion management, as appropriate and required.
+Medical physicists are responsible for:
+—— Acceptance testing of IGRT equipment, including dose assessment;
+—— Commissioning IGRT equipment, including radiation protection of patients and staff;
+—— Developing imaging protocols that are optimized for the clinical purpose, while minimizing the radiation
+dose to the patient;
+—— Developing and conducting quality assurance and quality control procedures for image quality, radiation dose
+and geometric accuracy;
+—— End to end testing of the IGRT process;
+—— Performing calculations of patient shifts in off-line IGRT protocols;
+—— Collating and analysing institutional data, including action levels;
+—— Advising radiation oncologists on CTV to PTV margins based on IGRT results.
+
+15
+
+5.1.3. Radiation oncologists
+The role of the radiation oncologist depends on local practice, delegated responsibilities, local rules and
+regulations, and the types of IGRT protocol to be implemented. Figures 4 and 5, in Section 4, provide an overview
+of the steps in which radiation oncologists are involved in IGRT treatments. In addition, the oncologists, being
+wholly responsible for patient outcome, should have knowledge of all the steps in IGRT, including its practical
+implementation at the treatment unit and quality control. Radiation oncologists are key in assessing, recording
+and evaluating patient outcomes following the implementation of IGRT. Radiation oncologists are involved in the
+following:
+—— Identifying current and future clinical needs for image guidance;
+—— Performing market research with regard to available IGRT options and their compatibility with the clinical
+needs, local health care environment and workflow;
+—— Identifying and prioritizing clinical needs to be met through immobilization devices;
+—— Evaluating the risks, local feasibility and benefits of fiducial marker implantation, while possibly being
+directly responsible for marker implantation;
+—— Approving reference images for the relevant IGRT protocols, including relevant structures and isodose lines;
+—— Developing protocols for motion management, as appropriate and required;
+—— Developing imaging and matching protocols that are optimized for the clinical purpose, with an awareness of
+the impact of additional patient dose;
+—— Reviewing aggregated IGRT data from the patient population to help to improve the IGRT programme.
+Radiation oncologists are responsible for:
+—— Clinical assessment of patients and prescription of an appropriate course of radiotherapy where indicated,
+while also communicating the nature of the treatment, its goals and risks to the patient;
+—— Identifying individual patients who are appropriate for IGRT and prescribing the IGRT imaging protocol;
+—— Contouring and approving organ at risk volumes;
+—— Defining gross tumour volumes (GTVs) and GTV to CTV expansions;
+—— Defining CTV to PTV margins based on IGRT results and clinical trade-offs in consultation with medical
+physicists and RTTs;
+—— Performing direct or indirect supervision of patient positioning corrections, including systematic or periodic
+review and approving on-line and off-line images;
+—— Making informed clinical decisions in cases of IGRT identified anatomical changes, including plan adaptation
+strategies.
+5.2. STAFF TRAINING
+5.2.1. Radiation therapists
+Additional education, training and experience in the requirements for IGRT are mandatory for the RTT, and
+a specified set of learning outcomes should be achieved prior to clinical initiation of IGRT. On completion of the
+education and training programme, the RTT should be able to:
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+16
+
+Comprehend and perform optimal in-room image acquisition;
+Demonstrate an awareness of the dose associated with various imaging methods;
+Discuss image registration methods, including registration algorithm functionality;
+Perform optimal registration, being cognizant of inter- and intra-observer variation at registration;
+Demonstrate detailed knowledge of radiographic and cross-sectional anatomy as it relates to radiotherapy
+treatment planning;
+Comprehend the concepts of systematic, random and residual effects and how these relate to IGRT protocols;
+Describe current motion management strategies;
+
+(h)
+(i)
+(j)
+(k)
+
+Critically evaluate acquired images and apply corrections to treatments as per the departmental IGRT
+protocol;
+Discuss how the quantification of systematic and random effects can determine margin calculation;
+Demonstrate detailed knowledge of the potential dosimetric impact of the application of couch shifts;
+Comprehend and carry out daily quality assurance procedures for the IGRT equipment.
+
+5.2.2. Medical physicists
+Many medical physicists have been trained in one specialty. Medical physicists specializing in radiotherapy
+are only trained in the aspects of diagnostic imaging that pertain to the radiotherapy process. This does not
+necessarily include image quality optimization and the determination of imaging dose and its interpretation.
+Hence, either access to a medical physicist specializing in diagnostic radiology is required (e.g. from a radiology
+department) or the medical physicist specializing in radiotherapy needs to receive adequate training and education
+in medical imaging physics. In addition to the knowledge, skills and competencies required for 3-D CRT (see
+Ref. [5]), the following knowledge and skills are required:
+(a)
+
+(b)
+
+Necessary knowledge:
+—— A good understanding of X ray imaging procedures, with particular emphasis on CT;
+—— A basic understanding of other imaging modalities, including but not limited to ultrasound and magnetic
+resonance imaging;
+—— A basic understanding of image quality parameters (e.g. modulation transfer function, signal to noise and
+spatial resolution) and the tools to assess them;
+—— Familiarity with common artefacts in CT and CBCT (e.g. motion, metal artefacts and ring artefacts);
+—— An understanding of radiation dose delivered in diagnostic procedures, the quantities used to determine it
+(e.g. CT dose index and dose–length product) and the tools required to assess the dose;
+—— Cross-sectional anatomy of common radiotherapy treatment sites;
+—— A basic understanding of organ motion as relevant to radiotherapy treatment;
+—— An understanding of Refs [3, 4], including the ITV concept;
+—— An understanding of random and systematic effects in radiotherapy treatment and their impact on CTV to
+PTV margins;
+—— An understanding of quality control of image quality, including geometric accuracy and imaging dose;
+—— An understanding of commissioning and acceptance of diagnostic imaging equipment, including CT and
+CBCT;
+—— A basic understanding of image formats, including DICOM;
+—— A sound understanding of image handling, including contrast enhancement and image matching.
+Practical training in the following:
+—— Operation of the imaging equipment planned for IGRT;
+—— Handling images;
+—— Quality control for the imaging equipment planned for IGRT;
+—— Assessing and interpreting the radiation dose delivered in diagnostic procedures, including methods for
+dose optimization.
+
+5.2.3. Radiation oncologists
+In addition to the knowledge, skills and competencies required for 3-D CRT (see Ref. [5]), the following
+knowledge and skills are required of the radiation oncologist engaged in IGRT:
+(a)
+
+Necessary knowledge:
+—— A basic understanding of X ray imaging procedures;
+—— A basic understanding of other imaging modalities, including but not limited to ultrasound and magnetic
+resonance imaging;
+—— A basic understanding of image quality parameters (e.g. signal to noise and spatial resolution);
+—— A basic understanding of quality control of image quality, including geometric accuracy and imaging dose;
+17
+
+(b)
+
+—— A basic understanding of image handling, including contrast enhancement and image matching;
+—— A familiarity with common artefacts in CT and CBCT (e.g. motion, metal artefacts and ring artefacts);
+—— An understanding of the radiation dose delivered in diagnostic procedures, the quantities used to determine
+it (e.g. CT dose index and dose–length product), the spatial distribution of the dose in the patient and the
+clinical relevance of the delivered dose;
+—— A good understanding of general cross-sectional CT anatomy;
+—— A basic understanding of organ motion as relevant to radiotherapy treatment;
+—— An understanding of Refs [3, 4], including the ITV concept;
+—— An understanding of random and systematic effects in radiotherapy treatment and their impact on CTV to
+PTV margins;
+—— If relevant, a sound understanding of the indications, contra-indications, risks and benefits of fiducial
+marker placement;
+—— An understanding of the uncertainties and limitations of IGRT;
+—— An understanding of the impact of changes in patient anatomy on the dose delivered to targets and organs at risk;
+—— An understanding of the clinical impact of random or systematic target/organ at risk misalignment;
+—— An understanding of dose–volume effects on organs at risk.
+Practical training in the following:
+—— Image registration and review;
+—— Fiducial marker placement.
+
+5.3. STAFFING REQUIREMENTS
+Additional human resources are required to provide an IGRT service owing to the additional complexity in
+the imaging and treatment. The IAEA has developed a tool to estimate staffing levels in radiotherapy practice [57].
+If 400 patients per year are to be treated with Level 2 IGRT, the number of radiation oncologists needs to increase
+by 0.1 full-time equivalent (FTE) compared to a Level 1 service managing the same number of patients. Similarly,
+the number of medical physicists needs to increase by 0.2 FTE and the number of RTTs needs to increase by
+1.1 FTE. The largest increase is for the RTTs who perform the additional imaging procedures and shifts in set-up,
+and record the information for subsequent review and analysis.
+
+6. IMAGE GUIDED RADIOTHERAPY
+IN CLINICAL PRACTICE
+6.1. MILESTONES FOR IMAGE GUIDED RADIOTHERAPY
+An IGRT programme should be built on a firm foundation of expertise in 3-D CRT. It should not be
+embarked until certain basic milestones have been reached. Departments that have not reached these milestones
+are encouraged to engage with Level 1 IGRT concepts, in particular off-line review. The questionnaire given in
+Appendix I provides a checklist of the steps in the process. Milestones that need to be reached before resources are
+committed to the establishment of IGRT include the following:
+—— Facilities are in place for the provision of 3-D CRT (as given in Ref. [5]);
+—— A demonstration by audit that there is compliance with the Level 1 methodology and tools given in Fig. 1, in
+Section 4;
+—— The commitment of the multidisciplinary radiotherapy team to implementing IGRT.
+Milestones in the process once the project has started include the following:
+
+18
+
+—— The appointment of sufficient staff to ensure that the existing programme of conventional and 3-D CRT will
+not be compromised;
+—— A commitment of sufficient resources to maintain the existing radiotherapy service;
+—— Education and practical training of staff (RTT, radiation oncologist and medical physicist);
+—— A needs analysis in the context of patient population;
+—— The purchase of necessary equipment;
+—— Applications training for the RTT, radiation oncologist and medical physicist;
+—— The commissioning of IGRT hardware and software;
+—— The extension of the quality assurance programme to cover IGRT;
+—— The establishment of IGRT protocols including class based imaging directives.
+Milestones after the implementation of IGRT include the following:
+—— A planned review of IGRT services;
+—— The extension of services to other treatment sites, taking the previous milestones into consideration;
+—— A comprehensive external audit of the IGRT service, if available.
+6.2. CLINICAL IMPLEMENTATION OF IMAGE GUIDED RADIOTHERAPY
+The implementation of IGRT is a stepwise process (see Fig. 6). After the IGRT implementation committee
+has been appointed, it will assess the clinical needs and determine the priorities for the implementation of IGRT.
+Specifications need to be developed for the equipment required. In general, there are two scenarios: (i) the purchase
+of a whole new treatment unit with IGRT; or (ii) the upgrading of an existing treatment unit to have IGRT capability.
+This publication only pertains to the IGRT components in both scenarios, and it is assumed that the treatment unit
+fulfils the minimum requirements specified in Section 4 of being equipped with a multileaf collimator and an EPID
+and connected to an RVS that allows image transfer, storage and remote evaluation of patient shifts.
+It is important to allow sufficient time for physics staff training before the equipment arrives, so that trained
+staff are in place to carry out acceptance testing and commissioning. A complete understanding of all these
+steps is necessary before successfully beginning a new IGRT programme. The possibility of members of the
+implementation team visiting a department that is experienced in IGRT to observe the procedures and workflow
+
+Establish IGRT
+implementation committee
+
+Radiation oncologist, medical physicist,
+radiation therapist
+
+Specification and procurement
+of IGRT equipment
+
+Medical physicist, advice from radiation
+oncologist, radiation therapist
+
+Installation and acceptance testing
+of IGRT equipment
+
+Commissioning of IGRT, including
+developing protocols and site specific
+imaging directives, and establishing
+baselines for quality control
+
+Company engineer, medical physicist
+
+Radiation oncologist, medical physicist,
+radiation therapist
+
+FIG. 6. Implementation of image guided radiotherapy.
+
+19
+6
+
+should be considered. The resources required to establish an IGRT programme are outlined in Section 4 (see Table 3
+for the cost of the equipment required).
+6.2.1. Acceptance testing
+Acceptance testing is the process of verifying that the purchased and installed equipment fulfils the
+specifications agreed upon in the contract. Acceptance testing is often performed using test equipment and
+tools provided by the manufacturer. It may also include reference images provided by the manufacturer. If the
+specifications developed by the IGRT implementation committee are not part of the purchase contract, the
+acceptance test will follow the manufacturer’s documentation. It is advisable for staff to familiarize themselves
+with these documents prior to acceptance testing which demonstrates that:
+(a)
+(b)
+(c)
+
+The IGRT equipment is functional. This includes the acquisition of images, adjustment of imaging parameters,
+and matching of reference and verification images.
+The equipment complies with the relevant standards and regulations. This includes electrical, mechanical and
+radiation safety.
+The equipment meets the specifications agreed upon in the purchase document. This should include basic
+image quality and dose to the patient.
+
+6.2.2. Commissioning
+Commissioning is the process of testing the system for the intended clinical application within the department.
+The commissioning activities not only depend on the actual IGRT equipment used, but also on the intended use
+and all other equipment (hardware and software) the IGRT tools are interfaced with. A detailed discussion of the
+commissioning programme is beyond the scope of this publication, but the programme needs to be developed and
+agreed upon before the equipment arrives. Commissioning also typically takes significantly more time than the
+acceptance testing and can involve all members of the team. Aspects that should be considered when commissioning
+IGRT include the following:
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+(i)
+(j)
+(k)
+
+Fiducial marker type, if applicable.
+Indications and contra-indications for implantation.
+Time required after implantation.
+Marker migration risk and oedema.
+Visualization for planning.
+Visualization with IGRT.
+Imaging equipment and the protocols used for treatment planning.
+Patient immobilization and set-up for the relevant clinical scenario.
+Contouring of structures, including the development of ITV and PTV.
+Creation of reference images.
+Image transfer from the treatment planning system to the treatment unit and confirmation of a consistent
+coordinate system from imaging, treatment planning and treatment delivery.
+(l) Internal motion and deformation over the time of delivery.
+(m) IGRT methods:
+—— Mechanical accuracy;
+—— Manoeuvrability and deployment (default settings) for the safe and appropriate imaging of different
+disease sites;
+—— Image quality;
+—— Geometric fidelity and distortion;
+—— Artefacts;
+—— Time of image acquisition;
+—— Image display option;
+—— Radiation dose.
+(n) Registration methods for reference and verification images.
+20
+
+(o)
+(p)
+(q)
+(r)
+
+Determination of the action levels pertaining to the differences between the reference and verification images.
+Adjustment of patient or isocentre position as a result of IGRT.
+Recording of data and storage of images.
+On-line and off-line image review and approval policies.
+
+Consideration of the safety of the patients and staff is an important part of commissioning an IGRT system.
+Interlocks should be tested and procedures should be developed that will prevent unintended patient exposure.
+All unintended exposures or near misses should be reported according to the radiotherapy department’s incident
+reporting and learning system. Interlocks that prevent collisions of the IGRT equipment with the patient need to be
+tested during commissioning. Licensing of the X ray generator and X ray tube will also need to be implemented as
+required by radiation safety and protection legislation and regulations in each jurisdiction [18].
+At the end of the commissioning process, at a minimum, the following should be available:
+—— The report from an end to end test;
+—— Documentation of all aspects of system performance;
+—— A description of the scope of service;
+—— Procedural documents for all staff members relevant to the clinical scenarios;
+—— Baseline data for quality control activities;
+—— A schedule of review of practice.
+Although the vendor usually provides applications training for the IGRT equipment and associated software
+at the time of commissioning, either on-site or off-site, this training will not cover all the clinical expertise required
+for the implementation of IGRT (see Section 5 on staff education and training requirements).
+6.3. QUALITY ASSURANCE OF IMAGE GUIDED RADIOTHERAPY
+6.3.1. Equipment quality assurance
+The imaging equipment for IGRT requires the same type of quality assurance as conventional diagnostic
+radiology equipment, plus additional quality assurance for image guidance (i.e. positioning). The equipment quality
+assurance deals with image quality, geometrical accuracy and dosimetry. Given the commonality with general
+radiological imaging, best practice is to seek advice from, and work with, a diagnostic radiology department for
+these aspects of quality assurance. Such a department will have the expertise and the necessary dosimetry and
+phantom equipment. There are six main quality assurance issues to consider:
+—— Safety systems;
+—— Generators and X ray tubes;
+—— Image quality;
+—— Imaging dosimetry;
+—— Geometry;
+—— IGRT software.
+Individual IGRT manufacturers have their own systems for quality assurance, including phantoms and
+associated software. This subsection is meant to be indicative for CT based systems. A fuller discussion of the
+quality assurance requirements for CT based IGRT can be found in an American Association of Physicists in
+Medicine (AAPM) report [58]. Other discussions of image quality requirements for imaging systems for a range of
+radiotherapy imaging approaches can be found in Refs [19, 59–64].
+Quality assurance for mechanical and electrical safety systems involves regular inspection and testing of
+interlocks (e.g. collision avoidance interlocks), warning signs and lights, and patient communication systems.
+Quality assurance for generators and X ray tubes involves measurement of the peak tube voltage (kilovolt
+peak, kVp), timer accuracy and half value layer under standardized conditions, in addition to tube leakage.
+
+21
+
+Imaging system quality assurance involves monitoring the quality of the images produced plus dosimetry.
+Image quality is measured using a series of metrics that primarily describe the spatial resolution and contrast
+performance of the system. The modulation transfer function is often used to quantify the system performance [65].
+Phantoms such as the Leeds Test Objects are often used to measure system performance for CT based systems [66].
+These phantoms combine regions of high spatial resolution with subtle changes of contrast. Bar patterns of varying
+resolution are often used for modulation transfer function measurements. The mechanical integrity of a CT based
+system is essential for image quality. This is often measured by reconstructing an image of a small, high density
+object, such as a ball bearing phantom. In addition, a more anatomical phantom, such as an Alderson RANDO
+phantom, can be imaged to perform qualitative quality assurance. Imaging quality assurance should be carried out
+regularly to monitor any changes to system performance compared to that at commissioning, and following any
+changes to, or major services of, the treatment unit.
+Dosimetric quality assurance for kV X ray systems should be carried out using the standard procedures from
+radiology [67, 68]. Using a CT dose index phantom and ionization chamber is a standard dosimetry method for
+CT based systems [69]. Other methods such as the dose–length product have less clear applicability for CBCT
+systems. For kV planar imaging, measuring the air kerma in air with a large volume ionization chamber (e.g. 6 cm3)
+at a set distance from the source provides an excellent baseline for monitoring the X ray tube output. The air kerma
+measurement can be converted to organ dose (e.g. skin dose), with appropriate factors [68].
+Quality assurance should be carried out for the geometric accuracy of the imaging system to confirm its
+correct alignment with the mechanical, optical and radiation isocentres of the linear accelerator. Radio-opaque
+markers aligned to the mechanical or optical isocentre can be imaged to quantify the extent of alignment.
+Quality assurance for the system’s application for IGRT involves establishing that the images produced
+by it are correctly registered to the treatment machine coordinate system for accurate position measurement
+compared to the planned patient position. The use of a geometric phantom can achieve this quality assurance. In
+some circumstances, the CT based IGRT images may inform the need for replanning. In this case, more accurate
+measurement of the CT number may be desirable. This can be achieved using a contrast phantom containing
+several regions of known electron density. Tables 4–7 present examples of quality control tests for common IGRT
+equipment taken from a review of Refs [19, 58–63].
+6.3.2. End to end tests for image guided radiotherapy processes
+Quality assurance not only needs to be performed for IGRT equipment hardware, but also for the processes
+that underpin IGRT, for example the image transfers from the imaging panel to the linear accelerator console and
+the RVS. Various end to end tests for IGRT have been proposed [13, 70], while an AAPM report [58] recommends
+that an IGRT procedure test be performed daily. Such a daily test could involve the following:
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+
+Placing a phantom with internal radio-opaque markers on the treatment couch;
+Applying a known positional shift;
+Imaging the phantom with the IGRT system;
+Using the IGRT software to determine the shifts required from comparison of the daily image to a reference
+image that has been created by CT simulation of the phantom, transfer of the CT image dataset to the treatment
+planning system and transfer of the generated reference images to the treatment machine;
+Applying the positional shift (usually with automated couch movement) and reimaging the phantom;
+Checking in the treatment room that the positional shift has been applied correctly.
+
+6.3.3. External review and audit
+External or independent review of the department’s practices, including IGRT, is considered to be an essential
+part of a departmental quality management system. The IAEA has developed guidelines for Quality Assurance Team
+for Radiation Oncology (QUATRO) audits for radiotherapy departments [71], but the 2007 publication does not
+include IGRT. More recently, the Quality Assurance Audit for Diagnostic Radiology Improvement and Learning
+(QUAADRIL) process for auditing radiology departments has been developed [72], and aspects of this process could
+be adapted to IGRT practice involving kV patient imaging. Clinical trials that involve mandatory IGRT for patients in
+the trial protocol often include a review of IGRT practice as part of trial quality assurance. Examples include various
+22
+
+TABLE 4. QUALITY CONTROL TESTS FOR ELECTRONIC PORTAL
+IMAGING DEVICE SYSTEMS
+Test
+
+Frequency
+
+Suggested action level
+
+Daily
+Daily
+Daily
+
+Functional
+Functional
+Functional
+
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+
+Baseline
+Baseline
+Baseline
+1 mm
+Baseline
+
+Monthly
+
+Baseline
+
+Monthly
+Monthly
+
+2 mm
+2 mm
+
+Monthly
+Monthly
+
+Functional
+Functional
+
+Safety/mechanical
+Mechanical integrity
+Electrical integrity
+Collision interlocks
+Imaging
+Image quality (resolution)
+Artefacts
+Noise and uniformity
+Spatial distortion
+Monitor brightness, focus and contrast
+Dosimetry
+Monitor units per image
+Geometry
+Positioning in imaging plane
+Positioning perpendicular to imaging plane
+Software
+On-screen tools
+Image matching software
+
+TABLE 5. QUALITY CONTROL TESTS FOR MV CONE-BEAM COMPUTED
+TOMOGRAPHY SYSTEMS
+Test
+
+Frequency
+
+Suggested action level
+
+Daily
+Daily
+Daily
+
+Functional
+Functional
+Functional
+
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+Yearly
+
+2 mm
+Baseline
+Baseline
+Baseline
+Baseline
+Baseline
+Baseline
+25 HU
+Functional
+
+Monthly
+
+Baseline
+
+Daily
+
+2 mm
+
+Yearly
+Yearly
+Monthly
+
+Functional
+Functional
+Functional
+
+Safety/mechanical
+Mechanical integrity
+Electrical integrity
+Collision interlocks
+Imaging
+Scale
+Spatial resolution
+Contrast
+Uniformity
+Artefacts
+Noise
+Spatial distortion
+CT number accuracy
+Monitor brightness, focus and contrast
+Dosimetry
+Dose
+Geometry
+Imaging/treatment/optical coordinate coincidence
+Software
+On-screen tools
+Image matching software
+Export to treatment planning system
+
+23
+
+TABLE 6. QUALITY CONTROL TESTS FOR KV PLANAR X RAY SYSTEMS
+Test
+
+Frequency
+
+Suggested action level
+
+Daily
+Daily
+Daily
+
+Functional
+Functional
+Functional
+
+Yearly
+Yearly
+Yearly
+Yearly
+
+± 5 kV
+Baseline
+10%
+0.1%
+
+Monthly
+
+Baseline
+
+Monthly
+Monthly
+Monthly
+Yearly
+
+No artefacts
+Baseline
+1 mm
+Baseline
+
+Yearly
+
+Baseline
+
+Monthly
+Monthly
+
+2 mm
+2 mm
+
+Yearly
+Daily
+
+Functional
+Functional
+
+Safety/mechanical
+Mechanical integrity
+Electrical integrity
+Collison interlocks
+Generator/X ray tube
+Kilovolt peak
+Half value layer
+Output linearity
+Head leakage
+Imaging
+Image quality (high contrast, low contrast,
+spatial resolution)
+Artefacts
+Noise
+Spatial distortion
+Monitor brightness, focus and contrast
+Dosimetry
+Radiation output (air kerma)
+Geometry
+Isocentre alignment
+X ray tube and detector panel position
+Software
+On-screen tools
+Image matching software
+
+TABLE 7. QUALITY CONTROL TESTS FOR KV X RAY CONE-BEAM
+COMPUTED TOMOGRAPHY SYSTEMS
+Test
+
+Frequency
+
+Suggested action level
+
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+Monthly
+
+1 mm, 1°
+Baseline
+Baseline
+Baseline
+Baseline
+No artefacts
+
+Yearly
+
+Baseline
+
+Monthly
+Yearly
+Monthly
+
+2 mm
+2 mm
+2 mm
+
+Yearly
+Daily
+Monthly
+
+Functional
+Functional
+Functional
+
+Imaging
+Scale and orientation
+Uniformity and noise
+High contrast resolution
+Low contrast resolution
+CT number accuracy
+Artefacts
+Dosimetry
+Axial and skin dose
+Geometry
+Alignment with MV and optical isocentre
+Geometry calibration (Elekta)
+Couch movements
+Software
+On-screen tools
+Image matching software
+Date transfer to treatment planning system
+
+24
+
+Radiation Therapy Oncology Group (RTOG) trials, such as RTOG 0236 and RTOG 0438, the Ontario Clinical
+Oncology Group PROFIT trial [73] and the Trans Tasman Radiation Oncology Group BOLART trial [74]. The
+self-assessment questionnaire in Appendix I could also be adapted for use by external auditors of an IGRT practice.
+6.4. UNCERTAINTIES IN IMAGE GUIDED RADIOTHERAPY
+It is useful to distinguish between error and uncertainty. Errors should be detected and corrected for, while it
+is impossible to apply a correction for uncertainty, for which the direction is unknown. However, an estimate can be
+made of the magnitude of uncertainty. Following the approach of the International Organization for Standardization,
+uncertainty analysis distinguishes between uncertainties of types A and B [75].
+Type A uncertainties are a result of random variations, which are assumed to be normally distributed and
+can be reduced by performing more measurements. In the case of IGRT, this has important implications, as it
+allows uncertainty to be reduced for individual patients by combining the information obtained in IGRT from
+different fractions. Similarly, it can reduce uncertainties and determine otherwise undetectable systematic effects
+by combining information from many fractions of many patients. Data management is therefore an essential
+component of a successful IGRT programme.
+Type B uncertainties are the best estimates of other parameters that can influence the outcome of a
+measurement. Their estimation requires a thorough understanding of the process and is commonly subjective. This
+makes education and training essential for all team members.
+It is beyond the scope of this publication to provide a detailed description of all the uncertainties in the
+IGRT process. A recent IAEA publication, Accuracy Requirements and Uncertainties in Radiotherapy [76], is
+dedicated to this broad topic. It states that for a range of IGRT solutions, the geometric uncertainty is of the order
+of 1–2 mm (one standard deviation) and that the accuracy achievable with such systems is 2 mm (see table 15 of
+Ref. [76]). It is advisable that radiotherapy departments implementing IGRT perform an uncertainty analysis for
+their own situation, keeping in mind that its main objective is not to reduce the dose but the spatial uncertainty of
+the dose delivery (see Refs [1, 77, 78] for further information on estimating uncertainties). This analysis could be
+performed as part of end to end testing of the IGRT process. Important aspects of the overall uncertainty that could
+be considered include the following:
+(a)
+(b)
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+(i)
+
+Imaging for treatment planning;
+Contouring of structures;
+Calculation of dose distribution and creation of reference images;
+Patient immobilization and set-up;
+Internal motion and deformation over the time of delivery;
+Imaging modality;
+Registration of images;
+Determination of differences between reference and verification images;
+Adjustment of patient or isocentre position as a result of IGRT.
+
+6.5. IMPACT OF IMAGE GUIDED RADIOTHERAPY ON PLANNING MARGINS
+Informed by each patient’s image datasets, as well as more general disease patterns, GTV and/or CTV are
+defined for each patient. Because of uncertainties in the target position relative to the treatment beams, a concept
+needs to be used to ensure adequate dosing of the CTV. In recent decades, this concept was the creation of a target
+larger than the CTV — the PTV. The expansion from the CTV to the PTV is a compromise between the risks of
+CTV under-dosage and the risk of toxicity from the irradiation of healthy tissue.
+The two main sources of uncertainties in the target are the position of the target within the patient and the
+position of the patient in relation to the treatment beam. These uncertainties are dealt with using two margins
+probabilistically added: the internal margin and the set-up margin.
+The uncertainties created by these margins are both random and systematic in nature. There are several
+published methods for deriving PTV margins, but the most commonly used method is based on the probability
+25
+
+distributions of the cumulative dose over a population of patients. Van Herk et al. [79] show that the PTV margin
+mPTV is given by:
+mPTV = αΣ + βσ − βσp
+
+(1)
+
+where
+Σ
+σ
+σp
+
+is the standard deviation of the preparation mean values;
+is the mean of the standard deviation of all the treatment execution variations;
+is the standard deviation describing the width of the penumbra;
+
+and α and β are scaling parameters depending on the required patient and CTV coverage. Assuming a certain
+radiation penumbra, a large number of treatment fractions and the goal of ensuring a minimum dose of 95% to the
+CTV for 90% of the patients (excluding rotations and deformations), then Eq. (1) can be simplified to:
+mPTV = 2.5Σ + 0.7σ
+
+(2)
+
+Appendix II provides an example of CTV to PTV margins calculated from Eq. (2) and based on daily X ray
+planar imaging of the patient in the treatment position.
+A goal of IGRT is to improve the therapeutic ratio through better target coverage and/or decreased normal
+tissue irradiation. In a general sense, off-line image guidance strategies act on systematic effects and on-line
+strategies act on both systematic and random effects. Even the best IGRT strategy cannot eliminate all sources
+of random and systematic effects. Radiotherapy departments need to be prudent in reducing margins [80, 81], as
+current practices may overlook less frequently measured sources of uncertainty, such as differences in physician
+contouring or target deformation. With the introduction of on-line IGRT, a logical method for quantifying and
+reviewing margins is to image the patient post-fraction and record the shifts from the pre-treatment reference [82].
+In an example of margin reduction with IGRT, a study of prostate radiotherapy guided by daily imaging
+of three implanted fiducial markers (with pre-treatment correction of misalignments ≥ 2 mm) concluded that
+intrafraction motion was the largest residual source of uncertainty and CTV to PTV margins could be reduced
+from approximately 7 mm to approximately 4 mm [83]. Such margin reductions have been shown in other series to
+predict reduced rectal toxicity in prostate radiotherapy [84–86].
+6.6. JUSTIFICATION AND OPTIMIZATION IN IMAGE GUIDED RADIOTHERAPY
+Most IGRT imaging methods deliver an ionizing radiation dose to the patient in addition to the therapeutic
+dose. Since it is a different irradiated volume, it is important to be aware of what dose is delivered for a single IGRT
+fraction and for imaging throughout the patient’s treatment course and how this compares with the therapeutic dose.
+Imaging dose values and their spatial distribution depend on the modality and particular implementation [17].
+Doses for kV-CBCT can be of the order of 1 cGy [87], with MVCT doses of several cGy [88]. Doses for kV
+planar imaging vary depending on imaging strategy, with values in the range of 0.1 mGy and 2 cGy [28]. In
+comparison, MV portal imaging typically requires treatment beam doses of the order of 10 cGy to acquire an
+image [89]. The prescribed therapeutic dose to the isocentre can be 40–70 Gy, depending on the treatment site
+and fractionation regime. Diagnostic CT doses are often quantified using a CT dose index [90] and dose–length
+product [91]. Therapeutic doses are measured in terms of the dose to the target and the distribution around that
+dose. It is important to note that for kV dosimetry, the dose to bone can be two to three times higher than the dose
+to soft tissue [92].
+It is important that all medical radiation exposures be appropriately justified, as stated in Requirement 37
+of GSR Part 3 [18]. For the radiation oncologist, this means that the IGRT procedure for each patient needs to be
+clearly and unambiguously prescribed, along with the therapeutic dose. In prescribing the frequency and type of
+IGRT procedure, the radiation oncologist needs to be aware of the risks as well as the benefits. The risk is secondary
+cancer induction from the dose associated with the IGRT procedure, while the benefit lies is in the potential for a
+reduction in the volume of non-cancerous tissue irradiated to high doses and the consequent reduction of acute and
+26
+
+chronic radiation side effects. Experts also advise that a record be maintained of all patient imaging procedures and
+that the oncology information system is specified to perform this function. It is the responsibility of the medical
+physicist to advise the radiation oncologist of the expected dose from each type of IGRT procedure. It is also the
+responsibility of the medical physicist to ensure that the IGRT procedure is optimized in terms of minimization of
+dose, for example by determining appropriate kV, tube loading and collimation settings for each IGRT procedure.
+Default factory settings of kV and tube loading from the manufacturer should be used as a starting point when
+determining appropriate settings. The importance of seeking the advice of diagnostic radiology medical physicists
+for optimization cannot be overstated, as they have in-depth experience in procedure optimization for radiology.
+There are a variety of directives and guidelines that comment on therapy and imaging doses (e.g. Council Directive
+2013/59/Euratom [93]). The radiation oncologist and medical physicist should be aware of these.
+In summary, it is important that IGRT imaging doses are justified, prescribed and reported. The context
+should be considered in the justification — the patient characteristics, the disease site and the prognosis.
+6.7. CLINICAL OUTCOME MONITORING
+The aim of IGRT is to improve the therapeutic ratio of radiotherapy, often by reducing toxicity while
+maintaining treatment efficacy. It is important to be able to audit the success of this aim as part of the IGRT
+programme. For example, if reduced PTVs no longer provide a sufficient margin, the likelihood of a recurrence
+will be increased. Experts therefore strongly recommend that a database be established when the IGRT programme
+is initiated so the impact of the programme on patient outcomes can be monitored. A regular review of these
+outcome data should be carried out. An indication of the benefits to be expected from such a review can be found in
+the report of the Clinical Outcomes Working Group [94].
+6.8. SPECIAL CONSIDERATION OF RESPIRATORY MOTION MANAGEMENT
+Both targets and critical structures may move during the time it takes to deliver a radiotherapy treatment
+fraction. This motion can be divided into regular motion, such as breathing, and irregular motion, such as
+swallowing or the bowel filling. Most motion management strategies target regular motion, with respiratory motion
+being the most commonly used.
+It is beyond the scope of this publication to cover motion management in great detail and guidance and
+reviews of this topic can be found in Refs [77, 95, 96]. However, IGRT is considered to be an essential component
+of motion management, and many of the issues explored in Section 4.2 are applicable to motion management.
+Respiratory motion management should be considered at several points in the radiotherapy process.
+6.8.1. Motion management in patient set-up
+Patients undergoing radiotherapy need to be set up to optimize radiation delivery (e.g. hands above head)
+while being comfortable enough to be able to remain still for the duration of the delivery. Comfortable positioning
+also makes it more likely that patients relax and breathe quietly, which reduces motion. Specialized immobilization
+devices such as dual vacuum bags or compression devices can reduce tumour excursion due to breathing.
+6.8.2. Motion management in treatment planning
+The most common method of motion management is to take motion into account when designing margins.
+The concept of the internal margin developed by the ICRU [3] includes respiratory motion as one contributing
+factor to the internal margin. If an ITV concept is used, there is no need to modulate the radiation delivery. The
+disadvantage of using ITV is the potential for a large margin, which results in the inclusion of large volumes of
+normal tissue in the treatment fields.
+One established method for determining the ITV is 4-D CT [97]. In this method, planning CT scans on the
+CT simulator are correlated with a signal representing the breathing motion of the patient. The respiratory signal
+is obtained from a transducer related to a marker or belt attached to the patient’s chest. In one approach, the extent
+27
+
+of the motion of the tumour is extracted from the maximum intensity projection formed by taking maximum voxel
+values from all CT datasets throughout the breathing cycle [98]. Another approach is to delineate the GTV in all
+phases and create an enveloping contour, or to interpolate between the inhale and exhale phases. Clearly, different
+methods exist, and it is the user’s responsibility to recognize the specific usage and limitations of the approach
+being employed. It should also be noted that the ITV derived from a 4-D CT is based on a reconstruction during a
+limited number of breathing cycles on the CT scanner, and might not be representative of the motion amplitude on
+the treatment machine. Some studies have shown that the amplitude observed on CT underestimates that observed
+during X ray fluoroscopy. However, Guckenberger et al. [99] show good correlations between the amplitudes
+obtained from different 4-D CT sessions.
+6.8.3. Motion verification prior to treatment
+If motion has been taken into consideration, it is important to verify prior to treatment that the motion
+included in the treatment plan is similar to that observed at the time of treatment. IGRT provides a number of tools
+for this purpose, such as fluoroscopic X ray imaging and the assessment of blurring in CBCT. Gated 4-D imaging
+may be another method to assess motion. Fiducial markers have the potential to make motion assessment prior to,
+or even during, treatment easier.
+6.8.4. Motion management in treatment delivery
+Treatment delivery can take motion into consideration. Several general approaches can be distinguished:
+—— Gated delivery turns the treatment beam on and off depending on the phase of the breathing cycle.
+—— Couch movement can be used to reposition the patient daily following 4-D pre-treatment imaging to determine
+the average position of the target for that particular day.
+—— The treatment fields can be adjusted or repositioned to track the target motion during treatment.
+—— Treatment is delivered using a breathing technique, which could be voluntary, controlled or restricted using
+abdominal compression.
+Examples of current motion management strategies are given in Refs [46, 97, 100–109]. Patient selection
+criteria are important for all strategies [77].
+
+28
+
+Appendix I
+SELF-ASSESSMENT QUESTIONNAIRE
+This questionnaire is designed to assist radiotherapy departments planning to embark on a programme of
+IGRT in checking that they have all the necessary requirements. By the time the first patient is to be imaged with
+the IGRT system, the answers to all the questions should be “Yes”. Where gaps are identified, they will need to be
+addressed.
+(1)
+
+Does your department meet the requirements for 3-D CRT listed in the self-assessment questionnaire in
+IAEA-TECDOC-1588, excluding IMRT (questions 1–49)?
+(2) Have one or more patient groups been identified that would benefit from IGRT?
+(3) Have all groups of staff had at least one year of experience in the planning and delivery of 3-D CRT?
+(4) Has an IGRT committee including a radiation oncologist, medical physicist and radiation therapist been
+established to oversee the introduction of IGRT?
+(5) Are there sufficient radiation oncology, medical physics and radiation therapy staff to ensure that the
+introduction of IGRT does not compromise other radiotherapy treatment, including 2-D and 3-D CRT?
+(6) Are there satisfactory service support arrangements to ensure that the IGRT equipment can be maintained at
+the required level of accuracy?
+(7) Have all groups of staff had additional education and training in IGRT as appropriate to their discipline?
+(8) Does your department have access to a dose assessment system for IGRT dosimetry?
+(9) Does your department have quality control expertise, methodology and tools to maintain an IGRT service?
+(10) Have image acquisition protocols been developed for the anatomical sites to be treated with IGRT?
+(11) Have IGRT protocols been developed for the anatomical sites to be treated with IGRT?
+(12) Has a database been established to facilitate the recording, analysis and review of patient shift data?
+(13) Have tests been carried out to ensure that the RVS is capable of supporting IGRT (including image review
+and approval)?
+(14) Have commissioning tests, including end to end tests, been performed to demonstrate IGRT system capability
+and workflow?
+(15) Have contingency plans been developed in case of unavailability of IGRT?
+(16) Has a mechanism been established to monitor the impact of the IGRT programme on institutional CTV to
+PTV margin definition, action levels, institutional procedures and clinical outcomes?
+
+29
+
+Appendix II
+EXAMPLE CALCULATION OF A CTV TO PTV MARGIN
+In this example, the use of Eq. (2), in Section 6.5, is demonstrated, wherein a CTV to PTV margin is
+calculated based on displacements recorded between the reference image and in-room orthogonal images in the
+superior–inferior (S–I), right–left (R–L) and anterior–posterior (A–P) directions. The displacement and margin
+calculations are shown in Tables 8 and 9. Five patients are treated with the same technique for 25 fractions and
+orthogonal kV images are taken daily. All measurements are in millimetres. Note that the calculated margin is
+not inclusive of all uncertainties, and additional margins will be required for other uncertainties, such as volume
+delineation. These additional margins will need to be added in quadrature to the margin calculated from the
+recorded shifts [56, 110].
+
+30
+
+TABLE 8. EXAMPLE O F MARGIN CALCULATION FROM RECORDED DISPLACEMENTS
+Patient 1
+
+Patient 2
+
+Patient 3
+
+Patient 4
+
+Patient 5
+
+Fraction
+
+S–I
+
+R–L
+
+A–P
+
+S–I
+
+R–L
+
+A–P
+
+S–I
+
+R–L
+
+A–P
+
+S–I
+
+R–L
+
+A–P
+
+S–I
+
+R–L
+
+A–P
+
+1
+
+−5
+
+−4
+
+0
+
+2
+
+1
+
+−2
+
+−2
+
+−2
+
+7
+
+4
+
+4
+
+−4
+
+−1
+
+−1
+
+−5
+
+2
+
+2
+
+1
+
+4
+
+−3
+
+−6
+
+−3
+
+−1
+
+1
+
+6
+
+3
+
+−6
+
+−2
+
+4
+
+1
+
+−3
+
+3
+
+−2
+
+−4
+
+1
+
+2
+
+−2
+
+1
+
+4
+
+0
+
+−2
+
+1
+
+2
+
+−2
+
+−3
+
+4
+
+1
+
+4
+
+0
+
+1
+
+4
+
+−1
+
+−5
+
+2
+
+3
+
+0
+
+−2
+
+4
+
+0
+
+−1
+
+2
+
+−2
+
+−4
+
+5
+
+3
+
+1
+
+5
+
+−5
+
+−5
+
+3
+
+−2
+
+4
+
+4
+
+3
+
+2
+
+4
+
+1
+
+4
+
+−5
+
+6
+
+−2
+
+2
+
+0
+
+1
+
+−2
+
+4
+
+3
+
+−4
+
+6
+
+2
+
+2
+
+−2
+
+4
+
+3
+
+1
+
+7
+
+4
+
+1
+
+6
+
+−1
+
+−1
+
+5
+
+−2
+
+−3
+
+−3
+
+1
+
+−5
+
+7
+
+−2
+
+−3
+
+−2
+
+8
+
+−4
+
+−2
+
+2
+
+−4
+
+−7
+
+−4
+
+−1
+
+2
+
+4
+
+1
+
+−5
+
+−3
+
+4
+
+−1
+
+2
+
+9
+
+−5
+
+−3
+
+−3
+
+−4
+
+0
+
+1
+
+−2
+
+−2
+
+5
+
+−5
+
+−5
+
+6
+
+1
+
+3
+
+3
+
+10
+
+−2
+
+−3
+
+5
+
+−1
+
+2
+
+−1
+
+3
+
+0
+
+1
+
+−3
+
+1
+
+1
+
+−4
+
+1
+
+−4
+
+11
+
+−2
+
+1
+
+4
+
+−1
+
+2
+
+4
+
+−1
+
+−2
+
+6
+
+1
+
+−6
+
+−2
+
+−3
+
+1
+
+−4
+
+12
+
+4
+
+1
+
+0
+
+0
+
+−2
+
+−3
+
+−2
+
+−3
+
+1
+
+−3
+
+4
+
+2
+
+1
+
+4
+
+−6
+
+13
+
+0
+
+2
+
+0
+
+2
+
+1
+
+1
+
+3
+
+−4
+
+−1
+
+5
+
+−6
+
+−3
+
+−4
+
+1
+
+3
+
+14
+
+4
+
+1
+
+0
+
+−5
+
+1
+
+−1
+
+2
+
+−2
+
+1
+
+5
+
+−5
+
+6
+
+−3
+
+5
+
+2
+
+15
+
+−2
+
+−1
+
+−2
+
+−5
+
+1
+
+−1
+
+0
+
+−1
+
+3
+
+1
+
+0
+
+4
+
+0
+
+2
+
+−5
+
+16
+
+4
+
+1
+
+2
+
+1
+
+−4
+
+0
+
+4
+
+3
+
+2
+
+−4
+
+0
+
+6
+
+1
+
+3
+
+2
+
+17
+
+1
+
+−4
+
+0
+
+−4
+
+−3
+
+4
+
+2
+
+0
+
+6
+
+4
+
+−3
+
+7
+
+−5
+
+−1
+
+−5
+
+18
+
+5
+
+−1
+
+2
+
+2
+
+−3
+
+0
+
+−2
+
+3
+
+0
+
+−4
+
+−5
+
+7
+
+−4
+
+−3
+
+−3
+
+19
+
+1
+
+2
+
+8
+
+0
+
+−1
+
+−4
+
+−2
+
+1
+
+−1
+
+0
+
+0
+
+−1
+
+4
+
+4
+
+0
+
+20
+
+4
+
+−4
+
+3
+
+−4
+
+−2
+
+−3
+
+−2
+
+−1
+
+2
+
+−1
+
+−6
+
+6
+
+0
+
+0
+
+0
+
+21
+
+3
+
+−2
+
+6
+
+3
+
+1
+
+−2
+
+1
+
+−2
+
+4
+
+2
+
+4
+
+−2
+
+−1
+
+3
+
+0
+
+22
+
+−3
+
+0
+
+−3
+
+−3
+
+−6
+
+3
+
+−2
+
+2
+
+−2
+
+4
+
+−1
+
+5
+
+−3
+
+5
+
+−4
+
+23
+
+3
+
+−1
+
+5
+
+2
+
+−1
+
+0
+
+3
+
+−2
+
+−2
+
+0
+
+1
+
+5
+
+−2
+
+0
+
+−3
+
+24
+
+4
+
+−5
+
+4
+
+0
+
+3
+
+−1
+
+0
+
+3
+
+2
+
+−6
+
+2
+
+−4
+
+4
+
+4
+
+3
+
+25
+
+5
+
+−3
+
+6
+
+−3
+
+2
+
+1
+
+1
+
+−1
+
+−2
+
+0
+
+−5
+
+9
+
+−5
+
+−3
+
+−4
+
+Mean
+
+0.8
+
+−0.9
+
+2.4
+
+−1.1
+
+−1.3
+
+0.1
+
+0.3
+
+−0.4
+
+1.9
+
+0.6
+
+−1.5
+
+2.0
+
+−0.5
+
+1.4
+
+−1.6
+
+SD
+
+3.2
+
+2.4
+
+3.0
+
+2.6
+
+2.8
+
+2.6
+
+2.3
+
+2.3
+
+3.1
+
+3.2
+
+3.6
+
+4.3
+
+3.1
+
+2.5
+
+3.0
+
+31
+
+TABLE 9. FURTHER CALCULATIONS BASED ON THE
+DATA IN TABLE 8
+Fraction
+
+32
+
+S–I
+
+R–L
+
+A–P
+
+SD of the means, Σ
+
+0.8
+
+1.2
+
+1.7
+
+Mean of the SDs, σ
+
+2.9
+
+2.7
+
+3.2
+
+CTV to PTV margin
+(2.5Σ + 0.7σ)
+
+4.0
+
+4.8
+
+6.5
+
+REFERENCES
+[1] KORREMAN, S., et al., The European Society of Therapeutic Radiology and Oncology-European Institute of Radiotherapy
+(ESTRO-EIR) report on 3D CT-based in-room image guidance systems: A practical and technical review and guide, Radiother.
+Oncol. 94 (2010) 129–144.
+[2] INTERNATIONAL COMMISSION ON RADIATION UNITS AND MEASUREMENTS, Prescribing, Recording, and
+Reporting Photon Beam Therapy, ICRU Rep. 50, ICRU, Bethesda, MD (1993).
+[3] INTERNATIONAL COMMISSION ON RADIATION UNITS AND MEASUREMENTS, Prescribing, Recording, and
+Reporting Photon Beam Therapy (Supplement to ICRU Rep. 50), ICRU Rep. 62, Bethesda, MD (1999).
+[4] INTERNATIONAL COMMISSION ON RADIATION UNITS AND MEASUREMENTS, Prescribing, Recording, and
+Reporting Intensity-modulated Photon-beam Therapy (IMRT), ICRU Rep. 83, Bethesda, MD (2010).
+[5] INTERNATIONAL ATOMIC ENERGY AGENCY, Transition from 2-D Radiotherapy to 3-D Conformal and Intensity
+Modulated Radiotherapy, IAEA-TECDOC-1588, IAEA, Vienna (2008).
+[6] YEUNG, A.R., et al., Tumor localization using cone-beam CT reduces setup margins in conventionally fractionated radiotherapy
+for lung tumors, Int. J. Radiat. Oncol. Biol. Phys. 74 (2009) 1100–1107.
+[7] SCHWARZ, M., et al., IGRT versus non-IGRT for postoperative head-and-neck IMRT patients: Dosimetric consequences
+arising from a PTV margin reduction, Radiat. Oncol. 7 (2012) 133.
+[8] OEHLER, C., et al., PTV margin definition in hypofractionated IGRT of localized prostate cancer using cone beam CT and
+orthogonal image pairs with fiducial markers, Radiat. Oncol. 9 (2014) 229.
+[9] ENMARK, M., KORREMAN, S., NYSTRÖM, H., IGRT of prostate cancer: Is the margin reduction gained from daily IG
+time-dependent? Acta. Oncol. 45 (2006) 907–914.
+[10] KOTTE, A.N., HOFMAN, P., LAGENDIJK, J.J., VAN VULPEN, M., VAN DER HEIDE, U.A., Intrafraction motion of the
+prostate during external-beam radiation therapy: Analysis of 427 patients with implanted fiducial markers, Int. J. Radiat. Oncol.
+Biol. Phys. 69 (2007) 419–425.
+[11] VAN DER HEIDE, U.A., et al., Analysis of fiducial marker-based position verification in the external beam radiotherapy of
+patients with prostate cancer, Radiother. Oncol. 82 (2007) 38–45.
+[12] BISSONNETTE, J.P., et al., Quality assurance for the geometric accuracy of cone-beam CT guidance in radiation therapy, Int.
+J. Radiat. Oncol. Biol. Phys. 71 (2008) S57–61.
+[13] YOO, S., et al., A quality assurance program for the on-board imagers, Med. Phys. 33 (2006) 4431–4447.
+[14] ZELEFSKY, M.J., et al., Improved clinical outcomes with high-dose image guided radiotherapy compared with non-IGRT for
+the treatment of clinically localized prostate cancer, Int. J. Radiat. Oncol. Biol. Phys. 84 (2012) 125–129.
+[15] NGUYEN, N.P., et al., Image-guided radiotherapy for locally advanced head and neck cancer, Front. Oncol. 3 (2013) 172.
+[16] GILL, S., et al., Acute toxicity in prostate cancer patients treated with and without image-guided radiotherapy, Radiat. Oncol. 6
+(2011) 145.
+[17] MURPHY, M.J., et al., The management of imaging dose during image-guided radiotherapy: Report of the AAPM Task
+Group 75, Med. Phys. 34 (2007) 4041–4063.
+[18] INTERNATIONAL ATOMIC ENERGY AGENCY, Radiation Protection and Safety of Radiation Sources: International Basic
+Safety Standards, IAEA Safety Standards Series No. GSR Part 3, IAEA, Vienna (2014).
+[19] AMERICAN ASSOCIATION OF PHYSICISTS IN MEDICINE, The Role of In-room kV X-ray Imaging for Patient Setup and
+Target Localization, AAPM Report No. 104, AAPM, College Park, MD (2009).
+[20] VERELLEN, D., et al., Innovations in image-guided radiotherapy, Nat. Rev. Cancer 7 (2007) 949–960.
+[21] DAWSON, L.A., JAFFRAY, D.A., Advances in image-guided radiation therapy, J. Clin. Oncol. 25 (2007) 938–946.
+[22] EVANS, P.M., Anatomical imaging for radiotherapy, Phys. Med. Biol. 53 (2008) R151–191.
+[23] JAFFRAY, D.A., SIEWERDSEN, J.H., WONG, J.W., MARTINEZ, A.A., Flat-panel cone-beam computed tomography for
+image-guided radiation therapy, Int. J. Radiat. Oncol. Biol. Phys. 53 (2002) 1337–1349.
+[24] POULIOT, J., et al., Low-dose megavoltage cone-beam CT for radiation therapy, Int. J. Radiat. Oncol. Biol. Phys. 61
+(2005) 552–560.
+[25] MACKIE, T.R., et al., Tomotherapy: A new concept for the delivery of dynamic conformal radiotherapy, Med. Phys. 20
+(1993) 1709–1719.
+[26] BALTER, J.M., et al., Automated localization of the prostate at the time of treatment using implanted radiopaque markers:
+Technical feasibility, Int. J. Radiat. Oncol. Biol. Phys. 33 (1995) 1281–1286.
+[27] VERELLEN, D., et al., Quality assurance of a system for improved target localization and patient set-up that combines real-time
+infrared tracking and stereoscopic X-ray imaging, Radiother. Oncol. 67 (2003) 129–141.
+[28] SHIRATO, H., et al., Physical aspects of a real-time tumor-tracking system for gated radiotherapy, Int. J. Radiat. Oncol. Biol.
+Phys. 48 (2000) 1187–1195.
+
+33
+
+[29] JIN, J.Y., YIN, F.F., TENN, S.E., MEDIN, P.M., SOLBERG, T.D., Use of the BrainLAB ExacTrac X-Ray 6D system in
+image-guided radiotherapy, Med. Dosim. 33 (2008) 124–134.
+[30] ADLER, J.R., Jr., et al., The Cyberknife: A frameless robotic system for radiosurgery, Stereotact. Funct. Neurosurg. 69
+(1997) 124–128.
+[31] DEPUYDT, T., et al., Treating patients with real-time tumor tracking using the Vero gimbaled linac system: Implementation
+and first review, Radiother. Oncol. 112 (2014) 343–351.
+[32] FALCO, T., et al., Ultrasound imaging for external-beam prostate treatment setup and dosimetric verification, Med. Dosim. 27
+(2002) 271–273.
+[33] MUTIC, S., DEMPSEY, J.F., The ViewRay system: Magnetic resonance-guided and controlled radiotherapy, Semin. Radiat.
+Oncol. 24 (2014) 196–199.
+[34] RAAIJMAKERS, A.J., RAAYMAKERS, B.W., VAN DER MEER, S., LAGENDIJK, J.J., Integrating a MRI scanner with a
+6 MV radiotherapy accelerator: Impact of the surface orientation on the entrance and exit dose due to the transverse magnetic
+field, Phys. Med. Biol. 52 (2007) 929–939.
+[35] WILLOUGHBY, T.R., et al., Target localization and real-time tracking using the Calypso 4D localization system in patients
+with localized prostate cancer, Int. J. Radiat. Oncol. Biol. Phys. 65 (2006) 528–534.
+[36] WAGMAN, R., et al., Respiratory gating for liver tumors: Use in dose escalation, Int. J. Radiat. Oncol. Biol. Phys. 55
+(2003) 659–668.
+[37] HUGHES, S., et al., Assessment of two novel ventilatory surrogates for use in the delivery of gated/tracked radiotherapy for
+non-small cell lung cancer, Radiother. Oncol. 91 (2009) 336–341.
+[38] LINTHOUT, N., et al., Treatment delivery time optimization of respiratory gated radiation therapy by application of audio-visual
+feedback, Radiother. Oncol. 91 (2009) 330–335.
+[39] KORREMAN, S.S., JUHLER-NOTTRUP, T., BOYER, A.L., Respiratory gated beam delivery cannot facilitate margin
+reduction, unless combined with respiratory correlated image guidance, Radiother. Oncol. 86 (2008) 61–68.
+[40] MEYER, J., et al., Positioning accuracy of cone-beam computed tomography in combination with a HexaPOD robot treatment
+table, Int. J. Radiat. Oncol. Biol. Phys. 67 (2007) 1220–1228.
+[41] SOETE, G., VERELLEN, D., TOURNEL, K., STORME, G., Setup accuracy of stereoscopic X-ray positioning with automated
+correction for rotational errors in patients treated with conformal arc radiotherapy for prostate cancer, Radiother. Oncol. 80
+(2006) 371–373.
+[42] DEPUYDT, T., et al., Geometric accuracy of a novel gimbals based radiation therapy tumor tracking system, Radiother.
+Oncol. 98 (2011) 365–372.
+[43] HILL, D.L., BATCHELOR, P.G., HOLDEN, M., HAWKES, D.J., Medical image registration, Phys. Med. Biol. 46
+(2001) R1–45.
+[44] WOLTHAUS, J.W., et al., Mid-ventilation CT scan construction from four-dimensional respiration-correlated CT scans for
+radiotherapy planning of lung cancer patients, Int. J. Radiat. Oncol. Biol. Phys. 65 (2006) 1560–1571.
+[45] KIMURA, T., et al., Reproducibility of organ position using voluntary breath-hold method with spirometer for extracranial
+stereotactic radiotherapy, Int. J. Radiat. Oncol. Biol. Phys. 60 (2004) 1307–1313.
+[46] WONG, J.W., et al., The use of active breathing control (ABC) to reduce margin for breathing motion, Int. J. Radiat. Oncol.
+Biol. Phys. 44 (1999) 911–919.
+[47] KUBO, H.D., HILL, B.C., Respiration gated radiotherapy treatment: A technical study, Phys. Med. Biol. 41 (1996) 83–91.
+[48] SCHWEIKARD, A., GLOSSER, G., BODDULURI, M., MURPHY, M.J., ADLER, J.R., Robotic motion compensation for
+respiratory movement during radiosurgery, Comput. Aided Surg. 5 (2000) 263–277.
+[49] KAMINO, Y., et al., Development of a four-dimensional image-guided radiotherapy system with a gimbaled X-ray head, Int. J.
+Radiat. Oncol. Biol. Phys. 66 (2006) 271–278.
+[50] INTERNATIONAL ATOMIC ENERGY AGENCY, Record and Verify Systems for Radiation Treatment of Cancer: Acceptance
+Testing, Commissioning and Quality Control, IAEA Human Health Reports No. 7, IAEA, Vienna (2013).
+[51] INSTITUTE OF PHYSICS AND ENGINEERING IN MEDICINE, Guidance for the Commissioning and Quality Assurance of
+a Networked Radiotherapy Department, IPEM Report No. 93, IPEM, York (2006).
+[52] VAN HERK, M., Errors and margins in radiotherapy, Semin. Radiat. Oncol. 14 (2004) 52–64.
+[53] BEL, A., VAN HERK, M., BARTELINK, H., LEBESQUE, J.V., A verification procedure to improve patient set-up accuracy
+using portal images, Radiother. Oncol. 29 (1993) 253–260.
+[54] DE BOER, H.C., HEIJMEN, B.J., A protocol for the reduction of systematic patient setup errors with minimal portal imaging
+workload, Int. J. Radiat. Oncol. Biol. Phys. 50 (2001) 1350–1365.
+[55] DE BOER, H.C., HEIJMEN, B.J., eNAL: An extension of the NAL setup correction protocol for effective use of weekly
+follow-up measurements, Int. J. Radiat. Oncol. Biol. Phys. 67 (2007) 1586–1595.
+[56] ROYAL COLLEGE OF RADIOLOGISTS, SOCIETY AND COLLEGE OF RADIOGRAPHERS, INSTITUTE OF PHYSICS
+AND ENGINEERING IN MEDICINE, On Target: Ensuring Geometric Accuracy in Radiotherapy, RCR, London (2008).
+[57] INTERNATIONAL ATOMIC ENERGY AGENCY, Staffing in Radiotherapy: An Activity Based Approach, IAEA Human
+Health Reports No. 13, IAEA, Vienna (2015).
+
+34
+
+[58] BISSONNETTE, J.P., et al., Quality assurance for image-guided radiation therapy utilizing CT-based technologies: A report of
+the AAPM TG-179, Med. Phys. 39 (2012) 1946–1963.
+[59] HERMAN, M.G., et al., Clinical use of electronic portal imaging: Report of AAPM Radiation Therapy Committee Task
+Group 58, Med. Phys. 28 (2001) 712–737.
+[60] KLEIN, E.E., et al., Task Group 142 report: Quality assurance of medical accelerators, Med. Phys. 36 (2009) 4197–4212.
+[61] LANGEN, K.M., et al., QA for helical tomotherapy: Report of the AAPM Task Group 148, Med. Phys. 37 (2010) 4817–4853.
+[62] CANADIAN ASSOCIATION OF PROVINCIAL CANCER AGENCIES, Standards for Quality Control at Canadian Radiation
+Treatment Centres: Electronic Portal Imaging Devices (2005).
+[63] CANADIAN ASSOCIATION OF PROVINCIAL CANCER AGENCIES, Standards for Quality Control at Canadian Radiation
+Treatment Centres: Linac Integrated kV Imaging Systems and CBCT Simulators (2007).
+[64] FONTENOT, J.D., et al., AAPM Medical Physics Practice Guideline 2.a: Commissioning and quality assurance of X-ray-based
+image-guided radiotherapy systems, J. Appl. Clin. Med. Phys. 15 (2014) 4528.
+[65] ZHAO, W., ROWLANDS, J.A., Digital radiology using active matrix readout of amorphous selenium: Theoretical analysis of
+detective quantum efficiency, Med. Phys. 24 (1997) 1819–1833.
+[66] WALSH, C., et al., Quality assurance of computed and digital radiography systems, Radiat. Prot. Dosim. 129 (2008) 271–275.
+[67] INTERNATIONAL ATOMIC ENERGY AGENCY, Quality Assurance for Computed Tomography: Diagnostic and Therapy
+Applications, IAEA Human Health Series No. 19, IAEA, Vienna (2012).
+[68] INTERNATIONAL ATOMIC ENERGY AGENCY, Diagnostic Radiology Physics: A Handbook for Teachers and Students,
+IAEA, Vienna (2014).
+[69] HU, N., MCLEAN, D., Measurement of radiotherapy CBCT dose in a phantom using different methods, Australas. Phys. Eng.
+Sci. Med. 37 (2014) 779–789.
+[70] BISSONNETTE, J.P., Quality assurance of image-guidance technologies, Semin. Radiat. Oncol. 17 (2007) 278–286.
+[71] INTERNATIONAL ATOMIC ENERGY AGENCY, Comprehensive Audits of Radiotherapy Practices: A Tool for Quality
+Improvement, IAEA, Vienna (2007).
+[72] INTERNATIONAL ATOMIC ENERGY AGENCY, Comprehensive Clinical Audits of Diagnostic Radiology Practices: A Tool
+for Quality Improvement — Quality Assurance Audit for Diagnostic Radiology Improvement and Learning (QUAADRIL),
+IAEA Human Health Series No. 4, IAEA, Vienna (2010).
+[73] MIDDLETON, M., et al., Successful implementation of image-guided radiation therapy quality assurance in the Trans Tasman
+Radiation Oncology Group 08.01 PROFIT Study, Int. J. Radiat. Oncol. Biol. Phys. 81 (2011) 1576–1581.
+[74] FOROUDI, F., et al., The outcome of a multi-centre feasibility study of online adaptive radiotherapy for muscle-invasive
+bladder cancer TROG 10.01 BOLART, Radiother. Oncol. 111 (2014) 316–320.
+[75] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION, Guide to the Expression of Uncertainty in Measurement,
+ISO, Geneva (1995).
+[76] INTERNATIONAL ATOMIC ENERGY AGENCY, Accuracy Requirements and Uncertainties in Radiotherapy, IAEA Human
+Health Series No. 31, IAEA, Vienna (2016).
+[77] KEALL, P.J., et al., The management of respiratory motion in radiation oncology report of AAPM Task Group 76, Med.
+Phys. 33 (2006) 3874–3900.
+[78] BISSONNETTE, J.P., MOSELEY, D.J., JAFFRAY, D.A., A quality assurance program for image quality of cone-beam CT
+guidance in radiation therapy, Med. Phys. 35 (2008) 1807–1815.
+[79] VAN HERK, M., REMEIJER, P., RASCH, C., LEBESQUE, J.V., The probability of correct target dosage: Dose-population
+histograms for deriving treatment margins in radiotherapy, Int. J. Radiat. Oncol. Biol. Phys. 47 (2000) 1121–1135.
+[80] JAFFRAY, D.A., et al., Safety considerations for IGRT: Executive summary, Pract. Radiat. Oncol. 3 (2013) 167–170.
+[81] ENGELS, B., SOETE, G., VERELLEN, D., STORME, G., Conformal arc radiotherapy for prostate cancer: Increased
+biochemical failure in patients with distended rectum on the planning computed tomogram despite image guidance by implanted
+markers, Int. J. Radiat. Oncol. Biol. Phys. 74 (2009) 388–391.
+[82] KRON, T., et al., Intra-fraction prostate displacement in radiotherapy estimated from pre- and post-treatment imaging of
+patients with implanted fiducial markers, Radiother. Oncol. 95 (2010) 191–197.
+[83] SKARSGARD, D., et al., Planning target volume margins for prostate radiotherapy using daily electronic portal imaging and
+implanted fiducial markers, Radiat. Oncol. 5 (2010) 52.
+[84] MAUND, I.F., et al., Image-guided radiotherapy of the prostate using daily CBCT: The feasibility and likely benefit of
+implementing a margin reduction, Br. J. Radiol. 87 (2014).
+[85] HAMMOUD, R., et al., Examining margin reduction and its impact on dose distribution for prostate cancer patients undergoing
+daily cone-beam computed tomography, Int. J. Radiat. Oncol. Biol. Phys. 71 (2008) 265–273.
+[86] PAWLOWSKI, J.M., YANG, E.S., MALCOLM, A.W., COFFEY, C.W., DING, G.X., Reduction of dose delivered to organs at
+risk in prostate cancer patients via image-guided radiation therapy, Int. J. Radiat. Oncol. Biol. Phys. 76 (2010) 924–934.
+[87] ISLAM, M.K., et al., Patient dose from kilovoltage cone beam computed tomography imaging in radiation therapy, Med.
+Phys. 33 (2006) 1573–1582.
+
+35
+
+[88] MEEKS, S.L., et al., Performance characterization of megavoltage computed tomography imaging on a helical tomotherapy
+unit, Med. Phys. 32 (2005) 2673–2681.
+[89] ANTONUK, L.E., Electronic portal imaging devices: A review and historical perspective of contemporary technologies and
+research, Phys. Med. Biol. 47 (2002) R31–65.
+[90] DIXON, R.L., A new look at CT dose measurement: Beyond CTDI, Med. Phys. 30 (2003) 1272–1280.
+[91] HUDA, W., METTLER, F.A., Volume CT dose index and dose–length product displayed during CT: What good are they?
+Radiology 258 (2011) 236–242.
+[92] DING, G.X., MUNRO, P., Radiation exposure to patients from image guidance procedures and techniques to reduce the
+imaging dose, Radiother. Oncol. 108 (2013) 91–98.
+[93] Council Directive 2013/59/Euratom of 5 December 2013 laying down basic safety standards for protection against the dangers
+arising from exposure to ionising radiation, and repealing Directives 89/618/Euratom, 90/641/Euratom, 96/29/Euratom, 97/43/
+Euratom and 2003/122/Euratom, Official Journal of the European Union L 13, Publications Office of the European Union,
+Luxembourg (2014).
+[94] CLINICAL OUTCOMES WORKING GROUP, Clincial Outcome Indicators, Clinical Resource and Audit Group,
+Edinburgh (2002).
+[95] BENEDICT, S.H., et al., Stereotactic body radiation therapy: The report of AAPM Task Group 101, Med. Phys. 37
+(2010) 4078–4101.
+[96] KORREMAN, S.S., Motion in radiotherapy: Photon therapy, Phys. Med. Biol. 57 (2012) R161–191.
+[97] KEALL, P.J., et al., Acquiring 4D thoracic CT scans using a multislice helical method, Phys. Med. Biol. 49 (2004) 2053–2067.
+[98] UNDERBERG, R.W., LAGERWAARD, F.J., SLOTMAN, B.J., CUIJPERS, J.P., SENAN, S., Use of maximum intensity
+projections (MIP) for target volume generation in 4DCT scans for lung cancer, Int. J. Radiat. Oncol. Biol. Phys. 63
+(2005) 253–260.
+[99] GUCKENBERGER, M., et al., Is a single respiratory correlated 4D-CT study sufficient for evaluation of breathing motion? Int.
+J. Radiat. Oncol. Biol. Phys. 67 (2007) 1352–1359.
+[100] KEALL, P.J., LAUVE, A.D., HAGAN, M.P., SIEBERS, J.V., A strategy to correct for intrafraction target translation in
+conformal prostate radiotherapy: Simulation results, Med. Phys. 34 (2007) 1944–1951.
+[101] VEDAM, S.S., et al., Acquiring a four-dimensional computed tomography dataset using an external respiratory signal, Phys.
+Med. Biol. 48 (2003) 45–62.
+[102] KEALL, P.J., et al., The first clinical treatment with kilovoltage intrafraction monitoring (KIM): A real-time image guidance
+method, Med. Phys. 42 (2015) 354–358.
+[103] SOLBERG, T.D., et al., Commissioning and initial stereotactic ablative radiotherapy experience with Vero, J. Appl. Clin. Med.
+Phys. 15 (2014) 4685.
+[104] SEPPENWOOLDE, Y., BERBECO, R.I., NISHIOKA, S., SHIRATO, H., HEIJMEN, B., Accuracy of tumor motion
+compensation algorithm from a robotic respiratory tracking system: A simulation study, Med. Phys. 34 (2007) 2774–2784.
+[105] CHANG, Z., et al., Evaluation of integrated respiratory gating systems on a Novalis Tx system, J. Appl. Clin. Med. Phys. 12
+(2011) 3495.
+[106] NEGORO, Y., et al., The effectiveness of an immobilization device in conformal radiotherapy for lung tumor: Reduction of
+respiratory tumor movement and evaluation of the daily setup accuracy, Int. J. Radiat. Oncol.Biol. Phys. 50 (2001) 889–898.
+[107] GEORGE, R., et al., Audio-visual biofeedback for respiratory-gated radiotherapy: Impact of audio instruction and audio-visual
+biofeedback on respiratory-gated radiotherapy, Int. J. Radiat. Oncol. Biol. Phys. 65 (2006) 924–933.
+[108] CUI, Y., DY, J.G., SHARP, G.C., ALEXANDER, B., JIANG, S.B., Robust fluoroscopic respiratory gating for lung cancer
+radiotherapy without implanted fiducial markers, Phys. Med. Biol. 52 (2007) 741–755.
+[109] SONKE, J.J., ZIJP, L., REMEIJER, P., VAN HERK, M., Respiratory correlated cone beam CT, Med. Phys. 32 (2005)
+1176–1186.
+[110] STROOM, J., ITV and PTV margins in the IGRT era, presentation at IAEA Int. Conf. on Advances in Radiation Oncology,
+Vienna, 2017.
+
+36
+
+ABBREVIATIONS
+3-D CRT
+
+three dimensional conformal radiotherapy
+
+AAPM
+
+American Association of Physicists in Medicine
+
+CBCT
+
+cone-beam computed tomography
+
+CT
+
+computed tomography
+
+CTV
+
+clinical target volume
+
+DICOM
+
+Digital Imaging and Communications in Medicine
+
+e-NAL
+
+extended no action level
+
+EPID
+
+electronic portal imaging device
+
+GTV
+
+gross tumour volume
+
+ICRU
+
+International Commission on Radiation Units and Measurements
+
+IGRT
+
+image guided radiotherapy
+
+IMRT
+
+intensity modulated radiotherapy
+
+ITV
+
+internal target volume
+
+kV
+
+kilovoltage
+
+kVp
+
+kilovolt peak
+
+MV
+
+megavoltage
+
+MVCT
+
+megavoltage computed tomography
+
+NAL
+
+no action level
+
+PTV
+
+planning target volume
+
+RTT
+
+radiation therapist (also known as radiation therapy technologist)
+
+RVS
+
+record and verify system
+
+SAL
+
+shrinking action level
+
+37
+
+CONTRIBUTORS TO DRAFTING AND REVIEW
+Christaki, K.
+
+International Atomic Energy Agency
+
+Delis, C.
+
+International Atomic Energy Agency
+
+Evans, P.
+
+University of Surrey, United Kingdom
+
+Fidarova, E.
+
+International Atomic Energy Agency
+
+Healy, B.
+
+International Atomic Energy Agency
+
+Kron, T.
+
+Peter MacCallum Cancer Centre, Australia
+
+Leech, M.
+
+Trinity College Dublin, Ireland
+
+Mundt, A.
+
+UC San Diego Moores Cancer Center, United States of America
+
+Roberge, D.
+
+Hospital Notre Dame, Canada
+
+van der Merwe, D.
+
+International Atomic Energy Agency
+
+Verellen, D.
+
+Universitair Ziekenhuis Brussel, Belgium
+
+Zubizarreta, E.
+
+International Atomic Energy Agency
+
+Consultants Meeting
+Vienna, Austria: 10–13 June 2014
+
+39
+
+@
+
+No. 25
+
+ORDERING LOCALLY
+In the following countries, IAEA priced publications may be purchased from the sources listed below or
+from major local booksellers.
+Orders for unpriced publications should be made directly to the IAEA. The contact details are given at
+the end of this list.
+
+CANADA
+Renouf Publishing Co. Ltd
+22-1010 Polytek Street, Ottawa, ON K1J 9J1, CANADA
+Telephone: +1 613 745 2665  Fax: +1 643 745 7660
+Email: order@renoufbooks.com  Web site: www.renoufbooks.com
+Bernan / Rowman & Littlefield
+15200 NBN Way, Blue Ridge Summit, PA 17214, USA
+Tel: +1 800 462 6420 • Fax: +1 800 338 4550
+Email: orders@rowman.com Web site: www.rowman.com/bernan
+
+CZECH REPUBLIC
+Suweco CZ, s.r.o.
+Sestupná 153/11, 162 00 Prague 6, CZECH REPUBLIC
+Telephone: +420 242 459 205  Fax: +420 284 821 646
+Email: nakup@suweco.cz  Web site: www.suweco.cz
+
+FRANCE
+Form-Edit
+5 rue Janssen, PO Box 25, 75921 Paris CEDEX, FRANCE
+Telephone: +33 1 42 01 49 49  Fax: +33 1 42 01 90 90
+Email: formedit@formedit.fr  Web site: www.form-edit.com
+
+GERMANY
+Goethe Buchhandlung Teubig GmbH
+Schweitzer Fachinformationen
+Willstätterstrasse 15, 40549 Düsseldorf, GERMANY
+Telephone: +49 (0) 211 49 874 015  Fax: +49 (0) 211 49 874 28
+Email: kundenbetreuung.goethe@schweitzer-online.de  Web site: www.goethebuch.de
+
+INDIA
+Allied Publishers
+1st Floor, Dubash House, 15, J.N. Heredi Marg, Ballard Estate, Mumbai 400001, INDIA
+Telephone: +91 22 4212 6930/31/69  Fax: +91 22 2261 7928
+Email: alliedpl@vsnl.com  Web site: www.alliedpublishers.com
+Bookwell
+3/79 Nirankari, Delhi 110009, INDIA
+Telephone: +91 11 2760 1283/4536
+Email: bkwell@nde.vsnl.net.in  Web site: www.bookwellindia.com
+
+ITALY
+Libreria Scientifica “AEIOU”
+Via Vincenzo Maria Coronelli 6, 20146 Milan, ITALY
+Telephone: +39 02 48 95 45 52  Fax: +39 02 48 95 45 48
+Email: info@libreriaaeiou.eu  Web site: www.libreriaaeiou.eu
+
+JAPAN
+Maruzen-Yushodo Co., Ltd
+10-10 Yotsuyasakamachi, Shinjuku-ku, Tokyo 160-0002, JAPAN
+Telephone: +81 3 4335 9312  Fax: +81 3 4335 9364
+Email: bookimport@maruzen.co.jp  Web site: www.maruzen.co.jp
+
+RUSSIAN FEDERATION
+Scientific and Engineering Centre for Nuclear and Radiation Safety
+107140, Moscow, Malaya Krasnoselskaya st. 2/8, bld. 5, RUSSIAN FEDERATION
+Telephone: +7 499 264 00 03  Fax: +7 499 264 28 59
+Email: secnrs@secnrs.ru  Web site: www.secnrs.ru
+
+UNITED STATES OF AMERICA
+Bernan / Rowman & Littlefield
+15200 NBN Way, Blue Ridge Summit, PA 17214, USA
+Tel: +1 800 462 6420 • Fax: +1 800 338 4550
+Email: orders@rowman.com  Web site: www.rowman.com/bernan
+Renouf Publishing Co. Ltd
+812 Proctor Avenue, Ogdensburg, NY 13669-2205, USA
+Telephone: +1 888 551 7470  Fax: +1 888 551 7471
+Email: orders@renoufbooks.com  Web site: www.renoufbooks.com
+
+Orders for both priced and unpriced publications may be addressed directly to:
+Marketing and Sales Unit
+International Atomic Energy Agency
+Vienna International Centre, PO Box 100, 1400 Vienna, Austria
+Telephone: +43 1 2600 22529 or 22530 • Fax: +43 1 26007 22529
+Email: sales.publications@iaea.org • Web site: www.iaea.org/books
+
+18-04061
+
+INTERNATIONAL ATOMIC ENERGY AGENCY
+VIENNA
+ISBN 978–92–0–103218–8
+ISSN 2074–7667
+
+

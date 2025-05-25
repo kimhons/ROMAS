@@ -1,0 +1,485 @@
+TG-119 IMRT Commissioning Tests
+Instructions for Planning, Measurement, and Analysis
+Version 10/21/2009
+
+	  
+DISCLAIMER:
+This publication and associated spreadsheets and digital files are based on
+sources and information believed to be reliable, but the
+AAPM, the authors, and the editors disclaim
+any warranty or liability based on or relating
+to the contents of this publication.
+The AAPM does not endorse any products,
+manufacturers, or suppliers. Nothing in
+this publication should be interpreted
+as implying such endorsement.
+
+	  
+
+TG-119 IMRT Commissioning Tests
+Instructions for Planning, Measurement, and Analysis
+Version 10/21/2009
+
+Introduction
+The purpose of this exercise is to define standard IMRT planning “problems” that
+physicists can use to test the accuracy of their IMRT planning and delivery systems.
+These represent total system checks of different types and complexity. Differences
+between measurement and prediction may be caused by measurement uncertainty,
+limitations in the accuracy of dose calculations, and limitations in the dose delivery
+mechanisms. These tests will not serve to distinguish between these sources, but will
+serve to test the overall accuracy of the IMRT system.
+The participants in TG119 performed these tests and analyzed the results in a
+standardized manner. If other users wish to compare their results to that of the Task
+Group, then it will be important to create comparable IMRT plans, perform similar
+measurements, and analyze the data in the same way.
+General description of the tests
+Each test includes target and normal structure shapes that a physicist can create on a
+phantom of his/her choosing. Alternatively, the CTs and RT structure set can be
+downloaded from http://www.aapm.org/pubs/tg119/default.asp. The specific options
+depend on the capabilities of the planning system. For example, it may be possible to
+register the center the CT of the local phantom to that of the downloaded phantom, and
+then transfer the structures to the local phantom for planning. It is preferable to start with
+structures defined on the local phantom and to directly plan the dose distribution on that
+phantom, as if it were a patient. Alternatively, one could plan the doses on the
+downloaded CTs and then do verification plans on the local phantom, as is commonly
+done for IMRT patient quality assurance measurements.
+Each test includes a specification of dose goals for the IMRT planning and the beam
+arrangement to be used. Each test also specifies the measurements to be taken to test the
+accuracy of the dose delivery, how they are to be analyzed and what is to be reported.
+Plans
+The plans should be done with 6 MV in order to compare with TG119, although the tests
+can certainly be run for other energies if desired. The calculation grid should be 2 mm or
+finer. The target doses are specified for each plan; the dose per fraction should be 180 –
+200 cGy. The plans should be run with the IMRT parameters typical for clinical use.
+These may include: number of intensity levels, smoothing parameters, minimum field
+width, minimum MU/segment, priority values, etc.
+
+The TG119 report gives the dose-volume statistics obtained by the group for each plan.
+The Task Group attempted to control the complexity of the IMRT fields by specifying the
+plan goals, thus avoiding some groups pushing their IMRT systems harder than others.
+The aim was to be able to compile statistics about dosimetric accuracy for plans that were
+of comparable complexity. In order to compare measurement results with TG119’s, the
+plans should have comparable dose volume statistics.
+Measurements
+Three types of measurements are to be performed: “points” with an ion chamber in
+phantom for the composite irradiation (i.e. all fields irradiated at the respective gantry
+angles), planar dose distributions for the composite irradiation with a detector such as
+film, and planar field-by-field dose distributions with a detector array, EPID, etc.
+The phantom should permit point measurements (e.g. ion chamber) and planar dose
+measurements (e.g. film) to be done on coronal planes. The phantom should consist of
+slabs of water-equivalent plastic with a total thickness of about 15 – 20 cm, so that a
+chamber at its center is 7.5 – 10 cm below the anterior surface. It should be possible to
+have either film or chamber on the measurement plane, so that the film response may be
+normalized to the chamber measurements. Note that measurements will be made on the
+central plane and also above or below the central plane for some cases.
+The chamber should be that used for IMRT commissioning and QA studies in the
+department. This typically will be smaller than a Farmer-type chamber, such as a 0.125
+cm3 scanning chamber. The sensitive volume of the chamber should be identified on the
+phantom study, and the reported dose to the chamber should be the mean dose to its
+sensitive volume. References herein to “point” doses actually refer to mean doses over
+the chamber volume.
+Conversion of chamber readings to dose will be done by obtaining readings with parallel
+opposed 10x10 fields irradiating the phantom isocentrically and determining the ratio of
+reading to predicted dose. (See preliminary test P1 below.) This simple method reduces
+the effects of daily linac output variations and differences between the phantom and
+liquid water. Calculations may be done with heterogeneity corrections on or off
+(preferably on), but should be done consistently for all the tests.
+For film measurements in phantom, the film response may be normalized to match that of
+the ion chamber measurement on the same plane. Either radiographic or radiochromic
+film may be used. The best available techniques should be used to maximize the
+precision of the measurement. The uncertainty associated with the measurement of dose
+at a point should be established before evaluating IMRT dose distributions with film.
+One way to do that is to use the best available film technique to measure several
+repetitions of doses that are well established and span the range of interest, e.g. 3 films at
+200 cGy, 3 at 100 cGy, 3 at 50 cGy, and 3 at 20 cGy. Preliminary test P2 below also
+provides five low gradient regions that can be used to test the accuracy of the film
+
+response. The doses in those regions can be confirmed with chamber measurements as
+part of the process.
+For the field-by-field measurements, the technique employed locally should be used:
+diode array, chamber array, EPID, film, etc. This process typically involves calculating a
+predicted dose distribution on a plane perpendicular to the beam axis at some specified
+depth. The corresponding measurement is then made with the chosen detector.
+Preliminary tests with a combination of open fields irradiating the phantom will be used
+to demonstrate the reliability of the assessment system for non-IMRT dose delivery.
+Analysis and comparison to TG119 results
+In order to compare the local results with that of the task group, it will be necessary to
+analyze the data as the task group did.
+For the point doses, the comparison of measured to planned values will be done with
+respect to the prescribed dose, not the dose to that point. That is, record the ratio
+(Measured – Planned)/Prescribed.
+Planar dose distributions (both composite, in-phantom and field-by-field) will be
+analyzed using gamma criteria of 3% dose and 3 mm distance to agreement. The percent
+of points with gamma ≤ 1.00 will be recorded. The results of a gamma analysis depend
+heavily on the details of the implementation. In order to compare the local results with
+that of the task group, it will be necessary to conform to the same implementation
+parameters as closely as possible.
+For analysis of dose on a plane using film, a region of interest should be defined to
+exclude regions of low dose. How this is done will depend on the tools available in the
+analysis software. If a threshold dose may be defined, set that to 10% of the maximum
+dose on the plane. If a rectangular region of interest may be defined, that may be set to
+correspond to the jaw setting for a vertically oriented field.
+Use of a gamma dose criterion of 3% for dose presumes that the uncertainty in the film
+measurement itself is not too high. If the uncertainty exceeds 2%, then a larger value for
+the gamma dose criterion should be used.
+For the field-by-field analysis, many of the TG119 participants used a particular diode
+array (MapCHECK; Sun Nuclear Corporation, Melbourne, FL) that provides a number of
+options for the gamma analysis. This particular set was chosen as the standard for the
+group: Absolute Dose, 10% Threshold, Van Dyk On, Apply Measurement Uncertainty
+On, and normalizing to the maximum measurement point. “Absolute Dose” means that
+the dose distribution is not globally renormalized, so that the dose difference at a point is
+the (measured – planned) directly. “Van Dyk On” and “normalizing to the maximum
+measurement point” means that the denominator for the percent calculation is the value
+of the maximum measurement point, not the dose at the local point. The Task Group
+
+does not endorse this particular dosimetry device. Users of other equipment should
+understand how the Task Group values were obtained in order to better compare with
+their own results.
+TG119 used the concept of a “confidence limit” to describe how closely the set of
+measurements agreed with the planned values. For the point doses, where perfect
+agreement produces a difference ratio of 0.00, the confidence limit is defined as CL =
+|mean| + 1.96 σ, where the mean is the mean value for the set of measurements and σ is
+the standard deviation. 95% of a large number of such measurements should fall within
+the confidence limit. For the gamma analyses, where perfect agreement produces a
+passing rate of 100%, the confidence limit is defined as CL = (100-mean) + 1.96 σ, where
+mean is the mean percentage of points passing the gamma criteria and σ is the standard
+deviation. For a large number of gamma analyses, 95% of the tests should result in pass
+rates that exceed (100 - CL)%.
+As an example, to determine the confidence limit for the point doses (i.e. ion chamber
+results) in the high dose regions, determine the fractional deviation for each
+measurement: (measured – planned)/prescribed [where “prescribed” would be 180 – 200
+cGy per fraction]. There would be five such measurements in this test suite: MultiTarget
+isocenter, Prostate isocenter, HN isocenter, CShape (easy) anterior, CShape (hard)
+anterior. Find the mean and standard deviation of the five fractional deviation, and then
+find the confidence limit: CL = |mean| + 1.96 σ. Example data analysis sheets are shown
+following test descriptions.
+TG119 recommends that a facility do this set of tests, determine the local confidence
+limits, and compare to the limits obtained by the TG119 group. If the local confidence
+limits exceed those from TG119, then that might be an indication that the IMRT
+modeling needs to be improved. However, that conclusion presumes that the analysis has
+been performed in a comparable manner and that the number of tests is sufficient to
+warrant a statistical judgment. Repetition of these tests is suggested in order to enlarge
+the sample size.
+
+Preliminary tests
+P1: AP:PA
+Using 6 MV, calculate a simple parallel-opposed irradiation of the phantom using AP:PA
+10x10 fields to a dose of 200 cGy at isocenter. Obtain readings at isocenter with the
+chamber. Measure the dose distribution on the central plane with film. Measure also the
+dose from the AP field with the technique to be used for field-by-field IMRT
+measurements.
+This geometry will be used to set the dose/chamber reading ratio for subsequent tests, so
+there is no agreement with predicted dose.
+Determine the fraction of points passing the gamma criteria for the central film irradiated
+AP:PA and for the single AP field.
+
+P2: Bands
+Using 6 MV, calculate a parallel-opposed irradiation of the phantom using a series of
+AP:PA fields to create a set of five bands receiving doses from roughly 40 – 200 cGy.
+This can be done using asymmetric jaws. The following image shows 15 cm long fields
+with widths from 3 to 15 cm, each given 25 MU.
+
+Dose profile through central plane
+
+Measure the central dose with chamber and the dose distribution on the central plane with
+film. Measure also the dose from the AP field with the technique to be used for field-byfield IMRT measurements.
+Determine the agreement between calculated dose to the chamber and the measurement.
+Determine the fraction of points passing the gamma criteria for the central film irradiated
+AP:PA. Determine the fraction of points passing the gamma criteria for the set of AP
+fields irradiating the device used for field-by-field IMRT measurements.
+
+Commissioning tests
+C1: MultiTarget
+Structures
+Three cylindrical targets are stacked along the axis of rotation. Each has a diameter of
+approximately 4 cm and length of 4 cm.
+
+Dose goals
+Structure
+Central target
+Superior target
+Inferior target
+
+99% of volume to receive at
+least 5000 cGy
+99% of volume to receive at
+least 2500 cGy
+99% of volume to receive at
+least 1250 cGy
+
+10% of volume to receive
+no more than 5300 cGy
+10% of volume to receive
+no more than 3500 cGy
+10% of volume to receive
+no more than 2500 cGy
+
+Beam arrangement
+6 MV, 7 fields at 50o intervals from the vertical
+Chamber measurement points
+Planar film measurement
+High dose: Isocenter
+Mid phantom at isocenter
+Lower doses: 4 cm superior, 4 cm inferior
+
+C2: Mock Prostate
+Structures
+The prostate CTV is roughly ellipsoidal with RL, AP, and SI dimensions of 4.0, 2.6, and
+6.5 cm, respectively. The prostate PTV is expanded 0.6 cm around the CTV.
+The rectum is a cylinder with diameter 1.5 cm that abuts the indented posterior aspect of
+the prostate. The PTV includes about 1/3 of the rectal volume on the widest PTV slice.
+The bladder is roughly ellipsoidal with RL, AP, and SI dimensions of 5.0, 4.0, and 5.0
+cm, respectively, and is centered on the superior aspect of the prostate.
+
+Dose goals
+Structure
+Prostate PTV
+Rectum
+Bladder
+
+95% of volume to receive at
+least 7560 cGy
+30% of volume to receive
+no more than 7000 cGy
+30% of volume to receive
+no more than 7000 cGy
+
+5% of volume to receive no
+more than 8300 cGy
+10% of volume to receive
+no more than 7500 cGy
+10% of volume to receive
+no more than 7500 cGy
+
+Beam arrangement
+6 MV, 7 fields at 50o intervals from the vertical
+Chamber measurement points
+High dose: Isocenter
+Lower dose: 2.5 cm posterior to isocenter
+
+Planar film measurement
+Mid phantom at isocenter
+2.5 cm posterior to isocenter
+
+C3: Mock Head/Neck
+Structures
+The HN PTV includes all anterior volume from the base of the skull to the upper neck,
+including the posterior neck nodes. The PTV is retracted from the skin by 0.6 cm. There
+is a gap of about 1.5 cm between the cord and the PTV.
+
+Here a similar structure set is shown as recreated on a block phantom.
+
+Dose goals
+Structure
+HN PTV
+
+Cord
+Parotids
+
+90% of volume to receive at 99% of volume to receive at
+least 5000 cGy
+least 4650 cGy
+No more than 20% of
+volume to receive more
+than 5500 cGy
+No part of volume to
+receive more than 4000 cGy
+50% of volume to receive
+less than 2000 cGy
+
+Beam arrangement
+6 MV, 9 fields at 40o intervals from the vertical
+Chamber measurement points
+High dose: Isocenter
+Lower dose: 4 cm posterior to isocenter
+
+Planar film measurements
+Mid phantom at isocenter, includes parotids
+4 cm posterior to isocenter
+
+C4: C-Shape
+Structures
+The target is a C-shape that surrounds a central avoidance structure. The center core is a
+cylinder 1 cm in radius. The gap between the core and the PTV is 0.5 cm, so the inner arc
+of the PTV is 1.5 cm in radius. The outer arc of the PTV is 3.7 cm in radius. The PTV is
+8 cm long and the core is 10c m long.
+Two versions of the problem are given. In the easier, the central core is to be kept to 50%
+of the target dose. In the harder, the central core is to be kept to 20% of the target dose.
+This latter goal is probably not achievable and tests a system that is being pushed very
+hard.
+
+Dose goals (easier version)
+Structure
+CShape PTV
+Core
+
+95% of volume to receive at 10% of volume to receive
+least 5000 cGy
+no more than 5500cGy
+5% of volume to receive no
+more than 2500 cGy
+
+Beam arrangement
+6 MV, 9 fields at 40o intervals from the vertical
+*****
+Dose goals (harder version)
+Structure
+CShape PTV
+95% of volume to receive at 10% of volume to receive
+least 5000 cGy
+no more than 5500cGy
+Core
+5% of volume to receive no
+more than 1000 cGy
+Beam arrangement
+6 MV, 9 fields at 40o intervals from the vertical
+Chamber measurement points
+Lower dose: isocenter
+Higher dose: 2.5 cm anterior to isocenter
+
+Planar film measurements
+Mid phantom at isocenter
+2.5 cm anterior to isocenter
+
+Example data forms for confidence level calculations
+Preliminary tests: the preliminary tests P1 and P2 are designed to help evaluate the
+accuracy of the planning and dosimetry systems before introducing IMRT uncertainties
+Chamber measurements
+test
+
+prescribed
+dose/frac (at
+isocenter)
+
+P2
+
+location
+
+measured
+dose
+
+isocenter
+1st band right
+2nd band right
+1st band left
+2nd band left
+
+Film measurements in phantom
+test
+P1
+P2
+
+plane
+isocenter
+isocenter
+
+% gamma pass
+
+Field-by-Field % Gamma pass
+Field
+1
+
+P1
+
+P2
+
+planned
+dose
+
+(meas-plan)/presc
+
+IMRT test cases
+Chamber measurements
+test
+
+prescribed
+dose/frac
+
+MultiTarget
+
+Prostate
+Head/Neck
+CShape (easy)
+CShape (hard)
+
+location
+
+measured
+dose
+
+planned
+dose
+
+high dose region
+(meas-plan)/presc
+
+low dose region
+(meas-plan)/presc
+
+isocenter
+4 cm superior
+4 cm inferior
+isocenter
+2.5 cm posterior
+isocenter
+4.0 cm posterior
+isocenter
+2.5 cm anterior
+isocenter
+2.5 cm anterior
+mean
+standard deviation
+confidence limit = |mean| + 1.96 σ
+
+Film measurements in phantom
+test
+MultiTarget
+Prostate
+
+plane
+isocenter
+isocenter
+2.5 cm posterior
+Head/Neck
+isocenter
+4.0 cm posterior
+CShape (easy)
+isocenter
+2.5 cm anterior
+CShape (hard)
+isocenter
+2.5 cm anterior
+mean
+standard deviation
+confidence limit = (100 - mean) + 1.96 σ
+
+% gamma pass
+
+Field-by-Field % Gamma pass
+Field
+1
+2
+3
+4
+5
+6
+7
+8
+9
+mean
+
+MultiTarget
+
+Prostate
+
+overall mean
+standard deviation
+confidence limit = (100 - mean) + 1.96 σ
+
+Head/Neck
+
+CShape (easy)
+
+CShape (hard)
+
+

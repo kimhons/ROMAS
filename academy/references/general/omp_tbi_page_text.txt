@@ -1,0 +1,329 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip_to_content
+[Oncology_Medical_Physics][Oncology_Medical_Physics]
+  Main Menu
+    * Practice_Tests
+          o Sample_Quiz_(No_Login_Required)
+          o ABR_Part_1_Practice_Tests
+          o ABR_Part_2_Practice_Tests
+          o ABR_Part_3:_Therapy_Oral_Exam
+          o ABR_Radiation_Oncology_Qualifying_Exam_Tests
+    * Radiation_Physics
+          o Basic_Radiation_Physics
+                # Introduction_to_Radiation
+                # Radiation_Interactions
+                # Radioactive_Decay_Modes
+                # Decay_Statistics
+          o Math,_Statistics,_and_Informatics
+                # Counting_Statistics
+                # Accuracy,_Precision,_and_Error
+                # Diagnostic_Probabilities
+                # Informatics
+          o Radiation_Measurement
+                # Quantifying_Radiation
+                # Identifying_Radionuclides
+                # Bragg-Gray_Cavity_Theory
+                # Detection_Efficiency_and_Dead_Time
+          o Common_Dosimeters
+                # Ionization_Chamber_Design_and_Operation
+                # Geiger_Counters
+                # Diode_Detectors
+                # Film_Dosimeters
+                # Luminescent_Dosimeters
+                # MOSFET_Detectors
+                # Neutron_Detectors
+                # Plastic_Scintillators
+          o Radiobiology
+                # Principles_of_Radiobiology
+                # Biological_Responses_to_Radiation
+                # Statistical_Radiobiology
+          o Radiation_Dose_Distributions
+                # Photon_Dose_Distributions
+                # Electron_Dose_Distributions
+    * Medical_Imaging
+          o General_Medical_Imaging_Topics
+                # Kilovoltage_X-ray_Generation
+                # Image_Quality_Metrics
+                # Shielding_for_Imaging_Systems
+          o Computed_Tomography
+                # CT_Design_and_Operation
+                # CT_Dosimetry
+                # CT_Artifacts
+          o Magnetic_Resonance_Imaging
+                # MRI_Design_and_Operation
+                # MRI_Contrast_Weighting
+                # MRI_Artifacts
+          o Nuclear_Medical_Physics
+                # Radiopharmaceuticals
+                # Medical_Radionuclide_Production
+                # MIRD_Internal_Dosimetry
+                # Scintillation_Camera_Design_and_Operation
+                # Nuclear_Tomographic_Imaging
+          o Ultrasound
+                # The_Physics_of_Sound
+                # Ultrasound_Design_and_Operation
+                # Ultrasound_Image_Quality
+                # Ultrasound_Artifacts
+    * Radiation_Therapy
+          o Clinical_Linear_Accelerators
+                # Introduction_to_Clinical_Linear_Accelerators
+                # Linac_Subsystem_Design
+                # NCRP-151:_Linac_Vault_Shielding
+                # TG-51:_Linac_Dosimetry
+                # Small_Field_Dosimetry
+                # TG-21:_Historical_Linac_Dosimetry
+                # TG-142:_Linac_Quality_Assurance
+          o Alternative_Treatment_Machines
+                # Cobalt-60_Teletherapy_Machine
+                # Cyclotrons
+                # Van_De_Graaff_Accelerators
+          o Simulation_and_Imaging
+                # Respiratory_Motion_Management
+                # Image_Registration
+                # Determining_Target_Margins
+          o External_Beam_Treatment_Planning
+                # Basic_Photon_Treatment_Planning
+                # Monitor_Unit_Hand_Calculations
+                # Introduction_to_Treatment_Planning_Systems
+                # Dose_Calculation_Algorithms
+                # TPS_Optimization_Algorithms
+                # Treatment_Planning_System_Commissioning_and_Quality_Assurance
+                # IMRT_Quality_Assurance
+          o Disease_Specific_Radiotherapy
+                # Total_Body_Irradiation
+                # Total_Skin_Electron_Therapy
+                # Radiobiology_of_Radiosurgery
+                # Stereotactic_Radiosurgery
+                # Stereotactic_Body_Radiation_Therapy
+          o Brachytherapy
+                # Low_Dose_Rate_Brachytherapy
+                # High_Dose_Rate_Brachytherapy
+                # Breast_Brachytherapy
+                # Gynecological_Brachytherapy
+                # Hepatic_Brachytherapy
+                # Intravascular_Brachytherapy
+                # Ocular_Brachytherapy
+                # Prostate_Brachytherapy
+                # Superficial_Brachytherapy
+                # Thyroid_I-131_Therapy
+                # Brachytherapy_Dosimetry
+                # Brachytherapy_Quality_Assurance
+          o Safety_and_Regulations
+                # Nuclear_Regulations,_NRC_10_CFR
+                # Radiation_Limits:_NCRP-116
+    * Log_In
+[Unknown INPUT type]
+****** Total Body Irradiation ******
+***** Overview *****
+Total Body Irradiation (TBI) involves giving a high uniform dose to the whole
+body using photon fields and is the subject of AAPM Task Group 29. TBI is most
+commonly prescribed as preparation for hematopoietic cell transplant (HCT)
+commonly referred to as bone marrow or stem cell transplant. TBI improves HCT
+by suppression of the immune system, thereby reducing the likelihood of Graft
+Versus Host Disease. TBI is also able to eradicate the malignant hematopoietic
+cells or those effected by genetic disorders.
+*** Downloads ***
+AAPM_TG-29:_The_Physical_Aspects_of_Total_and_Half_Body_Irradiation (External
+link)
+***** Treatment Technique *****
+**** Common Prescriptions ****
+Prescriptions are commonly specified as a dose to a point (typically patient
+center at level of umbilicus).
+    * Dose limits to other locations specified explicitly.
+    * Specify dose rate, especially for single and hypofractionated schemes.
+    * Clinical dose uniformity of Â±10% at mid-line is acceptable.
+*** Low Dose TBI ***
+Prescription:Â 2Gy in single fraction
+Intent:Â Cytoreduction
+Associated Diseases
+    * Eliminating malignant cells
+          o Leukemias
+          o Lymphomas
+    * Eliminating cells with genetic disorders
+          o Fanconiâs Anemia
+          o Thalessemia Major
+*** High Dose TBI ***
+Prescription:Â 
+    * 4-10Gy in single fraction
+    * 10-14Gy in 8 fractions
+          o Typically delivered BID (twice daily)
+Intent:Â Immunosuppression
+Killing lymphocytes and destroy bone marrow reduces graft rejection in bone
+marrow transplant.
+Associated Diseases:Â Aplastic Anemia
+**** Patient Positioning ****
+    * Anterior-Posterior treatments allow better uniformity and ease of lung
+      sparing.
+          o May be treated in standing position with support or decubitus
+            (lying on side).
+    * Lateral field treatments with patient lying down more comfortable and
+      require less specialized immobilization.
+          o Compensators will typically be used for the head and ankles.
+[Lateral_lying_position.][Lateral_lying_position.]
+Lateral lying position.
+[Decubitus_position_with_lung_shielding_for_TBI_treatment.][Decubitus_position
+with_lung_shielding_for_TBI_treatment.]
+Decubitus position with lung shielding for TBI treatment.
+[Standing_position_for_anterior-posterior_bilateral_total_body_irradiation.]
+[Standing_position_for_anterior-posterior_bilateral_total_body_irradiation.]
+Standing AP-PA position.
+**** Potential Clinical Complications ****
+    * Lung toxicity is a major concern with high dose TBI. This is the reason
+      for reduced dose rate and lung blocking.
+    * Nausea, vomiting, and diarrhea are expected.
+    * Interstitial pneumanitis is a potentially lethal side effect the risk of
+      which may be greatly reduced by fractionation.
+Key Point: TBI involves delivering a potentially fatal dose of radiation. Even
+low dose TBI of 2Gy whole body dose is sufficient to induceÂ Hematopoietic
+SyndromeÂ while high dose TBI is sufficient to induceÂ Gastrointestinal
+Syndrome.
+***** Accelerator Settings *****
+    * Dose rates kept low (5-10cGy/minute at depth of maximum dose).
+          o This reduces normal tissue toxicity especially for the lungs.
+          o Low dose rate becomes less critical for highly fractionated
+            regimens.
+    * Energy: 10-18MV
+          o Higher energy reducesÂ Tissue Lateral Effect thereby improving
+            uniformity.
+          o Higher energy also reduces skin dose which may be undesirable.
+    * An extended SSD is typically used
+          o This improves homogeneity by reducing impact of inverse square law
+            on percent depth dose.
+    * Gantry is positioned at 90 degree to produce a horizontal field.
+    * Collimator rotation (typically 45 degrees) may be needed to accommodate
+      patient geometry.
+[Higher_energy_is_generally_improves_homogeneity._Source:_AAPM_TG-29_Figure_2.]
+[Higher_energy_is_generally_improves_homogeneity._Source:_AAPM_TG-29_Figure_2.]
+Higher energy is generally improves homogeneity. Source: AAPM TG-29 Figure 2.
+**** Scatter Plate ****
+An acrylic scattering plate, sometimes referred to as a spoiler, may be placed
+in front of the patient to increase skin dose. This is especially valuable for
+treatments using very high photon energy.
+**** Compensators ****
+Compensating filters, commonly referred to as compensators, are attenuating
+material places in the beam path to compensate for differences in patient
+thickness.
+Compensators are distinguished fromÂ compensating bolusÂ because they are not
+placed in direct contact with the patient. As a result, compensators allow
+greater skin sparing than compensating bolus. Additionally, compensating
+filters are typically used in photon treatments.
+Compensator facts
+    * Compensators are typically made of lead, copper, or acrylic.
+    * Compensators will harden photon beams and increase scatter dose.
+    * Compensators can have finer resolution than an MLC.
+The thickness of compensator material required may be estimated as in the below
+equation.
+    * tÂ is the thickness of the compensator material.
+    * Î¼Â is the attenuation coefficient of the compensator material.
+    * TPRÂ is the tissue-phantom ratio at the point of interest.
+[Illustration_of_compenator_use_in_lateral_field_total_body_irratiation.
+Source:_AAPM_TG-29.][Illustration_of_compenator_use_in_lateral_field_total_body
+irratiation._Source:_AAPM_TG-29.]
+Illustration of compenator use in lateral field total body irratiation. Source:
+AAPM TG-29.
+Key Point: The attenuation coefficient of a compensator used in TBIâs large
+field geometry will be different than the attenuation coefficient taken in
+standard narrow field geometry. Therefore, attenuation coefficients should be
+measured in the TBI setup.
+***** Dosimetry *****
+**** Monitor Unit Calculations ****
+EitherÂ percent depth doseÂ (PDD) orÂ tissue maximum ratioÂ (TMR) may be used
+to compute monitor units.
+    * MUÂ is the number of monitor units delivered per beam for parallel
+      opposed TBI treatments.
+          o The 2 in the denominator divides up the total MU between each beam.
+    * OÂ is the output factor. Unit: cGy/MU
+    * ScÂ is theÂ collimator scatter factor.
+          o Sc,_should_be_based_on_the_jaw_opening.
+    * SpÂ is theÂ phantom scatter factor.
+          o Sp,_should_be_based_on_the_phantom_size_which_may_be_determined_by
+            measuring_the_dimensions_of_the_patientâs_thorax.
+    * SCDÂ is the source-to-calibration distance (i.e. the distance from the
+      source to the point where the output factor was measured).
+    * SMDÂ is the source-to-midline distance (i.e. the distance from the source
+      to the midline of the patient under TBI treatment).
+Key Point: Output and scatter correction factors should ideally be measured
+using TBI geometry (i.e. at extended treatment distance) but may also be
+calculated from nominal beam data (i.e. at 100cm SCD). It has been shown that
+calculations based on nominal beam data vary by less than 1.5% from
+calculations based on beam data generated in TBI geometry.Â .
+**** Dose Monitoring ****
+Dose monitoring is necessary to ensure proper prescriptive dosing. TLDs, OSLDs,
+or diode detectors are appropriate for treatment dose monitoring. Port films
+may also be used to assure alignment of compensators and blocks.
+    * Entrance and exit dosimeter pairs may be used to determine dose to mid-
+      line
+          o May either take simple mean or, preferably, apply the known depth
+            dose curve to determine mid-line dose.
+    * Placing dosimeters along mid-line is preferred when possible
+          o E.g. In mouth, between legs
+***** Navigation *****
+**** Previous_Page ****
+Treatment Planning
+Table of Contents
+Jump_to_Chapter
+**** Main_Page ****
+Disease Specific Radiotherapy
+Table of Contents
+Jump_to_Chapter
+**** Next_Page ****
+Total Skin Electron Therapy
+Jump_to_Chapter
+**** Not a Member? ****
+Sign up today to get access to hundreds of ABR style practice questions.
+Join_Today!
+
+**** Contact Form ****
+Let us know what's on your mind.
+Your name Please enter your name. [fl-name             ]
+Your email Please enter a valid email. [Unknown INPUT type]
+Send
+Message failed. Please try again.
+Thanks for your message! Weâll be in touch soon.
+
+Additional Information
+Contact_Information
+Image_Use_and_Copyright
+Legal_Disclaimer
+Â© 2017-2024 OncologyMedicalPhysics.com | support@oncologymedicalphysics.com
+
+Scroll_To_Top

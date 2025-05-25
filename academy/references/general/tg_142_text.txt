@@ -1,0 +1,1782 @@
+Task Group 142 report: Quality assurance of medical acceleratorsa…
+Eric E. Kleinb兲
+Washington University, St. Louis, Missouri
+
+Joseph Hanley
+Hackensack University Medical Center, Hackensack, New Jersey
+
+John Bayouth
+University of Iowa, Iowa City, Iowa
+
+Fang-Fang Yin
+Duke University, Durham, North Carolina
+
+William Simon
+Sun Nuclear Corp., Melbourne, Florida
+
+Sean Dresser
+Northside Hospital, Atlanta, Georgia
+
+Christopher Serago
+Mayo Clinic, Jacksonville, Florida
+
+Francisco Aguirre
+M. D. Anderson Cancer Center, Houston, Texas
+
+Lijun Ma
+University of California, San Francisco, San Francisco, California
+
+Bijan Arjomandy
+M. D. Anderson Cancer Center, Houston, Texas
+
+Chihray Liu
+University of Florida, Gainesville, Florida
+
+Consultants:
+Carlos Sandin
+Elekta Oncology, Crawley, United Kingdom
+
+Todd Holmes
+Varian Medical Systems, Palo Alto, California
+
+共Received 24 February 2009; revised 8 July 2009; accepted for publication 8 July 2009;
+published 17 August 2009兲
+The task group 共TG兲 for quality assurance of medical accelerators was constituted by the American
+Association of Physicists in Medicine’s Science Council under the direction of the Radiation
+Therapy Committee and the Quality Assurance and Outcome Improvement Subcommittee. The task
+group 共TG-142兲 had two main charges. First to update, as needed, recommendations of Table II of
+the AAPM TG-40 report on quality assurance and second, to add recommendations for asymmetric
+jaws, multileaf collimation 共MLC兲, and dynamic/virtual wedges. The TG accomplished the update
+to TG-40, specifying new test and tolerances, and has added recommendations for not only the new
+ancillary delivery technologies but also for imaging devices that are part of the linear accelerator.
+The imaging devices include x-ray imaging, photon portal imaging, and cone-beam CT. The TG
+report was designed to account for the types of treatments delivered with the particular machine.
+For example, machines that are used for radiosurgery treatments or intensity-modulated radiotherapy 共IMRT兲 require different tests and/or tolerances. There are specific recommendations for
+MLC quality assurance for machines performing IMRT. The report also gives recommendations as
+to action levels for the physicists to implement particular actions, whether they are inspection,
+scheduled action, or immediate and corrective action. The report is geared to be flexible for the
+physicist to customize the QA program depending on clinical utility. There are specific tables
+according to daily, monthly, and annual reviews, along with unique tables for wedge systems, MLC,
+and imaging checks. The report also gives specific recommendations regarding setup of a QA
+program by the physicist in regards to building a QA team, establishing procedures, training of
+personnel, documentation, and end-to-end system checks. The tabulated items of this report have
+4197
+
+Med. Phys. 36 „9…, September 2009
+
+0094-2405/2009/36„9…/4197/16/$25.00
+
+© 2009 Am. Assoc. Phys. Med.
+
+4197
+
+4198
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4198
+
+been considerably expanded as compared with the original TG-40 report and the recommended
+tolerances accommodate differences in the intended use of the machine functionality 共non-IMRT,
+IMRT, and stereotactic delivery兲. © 2009 American Association of Physicists in Medicine.
+关DOI: 10.1118/1.3190392兴
+Key words: accelerator, QA, quality assurance, radiotherapy
+TABLE OF CONTENTS
+I. INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+I.A. Purpose. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+I.B. Background. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+II. QUALITY ASSURANCE OF MEDICAL
+ACCELARATORS. . . . . . . . . . . . . . . . . . . . . . . . . . . 4199
+II.A. General. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4199
+II.B. Test frequencies. . . . . . . . . . . . . . . . . . . . . . . . 4204
+II.C. Guidelines for tolerance values. . . . . . . . . . . . 4204
+II.C.1. Acceptance testing procedure standards... 4204
+II.C.2. Commissioning baseline values. . . . . . . . . 4204
+II.C.3. Tolerances and action levels. . . . . . . . . . . . 4205
+II.C.4. Uncertainties, repeatability, and precision.. 4205
+II.D. Ancillary treatment devices not in TG-40.... 4206
+II.D.1. Asymmetric jaws. . . . . . . . . . . . . . . . . . . . . 4206
+II.D.2. Dynamic/virtual/universal wedge. . . . . . . . 4206
+II.D.3. MLC. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4206
+II.D.4. TBI/TSET. . . . . . . . . . . . . . . . . . . . . . . . . . . 4207
+II.D.5. Radiographic imaging. . . . . . . . . . . . . . . . . 4207
+II.D.6. Respiratory gating. . . . . . . . . . . . . . . . . . . . 4208
+III. SUMMARY OF RECOMMENDATIONS/
+IMPLEMENTATION SCHEME. . . . . . . . . . . . . . . 4209
+I. INTRODUCTION
+I.A. Purpose
+
+The AAPM TG-401 report published in 1994 is a widely
+used and referenced document which includes recommendations for general quality assurance 共QA兲 tests for medical
+linear accelerators. Since the publication of TG-40, several
+new technologies have been developed and are now commonly used in clinical practice. These technologies include
+multileaf collimation 共MLC兲, asymmetric jaws, dynamic and
+virtual wedges, and electronic portal imaging devices
+共EPIDs兲. Image guidance devices such as cone-beam CT
+共CBCT兲, static kilovoltage 共kV兲 imaging, and respiratory
+gating were rarely used in 1994. In addition, TG-40 did not
+consider the demands placed on an accelerator by procedures
+such as stereotactic radiosurgery 共SRS兲, stereotactic body radiation therapy 共SBRT兲, total body photon irradiation 共TBI兲,
+and intensity-modulated radiotherapy 共IMRT兲 treatment.
+Also, the quality of linear accelerators in terms of accuracy
+and precision has improved in recent years, allowing for procedures such as SRS, SBRT, and IMRT.
+The purpose of this report is to build upon the recommendations of TG-40 for QA of medical linear accelerators including the before mentioned technologies 共MLC, newer
+wedge systems, asymmetric jaws, imaging systems, and resMedical Physics, Vol. 36, No. 9, September 2009
+
+piratory systems兲 and procedures such as SRS, SBRT, TBI,
+and IMRT. During the development of this report, investigation of technologies that deliver MLC-based IMRT with simultaneous gantry rotation had just begun, and therefore QA
+for these technologies is not included in the report.
+The recommendations of this task group are not intended
+to be used as regulations. These recommendations are guidelines for QMPs to use and appropriately interpret for their
+individual institution and clinical setting. Each institution
+may have site-specific or state mandated needs and requirements which may modify their usage of these recommendations.
+I.B. Background
+
+The underlying principle behind TG-40 was the International Commission on Radiation Units and Measurements2
+共ICRU兲 recommendation that the dose delivered to the patient be within ⫾5% of the prescribed dose. Taking into consideration the many steps involved in delivering dose to a
+target volume in a patient, each step must be performed with
+accuracy better than 5% to achieve this recommendation.
+The goal of a QA program for linear accelerators is to
+assure that the machine characteristics do not deviate significantly from their baseline values acquired at the time of
+acceptance and commissioning.3 There are several publications that describe procedures and conditions for acceptance
+testing and commissioning, and the reader is referred to
+these: The International Electrotechnical Commission4,5
+共IEC兲, American Association of Physicists in Medicine3,6,7
+共AAPM兲, and American College of Medical Physics8
+共ACMP兲. Many of these baseline values are entered into
+treatment planning systems to characterize and/or model the
+treatment machine, and therefore can directly affect treatment plans calculated for every patient treated on that machine. Deviation from the baseline values could thus result in
+suboptimal treatment of patients. Machine parameters can
+deviate from their baseline values as a result of many reasons. There can be unexpected changes in machine performance due to machine malfunction, mechanical breakdown,
+physical accidents, or component failure. Major component
+replacement 共waveguide, bending magnet, etc.兲 may also alter machine performance from the original parameters. In
+addition there can be gradual changes as a result of aging of
+the machine components. These patterns of failure must be
+considered when establishing a periodic QA program.
+It is not the goal of this report to describe the experimental techniques for performing QA tests, as these tests are
+described in a number of publications.9–35 We also realize the
+increased demands on staff in the current healthcare environ-
+
+4199
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4199
+
+TABLE I. Daily.
+Machine-type tolerance
+Procedure
+
+Non-IMRT
+
+IMRT
+
+SRS/SBRT
+
+Dosimetry
+X-ray output constancy 共all energies兲
+Electron output constancy 共weekly,
+except for machines with unique
+e-monitoring requiring daily兲
+
+3%
+
+Mechanical
+Laser localization
+Distance indicator 共ODI兲 @ iso
+Collimator size indicator
+
+2 mm
+2 mm
+2 mm
+
+1.5 mm
+2 mm
+2 mm
+
+1 mm
+2 mm
+1 mm
+
+Safety
+Door interlock 共beam off兲
+Door closing safety
+Audiovisual monitor共s兲
+Stereotactic interlocks 共lockout兲
+Radiation area monitor 共if used兲
+Beam on indicator
+
+ment and recognize the fact that the tests should be simple,
+rapid, and reproducible. Since the publication of TG-40 there
+have been many QA products designed around the TG-40
+table that make execution of these tests more efficient.
+TG-40 stated that the test procedures should be able to distinguish parameter changes smaller than tolerance or action
+levels. A definition of repeatability is included in Sec. II C.
+As noted in TG-40, the QA program for linear accelerators is very much a team effort, and the responsibilities of
+performing various tasks are typically divided among physicists, dosimetrists, therapists, and accelerator engineers.
+However, we reiterate the recommendation that the overall
+responsibility for a linear accelerator QA program be assigned to one individual: The qualified medical physicist
+共QMP兲.
+The foundation of linear accelerator based QA lies in
+Table II of TG-40. Since its publication linear accelerators
+have changed not only with respect to their physical construction but also in their role as treatment devices. Asymmetric jaws, dynamic/virtual wedges, and multileaf collimators have been added. Intensity-modulated radiation therapy
+and image-guided radiation therapy 共IGRT兲 have increased
+demands on the accuracy required of the linear accelerator
+for precise dose delivery. The types of treatments delivered
+with the machine should also have a role in determining the
+QA program that is appropriate for that treatment machine.
+For example, machines that are used for SRS/SBRT treatments, TBI, or IMRT require different tests and/or tolerances. Some older machines may be upgraded 共MLCs, portal
+vision兲 in order to perform IMRT or stereotactic radiotherapy. This will change the machine category for testing
+requirements. Solid compensator based IMRT is an option
+for some machines that are not IMRT capable. Many of the
+mechanical and dosimetric tests that apply to IMRT maMedical Physics, Vol. 36, No. 9, September 2009
+
+NA
+
+Functional
+Functional
+Functional
+NA
+Functional
+Functional
+
+Functional
+
+chines will therefore be applied to these machines and in
+most cases, specific for the particular manufacturer.
+And finally, this report does give recommendations in regards to imaging devices that are connected to the accelerator and with gating as the accelerators operation can be tied
+to the respiratory system’s signals. This was necessary as
+safety, mechanical, and operational attributes of imaging and
+gating are tied to the accelerator.
+II. QUALITY ASSURANCE OF MEDICAL
+ACCELARATORS
+II.A. General
+
+The recommendations of this report are summarized in six
+tables. The first three tables, Table I 共daily兲, Table II
+共monthly兲, and Table III 共annual兲, essentially replace Table II
+of TG-40. However, as is evident, the scope of testing and
+the number of variables have increased compared to TG-40.
+Each table has specific recommendations based on the nature
+of the treatments delivered on the individual machine. The
+tables are differentiated into non-IMRT or nonstereotactic
+machines, IMRT machines, and IMRT/stereotactic machines.
+There are also explicit recommendations based on the equipment manufacturer as a result of the design characteristics of
+those machines. The recommendations in each table utilize
+the QA categories used in Table II of TG-40, dosimetry, mechanical, and safety, while adding a new category: Respiratory gating. The tests for asymmetric jaws and TBI/total skin
+electron therapy 共TSET兲 are contained in Tables II and III.
+Three additional tables were created for dynamic/virtual/
+universal wedges 共Table IV兲, MLC 共Table V兲, and imaging
+共Table VI兲. All of these ancillary devices not covered in
+TG-40 are discussed in Sec. II D. Test frequencies for each
+test are listed in the tables and the rationale for them is dis-
+
+4200
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4200
+
+TABLE II. Monthly.
+Machine-type tolerance
+Procedure
+
+Non-IMRT
+
+IMRT
+
+SRS/SBRT
+
+Dosimetry
+X-ray output constancy
+Electron output constancy
+Backup monitor chamber constancy
+Typical dose ratea output constancy
+
+2%
+NA
+
+Photon beam profile constancy
+Electron beam profile constancy
+Electron beam energy constancy
+
+2% 共@ IMRT dose rate兲
+
+2% 共@ stereo dose rate, MU兲
+
+1%
+1%
+2%/2 mm
+
+Mechanical
+Light/radiation field coincidenceb
+Light/radiation field coincidenceb 共asymmetric兲
+Distance check device for lasers compared with
+front pointer
+Gantry/collimator angle indicators
+共@ cardinal angles兲 共digital only兲
+Accessory trays 共i.e., port film graticle tray兲
+Jaw position indicators 共symmetric兲c
+Jaw position indicators 共asymmetric兲d
+Cross-hair centering 共walkout兲
+Treatment couch position indicatorse
+Wedge placement accuracy
+Compensator placement accuracyf
+Latching of wedges, blocking trayg
+Localizing lasers
+
+2 mm or 1% on a side
+1 mm or 1% on a side
+1mm
+1.0°
+
+2 mm/1°
+
+⫾2 mm
+
+2 mm
+2 mm
+1 mm
+1 mm
+2 mm/1°
+2 mm
+1 mm
+Functional
+⫾1 mm
+
+1 mm/0.5°
+
+⬍ ⫾ 1 mm
+
+Safety
+Laser guard-interlock test
+
+Functional
+
+Respiratory gating
+Beam output constancy
+Phase, amplitude beam control
+In-room respiratory monitoring system
+Gating interlock
+
+2%
+Functional
+Functional
+Functional
+
+a
+
+Dose monitoring as a function of dose rate.
+Light/radiation field coincidence need only be checked monthly if light field is used for clinical setups.
+c
+Tolerance is summation of total for each width or length.
+d
+Asymmetric jaws should be checked at settings of 0.0 and 10.0.
+e
+Lateral, longitudinal, and rotational.
+f
+Compensator based IMRT 共solid compensators兲 require a quantitative value for tray position 共wedge or blocking tray slot兲 set at a maximum deviation of 1.0
+mm from the center of the compensator tray mount and the cross hairs.
+g
+Check at collimator/gantry angle combination that places the latch toward the floor.
+b
+
+cussed in Sec. II C. This task group 共TG兲 considers that all of
+the tests included in the tables are important for ensuring the
+equipment to be suitable for high quality and safe radiation
+treatments. For example, in reference to physical wedge
+placement accuracy, Table II notes a monthly placement test
+with an accuracy of 2 mm. Deviations greater than 2 mm
+could result in errors as much as 2% at clinically relevant
+depths.
+A consistent beam profile is an important quantity for accurate and reproducible dose delivery in radiotherapy. Beam
+uniformity was addressed in TG-40 Table II with flatness
+constancy, i.e., consistent flatness and symmetry tolerance
+Medical Physics, Vol. 36, No. 9, September 2009
+
+levels. Constancy is specifically associated with flatness;
+however, symmetry tolerance can be interpreted as either absolute, regardless of reflection reference, or as constant values, taking into account the reflection reference, i.e., left to
+right or right to left. We believe this needs further interpretation in order to detect excessive changes in relative symmetry via sign change that would still fall within the tolerance of absolute symmetry value. For example, a cross-plane
+right/left symmetry drift from +3% to ⫺3% is within the
+tolerance of TG-40 Table II but constitutes a beam shape
+change of 6%. Therefore, the monthly and annual tolerance
+values have been edited to take this into account and still
+
+4201
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4201
+
+TABLE III. Annual.
+Machine-type tolerance
+Procedure
+
+Non-IMRT
+
+IMRT
+
+NA
+
+1%
+⫾1%
+1%
+⫾1%
+NA
+
+SRS/SBRT
+
+Dosimetry
+X-ray flatness change from baseline
+X-ray symmetry change from baseline
+Electron flatness change from baseline
+Electron symmetry change from baseline
+SRS arc rotation mode
+共range: 0.5–10 MU/deg兲
+
+X-ray/electron output calibration 共TG-51兲
+Spot check of field size dependent
+output factors for x ray
+共two or more FSs兲
+Output factors for electron applicators
+共spot check of one applicator/energy兲
+X-ray beam quality 共PDD10 or TMR20
+10兲
+Electron beam quality 共R50兲
+Physical wedge transmission
+factor constancy
+X-ray monitor unit linearity
+共output constancy兲
+Electron monitor unit linearity
+共output constancy兲
+X-ray output constancy vs dose rate
+X-ray output constancy vs gantry angle
+Electron output constancy vs
+gantry angle
+Electron and x-ray off-axis factor
+constancy vs gantry angle
+Arc mode 共expected MU, degrees兲
+TBI/TSET mode
+PDD or TMR and OAF constancy
+TBI/TSET output calibration
+TBI/TSET accessories
+
+Monitor units set vs delivered:
+1.0 MU or 2% 共whichever is greater兲
+Gantry arc set vs delivered:
+1.0° or 2% 共whichever is greater兲
+
+⫾1% 共absolute兲
+2% for field size ⬍4 ⫻ 4 cm2, 1% ⱖ4 ⫻ 4 cm2
+
+⫾2% from baseline
+⫾1% from baseline
+⫾1 mm
+⫾2%
+⫾2% ⱖ5 MU
+
+⫾5% 共2–4 MU兲, ⫾2% ⱖ5 MU
+
+⫾5% 共2–4 MU兲,
+⫾2% ⱖ5 MU
+
+⫾2% ⱖ5 MU
+⫾2% from baseline
+⫾1% from baseline
+⫾1% from baseline
+⫾1% from baseline
+⫾1% from baseline
+Functional
+1% 共TBI兲 or 1 mm PDD shift 共TSET兲 from baseline
+2% from baseline
+2% from baseline
+
+Mechanical
+Collimator rotation isocenter
+Gantry rotation isocenter
+Couch rotation isocenter
+Electron applicator interlocks
+Coincidence of radiation and
+mechanical isocenter
+Table top sag
+Table angle
+Table travel maximum range
+movement in all directions
+Stereotactic accessories, lockouts, etc.
+
+⫾2 mm from
+baseline
+
+⫾1 mm from baseline
+⫾1 mm from baseline
+⫾1 mm from baseline
+Functional
+⫾2 mm from baseline
+
+⫾1 mm from baseline
+
+2 mm from baseline
+1°
+⫾2 mm
+NA
+
+NA
+
+Safety
+Follow manufacturer’s test procedures
+
+Functional
+
+Respiratory gating
+Beam energy constancy
+Temporal accuracy of phase/amplitude
+gate on
+Calibration of surrogate for respiratory
+phase/amplitude
+Interlock testing
+
+Medical Physics, Vol. 36, No. 9, September 2009
+
+2%
+100 ms of expected
+100 ms of expected
+Functional
+
+Functional
+
+4202
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4202
+
+TABLE IV. Dynamic/universal/virtual wedges.
+Dynamic-including EDW 共Varian兲, virtual 共Siemens兲, universal 共Elekta兲 wedge quality assurance
+Tolerance
+Frequency
+
+Procedure
+
+Dynamic
+
+Daily
+Monthly
+
+Morning check-out run for one angle
+Wedge factor for all energies
+
+Annual
+
+Check of wedge angle for 60°, full field
+and spot check for intermediate angle, field size
+
+Universal
+
+Virtual
+
+Functional
+C.A. axis 45° or 60° WF
+5% from unity,
+C.A. axis 45° or 60° WF
+共within 2%兲a
+otherwise 2%
+共within 2%兲a
+Check of off-center ratios @ 80% field width @ 10 cm to be within 2%
+
+a
+
+Recommendation to check 45° if angles other than 60° are used.
+
+maintain the TG-40 intent. The tolerance values are also
+stated such that new developments in treating beams without
+flattening filters are considered.
+In our updated tolerance table, the monthly tolerance values are specific to a consistent beam shape, where baseline
+off-axis factors 共OAFs兲 were measured with a QA device
+immediately following beam commissioning or updated by
+the annual review. Ongoing QA measurements are compared
+to the baseline off-axis factors. Chosen point locations that
+fall within the core of the field 关as an example four points off
+axis in multiple directions within 80% of an agreed upon
+field size 共FS兲兴 should have an average of their absolute values within the tolerance value in Table II. This is expressed
+as
+N
+
+冏
+
+冏
+
+TPL − BPL
+1
+· 100% ⱕ tolerance%,
+·兺
+N L=1
+BPL
+where TPL and BPL are off-axis ratios at test and baseline
+points, respectively, at off-axis point L, N is the number of
+
+off-axis points, and TPL = 共MPL / MPC兲 where M represents
+the measurement value and C is the central axis measurement. Similarly, the baseline points are represented by BPL
+= 共MBPL / MBPC兲
+The annual table in TG-40 included a 2% tolerance for
+“off-axis factor constancy,” with recommended testing at
+various gantry angles, but there was no mention of flatness or
+symmetry. We have added this as a profile comparison to
+baseline commissioning data in a large field size; this increases the sensitivity to detect beam shape changes that result from a beam energy change or target change that may be
+due to long term aging effects. The recommended field size
+is 30⫻ 30 cm2 or greater for conventional x rays; the largest
+field size for special x-ray applications if ⬍30⫻ 30 cm2 and
+the largest applicator for electrons. The flatness and symmetry values in the center 80% FS of the measured profile, as
+defined during machine commissioning, should not deviate
+from the baseline by more than the tolerance values in Table
+III. We believe that this test expansion is justified since the
+
+TABLE V. Multileaf collimation 共with differentiation of IMRT vs non-IMRT machines兲.
+Procedure
+
+Tolerance
+Weekly 共IMRT machines兲
+
+Qualitative test 共i.e., matched segments, aka “picket
+fence”兲
+
+Visual inspection for discernable deviations such as an
+increase in interleaf transmission
+Monthly
+
+Setting vs radiation field for two patterns 共non-IMRT兲
+Backup diaphragm settings 共Elekta only兲
+Travel speed 共IMRT兲
+Leaf position accuracy 共IMRT兲
+
+2 mm
+2 mm
+Loss of leaf speed ⬎0.5 cm/ s
+1 mm for leaf positions of an IMRT field for four
+cardinal gantry angles. 共Picket fence test may be used,
+test depends on clinical planning-segment size兲
+Annually
+
+MLC transmission 共average of leaf and interleaf
+transmission兲, all energies
+Leaf position repeatability
+MLC spoke shot
+Coincidence of light field and x-ray field 共all energies兲
+Segmental IMRT 共step and shoot兲 test
+Moving window IMRT 共four cardinal gantry angles兲
+
+Medical Physics, Vol. 36, No. 9, September 2009
+
+⫾0.5% from baseline
+⫾1.0 mm
+ⱕ1.0 mm radius
+⫾2.0 mm
+⬍0.35 cm max. error RMS, 95% of error counts
+⬍0.35 cm
+⬍0.35 cm max. error RMS, 95% of error counts
+⬍0.35 cm
+
+4203
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4203
+
+TABLE VI. Imaging.
+Application-type tolerance
+Procedure
+
+non-SRS/SBRT
+
+SRS/SBRT
+
+Functional
+ⱕ2 mm
+ⱕ2 mm
+
+Functional
+ⱕ1 mm
+ⱕ1 mm
+
+Functional
+ⱕ2 mm
+ⱕ1 mm
+
+Functional
+ⱕ1 mm
+ⱕ1 mm
+
+ⱕ2 mm
+
+ⱕ1 mm
+
+ⱕ2 mm
+Baselinec
+Baseline
+Baseline
+
+ⱕ2 mm
+Baseline
+Baseline
+Baseline
+
+ⱕ2 mm
+
+ⱕ1 mm
+
+ⱕ2 mm
+Baseline
+Baseline
+Baseline
+
+ⱕ1 mm
+Baseline
+Baseline
+Baseline
+
+ⱕ2 mm
+Baseline
+Baseline
+Baseline
+Baseline
+
+ⱕ1 mm
+Baseline
+Baseline
+Baseline
+Baseline
+
+⫾5 mm
+Baseline
+
+⫾5 mm
+Baseline
+
+Baseline
+Baseline
+
+Baseline
+Baseline
+
+Baseline
+
+Baseline
+
+Dailya
+Planar kV and MV (EPID) imaging
+Collision interlocks
+Positioning/repositioning
+Imaging and treatment coordinate coincidence
+共single gantry angle兲
+Cone-beam CT (kV and MV)
+Collision interlocks
+Imaging and treatment coordinate coincidence
+Positioning/repositioning
+Monthly
+Planar MV imaging (EPID)
+Imaging and treatment coordinate coincidence
+共four cardinal angles兲
+Scalingb
+Spatial resolution
+Contrast
+Uniformity and noise
+Planar kV imagingd
+Imaging and treatment coordinate coincidence
+共four cardinal angles兲
+Scaling
+Spatial resolution
+Contrast
+Uniformity and noise
+Cone-beam CT (kV and MV)
+Geometric distortion
+Spatial resolution
+Contrast
+HU constancy
+Uniformity and noise
+Annual (A)
+Planar MV imaging (EPID)
+Full range of travel SDD
+Imaging dosee
+Planar kV imaging
+Beam quality/energy
+Imaging dose
+Cone-beam CT (kV and MV)
+Imaging dose
+a
+
+Or at a minimum when devices are to be used during treatment day.
+Scaling measured at SSD typically used for imaging.
+c
+Baseline means that the measured data are consistent with or better than ATP data.
+d
+kV imaging refers to both 2D fluoroscopic and radiographic imaging.
+e
+Imaging dose to be reported as effective dose for measured doses per TG 7536.
+b
+
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4204
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+annual test is more comprehensive, intended to uncover
+changes that may have remained undetected during more frequent but less rigorous testing throughout the year. Note that
+the tolerance value is not absolute in that it should not be
+interpreted as a comparison to the machine specification; instead it is a tolerance value from the baseline. The expansion
+of tests is also justifiable due to the fact that since TG-40 and
+post-IMRT, the selection of available QA tools makes annual
+testing less burdensome; these tools range from 3D water
+scanning tanks to large area detector arrays. The proper tools
+should be chosen by matching the detectors and software to
+the needs and sensitivity requirements.
+II.B. Test frequencies
+
+As with TG-40, testing is distributed among daily,
+monthly, and annual QA frequencies. The underlying principles for test frequency follow those of TG-40 and attempt
+to balance cost and effort with accuracy. In this report there
+are additional factors that affect the frequency of the tests,
+specifically the type of treatments delivered on the machine
+and the inherent design of the machine. For example, some
+linacs are designed with independent photon and electron
+monitor chamber systems 共e.g., Siemens兲. It is recommended
+that each independent monitor chamber system should be
+checked daily.
+The daily 共or in some cases weekly兲 tests include parameters that can affect dose to the patient by dosimetric 共output
+constancy兲 or geometric 共lasers, optical distance indicator,
+field size兲 means. The daily safety tests still include audiovisual monitoring of the patient and testing of the door interlock. With respect to EPID and kV imaging, the operation
+and functionality are tested daily, as well as collision interlocks. The daily tests are typically performed by the morning
+warm-up therapist, who should be trained by a qualified
+medical physicist with a well defined policy and procedure to
+follow if any of the tests are found to be out of tolerance.
+Monthly tests include those that have a lower likelihood of
+changing over a month 共e.g., tray position or profile
+consistency—which also serves as an energy check for photons兲. Monthly tests for respiratory gating have been added
+as well as more quantitative tests for EPIDs and kV imaging.
+These tests are typically more involved and are generally
+performed by the QMP. The annual tests are a subset of the
+tests performed during acceptance testing and commissioning procedures. During the annual review of dosimetry systems, constancy factors are either established, reconfirmed,
+or updated.
+Several authors have attempted to develop a systematic
+approach to developing QA frequencies and action
+levels.37–39 More recently the work being performed by Task
+Group 10040 of the AAPM. TG 100—A method for evaluating QA needs in radiation therapy 关based on “Failure modes
+and effects analysis 共FMEA兲”兴—promotes individual departments to be responsible for development of unique QA programs based on procedures and resources performed at individual institutions. Institutional deviations from some of
+these recommendations are expected based upon the instituMedical Physics, Vol. 36, No. 9, September 2009
+
+4204
+
+tion’s policy and procedures; the clinical significance of
+these deviations may be mitigated by other control methods
+that are not anticipated in this document. In the case of decreasing the frequency of a particular test, the results of the
+test must be examined and be validated with an appreciable
+history of that test and based on sound statistical principles.
+That decision must also be correlated with the documented
+analysis of the potential impact of catastrophic results in the
+event of an occurrence. By FMEA analysis, an institution can
+estimate the degree of harm due to a failure along with 共lack
+of兲 detection and occurrence probabilities. We reiterate the
+recommendations of TG-401 that the QA program should be
+flexible enough to take into account quality, costs, equipment
+condition, available test equipment, and institutional needs.
+However, we do recommend using the tests and frequencies
+outlined in the tables that follow until methods such as TG100 supersede this report.
+II.C. Guidelines for tolerance values
+
+The original tolerance values in TG-40 were adapted from
+AAPM Report 13. Report 13 used the method of quadratic
+summation to set tolerance values for individual machine
+parameters. These values were intended to make it possible
+to achieve an overall dosimetric uncertainty of ⫾5% and an
+overall spatial uncertainty of ⫾5 mm. These tolerances are
+further refined in this report and those quoted in the tables
+are specific to the type of treatments delivered with the treatment unit. For example, the coincidence of collimator, gantry, and couch axes with the isocenter is recommended to be
+within 1 mm for a stereotactic machine and within 2 mm for
+other machines.
+To clarify the relationship of tolerance values with variations from dosimetric baseline values or deviations from absolute mechanical values established during acceptance testing, we provide the following definitions.
+II.C.1. Acceptance testing procedure standards
+During the process of acceptance of equipment the supplier demonstrates its performance to the satisfaction of the
+customer against specifications, which should be part of the
+agreed contract. The dosimetric and mechanical measurements should satisfy the agreed upon specification values.
+Acceptance testing and commissioning set the baseline for
+future dosimetric measurements for beam performance constancy and verifies that the equipment is mechanically functional and operates within certain tolerances from absolute
+specified values.
+II.C.2. Commissioning baseline values
+Upon acceptance of the equipment, treatment beam characteristics needed for clinical use are established by the commissioning process. Often some of the beam characteristics
+may have been already acquired during the acceptance testing procedures. These beam characteristics establish the
+baseline values to be checked relative to constancy during
+future dosimetric quality assurance measurements.
+
+4205
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+II.C.3. Tolerances and action levels
+
+4205
+
+eter. Specified treatment functions should not continue
+until the problem is corrected.
+With these three action levels, there is an institutional
+need to specify the deviations from baseline values and tolerances associated with levels 2 and 3. This should be carried
+out by the QA committee as discussed in the TG-40 report
+共Sec. B.I.C兲. The level 1 parameters’ thresholds cannot be
+specified by the committee; these thresholds evolve from the
+QA data. The level 1 threshold is not a critical requirement
+but it can lead to significant improvements in the QA program. The report from TG-100 is expected to address some
+of these issues.
+
+The spirit and intent of TG 40 are maintained and further
+clarified; the tolerances listed in the tables should be interpreted to mean that if either a baseline parameter measured
+during AT exceeds the tabulated value or the change in the
+baseline parameter exceeds the tabulated value, then an action is required. Therefore, if ongoing QA measurements fall
+outside the tolerance levels 共allowed deviation兲 in the tables,
+the equipment should be adjusted to bring the measured values back into compliance: the tolerances are action levels 关a
+hierarchy of steps taken by the medical physicist 共MP兲 and
+QA staff兴. However, if certain baseline parameters barely satisfy the tolerance value repeatedly, an appropriate action
+should be taken to correct the equipment. These actions
+should be set by the MP in terms of the level of action
+共inspection, scheduled, or immediate stoppage兲 to be taken
+and under what circumstances. The actions should be well
+known by all personnel involved in the QA process.
+It is not our intention to make prescriptive recommendations on the type of action but rather provide guidance as to
+the types of actions that are needed in the QA process. We
+believe there are three types of actions, with an action priority ranking from lowest to highest, as follows.
+
+The TG-40 report1 stated that test procedures should be
+capable of distinguishing parameter changes that are smaller
+than tolerance or action levels. Here we attempt to further
+clarify this requirement and offer some examples. There is an
+associated measurement uncertainty that depends upon the
+technique used, the measuring device, and the person using
+the device and recording the measurement.
+
+• Level 1: Inspection action. From repeated QA procedures, there are measurement values that become expected under normal operating conditions. A sudden and
+significant deviation from the expected value should be
+called to the attention of the MP, even if the measurement itself does not exceed the table tolerance value.
+Some measured values may be affected due to intervention outside of the normal linac operation or measurement. For example, a change in personnel, setup, or
+maintenance event may cause a measurement shift. The
+change may also be indicative of a machine problem
+that is not yet out of tolerance QA but a change nonetheless. Treatments should continue, but the cause
+should be investigated during routine QA.
+• Level 2: Scheduled action. We present two examples
+which could require scheduled action. First, consecutive
+results of a QA procedure that are at or near the tolerance value should cause investigation or scheduled
+maintenance into the problem within one to two working days. Second, a single result that exceeds the tolerance value, but not excessively, should cause investigation or scheduled maintenance. Under these conditions,
+deviations may slightly exceed the tolerance, but the
+clinical impact over the course of a few days 共⬍1
+week兲 may not be significant. Treatment may continue,
+but mitigation of the cause should be scheduled to take
+place within one to two working days.
+• Level 3: Immediate action or stop treatment action or
+corrective action. A measurement result could require
+an immediate suspension of the treatment function related to the dosimetric parameter measured. Examples
+for complete suspended use of the linear accelerator
+could be as simple as nonfunctional safety interlocks or
+as extreme as an excessive error in a dosimetry param-
+
+• Measurement uncertainty 共or accuracy兲 is in reference
+to an expected error of the measurement result with
+respect to a defined standard 共baseline value兲.
+• Measurement repeatability is in reference to the device’s measurement statistics, i.e., with no change in the
+quantity being measured and no change in the measurement setup, the recorded values from repeated measurements will have a standard deviation about the mean.
+• Measurement precision is in reference to the measuring
+device’s scale resolution of the display.
+For example, a dosimetry chamber/electrometer may have
+a measurement precision of 0.01% on a full scale four digit
+display, measurement repeatability with a deviation of the
+mean of 0.05% after ten repeated measurements, and a measurement uncertainty of 1.5% absolute dose. Many of the
+tolerance values in the tables are with respect to baseline
+values from the QA measuring device, measured at the time
+of commissioning. The measurement repeatability of the device and technique must be less than the tolerance level for
+the parameter being measured. We recommend that the measurement system and procedure repeatability be such that
+two standard deviations for three or more repeated consecutive measurements are less than the tolerance value.
+The tolerance values in the tables have an interdependence with test frequency. Devices used for daily QA output
+constancy may provide data for tests normally performed on
+a monthly basis. However, the monthly tests are expected to
+be performed at a higher level of skill and with a higher level
+of test equipment and therefore those measurements carry a
+tighter tolerance value. Therefore, when a procedure is performed on a more frequent schedule than required, the QA
+committee may include the more frequent measurements
+with a different tolerance value as listed in this report’s
+tables. This will become apparent when establishing the level
+
+Medical Physics, Vol. 36, No. 9, September 2009
+
+II.C.4. Uncertainties, repeatability, and precision
+
+4206
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+1 action level. However, the tolerance values in this report
+should be rigorously maintained for the specified procedure
+frequency.
+II.D. Ancillary treatment devices not in TG-40
+
+The AAPM TG-40 report made it clear that new devices
+coming on-line during this time period 共1994兲 would be beyond the scope of the report. The TG-40 report did not address asymmetric jaws, dynamic/virtual wedging, or multileaf collimation. However, task groups addressing each of
+these new technologies never formed, or the final reports
+were written after TG-40 was published, for example, the
+multileaf collimation TG-5041 report. Klein et al.15 published
+a manuscript on a QA program for ancillary high technology
+devices on a dual-energy linear accelerator that included
+asymmetric jaws, dynamic and virtual wedges, multileaf collimation, and electronic portal imaging. This paper was
+based on one institution’s equipment and process for QA. In
+addition, the technologies themselves have manifested into
+more modern and complicated devices, especially the use of
+multileaf collimation for IMRT.
+This section addresses these ancillary devices/options in
+terms of QA processes required to support them. We have
+incorporated asymmetric jaws within the revised Table II
+共TG-40兲 recommendations, while separate tables have been
+created for MLC and dynamic/virtual wedges. This task
+group makes specific recommendations for asymmetric jaws,
+jaw based wedge delivery systems, and multileaf collimation
+that are both vendor specific and operation specific. This was
+necessary due to the differences among the systems. The
+following sections outline these specific recommendations.
+II.D.1. Asymmetric jaws
+Slessinger et al.42 published one of the earliest papers on
+implementation of asymmetric jaws including calculation
+schemes and QA. For asymmetric jaws, there should be additional scrutiny for beam matching and the accuracy of
+dynamic/virtual wedge delivery which depends strongly on
+jaw positioning accuracy. For example, Klein et al.43 published a paper using a single isocentric technique relying on
+asymmetric jaws with beam matching at the isocentric plane
+for breast irradiation. To address this, the recommendation
+was to perform monthly light-radiation coincidence and
+asymmetric jaw positional accuracy for each jaw used clinically at 0.0 cm 共for beam matching兲 and also at 10.0 cm
+共retracted from central axis兲. The testing of the jaws positioned at 0.0 can be performed with a single film to demonstrate nondivergent field matching.
+II.D.2. Dynamic/virtual/universal wedge
+Before IMRT, modulation of the beam during treatment
+was accomplished by computer controlled movement of the
+collimating jaw while the beam was on using computer
+control.44 These technologies, dynamic 共later enhanced dynamic wedge兲 and virtual wedges, were clinically introduced
+by Varian and Siemens, respectively. Jaw accuracy for the
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4206
+
+dynamic wedge-type delivery published by Klein et al.45
+showed that very small changes in jaw position could affect
+the dynamic wedge factor. The dynamic wedge reports
+共Klein,15 Liu,46,47 and Beavis48兲 all pointed to individual institution recommendations for dynamic jaw delivery to deliver a wedge field. Zhu et al.49 published similar recommendations for virtual wedge. As these technologies rely on
+computer delivery of jaw position in a given instant or percentage of monitor units 共MUs兲, there should be scrutiny of
+the embedded tables that map the location of jaw position in
+relationship to time 共fraction of MU to be delivered兲. In this
+report, we include the Elekta universal wedge within this
+category 共described by Phillips et al.50兲, as computer control
+moves the fixed internal 60° wedge in place to yield an effective wedge angle when combined with an open field. The
+recommendations in Table IV include some simple daily systematic tests, operational tests of the computer control on a
+monthly basis, and annual dosimetric tests. We recommend
+that tests be performed with a 45° wedge delivery for systems that deliver an “effective” wedge angle by using a combination of 60° and open beam. If, however, a facility opts to
+deliver a 60° wedge as a unique field, then the 60° wedge
+angle should be checked.
+II.D.3. MLC
+Early implementations of multileaf collimation51–53 were
+limited to tests and tolerance recommendations for early
+Varian MLC machines. Soon afterward, Jordan and
+Williams54 published a paper for Elekta machines and Das et
+al.55 for Siemens machines. Mubata et al.21 published a paper dedicated to QA for Varian machines following these
+initial papers. In 1998, the AAPM formed a task group
+共AAPM TG-5041兲 to address multileaf collimation, including
+extensive sections on multileaf collimator QA. This publication recommended a scope limited QA program. Although
+the task group report was published during initial IMRT
+implementations using multileaf collimation, it did not make
+recommendations specific for MLCs as used for IMRT. Subsequent publications,9,30,56–61 particularly those by Cosgrove
+et al.62 and Chang et al.,63 pointed to tests for MLC QA
+along with tools for such tests. We have subsequently recommended testing 共Table V兲 that depends on whether or not the
+MLC system is used for IMRT. With regards to the impact of
+MLC on IMRT, publications have documented the impact of
+leaf positioning accuracy and interleaf or abutted leaf transmission on the accuracy of delivered IMRT fields.64–66
+Therefore additional tests of multileaf collimators that are
+used for IMRT are recommended. Some of the leaf parameters that affect dose delivery for IMRT include leaf positional accuracy and transmission values. Simple tests, such
+as the picket fence test described by LoSasso,66 can assess
+positional accuracy qualitatively 共by the matching of sequential segments and leaf transmission, particularly interleaf兲.
+We recommend the picket fence test be performed weekly
+with a careful examination of the image acquired by static
+film or on-line portal image. On a monthly basis, we recommend expansion of the leaf position accuracy test to account
+
+4207
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+for gantry rotation which may affect leaf motion due to
+gravitational effects imposed on the leaf carriage system.
+Loss of travel speed can result in increased beam holds or
+gap width errors.66 MLC travel speed is evaluated with vendor software or by MLC log file evaluation. As an example,
+Varian offers a tool for such analysis.67,68 The software takes
+data and creates a series of tables and plots, specifically an
+error histogram showing all the leaf position deviations, error
+RMS showing the calculated root mean square error for leaf
+deviations, and beam hold off and beam on plots. As per
+manufacturer specifications, the error histogram is deemed
+acceptable if 95% of the leaf deviations are less than 0.35 cm
+and the maximum error RMS for either carriage is less than
+0.35 cm. We have incorporated use of this analysis in Table
+V for multileaf collimation for Varian MLCs and recommend
+repeating the customer acceptance test procedures on an annual basis. Similar types of analysis software can be developed for other systems if the leaf and time dependent data
+can be extracted.
+On an annual basis we recommend enhancing the transmission test to include quantitative analysis of the leaf transmission. Recent development of tools utilizing EPID devices
+allow for subpixel precision to detect changes in discrete
+locations of an acquired image.69,70 As treatment planning
+parametrization seeks a global value for leaf transmission, it
+is important that the leaf body, side, and end characteristics
+do not change over time, the most vulnerable being the leaf
+side rigidity due to leaf inderdigitation, as it may affect interleaf leakage, hence the close attention needed. Leaf position repeatability, MLC spoke shot, and coincidence of light
+field and x-ray field all are tests intended to check the alignment of the MLCs. Vendor-specific tests are also recommended depending on the model of MLC used. Each vendor
+has unique preventative maintenance program recommendations and therefore replacement of MLC motors and leaves
+may vary in frequency. Therefore physicists must be aware
+of the replacement schedule as post-testing is required. All
+tests should reflect the types of treatments delivered in the
+department. The method of testing 共film, solid state detectors, software, EPID兲 shall be sensitive enough to detect errors less than the tolerance level and have the ability to analyze all MLC leaves.
+II.D.4. TBI/TSET
+For either TBI or TSET QA tests chosen by a qualified
+medical physicist are a subset of the commissioning data
+sufficient to assure continued proper operation of the accelerator. QA tests should replicate test conditions performed
+during the commissioning of the technique. In vivo patientspecific dosimetry should be considered for both TBI and
+TSET.
+TBI requires very large treatment fields to encompass the
+entirety of the patient. Some health care facilities have treatment units specifically designed for total body irradiation,
+but it is more common for conventional radiotherapy linear
+accelerators to be used. AAPM Report 17 71 is a general
+reference describing TBI techniques. Report 17 describes
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4207
+
+phantom and patient dosimetry considerations for TBI. It is
+common for the linear accelerator to operate in a special dose
+rate mode for TBI treatment. The treatment distance is normally much greater than the standard 100 cm source-to-axis
+distance 共SAD兲. TBI beam modifiers may be employed.
+Thus, measurements at extended distance with the accelerator in the TBI mode and with TBI modifiers must be made
+when this modality is commissioned. Table III recommends
+annual tests of TBI modifiers’ transmission constancy if
+used, tissue-phantom ratio 共TPR兲, OAF constancy, and measurement of output constancy 共⫾2%兲 in the TBI mode for the
+clinical MU range at clinical dose rates 共MU/min兲. Measurement at two depths is sufficient for confirmation of beam
+energy, and a limited number of off-axis measurements suffice for confirmation of OAFs. Some accelerators operate in
+a special TBI mode that has identical operating parameters as
+the normal non-TBI mode. In this case, annual measurements of the beam energy 关percentage-depth dose 共PDD兲 or
+TMR兴 and beam profile 共OAF兲 at the isocenter are sufficient.
+TSET is a specialized electron beam technique normally
+at energies from 3 to 7 MeV at the patient. TSET is described
+in detail in an AAPM Task Group Report.72 This report describes irradiation techniques for TSET as well as dosimetric
+considerations specific to the technique. The linear accelerator operating parameters, such as dose rate, collimating device, and perhaps the beam scatterer, differ for TSET from
+standard electron beam operating parameters. QA tests
+should replicate test conditions done during the commissioning of the technique. Table III recommends annual tests of
+TSET modifiers’ transmission constancy if used, PDD or
+other energy check, OAF constancy, and measurement of
+output constancy in the TSET mode for the clinical MU
+range. Measurement at two depths is sufficient for confirmation of beam energy, and a limited number of off-axis measurements suffice for confirmation of OAFs.
+II.D.5. Radiographic imaging
+This section covers radiographic imaging systems commonly integrated with medical accelerators: Megavoltage
+共MV兲 planar imaging, kV planar imaging, and MV or kV
+computed tomographic imaging 共both serial and cone beam兲.
+Table VI contains QA recommendations for the imaging systems. Each radiographic imaging device, either 2D or 3D,
+has its own geometric coordinate system, similar to the delivery system. Even for the 2D portal imaging device which
+uses the treatment beam as the imaging source, the manual
+methods or software used to manipulate images could cause
+some discrepancies with treatment coordinates. Typically, the
+imaging coordinate system is correlated with the delivery
+coordinate system through a calibration process. It is, therefore, critical to ensure the coincidence of these two coordinate systems for different clinical needs of image-guided radiation therapy procedures. The QA item “imaging and
+treatment coordinate coincidence” is aimed to test this coincidence and is applicable for each of the imaging systems
+considered. In addition, each system performing patient positioning and/or repositioning based on in-room imaging sys-
+
+4208
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+tems, either 2D or 3D, relies upon vendor software that compares and registers on-board images and reference images.
+Quality assurance of this process could be easily done by a
+phantom study73 with known shifts and is recommended for
+each system used clinically. The accuracy of this process
+should be tested on the daily basis, especially for SRS/SBRT.
+Clinical use of kV imaging devices is being systematically summarized in TG104,73 although there are no specific
+recommendations for the QA tolerances in that report. In this
+report, we set basic recommendations for the use of in-room
+kV imaging systems. The fundamental goals for kV imaging
+in radiation oncology target localization are different from
+those in diagnostic imaging. In radiation oncology there is
+greater emphasis on the localization accuracy. However, the
+localization accuracy is dependent on the visibility of the
+anatomic structures to be localized. Better image quality
+typically leads to better visibility of anatomical structures but
+is also proportional to higher imaging dose. It is understandable that the localization accuracy of some treatment sites
+共such as breast portals兲 may be less sensitive to image quality than others 共such as head and neck兲. Therefore, it is critical to carefully balance the desire of image quality and imaging dose without compromising the localization accuracy.
+A variety of kV imaging systems was recently introduced.
+Applications of these kV imaging systems include 2D radiographic imaging, 2D fluoroscopic imaging, and 3D tomographic imaging as well as 4D imaging associated with organ
+motions. Acceptance testing criteria for each imaging system
+should be established between the manufacturer and the user.
+These acceptance testing criteria should include parameters
+related to safety, image quality, imaging dose, and localization accuracy. The baseline data 共including both means and
+ranges or measured values and their upper and lower limits兲
+established during the acceptance testing should be used for
+the QA criteria.
+II.D.5.a. Planar MV imaging (portal imagers). Clinical
+use of electronic portal imaging devices has been addressed
+by TG5874 and is described widely in the literature.17,75–77
+Recommended QA tests from the TG-58 report are incorporated in Table VI, though updated to account for on-boardimaging tests. However, details of the test contents, such as
+the dose rate to be checked for imaging quality, the energy,
+and the calibration distances, should be determined specifically for each type of EPID and for each individual institution. It is important to note that image quality checks 共contrast, resolution, and noise兲 should be done for all calibration
+modes and energies to be used for imaging.
+II.D.5.b. Planar kV imaging. The basic QA for planar kV
+imaging system mainly handles 2D x-ray imaging, either
+with radiographic imaging 共single shot of a planar image兲 or
+continuous fluoroscopic imaging. Radiographic 2D imaging
+is very powerful in localizing bone structures and internal/
+implanted markers with higher density. It is also fast with
+negligible imaging dose. Fluoroscopic imaging is useful in
+monitoring organ motion but caution should be paid for imaging dose. The baseline data from acceptance testing are
+recommended as criteria for imaging quality QA. The user
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4208
+
+should maintain the image quality not poorer than those data.
+The criteria for the SRS/SBRT should be based on rigidbody phantom tests.
+II.D.5.c. Serial and cone-beam CT. Basic recommendations for the QA of axial and CBCT systems, including both
+kV78 and MV,79 are found in Table VI. These tools are primarily used for target localization, which provides excellent
+soft tissue and volumetric information. In this report, serial
+CT should include both axial and helical CT and mainly
+refers to the CT-on-rail system. The positioning and repositioning accuracy should include couch movement from the
+treatment position to the imaging position. The QA for tomotherapy which uses helical serial MV CT, will be discussed in a separate AAPM report 共TG-148兲. Although spatial accuracy of image reconstruction is paramount and most
+heavily emphasized, image quality parameters 共e.g., contrast,
+noise, uniformity, and spatial resolution兲 are important aspects that should also be considered. Additionally, manufacturer’s recommendations for imaging systems recalibration
+procedures should be followed unless the user has shown in
+extensive studies that the procedure frequency can be reduced. Since such imaging systems are often used daily and
+are capable of delivering significant radiation dose, a direct
+measure of imaging dose and beam quality/energy is recommended at least annually. As with the recommendations for
+kV imaging, the baseline data 共including both means and
+ranges or measured values and their upper and lower limits兲
+established during the acceptance testing should be used for
+QA criteria. Consistent with recommendations of TG-7536
+共“Management of imaging dose during IGRT”兲, the tolerance
+for variation of imaging dose and beam energy from baseline
+measurements identified during acceptance testing should be
+established such that the patient experiences clinically insignificant increases in stochastic and deterministic risk while
+maintaining image quality parameters. We believe that an
+annual review of imaging dose is sufficient due to minimal
+impact on overall dose and by virtue of existing daily/
+monthly reviews of many parameters that would detect
+changes that could potentially affect dose. For the Siemens
+MV CBCT the beam calibration parameters are typically
+very similar to the treatment beam, yet they are unique and
+independent, so the calibration of dose should be specifically
+checked for the MV CBCT beam. The frequency of measuring dose and beam quality/energy depends on the likely system stability and details of clinical utilization; for example, if
+the imaging dose is included in the treatment plan but represents ⬍10% of the prescribed dose, a 20% variation in imaging dose will still only result in a 2% dose error. This
+report recommends annual assessment of imaging dose,
+which may be deemed to be required more frequently by the
+individual user based on clinical utilization and observed
+system stability.
+II.D.6. Respiratory gating
+Respiratory gating, at the time of the report, is an emerging technology. As such, QA methods will need to evolve in
+tandem with the technology. AAPM Report 9180 共TG-76兲,
+
+4209
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+published in 2006, described all aspects of the management
+of respiratory motion in radiation oncology, including imaging, treatment planning, and radiation delivery. Various configurations and techniques for implementation of respiratory
+gating are described in TG-76. The TG-76 report also contains technology-specific QA recommendations. Though
+there are different avenues of implementation, all respiratory
+techniques fundamentally require a synchronization of the
+radiation beam with the patient’s respiratory cycle. Characterization of the accelerator beam under respiratory gating
+conditions is done during commissioning of this modality.
+Dynamic phantoms which simulate human organ motions associated with respiration are recommended to test target localization and respiratory gated treatment accuracy. Tables II
+and III include tests for respiratory gated accelerator operation, including measurement of beam energy constancy,
+beam output constancy, temporal accuracy of phase/
+amplitude gating windows used, calibration of surrogate for
+respiratory phase/amplitude 共detailed below兲, and interlock
+testing. One approach to performing these measurements
+was described by Bayouth et al.,81 where gating windows
+from 250 to 1500 ms were considered. Beam energy and
+output constancy were quantified with a pair of ion chambers
+共10 and 20 cm depths兲 measuring simultaneously for each
+gated period; it was found that all dosimetric parameters
+were within ⫾2% for gating windows ⱖ500 ms on a Siemens accelerator. The relationship between temporal accuracy and phase/amplitude gate used was established by gated
+treatment delivery exposing the radio-opaque target attached
+to motion phantom, where the geometric center of a radioopaque target was known at each phase/amplitude relative to
+the beam central axis. These images were acquired on radiographic film but could also be acquired on an EPID. Table III
+provides tolerance values to be verified during annual QA;
+the 100 ms tolerance for temporal accuracy assumes the
+moving object travels at speeds no greater than 20 mm/s,
+which would result in 2 mm of positional uncertainty. The
+QMP should maintain a tolerance consistent with spatial uncertainty values accounted for in the treatment planning process. Site-specific and technique-specific tests should be used
+to supplement these general recommendations. For example,
+several different types of surrogates of respiratory pattern
+may be used clinically 共e.g., optical, strain-gauge belts with
+pressure sensors, and spirometry兲; the QMP should verify the
+phase and amplitude indicated by the surrogate do not
+change significantly over time as is relevant to how they are
+applied clinically. Calibration of the sensor for respiratory
+phase/amplitude, which has not been described in the literature, consists in validating constancy between a known
+location/movement of the surrogate and its response. An example test for the pressure sensor is placing a series of fixed
+weights on the sensor and determining the gain and offset
+values that produce a desired amplitude 共e.g., 50%兲. For optical systems, this can be accomplished by placing a fiducially marked block 共surrogate兲 at a series of fixed known
+locations within the field of view and comparing the reported
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4209
+
+displacements to the known values. Once spatial accuracy is
+confirmed, phase confirmation can be established with a periodic motion phantom.
+III. SUMMARY OF RECOMMENDATIONS/
+IMPLEMENTATION SCHEME
+The tabulated items of this report have been considerably
+expanded as compared with the original TG 40 report1 and
+the recommended tolerances accommodate differences in the
+intended use of the machine functionality 共non-IMRT, IMRT,
+and stereotactic delivery兲.
+共1兲 It is recommended that a departmental QA team be
+formed to support all the QA activities and draft necessary policies and procedures. These policies and procedures should be readily available to all members of the
+departmental QA team on hard copy and online. The
+policy should establish the roles and responsibilities of
+involved QA personnel. For QA measurements, detailed
+instructions on equipment use, cross calibration of these
+devices, measurement frequency, and documentation of
+the results should be provided. In case of suspected malfunction of the equipment, policies and procedures
+should also provide alternative methods for measurement.
+共2兲 The first step in implementing the recommendations is
+to establish institution-specific baseline and absolute reference values for all QA measurements. The QA team
+needs to meet regularly and monitor the measurement
+results against the established values to 共1兲 ensure the
+machine performance and 共2兲 determine any significant
+dose deviations from the treatment planning calculations. There are many commercially available QA devices that could be used for daily, weekly, and monthly
+QA. The manufactures of these devices supply descriptive procedures that guide the user in utilizing these QA
+devices correctly. It is recommended that such devices
+be checked for accuracy and consistent performance
+prior to use for any specific QA procedures based on the
+manufacturer guidelines. These devices should also be
+evaluated for proper use and appropriateness of the particular QA test.
+共3兲 A QMP should lead the QA team. It should be her/his
+responsibility to provide adequate training of the other
+team members, such as the therapists and the dosimetrists, so that they clearly understand and follow policies and procedures. For example, training on the operation of the QA equipment may cover appropriate
+warm-up period, how to interpret the measured data,
+what to do when tolerance levels are exceeded, etc. It is
+recommended that the QMP provide the proper action
+level and methods of notification in the case tolerances
+are exceeded.
+共4兲 In general, the daily QA tasks may be carried out by a
+radiation therapist using a cross-calibrated dosimetry
+system. For such tasks, we recommend using robust and
+easy-to-setup equipment. For example, a plastic phantom cube with a thimble ionization chamber insert may
+
+4210
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+be used for the checking output constancy. In most
+cases, the flat edge and the surface of the phantom can
+be also used to check the alignment of in-room lasers.
+Commercial flat-panel multidetector arrays with appropriate buildup material may be also used for daily QA.
+The advantage of such equipment is that it allows efficient check of other beam parameters such as the flatness and symmetry without repeated setup of the equipment. Due to frequent use of the daily QA equipment,
+correction factors influencing the detector response
+should be carefully documented. These may include
+temperature and pressure correction factors for a vented
+chamber, electrometer calibration factors, leakage corrections, etc. All results should be documented in either
+a permanent electronic or hardcopy format and should
+be readily available for inspection purposes. There
+should be clear guidelines for the personnel performing
+the tests as to the appropriate action to take if a test is
+out of tolerance. These guidelines would generally include notifying a physicist. In addition, the QMP should
+review and sign off on the reports at a minimum of once
+per month.
+共5兲 Monthly QA tasks should be performed by a QMP or by
+individuals directly supervised by a QMP. It is recognized that there is overlap on some test items for daily,
+monthly, and annual. This overlap in frequency should
+have some level of independence such that the monthly
+check would not simply be a daily check. This can be
+achieved with independent measurement devices, but the
+full extent of monthly independence from the daily measurements is decided upon by the QMP. This involvement should include validation of devices through redundant measurements and validation of the daily
+process by examination of the records. For example, if a
+multidetector array is used for the daily output measurement and the monthly dosimetry measurements use the
+same multidetector array, then an ionization chamber
+with a phantom should be compared with the output
+measurement of the array on an annual basis, including
+reference to past baseline values. This provides confidence in the daily device and will identify trends that
+may otherwise go undetected over the course of a long
+period of time such as 1 year. Such comparison enables
+effective use of minimal equipment in institutions with
+limited resources. As for the daily QA tasks, all results
+should be documented in either a permanent electronic
+or hardcopy format and should be readily available for
+inspection purposes. It is important for the physicist to
+cross calibrate any equipment used with equivalent or
+surrogate systems. There should be clear guidelines for
+the personnel performing the tests as to the appropriate
+action to take if a test is out of tolerance. These guidelines would generally include secondary checks and notification to the QMP. In addition, the QMP should review and sign off on the reports within 15 days of
+completion.
+共6兲 The annual QA items in the report represent the most
+extensive tests on the machine performance. These
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4210
+
+checks are sometimes adopted by the city or state regulatory agencies to ensure adequate functionality of the
+linear accelerators for patient and environmental safety
+concerns. For this reason, it is recommended that the
+annual measurements be performed by a QMP with involvement of other QA team members. It is highly recommended that QA devices and equipment, such as ionization chambers and water scanning tank, should be
+adequately checked prior to any measurements. The
+measurements should be carried out using commissioning quality equipment as recommended by the forthcoming AAPM TG-106 report.7
+共7兲 An end-to-end system check is recommended to ensure
+the fidelity of overall system delivery whenever a new or
+revised procedure is introduced. This can be done by
+creating a set of sample treatment plans typical of the
+facility’s clinical caseload, transferring the plan data
+across the data network, and delivering them at the treatment machine. If the record and verify 共R&V兲 system is
+a conduit for data, it must be included in the end-to-end
+testing. End-to-end tests are necessary whenever software changes occur with the treatment planning software, R&V software, or delivery system software. In
+particular, point dose measurements should be performed for treatment plans to ensure constancy between
+the dose calculation and the treatment delivery process.
+These end-to-end tests should be documented for the life
+of the various system components.
+共8兲 During the annual QA review, absolute machine output
+should be calibrated as per the TG51 calibration
+protocol82 using an ionization chamber with a NIST
+traceable calibration factor. Once the machine output has
+been calibrated, all secondary QA dosimeters including
+the daily QA and the monthly QA devices should be
+cross-checked against such calibrations. Although our
+report did not make specific recommendations regarding
+independent acceptance tests for a new machine, we promote the use of the annual QA tests recommended by
+this report to be used as a general guide when reviewing
+vendor-specific acceptance tests and tolerance values.
+Upon completion of the measurements, it is recommended
+that an annual QA report be generated. The report should
+state significant findings based on the recommended table
+tolerance values. The report can be similarly divided into
+sections that include 共1兲 dosimetry, 共2兲 mechanical, 共3兲
+safety, 共4兲 imaging, and 共5兲 special devices/procedures. The
+QA report should be signed and reviewed by the QMP and
+filed for future machine maintenance and inspection needs.
+a兲
+
+TG-142 was constituted by the AAPM—Science Council—Therapy
+Physics Committee—Quality Assurance and Outcome Improvement
+Subcommittee.
+b兲
+Electronic mail: eklein@radonc.wustl.edu
+1
+G. J. Kutcher, “Comprehensive QA for radiation oncology: Report of
+AAPM Radiation Therapy Committee Task Group 40,” Med. Phys. 21,
+581–618 共1994兲.
+2
+“Determination of absorbed dose in a patient irradiated by beams of x- or
+gamma-rays in radiotherapy procedures,” International Commission on
+Radiation Units and Measurement Bethesda Report 24, 1976.
+
+4211
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+3
+
+R. Nath, P. J. Biggs, F. J. Bova, C. C. Ling, J. A. Purdy, J. van de Geijn,
+and M. S. Weinhous, “AAPM code of practice for radiotherapy accelerators: Report of AAPM Radiation Therapy Task Group No. 45,” Med.
+Phys. 21, 1093–1121 共1994兲.
+4
+“Medical electron accelerators-functional performance characteristics,”
+International Electrotechnical Commission Publication 976, 1989.
+5
+“Medical electron accelerators in the range 1 MeV-50 MeV—Guidelines
+for functional performance characteristics,” International Electrotechnical
+Commission Publication 977, 1989.
+6
+“Physical aspects of quality assurance in radiation therapy,” American
+Association of Physicists in Medicine Task Group Report 13 共American
+Institute of Physics, New York, 1984兲.
+7
+I. Das, J. C. Cheng, R. J. Watts, A. Ahnesjo, J. P. Gibbons, X. A. Li, J.
+Lowenstein, R. K. Mitra, W. E. Simon, and T. C. Zhu, “Accelerator beam
+data commissioning equipment and procedures: Report of the TG-106 of
+the Therapy Physics Committee of the AAPM,” Med. Phys. 35, 4186–
+4215 共2008兲.
+8
+“Radiation control and quality assurance in radiation oncology: A suggested protocol,” American College of Medical Physics Report Series No.
+2 共American College of Medical Physics, Reston, VA, 1986兲.
+9
+J. E. Bayouth, D. Wendt, and S. M. Morrill, “MLC quality assurance
+techniques for IMRT applications,” Med. Phys. 30, 743–750 共2003兲.
+10
+L. Berger, P. Francois, G. Gaboriaud, and J. C. Rosenwald, “Performance
+optimization of the Varian aS500 EPID system,” J. Appl. Clin. Med.
+Phys. 7, 105–114 共2006兲.
+11
+H. Bouchard and J. Seuntjens, “Ionization chamber-based reference dosimetry of intensity modulated radiation beams,” Med. Phys. 31, 2454–
+2465 共2004兲.
+12
+M. G. Davis, C. E. Nyerick, J. L. Horton, and K. R. Hogstrom, “Use of
+routine quality assurance procedures to detect the loss of a linear accelerator primary scattering foil,” Med. Phys. 23, 521–522 共1996兲.
+13
+R. E. Drzymala, E. E. Klein, J. R. Simpson, K. M. Rich, T. H. Wasserman, and J. A. Purdy, “Assurance of high quality linac-based stereotactic
+radiosurgery,” Int. J. Radiat. Oncol., Biol., Phys. 30, 459–472 共1994兲.
+14
+A. Gonzalez, I. Castro, and J. A. Martinez, “A procedure to determine the
+radiation isocenter size in a linear accelerator,” Med. Phys. 31, 1489–
+1493 共2004兲.
+15
+E. E. Klein, D. A. Low, D. Maag, and J. A. Purdy, “A quality assurance
+program for ancillary high technology devices on a dual-energy accelerator,” Radiother. Oncol. 38, 51–60 共1996兲.
+16
+T. LoSasso, C. S. Chui, and C. C. Ling, “Comprehensive quality assurance for the delivery of intensity modulated radiotherapy with a multileaf
+collimator used in the dynamic mode,” Med. Phys. 28, 2209–2219
+共2001兲.
+17
+D. A. Low, E. E. Klein, D. K. Maag, W. E. Umfleet, and J. A. Purdy,
+“Commissioning and periodic quality assurance of a clinical electronic
+portal imaging device,” Int. J. Radiat. Oncol., Biol., Phys. 34, 117–123
+共1996兲.
+18
+W. R. Lutz and B. E. Bjarngard, “A test object for evaluation of portal
+films,” Int. J. Radiat. Oncol., Biol., Phys. 11, 631–634 共1985兲.
+19
+W. R. Lutz, R. D. Larsen, and B. E. Bjarngard, “Beam alignment tests for
+therapy accelerators,” Int. J. Radiat. Oncol., Biol., Phys. 7, 1727–1731
+共1981兲.
+20
+L. Ma, P. B. Geis, and A. L. Boyer, “Quality assurance for dynamic
+multileaf collimator modulated fields using a fast beam imaging system,”
+Med. Phys. 24, 1213–1220 共1997兲.
+21
+C. D. Mubata, P. Childs, and A. M. Bidmead, “A quality assurance procedure for the Varian multi-leaf collimator,” Phys. Med. Biol. 42, 423–
+431 共1997兲.
+22
+J. Rassow, “Quality control of radiation therapy equipment,” Radiother.
+Oncol. 12, 45–55 共1988兲.
+23
+J. Rassow and E. Klieber, “Quality assurance procedures in
+radiotherapy—IEC specifications for equipment,” Strahlenther. Onkol.
+162, 496–502 共1986兲.
+24
+R. J. Watts, “Evaluation of a diode detector array for use as a linear
+accelerator QC device,” Med. Phys. 25, 247–250 共1998兲.
+25
+M. S. Al-Ghazi, B. Arjune, J. A. Fiedler, and P. D. Sharma, “Dosimetric
+aspects of the therapeutic photon beams from a dual-energy linear accelerator,” Med. Phys. 15, 250–257 共1988兲.
+26
+M. S. Al-Ghazi, D. Lingman, B. Arjune, L. D. Gilbert, and J. Thekkumthala, “Characteristic parameters of 6–21 MeV electron beams from a
+21 MeV linear accelerator,” Med. Phys. 18, 821–828 共1991兲.
+27
+C. Constantinou and E. S. Sternick, “Reduction of the ‘horns’ observed on
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4211
+
+the beam profiles of a 6-MV linear accelerator,” Med. Phys. 11, 840–842
+共1984兲.
+28
+P. B. Dunscombe and J. M. Nieminen, “On the field-size dependence of
+relative output from a linear accelerator,” Med. Phys. 19, 1441–1444
+共1992兲.
+29
+B. A. Faddegon, P. O’Brien, and D. L. Mason, “The flatness of Siemens
+linear accelerator x-ray fields,” Med. Phys. 26, 220–228 共1999兲.
+30
+M. N. Graves, A. V. Thompson, M. K. Martel, D. L. McShan, and B. A.
+Fraass, “Calibration and quality assurance for rounded leaf-end MLC
+systems,” Med. Phys. 28, 2227–2233 共2001兲.
+31
+S. W. Hadley and K. Lam, “Light field and crosshair quality assurance
+test using a simple lens system,” Med. Phys. 33, 930–932 共2006兲.
+32
+Y. Mandelzweig and V. Feygelman, “Evaluation of electron-beam uniformity during commissioning of a linear accelerator,” Med. Phys. 20, 1233–
+1236 共1993兲.
+33
+R. Rajapakshe and S. Shalev, “Output stability of a linear accelerator
+during the first three seconds,” Med. Phys. 23, 517–519 共1996兲.
+34
+A. S. Shiu, S. S. Tung, C. E. Nyerick, T. G. Ochran, V. A. Otte, A. L.
+Boyer, and K. R. Hogstrom, “Comprehensive analysis of electron beam
+central axis dose for a radiotherapy linear accelerator,” Med. Phys. 21,
+559–566 共1994兲.
+35
+M. K. Woo, P. O’Brien, B. Gillies, and R. Etheridge, “Mechanical and
+radiation isocenter coincidence: An experience in linear accelerator alignment,” Med. Phys. 19, 357–359 共1992兲.
+36
+M. J. Murphy, J. Balter, S. Balter, J. A. BenComo, Jr., I. J. Das, S. B.
+Jiang, C. M. Ma, G. H. Olivera, R. F. Rodebaugh, K. J. Ruchala, H.
+Shirato, and F. F. Yin, “The management of imaging dose during imageguided radiotherapy: Report of the AAPM Task Group 75,” Med. Phys.
+34, 4041–4063 共2007兲.
+37
+T. E. Schultheiss, A. L. Boyer, J. L. Horton, and R. J. Gastorf, “Calibration frequency as determined by analysis of machine stability,” Med.
+Phys. 16, 84–87 共1989兲.
+38
+M. Rozenfeld and D. Jette, “Quality assurance of radiation dosage: Usefulness of redundancy,” Radiology 150, 241–244 共1984兲.
+39
+T. Pawlicki, M. Whitaker, and A. L. Boyer, “Statistical process control
+for radiotherapy quality assurance,” Med. Phys. 32, 2777–2786 共2005兲.
+40
+“Method for evaluating QA needs in radiation therapy,” American Association of Physicists in Medicine Task Group Report 100, 2009 共unpublished兲.
+41
+A. Boyer, P. Biggs, J. Galvin, E. Klein, T. LoSasso, D. Low, K. Mah, and
+C. Yu, “Basic applications of multileaf collimators,” AAPM Radiation
+Therapy Committee Task Group No. 50 Report No. 72, 2001.
+42
+E. D. Slessinger, R. L. Gerber, W. B. Harms, E. E. Klein, and J. A. Purdy,
+“Independent collimator dosimetry for a dual photon energy linear accelerator,” Int. J. Radiat. Oncol., Biol., Phys. 27, 681–687 共1993兲.
+43
+E. E. Klein, M. Taylor, M. Michaletz-Lorenz, D. Zoeller, and W. Umfleet,
+“A mono isocentric technique for breast and regional nodal therapy using
+dual asymmetric jaws,” Int. J. Radiat. Oncol., Biol., Phys. 28, 753–760
+共1994兲.
+44
+P. K. Kijewski, L. M. Chin, and B. E. Bjarngard, “Wedge-shaped dose
+distributions by computer-controlled collimator motion,” Med. Phys. 5,
+426–429 共1978兲.
+45
+E. E. Klein, R. Gerber, X. R. Zhu, F. Oehmke, and J. A. Purdy, “Multiple
+machine implementation of enhanced dynamic wedge,” Int. J. Radiat.
+Oncol., Biol., Phys. 40, 977–985 共1998兲.
+46
+C. Liu, Z. Li, and J. R. Palta, “Characterizing output for the Varian enhanced dynamic wedge field,” Med. Phys. 25, 64–70 共1998兲.
+47
+C. Liu, T. C. Zhu, and J. R. Palta, “Characterizing output for dynamic
+wedges,” Med. Phys. 23, 1213–1218 共1996兲.
+48
+A. W. Beavis, S. J. Weston, and V. J. Whitton, “Implementation of the
+Varian EDW into a commercial RTP system,” Phys. Med. Biol. 41, 1691–
+1704 共1996兲.
+49
+X. R. Zhu, M. T. Gillin, P. A. Jursinic, F. Lopez, D. F. Grimm, and J. J.
+Rownd, “Comparison of dosimetric characteristics of Siemens virtual and
+physical wedges,” Med. Phys. 27, 2267–2277 共2000兲.
+50
+M. H. Phillips, H. Parsaei, and P. S. Cho, “Dynamic and omni wedge
+implementation on an Elekta SL linac,” Med. Phys. 27, 1623–1634
+共2000兲.
+51
+E. E. Klein, W. B. Harms, D. A. Low, V. Willcut, and J. A. Purdy,
+“Clinical implementation of a commercial multileaf collimator: Dosimetry, networking, simulation, and quality assurance,” Int. J. Radiat. Oncol.,
+Biol., Phys. 33, 1195–1208 共1995兲.
+52
+J. M. Galvin et al., “Evaluation of multileaf collimator design for a pho-
+
+4212
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+ton beam,” Int. J. Radiat. Oncol., Biol., Phys. 23, 789–801 共1992兲.
+J. M. Galvin, A. R. Smith, and B. Lally, “Characterization of a multi-leaf
+collimator system,” Int. J. Radiat. Oncol., Biol., Phys. 25, 181–192
+共1993兲.
+54
+T. J. Jordan and P. C. Williams, “The design and performance characteristics of a multileaf collimator,” Phys. Med. Biol. 39, 231–251 共1994兲.
+55
+I. J. Das, G. E. Desobry, S. W. McNeeley, E. C. Cheng, and T. E. Schultheiss, “Beam characteristics of a retrofitted double-focused multileaf collimator,” Med. Phys. 25, 1676–1684 共1998兲.
+56
+A. L. Boyer and S. Li, “Geometric analysis of light-field position of a
+multileaf collimator with curved ends,” Med. Phys. 24, 757–762 共1997兲.
+57
+C. Burman, C. S. Chui, G. Kutcher, S. Leibel, M. Zelefsky, T. LoSasso, S.
+Spirou, Q. Wu, J. Yang, J. Stein, R. Mohan, Z. Fuks, and C. C. Ling,
+“Planning, delivery, and quality assurance of intensity-modulated radiotherapy using dynamic multileaf collimator: A strategy for large-scale
+implementation for the treatment of carcinoma of the prostate,” Int. J.
+Radiat. Oncol., Biol., Phys. 39, 863–873 共1997兲.
+58
+S. C. Vieira, M. L. Dirkx, K. L. Pasma, and B. J. Heijmen, “Fast and
+accurate leaf verification for dynamic multileaf collimation using an electronic portal imaging device,” Med. Phys. 29, 2034–2040 共2002兲.
+59
+M. Sastre-Padro, U. A. van der Heide, and H. Welleweerd, “An accurate
+calibration method of the multileaf collimator valid for conformal and
+intensity modulated radiation treatments,” Phys. Med. Biol. 49, 2631–
+2643 共2004兲.
+60
+J. J. Sonke, L. S. Ploeger, B. Brand, M. H. Smitsmans, and M. van Herk,
+“Leaf trajectory verification during dynamic intensity modulated radiotherapy using an amorphous silicon flat panel imager,” Med. Phys. 31,
+389–395 共2004兲.
+61
+S. J. Baker, G. J. Budgell, and R. I. MacKay, “Use of an amorphous
+silicon electronic portal imaging device for multileaf collimator quality
+control and calibration,” Phys. Med. Biol. 50, 1377–1392 共2005兲.
+62
+V. P. Cosgrove, U. Jahn, M. Pfaender, S. Bauer, V. Budach, and R. E.
+Wurm, “Commissioning of a micro multi-leaf collimator and planning
+system for stereotactic radiosurgery,” Radiother. Oncol. 50, 325–336
+共1999兲.
+63
+J. Chang, C. H. Obcemea, J. Sillanpaa, J. Mechalakos, and C. Burman,
+“Use of EPID for leaf position accuracy QA of dynamic multi-leaf collimator 共DMLC兲 treatment,” Med. Phys. 31, 2091–2096 共2004兲.
+64
+J. E. Bayouth and S. M. Morrill, “MLC dosimetric characteristics for
+small field and IMRT applications,” Med. Phys. 30, 2545–2552 共2003兲.
+65
+E. E. Klein and D. A. Low, “Interleaf leakage for 5 and 10 mm dynamic
+multileaf collimation systems incorporating patient motion,” Med. Phys.
+28, 1703–1710 共2001兲.
+66
+T. Losasso, “IMRT delivery performance with a varian multileaf collimator,” Int. J. Radiat. Oncol., Biol., Phys. 71, S85–S88 共2008兲.
+67
+C. D. Venencia and P. Besa, “Commissioning and quality assurance for
+intensity modulated radiotherapy with dynamic multileaf collimator: Experience of the Pontificia Universidad Catolica de Chile,” J. Appl. Clin.
+Med. Phys. 5, 37–54 共2004兲.
+68
+A. M. Stell, J. G. Li, O. A. Zeidan, and J. F. Dempsey, “An extensive
+53
+
+Medical Physics, Vol. 36, No. 9, September 2009
+
+4212
+
+log-file analysis of step-and-shoot intensity modulated radiation therapy
+segment delivery errors,” Med. Phys. 31, 1593–1602 共2004兲.
+69
+S. S. Samant, W. Zheng, N. A. Parra, J. Chandler, A. Gopal, J. Wu, J.
+Jain, Y. Zhu, and M. Sontag, “Verification of multileaf collimator leaf
+positions using an electronic portal imaging device,” Med. Phys. 29,
+2900–2912 共2002兲.
+70
+M. Mamalui-Hunter, H. Li, and D. A. Low, “MLC quality assurance
+using EPID: A fitting technique with subpixel precision,” Med. Phys. 35,
+2347–2355 共2008兲.
+71
+J. Van Dyk, J. M. Galvin, G. P. Glasgow, and E. B. Podgorsak, “The
+physical aspects of total and half body photon irradiation,” AAPM Radiation Therapy Committee Task Group 29 Report No. 17, 1986.
+72
+C. J. Karzmark, J. Anderson, A. Buffa, F. P, F. Khan, G. Svensson, K.
+Wright, P. Almond, F. B, K. Hogstrom, R. Loevinger, R. Morton, and B.
+Palos, “Total skin electron therapy: Technique and dosimetry,” AAPM
+Radiation Therapy Committee Task Group 30 Report No. 23, 1987.
+73
+“Kilo voltage localization in therapy,” American Association of Physicists
+in Medicine Task Group Report 104, 2009 共unpublished兲.
+74
+M. G. Herman, J. M. Balter, D. A. Jaffray, K. P. McGee, P. Munro, S.
+Shalev, M. Van Herk, and J. W. Wong, “Clinical use of electronic portal
+imaging: Report of AAPM Radiation Therapy Committee Task Group
+58,” Med. Phys. 28, 712–737 共2001兲.
+75
+R. Rajapakshe, K. Luchka, and S. Shalev, “A quality control test for
+electronic portal imaging devices,” Med. Phys. 23, 1237–1244 共1996兲.
+76
+A. L. Boyer, L. Antonuk, A. Fenster, M. Van Herk, H. Meertens, P.
+Munro, L. E. Reinstein, and J. Wong, “A review of electronic portal
+imaging devices 共EPIDs兲,” Med. Phys. 19, 1–16 共1992兲.
+77
+M. G. Herman, J. J. Kruse, and C. R. Hagness, “Guide to clinical use of
+electronic portal imaging,” J. Appl. Clin. Med. Phys. 1, 38–57 共2000兲.
+78
+D. A. Jaffray, J. H. Siewerdsen, J. W. Wong, and A. A. Martinez, “Flatpanel cone-beam computed tomography for image-guided radiation
+therapy,” Int. J. Radiat. Oncol,. Biol., Phys. 53, 1337–1349 共2002兲.
+79
+J. Pouliot, A. Bani-Hashemi, J. Chen, M. Svatos, F. Ghelmansarai, M.
+Mitschke, M. Aubin, P. Xia, O. Morin, K. Bucci, M. Roach, 3rd, P.
+Hernandez, Z. Zheng, D. Hristov, and L. Verhey, “Low-dose megavoltage
+cone-beam CT for radiation therapy,” Int. J. Radiat. Oncol., Biol., Phys.
+61, 552–560 共2005兲.
+80
+P. J. Keall, G. S. Mageras, J. M. Balter, R. S. Emery, K. M. Forster, S. B.
+Jiang, J. M. Kapatoes, D. A. Low, M. J. Murphy, B. R. Murray, C. R.
+Ramsey, M. B. Van Herk, S. S. Vedam, J. W. Wong, and E. Yorke, “The
+management of respiratory motion in radiation oncology report of AAPM
+Task Group 76,” Med. Phys. 33, 3874–3900 共2006兲.
+81
+J. Bayouth, J. Sample, T. Waldron, and R. Siochi, “Evaluation of 4DRT:
+CT acquisition and gated delivery system,” Med. Phys. 33, 2188–2189
+共2006兲.
+82
+P. R. Almond, P. J. Biggs, B. M. Coursey, W. F. Hanson, M. S. Huq, R.
+Nath, and D. W. Rogers, “AAPM’s TG-51 protocol for clinical reference
+dosimetry of high-energy photon and electron beams,” Med. Phys. 26,
+1847–1870 共1999兲.
+
+
