@@ -394,5 +394,312 @@ Target theory and hit models represent earlier approaches to modeling radiation 
 - Established concept of stochastic nature of radiation damage
 - Introduced mathematical modeling to radiobiology
 - Laid groundwork for more sophisticated models
-- Still useful for educational purposes and concept
-(Content truncated due to size limit. Use line ranges to read in chunks)
+- Still useful for educational purposes and conceptual understanding
+
+While largely superseded by the LQ model for clinical applications, target theory and hit models remain important for understanding the historical development of radiobiological modeling and provide conceptual insights into the stochastic nature of radiation effects.
+
+#### Extensions and Limitations of the LQ Model
+
+While the LQ model has been remarkably successful, it has limitations and has been extended to address various clinical scenarios:
+
+**Standard LQ Model Limitations**:
+
+1. **High-Dose Limitations**:
+   - Overestimates cell killing at doses >10 Gy
+   - Fails to account for heterogeneous cell populations
+   - Does not capture vascular and immune effects
+   - Problematic for stereotactic treatments
+
+2. **Time Factors**:
+   - Basic model ignores overall treatment time
+   - Does not account for repopulation during treatment
+   - Cannot model accelerated fractionation effects
+   - Neglects cell cycle redistribution
+
+3. **Repair Kinetics**:
+   - Assumes complete repair between fractions
+   - Does not model incomplete repair with short intervals
+   - Cannot account for repair capacity saturation
+   - Simplifies complex repair processes
+
+4. **Biological Heterogeneity**:
+   - Assumes homogeneous cell population
+   - Cannot account for cancer stem cell subpopulations
+   - Neglects microenvironmental heterogeneity
+   - Simplifies complex tumor biology
+
+**Extended LQ Models**:
+
+1. **Time-Adjusted LQ Model**:
+   - Incorporates repopulation: S = e^(-αD-βD²+γT)
+   - γ = repopulation factor
+   - T = overall treatment time
+   - Accounts for accelerated repopulation
+   - Applications: Head and neck, lung, cervical cancers
+
+2. **Incomplete Repair Model**:
+   - Accounts for incomplete repair between fractions
+   - Introduces repair half-time (T½)
+   - Modifies β component based on interfraction interval
+   - Applications: Twice-daily treatments, brachytherapy
+
+3. **Lethal-Potentially Lethal (LPL) Model**:
+   - Extends LQ with repair kinetics
+   - Distinguishes lethal and potentially lethal damage
+   - Incorporates repair capacity and saturation
+   - Applications: Variable dose-rate treatments
+
+4. **Linear-Quadratic-Linear (LQL) Model**:
+   - Transitions to linear relationship at high doses
+   - S = e^(-αD-βD²) for D < Dt
+   - S = e^(-αD-βDt²+β(Dt-D)²) for D ≥ Dt
+   - Dt = transition dose (typically 6-8 Gy)
+   - Applications: Stereotactic treatments, high dose per fraction
+
+5. **Universal Survival Curve (USC)**:
+   - Hybrid of LQ model and single-hit multi-target model
+   - LQ model at low doses, transitions to final slope of multi-target model
+   - Addresses high-dose limitations
+   - Applications: Stereotactic radiosurgery, SBRT
+
+6. **Generalized LQ (gLQ) Model**:
+   - Incorporates dose protraction factor
+   - Accounts for repair during dose delivery
+   - Particularly relevant for FLASH radiotherapy
+   - Applications: Ultra-high dose rate treatments
+
+**Clinical Implementation Considerations**:
+
+1. **Parameter Uncertainty**:
+   - α and β values have considerable uncertainty
+   - Derived from in vitro data with limited clinical validation
+   - Patient-specific variation not accounted for
+   - Requires sensitivity analysis in clinical decision-making
+
+2. **Tissue-Specific Considerations**:
+   - Different tissues may require different model extensions
+   - Organ-specific repair kinetics and repopulation rates
+   - Functional subunit organization affects response
+   - Volume effects not captured by cellular models
+
+3. **Combined Modality Interactions**:
+   - Chemotherapy alters radiation response parameters
+   - Targeted agents may change α/β ratios
+   - Immunotherapy interactions poorly modeled
+   - Requires empirical adjustment of parameters
+
+4. **Implementation in Treatment Planning**:
+   - Most TPS use physical dose optimization
+   - Biological optimization requires reliable parameters
+   - Model uncertainty propagation in plan evaluation
+   - Need for robust optimization approaches
+
+Despite these limitations, the LQ model and its extensions remain the most clinically useful and mechanistically sound approaches for predicting radiation effects across a wide range of clinical scenarios.
+
+#### Alternative Mathematical Models
+
+Several alternative mathematical models have been developed to address limitations of the LQ model or to provide different perspectives on radiation response:
+
+**Repairable-Conditionally Repairable (RCR) Model**:
+- Developed by Lind et al. (2003)
+- Distinguishes three damage categories:
+  1. Repairable damage
+  2. Conditionally repairable damage (becomes unrepairable above threshold)
+  3. Unrepairable damage
+- Mathematical form: S = e^(-αD) × [1 + (1-e^(-βD))(δ/β)]
+- Parameters: α, β, δ (repair capacity)
+- Advantages:
+  - Better fit to high-dose data
+  - Mechanistically plausible
+  - Accounts for repair capacity saturation
+- Limitations:
+  - Additional parameter increases uncertainty
+  - Limited clinical validation
+  - Computationally more complex
+
+**Induced Repair Model**:
+- Developed by Joiner et al. (2001)
+- Accounts for low-dose hyper-radiosensitivity
+- Mathematical form: S = e^(-αr(D)D-βD²)
+- Where αr(D) = α₀(1 + (α/α₀ - 1)e^(-D/Dc))
+- Parameters: α₀, α, β, Dc (threshold dose)
+- Advantages:
+  - Explains low-dose hyper-radiosensitivity
+  - Accounts for induced repair processes
+  - Supported by experimental data
+- Limitations:
+  - Complex parameter estimation
+  - Primarily relevant for low doses
+  - Limited clinical implementation
+
+**Track Structure Models**:
+- Developed by Katz and colleagues
+- Based on radial dose distribution around particle tracks
+- Distinguishes ion-kill (intratrack) and gamma-kill (intertrack)
+- Mathematical form: Complex, based on target size and track structure
+- Advantages:
+  - Mechanistically based on physical interactions
+  - Excellent for high-LET radiation
+  - Predicts RBE from first principles
+- Limitations:
+  - Mathematically complex
+  - Requires detailed physical parameters
+  - Limited clinical implementation
+
+**Microdosimetric Kinetic Model (MKM)**:
+- Developed by Hawkins (1996)
+- Based on microdosimetric energy deposition in domains
+- Incorporates repair kinetics and domain interaction
+- Mathematical form: Complex, based on specific energy distribution
+- Advantages:
+  - Mechanistically sound
+  - Excellent for high-LET radiation
+  - Widely used in carbon ion therapy
+- Limitations:
+  - Requires microdosimetric measurements
+  - Computationally intensive
+  - Limited to specialized centers
+
+**Tumor Control Probability (TCP) Models**:
+- Various formulations based on Poisson statistics
+- TCP = e^(-N₀×S)
+- Where N₀ = initial number of clonogenic cells
+- S = surviving fraction (often calculated using LQ model)
+- Extensions:
+  - Incorporation of heterogeneity
+  - Volume effects
+  - Dose-volume histograms
+- Advantages:
+  - Directly relates to clinical endpoint
+  - Incorporates tumor burden
+  - Useful for treatment plan comparison
+- Limitations:
+  - Highly sensitive to parameter uncertainty
+  - Difficult to validate clinically
+  - Simplifies complex tumor biology
+
+**Normal Tissue Complication Probability (NTCP) Models**:
+- Various formulations (Lyman-Kutcher-Burman, relative seriality)
+- Based on functional subunit organization
+- Incorporates dose-volume effects
+- Often uses LQ model for underlying cell survival
+- Advantages:
+  - Accounts for tissue architecture
+  - Incorporates volume effects
+  - Clinically relevant endpoints
+- Limitations:
+  - Parameter uncertainty
+  - Endpoint definition variability
+  - Limited predictive power
+
+**Model Selection Considerations**:
+
+1. **Clinical Context**:
+   - Conventional fractionation: Standard LQ model often sufficient
+   - High dose per fraction: Consider LQL, USC, or RCR models
+   - High-LET radiation: Consider MKM or track structure models
+   - Low-dose effects: Consider induced repair model
+
+2. **Available Data**:
+   - Parameter availability and uncertainty
+   - Validation status for specific application
+   - Computational requirements
+   - Integration with clinical systems
+
+3. **Practical Implementation**:
+   - Simplicity vs. accuracy tradeoff
+   - Uncertainty propagation
+   - Clinical interpretability
+   - Decision support integration
+
+While these alternative models offer theoretical advantages in specific situations, the LQ model remains the most widely used due to its balance of mechanistic plausibility, mathematical simplicity, and extensive clinical validation.
+
+### Clinical Correlation: Linear-Quadratic Model in Radiation Oncology Practice
+
+**Case Example**: A 72-year-old man with localized prostate cancer (cT2bN0M0, Gleason 3+4=7, PSA 8.2 ng/mL) is being evaluated for definitive radiation therapy. The radiation oncologist needs to select between conventional fractionation (78 Gy in 39 fractions of 2 Gy) and moderate hypofractionation (60 Gy in 20 fractions of 3 Gy).
+
+**Clinical Application**:
+
+1. **Radiobiological Assessment**:
+   - Prostate cancer α/β ratio estimated at 1.5 Gy (low, unlike most tumors)
+   - Late rectal toxicity α/β ratio approximately 3 Gy
+   - Late bladder toxicity α/β ratio approximately 5 Gy
+   - Patient has moderate baseline urinary symptoms (IPSS score 12)
+
+2. **BED Calculations**:
+   - Conventional fractionation (78 Gy in 2 Gy fractions):
+     - Tumor BED = 78 × (1 + 2/1.5) = 182 Gy₁.₅
+     - Rectal BED = 78 × (1 + 2/3) = 130 Gy₃
+     - Bladder BED = 78 × (1 + 2/5) = 109.2 Gy₅
+
+   - Moderate hypofractionation (60 Gy in 3 Gy fractions):
+     - Tumor BED = 60 × (1 + 3/1.5) = 180 Gy₁.₅
+     - Rectal BED = 60 × (1 + 3/3) = 120 Gy₃
+     - Bladder BED = 60 × (1 + 3/5) = 96 Gy₅
+
+3. **Clinical Decision-Making**:
+   - Tumor BED is nearly equivalent between regimens (182 vs. 180 Gy₁.₅)
+   - Rectal BED is lower with hypofractionation (120 vs. 130 Gy₃)
+   - Bladder BED is lower with hypofractionation (96 vs. 109.2 Gy₅)
+   - Hypofractionation offers:
+     - Equivalent tumor control probability
+     - Potentially lower late toxicity risk
+     - Shorter overall treatment time (4 weeks vs. 8 weeks)
+     - Improved patient convenience and resource utilization
+
+4. **Treatment Selection and Planning**:
+   - Moderate hypofractionation selected based on LQ model predictions
+   - Treatment planning constraints adjusted using EQD2 conversions
+   - Rectal V65Gy constraint converted to V50Gy for hypofractionated plan
+   - Bladder constraints similarly adjusted
+   - Daily image guidance implemented to ensure accurate delivery
+   - Patient educated about expected acute effects
+
+This case illustrates how the LQ model directly informs clinical decision-making by allowing quantitative comparison of different fractionation schemes. The unique radiobiological properties of prostate cancer (low α/β ratio) make it particularly suitable for hypofractionation, with the LQ model predicting equivalent tumor control with reduced normal tissue effects and shorter overall treatment time.
+
+**Additional Clinical Applications**:
+- Conversion of dose constraints between fractionation schemes
+- Evaluation of interrupted treatment courses
+- Assessment of reirradiation feasibility
+- Optimization of combined modality sequencing
+- Development of clinical trial dose prescriptions
+
+### Knowledge Check Questions
+
+1. A tumor with an α/β ratio of 10 Gy and a normal tissue with an α/β ratio of 3 Gy receive the same physical dose. Which of the following statements is correct?
+   A. The tumor and normal tissue receive the same biologically effective dose
+   B. Increasing the dose per fraction will increase the therapeutic ratio
+   C. Decreasing the dose per fraction will increase the therapeutic ratio
+   D. The therapeutic ratio is independent of dose per fraction
+
+2. The linear component of the linear-quadratic model (α) primarily represents:
+   A. Repairable damage from interaction of two radiation tracks
+   B. Irreparable damage from single radiation tracks
+   C. Damage that is expressed only after cell division
+   D. Damage that is dependent on dose rate
+
+3. A radiation oncologist is comparing two fractionation schemes for a head and neck cancer patient: 70 Gy in 35 fractions and 55 Gy in 20 fractions. Assuming an α/β ratio of 10 Gy for the tumor, which of the following is true?
+   A. The 70 Gy regimen delivers a higher biologically effective dose
+   B. The 55 Gy regimen delivers a higher biologically effective dose
+   C. Both regimens deliver approximately the same biologically effective dose
+   D. The comparison requires knowledge of the α and β values separately
+
+4. Which of the following is a limitation of the standard linear-quadratic model?
+   A. It cannot account for differences in radiosensitivity between tissues
+   B. It overestimates cell killing at very high doses per fraction (>10 Gy)
+   C. It cannot be used to compare different fractionation schemes
+   D. It does not incorporate the concept of repair capacity
+
+5. A patient with prostate cancer (α/β = 1.5 Gy) is being considered for either conventional fractionation (78 Gy in 39 fractions) or hypofractionation (60 Gy in 20 fractions). Based on the linear-quadratic model, which statement is most accurate?
+   A. Conventional fractionation will provide better tumor control
+   B. Hypofractionation will provide better tumor control
+   C. Both regimens will provide approximately equivalent tumor control
+   D. The comparison requires knowledge of absolute α values
+
+### References
+1. Fowler JF. The linear-quadratic formula and progress in fractionated radiotherapy. Br J Radiol. 1989;62(740):679-694.
+2. Brenner DJ. The linear-quadratic model is an appropriate methodology for determining isoeffective doses at large doses per fraction. Semin Radiat Oncol. 2008;18(4):234-239.
+3. Thames HD, Bentzen SM, Turesson I, Overgaard M, Van den Bogaert W. Time-dose factors in radiotherapy: a review of the human data. Radiother Oncol. 1990;19(3):219-235.
+4. Joiner MC, Marples B, Lambin P, Short SC, Turesson I. Low-dose hypersensitivity: current status and possible mechanisms. Int J Radiat Oncol Biol Phys. 2001;49(2):379-389.
+5. Morgan MA, Lawrence TS. Molecular pathways: overcoming radiation resistance by targeting DNA damage response pathways. Clin Cancer Res. 2015;21(13):2898-2904.
+6. Dasu A, Toma-Dasu I. Models for the risk of secondary cancers from radiation therapy. Phys Med. 2017;42:232-238.

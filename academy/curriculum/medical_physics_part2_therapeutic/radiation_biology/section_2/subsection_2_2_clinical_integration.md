@@ -292,5 +292,38 @@ Diagram 3 (Clinical Applications) includes the specific calculation for these pr
 A patient with locally advanced lung cancer (α/β = 10 Gy) was prescribed 60 Gy in 30 fractions. After receiving 40 Gy in 20 fractions, treatment was interrupted for 14 days due to severe esophagitis. The radiation oncologist must determine how to complete the treatment, considering tumor repopulation (effective doubling time of 5 days). Students must calculate the additional dose needed to maintain biological equivalence, accounting for repopulation during the break.
 
 **Scenario 2: Reirradiation Decision**
-A patient with recurrent head and neck cancer received 70 Gy in 35 fractions 2 
-(Content truncated due to size limit. Use line ranges to read in chunks)
+A patient with recurrent head and neck cancer received 70 Gy in 35 fractions 2 years ago. Now with an isolated recurrence, reirradiation is being considered. The radiation oncologist must determine a safe dose, considering cumulative BED to critical structures (spinal cord α/β = 2 Gy, with estimated 70% recovery of damage). Students must calculate various fractionation options and their cumulative biological effects.
+
+**Scenario 3: Mixed Fractionation Schedule**
+A patient with breast cancer begins treatment with standard fractionation (2 Gy per fraction) but develops severe skin reaction after 30 Gy. The oncologist decides to continue with 1.8 Gy fractions to complete treatment. Students must calculate the total number of 1.8 Gy fractions needed to maintain biological equivalence to the original prescription of 50 Gy in 25 fractions.
+
+### Interactive Elements
+
+**BED Calculator Tool**
+Design specifications for an interactive tool where learners can:
+- Input total dose, dose per fraction, and α/β ratio
+- Calculate BED and EQD2
+- Compare multiple fractionation schemes simultaneously
+- Visualize the effect of changing parameters on biological effect
+- Generate printable reports for clinical reference
+
+**Fractionation Optimizer**
+Design for an interactive tool where learners can:
+- Specify desired tumor BED and constraints for normal tissues
+- Input α/β ratios for tumor and critical structures
+- Explore different fractionation schemes that meet criteria
+- Visualize therapeutic ratio for different options
+- Generate optimal fractionation recommendations
+
+### Clinical Decision Support Framework
+
+**Radiobiological Treatment Planning Guide**
+Design specifications for a clinical decision support framework that:
+- Integrates LQ model calculations into treatment planning workflow
+- Provides tissue-specific α/β ratio recommendations with confidence intervals
+- Converts dose constraints between fractionation schemes
+- Calculates cumulative BED for reirradiation scenarios
+- Incorporates time factors for interrupted treatments
+- Generates patient-specific reports explaining radiobiological rationale
+
+This integration of clinical correlations and knowledge checks creates a comprehensive educational resource that connects the mathematical concepts of the linear-quadratic model with practical clinical applications, enhancing the learning experience and clinical relevance of this critical radiobiological framework.

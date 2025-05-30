@@ -372,5 +372,375 @@ To provide a comprehensive visualization of the quantitative relationships betwe
      - Key repair pathways indicated
 
    - **Temperature Effect**
-     - Cu
-(Content truncated due to size limit. Use line ranges to read in chunks)
+     - Curves at different temperatures (e.g., 37°C vs. 41°C)
+     - Influence on repair kinetics
+     - Potential clinical applications
+
+6. **Mathematical Models Comparison Panel**
+   - **Linear Model**: Y = αD
+   - **Linear-Quadratic Model**: Y = αD + βD²
+   - **Linear-Quadratic-Cubic Model**: Y = αD + βD² + γD³
+   - **Saturating Model**: Y = Y₀(1-e^(-αD-βD²))
+   - Goodness-of-fit comparisons
+   - Residual plots
+   - Mechanistic basis for each model
+   - Dose range applicability
+
+7. **Practical Applications Panel**
+   - **Biodosimetry Calibration Curve**
+     - Standard curve with confidence intervals
+     - Example case with unknown exposure
+     - Dose estimation process
+     - Uncertainty calculation
+
+   - **Partial Body Exposure**
+     - Poisson distribution for whole-body exposure
+     - Contaminated Poisson for partial exposure
+     - Fraction of body exposed calculation
+     - Dolphin's method visualization
+
+   - **Historical Exposure Assessment**
+     - Translocation frequency vs. time curve
+     - Persistence of different aberration types
+     - Age-adjustment factors
+     - Limitations and confidence intervals
+
+### Design Notes
+- Use consistent color scheme across all panels (e.g., blue for X-rays, red for neutrons)
+- Implement data point symbols that are distinguishable both in color and shape
+- Include actual data points from key studies with proper attribution
+- Provide confidence intervals and error bars for all curves and data points
+- Use logarithmic scales where appropriate for wide dose ranges
+- Include insets showing microscopy images of relevant aberrations
+- Provide detailed mathematical equations with all parameters defined
+- Use high-resolution vector graphics (minimum 600 dpi) for print quality
+- Include brief explanatory text (75-100 words) for each panel
+- Provide cross-references to relevant sections in the text content
+- Include references to key scientific papers for each relationship shown
+- Use consistent units throughout (Gy, aberrations per cell)
+- Provide a comprehensive legend explaining all symbols, colors, and line styles
+
+## Diagram 4: Chromosomal Aberration Detection Methods
+
+### Purpose
+To provide a comprehensive visual comparison of the various cytogenetic techniques used to detect and quantify radiation-induced chromosomal aberrations, highlighting their principles, procedures, applications, and limitations.
+
+### Key Elements
+
+1. **Conventional Cytogenetics Panel**
+   - **Methodology Workflow**
+     - Blood sampling procedure
+     - Lymphocyte isolation steps
+     - PHA stimulation process
+     - Cell culture conditions (time, temperature, media)
+     - Colcemid treatment timing
+     - Hypotonic treatment mechanism
+     - Fixation process (methanol:acetic acid)
+     - Slide preparation techniques
+     - Staining methods (Giemsa, G-banding)
+     - Timeline with critical time points
+
+   - **Solid Staining Visualization**
+     - Complete metaphase spread (46 chromosomes)
+     - Identification of dicentric chromosomes
+     - Acentric fragments
+     - Ring chromosomes
+     - Scoring criteria visualization
+     - Magnified views of key aberrations
+     - Comparison with normal chromosomes
+
+   - **G-Banding Visualization**
+     - Complete karyotype arranged by chromosome pairs
+     - Banding pattern resolution (400-550 bands)
+     - Identification of structural aberrations
+     - Translocations visible through banding disruption
+     - Deletions and duplications
+     - Inversions
+     - Magnified views of key aberrations
+
+   - **Advantages and Limitations**
+     - Table format with specific parameters
+     - Sensitivity limits (aberrations per 1000 cells)
+     - Time requirements (72-96 hours)
+     - Technical expertise required
+     - Cost factors
+     - Automation potential
+     - Historical significance
+
+2. **Fluorescence in situ Hybridization (FISH) Panel**
+   - **Methodology Workflow**
+     - Probe preparation methods
+     - DNA denaturation process
+     - Hybridization conditions
+     - Washing stringency factors
+     - Detection systems (direct vs. indirect)
+     - Counterstaining techniques
+     - Timeline with critical time points
+
+   - **Whole Chromosome Painting**
+     - Metaphase spread with painted chromosomes
+     - Identification of translocations
+     - Color junction points
+     - Complete and incomplete exchanges
+     - Painting patterns for different aberrations
+     - 3-color painting system
+     - FISH nomenclature examples
+
+   - **Centromere/Telomere FISH**
+     - Centromere probe applications
+     - Telomere probe applications
+     - Dicentric identification
+     - Acentric fragment confirmation
+     - Ring chromosome verification
+     - Interstitial telomere sequences
+     - Combined with chromosome painting
+
+   - **Multicolor FISH (mFISH/SKY)**
+     - 24-color karyotype (all chromosomes)
+     - Complex rearrangement visualization
+     - Color junction analysis
+     - Spectral karyotyping principles
+     - Resolution limitations
+     - Software analysis methods
+     - Complex aberration examples
+
+   - **Advantages and Limitations**
+     - Table format with specific parameters
+     - Sensitivity for different techniques
+     - Partial genome analysis considerations
+     - Stable vs. unstable aberration detection
+     - Retrospective dosimetry applications
+     - Technical expertise required
+     - Cost factors
+     - Automation potential
+
+3. **Premature Chromosome Condensation (PCC) Panel**
+   - **Methodology Workflow**
+     - Cell fusion technique with mitotic cells
+     - Polyethylene glycol fusion process
+     - Chemical induction with calyculin A
+     - Slide preparation differences
+     - Staining options
+     - Timeline with critical time points
+
+   - **PCC Spread Visualization**
+     - G0/G1-PCC (46 single chromatid chromosomes)
+     - G2-PCC (46 double chromatid chromosomes)
+     - S-phase PCC (pulverized appearance)
+     - Aberration identification in PCC spreads
+     - Comparison with conventional metaphase
+     - Scoring criteria visualization
+
+   - **PCC-FISH Combination**
+     - Chromosome painting on PCC spreads
+     - Translocations in G0/G1-PCC
+     - Complex exchanges visualization
+     - Advantages over standard FISH
+     - Technical challenges
+
+   - **Advantages and Limitations**
+     - Table format with specific parameters
+     - No requirement for cell division
+     - Application in heavily damaged cells
+     - High-dose exposure assessment
+     - Immediate analysis potential
+     - Technical complexity factors
+     - Cost considerations
+     - Automation challenges
+
+4. **Cytokinesis-Block Micronucleus Assay Panel**
+   - **Methodology Workflow**
+     - Blood sampling procedure
+     - Lymphocyte isolation steps
+     - PHA stimulation process
+     - Cytochalasin B addition timing
+     - Mechanism of cytokinesis blocking
+     - Hypotonic treatment modifications
+     - Fixation process
+     - Slide preparation techniques
+     - Staining methods
+     - Timeline with critical time points
+
+   - **Micronucleus Visualization**
+     - Binucleated cells with micronuclei
+     - Scoring criteria for micronuclei
+     - Size requirements (1/16 to 1/3 of main nucleus)
+     - Same staining intensity as main nucleus
+     - Non-refractile and non-linked to main nuclei
+     - Multiple micronuclei examples
+     - Comparison with mononucleated cells
+
+   - **FISH-Enhanced Micronucleus Assay**
+     - Centromere probes to distinguish mechanisms
+     - Centromere-positive micronuclei (chromosome loss)
+     - Centromere-negative micronuclei (acentric fragments)
+     - Pancentromeric and pantelomeric probes
+     - Chromosome-specific probes
+     - Mechanism determination
+
+   - **Advantages and Limitations**
+     - Table format with specific parameters
+     - Simplicity compared to metaphase analysis
+     - Throughput advantages
+     - Automated scoring potential
+     - Sensitivity range
+     - Specificity considerations
+     - Technical expertise required
+     - Cost factors
+     - Population screening applications
+
+5. **Advanced Molecular Cytogenetic Techniques Panel**
+   - **Comparative Genomic Hybridization (CGH)**
+     - Methodology workflow
+     - Whole genome amplification
+     - Fluorescent labeling process
+     - Hybridization to normal metaphases
+     - Ratio profile analysis
+     - Resolution limitations
+     - Copy number change detection
+     - Examples of radiation-induced changes
+
+   - **Single-Cell Genome Sequencing**
+     - Methodology workflow
+     - Cell isolation techniques
+     - Whole genome amplification challenges
+     - Library preparation process
+     - Sequencing platform options
+     - Bioinformatic analysis pipeline
+     - Structural variation detection
+     - Resolution capabilities
+     - Examples of radiation-induced changes
+
+   - **γ-H2AX Immunofluorescence**
+     - Methodology workflow
+     - DSB recognition mechanism
+     - Foci formation and resolution kinetics
+     - Quantification methods
+     - Relationship to chromosomal aberrations
+     - Advantages for low-dose assessment
+     - Limitations for biodosimetry
+
+   - **Advantages and Limitations**
+     - Table format with specific parameters
+     - Sensitivity comparison
+     - Resolution comparison
+     - Throughput comparison
+     - Technical expertise required
+     - Cost factors
+     - Future development potential
+
+6. **Comprehensive Comparison Panel**
+   - **Method Comparison Table**
+     - Technique
+     - Principle
+     - Target aberrations
+     - Sensitivity (minimum detectable dose)
+     - Specificity for radiation
+     - Time required
+     - Technical complexity
+     - Cost per sample
+     - Automation potential
+     - Persistent vs. unstable aberrations
+     - Whole vs. partial body assessment
+     - Acute vs. chronic exposure assessment
+     - Recent vs. historical exposure assessment
+
+   - **Method Selection Flowchart**
+     - Decision tree for method selection
+     - Based on exposure scenario
+     - Based on time since exposure
+     - Based on estimated dose range
+     - Based on available resources
+     - Based on required information
+     - Based on population size
+
+   - **Combined Approach Strategies**
+     - Triage scenario methodology
+     - Sequential testing approach
+     - Complementary information integration
+     - Uncertainty reduction strategies
+     - Cost-effectiveness considerations
+
+### Design Notes
+- Use actual cytogenetic images from published literature (with proper attribution)
+- Include magnified insets for critical details in each technique
+- Provide step-by-step workflow diagrams with timing information
+- Use consistent color scheme across all panels for easy comparison
+- Include scale bars for all microscopy images
+- Provide detailed legends explaining all technical terms and abbreviations
+- Use high-resolution images (minimum 600 dpi) for microscopy examples
+- Include side-by-side comparisons of the same aberrations detected by different methods
+- Provide detailed comparison tables with quantitative parameters where possible
+- Include brief explanatory text (100-150 words) for each technique
+- Provide cross-references to relevant sections in the text content
+- Include references to key methodological papers for each technique
+- Use consistent terminology throughout all panels
+- Include practical examples of each method's application in radiation biology
+
+## Integration with Clinical Correlations
+
+The enhanced diagrams should be integrated with the clinical correlation section by:
+
+1. **Diagram 1 (Types of Aberrations)**
+   - Reference specific aberration types observed in the radiation accident case (dicentrics, rings, fragments)
+   - Highlight which aberrations are most informative for biodosimetry (dicentrics as "gold standard")
+   - Show how different aberration types provide complementary information about exposure
+   - Illustrate how aberration complexity relates to radiation quality
+   - Provide visual examples that match the 2 Gy exposure scenario described
+
+2. **Diagram 2 (Dicentric Formation)**
+   - Connect to the discussion of how physical dose (2 Gy) correlates with biological damage
+   - Illustrate why dicentrics are ideal for acute exposure assessment in emergency scenarios
+   - Show how the time course of dicentric formation relates to the patient's exposure timeline
+   - Demonstrate how understanding formation mechanisms helps interpret cytogenetic findings
+   - Illustrate how dicentric formation relates to subsequent lymphocyte count decline
+
+3. **Diagram 3 (Dose-Response)**
+   - Show precisely how the 2 Gy exposure in the case example correlates with expected dicentric frequency (0.1 per cell)
+   - Demonstrate how partial-body exposure would alter the distribution of aberrations
+   - Illustrate how dose reconstruction works using the patient's aberration data
+   - Show confidence intervals for dose estimation at the 2 Gy level
+   - Demonstrate how time since exposure affects interpretation of results
+
+4. **Diagram 4 (Detection Methods)**
+   - Highlight which methods would be most appropriate for emergency response (conventional cytogenetics, PCC)
+   - Show how different techniques provide complementary information for patient management
+   - Illustrate the timeline for obtaining results relative to clinical decision points
+   - Demonstrate how follow-up assessments using different techniques (FISH) provide information about long-term risk
+   - Show how automation and triage approaches would be implemented in a radiation emergency
+
+## Integration with Knowledge Checks
+
+The enhanced diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about dicentric chromosomes as biomarkers:**
+   - Provide detailed visual comparison of dicentrics vs. other aberration types
+   - Illustrate the specific features that make dicentrics ideal biomarkers (specificity, quantifiable relationship to dose)
+   - Show examples of dicentrics at different staining and detection methods
+   - Demonstrate how dicentrics are distinguished from other aberrations in actual samples
+
+2. **For Question 2 about dose-response relationships:**
+   - Illustrate the linear-quadratic relationship with precise mathematical notation
+   - Show how experimental data points fit the curve
+   - Demonstrate the difference between linear and linear-quadratic models
+   - Provide visual explanation of the biological basis for the linear-quadratic relationship
+
+3. **For Question 3 about persistent aberrations:**
+   - Show side-by-side comparison of dicentric vs. translocation stability through cell division
+   - Illustrate the mechanical challenges dicentrics face during mitosis
+   - Demonstrate how translocations maintain centromere functionality
+   - Show long-term persistence data for different aberration types
+
+4. **For Question 4 about complex aberrations:**
+   - Provide detailed visual comparison of aberrations from low-LET vs. high-LET radiation
+   - Show microscopy examples of complex aberrations from neutron or alpha exposure
+   - Illustrate the clustered damage mechanism that leads to complex aberrations
+   - Demonstrate quantitative relationship between LET and aberration complexity
+
+5. **For Question 5 about the micronucleus assay:**
+   - Show detailed visualization of micronucleus formation process from acentric fragments and lagging chromosomes
+   - Illustrate the cytokinesis-block methodology with clear procedural steps
+   - Demonstrate how micronuclei are scored in binucleated cells
+   - Show how FISH enhancements can distinguish between different formation mechanisms
+
+These enhanced diagram designs provide extremely detailed specifications that will ensure the visual elements effectively support the educational content, making complex concepts more accessible and memorable for students while providing sufficient detail for accurate implementation.

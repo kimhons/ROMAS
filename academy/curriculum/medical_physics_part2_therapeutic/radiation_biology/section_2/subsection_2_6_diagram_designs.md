@@ -448,5 +448,124 @@ To illustrate how the differential radiosensitivity of cells and tissues informs
      - TD 5/5 and TD 50/5 concept illustration
      - Volume-dependent tolerance curves
      - Organ-specific constraint visualization:
-       - CNS structures
-(Content truncated due to size limit. Use line ranges to read in chunks)
+       - CNS structures (brain, spinal cord, brainstem)
+       - Thoracic organs (lung, heart, esophagus)
+       - Abdominal organs (liver, kidney, bowel)
+       - Pelvic organs (bladder, rectum, femoral heads)
+     - QUANTEC guidelines implementation
+     - Integration into treatment planning
+   
+   - **Modifying Factors**
+     - Patient age effect visualization
+     - Comorbidity influence illustration
+       - Diabetes
+       - Collagen vascular disease
+       - Prior surgery
+     - Prior treatment effect
+     - Concurrent therapy impact
+     - Genetic factor influence
+     - Functional status consideration
+     - Dose modification approaches
+
+4. **Tumor Dose Requirements Panel**
+   - **Dose-Response Relationships**
+     - Sigmoid curve characteristics
+     - TCD₅₀ values for different tumor types
+     - Slope (γ₅₀) visualization
+     - Volume effect illustration
+     - Prescription dose derivation
+   
+   - **Modifying Factors**
+     - Tumor histology influence
+     - Tumor size and stage effect
+     - Hypoxic fraction impact
+     - Proliferation rate consideration
+     - Intrinsic radiosensitivity assessment
+     - Microenvironmental factor evaluation
+     - Dose adaptation strategies
+   
+   - **Dose Escalation Approaches**
+     - Physical dose escalation techniques
+     - Biological dose escalation methods
+     - Partial volume boosting strategies
+     - Adaptive approaches
+     - Integration with systemic therapy
+     - Clinical outcome correlation
+
+### Design Notes
+- Use clinical treatment planning-style visualization
+- Implement clear color coding for tumor and normal tissue effects
+- Include dose distribution visualizations
+- Use curve representations for dose-response relationships
+- Provide quantitative dose-volume constraints
+- Include both schematic representations and clinical examples
+- Use clear labeling of all concepts and approaches
+- Include brief explanatory text for each panel
+- Provide cross-references to relevant sections in the text content
+
+## Integration with Clinical Correlations
+
+The diagrams should be integrated with the clinical correlation section by:
+
+1. **Diagram 1 (Biological Basis)**
+   - Connect to the head and neck cancer case by illustrating the biological basis for the differential radiosensitivity of HPV-positive tumors
+   - Show how the Law of Bergonié and Tribondeau applies to the rapidly proliferating oral mucosa
+   - Illustrate the molecular determinants that make HPV-positive tumors more radiosensitive
+   - Demonstrate how cellular determinants influence the response of salivary glands and other normal tissues
+
+2. **Diagram 2 (Normal Tissues)**
+   - Relate to the normal tissue considerations in the case
+   - Show the hierarchical organization of oral mucosa and its acute response pattern
+   - Illustrate the functional organization of salivary glands and their late response characteristics
+   - Demonstrate the classification of critical structures in the head and neck region
+   - Show the early vs. late responding tissue distinction relevant to the case
+
+3. **Diagram 3 (Tumor Cells)**
+   - Connect to the HPV-positive oropharyngeal tumor characteristics
+   - Show where this tumor type falls on the radiosensitivity spectrum
+   - Illustrate the determinants that make it more radiosensitive than HPV-negative tumors
+   - Demonstrate potential heterogeneity within the tumor
+   - Show how predictive assays might be used in this case
+
+4. **Diagram 4 (Clinical Implications)**
+   - Directly incorporate the treatment planning considerations from the case
+   - Show the therapeutic ratio concept as applied to head and neck radiation
+   - Illustrate the dose-fractionation options considered (standard vs. moderate hypofractionation)
+   - Demonstrate the normal tissue constraints used in planning
+   - Show the tumor dose requirements and how they were met
+
+## Integration with Knowledge Checks
+
+The diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about the Law of Bergonié and Tribondeau:**
+   - Diagram 1 should clearly illustrate the three principles of the law
+   - Show the characteristics of intestinal crypt stem cells that make them highly radiosensitive
+   - Contrast with the characteristics of mature neurons, skeletal muscle cells, and mature erythrocytes
+   - Demonstrate the relationship between proliferation, differentiation, and radiosensitivity
+
+2. **For Question 2 about tissues with low α/β ratios:**
+   - Diagram 4 should provide clear visualization of how fraction size affects tissues with different α/β ratios
+   - Illustrate the greater sensitivity to dose per fraction for tissues with low α/β ratios
+   - Show how this relates to late-responding tissues
+   - Demonstrate the mathematical relationship in the linear-quadratic model
+
+3. **For Question 3 about lung functional organization:**
+   - Diagram 2 should clearly show the parallel organization of lung tissue
+   - Illustrate how this organization relates to the volume effect
+   - Show why mean dose is a primary determinant of toxicity
+   - Contrast with serial, mixed, and hierarchical organization
+
+4. **For Question 4 about ataxia telangiectasia:**
+   - Diagram 1 should include visualization of the ATM pathway and its role in radiosensitivity
+   - Show the cellular phenotype of AT cells after radiation
+   - Illustrate the appropriate dose modification approach
+   - Demonstrate the molecular basis for increased radiosensitivity
+
+5. **For Question 5 about tumor radiosensitivity:**
+   - Diagram 3 should clearly show the spectrum of tumor radiosensitivity
+   - Highlight seminoma as having high intrinsic radiosensitivity
+   - Contrast with the characteristics of melanoma, renal cell carcinoma, and pancreatic adenocarcinoma
+   - Demonstrate the biological basis for these differences
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on cell and tissue radiosensitivity, making complex concepts more accessible and clinically relevant for students.

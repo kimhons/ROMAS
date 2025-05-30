@@ -386,5 +386,19 @@ The diagrams should directly support the knowledge check questions by:
 3. **For Question 3 about LQ model components affected by dose rate:**
    - Diagram 2 should clearly show how dose rate primarily affects the quadratic component
    - Illustrate the modification of the β term through the G factor
-   - Show the relativ
-(Content truncated due to size limit. Use line ranges to read in chunks)
+   - Show the relative stability of the α component
+   - Demonstrate the mathematical basis for this differential effect
+
+4. **For Question 4 about brachytherapy regimen comparison:**
+   - Diagram 3 should include visualization of LDR vs. HDR brachytherapy comparison
+   - Show the BED calculation for both approaches
+   - Illustrate the step-by-step process for determining biological equivalence
+   - Demonstrate the clinical decision-making process based on these calculations
+
+5. **For Question 5 about the FLASH effect:**
+   - Diagram 4 should clearly illustrate the FLASH effect phenomenon
+   - Show the differential response between tumors and normal tissues
+   - Illustrate the proposed mechanisms, particularly oxygen depletion
+   - Demonstrate the potential clinical implications of this effect
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on dose-rate effects, making complex concepts more accessible and clinically relevant for students.

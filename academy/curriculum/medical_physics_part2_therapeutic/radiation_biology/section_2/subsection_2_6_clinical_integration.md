@@ -369,5 +369,259 @@
 According to the Law of Bergonié and Tribondeau, which of the following cell types would be expected to be most radiosensitive?
 
 A. Mature neurons
-B. Skeletal muscle c
-(Content truncated due to size limit. Use line ranges to read in chunks)
+B. Skeletal muscle cells
+C. Intestinal crypt stem cells
+D. Mature erythrocytes
+
+**Explanation:**
+The correct answer is C: Intestinal crypt stem cells.
+
+The Law of Bergonié and Tribondeau, formulated in 1906, states that cells are more radiosensitive if they:
+1. Have a high mitotic rate
+2. Have a long dividing future (stem cell-like)
+3. Are undifferentiated
+
+Intestinal crypt stem cells exhibit all three characteristics:
+- They have a high mitotic rate, with complete epithelial renewal every 3-5 days
+- They are stem cells with a long dividing future
+- They are relatively undifferentiated compared to mature intestinal epithelial cells
+
+In contrast:
+- Mature neurons (option A) are post-mitotic, fully differentiated cells with no dividing future
+- Skeletal muscle cells (option B) are post-mitotic, differentiated cells with minimal proliferative capacity
+- Mature erythrocytes (option D) are anucleate cells without DNA, making them essentially radioresistant to direct effects
+
+This principle explains why rapidly proliferating tissues such as bone marrow, intestinal epithelium, and gonads are most sensitive to radiation, while tissues composed of post-mitotic cells such as muscle and nervous tissue are relatively radioresistant.
+
+**Clinical Application:**
+In our head and neck cancer case, the oral mucosa exhibits high radiosensitivity due to its rapid cell turnover (similar to intestinal epithelium), explaining the early onset of mucositis during treatment. In contrast, the mandible, composed primarily of post-mitotic cells, shows much lower radiosensitivity, with effects manifesting only at higher doses or after prolonged time periods.
+
+**Diagram Reference:**
+Diagram 1 (Biological Basis of Differential Radiosensitivity) illustrates the Law of Bergonié and Tribondeau and shows the characteristics of different cell types that determine their relative radiosensitivity.
+
+**Question 2: Tissue Fractionation Sensitivity**
+
+A tissue with a low α/β ratio (approximately 3 Gy) would be most sensitive to changes in:
+
+A. Total dose
+B. Dose per fraction
+C. Overall treatment time
+D. Dose rate
+
+**Explanation:**
+The correct answer is B: Dose per fraction.
+
+The α/β ratio is a fundamental parameter in the linear-quadratic model of radiation response that describes the relative contributions of non-repairable (α component) and repairable (β component) radiation damage. This ratio has important implications for fractionation sensitivity:
+
+- Tissues with low α/β ratios (approximately 1-5 Gy):
+  - Typically late-responding tissues (e.g., spinal cord, kidney, lung, heart)
+  - Show greater sparing with fractionation (more sensitive to fraction size)
+  - The β component (quadratic, repairable damage) is relatively more important
+  - Biological effect increases substantially with increasing dose per fraction
+
+- Tissues with high α/β ratios (approximately 8-15 Gy):
+  - Typically early-responding tissues and most tumors
+  - Show less sparing with fractionation (less sensitive to fraction size)
+  - The α component (linear, non-repairable damage) is relatively more important
+  - Biological effect depends more on total dose than on fraction size
+
+While tissues with low α/β ratios are also affected by changes in total dose (option A), their defining characteristic is heightened sensitivity to changes in fraction size. Overall treatment time (option C) primarily affects early-responding tissues and rapidly proliferating tumors through repopulation effects. Dose rate (option D) affects all tissues but is not specifically related to the α/β ratio.
+
+**Clinical Application:**
+In our head and neck cancer case, the decision to use moderate hypofractionation (2.4 Gy per fraction) required careful consideration of late-responding normal tissues with low α/β ratios, such as the salivary glands (α/β ≈ 3 Gy) and spinal cord (α/β ≈ 2 Gy). The treatment plan included specific dose constraints for these tissues to account for their increased sensitivity to the higher dose per fraction. In contrast, the HPV-positive tumor with a higher α/β ratio (≈ 12 Gy) was expected to show equivalent control with the moderately hypofractionated regimen.
+
+**Diagram Reference:**
+Diagram 4 (Clinical Implications of Differential Radiosensitivity) illustrates how tissues with different α/β ratios respond to changes in fractionation, showing the greater sensitivity of low α/β tissues to changes in dose per fraction.
+
+**Question 3: Tissue Functional Organization**
+
+Which of the following best describes the functional organization of the lung in terms of radiation response?
+
+A. Serial organization with maximum dose as the primary determinant of toxicity
+B. Parallel organization with mean dose as the primary determinant of toxicity
+C. Mixed organization with no clear dose-volume relationship
+D. Hierarchical organization with stem cell compartment determining response
+
+**Explanation:**
+The correct answer is B: Parallel organization with mean dose as the primary determinant of toxicity.
+
+The functional organization of tissues significantly influences their radiation response pattern:
+
+- Parallel organization (option B):
+  - Multiple independent functional subunits
+  - Significant functional reserve
+  - Gradual loss of function with increasing damage
+  - Volume effect predominates (mean dose or V20, V30 etc. correlate with toxicity)
+  - Examples: lung, liver, kidney, parotid gland
+
+- Serial organization (option A):
+  - Sequential arrangement of functional subunits
+  - Failure of one subunit affects entire organ
+  - Threshold-like loss of function
+  - Maximum dose effect predominates
+  - Examples: spinal cord, intestine, esophagus
+
+- Mixed organization (option C):
+  - Combination of parallel and serial components
+  - Complex dose-volume relationships
+  - Examples: brain, heart, bladder
+  - While some tissues do have mixed organization, the lung is predominantly parallel
+
+- Hierarchical organization (option D):
+  - Refers to cellular organization (stem, transit, functional cells)
+  - Not a primary determinant of functional response pattern
+  - More relevant to acute response and recovery kinetics
+
+The lung consists of millions of alveoli functioning in parallel, with significant reserve capacity. Radiation pneumonitis and fibrosis risk correlates strongly with the volume of lung irradiated and the mean lung dose, rather than with small hotspots. This is why dose-volume parameters such as V20 (volume receiving ≥20 Gy) and mean lung dose are the primary dosimetric predictors of radiation pneumonitis.
+
+**Clinical Application:**
+While not directly applicable to our head and neck cancer case, the parallel organization concept applies to the parotid glands, which were a critical consideration in treatment planning. The mean dose to the parotid glands was kept below 26 Gy when possible, recognizing that xerostomia risk correlates with the mean dose due to the parallel organization of salivary gland acini. In contrast, the spinal cord, with its serial organization, was constrained based on maximum dose (<45 Gy) rather than mean dose.
+
+**Diagram Reference:**
+Diagram 2 (Radiosensitivity of Normal Tissues) illustrates the different functional organizations of tissues, showing the parallel organization of the lung and other organs, and contrasting this with serial and mixed organizations.
+
+**Question 4: Genetic Radiosensitivity Syndromes**
+
+A patient with ataxia telangiectasia (ATM mutation) requires radiation therapy. Which of the following modifications would be most appropriate?
+
+A. Increase the total dose to overcome radioresistance
+B. Use standard doses with careful monitoring
+C. Reduce the total dose due to increased radiosensitivity
+D. Use hyperfractionation to reduce late effects
+
+**Explanation:**
+The correct answer is C: Reduce the total dose due to increased radiosensitivity.
+
+Ataxia telangiectasia (AT) is an autosomal recessive disorder caused by mutations in the ATM (Ataxia Telangiectasia Mutated) gene, which plays a critical role in DNA damage response and cell cycle checkpoint activation. Patients with AT exhibit extreme radiosensitivity due to several mechanisms:
+
+1. Defective DNA double-strand break repair
+2. Impaired cell cycle checkpoint activation
+3. Inability to arrest cell cycle progression after radiation damage
+4. Increased chromosomal breakage and genomic instability
+5. Defective p53-mediated apoptosis regulation
+
+Cells from AT patients typically show 2-3 times greater sensitivity to radiation than normal cells. This hypersensitivity affects both tumor and normal tissues, significantly narrowing the therapeutic window. Therefore, dose reduction (typically by 30-50%) is essential to avoid severe normal tissue complications.
+
+Option A (increasing dose) would be dangerous and potentially life-threatening.
+Option B (standard doses) would likely result in severe, potentially fatal toxicity.
+Option D (hyperfractionation) would not adequately address the fundamental repair defect.
+
+**Clinical Application:**
+While our head and neck cancer case did not involve a genetic radiosensitivity syndrome, the concept of differential radiosensitivity was central to treatment planning. The enhanced radiosensitivity of HPV-positive tumors allowed for dose de-escalation (60 Gy instead of 70 Gy), similar in principle to dose reduction for AT patients, though for different molecular reasons. In both scenarios, understanding the biological basis of radiosensitivity guides appropriate dose modification.
+
+**Diagram Reference:**
+Diagram 1 (Biological Basis of Differential Radiosensitivity) includes a panel on genetic syndromes affecting radiosensitivity, showing the ATM pathway and its role in the DNA damage response, illustrating why ATM mutations lead to extreme radiosensitivity.
+
+**Question 5: Tumor Radiosensitivity**
+
+Which of the following tumor types would be expected to have the highest intrinsic radiosensitivity?
+
+A. Melanoma
+B. Renal cell carcinoma
+C. Seminoma
+D. Pancreatic adenocarcinoma
+
+**Explanation:**
+The correct answer is C: Seminoma.
+
+Tumors exhibit a wide spectrum of intrinsic radiosensitivity, which correlates with their clinical response to radiation therapy. Seminoma is among the most radiosensitive solid tumors, with several biological characteristics that contribute to this sensitivity:
+
+1. High proliferative rate with large growth fraction
+2. Low proportion of hypoxic cells
+3. Efficient apoptotic response to radiation damage
+4. Limited DNA repair capacity
+5. Relatively undifferentiated cellular state
+6. Intact p53 function in most cases
+
+In contrast:
+- Melanoma (option A) is relatively radioresistant due to efficient DNA repair, resistance to apoptosis, and frequent hypoxia
+- Renal cell carcinoma (option B) is notably radioresistant, with mechanisms including hypoxia tolerance, efficient free radical scavenging, and anti-apoptotic signaling
+- Pancreatic adenocarcinoma (option D) is among the most radioresistant tumors, characterized by hypoxia, desmoplastic stroma limiting drug delivery, and multiple resistance mechanisms
+
+The clinical evidence for seminoma's radiosensitivity is compelling, with excellent control rates using moderate doses (25-35 Gy), whereas the other listed tumors typically require much higher doses or show limited response even to high doses.
+
+**Clinical Application:**
+Our head and neck cancer case involved an HPV-positive oropharyngeal squamous cell carcinoma, which, while not as radiosensitive as seminoma, demonstrates enhanced radiosensitivity compared to HPV-negative tumors. This enhanced sensitivity, similar in principle to seminoma though less extreme, provided the rationale for the moderate dose de-escalation approach (60 Gy instead of 70 Gy). Understanding the spectrum of tumor radiosensitivity is essential for appropriate dose prescription in radiation oncology.
+
+**Diagram Reference:**
+Diagram 3 (Radiosensitivity of Tumor Cells and Tissues) illustrates the spectrum of tumor radiosensitivity, highlighting seminoma among the highly radiosensitive tumors and contrasting it with relatively radioresistant tumors like melanoma, renal cell carcinoma, and pancreatic adenocarcinoma.
+
+## Additional Integration Elements
+
+### Case-Based Learning Scenarios
+
+**Scenario 1: Pediatric Medulloblastoma Treatment Planning**
+A 6-year-old child with standard-risk medulloblastoma requires craniospinal irradiation (CSI) followed by a posterior fossa boost. Students must analyze how the differential radiosensitivity of pediatric tissues impacts treatment planning decisions. They must consider:
+- Enhanced radiosensitivity of growing tissues (bone, cartilage, brain)
+- Age-dependent normal tissue tolerance
+- Neurocognitive risks based on hippocampal and cortical sensitivity
+- Growth impairment risks based on vertebral body sensitivity
+- Appropriate dose-fractionation selection
+- Long-term secondary malignancy risks
+- Proton vs. photon considerations based on tissue radiosensitivity
+
+**Scenario 2: Elderly Patient with Comorbidities**
+A 78-year-old patient with locally advanced non-small cell lung cancer (cT3N2M0) and multiple comorbidities (COPD, diabetes, previous myocardial infarction) requires definitive radiation therapy. Students must develop a treatment approach that accounts for age and comorbidity-related changes in tissue radiosensitivity. They must consider:
+- Age-related changes in tissue repair capacity
+- Comorbidity-specific radiosensitivity modifications
+- Functional reserve assessment and implications
+- Appropriate dose-fractionation selection
+- Normal tissue constraint adaptation
+- Toxicity monitoring and management strategies
+- Quality of life preservation approaches
+
+**Scenario 3: Re-irradiation of Recurrent Head and Neck Cancer**
+A 62-year-old patient with recurrent squamous cell carcinoma of the oropharynx requires re-irradiation 30 months after initial definitive chemoradiation (70 Gy). Students must analyze how prior radiation affects the radiosensitivity of tumor and normal tissues and develop an appropriate re-irradiation plan. They must consider:
+- Altered radiosensitivity of previously irradiated tissues
+- Recovery kinetics of different normal tissues
+- Cumulative dose constraints for critical structures
+- Appropriate dose-fractionation selection
+- Volume limitation strategies
+- Combined modality approaches
+- Toxicity risk assessment and management
+
+### Interactive Elements
+
+**Tissue Radiosensitivity Explorer Tool**
+Design specifications for an interactive tool where learners can:
+- Select different cell and tissue types
+- Visualize their organizational structure
+- Explore their radiobiological characteristics
+- Compare survival curves for different cell types
+- Examine dose-response relationships for different endpoints
+- Investigate fractionation sensitivity based on α/β ratios
+- Explore volume effect for parallel vs. serial organs
+- Generate personalized dose constraint recommendations
+
+**Therapeutic Ratio Optimization Simulator**
+Design for an interactive tool where learners can:
+- Import sample patient anatomy and target volumes
+- Adjust dose-fractionation parameters
+- Visualize tumor control probability curves
+- Visualize normal tissue complication probability curves
+- Calculate therapeutic ratio for different approaches
+- Explore the impact of biological modifiers
+- Investigate the effect of patient-specific factors
+- Generate optimized treatment recommendations
+
+### Clinical Decision Support Framework
+
+**Radiosensitivity-Based Treatment Personalization Guide**
+Design specifications for a clinical decision support framework that:
+- Evaluates tumor-specific radiosensitivity factors
+  - Histology
+  - Molecular markers
+  - Hypoxia status
+  - Proliferation rate
+- Assesses patient-specific normal tissue sensitivity
+  - Age
+  - Comorbidities
+  - Genetic factors
+  - Prior treatments
+- Recommends personalized dose-fractionation
+- Provides adapted normal tissue constraints
+- Suggests appropriate biological modifiers
+- Includes monitoring and adaptation protocols
+- Incorporates outcome prediction and feedback
+
+This integration of clinical correlations and knowledge checks creates a comprehensive educational resource that connects the theoretical concepts of cell and tissue radiosensitivity with practical clinical applications, enhancing the learning experience and clinical relevance of this important radiobiological topic.

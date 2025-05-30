@@ -428,5 +428,54 @@ The diagrams should be integrated with the clinical correlation section by:
 
 2. **Diagram 2 (Mechanistic Basis)**
    - Relate to the biological basis for prostate cancer's low α/β ratio
-   - Ill
-(Content truncated due to size limit. Use line ranges to read in chunks)
+   - Illustrate the repair mechanisms that influence fractionation sensitivity
+   - Show how the mechanistic understanding informs treatment decisions
+   - Demonstrate the cellular processes underlying the mathematical parameters
+
+3. **Diagram 3 (Clinical Applications)**
+   - Directly incorporate the prostate cancer case calculations
+   - Show the BED and EQD2 calculations for both regimens
+   - Illustrate the decision-making process visually
+   - Demonstrate how the LQ model directly informs clinical choices
+
+4. **Diagram 4 (Extensions and Limitations)**
+   - Connect to the discussion of model selection for different clinical scenarios
+   - Show which model extensions might be relevant for the prostate case
+   - Illustrate the limitations that might affect the accuracy of predictions
+   - Demonstrate how model selection impacts treatment decisions
+
+## Integration with Knowledge Checks
+
+The diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about α/β ratios and therapeutic ratio:**
+   - Diagram 1 should clearly illustrate how different α/β ratios affect fractionation sensitivity
+   - Show graphically how decreasing fraction size increases therapeutic ratio when normal tissue α/β is lower than tumor α/β
+   - Demonstrate the mathematical relationship between fraction size and BED for different α/β values
+   - Visualize the concept of therapeutic ratio in relation to fractionation
+
+2. **For Question 2 about the linear component:**
+   - Diagram 2 should provide clear visualization of the linear component representing irreparable damage
+   - Illustrate the single-track nature of the linear component
+   - Show how the linear component relates to radiation quality
+   - Demonstrate the independence from dose rate and fractionation
+
+3. **For Question 3 about fractionation scheme comparison:**
+   - Diagram 3 should include visualization of BED calculations for different fractionation schemes
+   - Show the step-by-step calculation process for the specific regimens mentioned
+   - Illustrate how to determine which scheme delivers higher biological effect
+   - Demonstrate the clinical decision-making process based on these calculations
+
+4. **For Question 4 about LQ model limitations:**
+   - Diagram 4 should clearly show the high-dose limitation of the standard LQ model
+   - Illustrate the overestimation of cell killing at high doses
+   - Show the comparison between predicted and observed survival
+   - Demonstrate the alternative models that address this limitation
+
+5. **For Question 5 about prostate cancer fractionation:**
+   - Diagram 3 should include the specific calculation for the prostate cancer regimens
+   - Show how the low α/β ratio affects the BED calculation
+   - Illustrate the equivalence of the two regimens in terms of tumor control
+   - Demonstrate the clinical decision-making process based on these calculations
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on the linear-quadratic model, making complex mathematical concepts more accessible and clinically relevant for students.

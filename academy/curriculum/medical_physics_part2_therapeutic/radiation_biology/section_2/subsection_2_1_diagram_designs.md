@@ -477,5 +477,156 @@ To compare and contrast different methods for measuring radiation-induced cell k
    - **Advantages/Limitations**
      - Pros: Rapid, high-throughput
      - Cons: Indirect measure, metabolic artifacts
-     -
-(Content truncated due to size limit. Use line ranges to read in chunks)
+     - Correlation with reproductive death
+     - Best application scenarios
+
+4. **Molecular and Functional Assays Panel**
+   - **γH2AX Foci Assay**
+     - DNA damage recognition principle
+     - Immunofluorescence visualization
+     - Foci counting methods
+     - Kinetics of appearance/disappearance
+   
+   - **Comet Assay**
+     - Single-cell gel electrophoresis setup
+     - DNA migration visualization
+     - Tail moment calculation
+     - Alkaline vs. neutral conditions
+   
+   - **Micronucleus Assay**
+     - Micronuclei formation mechanism
+     - Scoring criteria and methods
+     - Dose-response relationship
+     - Automated scoring systems
+   
+   - **Advantages/Limitations**
+     - Pros: Mechanistic insight, some are rapid
+     - Cons: Indirect measures, specialized equipment
+     - Correlation with reproductive death
+     - Best application scenarios
+
+5. **High-Throughput Methods Panel**
+   - **Automated Clonogenic Assays**
+     - Robotic cell handling systems
+     - Automated colony counting
+     - Miniaturized formats
+     - Throughput comparison
+   
+   - **Multiplexed Endpoint Assays**
+     - Multi-parameter flow cytometry
+     - High-content imaging
+     - Combined viability markers
+     - Data integration approaches
+   
+   - **Genetic Screening Platforms**
+     - CRISPR/Cas9 library screens
+     - shRNA screens
+     - Pooled vs. arrayed formats
+     - Analysis pipeline
+   
+   - **Patient-Derived Models**
+     - Tumor organoid culture
+     - Ex vivo irradiation setup
+     - Response assessment methods
+     - Clinical correlation approaches
+
+6. **Method Comparison Panel**
+   - **Sensitivity Comparison**
+     - Detection limits for each method
+     - Dose range applicability
+     - Minimal detectable effect
+     - Statistical power comparison
+   
+   - **Time and Resource Requirements**
+     - Timeline visualization for each method
+     - Equipment requirements
+     - Reagent costs
+     - Technical expertise needed
+   
+   - **Correlation Matrix**
+     - Cross-method correlation coefficients
+     - Agreement at different dose levels
+     - Cell type-specific variations
+     - Predictive value for in vivo response
+   
+   - **Decision Tree**
+     - Method selection guidance
+     - Application-specific recommendations
+     - Combined approach strategies
+     - Validation requirements
+
+### Design Notes
+- Use consistent color coding for different assay types
+- Implement side-by-side comparisons with standardized formats
+- Include actual experimental images where appropriate
+- Use flowcharts for procedural steps
+- Provide comparison tables for key metrics
+- Include both idealized results and actual experimental data examples
+- Provide detailed legend explaining all methods and measurements
+- Use high-resolution vector graphics for print quality
+- Include brief explanatory text for each panel
+- Provide cross-references to relevant sections in the text content
+
+## Integration with Clinical Correlations
+
+The diagrams should be integrated with the clinical correlation section by:
+
+1. **Diagram 1 (Clonogenic Assay Methodology)**
+   - Connect to the HNSCC case by showing how patient-derived organoids are processed
+   - Illustrate the specific modifications needed for primary tumor cells
+   - Show how results are documented and reported for clinical decision-making
+   - Demonstrate quality control steps essential for clinical applications
+
+2. **Diagram 2 (Survival Curve Interpretation)**
+   - Directly reference the SF2 of 0.65 found in the HNSCC case
+   - Illustrate how this value compares to typical HNSCC values
+   - Show how the pronounced shoulder relates to repair capacity
+   - Demonstrate how these parameters inform treatment adaptation
+
+3. **Diagram 3 (Comparative Survival Curves)**
+   - Include a specific panel showing typical HNSCC survival curves
+   - Compare radioresistant vs. typical HNSCC responses
+   - Illustrate how DNA repair protein expression affects curve shape
+   - Show how altered fractionation and radiosensitizers modify the curve
+
+4. **Diagram 4 (Alternative Methods)**
+   - Connect to the organoid approach used in the clinical case
+   - Show how multiple assessment methods might be combined for comprehensive evaluation
+   - Illustrate the correlation between organoid response and expected clinical outcome
+   - Demonstrate the workflow for patient-specific radiosensitivity assessment
+
+## Integration with Knowledge Checks
+
+The diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about relevant endpoints:**
+   - Diagram 4 should clearly contrast reproductive integrity with other endpoints
+   - Include visual representation of why colony formation is most relevant for tumor control
+   - Show the relationship between different endpoints and clinical outcomes
+   - Illustrate the limitations of non-clonogenic endpoints
+
+2. **For Question 2 about the shoulder region:**
+   - Diagram 2 should provide clear visualization of the shoulder region
+   - Illustrate the mechanistic basis for the shoulder (sublethal damage repair)
+   - Show how modifying repair capacity affects the shoulder
+   - Demonstrate how the shoulder relates to fractionation response
+
+3. **For Question 3 about survival curve parameters:**
+   - Diagram 2 should include visualization of SF2, α, and β parameters
+   - Show how these parameters relate to radiosensitivity and repair capacity
+   - Provide visual examples of curves with different parameter combinations
+   - Illustrate how to interpret these parameters clinically
+
+4. **For Question 4 about reduced shoulder:**
+   - Diagram 3 should clearly show how high-LET radiation affects the shoulder
+   - Compare this to other factors that might reduce the shoulder
+   - Illustrate the mechanistic basis for shoulder reduction
+   - Show the clinical implications of reduced shoulder
+
+5. **For Question 5 about TCP relationship:**
+   - Diagram 2 should include visualization of the TCP formula
+   - Illustrate the exponential relationship between survival and TCP
+   - Show how initial clonogen number affects this relationship
+   - Demonstrate the sigmoidal dose-response curve for TCP
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on cell survival curves, making complex concepts more accessible and memorable for students.

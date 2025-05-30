@@ -369,5 +369,150 @@ For fractionation effects (option D), proton RBE increases with decreasing dose 
 In our pediatric ependymoma case, the variable RBE at the distal edge was a critical consideration because the brainstem was located within 2mm of the target. The estimated RBE at this interface was 1.3-1.5, potentially resulting in a biological dose to the brainstem of 58-63 Gy(RBE) rather than the 53.5 Gy(RBE) calculated using the generic RBE of 1.1. This concern led to the implementation of specific RBE risk mitigation strategies, including beam arrangement optimization to avoid placing the brainstem at the distal edge of any field.
 
 **Diagram Reference:**
-Diagram 3 (RBE Values and Clinical Applications) provi
-(Content truncated due to size limit. Use line ranges to read in chunks)
+Diagram 3 (RBE Values and Clinical Applications) provides clear visualization of proton RBE variation with depth, illustrating the relationship between LET and RBE in proton beams and showing how this variation impacts treatment planning decisions.
+
+**Question 3: Physical Determinants of RBE**
+
+The primary physical factor that determines RBE is:
+
+A. Dose rate
+B. Total dose
+C. Linear energy transfer (LET)
+D. Radiation fractionation
+
+**Explanation:**
+The correct answer is C: Linear energy transfer (LET).
+
+Linear energy transfer (LET), which describes the energy deposited per unit track length (typically in keV/μm), is the primary physical determinant of RBE. As LET increases, the density of ionization events along the particle track increases, leading to more complex and clustered DNA damage that is more difficult for cells to repair correctly. This increased damage complexity directly translates to increased biological effectiveness.
+
+The relationship between LET and RBE is well-established, with RBE generally increasing with increasing LET up to an optimal value of approximately 100-200 keV/μm. Beyond this optimal LET, RBE may decrease due to the "overkill" effect, where energy is wasted in already lethally damaged cells.
+
+While dose rate (option A), total dose (option B), and fractionation (option D) can all influence biological effects, they are secondary factors compared to LET in determining RBE. These factors may modulate the RBE value but do not serve as its primary determinant.
+
+**Clinical Application:**
+In our pediatric ependymoma case, the LET distribution was carefully analyzed during treatment planning. The high-LET regions (>7 keV/μm) at the distal edge of the proton fields were identified as areas of potential RBE elevation. This LET analysis directly informed the beam arrangement optimization, with the goal of distributing high-LET regions away from the brainstem. This approach represents a practical application of the fundamental relationship between LET and RBE in clinical decision-making.
+
+**Diagram Reference:**
+Diagram 2 (Physical and Biological Basis of RBE) clearly shows how LET influences RBE through track structure, energy deposition patterns, and DNA damage complexity, illustrating the mechanistic basis for LET as the primary determinant of biological effectiveness.
+
+**Question 4: RBE Uncertainties in Treatment Planning**
+
+A radiation oncologist is comparing treatment plans for a pediatric brain tumor. The proton plan shows a physical dose of 50 Gy to the target and 45 Gy to an adjacent critical structure at the distal edge of the beam. Using the clinical RBE of 1.1, what is the approximate range of possible true biological doses to the critical structure, considering RBE uncertainties?
+
+A. 45-50 Gy(RBE)
+B. 49.5-55 Gy(RBE)
+C. 49.5-67.5 Gy(RBE)
+D. 54-72 Gy(RBE)
+
+**Explanation:**
+The correct answer is C: 49.5-67.5 Gy(RBE).
+
+To solve this problem, we need to calculate the clinical RBE-weighted dose and then consider the range of possible true RBE values at the distal edge:
+
+1. Clinical RBE-weighted dose = Physical dose × 1.1
+   = 45 Gy × 1.1
+   = 49.5 Gy(RBE)
+
+2. Range of possible true RBE values at distal edge:
+   - Minimum: Clinical RBE of 1.1 (if the generic value is accurate)
+   - Maximum: Approximately 1.5 (based on experimental and modeling data for distal edge)
+
+3. Range of possible true biological doses:
+   - Minimum: 45 Gy × 1.1 = 49.5 Gy(RBE)
+   - Maximum: 45 Gy × 1.5 = 67.5 Gy(RBE)
+
+Therefore, the range of possible true biological doses to the critical structure is 49.5-67.5 Gy(RBE).
+
+Option A (45-50 Gy(RBE)) incorrectly includes physical dose as the lower bound.
+Option B (49.5-55 Gy(RBE)) underestimates the potential maximum RBE.
+Option D (54-72 Gy(RBE)) incorrectly calculates both bounds.
+
+**Clinical Application:**
+In our pediatric ependymoma case, a similar analysis was performed for the brainstem, which received a physical dose of approximately 48.6 Gy at the interface with the target. Using the clinical RBE of 1.1, this translated to 53.5 Gy(RBE). However, considering the potential variable RBE of 1.3-1.5 at this high-LET region, the true biological dose could be 58-63 Gy(RBE). This uncertainty informed the decision to implement specific RBE risk mitigation strategies, including beam arrangement optimization and slight dose reduction.
+
+**Diagram Reference:**
+Diagram 4 (Uncertainties and Future Directions in RBE) includes visualization of RBE uncertainty ranges, showing how the clinical RBE of 1.1 relates to potential true RBE values and illustrating the calculation of possible biological dose ranges for clinical decision-making.
+
+**Question 5: OER Reduction with High-LET Radiation**
+
+Which of the following best explains why high-LET radiation has a reduced oxygen enhancement ratio (OER) compared to low-LET radiation?
+
+A. High-LET radiation produces fewer free radicals
+B. High-LET radiation causes more complex, clustered DNA damage
+C. High-LET radiation has a lower penetration depth
+D. High-LET radiation preferentially kills hypoxic cells
+
+**Explanation:**
+The correct answer is B: High-LET radiation causes more complex, clustered DNA damage.
+
+The oxygen enhancement ratio (OER) is the ratio of doses required under hypoxic versus oxic conditions to produce the same biological effect. Low-LET radiation (e.g., photons) typically has an OER of 2.5-3.0, meaning 2.5-3.0 times more dose is required under hypoxic conditions to achieve the same effect as under oxic conditions. In contrast, high-LET radiation (e.g., carbon ions) has a reduced OER that approaches 1.0 at very high LET values.
+
+This reduction in OER with high-LET radiation is primarily due to the increased complexity and clustering of DNA damage:
+
+1. High-LET radiation produces dense ionization tracks that cause multiple lesions within a small DNA volume (clustered damage).
+2. This complex damage is inherently more difficult to repair, regardless of oxygen status.
+3. The damage is predominantly from direct effects (direct ionization of DNA) rather than indirect effects (free radical-mediated damage).
+4. Since oxygen primarily enhances indirect damage by "fixing" free radical damage, the reduced reliance on indirect damage mechanisms decreases the oxygen dependence.
+
+Option A is incorrect because high-LET radiation actually produces more free radicals per unit dose, but in a more localized pattern.
+Option C is incorrect because penetration depth is unrelated to OER.
+Option D is incorrect because high-LET radiation does not preferentially kill hypoxic cells; rather, it kills both hypoxic and oxic cells with similar efficiency.
+
+**Clinical Application:**
+In our pediatric ependymoma case, the reduced OER was mentioned as a potential advantage of carbon ion therapy. While ependymomas are not typically characterized by significant hypoxia, this property could be relevant for other pediatric tumors with hypoxic regions. The decision to proceed with proton therapy rather than carbon ions was based on other factors, including clinical experience and accessibility, rather than OER considerations.
+
+**Diagram Reference:**
+Diagram 2 (Physical and Biological Basis of RBE) clearly illustrates the mechanisms of OER reduction with high-LET radiation, showing how complex, clustered DNA damage relates to oxygen dependence and demonstrating the relationship between LET and OER.
+
+## Additional Integration Elements
+
+### Case-Based Learning Scenarios
+
+**Scenario 1: RBE Considerations in Re-irradiation**
+A 45-year-old patient with recurrent glioblastoma previously received 60 Gy of photon radiation therapy 14 months ago. The recurrence is adjacent to the brainstem, which received 54 Gy in the previous treatment. The radiation oncologist is considering proton therapy for re-irradiation. Students must analyze how RBE uncertainties might impact the safety of re-irradiation, considering the potential for elevated RBE at the distal edge adjacent to the previously irradiated brainstem. They must develop a treatment approach that accounts for these uncertainties while delivering an effective dose to the recurrent tumor.
+
+**Scenario 2: Comparing Treatment Modalities for Pediatric Medulloblastoma**
+A 7-year-old child with standard-risk medulloblastoma requires craniospinal irradiation (CSI) followed by a posterior fossa boost. Students must compare photon, proton, and carbon ion approaches for this treatment, with particular attention to RBE considerations in the developing brain and spinal cord. They must analyze how the variable RBE of different modalities might impact neurocognitive outcomes, growth effects, and secondary malignancy risks. They must develop a comprehensive treatment recommendation that balances tumor control with long-term survivorship considerations.
+
+**Scenario 3: RBE in Hypofractionated Treatments**
+A 68-year-old patient with early-stage non-small cell lung cancer is being considered for stereotactic body radiation therapy (SBRT). Treatment options include photon-based SBRT (50 Gy in 5 fractions) or proton-based SBRT (50 Gy(RBE) in 5 fractions). Students must analyze how the high dose per fraction might interact with RBE effects, particularly for late-responding tissues like the chest wall and bronchial tree. They must evaluate the literature on RBE in hypofractionated regimens and develop a treatment approach that accounts for these considerations.
+
+### Interactive Elements
+
+**RBE Calculator Tool**
+Design specifications for an interactive tool where learners can:
+- Input radiation parameters (particle type, energy, LET)
+- Select biological endpoint and cell/tissue type
+- Adjust dose and fractionation parameters
+- Calculate expected RBE values with uncertainty ranges
+- Visualize the relationship between physical and biological doses
+- Generate comparative survival curves for different radiation types
+- Export results for treatment planning considerations
+
+**LET-Based Treatment Planning Simulator**
+Design for an interactive tool where learners can:
+- Import sample patient anatomy and target volumes
+- Design proton or carbon ion treatment plans
+- Visualize LET distribution overlaid on anatomy
+- Estimate variable RBE distribution based on selected models
+- Compare physical, clinical RBE, and variable RBE dose distributions
+- Implement and evaluate RBE risk mitigation strategies
+- Generate plan comparison metrics and robustness analysis
+
+### Clinical Decision Support Framework
+
+**RBE Risk Assessment Guide**
+Design specifications for a clinical decision support framework that:
+- Evaluates patient-specific risk factors for RBE uncertainties
+  - Pediatric status
+  - Critical structures at distal edge
+  - Re-irradiation scenario
+  - Hypofractionation
+  - Radiosensitivity factors
+- Provides risk stratification (low, medium, high)
+- Recommends appropriate mitigation strategies based on risk level
+- Includes decision trees for different clinical scenarios
+- Provides documentation templates for clinical rationale
+- Incorporates uncertainty visualization for shared decision-making
+
+This integration of clinical correlations and knowledge checks creates a comprehensive educational resource that connects the theoretical concepts of relative biological effectiveness with practical clinical applications, enhancing the learning experience and clinical relevance of this important radiobiological topic.

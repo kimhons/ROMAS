@@ -432,5 +432,56 @@ The diagrams should be integrated with the clinical correlation section by:
    - Illustrate the molecular basis for hypoxic cell sensitizers like nimorazole
 
 2. **Diagram 2 (Oxygen Concentration)**
-   - Relate to the FMISO PET/CT findings in the case exa
-(Content truncated due to size limit. Use line ranges to read in chunks)
+   - Relate to the FMISO PET/CT findings in the case example
+   - Illustrate how the tumor-to-background ratio of 2.3 relates to the oxygen concentration curve
+   - Show how the heterogeneous uptake within the primary tumor reflects varying oxygen levels
+   - Demonstrate how the 35% hypoxic volume influences treatment planning decisions
+
+3. **Diagram 3 (Tumor Hypoxia)**
+   - Directly incorporate the head and neck tumor characteristics from the case
+   - Show how HPV-negative status correlates with increased hypoxia
+   - Illustrate how the hypoxia gene signature relates to the biological consequences
+   - Demonstrate the measurement methods used in the case (FMISO PET/CT, gene signature)
+
+4. **Diagram 4 (Strategies)**
+   - Connect to the treatment options discussed in the case
+   - Show the mechanism of action for nimorazole in detail
+   - Illustrate the ARCON approach as an alternative
+   - Demonstrate how the dose-painting approach would be implemented
+   - Show the rationale for selecting nimorazole + standard chemoradiation
+
+## Integration with Knowledge Checks
+
+The diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about OER calculation:**
+   - Diagram 2 should clearly illustrate the OER definition and calculation
+   - Show the mathematical relationship between doses under hypoxic vs. oxic conditions
+   - Demonstrate how to solve for the required dose under hypoxia
+   - Visualize the relationship between survival curves that leads to this calculation
+
+2. **For Question 2 about pO₂ and radiosensitivity:**
+   - Diagram 2 should provide clear visualization of the sigmoid relationship
+   - Illustrate the half-maximum effect at approximately 3 mmHg
+   - Show the plateau at higher pO₂ values
+   - Demonstrate the steep gradient in the 0.5-20 mmHg range
+
+3. **For Question 3 about oxygen enhancement mechanism:**
+   - Diagram 1 should clearly show the chemical fixation of radiation-induced DNA damage
+   - Illustrate the reaction sequence in the oxygen fixation hypothesis
+   - Show how this differs from other potential mechanisms
+   - Demonstrate the temporal aspects of the process
+
+4. **For Question 4 about hypoxia-targeting approaches:**
+   - Diagram 4 should include visualization of all the approaches mentioned
+   - Show why reducing total dose would be ineffective for hypoxic tumors
+   - Illustrate the mechanisms of nimorazole, accelerated fractionation, and carbogen
+   - Demonstrate the comparative effectiveness of different strategies
+
+5. **For Question 5 about high-LET radiation:**
+   - Diagram 4 should clearly illustrate the reduced OER with high-LET radiation
+   - Show the mechanism of increased direct DNA damage
+   - Illustrate the relationship between LET and OER
+   - Demonstrate why this makes high-LET radiation advantageous for hypoxic tumors
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on the oxygen effect and radiosensitivity, making complex concepts more accessible and clinically relevant for students.

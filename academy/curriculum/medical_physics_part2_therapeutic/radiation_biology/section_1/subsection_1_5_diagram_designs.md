@@ -484,5 +484,331 @@ To illustrate the molecular mechanisms, morphological features, and dual roles o
      - Detailed molecular structures of pathway components
 
    - **p16-Rb Pathway**
-     - p
-(Content truncated due to size limit. Use line ranges to read in chunks)
+     - p16^INK4a upregulation
+     - CDK4/6 inhibition
+     - Rb hypophosphorylation
+     - Heterochromatin formation
+     - Detailed molecular structures of pathway components
+
+   - **Cell Cycle Exit**
+     - G1/S and G2/M arrest
+     - Irreversible nature of arrest
+     - Comparison with quiescence
+     - Detailed visualization of cell cycle checkpoints
+
+6. **Senescent Phenotype Panel**
+   - **Morphological Changes**
+     - Enlarged, flattened cell shape
+     - Increased granularity
+     - Vacuolization
+     - Nuclear changes
+     - Detailed visualization of morphological alterations
+
+   - **Biochemical Markers**
+     - SA-β-galactosidase activity
+     - p16^INK4a and p21^CIP1/WAF1 expression
+     - Lamin B1 downregulation
+     - Lipofuscin accumulation
+     - Detailed visualization of biomarker detection
+
+   - **Chromatin Reorganization**
+     - Senescence-associated heterochromatin foci (SAHF)
+     - H3K9me3 enrichment
+     - HMGA proteins
+     - Lamin alterations
+     - Detailed visualization of nuclear architecture changes
+
+   - **Metabolic Reprogramming**
+     - Mitochondrial dysfunction
+     - ROS production
+     - Altered metabolic pathways
+     - mTOR activation
+     - Detailed visualization of metabolic changes
+
+7. **Senescence-Associated Secretory Phenotype Panel**
+   - **SASP Regulation**
+     - NF-κB activation
+     - C/EBPβ upregulation
+     - mTOR signaling
+     - DNA damage persistence
+     - Detailed molecular structures of regulatory factors
+
+   - **SASP Components**
+     - Inflammatory cytokines (IL-6, IL-8)
+     - Chemokines (MCP-1, GROα)
+     - Growth factors (TGF-β, VEGF)
+     - Matrix metalloproteinases
+     - Detailed visualization of secretome
+
+   - **Microenvironmental Effects**
+     - Paracrine senescence induction
+     - Immune cell recruitment
+     - Extracellular matrix remodeling
+     - Tissue inflammation
+     - Detailed visualization of tissue-level effects
+
+   - **Clinical Implications**
+     - Tumor suppression
+     - Tumor promotion
+     - Normal tissue toxicity
+     - Aging acceleration
+     - Detailed visualization of context-dependent outcomes
+
+### Design Notes
+- Use consistent color scheme: autophagy proteins (green), senescence markers (orange), shared pathways (purple)
+- Implement detailed molecular structures based on crystallography data where available
+- Include timeline indicators showing typical kinetics of each process
+- Provide magnified insets for critical protein-protein interactions
+- Use arrows to indicate process direction and regulatory relationships
+- Include both cellular and subcellular visualizations with appropriate scale bars
+- Provide detailed legend explaining all molecular components
+- Use high-resolution vector graphics (minimum 600 dpi) for print quality
+- Include brief explanatory text (50-75 words) for each major section
+- Provide cross-references to relevant sections in the text content
+
+## Diagram 4: Cell Death Mechanisms in Radiation Therapy
+
+### Purpose
+To illustrate the clinical relevance of different cell death mechanisms in radiation therapy, highlighting tumor-specific patterns, normal tissue effects, and therapeutic implications.
+
+### Key Elements
+
+1. **Tumor-Specific Cell Death Patterns Panel**
+   - **Lymphoma/Leukemia**
+     - Predominant apoptosis
+     - Rapid cell death kinetics
+     - p53 dependence
+     - Bcl-2 family regulation
+     - Microscopy images of radiation-induced apoptosis
+     - Detailed molecular basis for sensitivity
+
+   - **Carcinoma**
+     - Predominant mitotic catastrophe
+     - Delayed cell death
+     - p53 independence
+     - Cell cycle checkpoint status
+     - Microscopy images of mitotic catastrophe
+     - Detailed molecular basis for response pattern
+
+   - **Glioma**
+     - Mixed death mechanisms
+     - Autophagy prominence
+     - Invasion vs. death balance
+     - Microscopy images of mixed death patterns
+     - Detailed molecular basis for heterogeneous response
+
+   - **Melanoma**
+     - Apoptosis resistance mechanisms
+     - Autophagy dependence
+     - Immunogenic cell death features
+     - Microscopy images of melanoma response
+     - Detailed molecular basis for resistance patterns
+
+   - **Sarcoma**
+     - Mitotic catastrophe predominance
+     - Senescence features
+     - Differentiation vs. death
+     - Microscopy images of sarcoma response
+     - Detailed molecular basis for response pattern
+
+2. **Normal Tissue Response Panel**
+   - **Bone Marrow**
+     - Stem cell compartment
+     - Apoptosis sensitivity
+     - Differentiation stage-dependent response
+     - Kinetics of depletion and recovery
+     - Microscopy images of marrow response
+     - Detailed molecular basis for sensitivity
+
+   - **Gastrointestinal Mucosa**
+     - Stem cell compartment
+     - Transit amplifying cells
+     - Apoptosis and mitotic catastrophe
+     - Villus denudation process
+     - Microscopy images of mucosal response
+     - Detailed molecular basis for response pattern
+
+   - **Skin**
+     - Basal cell response
+     - Differentiation effects
+     - Mitotic catastrophe predominance
+     - Desquamation process
+     - Microscopy images of skin response
+     - Detailed molecular basis for response pattern
+
+   - **Lung**
+     - Type II pneumocyte response
+     - Endothelial cell sensitivity
+     - Senescence and fibrosis
+     - Pneumonitis development
+     - Microscopy images of lung response
+     - Detailed molecular basis for response pattern
+
+   - **Central Nervous System**
+     - Neuronal resistance
+     - Oligodendrocyte sensitivity
+     - Microglial activation
+     - Vascular effects
+     - Microscopy images of CNS response
+     - Detailed molecular basis for differential sensitivity
+
+3. **Dose and Fractionation Effects Panel**
+   - **Single High Dose**
+     - Vascular damage
+     - Necrosis prominence
+     - Apoptosis in sensitive cells
+     - Immunogenic death features
+     - Dose threshold visualization
+     - Detailed molecular basis for response pattern
+
+   - **Conventional Fractionation**
+     - Mitotic catastrophe predominance
+     - Redistribution effects
+     - Reoxygenation influence
+     - Repair capacity influence
+     - Detailed visualization of fractionation effects
+
+   - **Hypofractionation**
+     - Vascular component
+     - Immunogenic cell death
+     - Altered microenvironment effects
+     - Detailed visualization of high dose per fraction effects
+
+   - **Hyperfractionation**
+     - Repair capacity influence
+     - Cell cycle effects
+     - Normal tissue sparing mechanisms
+     - Detailed visualization of low dose per fraction effects
+
+4. **Therapeutic Implications Panel**
+   - **Radiosensitization Strategies**
+     - DNA repair inhibitors
+     - Cell cycle checkpoint inhibitors
+     - Apoptosis enhancers
+     - Autophagy modulators
+     - Detailed visualization of mechanism-specific targets
+
+   - **Normal Tissue Protection**
+     - Apoptosis inhibitors
+     - Free radical scavengers
+     - Senescence modulators
+     - Stem cell protection
+     - Detailed visualization of tissue-specific approaches
+
+   - **Biomarker Applications**
+     - Predictive biomarkers
+     - Early response assessment
+     - Residual disease evaluation
+     - Normal tissue toxicity prediction
+     - Detailed visualization of biomarker utilization
+
+   - **Combined Modality Approaches**
+     - Chemotherapy interactions
+     - Targeted therapy combinations
+     - Immunotherapy synergy
+     - Detailed visualization of mechanism-based combinations
+
+5. **Case Studies Panel**
+   - **Radioresistant Head and Neck Cancer**
+     - p53 mutation effects
+     - Bcl-2 overexpression
+     - Checkpoint adaptation
+     - Therapeutic targeting approaches
+     - Detailed visualization of resistance mechanisms
+
+   - **Radiosensitive Lymphoma**
+     - Apoptotic priming
+     - p53 status influence
+     - Bcl-2 family balance
+     - Optimization approaches
+     - Detailed visualization of sensitivity mechanisms
+
+   - **Glioblastoma with Mixed Response**
+     - Regional heterogeneity
+     - Hypoxic regions
+     - Autophagy dependence
+     - Stem cell compartment
+     - Detailed visualization of heterogeneous response
+
+   - **Normal Tissue Complication**
+     - Radiation pneumonitis development
+     - Senescence contribution
+     - SASP effects
+     - Intervention strategies
+     - Detailed visualization of complication mechanisms
+
+### Design Notes
+- Use consistent color scheme for different death mechanisms across all panels
+- Implement side-by-side comparisons of different tumor types and normal tissues
+- Include actual histopathology and microscopy images with proper attribution
+- Provide magnified insets for critical cellular features
+- Use arrows to indicate causal relationships and process progression
+- Include dose-response curves where appropriate
+- Provide detailed legend explaining all visual elements
+- Use high-resolution images (minimum 600 dpi) for microscopy examples
+- Include brief explanatory text (75-100 words) for each major section
+- Provide cross-references to relevant sections in the text content
+
+## Integration with Clinical Correlations
+
+The diagrams should be integrated with the clinical correlation section by:
+
+1. **Diagram 1 (Overview of Cell Death Pathways)**
+   - Reference the HNSCC case example showing resistance to apoptosis
+   - Highlight the alternative death pathways that can be targeted
+   - Illustrate how p53 mutation affects pathway choice
+   - Show how different death mechanisms contribute to overall tumor response
+
+2. **Diagram 2 (Molecular Mechanisms of Apoptosis)**
+   - Connect to the discussion of Bcl-2 overexpression in the HNSCC case
+   - Illustrate how p53 mutation disrupts the intrinsic pathway
+   - Show potential intervention points for enhancing apoptosis
+   - Demonstrate how apoptosis resistance mechanisms can be overcome
+
+3. **Diagram 3 (Autophagy and Senescence)**
+   - Relate to the potential role of autophagy inhibition in the HNSCC case
+   - Show how autophagy might be contributing to treatment resistance
+   - Illustrate how senescence might affect long-term tumor control
+   - Demonstrate how these mechanisms could be targeted therapeutically
+
+4. **Diagram 4 (Cell Death in Radiation Therapy)**
+   - Directly incorporate the HNSCC case as one of the case studies
+   - Show typical cell death patterns in HNSCC
+   - Illustrate how altered fractionation might affect cell death mechanisms
+   - Demonstrate how checkpoint inhibitors enhance mitotic catastrophe
+
+## Integration with Knowledge Checks
+
+The diagrams should directly support the knowledge check questions by:
+
+1. **For Question 1 about epithelial tumors:**
+   - Provide clear visualization of mitotic catastrophe as predominant in epithelial tumors
+   - Show comparative frequency of different death mechanisms across tumor types
+   - Illustrate the molecular basis for this pattern
+   - Demonstrate the morphological features that distinguish mitotic catastrophe
+
+2. **For Question 2 about p53 mutation:**
+   - Illustrate how p53 mutation affects apoptotic signaling
+   - Show the p53-dependent steps in the apoptotic pathway
+   - Demonstrate alternative death mechanisms that remain functional
+   - Visualize how p53 status affects treatment response
+
+3. **For Question 3 about RIPK1/RIPK3/MLKL pathway:**
+   - Provide detailed visualization of the necroptosis pathway
+   - Show the molecular structures and interactions of these key proteins
+   - Illustrate how this pathway differs from apoptosis and necrosis
+   - Demonstrate the unique features of necroptotic cell death
+
+4. **For Question 4 about senescence:**
+   - Clearly illustrate all characteristics of senescence
+   - Highlight that DNA fragmentation is NOT a feature of senescence
+   - Show the distinctive features that differentiate senescence from apoptosis
+   - Demonstrate the molecular basis of the senescent phenotype
+
+5. **For Question 5 about lymphocyte sensitivity:**
+   - Illustrate the molecular basis for lymphocyte radiosensitivity
+   - Show comparative levels of pro-apoptotic proteins across cell types
+   - Demonstrate the rapid kinetics of lymphocyte apoptosis
+   - Visualize how this sensitivity relates to clinical effects
+
+These detailed diagram designs provide comprehensive specifications that will ensure the visual elements effectively support the educational content on radiation-induced cell death mechanisms, making complex concepts more accessible and memorable for students.
