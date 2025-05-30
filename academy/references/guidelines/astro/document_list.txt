@@ -1,0 +1,27 @@
+ASTRO Guidelines Document List
+===============================
+
+Clinical Practice Guidelines:
+1. Partial Breast Irradiation for Patients with Early-Stage Invasive Breast Cancer or Ductal Carcinoma Situ (ASTRO) – 2023
+
+Consensus Guidance:
+1. Summary of the Cardiac Computed Tomographic Imaging in Cardio-Oncology (ASTRO) – 2023
+2. Defining Oligometastatic Disease from a Radiation Oncology Perspective (ESTRO/ASTRO) – 2020
+3. Safety is No Accident (ASTRO) – 2019
+4. Standardizing Normal Tissue Contouring for Radiation Therapy Treatment Planning (ASTRO) – 2019
+5. MRI and Radiation Exposure in Patients with Cardiovascular Implantable Electronic Devices (HRS/ASTRO) – 2017
+6. Survivorship Care Plan (ASTRO) – 2016
+
+White Papers:
+1. ART Safety White Paper (ASTRO) – 2024
+   - Supplement: Radiation Oncologist Daily Adaptive Directive Template
+2. SRS and SBRT Safety White Paper (ASTRO) – 2022
+3. IMRT Safety White Paper (ASTRO) – 2022
+4. IGRT Safety White Paper (ASTRO) – 2022
+5. Minimum Data Elements (ASTRO) – 2019
+6. Standardizing Dose Prescriptions (ASTRO) – 2016
+7. HDR Brachytherapy Safety White Paper (ASTRO) – 2014
+8. Peer Review Safety White Paper (ASTRO) – 2013
+
+Model Policies:
+- ASTRO's Model Policies on brachytherapy, IMRT, proton beam therapy, SBRT and SRS
