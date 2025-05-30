@@ -1,0 +1,22 @@
+# Todo List: Section 4.3 - Brachytherapy Planning
+
+- [ ] Create directory structure for Section 4.3 (DONE)
+- [ ] Develop `outline_4_3.md`
+- [ ] Develop `key_concepts_4_3.md` (including principles, sources, applicators, dosimetry formalism, planning techniques, QA)
+- [ ] Develop `clinical_scenarios_4_3.md` (covering common sites like prostate, GYN, breast, skin, etc.)
+- [ ] Develop `mcqs_4_3.md` (ABR-style questions covering key concepts and clinical applications)
+- [ ] Develop `activities_4_3.md` (e.g., plan evaluation exercises, dose calculation checks)
+- [ ] Develop `worked_examples_4_3.md` (step-by-step calculations for TG-43, BED/EQD2, plan optimization)
+- [ ] Develop `assessment_4_3.md` (comprehensive assessment covering all learning objectives)
+- [ ] Develop `protocol_4_3.md` (sample clinical protocol for a common brachytherapy procedure)
+- [x] Create Deep Dive: TG-43 Update 1 (TG-43U1)
+- [X] Create Deep Dive: TG-56 (Code of Practice for Brachytherapy Physics)
+- [X] Create Deep Dive: TG-59 (HDR Brachytherapy Treatment Delivery)
+- [ ] ~~Create Deep Dive: TG-60 (Intravascular Brachytherapy Physics)~~ (Skipped, replaced by TG-149)
+- [X] Create Deep Dive: TG-186 (Model-Based Dose Calculation Algorithms)
+- [X] Create Deep Dive: TG-224 (Electronic Brachytherapy)
+- [ ] ~~Create Deep Dive: IAEA TCS 61 (Dosimetry of Small Static Photon Fields - relevant for some brachy sources/detectors)~~ (Skipped, replaced by TRS 483 under Dosimetry)
+- [ ] Update `overall_curriculum_tracking.md`
+- [ ] Commit and push all Section 4.3 files to GitHub repository
+- [ ] Package Section 4.3 files into a zip archive
+- [ ] Notify user of completion and provide attachments

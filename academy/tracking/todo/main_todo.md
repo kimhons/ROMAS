@@ -1,0 +1,105 @@
+# Radiation Oncology Academy - Main TODO List
+
+This document tracks the overall progress of the Radiation Oncology Academy curriculum development.
+
+## Modules & Sections Status
+
+- [ ] Module 1: Basic Radiation Physics
+    - [ ] Section 1.1: Atomic and Nuclear Physics
+    - [ ] Section 1.2: Radiation Interactions with Matter
+    - [ ] Section 1.3: Radioactive Decay
+- [ ] Module 2: Radiation Detection and Measurement
+    - [ ] Section 2.1: Principles of Radiation Detection
+    - [ ] Section 2.2: Dosimetry Systems and Calibration
+    - [ ] Section 2.3: Radiation Counting Statistics
+- [ ] Module 3: Radiation Protection and Regulations
+    - [ ] Section 3.1: Principles of Radiation Protection (ALARA)
+    - [ ] Section 3.2: Shielding Design and Verification
+    - [ ] Section 3.3: Regulatory Agencies and Guidelines (NCRP, ICRP, NRC)
+    - [ ] Section 3.4: Emergency Procedures and Radiation Safety Program
+    - [ ] Section 3.5: Personnel Dosimetry and Monitoring
+    - [ ] Section 3.6: Non-Ionizing Radiation Safety (MRI, Laser, Ultrasound)
+- [X] Module 4: Clinical Radiation Oncology Physics
+    - [ ] Section 4.1: External Beam Therapy Physics (Linac Design, Photon Beams, Electron Beams, Treatment Planning Intro)
+    - [ ] Section 4.2: Brachytherapy Physics (Sources, Applicators, Treatment Planning, HDR/LDR general)
+    - [X] Section 4.3: Quality Assurance in Radiation Therapy
+        - [X] General QA Principles (TG-100, TG-142 overview)
+        - [X] Linac QA (TG-142 deep dive, TG-40/TG-106 historical context)
+        - [X] Brachytherapy QA (TG-40, TG-56, TG-59, TG-182, TG-66)
+        - [X] Treatment Planning System (TPS) QA (TG-53, TG-219, TG-244)
+        - [X] Imaging QA for RT (TG-104, TG-132, TG-179, TG-218)
+    - [X] Section 4.4: Imaging in Radiation Oncology
+        - [X] Principles of Medical Imaging
+        - [X] CT Simulation and 4DCT
+        - [X] MRI in Radiation Therapy
+        - [X] PET/SPECT in Radiation Therapy
+        - [X] Ultrasound in Radiation Therapy
+        - [X] Image Registration and Fusion
+        - [X] IGRT Techniques (kV, MV, CBCT, US-guided)
+    - [X] Section 4.5: Special Procedures - Stereotactic Radiosurgery (SRS) and Stereotactic Body Radiation Therapy (SBRT)
+        - [X] Key Concepts
+        - [X] Physics of SRS/SBRT (Graduate Level)
+        - [X] Clinical Aspects of SRS/SBRT (Graduate Level)
+        - [X] Deep Dive: AAPM TG-76 (Respiratory Motion Management)
+        - [ ] Deep Dive: AAPM TG-101 (SBRT) - **MISSING FILE**
+        - [X] Deep Dive: AAPM TG-142 (Linac QA for SRS/SBRT aspects)
+        - [X] Clinical Scenarios
+        - [X] MCQs & Solutions
+        - [X] Activities & Worked Examples
+        - [X] Assessment & Solutions
+        - [X] Protocol/Procedure Outline
+        - [X] QA/Review Checklist
+    - [X] Section 4.6: Special Procedures - Total Body Irradiation (TBI) and Total Skin Electron Irradiation (TSEI)
+        - [X] Key Concepts (Revised - Graduate Level)
+        - [X] Physics of TBI/TSEI (Revised - Graduate Level)
+        - [X] Clinical Aspects of TBI/TSEI (Revised - Graduate Level)
+        - [X] Deep Dive: TBI (AAPM Report 17 & OMP) (Revised - Graduate Level)
+        - [X] Deep Dive: TSEI (OMP & General Principles) (Revised - Graduate Level)
+        - [ ] Clinical Scenarios (Pending revision for depth)
+        - [ ] MCQs & Solutions (Pending revision for depth)
+        - [ ] Activities & Worked Examples (Pending revision for depth)
+        - [ ] Assessment & Solutions (Pending revision for depth)
+        - [ ] Protocol/Procedure Outline (Pending revision for depth)
+        - [ ] QA/Review Checklist (Pending revision for depth)
+    - [ ] Section 4.7: Special Procedures - Intraoperative Radiation Therapy (IORT)
+        - [ ] Key Concepts
+        - [ ] Physics of IORT
+        - [ ] Clinical Aspects of IORT
+        - [ ] Relevant TG Reports/Guidelines Deep Dive
+        - [ ] Clinical Scenarios
+        - [ ] MCQs & Solutions
+        - [ ] Activities & Worked Examples
+        - [ ] Assessment & Solutions
+        - [ ] Protocol/Procedure Outline
+        - [ ] QA/Review Checklist
+    - [ ] Section 4.8: Special Procedures - Advanced Brachytherapy (HDR/LDR Specifics)
+        - [ ] Key Concepts (HDR vs LDR)
+        - [ ] Physics of HDR Brachytherapy (TG-43, TG-56, TG-59)
+        - [ ] Clinical Aspects of HDR Brachytherapy (Site-specific examples)
+        - [ ] Physics of LDR Brachytherapy (Prostate seeds, Eye Plaques - TG-43, TG-129, TG-221)
+        - [ ] Clinical Aspects of LDR Brachytherapy
+        - [ ] Clinical Scenarios
+        - [ ] MCQs & Solutions
+        - [ ] Activities & Worked Examples
+        - [ ] Assessment & Solutions
+        - [ ] Protocol/Procedure Outline
+        - [ ] QA/Review Checklist
+- [ ] Module 5: Radiobiology
+    - [ ] Section 5.1: Molecular and Cellular Radiobiology
+    - [ ] Section 5.2: Tumor and Normal Tissue Response to Radiation
+    - [ ] Section 5.3: Time, Dose, and Fractionation in Radiotherapy (The 5 Rs)
+- [ ] Module 6: Professionalism, Ethics, and Safety
+    - [ ] Section 6.1: Ethical Principles in Medical Physics
+    - [ ] Section 6.2: Patient Safety and Error Prevention (TG-100)
+    - [ ] Section 6.3: Communication and Teamwork
+- [ ] Module 7: Emerging Technologies and Future Trends
+    - [ ] Section 7.1: AI and Machine Learning in Radiation Oncology
+    - [ ] Section 7.2: FLASH Radiotherapy
+    - [ ] Section 7.3: Advanced Imaging Techniques
+    - [ ] Section 7.4: Theranostics and Radiopharmaceuticals
+
+*Legend:*
+- [X] Completed
+- [P] In Progress (Partially complete or under revision)
+- [ ] To Be Done
+
