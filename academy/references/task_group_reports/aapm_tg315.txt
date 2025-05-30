@@ -1,0 +1,310 @@
+1    Task Group 315: Medical Physics Practice Guideline (MPPG) For Plan and Chart Review in
+2    External Beam Radiotherapy and Brachytherapy
+3    Ping Xia1, Cynthia Chuang2, Valdir C. Colussi3, Yeh-Chi Lo4, Deborah Schofield5, Benjamin J.
+4    Sintay6, Michelle Wells7, and Sumin Zhou8
+5    1
+      Department of Radiation Oncology, Cleveland Clinic, Cleveland, OH
+6    2
+      Department of Radiation Oncology, University of California- San Francisco, CA
+7    3
+      Department of Radiation Oncology, University Hospitals Cleveland Medical Center, Cleveland, OH
+8    4
+      Department of Radiation Oncology, Mount Sinai Hospital- New York, New York, NY
+9    5
+      Department of Radiation Oncology, Florida Hospital South, Orlando, FL
+10   6
+      Department of Radiation Oncology, Cone Health, Greensboro, NC
+11   7
+      Department of Radiation Oncology, Piedmont Healthcare, Atlanta, GA
+12   8
+      Department of Radiation Oncology, University of Nebraska Medical Center, Omaha, NE
+
+13
+
+
+
+
+                                                                                                       1
+14
+
+15   Contents
+16   I. Introduction ................................................................................................................................................ 3
+17      1.        Scope.................................................................................................................................................. 4
+18      2.        The charges of this MPPG .................................................................................................................. 5
+19   II. Definition ................................................................................................................................................... 6
+20   III. Expectations and Responsibilities............................................................................................................. 9
+21      1.        External Beam Radiation Therapy ..................................................................................................... 9
+22           (a) Initial plan/chart check ...................................................................................................................12
+23           (b) Weekly chart check ........................................................................................................................13
+24           (c) Final chart check .............................................................................................................................14
+25      2. Brachytherapy ......................................................................................................................................14
+26   IV. Essential Content of a Treatment Plan Document .................................................................................15
+27      1.        External Beam Plan Document ........................................................................................................16
+28      2.        Brachytherapy Plan Document ........................................................................................................17
+29   V: Recommended Checklist During Plan and Chart Review ........................................................................17
+30      1.        External Beam Plans and Charts ......................................................................................................17
+31           a.      Checklist for Planners ..................................................................................................................17
+32           b.      Initial Plan/Chart Checklist for Physicists....................................................................................18
+33           c.      Initial Plan/Chart Checklist for Therapists ...................................................................................20
+34           d.      Weekly Chart Review Checklist ...................................................................................................20
+35           e.      Final Chart Review Checklist ........................................................................................................20
+36      2.        Brachytherapy Plans/ Charts ...........................................................................................................21
+37           a.      Initial Plan/Chart Checklist for Physicists ...................................................................................21
+38           b.      Initial Plan/Chart Checklist for Therapists .................................................................................21
+39           c.      Weekly Chart Review Checklist ..................................................................................................22
+40           f.      Final Chart Review Checklist ......................................................................................................22
+41   VI: Computer-aided Plan/Check and Automation .......................................................................................22
+42   VII: Discussion ..............................................................................................................................................24
+43   VIII: Summary ...............................................................................................................................................26
+44   References: ..................................................................................................................................................28
+45
+
+
+
+                                                                                                                                                                         2
+46   I. Introduction
+47
+
+48   Task group (TG) 40 report [1], published in 1994, established the foundation of comprehensive
+
+49   quality assurance (QA) for radiation therapy. Most current medical physics practices in radiation
+
+50   therapy stem from this report. With the advancement of radiation therapy in the past two
+
+51   decades, several additional QA reports have been published [2-4], each addressing one specific
+
+52   aspect of QA topics covered in TG 40. A recently published TG 275 [5] provided evidence-
+
+53   based recommendations on physics plan and chart review for radiation therapy based on a survey
+
+54   of AAPM members and failure mode and effect analyses (FMEA). In parallel with TG 275, the
+
+55   purpose of this report is to provide specific checklist during plan/chart review for dosimetrists,
+
+56   medical physicists, and therapists based on minimum practice standards. Since radiation therapy
+
+57   is a coordinated team effort, this report also clarifies the responsibilities of each team member
+
+58   (radiation oncologists, medical physicists, dosimetrists, and therapists). The differences between
+
+59   this MPPG and TG 275 are elaborated the last section of this report.
+
+60
+
+61   A patient chart typically consists of many types of documents, including diagnostic reports,
+
+62   consultation reports, simulation documents, treatment plan reports, daily treatment records, and
+
+63   on-treatment visit reports. With the advent of electronic medical records (EMR), many clinical
+
+64   reports reside in a general hospital EMR system, while other radiation-related technical reports
+
+65   may reside in a radiation specific EMR system. One integrated EMR system is ideal; but
+
+66   currently not feasible because hospital EMR systems are generally incapable of sending radiation
+
+67   treatment plans to the treatment equipment and recording radiation treatment parameters
+
+68   automatically, both of which are critical for radiation therapy. The purpose of having a patient
+
+69   chart reviewed by different team members at multiple time points throughout the course of
+
+                                                                                                          3
+70   treatment (e.g. prior to treatment (initial), during treatment (weekly), and at the end-of-treatment
+
+71   (final) is to ensure accurate and precise radiation treatment planning and delivery. To
+
+72   accomplish these tasks, one of the most important documents of a radiation therapy-related
+
+73   patient chart is the treatment plan report, along with other supporting documents for treatment
+
+74   delivery.
+
+75
+
+76   Treatment plans for radiation oncology consist of two major components: a clinical element and
+
+77   a technical element. The clinical component of a treatment plan includes the intent of radiation
+
+78   treatment (definitive, adjuvant, or salvage), radiation dosage, fractionation scheme, and anatomic
+
+79   contours that are delineated either to receive the prescribed treatment doses or to be protected
+
+80   from a specific tolerance dose. The technical component of a treatment plan includes the details
+
+81   of patient positioning along with the immobilization devices, placement of radiation beams, and
+
+82   the aperture shapes of radiation beams (designed either manually or by computer optimization)
+
+83   to achieve highly conformal radiation dose distributions to the treatment target volumes while
+
+84   protecting the critical organs.
+
+
+85   1. Scope
+86
+
+87   This MPPG report is focused on the technical component of a treatment plan, referred to as the
+
+88   treatment plan in subsequent sections. The goal of this MPPG is to provide essential checklist
+
+89   items for medical physicists who conduct plan/chart reviews according to the minimum
+
+90   acceptable safe standards.
+
+91
+
+
+92   The purpose of a new (initial) plan/chart review is to ensure compliance with the prescription,
+
+
+                                                                                                        4
+93    no clinically significant deviations are present, and that all information necessary for the
+
+94    therapists to deliver the treatment has been provided. Significant deviations in the plan/chart
+
+95    include errors, inconsistencies, or ambiguities, which may cause confusion for the team and
+
+96    potentially resulting in treatment errors. A recent publication [6] from the Radiation Oncology
+
+97    Incident Learning System (RO-ILS) reported that 33% of reported events occur during the
+
+98    processes of treatment planning and pretreatment review/verification. Mitigation of these
+
+99    hazards is best accomplished by catching errors as far upstream as possible and including
+
+100   multiple layers of plan check/review. The possibility of an error propagating through to the
+
+101   patient can further be minimized by using a standardized treatment plan document, a consistency
+
+102   check from the planners, and a pretreatment check by radiation therapists.
+
+103
+
+
+104   The purpose of weekly on-treatment (weekly) chart review is to verify that the prescription is
+
+105   being fulfilled. If for clinical reasons, the prescription is altered, medical physicists are
+
+106   responsible for ensuring that the modified prescription is followed accordingly. At the end-of-
+
+107   treatment (final) chart check, medical physicists are responsible for ensuring that all technical
+
+108   documents for that patient are signed/approved and that the treatment course is completed. If for
+
+109   clinical reasons or patients’ decisions, the treatment course is not completed, a radiation
+
+110   oncologist should document the specific reason in the chart. This MPPG provides essential
+
+111   checklists for medical physicists to utilize while carrying out the responsibilities of initial,
+
+112   weekly, and final chart review.
+
+
+113   2. The charges of this MPPG
+114
+
+
+
+
+                                                                                                          5
+115          (1)     To define roles of a dosimetrist, therapists, a physicist in training, and a qualified
+
+116          medical physicist as they pertain to the treatment plan/chart review process for external
+
+117          beam radiotherapy (EBRT) and brachytherapy.
+
+118          (2)     To define essential checklist items for initial, weekly and final plan/chart review.
+
+119          (3)     To make recommendations on the timing of the initial, weekly, and final
+
+120          plan/chart review, especially for special procedures (e.g. TBI, stereotactic body
+
+121          radiotherapy, and brachytherapy).
+
+122
+
+123   This MPPG considers typical treatment plans in radiotherapy, including the most frequently used
+
+124   external beam radiotherapy (C-arm linear accelerators) using photons and electrons (excluding
+
+125   proton plans) and the most frequently practiced brachytherapy procedures, such as high dose rate
+
+126   (HDR) brachytherapy for gynecological treatments. It is not feasible for this MPPG to cover
+
+127   every procedure or situation, and as such, the medical physicist should collaborate with other
+
+128   members of the department to establish and document appropriate procedures for those falling
+
+129   outside of this work. Working with radiation oncologists, medical physicists are responsible for
+
+130   confirming a patient-specific high-quality plan is developed; however, the quality of a treatment
+
+131   plan is ultimately the radiation oncologist’s responsibility. This MPPG does not expound on the
+
+132   aspect of plan quality metrics.
+
+133
+
+
+134   II. Definition
+135
+
+
+
+
+                                                                                                              6
+136   The following terms will be used throughout this report. Their definitions are generally
+
+137   understood by the radiation oncology community. For others who are not familiar with these
+
+138   terms, the definitions are provided below.
+
+139   QMP: For the purpose of providing radiation oncology therapy clinical professional services, a
+
+140   Qualified Medical Physicist is an individual who is competent to practice independently in the
+
+141   subfield of therapeutic medical physics. The ACR strongly recommends that the individual be
+
+142   board certified. Individual who is not board certified but is licensed by the state, or documented
+
+143   by home institution as passing the institution's competency requirement are also considered as
+
+144   QMP. This definition is more aligned with the ACR definition [7] to be more encompassing
+
+145   than the AAPM definition of QMP [8].
+
+146   AU: Authorized Users are radiation oncologists who are authorized to utilize a high dose rate
+
+147   (HDR) brachytherapy unit and are required by the Nuclear Regulatory Commission (NRC) and
+
+148   agreement states to be present at the treatment console during high dose rate (HDR)
+
+149   brachytherapy treatments.
+
+150   AMP: Authorized Medical Physicists are individuals who are listed on the HDR license of
+
+151   brachytherapy and are required by the NRC and the agreement States to be present at the
+
+152   treatment console during brachytherapy treatments. For States that require a license to practice
+
+153   medical physics, licensed medical physicists are AMP.
+
+154   Prescription: Following the guideline of American Society of Radiation Oncology (ASTRO) on
+
+155   the prescription [9], a Radiation Oncologist should provide the following minimum information
+
+156   in the written prescription for external beam radiation: anatomic site, delivery technique
+
+157   including photon/electron, energy, total dose, number of fractions, and the percent isodose line
+
+
+                                                                                                           7
+158   that is used for normalization to a specific point or to a specific volume. If IGRT is applicable,
+
+159   the prescription should specify the alignment method (e.g. bone or soft tissue) and the frequency
+
+160   of IGRT applications.
+
+161   Written directive: Used for brachytherapy plans, similar to the pre
+(Content truncated due to size limit. Use line ranges to read in chunks)

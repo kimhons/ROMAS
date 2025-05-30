@@ -1,0 +1,263 @@
+               AAPM REPORT NO. 116
+
+
+
+
+        An Exposure Indicator
+        for Digital Radiography
+
+
+
+Report of AAPM Task Group 116
+
+
+                      July 2009
+
+
+
+DISCLAIMER: This publication is based on sources
+ and information believed to be reliable, but the
+ AAPM and the editors disclaim any warranty or
+   liability based on or relating to the contents
+                 of this publication.
+
+
+   The AAPM does not endorse any products,
+   manufacturers, or suppliers. Nothing in this
+       publication should be interpreted
+        as implying such endorsement.
+
+
+© 2009 by American Association of Physicists in Medicine
+ DISCLAIMER: This publication is based on sources and information believed to be reliable, but
+the AAPM, the editors, and the publisher disclaim any warranty or liability based on or relating to
+                                the contents of this publication.
+
+     The AAPM does not endorse any products, manufacturers, or suppliers. Nothing in this
+             publication should be interpreted as implying such endorsement.
+
+
+
+
+                                    ISBN: 978-1-888340-86-0
+                                        ISSN: 0271-7344
+
+
+                   © 2009 by American Association of Physicists in Medicine
+
+
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or
+ transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or
+                 otherwise) without the prior written permission of the publisher.
+
+
+
+                                         Published by
+                         American Association of Physicists in Medicine
+                                     One Physics Ellipse
+                                College Park, MD 20740-3846
+                 AAPM REPORT NO. 116
+
+
+
+            An Exposure Indicator
+            for Digital Radiography
+
+
+         Report of AAPM Task Group 116
+
+
+                          Co-Chairs
+
+                         S. Jeff Shepard
+                          Jihong Wang
+               Imaging Physics Department #056
+                Division of Diagnostic Imaging
+      The University of Texas M.D. Anderson Cancer Center
+                       Houston, TX 77030
+
+
+                    Task Group Members:
+
+        Michael Flynn, Henry Ford Hospital, Detroit, MI
+   Eric Gingold, Thomas Jefferson University, Philadelphia, PA
+         Lee Goldman, Hartford Hospital, Hartford, CT
+            Kerry Krugh, Toledo Hospital, Toledo OH
+      David L. Leong, Analogic Corporation, Peabody, MA
+Eugene Mah, Medical University of South Carolina, Charleston, SC
+  Kent Ogden, SUNY Upstate Medical University, Syracuse, NY
+         Donald Peck, Henry Ford Hospital, Detroit, MI
+         Ehsan Samei, Duke University, Chapel Hill, NC
+    Charles E. Willis, The University of Texas M.D. Anderson
+                  Cancer Center, Houston, TX
+
+
+
+
+                               iii
+                              ACKNOWLEDGMENTS
+
+
+ TG-116 would like to recognize contributions from industry liaisons to the TG effort. This
+acknowledgment was inadvertently left out of the original report. Many of these individuals
+contributed materially to writing the appendices and all of them participated in meetings and
+                     contributed to discussions. These individuals were:
+
+                 Stephen Balter, Columbia Medical Center (IEC Liaison)
+                     Patrick C. Brennan, University College, Dublin
+                             Martin Darms, Swissray Medical
+                               Uri Feldman, ICR Company
+                      Bernhard Geiger, Siemens Medical Solutions
+                                Kadri Jabri, GE Healthcare
+                              David Leong, Analogic Corp.
+                      Stephen W. Meyer, Canon Medical Systems
+                          Christopher R. Mitchell, ALARA, Inc.
+             Ulrich Neitzel, Philips Medical Systems, DIN/NAR, IEC WG43
+         Ralph Schaetzing, Agfa Corporation (now with Carestream Health, Inc.)
+          Robert A. Uzenoff, Fujifilm Medical Systems USA (Liaison: Fujifilm,
+                               MITA CR & DR committee)
+                  Rich Van Metter (Formerly Carestream Health, Inc.)
+             Stephen Vastagh, National Electrical Manufacturers Association
+                 Darren Werner, Konica Minolta Medical Imaging USA
+                      Robin Winsor, Imaging Dynamics Company
+                         John Yorkston, Carestream Health, Inc.
+                        Wei Zhao, State University of New York
+                                                             CONTENTS
+
+
+
+
+       Abstract.............................................................................................................................   1
+I.      Introduction ....................................................................................................................      1
+II.     Definition of Terms..........................................................................................................          4
+III. Recommendations...........................................................................................................                7
+IV.     Standard Radiation Exposure Conditions ....................................................................                            8
+        A.      Standard Beam Spectrum .........................................................................................                8
+        B.      Standard Beam Geometry and Calibration Verification Procedure...........................                                       9
+V.      Assessment of Indicated Equivalent Air Kerma (KIND) ................................................                                   12
+VI. Reporting Deviation Index (DI) .....................................................................................                       14
+VII. Clinical Use of the Deviation Index (DI).........................................................................                         15
+VIII. Exposure Indicator and Radiographic Techniques ......................................................                                    16
+IX. KIND and Automatic Exposure Control (AEC) Systems ...............................................                                          18
+X.      Inappropriate Clinical Use of DI....................................................................................                   19
+XI. Recommended Optional Features..................................................................................                            19
+XII. Application to Dedicated Chest, Mammography,Veterinary,
+     and Dental Radiography.................................................................................................                   20
+References ................................................................................................................................. 21
+Appendices
+       A        RQA5 vs.TG-116 Standard Beam Conditions,
+                XSPECT 3.5b Computation Simulation ...............................................................                             23
+       B        Comparison of Pure Aluminum vs. Commercially Available
+                Types 1100 and 1190 Aluminum and a Copper/Aluminum Alternative
+                for RQA5 .................................................................................................................     33
+       C        Current Status of Exposure Indices.......................................................................                      41
+       D        Agfa CR...................................................................................................................     47
+       E        Fujifilm FCR ..........................................................................................................        49
+       F        Kodak CR (now Carestream Health, Inc.) ............................................................                            51
+       G        Konica Minolta CR.................................................................................................             59
+       H        Imaging Dynamics .................................................................................................             61
+       I        Philips DigitalDiagnost Exposure Index ..............................................................                          63
+
+
+                                                                        v
+                                           CONTENTS (cont.)
+
+J   GE Healthcare ........................................................................................................         67
+K   Alara CR .................................................................................................................     69
+L   Siemens Medical Systems ......................................................................................                 71
+M   iCRco.......................................................................................................................   73
+N   Canon Medical Systems .........................................................................................                77
+O   SwissVision Dose Indicator....................................................................................                 85
+
+
+
+
+                                                           vi
+                                                   Abstract
+
+    Digital radiographic imaging systems, such as those using photostimulable storage phosphor (PSP),
+    amorphous selenium, amorphous silicon, charge-coupled device (CCD), and metal oxide semicon-
+    ductor-field effect transistor (MOSFET) technology, can produce adequate image quality over a
+    much broader range of exposure levels than that of screen/film imaging systems. In screen/film
+    imaging, the final image brightness and contrast are indicative of over- and underexposure. In digital
+    imaging, brightness and contrast are often determined entirely by digital post-processing of the
+    acquired image data. Over- and underexposures are not readily recognizable. As a result, patient dose
+    has a tendency to increase gradually over time after a department converts from screen/film-based
+    imaging to digital radiographic imaging. The purpose of this report is to recommend a standard indi-
+    cator which reflects the radiation exposure that is incident on a detector after every exposure event
+    and that reflects the noise levels present in the image data. The intent is to facilitate the production of
+    consistent, high-quality digital radiographic images at acceptable patient doses. This should be based
+    not on image optical density or brightness, but on feedback regarding the detector exposure provided
+    and actively monitored by the imaging system. A standard beam calibration condition is recom-
+    mended that is based on RQA5, but uses filtration materials that are commonly available and simple
+    to use. Recommendations on clinical implementation of the indices to control image quality and
+    patient dose are derived from historical tolerance limits and presented as guidelines.
+
+    Key words: digital radiography, direct digital radiography, indirect digital radiography, computed
+    radiography, photostimulable storage phosphor, image quality, image noise, exposure index, quality
+    control, quality assurance, acceptance testing.
+
+
+
+I. Introduction
+The charge of Task Group 116 (TG-116), as approved by the Science Council of the American
+Association of Physicists in Medicine (AAPM) was to identify a method of providing feedback, in
+the form of a standard index, to operators of digital radiographic systems, which reflects the ade-
+quacy of the exposure that has reached the detector after every exposure event. This report is the
+answer to that charge and will cover all digital radiographic image detector systems, leaving digital
+fluorography or fluoroscopy (radioscopy) for future consideration.
+     Unlike screen/film imaging, image display in digital radiography is independent of image acqui-
+sition. Inadequate or excessive exposure is manifested as higher or lower image noise levels instead
+of as a light or a dark image. The final brightness of the image is controlled not by the exposure to the
+detector, but by post-processing applied to the acquired image data. Consequently, overexposed
+images may not necessarily be dark, and underexposed images may not appear light. This may be a
+new and confusing concept for operators of digital radiographic systems who are accustomed to
+screen/film imaging.
+     For more than a decade, the phenomenon of “exposure creep” in photostimulable storage phos-
+phor (PSP) imaging has been reported.[1,2,3] This is attributed to the fact that digital imaging systems
+can produce adequate image contrast over a much broader range of exposure levels than screen/film
+imaging systems. This broad dynamic range is one of the benefits of digital detectors. However, if the
+detector is underexposed, higher noise levels may obscure the presence of subtle details in the
+
+                                                        1
+AAPM REPORT NO. 116
+
+
+image. Excessive detector exposures may produce high-quality images with improved noise charac-
+teristics but at the expense of increased patient dose. In extreme cases, excessive detector exposures
+may result in artifacts. As a result, most radiologists tend to complain about underexposed images
+but remain silent when images are acquired at higher dose levels unless apparent saturation has
+occurred. Technologists quickly learn that they can produce images of better quality if they increase
+their exposure techniques, resulting in less noisy images and avoiding radiologist complaints about
+noisy images. Average exposure levels tend to creep up over time if a clear indicator of exposure is
+not provided and routinely monitored.
+     Techniques required to achieve optimal radiographic imaging in Digital Radiography (DR) may
+be different from those used for screen/film imaging. In addition, different DR detectors may require
+different technique factors due to differences in the energy dependence of the detector materials in
+use (see Figure 1).[4] These differences in technique among DR systems may cause confusion and
+suboptimal image quality at sites where more than one type of system is in use. Operators need a
+clear set of rules to produce consistent, high-quality digital radiographic imaging, based not on
+image density but on feedback regarding the detector exposure provided.
+     Several manufacturers currently use an exposure indicator that parallels the concept of “speed”
+or “speed class” used by film manufacturers. In addition, many manufacturers and users have
+become accustomed to characterizing their systems as functioning within a given speed class. This
+has created some misunderstandings and scientific inaccuracies, which have been discussed in the
+literature.[5]
+
+
+
+
+Figure 1. Energy dependence of common detector materials.
+
+                                                  2
+                                                       AN EXPOSURE INDICATOR FOR DIGITAL RADIOGRAPHY
+
+
+     TG-116 recommends avoiding the concept of “speed class” when referring to DR system per-
+formance. The definition of radiographic speed according to ISO 9236-1[6] is based on the radiation
+exposure required to achieve a net optical density of 1.0 on the developed film. With DR there is no
+fixed relationship between the radiation exposure and the resultant density in the image. With
+screen/film detectors a change in speed may also result in a change in the spatial resolution proper-
+ties of the detector. This same relationship does not
+(Content truncated due to size limit. Use line ranges to read in chunks)

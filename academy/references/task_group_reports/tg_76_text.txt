@@ -1,0 +1,296 @@
+AAPM REPORT NO. 91
+
+The Management of Respiratory Motion
+in Radiation Oncology
+
+Report of AAPM Task Group 76
+July 2006
+
+DISCLAIMER: This publication is based on
+sources and information believed to be reliable,
+but the AAPM and the editors disclaim any
+warranty or liability based on or relating to the
+contents of this publication.
+The AAPM does not endorse any products,
+manufacturers, or suppliers. Nothing in this
+publication should be interpreted as implying
+such endorsement.
+
+ 2006 by American Association of Physicists in Medicine
+
+DISCLAIMER: This publication is based on sources and information believed to be reliable, but the
+AAPM, the editors, and the publisher disclaim any warranty or liability based on or relating to the
+contents of this publication.
+The AAPM does not endorse any products, manufacturers, or suppliers. Nothing in this publication
+should be interpreted as implying such endorsement.
+
+ISBN-13: 978-1-888340-61-7
+ISBN-10: 1-888340-61-4
+ISSN: 0271-7344
+© 2006 by American Association of Physicists in Medicine
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or
+transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or
+otherwise) without the prior written permission of the publisher.
+
+Published by
+American Association of Physicists in Medicine
+One Physics Ellipse
+College Park, MD 20740-3846
+
+AAPM REPORT NO. 91
+
+The Management of Respiratory Motion
+in Radiation Oncology
+Report of AAPM Task Group 76
+Members:
+Paul J. Keall
+Gig S. Mageras
+James M. Balter
+Richard S. Emery
+Kenneth M. Forster
+Steve B. Jiang
+Jeffrey M. Kapatoes
+Hideo D. Kubo
+Daniel A. Low
+Martin J. Murphy
+Brad R. Murray
+Chester R. Ramsey
+Marcel B. van Herk
+S. Sastry Vedam
+John W. Wong
+Ellen Yorke
+
+Virginia Commonwealth University (Co-Chair)
+Memorial Sloan-Kettering Cancer Center (Co-Chair)
+University of Michigan
+Saint Vincent’s Cancer Center
+UT Southwestern Medical Center
+Massachusetts General Hospital
+TomoTherapy, Inc.
+UC Davis Cancer Center (Deceased)
+Washington University
+Virginia Commonwealth University
+Cross Cancer Institute
+Thompson Cancer Survival Center
+The Netherlands Cancer Institute
+UT M.D. Anderson Cancer Center
+Johns Hopkins University
+Memorial Sloan-Kettering Cancer Center
+
+DEDICATION
+The members of this Task Group wish to dedicate this work to Dr. Dale Kubo, a
+pioneer in the development and clinical implementation of respiratory motion
+management technology. Sadly, Dr. Kubo passed away during the formulation of this
+report.
+
+iv
+
+CONTENTS
+Abstract ........................................................................................................................... ix
+I.
+
+INTRODUCTION AND SCOPE ...............................................................................
+A.
+How to read this document................................................................................
+B.
+Introduction ........................................................................................................
+C.
+Scope ..................................................................................................................
+
+1
+1
+1
+2
+
+II.
+
+GLOSSARY AND ABBREVIATIONS....................................................................
+
+3
+
+III.
+
+PROBLEMS OF RESPIRATORY MOTION DURING RADIOTHERAPY .....
+A.
+Image-acquisition limitations .............................................................................
+B.
+Treatment-planning limitations ..........................................................................
+C.
+Radiation-delivery limitations ............................................................................
+
+4
+4
+5
+6
+
+IV.
+
+MAGNITUDE AND MEASUREMENT OF RESPIRATORY MOTION............ 7
+A.
+The mechanics of breathing ............................................................................... 7
+B.
+Measuring respiratory motion............................................................................ 8
+C.
+Observables ........................................................................................................ 9
+D.
+Motion observations .......................................................................................... 11
+E.
+Summary of motion observations...................................................................... 13
+
+V.
+
+COMMON ISSUES FOR RESPIRATORY MOTION MANAGEMENT........... 15
+A.
+Treatment planning............................................................................................. 15
+B.
+Quality assurance ............................................................................................... 17
+1. Frequency..................................................................................................... 17
+2. Patient training.............................................................................................. 18
+3. Simulation..................................................................................................... 18
+4. Treatment...................................................................................................... 18
+5. Radiographs to check internal constancy .................................................... 18
+C.
+Intensity-modulated radiation therapy ............................................................... 19
+D.
+Workload ............................................................................................................ 21
+
+VI.
+
+METHODS TO ACCOUNT FOR RESPIRATORY MOTION
+IN RADIOTHERAPY .................................................................................................. 22
+A.
+Motion-encompassing methods......................................................................... 22
+1. Introduction.................................................................................................. 22
+2. Slow CT scanning........................................................................................ 23
+3. Inhale and exhale breath-hold CT................................................................ 24
+4. Four-dimensional (4-D) CT/respiration-correlated CT .............................. 24
+B.
+Respiratory gating methods ............................................................................... 25
+1. Introduction.................................................................................................. 25
+2. Residual tumor motion within the gating window...................................... 27
+v
+
+C.
+
+3. Gating using an external respiration signal ................................................ 27
+a. Introduction.......................................................................................... 27
+b. Patient selection ................................................................................... 27
+c. CT simulation ...................................................................................... 27
+d. Treatment ............................................................................................. 29
+e. Patient-related quality assurance ......................................................... 29
+f. Equipment quality assurance............................................................... 30
+4. Gating using internal fiducial markers........................................................ 30
+a. Introduction.......................................................................................... 30
+b. Patient selection ................................................................................... 31
+c. Simulation............................................................................................ 31
+d. Planning ............................................................................................... 31
+e. Treatment ............................................................................................. 31
+f. Quality assurance................................................................................. 32
+5. Gated IMRT ................................................................................................ 32
+Breath-hold methods ......................................................................................... 33
+1. Introduction ................................................................................................. 33
+2. Deep-inspiration breath-hold ...................................................................... 33
+a. Introduction.......................................................................................... 33
+b. Patient selection ................................................................................... 34
+c. Simulation............................................................................................ 34
+d. Planning ............................................................................................... 34
+e. Treatment ............................................................................................. 34
+f. Treatment studies................................................................................. 35
+g. Patient-related quality assurance ......................................................... 35
+h. Equipment-related quality assurance................................................... 35
+3. Active-breathing control.............................................................................. 36
+a. Introduction.......................................................................................... 36
+b. Simulation............................................................................................ 36
+c. Treatment planning .............................................................................. 37
+d. Treatment ............................................................................................. 37
+e. Patient-related quality assurance ......................................................... 37
+f. Equipment-related quality assurance................................................... 38
+4. Self-held breath-hold without respiratory monitoring ............................... 39
+a. Introduction.......................................................................................... 39
+b. Patient selection ................................................................................... 40
+c. Simulation............................................................................................ 40
+d. Planning ............................................................................................... 40
+e. Treatment delivery ............................................................................... 40
+f. Treatment studies................................................................................. 40
+g. Patient-related quality assurance ......................................................... 41
+h. Equipment-related quality assurance................................................... 41
+
+vi
+
+D.
+
+E.
+
+5. Self-held breath-hold with respiratory monitoring ..................................... 41
+a. Introduction .......................................................................................... 41
+b. Patient selection.................................................................................... 42
+c. CT simulation ....................................................................................... 42
+d. Planning................................................................................................ 42
+e. Treatment delivery................................................................................ 42
+f. Treatment and clinical imaging studies ................................................ 42
+6. Breath-hold in combination with IMRT...................................................... 43
+Forced shallow breathing with abdominal compression................................... 43
+1. Introduction.................................................................................................. 43
+2. Patient selection............................................................................................ 44
+3. Simulation..................................................................................................... 44
+4. Treatment planning....................................................................................... 44
+5. Treatment...................................................................................................... 45
+6. Quality assurance......................................................................................... 45
+Real-time tumor-tracking methods..................................................................... 45
+1. Introduction.................................................................................................. 45
+2. Determining the tumor position................................................................... 46
+a. Direct tumor imaging ........................................................................... 46
+b. Tumor location using implanted fiducial markers ............................... 47
+c. Tumor position prediction based on surrogate breathing signals ....... 47
+d. Nonradiographic tumor tracking.......................................................... 48
+3. Compensating for time delays in the beam-positioning response .............. 48
+4. Repositioning the beam................................................................................ 49
+5. Correcting the dosimetry for breathing effects............................................ 49
+6. Recommendations for the implementation of a real-time
+tracking response to respiratory motion...................................................... 49
+7. Quality assurance......................................................................................... 50
+8. Synchronization of IMRT with motion....................................................... 51
+
+VII.
+
+SUMMARY AND RECOMMENDATIONS............................................................. 52
+A.
+Clinical process recommendations..................................................................... 52
+B.
+Treatment-planning recommendations............................................................... 55
+C.
+Personnel recommendations .............................................................................. 56
+D.
+Quality assurance recommendations ................................................................. 56
+E.
+Recommendations for further investigations..................................................... 57
+
+VIII.
+
+POTENTIAL CONFLICTS OF INTEREST............................................................ 58
+
+IX.
+
+ACKNOWLEDGMENTS............................................................................................ 58
+
+X.
+
+REFERENCES ............................................................................................................ 59
+
+vii
+
+ABSTRACT
+This document is the report of a task group of the American Association of Physicists in Medicine
+(AAPM) and has been prepared primarily to advise medical physicists involved in the external-beam
+radiation therapy of patients with thoracic, abdominal, and pelvic tumors affected by respiratory
+motion. This report describes the magnitude of respiratory motion, discusses radiotherapy-specific
+problems caused by respiratory motion, explains techniques that explicitly manage respiratory motion
+during radiotherapy, and gives recommendations in the application of these techniques for patient care,
+including quality assurance (QA) guidelines for these devices and their use with conformal and
+intensity-modulated radiotherapy. The technologies covered by this report are motion-encompassing
+methods, respiratory-gated techniques, breath-hold techniques, forced shallow-breathing methods, and
+respiration-synchronized techniques. The main outcome of this report is a clinical process guide for
+managing respiratory motion. Included in this guide is the recommendation that tumor motion should
+be measured (when possible) for each patient for whom respiratory motion is a
+(Content truncated due to size limit. Use line ranges to read in chunks)

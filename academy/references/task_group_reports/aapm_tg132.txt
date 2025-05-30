@@ -1,0 +1,171 @@
+Use of image registration and fusion algorithms and techniques in
+radiotherapy: Report of the AAPM Radiation Therapy Committee Task
+Group No. 132
+          Kristy K. Brocka)
+          Department of Imaging Physics, The University of Texas MD Anderson Cancer Center, 1400 Pressler St, FCT 14.6048, Houston,
+          TX 77030, USA
+          Sasa Mutic
+          Department of Radiation Oncology, Washington University School of Medicine, St. Louis, MO, USA
+          Todd R. McNutt
+          Department of Radiation Oncology, Johns Hopkins Medical Institute, Baltimore, MD, USA
+          Hua Li
+          Department of Radiation Oncology, Washington University School of Medicine, St. Louis, MO, USA
+          Marc L. Kessler
+          Department of Radiation Oncology, University of Michigan, Ann Arbor, MI, USA
+
+          (Received 7 January 2016; revised 13 February 2017; accepted for publication 19 February 2017;
+          published 23 May 2017)
+          Image registration and fusion algorithms exist in almost every software system that creates or uses
+          images in radiotherapy. Most treatment planning systems support some form of image registration
+          and fusion to allow the use of multimodality and time-series image data and even anatomical atlases
+          to assist in target volume and normal tissue delineation. Treatment delivery systems perform registra-
+          tion and fusion between the planning images and the in-room images acquired during the treatment
+          to assist patient positioning. Advanced applications are beginning to support daily dose assessment
+          and enable adaptive radiotherapy using image registration and fusion to propagate contours and accu-
+          mulate dose between image data taken over the course of therapy to provide up-to-date estimates of
+          anatomical changes and delivered dose. This information aids in the detection of anatomical and
+          functional changes that might elicit changes in the treatment plan or prescription.
+             As the output of the image registration process is always used as the input of another process for
+          planning or delivery, it is important to understand and communicate the uncertainty associated with
+          the software in general and the result of a specific registration. Unfortunately, there is no standard
+          mathematical formalism to perform this for real-world situations where noise, distortion, and com-
+          plex anatomical variations can occur. Validation of the software systems performance is also compli-
+          cated by the lack of documentation available from commercial systems leading to use of these
+          systems in undesirable ‘black-box’ fashion.
+             In view of this situation and the central role that image registration and fusion play in treatment
+          planning and delivery, the Therapy Physics Committee of the American Association of Physicists in
+          Medicine commissioned Task Group 132 to review current approaches and solutions for image regis-
+          tration (both rigid and deformable) in radiotherapy and to provide recommendations for quality assur-
+          ance and quality control of these clinical processes. © 2017 American Association of Physicists in
+          Medicine [https://doi.org/10.1002/mp.12256]
+
+          Key words: adaptive radiotherapy, image fusion, image registration, quality assurance
+
+TABLE OF CONTENTS                                                            d. Domain of transformation
+                                                                             e. Interaction
+1. INTRODUCTION
+                                                                             f. Optimization procedure
+ a. Image data in radiotherapy
+                                                                             g. Modalities involved
+ b. Use of image registration and fusion in radiotherapy
+                                                                             h. Subject
+ c. Clinical integration of image registration and fusion QA program
+                                                                              i. Limitations and challenges
+ d. Glossary of terms
+                                                                            3. CLINICAL ISSUES AND APPLICATIONS OF IMAGE
+2. TECHNIQUES FOR IMAGE REGISTRATION                                        REGISTRATION IN RADIOTHERAPY
+ a. Dimensionality                                                           a. Sources of error due to data acquisition
+ b. Nature of registration basis                                             b. Sources of error in registration
+ c. Nature of transformation                                                 c. Image registration for segmentation
+
+
+
+e43    Med. Phys. 44 (7), July 2017           0094-2405/2017/44(7)/e43/34     © 2017 American Association of Physicists in Medicine   e43
+e44      Brock et al.: TG 132: Image registration                                                                                                    e44
+
+
+ d. Image registration for multimodality or adaptive treatment planning         ii. System end-to-end tests with physical phantom
+ e. Image registration for image-guided radiotherapy                            iii. Digital phantom tests
+   f. Image registration for response assessment                                iv. Example clinical data tests
+4. METHODS FOR VALIDATION AND QUALITY ASSURANCE                             b. Patient-specific registration verification during clinical practice
+ a. General concepts                                                      6. CLINICAL INTEGRATION OF REGISTRATION TECHNIQUES IN
+ b. Qualitative evaluation of image registration and accuracy             TREATMENT PLANNING AND DELIVERY
+ c. Quantitative measures of image registration and accuracy                a. Treatment planning
+ d. Specific considerations of phantoms                                     b. Treatment delivery
+ e. QA at treatment planning                                                c. Treatment monitoring and adaptation
+ f. QA at treatment delivery                                                 d. Clinical case illustrations
+5. COMMISSIONING OF IMAGE REGISTRATION SOFTWARE                           7. CONCLUSIONS
+   a. Commissioning                                                       8. APPENDICES
+      i. Software system specific validation                              9. REFERENCES
+
+
+1. INTRODUCTION
+                                                                          1.B.1. Image registration for segmentation
+1.A. Image data in radiotherapy
+                                                                             Image registration is often used to segment (manually, semi-
+    The practice of modern radiotherapy involves the quanti-              automatically, or automatically) target volumes and normal tis-
+tative use of several types of image data. Image data from                sues through anatomical atlases or between images of the same
+various modalities are used in treatment planning, treatment              patient obtained at different time points (e.g., adaptation).
+delivery and treatment monitoring. In the process of treat-
+ment planning, X-ray computed tomography (CT) is typi-
+                                                                          1.B.2. Image registration for multimodality or
+cally used as the primary imaging modality to construct
+                                                                          adaptive treatment planning
+detailed three dimensional anatomic and physical models of
+the patient. These models are used to design beam arrange-                   Image registration and fusion are often used in treatment
+ments and shapes, to calculate the dose delivered by these                planning to combine information obtained from different
+beams and as a guide to position the patient for treatment.               imaging modalities (e.g., MR, PET, SPECT, and CT)
+Magnetic resonance imaging (MRI) techniques provide                       together for delineation of tumor volumes and/or normal tis-
+exquisite soft tissue contrast for tissue delineation and esti-           sues. Registration is also used to map regions of interest
+mates of physiologic and metabolic information. Nuclear                   delineations from one imaging study of the patient to another
+medicine imaging techniques such as positron emission                     or from a reference set of anatomical contours to a patient-
+tomography (PET) and single photon emission computed                      specific image. Software systems that support adaptive radio-
+tomography (SPECT) provide dynamic data on physiologic                    therapy use image registration and fusion to propagate dose
+and metabolic process such as glucose metabolism and                      from 3D treatment images back to a reference (planning)
+DNA synthesis.                                                            geometry, enable detection of anatomic and functional
+    During the process of treatment delivery, volumetric x-ray            changes that might elicit changes in the treatment plan or pre-
+imaging technology has been incorporated into the treatment               scription, and provide up-to-date estimates of delivered dose.
+rooms as kilovoltage (kV) and megavoltage (MV) CT imag-
+ing systems with fan-beam and cone-beam geometries. Real-                 1.B.3. Image registration for image-guided
+time volumetric ultrasound (US) can also be used to localize              radiotherapy
+internal anatomy at the time of treatment. Research and
+                                                                              Treatment delivery systems use image registration and
+development is currently ongoing to enable integration of
+                                                                          fusion between images used for planning and images acquired
+real-time MR imaging directly with treatment machines. In
+                                                                          at the time of treatment to assist with patient positioning. Regis-
+addition to general set up and target localization, these on-
+                                                                          tration is required to determine the offset of the patient at the
+board images can also be used to monitor and track soft tissue
+                                                                          time of treatment from the planned position. The transforma-
+changes during therapy and to support plan adaptation.
+                                                                          tion determined from the image registration is typically used to
+                                                                          perform an adjustment to the patient position.
+1.B. Use of image registration and fusion in
+radiotherapy                                                              1.B.4. Image registration for response assessment
+    Image registration is the process of determining the geo-                 The evaluation of treatment response also uses image reg-
+metric transformation that relates identical (anatomic) points            istration between the images used for treatment planning and
+in two image series: a moving dataset (Study A) and a sta-                those obtained at follow-up. Although registration is not
+tionary source dataset (Study B). The main uses of image reg-             required for simple comparisons of tumor measurements,
+istration and fusion in radiotherapy can be categorized into              more advanced assessment, e.g., changes in functional imag-
+the following three essential steps.                                      ing, requires precision in image registration.
+
+Medical Physics, 44 (7), July 2017
+e45     Brock et al.: TG 132: Image registration                                                                                      e45
+
+
+   The requirements and challenges for timeliness and accu-          quickly an image registration needs to be performed and veri-
+racy vary between the above four main uses. Image registration       fied), the capabilities of a specific registration software pack-
+for planning has relaxed time constraints, as the process typi-      age, etc. Figure 1 shows a typical clinical implementation of
+cally spans several days. However, image registration at the         image registration process and the possible locations where
+treatment delivery unit has high demands for timeliness, as the      this and other task group’s recommendations are applicable.
+patient is awaiting treatment. This includes registration for        The figure also shows image registration practices are likely
+treatment delivery and online treatment adaptation. Although         as diverse as any other process in radiotherapy and global
+high levels of accuracy are expected in all applications, the        recommendations, which are universally applicable to all
+impact of inaccuracies often depends on the propagation of           individual applications, are impractical. The concepts
+that error. Registration errors made during treatment planning       described here provide a general approach and framework
+will impact the entire treatment course, therefore resulting in a    which individual facilities should consider to ensure that they
+high demand for accuracy. Registration errors made at an indi-       perform high-quality and safe radiotherapy. However, it is
+vidual fraction of treatment delivery will likely impact the         ultimately the responsibility of the individual facilities and
+delivery of that fraction only. For a treatment course with a        their individual QAC to determine the appropriateness of rec-
+large number of fractions, the impact of an error at one fraction    ommendations provided here to their individual use cases
+will be less. Systematic errors in image registration or operator    and the needs of their image registration program.
+error in the registration process may impact the delivery of all
+treatment fractions. The impact of inaccuracies in adaptation
+                                                                     1.D. Glossary of terms
+depends on the timing of the adaptation and the fraction of the
+planned dose that will be delivered under the new plan.                 Image registration — the process of determining the geo-
+                                                                     metric transformation that relates identical (anatomic) points
+                                                                     in two image series: a moving dataset (Study A) and a sta-
+1.C. Clinical integration of image registration and
+                                                                     tionary source dataset (Study B).
+fusion QA program
+                                                                        Image fusion — the combined display of the mapped data
+   This task group recommends implementation of a formal             from the moving dataset with the stationary dataset.
+image registration quality assurance (QA) program in individual         Transformation — the function that is applied to the mov-
+facilities. The program should be guided and structured based        ing image (Study A) to align it to the stationary image (Study B).
+on the recommendations provided here with the considerations            Registration (or similarity) metric — quantifies the
+described below. The main purpose of the program should be to        degree to which the pair of imaging studies are aligned.
+ensure accuracy and quality of individual patient image registra-       Rigid registration — a registration where the transforma-
+tion. The organization and expectations of the program should        tion preserves the distan
+(Content truncated due to size limit. Use line ranges to read in chunks)

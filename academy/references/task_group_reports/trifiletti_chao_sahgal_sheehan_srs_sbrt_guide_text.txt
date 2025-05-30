@@ -1,0 +1,281 @@
+Daniel M. Trifiletti
+Samuel T. Chao
+Arjun Sahgal
+Jason P. Sheehan
+Editors
+
+Stereotactic Radiosurgery
+and Stereotactic Body
+Radiation Therapy
+A Comprehensive Guide
+
+123
+
+Stereotactic Radiosurgery and Stereotactic
+Body Radiation Therapy
+
+Daniel M. Trifiletti • Samuel T. Chao
+Arjun Sahgal • Jason P. Sheehan
+Editors
+
+Stereotactic Radiosurgery
+and Stereotactic Body
+Radiation Therapy
+A Comprehensive Guide
+
+Editors
+Daniel M. Trifiletti, MD
+Mayo Clinic, Radiation Oncology
+Mayo Clinic School of Medicine
+Radiation Oncology
+Jacksonville, FL
+USA
+Arjun Sahgal, MD, FRCPC
+Sunnybrook Odette Cancer Centre
+Department of Radiation Oncology
+University of Toronto
+Toronto, ON
+Canada
+
+Samuel T. Chao, MD
+Department of Radiation Oncology
+Rose Ella Burkhardt Brain Tumor
+and Neuro-Oncology Center
+Cleveland Clinic
+Cleveland, OH
+USA
+Jason P. Sheehan, MD, PhD
+University of Virginia
+Departments of Neurological Surgery and
+Radiation Oncology
+Charlottesville, VA
+USA
+
+ISBN 978-3-030-16923-7    ISBN 978-3-030-16924-4
+https://doi.org/10.1007/978-3-030-16924-4
+
+(eBook)
+
+© Springer Nature Switzerland AG 2019
+This work is subject to copyright. All rights are reserved by the Publisher, whether the whole or part of the material is
+concerned, specifically the rights of translation, reprinting, reuse of illustrations, recitation, broadcasting, reproduction
+on microfilms or in any other physical way, and transmission or information storage and retrieval, electronic adaptation,
+computer software, or by similar or dissimilar methodology now known or hereafter developed.
+The use of general descriptive names, registered names, trademarks, service marks, etc. in this publication does not
+imply, even in the absence of a specific statement, that such names are exempt from the relevant protective laws and
+regulations and therefore free for general use.
+The publisher, the authors, and the editors are safe to assume that the advice and information in this book are believed
+to be true and accurate at the date of publication. Neither the publisher nor the authors or the editors give a warranty,
+expressed or implied, with respect to the material contained herein or for any errors or omissions that may have been
+made. The publisher remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+This Springer imprint is published by the registered company Springer Nature Switzerland AG.
+The registered company address is: Gewerbestrasse 11, 6330 Cham, Switzerland
+
+Foreword
+
+There are a large number of books on stereotactic radiotherapy. Some focus on specific techniques, and others on specific indications. Some books try to provide an overview of all available literature, often leaving the reader with many questions on how to do what in their specific
+situation for an individual patient. Well, this book is different!
+After the successful implementation of stereotactic techniques for intracranial lesions in the
+past century, stereotactic techniques have also become an important treatment option for extracranial tumors, and the role of stereotactic body radiotherapy (SBRT) for lung, liver, and spine
+lesions is now well established. Moreover, SBRT is being explored and advocated for tumors
+and functional indications at various other locations.
+In this book, the editors have done an excellent job in bringing together the information on
+all relevant topics in stereotactic radiosurgery (SRS) and SBRT. An impressive line-up of
+world-renowned experts provides an outstanding and comprehensive review of the biological
+aspects, radiation physics principles, clinical indications, and the available evidence. Instead of
+summing up all available literature, the chapters provide clearly written reviews with information which is scientific, but at the same time very practical and immediately applicable to daily
+clinic.
+In the chapters on biology, the rationale for SRS and SBRT and the mechanisms of action
+of the high-dose hypofractionated treatments are discussed. Latest insights on the interaction
+of radiotherapy with the immune systems are addressed as well.
+The chapters on SRS are partly technique-based, which enables the readers to have easy
+access to information on the techniques used at their centers. In a separate section, SRS is
+discussed in detail for the most frequent indications as well.
+For SBRT, the general physics aspects including immobilization and motion management
+are described in detail. A separate chapter focuses on the use SBRT using charged particles.
+Apart from the important mainstream indications such as lung and spine tumors, newer indications—such as SBRT for head and neck cancer, gastro-intestinal tumors, kidney tumors, and
+prostate cancer—are addressed in various chapters.
+The final chapters of this book provide an excellent overview of some general aspects, such
+as complication management and integration with other therapies, as well as of future directions of the rapidly emerging fields of SRS and SBRT.
+This book is written with the reader in mind who is looking for an up-to-date and state-of-­
+the-art overview of stereotactic radiotherapy for intra- and extracranial indications.
+Ben J. Slotman, MD, PhD, h.FACR
+Department of Radiation Oncology
+VU University Medical Center,
+Amsterdam, The Netherlands
+
+v
+
+Preface
+
+Advancements in technology over the past several decades have created an atmosphere of
+multidisciplinary collaborative care that is very unlike medicine in the early twentieth century.
+Today, team-based approaches allow us to leverage techniques and modalities for the benefit
+of the patient. Radiosurgery is a perfect example of multidisciplinary collaboration and the
+benefit that specialization affords the patient, by blurring the lines between traditional medical
+specialities. Today, centers across the world have developed skills, techniques, and expertise in
+use of stereotactic radiosurgery (SRS) and stereotactic body radiation therapy (SBRT) for
+treatment of many diseases. Perhaps stereotactic radiosurgery can be seen as a budding discipline of its own as it continues to gain distinction that differentiates it from the arenas of conventional surgery and radiation therapy. Unfortunately, the sharing of this practical knowledge
+has been limited to specialty-specific annual meetings, frequently with conflicting recommendations between medical disciplines.
+As a result, it is currently very difficult for a clinician (either in training or in practice) to
+gain experience and expertise in SRS and SBRT. Stereotactic Radiosurgery and Stereotactic
+Body Radiation Therapy: A Comprehensive Guide was created for the purpose of centralizing
+the knowledge and experience of experts across a variety of disciplines.
+Our vision is that this book be used to serve as a basis for the current state of the art of SRS
+and SBRT. There is no doubt that advancements are made almost daily and refinements will be
+made as technology advances. However, for providers seeking to expand their knowledge and
+grow their radiosurgical skill set, this text will serve as a resource to allow for their
+development.
+We thank our gracious contributors for lending their expertise toward the further advancement of our field and toward the improved care of our patients. Their efforts to improve the
+care of patients cannot be overstated.
+Jacksonville, FL, USA
+Cleveland, OH, USA
+Toronto, Ontario, Canada
+Charlottesville, VA, USA
+
+Daniel M. Trifiletti
+Samuel T. Chao
+Arjun Sahgal
+Jason P. Sheehan
+
+vii
+
+Contents
+
+Part I Radiobiology of Radiosurgery and Stereotactic Body Radiation Therapy
+Vascular-Mediated Mechanisms and SRS/SBRT�������������������������������������������������������������   3
+Golnaz Farhat, Deepa Sharma, and Gregory J. Czarnota
+Radio-Immunology of Ablative Radiation����������������������������������������������������������������������� 15
+Talicia Savage and Chandan Guha
+Rationale for Fractionated SRS and Single SRS Session Approaches��������������������������� 31
+Jarred Tanksley, Joseph K. Salama, and John P. Kirkpatrick
+Part II Intracranial Radiosurgery Technique
+Physics of Radiosurgery����������������������������������������������������������������������������������������������������� 43
+Yongsook C. Lee, Steven J. Goetsch, David J. Schlesinger, and Stanley H. Benedict
+Leksell Gamma Knife Radiosurgery��������������������������������������������������������������������������������� 55
+Diogo P. Cordeiro and David J. Schlesinger
+CyberKnife Robotic Stereotactic Radiosurgery��������������������������������������������������������������� 67
+Erqi Pollom, Lei Wang, Iris C. Gibbs, and Scott G. Soltys
+Linear Accelerator-Based Radiosurgery: Technique������������������������������������������������������� 77
+William A. Friedman and Frank J. Bova
+Fractionated Radiosurgery ����������������������������������������������������������������������������������������������� 83
+Giuseppe Minniti and Claudia Scaringi
+Charged-Particle Proton Radiosurgery ��������������������������������������������������������������������������� 91
+Arpit M. Chhabra, Mudit Chowdhary, and Minesh P. Mehta
+Part III Intracranial Radiosurgery by Indication
+Stereotactic Radiosurgery for Brain Metastases������������������������������������������������������������� 105
+Clayton Alonso, Jason P. Sheehan, and Daniel M. Trifiletti
+Stereotactic Radiosurgery for Pituitary Adenoma����������������������������������������������������������� 113
+Cheng-chia Lee, Daniel M. Trifiletti, and Jason P. Sheehan
+Stereotactic Radiosurgery for Meningioma��������������������������������������������������������������������� 123
+David R. Raleigh and Penny K. Sneed
+Stereotactic Radiosurgery for Intracranial Arteriovenous Malformations������������������� 131
+Jacqueline J. Tao, Justin Moore, Geoffrey Appelboom, and Steven D. Chang
+Radiosurgical Management of Trigeminal Neuralgia����������������������������������������������������� 141
+Srinivas Chivukula, Nicholas Au Yong, Matiar Jafari, and Nader Pouratian
+
+ix
+
+x
+
+Radiosurgery for Vestibular Schwannomas��������������������������������������������������������������������� 151
+Fabio Frisoli, Jugal Shah, Travis C. Hill, and Douglas Kondziolka
+Stereotactic Radiosurgery for Glial Tumors��������������������������������������������������������������������� 163
+Ajay Niranjan and L. Dade Lunsford
+Part IV Stereotactic Body Radiation Therapy Technique
+Physics of Stereotactic Body Radiotherapy ��������������������������������������������������������������������� 175
+Young Lee, Arman Sarfehnia, and Mark Ruschin
+Immobilization for SBRT: A Crucial Prerequisite Toward Accurate Treatment��������� 185
+Jana Heitmann and Matthias Guckenberger
+Motion Management in Stereotactic Body Radiation Therapy������������������������������������� 195
+Benjamin J. Cooper, Yi Rong, and Paul J. Keall
+Charged Particle Stereotactic Body Radiation Therapy������������������������������������������������� 217
+Arpit M. Chhabra, Melissa A. Frick, Tejan Diwanji, Jason K. Molitoris,
+and Charles B. Simone II
+Part V Stereotactic Body Radiation Therapy by Indication
+Stereotactic Body Radiation Therapy (SBRT) for Primary Lung Cancer ������������������� 237
+Gregory M. M. Videtic
+Stereotactic Body Radiation Therapy (SBRT) for Lung Metastases����������������������������� 247
+William A. Stokes, Tyler P. Robin, Sameer K. Nath, and Chad G. Rusthoven
+Stereotactic Body Radiation Therapy (SBRT) for Spinal Tumors��������������������������������� 265
+Salman Faruqi, Chia-Lin Tseng, Jeremie Stephane Larouche, Leodante da Costa,
+Victor Yang, Giuseppina Laura Masucci, Hany Soliman, Simon S. Lo,
+Eric L. Chang, Zain Husain, Pejman Maralani, Sten Myrehaug, and Arjun Sahgal
+Stereotactic Body Radiation Therapy for Gastrointestinal Cancers����������������������������� 277
+Pablo Munoz-Schuffenegger, Aisling S. Barry, and Laura A. Dawson
+SAbR for Primary Prostate Cancer ��������������������������������������������������������������������������������� 289
+Michael R. Folkert, Raquibul Hannan, Neil B. Desai, and Robert D. Timmerman
+Stereotactic Ablative Radiotherapy (SAbR) for Primary
+Renal Cell Carcinoma��������������������������������������������������������������������������������������������������������� 307
+Osama Mohamad, Robert D. Timmerman, and Raquibul Hannan
+Head and Neck Stereotactic Body Radiation Therapy��������������������������������������������������� 319
+Pencilla Lang, Ian Poon, Lee Chin, and Irene Karam
+Pediatric Radiosurgery������������������������������������������������������������������������������������������������������� 331
+Aditya Juloori and Erin S. Murphy
+Part VI The Future of Radiosurgery and SBRT
+Patient Selection in SBRT and SRS����������������������������������������������������������������������������������� 347
+Christopher Wilke, L. Chinsoo Cho, and Paul W. Sperduto
+SRS and SBRT Complications and Management����������������������������������������������������������� 359
+Samuel T. Chao, Erin S. Murphy, Simon S. Lo, and John H. Suh
+SRS and SBRT Integration with Supportive Care ��������������������������������������������������������� 373
+Daniel N. Cagney and Tracy A. Balboni
+
+Contents
+
+Contents
+
+xi
+
+Targeted Agents and Immunotherapy ����������������������������������������������������������������������������� 381
+Arrvind Raghunath, Vyshak Alva Venur, and Manmeet S. Ahluwalia
+Diagnostic Imaging Advances ������������������������������������������������������������������������������������������� 389
+Joseph H. Donahue, Juliana Bueno, and Jason N. Itri
+Comparative Effectiveness of SBRT��������������������������������������������������������������������������������� 415
+Sanjay Aneja, Rahul J. Kumar, and James B. Yu
+Index. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  425
+
+Contributors
+
+Manmeet S. Ahluwalia, MD Cleveland Clinic, Burkhardt Brain Tumor and Neuro-Oncology
+Center, Cleveland, OH, USA
+Clayton Alonso, MD University of Virginia, Radiation Oncology, Charlottesville, VA, USA
+Sanjay Aneja, MD Yale New Haven Hospital, Department of Therapeutic Radiology,
+New Haven, CT, USA
+Yale School of Medicine, Department of Therapeutic Radiology, New Haven, CT, USA
+Geoffrey Appelboom, MD, PhD Department of Neurosurgery, Stanford University School
+of Medicine, Stanford, CA, USA
+Tracy A. Balboni, MD Dana-Farber/Brigham and Women’s Cancer Center, Boston, MA,
+USA
+Harvard University, Department of Radiation Oncology, Boston, MA, USA
+Aisling S. Barry, MD, MRCPI, FFR, RCSI Princess Margaret Cancer Center, Radiation
+Medicine Program, Toronto, ON, Canada
+University of Toronto, Department of Radiation Oncology, Toronto, ON, Canada
+Stanley H. Benedict, PhD, FAAPM, FACMP University of California Davis Comprehensive
+Cancer Center, Department of Radiation Oncology, University of California at Davis,
+Sacramento, CA, USA
+Frank J. Bova, PhD Department of Neurosurgery, University of Florida, Gainesville, FL,
+USA
+Juliana Bueno, MD University of Virginia Health System, Department of Radiology and
+Medical Imaging, Charlottesville, VA, USA
+Daniel N. Cagney, MB, BAO, Bch, MSC Dana-Farber/Brigham and Women’s Cancer
+Center, Boston, MA, USA
+Harvard University, Department of Radiation Oncology, Boston, MA, USA
+Eric L. Chang, MD, FASTRO University of Southern California Comprehensive Cancer
+Center, Department of Radiation Oncology, Los Angeles, CA, USA
+Keck School of Medicine of the University of Southern California, Department of Radiation
+Oncology, Los Angeles, CA, USA
+Steven D. Chang, MD Department of Neurosurgery, Stanford University School of Medicine,
+Stanford, CA, USA
+Samuel T. Chao, MD Department of Radiation Oncology, Cleveland Clinic, Cleveland, OH,
+USA
+Rose Ella Burkhardt Brain Tumor and Neuro-Oncology Center, Cleveland Clinic, Cleveland,
+OH, USA
+
+xiii
+
+xiv
+
+Arpit M. Chhabra, MD Central Connecticut Radiation Oncology, PC, Department of
+Radiation Oncology, Middletown, CT, USA
+Lee Chin, PhD,
+(Content truncated due to size limit. Use line ranges to read in chunks)

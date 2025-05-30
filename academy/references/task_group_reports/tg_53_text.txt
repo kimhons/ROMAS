@@ -1,0 +1,352 @@
+American Association of Physicists in Medicine
+Radiation Therapy Committee Task Group 53:
+Quality assurance for clinical radiotherapy treatment planning
+Benedick Fraassa)
+University of Michigan Medical Center, Ann Arbor, Michigan
+
+Karen Doppke
+Massachusetts General Hospital, Boston, Massachusetts
+
+Margie Hunt
+Fox Chase Cancer Center, Philadelphia, Pennsylvania
+and Memorial Sloan Kettering Cancer Center, New York, New York
+
+Gerald Kutcher
+Memorial Sloan Kettering Cancer Center, New York, New York
+
+George Starkschall
+M. D. Anderson Cancer Center, Houston, Texas
+
+Robin Stern
+University of California, Davis Medical Center, Sacramento, California
+
+Jake Van Dyke
+London Regional Cancer Center, London, Ontario, Canada
+
+~Received 15 December 1997; accepted for publication 4 August 1998!
+In recent years, the sophistication and complexity of clinical treatment planning and treatment
+planning systems has increased significantly, particularly including three-dimensional ~3D! treatment planning systems, and the use of conformal treatment planning and delivery techniques. This
+has led to the need for a comprehensive set of quality assurance ~QA! guidelines that can be applied
+to clinical treatment planning. This document is the report of Task Group 53 of the Radiation
+Therapy Committee of the American Association of Physicists in Medicine. The purpose of this
+report is to guide and assist the clinical medical physicist in developing and implementing a
+comprehensive but viable program of quality assurance for modern radiotherapy treatment planning. The scope of the QA needs for treatment planning is quite broad, encompassing image-based
+definition of patient anatomy, 3D beam descriptions for complex beams including multileaf collimator apertures, 3D dose calculation algorithms, and complex plan evaluation tools including dose
+volume histograms. The Task Group recommends an organizational framework for the task of
+creating a QA program which is individualized to the needs of each institution and addresses the
+issues of acceptance testing, commissioning the planning system and planning process, routine
+quality assurance, and ongoing QA of the planning process. This report, while not prescribing
+specific QA tests, provides the framework and guidance to allow radiation oncology physicists to
+design comprehensive and practical treatment planning QA programs for their clinics. © 1998
+American Association of Physicists in Medicine. @S0094-2405~98!03410-5#
+Key words: treatment planning, quality assurance, 3D treatment planning
+PREFACE
+This document is the report of Task Group 53 of the Radiation Therapy Committee of the American Association of
+Physicists in Medicine ~AAPM!. The purpose of this report
+is to guide and assist the radiation oncology physicist in
+developing and implementing a comprehensive but viable
+program of quality assurance for radiotherapy treatment
+planning. This report is the first guidance on the topic of
+treatment planning quality assurance ~QA! from the AAPM,
+although there are several related reports,1 including the recent report from Task Group 40 on Comprehensive QA for
+Radiation Oncology.2 Further expansion of AAPM recommendations regarding treatment planning quality assurance is
+1773
+
+Med. Phys. 25 „10…, October 1998
+
+likely after the radiation oncology community accumulates
+some experience with the approach recommended in this report.
+In recent years, the increased complexity of the treatment
+planning process required to support such procedures as conformal radiotherapy has led to the need for a comprehensive
+set of quality assurance guidelines that can be applied to
+treatment planning systems that support this complex process. This Task Group has been charged by the AAPM to
+prepare this report recommending the scope and content of
+necessary quality assurance procedures and the frequency of
+tests, from acceptance testing, characterization and commissioning to routine quality assurance of clinical system use.
+
+0094-2405/98/25„10…/1773/57/$10.00
+
+© 1998 Am. Assoc. Phys. Med.
+
+1773
+
+1774
+
+Fraass et al.: Task Group 53 report on quality assurance
+
+These procedures will be tailored to the complexity and
+functionality of the treatment planning procedures used clinically. This report provides the overall framework within
+which individualized quality assurance programs may be designed and implemented.
+This report on treatment planning quality assurance attempts to aid the radiation oncology physicist in creating a
+quality assurance program for the clinical use of treatment
+planning in the physicist’s department. In general, except for
+recommendations summarized in one appendix, this report
+does not discuss quality assurance activities that should be
+carried out by vendors or other providers of treatment planning systems. The numerous important quality assurance
+tasks associated with the design, software engineering, testing, validation, packaging, marketing, and other preparation
+of a commercial treatment planning system for safe use are
+beyond the scope of the current task group. This document
+considers only the responsibility of the radiation oncology
+physicist in establishing and maintaining a quality assurance
+program for the clinical use of radiotherapy treatment planning.
+The report also concentrates on quality assurance for the
+treatment planning process, and not just QA or commissioning of the treatment planning system. Although a treatment
+planning system ~software and hardware! may be tested extensively, a QA program for treatment planning must also
+consider how the treatment planning system is used as well
+as how it interacts with the treatment planning process.
+Therefore, creation of a treatment planning process that incorporates self-consistency and procedural checks is a major
+component of a quality assurance program for treatment
+planning.
+In order to successfully implement an appropriate quality
+assurance program for treatment planning, adequate resources must be allocated. The radiation oncology physicist
+must be afforded adequate time to ascertain the extent and
+complexity of the treatment planning needs of the radiation
+oncology clinic, and based upon this information, the physicist must design and implement an appropriate quality assurance program. For a treatment planning process of a given
+complexity, the quality assurance requirements in a small
+radiation oncology facility should be no less than those in a
+large, academic medical center.
+The report begins with a summary intended for radiation
+oncology administrators ~Part A!. Part B is directed to the
+radiation oncology physicist, and comprises the bulk of the
+report. Part B begins with an introduction which delineates
+the scope of the task, introduces some definitions and terms,
+and establishes targets for the accuracy of treatment planning
+results. Chapter 2 describes specifications and acceptance
+testing for the treatment planning system. The most extensive part of the report is contained in Chaps. 3 and 4, which
+describe commissioning of the nondosimetric and dosimetric
+parts of the planning system, respectively. Routine testing of
+the treatment planning system is described in Chap. 5. Chapter 6 discusses ways to apply QA to the entire planning process, while Chap. 7 lists computer-system management activities which are an important part of the treatment planning
+Medical Physics, Vol. 25, No. 10, October 1998
+
+1774
+
+quality assurance process. Finally, the last chapter summarizes some of the important recommendations of the task
+group. Appendix 1 contains some recommendations and
+comments about both vendor and user responsibilities. Appendix 2 contains examples of some nondosimetric test procedures, to give the reader an idea of how to design and
+implement test procedures. Appendices 3, 4, and 5 give examples of dose calculation commissioning tests for photon
+beams, electron beams, and brachytherapy, respectively.
+Terminology used in this report will be similar to that
+used in other AAPM task group reports:
+• Shall or must are used when the activity is required by
+various regulatory agencies.
+• Recommend is used when the task group expects that
+the procedure should normally be followed as described. However, there may prove to be instances
+where other issues, techniques or priorities could force
+the modification of the recommendation of the task
+group.
+• Should is used when it is expected that local analysis of
+the situation may change the way a particular activity is
+performed.
+This report recommends the institution of a comprehensive quality assurance program for treatment planning in
+each radiation oncology clinic. As will be seen, this encompasses a large amount of work, requiring the attention particularly of the radiation oncology physicist, but also including dosimetrists/treatment planners, radiation oncologists,
+radiation therapists and, if available, computer support staff.
+Particularly at this time of downsizing and major restructuring of the way the practice of clinical medicine works, it is
+very important for hospital administrators and providers of
+medical care reimbursement to understand the critical nature
+of appropriate quality assurance for a procedure that is such
+an important part of the way high quality radiotherapy is
+performed. If compromises must be made in the interest of
+cost reduction, these compromises should be made initially
+in establishing the complexity and efficiency of the treatment
+planning process in the clinic. Once a particular type of process has been established, then it is imperative for the safety
+and well-being of the patient that an appropriate quality assurance program be implemented to support that process. In
+this report, we have tried to balance the need to be cost
+effective and efficient with the need for high quality care. As
+the recommendations of this task group are used throughout
+the community, it will be important for radiation oncology
+physicists to improve their quality assurance tools and programs, so that the quality of treatments can be improved
+while also keeping the costs as low as feasible.
+OUTLINE
+Preface
+Part A: INFORMATION FOR RADIATION
+ONCOLOGY ADMINISTRATORS
+Part B: QUALITY ASSURANCE FOR CLINICAL
+RADIOTHERAPY TREATMENT
+PLANNING
+
+1775
+
+Fraass et al.: Task Group 53 report on quality assurance
+
+Chapter 1: Introduction
+1.1. Introduction
+1.2. General definitions and aims
+1.3. Scope
+1.4. Initial recommendations ~how to use this
+report!
+1.5. The treatment planning process
+1.6. Sources of uncertainties
+1.7. Required and/or desired tolerances and
+accuracy
+Chapter 2: Acceptance tests for treatment planning
+systems
+2.1. Acceptance testing
+2.2. Determination of specifications
+2.3. Acceptance testing procedure
+Chapter 3: Nondosimetric commissioning
+3.1. Introduction
+3.2. Patient positioning and immobilization
+3.2.1. Immobilization
+3.2.2. Positioning and simulation
+3.3. Image acquisition
+3.3.1. Imaging parameters
+3.3.2. Artifacts and distortion in image
+acquisition systems
+3.4. Anatomical description
+3.4.1. Image conversion and input
+3.4.2. Anatomical structures
+3.4.2.1. 3D structures
+3.4.2.2. Contours
+3.4.2.3. 3D points and lines
+3.4.3. Density representation
+3.4.3.1. Bolus and editing the 3D
+density distribution
+3.4.4. Image use and display
+3.4.5. Dataset registration
+3.5. Beams
+3.5.1. Beam arrangements and definition
+3.5.2. Machine description, limits and
+readouts
+3.5.3. Geometric accuracy
+3.5.4. Field shape design
+3.5.4.1. Manual aperture entry
+3.5.4.2. Automatic aperture definition
+3.5.4.3. Special MLC features
+3.5.5. Wedges
+3.5.6. Beam and aperture display
+3.5.7. Compensators
+3.6. Operational aspects of dose calculations
+3.6.1. Methodology and algorithm use
+3.6.2. Inhomogeneity correction effects
+3.7. Plan evaluation
+3.7.1. Dose display
+3.7.2. Dose volume histograms
+3.7.3. Use of NTCP/TCP and other tools
+3.7.4. Composite plans
+3.8. Hardcopy output
+3.9. Plan implementation and verification
+Medical Physics, Vol. 25, No. 10, October 1998
+
+1775
+
+3.9.1. Coordinate systems and scale
+conventions
+3.9.2. Data transfer
+3.9.3. Portal image verification
+3.10. Brachytherapy issues
+Chapter 4: Dose calculation commissioning
+4.1. Introduction
+4.2. Measurement of self-consistent dataset
+4.2.1. Self-consistency
+4.2.2. Data analysis, handling, and storage
+4.3. Data input into the RTP system
+4.3.1. General considerations
+4.3.2. Computer transfer of data from a
+water phantom
+4.3.3. Manual data entry
+4.3.4. Verification of input data
+4.4. Dose calculation algorithm parameter
+determination
+4.5. Methods for dosimetric comparison and
+verification
+4.6. External beam calculation verification
+4.6.1. Introduction
+4.6.2. Required and/or achievable accuracy
+4.6.3. Photon calculation verification
+experiments
+4.6.4. Electron calculation verification
+experiments
+4.7. Brachytherapy calculation verification
+4.8. Absolute dose output and plan normalization
+4.8.1. General guidelines for QA for
+normalization and MU calculation
+4.8.2. Verification of the steps in the process
+4.9. Clinical verifications
+Chapter 5: Periodic quality assurance testing
+Chapter 6: QA as part of the daily planning process
+Chapter 7: System management and security
+7.1. Management personnel
+7.1.1. Responsible physicist
+7.1.2. Computer systems manager
+7.2. Computer system management tasks
+7.3. Data management tasks
+7.4. Computer networks
+7.5. System security
+Chapter 8: Summary of recommendations
+Chapter 9: Conclusions
+Appendix 1: Vendor and user responsibilities
+A1.1. Vendor responsibilities
+A1.1.1. Documentation
+A1.1.2. User training
+A1.1.3. Software quality assurance
+A1.1.4. Version updates
+A1.1.5. Release of data formats
+A1.1.6. Communication with users
+A1.1.7. Suggestions for vendors
+A1.2. User responsibilities
+A1.2.1. Responsible physicist
+A1.2.2. Documentation
+A1.2.3. User training
+
+1776
+
+Fraass et al.: Task Group 53 report on quality assurance
+
+A1.2.4. Software quality assurance
+A1.2.5. Version updates
+A1.2.6. Use of data formats
+A1.2.7. Education and communication with
+vendor
+Appendix 2: Example QA tests
+Appendix 3: Photon dose calculation commissioning
+A3.1. Depth dose
+A3.2. Output factors
+A3.3. Open field data
+A3.4. Patient shape effects
+A3.5. Wedges
+A3.6. Blocks
+A3.7. Multileaf collimator
+A3.8. Asymmetric fields
+A3.9. Density corrections
+A3.10. Compensators
+A3.11. Anthropomorphic phantoms
+Appendix 4: Electron dose calculation commissioning
+A4.1. Depth dose and open fields
+A4.2. Output factors
+A4.3. Extended distance
+A4.4. Shaped fields
+A4.5. ECWG test cases
+Appendix 5: Brachytherapy dose calculation
+commissioning
+A5.1. Source entry methods
+A5.2. Source library
+A5.3. Source strength and decay
+A5.4. Single source dose calculations
+A5.5. Multiple source dose calculations and
+optimization algorithms
+A5.6. Global system tests
+A5.7. Other tests
+References
+
+PART A: INFORMATION FOR RADIATION
+ONCOLOGY ADMINISTRATORS
+The goal of radiotherapy treatment of cancer is to cure or
+locally control the disease while minimizing complications
+in normal tissues. The process of treatment planning, inasmuch as it determines the detailed technique used for a patient’s radiation treatments, is instrumental in accomplishing
+that goal. The term ‘‘treatment planning’’ has sometimes
+been narrowly interpreted as a process primarily concerned
+with dosimetry procedures such as the generation of computerized dose distributions and the calculation of treatment
+times or monitor unit settings.
+In actuality, treatment planning is a much broader process
+than just performing dose calculations: it encompasses all of
+the steps involved in planning a patient’s treatment.
+• The initial step in the treatment planning process is patient positioning and immobilization, during which an
+optimum patient position for treatment is determined
+and immobilization devices necessary to maintain the
+patient in that position during treatment are constructed.
+Medical Physics, Vol. 25, No. 10, October 1998
+
+1776
+
+• Next, the size, extent, and location of the patient’s tum
+(Content truncated due to size limit. Use line ranges to read in chunks)

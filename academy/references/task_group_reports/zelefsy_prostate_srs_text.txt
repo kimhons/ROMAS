@@ -1,0 +1,640 @@
+Stereotactic
+Radiosurgery for
+Prostate Cancer
+Michael J. Zelefsky
+Editor
+
+123
+
+Stereotactic Radiosurgery for Prostate
+Cancer
+
+Michael J. Zelefsky
+Editor
+
+Stereotactic
+Radiosurgery for
+Prostate Cancer
+
+Editor
+Michael J. Zelefsky
+Department of Radiation Oncology
+Memorial Sloan Kettering Cancer Center
+New York, USA
+
+ISBN 978-3-319-92452-6
+ISBN 978-3-319-92453-3
+https://doi.org/10.1007/978-3-319-92453-3
+
+(eBook)
+
+Library of Congress Control Number: 2018955481
+# Springer International Publishing AG, part of Springer Nature 2019
+This work is subject to copyright. All rights are reserved by the Publisher, whether the whole or
+part of the material is concerned, speciﬁcally the rights of translation, reprinting, reuse of
+illustrations, recitation, broadcasting, reproduction on microﬁlms or in any other physical way,
+and transmission or information storage and retrieval, electronic adaptation, computer software, or
+by similar or dissimilar methodology now known or hereafter developed.
+The use of general descriptive names, registered names, trademarks, service marks, etc. in this
+publication does not imply, even in the absence of a speciﬁc statement, that such names are
+exempt from the relevant protective laws and regulations and therefore free for general use.
+The publisher, the authors and the editors are safe to assume that the advice and information in this
+book are believed to be true and accurate at the date of publication. Neither the publisher nor the
+authors or the editors give a warranty, express or implied, with respect to the material contained
+herein or for any errors or omissions that may have been made. The publisher remains neutral with
+regard to jurisdictional claims in published maps and institutional afﬁliations.
+This Springer imprint is published by the registered company Springer Nature Switzerland AG
+The registered company address is: Gewerbestrasse 11, 6330 Cham, Switzerland
+
+Preface
+
+There has been a signiﬁcantly increased interest in the use of stereotactic body
+radiosurgery (SBRT) for the treatment of prostate cancer. With the availability
+of carefully designed treatment plans, tight margins around the clinical target
+volume, image-guided therapy, and integrating MRI into treatment planning
+and target delineation, opportunities now exist to safely target high doses of
+irradiation condensed into a short treatment schedule. Single-institution
+experiences have been published, demonstrating excellent PSA relapse-free
+survival outcomes using SBRT for clinically localized prostate cancer. Currently, several randomized trials are ongoing comparing SBRT to either
+conventionally fractionated external beam radiotherapy or moderately
+hypofractionated regimens, and these experiences will certainly provide key
+information as to the role of SBRT in the management of various disease
+states of prostate cancer.
+This book is unique in that it is dedicated exclusively to the role of SBRT in
+the management of prostate cancer and focuses on the selection criteria for
+SBRT, delineation of the prostate contour in the most optimal fashion, and
+safe treatment delivery using tight normal tissue dose-volume constraints—all
+to minimize long-term toxicity. There are important discussions related to
+treatment planning considerations as well as the management of organ motion
+and use of imaging to design optimal dose-volume histogram constraints for
+target and normal tissue to further reduce toxicity. Chapters are devoted to
+summarizing expected tumor control outcomes for low-, intermediate-, and
+high-risk disease and how these compare to established outcomes with conventionally fractionated treatment. Finally, there is discussion regarding what
+we know currently based on the published literature of expected acute and
+long-term toxicity and the quality of life impact SBRT has on the treated
+patient.
+This area of radiation oncology is rapidly evolving and the insights here on
+SBRT will hopefully provide valuable information to the reader.
+New York, USA
+
+Michael J. Zelefsky
+
+v
+
+Contents
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+Optimizing Selection of Patients for Prostate SBRT:
+Overview of Toxicity and Efﬁcacy in Low, Intermediate,
+and High-Risk Prostate Cancer . . . . . . . . . . . . . . . . . . . . .
+Amar U. Kishan and Christopher R. King
+
+1
+
+Treatment Planning Considerations for Prostate SBRT
+and MRI Based Planning . . . . . . . . . . . . . . . . . . . . . . . . . .
+Neelam Tyagi and Margie Hunt
+
+17
+
+Organ Motion Considerations and Tracking
+During Prostate SBRT . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Laura Happersett and D. Michael Lovelock
+
+43
+
+Imaging and Anatomic Considerations for Prostate
+and Pelvic Organs Contouring . . . . . . . . . . . . . . . . . . . . . .
+Tomer Charas, Alberto Vargas, and Michael J. Zelefsky
+
+55
+
+Using Imaging to Design Dose Volume Constraints
+for Target and Normal Tissue to Reduce Toxicity . . . . . . .
+Rosario Mazzola and Filippo Alongi
+
+75
+
+Expected PSA and Biochemical Control
+with Prostate SBRT Compared to Conventional
+Fractionated Radiotherapy . . . . . . . . . . . . . . . . . . . . . . . .
+Josephine Kang and Alan Katz
+Overview of Tumor Control Outcomes with Prostate
+SBRT for Low and Intermediate Risk Prostate Cancer
+and Comparison to Other Treatment Interventions . . . . . .
+Amandeep S. Taggar, Paveen Mann, and Michael J. Zelefsky
+Overview of Toxicity Outcomes with Prostate SBRT and
+Comparison to Other Treatment Interventions
+(Urinary, Rectal and Sexual Outcomes) . . . . . . . . . . . . . . .
+Michael C. Repka, Simeng Suy, Shaan K. Kataria,
+Thomas P. Kole, Ima Paydar, Brian T. Collins,
+Jonathan W. Lischalk, Olusola Obayomi-Davies,
+and Sean P. Collins
+
+85
+
+93
+
+111
+
+vii
+
+viii
+
+Contents
+
+9
+
+Quality of Life Outcomes After SBRT . . . . . . . . . . . . . . . .
+Thomas Zilli and Raymond Miralbell
+
+129
+
+10
+
+Techniques for Reducing Toxicity After SBRT . . . . . . . . .
+Daniel Gorovets, Marisa Kollmeier, and Michael J. Zelefsky
+
+141
+
+11
+
+SBRT for High-Risk Prostate Cancer . . . . . . . . . . . . . . . .
+Alejandro González-Motta, Mekhail Anwar,
+Alexander Gottschalk, Martina Descovich, and Mack Roach III
+
+153
+
+12
+
+Salvage SBRT for Local Recurrence of Prostate Cancer
+After Deﬁnitive Radiotherapy . . . . . . . . . . . . . . . . . . . . . .
+Daniel Lam Cham Kee, Jérôme Doyen, Alexander T. Falk,
+and Jean-Michel Hannoun-Levi
+
+13
+
+14
+
+15
+
+171
+
+Dose Escalation for Prostate Cancer Using Oligofractionated,
+Stereotactic Ablative Radiotherapy . . . . . . . . . . . . . . . . . .
+Michael R. Folkert and Robert D. Timmerman
+
+183
+
+Summary of Ongoing Prospective Trials Using SBRT
+for Prostate Cancer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Kirsty Morrison and Nicholas van As
+
+197
+
+Conclusions: Perspectives on the Role of SBRT
+in the Management of Localized Prostate Cancer . . . . . . .
+Michael J. Zelefsky
+
+217
+
+1
+
+Optimizing Selection of Patients
+for Prostate SBRT: Overview of Toxicity
+and Efficacy in Low, Intermediate,
+and High-Risk Prostate Cancer
+Amar U. Kishan and Christopher R. King
+
+1.1
+
+Introduction
+
+Radiotherapy (RT) has long been considered a
+standard treatment option for localized prostate
+cancer (PCa). Stereotactic body radiotherapy
+(SBRT)—a unique form of radiotherapy in
+which a small number (5) of fractions, each of
+comparatively high dose, are delivered to the
+target volume using highly conformal techniques
+to minimize dose to adjacent organs-at-risk—is
+primed for use in PCa, given that classical radiobiology analyses have suggested that PCa appears
+to be particularly sensitive to large doses of radiation per fraction. The clinical evidence
+supporting SBRT in the treatment of low- and
+intermediate-risk PCa is predominantly derived
+from single-institution prospective studies,
+multi-institutional phase I/II trials, and pooled
+consortium data synthesizing many of these
+reports [1]. As a result of the promising biochemical recurrence-free survival (BCRFS) outcomes
+of these studies, the American Society for Therapeutic Radiology and Oncology (ASTRO) model
+policy update in 2013 recognized SBRT as an
+alternative to conventionally fractionated radiotherapy for PCa, noting “SBRT could be considered an appropriate alternative for select patients
+A. U. Kishan (*) · C. R. King
+Department of Radiation Oncology, University of
+California, Los Angeles, CA, USA
+e-mail: aukishan@mednet.ucla.edu; crking@mednet.ucla.
+edu
+
+with low to intermediate risk disease” [2]. Since
+2014, the National Comprehensive Cancer Network (NCCN) guidelines have included the following statement: “extremely hypofractionated
+image-guided IMRT/SBRT regimens (6.5 Gy
+per fraction or greater) are an emerging treatment
+modality with single institutional and pooled
+reports of similar efﬁcacy and toxicity to conventionally fractionated regimens. They can be considered as a cautious alternative to conventionally
+fractionated regimens at clinics with appropriate
+technology, physics, and clinical expertise [for
+low- and intermediate-risk PCa]” [3].
+In this introductory Chapter, we will focus on
+the optimal selection of patients for prostate
+SBRT based on NCCN risk grouping and
+anatomical characteristics and review the evidence for its safety and effectiveness.
+
+1.2
+
+Brief Overview of Risk
+Stratification and a Historical
+Perspective
+
+Treatment decisions in the management of PCa
+are often driven by pre-intervention risk stratiﬁcation schemes, such as the one presented in the
+NCCN guidelines for PCa [3]. The modern, ﬁvetiered risk stratiﬁcation scheme is adapted from a
+three-tiered scheme initially proposed in 1998 on
+the basis of 5-year BCRFS rates in a cohort of
+1872 men treated between January 1989 and
+October 1997 with radical prostatectomy,
+
+# Springer International Publishing AG, part of Springer Nature 2019
+M. J. Zelefsky (ed.), Stereotactic Radiosurgery for Prostate Cancer,
+https://doi.org/10.1007/978-3-319-92453-3_1
+
+1
+
+2
+
+A. U. Kishan and C. R. King
+
+Table 1.1 Prostate cancer risk stratification
+Risk Group
+Very Low
+
+Low
+Intermediate
+High
+Very High
+
+Criteria
+T1c, GS  6, PSA < 10
+<3 cores +
+ 50% cancer in any core
+PSA density <0.15 ng/mL/g
+T1-2a, GS  6, PSA < 10
+T2b-T2c, GS 7, PSA 10–20
+T3a, GS 8–10, PSA > 20
+T3b–T4
+Primary GP 5
+>4 cores with GS 8–10
+
+brachytherapy or external beam RT [4]. The current ﬁve-tiered scheme is presented in Table 1.1;
+an in-depth review of the evidence supporting this
+scheme is beyond the scope of the present Chapter. For a variety of practical considerations, the
+ﬁrst two prospective investigations of SBRT for
+PCa in North America—out of Virginia Mason
+[5] and Stanford University [6]—enrolled
+patients with low-risk disease. As the results of
+these studies matured, the inclusion criteria for
+other prospective single-institution and multiinstitutional trials broadened to include
+intermediate-risk disease. However, it is important to note that the clinical inception of prostate
+SBRT predates these risk-stratiﬁcation schemes
+by several decades and has its roots in 1962. At
+that time, Lloyd-Davies et al. were inspired by the
+use of hypofractionation to facilitate the
+incorporation of hyperbaric oxygen treatments
+and began treating PCa with a regimen of 55 Gy
+in 12 fractions delivered over 28 days [7]. They
+subsequently adopted a regimen of 36 Gy in six
+fractions over 18 days [8]. Ultimately, they
+reported ﬁve- and 10-year overall survival rates
+of 54 and 18% among 232 patients, comparable
+to conventional RT outcomes at the time
+[9]. Despite the fact that 60Co-based teletherapy
+was employed in 49% of cases, only two
+instances of rectal strictures were seen. Consistent
+with accrual in a pre-PSA screening era, 145 of
+these 232 patients (62.5%) had locally advanced
+disease, and 52 (22.4%) had poorly-differentiated
+lesions, and only 117 (50.4%) had welldifferentiated lesions. It is therefore likely that
+many of these patients would have been classiﬁed
+as having high- or at least intermediate-risk PCa
+in modern times. Nonetheless, the favorable
+
+outcomes in this historical study, combined with
+emerging radiobiological data (reviewed in the
+next Chapter), were the impetus for investigating
+SBRT in a low-risk setting in the modern era.
+
+1.3
+
+Definitive Treatment for Low
+and Intermediate Risk Prostate
+Cancer: Review of the Clinical
+Evidence
+
+Madsen et al. from Virginia Mason reported the
+ﬁrst modern series of SBRT for PCa in 2007,
+utilizing a linear accelerator (LINAC) to deliver
+33.5 Gy in ﬁve 6.7 Gy fractions to 40 patients
+with low-risk PCa (Table 1.2) [5]. The 4-year
+actuarial BCRFS was 90% and rates of acute
+Radiation Therapy Oncology Group (RTOG)
+grade 1-2 genitourinary (GU) and gastrointestinal
+(GI) toxicities were 48.5 and 39% respectively;
+one patient had acute grade 3 GU toxicity. Late
+grade 1-2 GU and GI toxicities were seen in
+45 and 27% of patients, respectively, with no
+late grade 3 toxicity. Erectile dysfunction
+(ED) developed in 33% of patients with normal
+erectile function at baseline. King et al. from
+Stanford University subsequently reported the
+ﬁrst SBRT series utilizing the CyberKnife system
+(Accuray, Sunnyvale, CA), treating 67 patients
+with low-risk PCa with 36.25 Gy in ﬁve
+7.25 Gy fractions [6, 10]. The initial 21 patients
+received daily fractions, but due to observed GI
+toxicity, a q.o.d. fractionation scheme was subsequently tested. The 4-year BCRFS rate was 94%,
+late RTOG grade 2 GU and GI toxicities were
+seen in 5 and 2% of patients, respectively, and
+late RTOG grade 3 GU toxicities were seen in
+3.5%. The incidence of ED increased from 38% at
+baseline to 71% at a median of nearly 3 years after
+treatment [11, 12].
+There have since been multiple series
+reporting results for treating patients with
+SBRT. Short-term efﬁcacy and toxicity results
+of single institution and small multi-institutional
+studies are presented in Table 1.2. Pooling across
+all studies, outcomes for a total of 2926 patients
+treated with SBRT have been reported. The
+longest-term published data have been reported
+by Katz et al. in a series of manuscripts. The
+
+1
+
+Optimizing Selection of Patients for Prostate SBRT: Overview of Toxicity. . .
+
+3
+
+Table 1.2 Efficacy and toxicity results for SBRT monotherapy
+Follow#
+up
+References
+patients (years)
+Regimen
+Single institution series or multi-institutional trials
+Virginia Mason [5]
+40
+3.4
+33.5 (6.7  5)
+
+Risk proﬁle
+
+BCRFS
+
+Low: 100%
+
+4-Year:
+90%
+
+Stanford [6, 10]
+
+67
+
+2.7
+
+36.25 (7.25  5)
+
+Low: 100%
+
+3-year: 94%
+
+Naples [52]
+
+112
+
+2
+
+35–36 (7–7.2  5)
+
+Not
+reported
+
+Crude:
+97.3%
+
+Flushing [13, 15, 16,
+53, 54]
+
+515
+
+7
+
+35–36.25
+(7–7.25  5)
+
+Low:
+62.9%
+Int:29.7%
+High: 7.4%
+
+8-year
+Low:
+93.6%
+Int: 84.3%
+High:
+65.0%:
+
+San Bortolo [55, 56]
+
+100
+
+3
+
+35 (7  5)
+
+Low: 41%
+Int: 42%
+High: 17%
+
+3-year:
+94.4%
+
+Erasmus [57, 58]
+
+50
+
+1.91
+
+38 (9.5  4); did
+allow boost to
+11  4 if visible
+lesion)
+
+Low: 60%
+Int: 40%
+
+2-year:
+100%
+
+UTSW Trial
+[20–23]
+
+91
+
+4.5
+
+50 (10  5) in
+67.7%
+
+Low:36.3%
+Int: 63.7%
+
+5-year:
+98.6%
+
+Physician-reported
+toxicity
+RTOG
+Acute
+GU 1–2: 48.5% 3:
+2.5%
+GI 1–2: 39%
+Late
+GU 1–2: 45%
+GI 1–2: 27%
+RTOG
+Late
+GU 2: 5%; 3: 3.5%
+GI 2: 2%
+AUA Score
+Increased from 8.9 to
+12.8 acutely, then to
+baseline by 4 mos
+RAS Score
+Increased from 1.8 to
+4.6 acutely, then to
+baseline by 4 mos
+RTOGa
+Acute
+GU 2: 4.4%
+GI 2:4.4%
+Late
+GU 2: 9.6% 3: 1.7%
+GI 2: 4%
+RTOG
+Acute
+GU 2: 12%
+GI 2: 18%
+Late
+GU 2: 3% 3: 1%
+GI 2: 1%
+RTOG
+Acute
+GU 2: 15% 3: 8%
+GI 2: 12% 3: 2%
+Late
+GU 2: 10% 3: 6%
+GI 2: 3%
+CTCAEv3.0
+Acute
+GU 2: 22.0%
+GI 2:20.9% 3: 1.1%
+4: 1.1%
+Late
+GU 2: 20.9% 3:
+4.4% 4 1.1%
+GI 2: 13.2% 3: 4.4%
+4: 2.2%
+(continued)
+
+4
+
+A. U. Kishan and C. R. King
+
+Table 1.2 (continued)
+#
+patients
+44
+
+Followup
+(years)
+3.3
+
+United States MultiCenter Trial [60]
+
+45
+
+UCSF [61]
+
+References
+Korea Institute of
+Radiological and
+Medical Sciences
+[59]
+
+Regimen
+32–36 (8–9  4)
+
+Risk proﬁle
+Low:
+11.4%
+Int: 22.7%
+High:
+65.9%
+
+BCRFS
+Crude:
+Low: 100%
+Int: 100%
+High:
+90.9%
+
+3.7
+
+35–36.25
+(7–7.25  5)
+
+Low: 100%
+
+3-year:
+97.7%
+
+20
+
+1.53
+
+38 (9.5  4)
+
+Low: 45%
+Int:45%
+High:10%
+
+Crude:
+100%
+
+Georgetown
+[62, 
+(Content truncated due to size limit. Use line ranges to read in chunks)

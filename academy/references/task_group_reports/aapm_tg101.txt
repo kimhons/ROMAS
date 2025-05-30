@@ -1,0 +1,176 @@
+Stereotactic body radiation therapy: The report of AAPM Task Group 101
+        Stanley H. Benedict, Chairmana兲
+        University of Virginia Health System, Charlottesville, Virginia 22908
+        Kamil M. Yenice, Co-Chairman
+        University of Chicago, Chicago, Illinois 60637
+        David Followill
+        University of Texas MD Anderson Cancer Center, Houston, Texas 77030
+        James M. Galvin
+        Thomas Jefferson University Hospital, Philadelphia, Pennsylvania 19107
+        William Hinson
+        Wake Forest University, Winston Salem, North Carolina 27157
+        Brian Kavanagh
+        University of Colorado School of Medicine, Aurora, Colorado 80045
+        Paul Keall
+        Stanford University, Palo Alto, California 94305
+        Michael Lovelock
+        Memorial Sloan–Kettering Cancer Center, New York, New York 10021
+        Sanford Meeks
+        M.D. Anderson Cancer Center Orlando, Orlando, Florida 32806
+        Lech Papiez
+        University of Texas Southwestern Medical Center, Dallas, Texas 75390
+        Thomas Purdie
+        University of Toronto, Princess Margaret Hospital, Toronto, Ontario M5G 2M9, Canada
+        Ramaswamy Sadagopan
+        University of Texas MD Anderson Cancer Center, Houston, Texas 77030
+        Michael C. Schell
+        University of Rochester Medical Center, Rochester, New York 14642
+        Bill Salter
+        University of Utah, Salt Lake City, Utah 84112
+        David J. Schlesinger
+        University of Virginia Health System, Charlottesville, Virginia 22908
+        Almon S. Shiu
+        University of Texas MD Anderson Cancer Center, Houston, Texas 77030
+        Timothy Solberg
+        University of Texas Southwestern Medical Center, Dallas, Texas 75390
+        Danny Y. Song
+        Johns Hopkins University, Baltimore, Maryland 21231
+        Volker Stieber
+        Forsyth Regional Cancer Center, Winston Salem, North Carolina 27103
+        Robert Timmerman
+        University of Texas Southwestern Medical Center, Dallas, Texas 75390
+        Wolfgang A. Tomé
+        University of Wisconsin, Madison, Wisconsin 53792
+        Dirk Verellen
+        UV Brussel, Vrije Universiteit Brussel (VUB), Brussels B-1090, Belgium
+        Lu Wang
+        Fox Chase Cancer Center, Philadelphia, Pennsylvania 19111
+        Fang-Fang Yin
+        Duke University Medical Center, Durham, North Carolina 27710
+        共Received 1 December 2009; revised 3 May 2010; accepted for publication 4 May 2010;
+        published 14 July 2010兲
+
+4078   Med. Phys. 37 „8…, August 2010            0094-2405/2010/37„8…/4078/24/$30.00      © 2010 Am. Assoc. Phys. Med.   4078
+4079        Benedict et al.: Stereotactic body radiation therapy: The report of TG101                                                                          4079
+
+
+           Task Group 101 of the AAPM has prepared this report for medical physicists, clinicians, and
+           therapists in order to outline the best practice guidelines for the external-beam radiation therapy
+           technique referred to as stereotactic body radiation therapy 共SBRT兲. The task group report includes
+           a review of the literature to identify reported clinical findings and expected outcomes for this
+           treatment modality. Information is provided for establishing a SBRT program, including protocols,
+           equipment, resources, and QA procedures. Additionally, suggestions for developing consistent
+           documentation for prescribing, reporting, and recording SBRT treatment delivery is
+           provided. © 2010 American Association of Physicists in Medicine. 关DOI: 10.1118/1.3438081兴
+
+           Key words: stereotactic body radiation therapy, SBRT, BED, patient safety, 4DCT,
+           immobilization, IGRT, hypofractionation
+
+
+TABLE OF CONTENTS                                                                    VII.B. Acceptance, commissioning, and quality
+                                                                                            assurance. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4092
+                                                                                     VII.C. Patient safety and the medical physicist. . . . . 4094
+I. INTRODUCTION AND SCOPE. . . . . . . . . . . . . . . . 4079                        VII.D. Quality process improvement: Vigilance in
+II. HISTORY AND RATIONALE FOR SBRT. . . . . . . 4079                                        the error reduction process in the treatment
+III. CURRENT STATUS OF SBRT-PATIENT                                                         planning and delivery process. . . . . . . . . . . . . 4094
+     SELECTION CRITERIA. . . . . . . . . . . . . . . . . . . . . 4080               VIII. FUTURE DIRECTIONS. . . . . . . . . . . . . . . . . . . . 4094
+IV. SIMULATION IMAGING AND TREATMENT
+     PLANNING. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4081   I. INTRODUCTION AND SCOPE
+   IV.A. Simulation imaging. . . . . . . . . . . . . . . . . . . . . . 4081
+                                                                                    Stereotactic body radiation therapy 共SBRT兲 refers to an
+   IV.B. Data acquisition for mobile tumors,
+                                                                                    emerging radiotherapy procedure that is highly effective in
+          patient-specific tumor-motion determination,
+                                                                                    controlling early stage primary and oligometastatic cancers
+          and respiratory motion management. . . . . . . . 4081
+                                                                                    at locations throughout the abdominopelvic and thoracic
+   IV.C. Imaging artifacts. . . . . . . . . . . . . . . . . . . . . . . . 4082      cavities, and at spinal and paraspinal sites. The major feature
+   IV.D. Treatment planning. . . . . . . . . . . . . . . . . . . . . . 4082         that separates SBRT from conventional radiation treatment is
+     IV.D.1. Dose heterogeneity, gradient and fall-off,                             the delivery of large doses in a few fractions, which results in
+             and beam geometry. . . . . . . . . . . . . . . . . . . 4083            a high biological effective dose 共BED兲. In order to minimize
+     IV.D.2. Beam selection and beam geometry. . . . . . 4083                       the normal tissue toxicity, conformation of high doses to the
+     IV.D.3. Calculation grid size. . . . . . . . . . . . . . . . . . 4083          target and rapid fall-off doses away from the target is critical.
+     IV.D.4. Bioeffect-based treatment planning and                                 The practice of SBRT therefore requires a high level of con-
+             SBRT. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4084   fidence in the accuracy of the entire treatment delivery pro-
+     IV.D.5. Normal tissue dose tolerance. . . . . . . . . . . 4084                 cess. In SBRT, confidence in this accuracy is accomplished
+   IV.E. Treatment plan reporting. . . . . . . . . . . . . . . . . 4085             by the integration of modern imaging, simulation, treatment
+V. PATIENT POSITIONING, IMMOBILIZATION,                                             planning, and delivery technologies into all phases of the
+    TARGET LOCALIZATION, AND DELIVERY.... 4085                                      treatment process; from treatment simulation and planning,
+    V.A. Immobilization. . . . . . . . . . . . . . . . . . . . . . . . . 4088       and continuing throughout beam delivery.
+    V.B. Image-guided localization. . . . . . . . . . . . . . . . 4088                 In addition to these major features, there are other char-
+    V.C. Localization, tumor-tracking, and gating                                   acteristics that distinguish SBRT from conventional radiation
+          techniques for respiratory motion                                         therapy 共Table I兲. These include a general increase in the
+          management. . . . . . . . . . . . . . . . . . . . . . . . . . . 4089      number of beams used for treatment, the frequent use of
+      V.C.1. Image-guided techniques. . . . . . . . . . . . . . . 4089              noncoplanar beam arrangements, small or no beam margins
+      V.C.2. Optical tracking techniques. . . . . . . . . . . . . 4089              for penumbra, and the use of inhomogeneous dose distribu-
+      V.C.3. Respiratory gating techniques. . . . . . . . . . . 4089                tions and dose-painting techniques 共including IMRT兲. All of
+    V.D. Delivery data reporting. . . . . . . . . . . . . . . . . . . 4090          these technology improvements result in the highly confor-
+VI. SPECIAL DOSIMETRY CONSIDERATIONS.... 4090                                       mal dose distribution that characterizes the SBRT technique.
+   VI.A. Problems associated with dosimetry of
+          small/narrow field geometry. . . . . . . . . . . . . . . 4090             II. HISTORY AND RATIONALE FOR SBRT
+   VI.B. Problems associated with small-field                                          Over 4000 publications spanning several decades have af-
+          heterogeneity calculations. . . . . . . . . . . . . . . . 4090            firmed the clinical usefulness of stereotactic radiosurgery
+VII. CLINICAL IMPLEMENTATION OF SBRT. . . . . 4091                                  共SRS兲 in the treatment of benign and malignant lesions,1–5 as
+  VII.A. Establishing the scope and clinical goals of                               well as functional disorders.6,7 The radiobiological rationale
+          the SBRT program. . . . . . . . . . . . . . . . . . . . . . 4091          for SBRT is similar to that for SRS; delivering a few frac-
+   VII.A.1. Equipment considerations. . . . . . . . . . . . . . 4091                tions of large dose in relatively short overall treatment time
+   VII.A.2. Time and personnel considerations. . . . . . . 4092                     results in a more potent biological effect.8 The clinical out-
+
+Medical Physics, Vol. 37, No. 8, August 2010
+4080        Benedict et al.: Stereotactic body radiation therapy: The report of TG101                                                               4080
+
+TABLE I. Comparison of typical characteristics of 3D/IMRT radiotherapy and SBRT.
+
+Characteristic                                                               3D/IMRT                                            SBRT
+
+Dose/fraction                                                             1.8–3 Gy                                              6–30 Gy
+No. of fractions                                                            10–30                                                  1–5
+                                                           CTV/PTV 共gross disease+ clinical extension兲:                   GTV/CTV/ITV/PTV
+Target definition                                            Tumor may not have a sharp boundary.                  共well-defined tumors: GTV= CTV兲
+Margin                                                                   Centimeters                                           Millimeters
+Physics/dosimetry monitoring                                               Indirect                                               Direct
+Required setup accuracy                                                 TG40, TG142                                           TG40, TG142
+Primary imaging modalities used for treatment planning                        CT                                    Multimodality: CT/MR/PET-CT
+Redundancy in geometric verification                                          No                                                   Yes
+                                                                                                              Strictly enforced 共sufficient immobilization
+Maintenance of high spatial targeting accuracy                          Moderately enforced                    and high frequency position monitoring
+for the entire treatment                                 共moderate patient position control and monitoring兲       through integrated image guidance兲
+Need for respiratory motion management                        Moderate—Must be at least considered                               Highest
+Staff training                                                                Highest                                Highest+ special SBRT training
+Technology implementation                                                     Highest                                            Highest
+Radiobiological understanding                                       Moderately well understood                             Poorly understood
+Interaction with systemic therapies                                              Yes                                               Yes
+
+
+
+
+comes of SBRT for both primary and metastatic diseases                              might be advantageous when a tumor abuts or overlaps
+compare favorably to surgery with minimal adverse                                   a previously irradiated region.
+effects.9,10 In addition, the limited number of treatment frac-                   Because such dose intensification can also increase the
+tions makes SBRT more convenient for the patient, and a                       risk of normal tissue toxicities, careful dose delivery and
+potentially more cost-effective treatment modality than tradi-                patient selection are of paramount importance. SBRT at-
+tional radiation therapy.                                                     tempts to provide a clinical advantage relative to conven-
+   The specific argument for the application of SBRT to                       tional radiation therapy by reducing dose to normal tissues
+grossly evident sites of metastatic disease can be constructed                and critical structures, and maximizing tumor coverage
+in accordance with several conceptual theories.                               through the use of accurate tumor localization, patient immo-
+                                                                              bilization, specialized planning, and image guidance
+   • The “patterns of failure” concept combines systemic
+                                                                              techniques.
+     treatment with localized radiation therapy because of
+                                                                                  Clinical patient outcomes for SBRT were first published
+     the expectation that sites of gross disease contain the
+                                                                              in 1995.26 In Germany, investigators initially focused on the
+     highest number of clonogenic cells and are thus least
+                                                                              treatment of liver and lung lesions.27–31 In the United States,
+     likely to be eliminated by chemotherapy.1,11–13
+                                                                              the first publications described the treatment of lung
+   • The theory of oligometastases proposes a stage of dis-
+                                                                              tumors.32,33 Retrospective studies first described the safety
+     ease that is at an intermediate point in its natural his-
+                                                                              and efficacy of SBRT for the treatment of lung and liver
+     tory, between completely absent and widely metastatic,
+                                                                              lesions.28,31,34–39 Prospective Phase I and/or II trials were
+     and which might be cured if the limited numbers of
+                                                                              published in 2001 for the treatment of lung and, in 2003, for
+     metastat
+(Content truncated due to size limit. Use line ranges to read in chunks)

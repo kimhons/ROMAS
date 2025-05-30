@@ -1,0 +1,342 @@
+Patient Dosimetry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.1 Prescription of dose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2 Effects of contour variation and finite patient size . . . . .
+4 . 2 . 1 Incident contour variation . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.2 Lack of lateral scatter . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.2.3 Lack of backscatter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3 Methods of compensating for contour variation . . . . . . . . . . . .
+4.3.1 Tissue equivalent bolus . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.3.2 Missing tissue compensators . . . . . . . . . . . . . . . . . . . . . . .
+4.4 Inhomogeneities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.4.1 Methods of lung dose determination . . . . . . . . . . . . . . . .
+4.4.2 Methods of bone dose determination . . . . . . . . . . . . . . . .
+4.4.3 Methods of compensating for inhomogeneities . . . . . . .
+4.5 Dose distributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.6 Anthropomorphic phantom measurements . . . . . . . . . . . . . . . . . . . . .
+4.7 In vivo m e a s u r e m e n t s . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+20
+22
+22
+23
+24
+25
+25
+25
+27
+28
+30
+33
+34
+34
+37
+
+5.
+
+Special Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.1 Junctions for HBI techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.2 Shielding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.3 Port filming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+40
+40
+42
+43
+
+6.
+
+Summary of Recommendations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+45
+
+3 . 1 I n t r o d u c t i o n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.2 Dosimetry phantoms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+3.3 Dosimeters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3 . 4 D o s e c a l i b r a t i o n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.5 Central ray data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.6 Inverse square test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.7 Output factors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.8 Beam profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.9 Attenuation data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+Acknowledgements
+
+The review of the manuscript and the valuable comments by the
+Therapy Committee and the following
+members o f t h e R a d i a t i o n
+individuals is greatly appreciated: J.J. Battista, B. Bjarngard, A.
+Dutreix, W. Hanson, W. Lutz, R. Mackie, U. Quast, M. Woo.
+
+1
+
+I. Introduction
+1.1 General Considerations
+
+In recent years, there has been a revived interest in the use of
+very large radiation fields for the treatment of a variety of
+malignant diseases. T h e a b i l i t y t o p r o v i d e t h e s e v e r y l a r g e f i e l d s
+and the corresponding delivery of a specified dose of radiation have
+been
+challenging for the medical radiation
+p h y s i c i s t3 3 , 7 8 , 1 0 0 .
+Because of the constraints of radiotherapy apparatus, the techniques
+associated with total and half body radiotherapy have been as varied
+as the number of radiation oncologists using them. The treatments are
+complicated by uncertainties in absolute dosimetry as well as large
+dose variations across the target volume, m a k i n g i t v e r y d i f f i c u l t t o
+assess clinical efficacy when comparing results from various treatment
+centers. F u r t h e r m o r e , t h e a c t u a l d o s e d e l i v e r e d t o t h e p a t i e n t i s
+often limited by normal tissue tolerance. Ideally, accurate dose
+response data should be available so the clinician can optimize the
+therapeutic effect while minimizing normal tissue complications.
+In
+principle, this information can be derived by assessing how patients
+In practice such information is difficult to
+respond to therapy.
+obtain. Herring36n o t e d t h a t i n s t i t u t i o n s w i t h a l a r g e n u m b e r o f
+patients generally treat with a small dose range while the collecting
+of patient data from different institutions is confounded by a lack of
+uniformity of
+clinical
+dose prescription, dose delivery and
+evaluation.
+Multi-institutional clinical trials are designed to
+minimize these variations; however, patient selection and adherence to
+therapy protocols remain ongoing problems. One thing is sure: the
+techniques and dosimetry of radiation treatments are more controllable
+than many of the other variables associated with clinical trials. It
+is, therefore, imperative that the medical physicist should provide an
+accurate control of
+radiation
+such that
+the
+dose
+delivery
+uncertainties i n t a r g e t a n d n o r m a l t i s s u e d o s e s d o n o t b e c o m e t h e
+limiting factors in evaluating clinical trials nor, for that matter,
+in individual patient treatments.
+This raises the question: with what accuracy must the dose be
+delivered?
+The International Commission of Radiation Units and
+m e a s u r e m e n t s ( I C R U )40 has recommended an overall accuracy in dose
+delivery of ±5% based on an analysis of dose response data and an
+evaluation of errors in dose delivery.
+Recent half body and total
+b o d y i r r a d i a t i o n d a t a4 8 , 9 7 indicate that a 5% change in l u n g d o s e
+could result in 20% change in the incidence of radiation pneumonitis,
+a complication which is usually fatal for whole lung irradiation. With
+such sharp dose response effects , a ±5% accuracy may be insufficient.
+However, if the prescribed dose is well below the onset of normal
+tissue toxicity or if the normal tissue dose is limited locally then
+perhaps the ±5% suggested accuracy can be relaxed.
+The APARA
+p r i n c i p l e9 9 ( A s
+Precise As Readily Achievable, t e c h n i c a l a n d
+biological factors being taken into account) should be applied
+especially for very large field irradiation.
+In any case a statement
+o f t a r g e t o r n o r m a l t i s s u e d o s e s h o u l d a l w a y s i n c l u d e a statement
+about the associated uncertainties in dose delivery. Both pieces of
+information are needed in any clinical evaluation.
+
+2
+
+1.2 Clinical Indications
+
+Total and half body radiotherapy have been administered for a
+large variety of c l i n i c a l s i t u a t i o n s e a c h w i t h d i f f e r e n t p r e s c r i b e d
+The following summarizes some of the
+dose-fractionation schemes.
+clinical needs for large field radiotherapy.
+a) High dose total body irradiation. High dose total body irradiation
+(TBI) with megavoltage photon beams is frequently used to destroy the
+bone marrow and leukemic cells, to immunosuppress the patient prior to
+Aplastic
+receiving a bone marrow
+t r a n s p l a n t 92 ( B M T ) , o r b o t h .
+a n e m i a 3,93 , and a number of leukemias 92 and lymphomas57,70 , respond to
+43
+treatment.
+Ewing’s
+sarcoma ,
+non-Hodgkin’s
+this
+advanced
+l y m p h o m a 57,70 , oat cell carcinoma of the bronchus 57 a n d l y m p h o s a r c o m a7
+have also been treated by TBI as an adjuvant. Usually this treatment
+regimen is combined with a comprehensive chemotherapy program prior to
+Total doses ranging from 300 to
+the TBI and bone marrow transplant.
+1000 cGy have been given in a single fraction.
+In recent years,
+increased usage has been made of doses ranging from 1000 to 1400 cGy
+g i v e n i n s e v e r a l f r a c t i o n s p e r d a y f o r s e v e r a l d a y s20,68 . T h i s w i d e
+d i s p a r i t y i n d o s e a n d f r a c t i o n a t i o n , the technical complexity of TBI
+and the variation in chemotherapy programs complicate the
+techniques,
+interpretation o f r a d i a t i o n r e s p o n s e
+to TBI.
+High degrees of
+pulmonary toxicity are associated with a number of these treatment
+48
+regimens and appear to be related to lung dose . There is some
+e v i d e n c e t h a t t h i s p u l m o n a r y t o x i c i t y 3 as well as bone marrow cell
+k i l l i n g 1 7 , 2 0 i s d o s e r a t e d e p e n d e n t . Presently, some institutions use
+f r a c t i o n a t i o n s c h e m e s6 8 , 8 1 to reduce pulmonary complications while
+maintaining a
+high
+immunosuppressive
+effect,
+whereas
+other
+77
+institutions are using a lower dose, single treatment for the same
+purpose.
+Low dose TBI with megavoltage
+b) Low dose total body irradiation.
+photons giving about 10 to 15 cGy per day for 10 to 15 days is used
+47
+for treatment of lymphocytic leukemias ,
+l y m p h o m a s39 o r n e u r o blastoma 1 4. The lower doses reduce the risk of serious complications.
+However, p r e c i s e d o s e r e s p o n s e d a t a a r e n o t a v a i l a b l e ; h e n c e , a
+detailed understanding of the associated dosimetry is a prerequisite.
+c) Half body irradiation. The last 10 years have demonstrated a
+dramatic increase in the use of high dose half body irradiation (HBI)
+f o r t h e p a l l i a t i o n o f w i d e l y d i s s e m i n a t e d m e t a s t a t i c d i s e a s e 24,25 .
+This technique has become so successful that it is being used in a
+number of clinical trials as an adjuvant form of primary therapy for
+Ewing’s sarcoma44 and bronchogenic carcinoma 67,94 . Lower HBI has also
+been used for ovarian ablation in metastatic breast cancer 2 6. The aim
+of the half body technique is to give a sufficiently high dose to
+alleviate the effects of symptomatic disease while at the same time
+maintaining a sufficiently low dose to minimize complications.
+The
+narrow range of therapeutic r a t i o s d i c t a t e a c c u r a t e d o s i m e t r y a n d
+precise dose delivery.
+d) Total lymphoid irradiation.
+Total lymphoid irradiation (TLI) has
+been shown to be a powerful immunosuppressive agent and, therefore,
+has been suggested as an adjunctive therapy for organ transplantation
+and a number of autoimmune diseases35 such as rheumatoid arthritis,
+aplastic anemia, multiple sclerosis and systemic lupus erythematosus.
+
+3
+
+Total lymphoid irradiation using 3600 cGy in 16 fractions has produced
+f a v o r a b l e r e s u l t s f o r p a t i e n t s w i t h r h e u m a t o i d a r t h r i t i s 8 5. At this
+time the precise role of TLI is not clearly understood. Similar to
+TBI and HBI, accurate dose-response data can only be derived from a
+precise knowledge of the delivered dose.
+However, T L I h a s t h e
+additional problem of complicated shielding and very irregularly
+shaped fields.
+While all the above clinical uses of total and half body
+irradiation are presently in vogue, the dosimetric concerns outlined
+in this report are relevant for any clinical situation requiring large
+field radiotherapy.
+1.3 Intent of this report
+The desire for uniformity of dose delivery and dose prescription
+for very large field radiotherapy
+has resulted in a number of
+w o r k s h o p s9,61,63,88,90 ,
+conferences and
+attended by physicists,
+radiobiologists and clinicians.
+These conferences have consistently
+indicated a
+w i d e d i s p a r i t y i n treatment techniques and
+dose
+Standardization of
+reporting delivered doses was
+prescription.
+considered essential if biological and clinical parameters are to be
+understood.
+However, none of the conferences came to a consensus as
+to dosimetric procedures.
+The intent of this report is:
+a) to review methods of producing the very large fields needed
+for TBI, HBI and other large field procedures,
+b) to make recommendations regarding dosimetric measurements
+that are required prior to initiating such procedures,
+c) to consider the practical
+problems of specifying and
+delivering a c o n t r o l l e d r a d i a t i o n d o s e f o r s u c h l a r g e
+fields.
+Unfortunately,
+we must leave unanswered many
+interesting
+radiobiological questions about dose, dose rate, fractionation and the
+equivalence
+possible
+between
+different
+regimens.
+treatment
+Improvement in dosimetry and a s t a n d a r d i z a t i o n o f t e c h n i q u e w i l l ,
+certainly help the medical physicist along with
+however,
+his
+colleagues in radiation oncology and radiobiology answer some of these
+questions.
+
+4
+
+2. Irradiation Methods
+2.1 Introduction
+
+B e f o r e instituting large field radiotherapy procedures, medical
+decisions must be made about the total dose to be given to the
+patient, the dose rate, t h e d e s i r e d d e g r e e o f d o s e u n i f o r m i t y , t h e
+duration of treatment per fraction, the total number of fractions and
+the total treatment time. At times, some of these parameters may have
+to be compromised because of the limitations in the available therapy
+equipment.
+Much
+of t h e e a r l y c l i n i c a l e x p e r i e n c e w i t h T B I a n d H B I
+procedures was gained at centers with facilities specifically designed
+f o r l a r g e f i e l d i r r a d i a t i o n s . With the increased use of large field
+r a d i o t h e r a p y t o t r e a t a v a r i e t y o f d i s e a s e s , many patients are now
+being treated with conventional units. Current methods of large field
+irradiation can therefore be broadly divided into three categories:
+a ) d e d i c a t e d f a c i l i t i e s s p e c i f i c a l l y d e s i g n e d f o r treatment with
+large fields.
+b) facilities designed for conventional radiotherapy treatments but
+modified to produce very large fields.
+for
+conventional
+c) facilities designed
+treatments but using
+unconventional geometries to provide the desired field sizes.
+One of the first dedicated TBI facilities in North America was
+described by Heublein 37 in 1932. In a lead lined ward, with four beds
+at one end and a Coolidge “deep therapy” tube at the other end, four
+patients could be simultaneously irradiated. The beds were about 5 m
+and 7 m from the tube, which was operated continuously for 20 hours at
+185 kVp, 3 mA, with a 2 mm Cu filter. Exposure rates ranged from 0.68
+‘R’/h to 1.26 ‘R’/h and doses were prescribed as a percentage of
+an erythema dose 3 7, which was about 750 ‘R’ (‘R’ represents the unit
+of exposure as determined at that time).
+2.2 Dedicated facilities with multiple sources
+Numerous facilities have been designed s i n c e 1 9 3 2 f o r t o t a l b o d y
+irradiation. W e b s t e r 103 reviewed the physical considerations for the
+design of irradiators that would produce a relatively uniform (±10%)
+total body dose. He concluded that the following characteristics are
+d e s i r a b l e : 1 ) s m a l l r o o m s i z e t o m i n i m i z e c o s t , shielding,
+and
+building space; 2) sources distributed above and below the patient; 3)
+a minimum number of sources to reduce cost and maintenance and 4)
+simple procedure for control of exposure. After reviewing the design
+and dosimetry of single, dual, four, six and eight source irradiation
+f a c i l i t i e s , he concluded that a minimum of four radiation sources
+would be necessary to uniformly irradiate the entire body (Figure la).
+Jacobs and Pape42 describe a total body irradiation chamber similar to
+a “four poster bed”, used at the City of Hope Medical Center in the
+early 1960’s. Four rods were housed at each end of the treatment bed
+with each rod containing two 300 Ci caesium-137 sources separated 2 m
+from each other. The source rods retracted into the floor to turn the
+s o u r c e s “ o f f ” a n d l e a d f i l t e r s w e r e used to obtain variable dose
+rates.
+Several multiple source irradiators were constructed at U.S.
+Government sponsored research laboratories in the 1950’s and 1960’s
+mostly for animal studies. The Naval Medi
+(Content truncated due to size limit. Use line ranges to read in chunks)

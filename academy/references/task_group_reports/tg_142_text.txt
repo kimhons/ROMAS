@@ -1,0 +1,399 @@
+Task Group 142 report: Quality assurance of medical acceleratorsa…
+Eric E. Kleinb兲
+Washington University, St. Louis, Missouri
+
+Joseph Hanley
+Hackensack University Medical Center, Hackensack, New Jersey
+
+John Bayouth
+University of Iowa, Iowa City, Iowa
+
+Fang-Fang Yin
+Duke University, Durham, North Carolina
+
+William Simon
+Sun Nuclear Corp., Melbourne, Florida
+
+Sean Dresser
+Northside Hospital, Atlanta, Georgia
+
+Christopher Serago
+Mayo Clinic, Jacksonville, Florida
+
+Francisco Aguirre
+M. D. Anderson Cancer Center, Houston, Texas
+
+Lijun Ma
+University of California, San Francisco, San Francisco, California
+
+Bijan Arjomandy
+M. D. Anderson Cancer Center, Houston, Texas
+
+Chihray Liu
+University of Florida, Gainesville, Florida
+
+Consultants:
+Carlos Sandin
+Elekta Oncology, Crawley, United Kingdom
+
+Todd Holmes
+Varian Medical Systems, Palo Alto, California
+
+共Received 24 February 2009; revised 8 July 2009; accepted for publication 8 July 2009;
+published 17 August 2009兲
+The task group 共TG兲 for quality assurance of medical accelerators was constituted by the American
+Association of Physicists in Medicine’s Science Council under the direction of the Radiation
+Therapy Committee and the Quality Assurance and Outcome Improvement Subcommittee. The task
+group 共TG-142兲 had two main charges. First to update, as needed, recommendations of Table II of
+the AAPM TG-40 report on quality assurance and second, to add recommendations for asymmetric
+jaws, multileaf collimation 共MLC兲, and dynamic/virtual wedges. The TG accomplished the update
+to TG-40, specifying new test and tolerances, and has added recommendations for not only the new
+ancillary delivery technologies but also for imaging devices that are part of the linear accelerator.
+The imaging devices include x-ray imaging, photon portal imaging, and cone-beam CT. The TG
+report was designed to account for the types of treatments delivered with the particular machine.
+For example, machines that are used for radiosurgery treatments or intensity-modulated radiotherapy 共IMRT兲 require different tests and/or tolerances. There are specific recommendations for
+MLC quality assurance for machines performing IMRT. The report also gives recommendations as
+to action levels for the physicists to implement particular actions, whether they are inspection,
+scheduled action, or immediate and corrective action. The report is geared to be flexible for the
+physicist to customize the QA program depending on clinical utility. There are specific tables
+according to daily, monthly, and annual reviews, along with unique tables for wedge systems, MLC,
+and imaging checks. The report also gives specific recommendations regarding setup of a QA
+program by the physicist in regards to building a QA team, establishing procedures, training of
+personnel, documentation, and end-to-end system checks. The tabulated items of this report have
+4197
+
+Med. Phys. 36 „9…, September 2009
+
+0094-2405/2009/36„9…/4197/16/$25.00
+
+© 2009 Am. Assoc. Phys. Med.
+
+4197
+
+4198
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4198
+
+been considerably expanded as compared with the original TG-40 report and the recommended
+tolerances accommodate differences in the intended use of the machine functionality 共non-IMRT,
+IMRT, and stereotactic delivery兲. © 2009 American Association of Physicists in Medicine.
+关DOI: 10.1118/1.3190392兴
+Key words: accelerator, QA, quality assurance, radiotherapy
+TABLE OF CONTENTS
+I. INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+I.A. Purpose. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+I.B. Background. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4198
+II. QUALITY ASSURANCE OF MEDICAL
+ACCELARATORS. . . . . . . . . . . . . . . . . . . . . . . . . . . 4199
+II.A. General. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4199
+II.B. Test frequencies. . . . . . . . . . . . . . . . . . . . . . . . 4204
+II.C. Guidelines for tolerance values. . . . . . . . . . . . 4204
+II.C.1. Acceptance testing procedure standards... 4204
+II.C.2. Commissioning baseline values. . . . . . . . . 4204
+II.C.3. Tolerances and action levels. . . . . . . . . . . . 4205
+II.C.4. Uncertainties, repeatability, and precision.. 4205
+II.D. Ancillary treatment devices not in TG-40.... 4206
+II.D.1. Asymmetric jaws. . . . . . . . . . . . . . . . . . . . . 4206
+II.D.2. Dynamic/virtual/universal wedge. . . . . . . . 4206
+II.D.3. MLC. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4206
+II.D.4. TBI/TSET. . . . . . . . . . . . . . . . . . . . . . . . . . . 4207
+II.D.5. Radiographic imaging. . . . . . . . . . . . . . . . . 4207
+II.D.6. Respiratory gating. . . . . . . . . . . . . . . . . . . . 4208
+III. SUMMARY OF RECOMMENDATIONS/
+IMPLEMENTATION SCHEME. . . . . . . . . . . . . . . 4209
+I. INTRODUCTION
+I.A. Purpose
+
+The AAPM TG-401 report published in 1994 is a widely
+used and referenced document which includes recommendations for general quality assurance 共QA兲 tests for medical
+linear accelerators. Since the publication of TG-40, several
+new technologies have been developed and are now commonly used in clinical practice. These technologies include
+multileaf collimation 共MLC兲, asymmetric jaws, dynamic and
+virtual wedges, and electronic portal imaging devices
+共EPIDs兲. Image guidance devices such as cone-beam CT
+共CBCT兲, static kilovoltage 共kV兲 imaging, and respiratory
+gating were rarely used in 1994. In addition, TG-40 did not
+consider the demands placed on an accelerator by procedures
+such as stereotactic radiosurgery 共SRS兲, stereotactic body radiation therapy 共SBRT兲, total body photon irradiation 共TBI兲,
+and intensity-modulated radiotherapy 共IMRT兲 treatment.
+Also, the quality of linear accelerators in terms of accuracy
+and precision has improved in recent years, allowing for procedures such as SRS, SBRT, and IMRT.
+The purpose of this report is to build upon the recommendations of TG-40 for QA of medical linear accelerators including the before mentioned technologies 共MLC, newer
+wedge systems, asymmetric jaws, imaging systems, and resMedical Physics, Vol. 36, No. 9, September 2009
+
+piratory systems兲 and procedures such as SRS, SBRT, TBI,
+and IMRT. During the development of this report, investigation of technologies that deliver MLC-based IMRT with simultaneous gantry rotation had just begun, and therefore QA
+for these technologies is not included in the report.
+The recommendations of this task group are not intended
+to be used as regulations. These recommendations are guidelines for QMPs to use and appropriately interpret for their
+individual institution and clinical setting. Each institution
+may have site-specific or state mandated needs and requirements which may modify their usage of these recommendations.
+I.B. Background
+
+The underlying principle behind TG-40 was the International Commission on Radiation Units and Measurements2
+共ICRU兲 recommendation that the dose delivered to the patient be within ⫾5% of the prescribed dose. Taking into consideration the many steps involved in delivering dose to a
+target volume in a patient, each step must be performed with
+accuracy better than 5% to achieve this recommendation.
+The goal of a QA program for linear accelerators is to
+assure that the machine characteristics do not deviate significantly from their baseline values acquired at the time of
+acceptance and commissioning.3 There are several publications that describe procedures and conditions for acceptance
+testing and commissioning, and the reader is referred to
+these: The International Electrotechnical Commission4,5
+共IEC兲, American Association of Physicists in Medicine3,6,7
+共AAPM兲, and American College of Medical Physics8
+共ACMP兲. Many of these baseline values are entered into
+treatment planning systems to characterize and/or model the
+treatment machine, and therefore can directly affect treatment plans calculated for every patient treated on that machine. Deviation from the baseline values could thus result in
+suboptimal treatment of patients. Machine parameters can
+deviate from their baseline values as a result of many reasons. There can be unexpected changes in machine performance due to machine malfunction, mechanical breakdown,
+physical accidents, or component failure. Major component
+replacement 共waveguide, bending magnet, etc.兲 may also alter machine performance from the original parameters. In
+addition there can be gradual changes as a result of aging of
+the machine components. These patterns of failure must be
+considered when establishing a periodic QA program.
+It is not the goal of this report to describe the experimental techniques for performing QA tests, as these tests are
+described in a number of publications.9–35 We also realize the
+increased demands on staff in the current healthcare environ-
+
+4199
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4199
+
+TABLE I. Daily.
+Machine-type tolerance
+Procedure
+
+Non-IMRT
+
+IMRT
+
+SRS/SBRT
+
+Dosimetry
+X-ray output constancy 共all energies兲
+Electron output constancy 共weekly,
+except for machines with unique
+e-monitoring requiring daily兲
+
+3%
+
+Mechanical
+Laser localization
+Distance indicator 共ODI兲 @ iso
+Collimator size indicator
+
+2 mm
+2 mm
+2 mm
+
+1.5 mm
+2 mm
+2 mm
+
+1 mm
+2 mm
+1 mm
+
+Safety
+Door interlock 共beam off兲
+Door closing safety
+Audiovisual monitor共s兲
+Stereotactic interlocks 共lockout兲
+Radiation area monitor 共if used兲
+Beam on indicator
+
+ment and recognize the fact that the tests should be simple,
+rapid, and reproducible. Since the publication of TG-40 there
+have been many QA products designed around the TG-40
+table that make execution of these tests more efficient.
+TG-40 stated that the test procedures should be able to distinguish parameter changes smaller than tolerance or action
+levels. A definition of repeatability is included in Sec. II C.
+As noted in TG-40, the QA program for linear accelerators is very much a team effort, and the responsibilities of
+performing various tasks are typically divided among physicists, dosimetrists, therapists, and accelerator engineers.
+However, we reiterate the recommendation that the overall
+responsibility for a linear accelerator QA program be assigned to one individual: The qualified medical physicist
+共QMP兲.
+The foundation of linear accelerator based QA lies in
+Table II of TG-40. Since its publication linear accelerators
+have changed not only with respect to their physical construction but also in their role as treatment devices. Asymmetric jaws, dynamic/virtual wedges, and multileaf collimators have been added. Intensity-modulated radiation therapy
+and image-guided radiation therapy 共IGRT兲 have increased
+demands on the accuracy required of the linear accelerator
+for precise dose delivery. The types of treatments delivered
+with the machine should also have a role in determining the
+QA program that is appropriate for that treatment machine.
+For example, machines that are used for SRS/SBRT treatments, TBI, or IMRT require different tests and/or tolerances. Some older machines may be upgraded 共MLCs, portal
+vision兲 in order to perform IMRT or stereotactic radiotherapy. This will change the machine category for testing
+requirements. Solid compensator based IMRT is an option
+for some machines that are not IMRT capable. Many of the
+mechanical and dosimetric tests that apply to IMRT maMedical Physics, Vol. 36, No. 9, September 2009
+
+NA
+
+Functional
+Functional
+Functional
+NA
+Functional
+Functional
+
+Functional
+
+chines will therefore be applied to these machines and in
+most cases, specific for the particular manufacturer.
+And finally, this report does give recommendations in regards to imaging devices that are connected to the accelerator and with gating as the accelerators operation can be tied
+to the respiratory system’s signals. This was necessary as
+safety, mechanical, and operational attributes of imaging and
+gating are tied to the accelerator.
+II. QUALITY ASSURANCE OF MEDICAL
+ACCELARATORS
+II.A. General
+
+The recommendations of this report are summarized in six
+tables. The first three tables, Table I 共daily兲, Table II
+共monthly兲, and Table III 共annual兲, essentially replace Table II
+of TG-40. However, as is evident, the scope of testing and
+the number of variables have increased compared to TG-40.
+Each table has specific recommendations based on the nature
+of the treatments delivered on the individual machine. The
+tables are differentiated into non-IMRT or nonstereotactic
+machines, IMRT machines, and IMRT/stereotactic machines.
+There are also explicit recommendations based on the equipment manufacturer as a result of the design characteristics of
+those machines. The recommendations in each table utilize
+the QA categories used in Table II of TG-40, dosimetry, mechanical, and safety, while adding a new category: Respiratory gating. The tests for asymmetric jaws and TBI/total skin
+electron therapy 共TSET兲 are contained in Tables II and III.
+Three additional tables were created for dynamic/virtual/
+universal wedges 共Table IV兲, MLC 共Table V兲, and imaging
+共Table VI兲. All of these ancillary devices not covered in
+TG-40 are discussed in Sec. II D. Test frequencies for each
+test are listed in the tables and the rationale for them is dis-
+
+4200
+
+Klein et al.: Task Group 142 Report: QA of Medical Accelerators
+
+4200
+
+TABLE II. Monthly.
+Machine-type tolerance
+Procedure
+
+Non-IMRT
+
+IMRT
+
+SRS/SBRT
+
+Dosimetry
+X-ray output constancy
+Electron output constancy
+Backup monitor chamber constancy
+Typical dose ratea output constancy
+
+2%
+NA
+
+Photon beam profile constancy
+Electron beam profile constancy
+Electron beam energy constancy
+
+2% 共@ IMRT dose rate兲
+
+2% 共@ stereo dose rate, MU兲
+
+1%
+1%
+2%/2 mm
+
+Mechanical
+Light/radiation field coincidenceb
+Light/radiation field coincidenceb 共asymmetric兲
+Distance check device for lasers compared with
+front pointer
+Gantry/collimator angle indicators
+共@ cardinal angles兲 共digital only兲
+Accessory trays 共i.e., port film graticle tray兲
+Jaw position indicators 共symmetric兲c
+Jaw position indicators 共asymmetric兲d
+Cross-hair centering 共walkout兲
+Treatment couch position indicatorse
+Wedge placement accuracy
+Compensator placement accuracyf
+Latching of wedges, blocking trayg
+Localizing lasers
+
+2 mm or 1% on a side
+1 mm or 1% on a side
+1mm
+1.0°
+
+2 mm/1°
+
+⫾2 mm
+
+2 mm
+2 mm
+1 mm
+1 mm
+2 mm/1°
+2 mm
+1 mm
+Functional
+⫾1 mm
+
+1 mm/0.5°
+
+⬍ ⫾ 1 mm
+
+Safety
+Laser guard-interlock test
+
+Functional
+
+Respiratory gating
+Beam output constancy
+Phase, amplitude beam control
+In-room respiratory monitoring system
+Gating interlock
+
+2%
+Functional
+Functional
+Functional
+
+a
+
+Dose monitoring as a function of dose rate.
+Light/radiation field coincidence need only be checked monthly if light field is used for clinical setups.
+c
+Tolerance is summation of total for each width or length.
+d
+Asymmetric jaws should be checked at settings of 0.0 and 10.0.
+e
+Lateral, longitudinal, and rotational.
+f
+Compensator based IMRT 共solid compensators兲 require a quantitative value for tray position 共wedge or blocking tray slot兲 set at a maximum deviation of 1.0
+mm from the center of the compensator tray mount and the cross hairs.
+g
+Check at collimator/gantry angle combination that places the latch toward the floor.
+b
+
+cussed in Sec. II C. This task group 共TG兲 considers that all of
+the tests included in the tables are important for ensuring the
+equipment to be suitable for high quality and safe radiation
+treatments. For example, in reference to physical wedge
+placement accuracy, Table II notes a monthly placement test
+with an accuracy of 2 mm. Deviations greater than 2 mm
+could result in errors as much as 2% at clinically relevant
+depths.
+A consistent beam profile is an important quantity for accurate and reproducible dose delivery in radiotherapy. Beam
+uniformity was addressed in TG-40 Table II with flatness
+constancy, i.e., consistent flatness and symmetry tolerance
+Medical Physics, Vol. 36, No. 9, September 2009
+
+levels. Constancy is specifically associated with flatness;
+however, symmetry tolerance can be interpreted as either 
+(Content truncated due to size limit. Use line ranges to read in chunks)

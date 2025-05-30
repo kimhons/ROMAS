@@ -1,0 +1,499 @@
+Dwight E. Heron, MD, MBA, FACRO, FACR
+M. Saiful Huq, PhD, FAAPM, FInstP
+Joseph M. Herman, MD, MSc, MHCM, FACR
+Stereotactic Radiosurgery and Stereotactic Body Radiation Therapy (SBRT) is a comprehensive guide for the practicing
+physician and medical physicist in the management of complex intracranial and extracranial disease. It is a state-ofthe-science book presenting the scientific principles, clinical background and procedures, treatment planning, and
+treatment delivery of SRS and SBRT for the treatment of tumors throughout the body. This unique textbook is enhanced
+with supplemental video tutorials inclusive to the resource.
+Beginning with an overview of SRS and SBRT, Part I contains insightful coverage on topics such as the evolving
+radiobiological principles that govern treatment, imaging, the treatment planning process, technologies and
+equipment used, as well as focused chapters on quality assurance, quality management, and patient safety. Part II
+contains the clinical application of SRS and SBRT for tumors throughout the body including those in the brain, head
+and neck, lung, pancreas, adrenal glands, liver, prostate, cervix, spine, and in oligometastatic disease. Each clinical
+chapter includes an introduction to the disease site, followed by a thorough review of all indications and exclusion
+criteria, in addition to the important considerations for patient selection, treatment planning and delivery, and
+outcome evaluation. These chapters conclude with a detailed and site-specific dose constraints table for critical
+structures and their suggested dose limits.
+International experts on the science and clinical applications of these treatments have joined together to assemble
+this must-have book for clinicians, physicists, and other radiation therapy practitioners. It provides a team-based
+approach to SRS and SBRT coupled with case-based video tutorials in disease management, making this a unique
+companion for the busy radiosurgical team.
+
+n Highlights the principles of radiobiology and radiation physics underlying SRS and SBRT
+n P
+ resents and discusses the expected patient outcomes for each indicated disease site and condition including
+
+a detailed analysis of Quality of Life (QOL) and Survival
+n Includes information about technologies used for the treatment of SRS and SBRT
+n R
+ ichly illustrated with over 110 color images of the equipment, process flow diagrams and procedures,
+
+treatment planning techniques and dose distributions
+n 7
+ high-quality case videos reviewing anatomy, staging, treatment simulation and planning, contouring, and
+
+management pearls
+n D
+ ose constraint tables at the end of each clinical chapter listing critical structures and their appropriate
+
+dose limits
+n Includes access to the fully-searchable downloadable eBook
+Recommended
+Shelving Category:
+Oncology
+An Imprint of Springer Publishing
+
+11 W. 42nd Street
+New York, NY 10036-8002
+www.springerpub.com
+
+9
+
+780826
+
+168566
+
+Heron • Huq • Herman
+
+Key Features:
+
+STEREOTACTIC RADIOSURGERY AND STEREOTACTIC BODY RADIATION THERAPY (SBRT)
+
+STEREOTACTIC RADIOSURGERY AND
+STEREOTACTIC BODY RADIATION THERAPY (SBRT)
+
+An Imprint of Springer Publishing
+
+STEREOTACTIC
+RADIOSURGERY
+AND STEREOTACTIC BODY
+RADIATION THERAPY (SBRT)
+
+Dwight E. Heron | M. Saiful Huq | Joseph M. Herman
+
+Stereotactic Radiosurgery
+and Stereotactic Body
+Radiation Therapy (SBRT)
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd i
+
+22/08/18 10:23 AM
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd ii
+
+22/08/18 10:23 AM
+
+Stereotactic Radiosurgery
+and Stereotactic Body
+Radiation Therapy (SBRT)
+Editors
+Dwight E. Heron, MD, MBA, FACRO, FACR
+Chairman, Department of Radiation Oncology, UPMC Hillman
+Cancer Center–Shadyside
+Professor of Radiation Oncology, Otolaryngology, and Head and Neck Surgery
+University of Pittsburgh School of Medicine
+Pittsburgh, Pennsylvania
+
+M. Saiful Huq, PhD, FAAPM, FInstP
+Professor of Radiation Oncology
+Director, Division of Medical Physics
+Department of Radiation Oncology
+UPMC Hillman Cancer Center
+University of Pittsburgh School of Medicine
+Pittsburgh, Pennsylvania
+
+Joseph M. Herman, MD, MSc, MHCM, FACR
+Professor and Division Head ad Interim
+Department of Radiation Oncology
+The University of Texas MD Anderson Cancer Center
+Houston, Texas
+
+An Imprint of Springer Publishing
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd iii
+
+22/08/18 10:23 AM
+
+Visit our website at www.Springerpub.com
+ISBN: 9780826168566
+ebook ISBN: 9780826168573
+Acquisitions Editor: David D’Addona
+Compositor: Graphic World
+Copyright © 2019 Springer Publishing Company.
+Demos Medical Publishing is an imprint of Springer Publishing Company, LLC.
+All rights reserved. This book is protected by copyright. No part of it may be reproduced, stored in a retrieval system,
+or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without
+the prior written permission of the publisher.
+Medicine is an ever-changing science. Research and clinical experience are continually expanding our knowledge, in
+particular our understanding of proper treatment and drug therapy. The authors, editors, and publisher have made
+every effort to ensure that all information in this book is in accordance with the state of knowledge at the time of
+production of the book. Nevertheless, the authors, editors, and publisher are not responsible for errors or omissions
+or for any consequences from application of the information in this book and make no warranty, expressed or implied,
+with respect to the contents of the publication. Every reader should examine carefully the package inserts accompanying each drug and should carefully check whether the dosage schedules mentioned therein or the contraindications
+stated by the manufacturer differ from the statements made in this book. Such examination is particularly important
+with drugs that are either rarely used or have been newly released on the market.
+Library of Congress Cataloging-in-Publication Data
+Names: Heron, Dwight E., editor. | Huq, M. Saiful (Mohammed Saiful), editor.
+Herman, Joseph M., editor.
+Title: Stereotactic radiosurgery and stereotactic body radiation therapy
+(SBRT) / [edited by] Dwight E. Heron, M. Saiful Huq, Joseph M. Herman.
+Description: New York : Demos, [2018] | Includes bibliographical references
+and index.
+Identifiers: LCCN 2018026438 (print) | LCCN 2018026700 (ebook) | ISBN
+9780826168573 () | ISBN 9780826168566 (hbk. : alk. paper) | ISBN
+9780826168573 (eBook)
+Subjects: | MESH: Neoplasms--radiotherapy | Radiosurgery | Neoplasms—surgery
+Classification: LCC RC271.R3 (ebook) | LCC RC271.R3 (print) | NLM QZ 269 |
+DDC 616.99/40642--dc23
+LC record available at https://lccn.loc.gov/2018026438
+Contact us to receive discount rates on bulk purchases.
+We can also customize our books to meet your needs.
+For more information please contact: sales@springerpub.com
+Publisher’s Note: New and used products purchased from third-party sellers are not guaranteed for quality, authenticity,
+or access to any included digital components.
+Printed in the United States of America.
+18 19 20 21 22 / 5 4 3 2 1
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd iv
+
+22/08/18 10:23 AM
+
+CONTENTS
+133
+9. Patient Safety
+Peter B. Dunscombe and M. Saiful Huq
+
+Contributors
+vii
+Preface
+xi
+Share Stereotactic Radiosurgery and Stereotactic
+Body Radiation Therapy (SBRT)
+
+Part II: Clinical Applications of SRS and SBRT
+
+Part I: Principles of SRS and SBRT—
+Radiobiology, Physics, and
+Treatment Planning
+
+10. Brain Radiosurgery
+141
+Ronny Kalash, Johnathan A. Engh, and
+Nduka Amankulor
+
+1. General Overview of SRS and
+SBRT Program
+3
+Dwight E. Heron, M. Saiful Huq, and
+Annette Quinn
+
+11. Head and Neck SBRT
+165
+John A. Vargo, Shlomo A. Koyfman,
+Robert L. Ferris, Dwight E. Heron, and
+Farzan Siddiqui
+
+2. Radiobiology Principles of Radiosurgery
+and SBRT
+15
+Ellen Yorke, David Carlson, and
+Vitali Moiseenko
+
+12. Lung SBRT
+183
+Arjun Pennathur, James D. Luketich,
+Dwight E. Heron, Alexandre Escande,
+David Pasquier, and Eric F. Lartigau
+
+3. SRS and SBRT Process
+39
+M. Saiful Huq and Robin Stern
+
+13. Pancreas SBRT
+201
+Eric D. Miller, Steven A. Burton,
+Lauren M. Rosati, and Terence M. Williams
+
+4. Patient Immobilization for SRS
+and SBRT
+47
+Ronald J. Lalonde and
+Richard A. Popple
+5. Imaging for SRS and SBRT
+53
+Ronald J. Lalonde and Tianfang Li
+6. Treatment Planning for SRS
+and SBRT
+65
+Ronald J. Lalonde
+7. Overview of Technologies for SRS and
+SBRT Delivery
+73
+Laura Padilla and Jatinder R. Palta
+8. Quality Management
+103
+Ning Wen, Karen Chin Snyder, Brett Miller,
+and Indrin J. Chetty
+
+14. Adrenal SBRT
+215
+Priscilla K. Stumpf and Karyn A. Goodman
+15. Liver SBRT
+227
+Yushen Qian, Joseph P. Weiner,
+Everett J. Moding, Nataliya Kovalchuk,
+Albert C. Koong, Theodore S. Hong, and
+Daniel T. Chang
+16. Prostate SBRT
+249
+Beant S. Gill, Dwight E. Heron,
+Sean P. Collins, and Alan J. Katz
+17. Gynecologic SBRT
+271
+Charles Kunos, Ronny Kalash, and
+Sushil Beriwal
+
+v
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd v
+
+22/08/18 10:23 AM
+
+vi
+
+CONTENTS
+
+18. Spine SBRT
+279
+John A. Vargo, Alina Mihai,
+Johnathan A. Engh, Nduka Amankulor, and
+Steven A. Burton
+19. SBRT for Oligometastatic Disease
+Alina Mihai and Michael T. Milano
+
+293
+
+20. Immunoradiosurgery: The Convergence of
+SBRT and the Immune Response
+321
+Uzoma K. Iheagwara, David A. Clump, and
+Dwight E. Heron
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd vi
+
+21. Stereotactic Radiosurgery and
+Stereotactic Body Radiation Therapy
+Case Videos
+331
+John C. Flickinger, Drew Moghanaki,
+Joseph M. Herman, Yushen Qian,
+Beant S. Gill, John A. Vargo, and
+Alina Mihai
+Index
+
+333
+
+22/08/18 10:23 AM
+
+CONTRIBUTORS
+Nduka Amankulor, MD, PhD
+Associate Director, Neurosurgical Oncology Program,
+UPMC, Pittsburgh, Pennsylvania
+Assistant Professor, Department of Neurological
+Surgery, University of Pittsburgh School of
+Medicine, Pittsburgh, Pennsylvania
+Sushil Beriwal, MD, MBA
+Clinical Professor and Residency Program Director,
+UPMC Hillman Cancer Center—Radiation
+Oncology, Magee—Womens Hospital of UPMC,
+Pittsburgh, Pennsylvania
+Steven A. Burton, MD
+Associate Professor, Department of Radiation
+Oncology, UPMC Hillman Cancer Center–Shadyside,
+Pittsburgh, Pennsylvania
+David Carlson, PhD, DABR, FAAPM
+Associate Professor, Department of Therapeutic
+Radiology, Yale University School of Medicine,
+New Haven, Connecticut
+Daniel T. Chang, MD
+Professor, Department of Radiation Oncology,
+Stanford University School of Medicine, Stanford,
+California
+Indrin J. Chetty, PhD
+Director, Physics Division, Department of Radiation
+Oncology, Henry Ford Health System, Detroit,
+Michigan
+David A. Clump, MD, PhD
+Assistant Professor, Department of Radiation
+Oncology, UPMC Hillman Cancer Center–
+Shadyside, Pittsburgh, Pennsylvania
+University of Pittsburgh School of Medicine,
+Pittsburgh, Pennsylvania
+Sean P. Collins, MD, PhD
+Associate Professor, Department of Radiation
+Medicine, Medstar Georgetown University Hospital,
+Washington, DC
+
+Peter B. Dunscombe, PhD
+Professor, Department of Oncology, University of
+Calgary, Calgary, Alberta, Canada
+Johnathan A. Engh, MD
+Director, Neuroendoport Surgery & Neurosurgical
+Oncology Program, UPMC, Pittsburgh,
+Pennsylvania
+Associate Professor, Department of Neurological
+Surgery, University of Pittsburgh School of
+Medicine, Pittsburgh, Pennsylvania
+Alexandre Escande, MD
+Resident Oncologist, Department of Radiation
+Oncology, Oscar Lambret Comprehensive Cancer
+Center, Lille, France
+ONCOLille and University of Lille, Lille, France
+Robert L. Ferris, MD, PhD
+Director of UPMC Hillman Cancer Center, Chief of
+the Division of Head and Neck Oncologic Surgery,
+Pittsburgh, Pennsylvania
+Department of Otolaryngology, Division of Head
+and Neck Surgery, UPMC, Pittsburgh,
+Pennsylvania
+John C. Flickinger, MD, FACR
+Professor, Department of Radiation Oncology,
+UPMC Hillman Cancer Center–Shadyside,
+Pittsburgh, Pennsylvania
+University of Pittsburgh School of Medicine,
+Pittsburgh, Pennsylvania
+Beant S. Gill, MD
+Assistant Professor, Department of Radiation Oncology,
+UPMC Hillman Cancer Center, Pittsburgh,
+Pennsylvania
+Karyn A. Goodman, MD, MS
+Professor of Radiation Oncology, Department of
+Radiation Oncology, University of Colorado School
+of Medicine, Aurora, Colorado
+Associate Director of Clinical Research, University of
+Colorado Cancer Center, Aurora, Colorado
+vii
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd vii
+
+22/08/18 10:23 AM
+
+viii
+
+CONTTRIBUTORS
+
+Joseph M. Herman, MD, MSc, MHCM, FACR
+Professor and Division Head ad Interim,
+Department of Radiation Oncology, The University
+of Texas MD Anderson Cancer Center, Houston,
+Texas
+Dwight E. Heron, MD, MBA, FACRO, FACR
+Chairman, Department of Radiation Oncology,
+UPMC Hillman Cancer Center–Shadyside,
+Pittsburgh, Pennsylvania
+Professor of Radiation Oncology, Otolaryngology
+and Head and Neck Surgery, University of
+Pittsburgh School of Medicine, Pittsburgh,
+Pennsylvania
+Theodore S. Hong, MD
+Associate Professor, Department of Radiation
+Oncology, Clark Center for Radiation Oncology,
+Massachusetts General Hospital, Boston,
+Massachusetts
+M. Saiful Huq, PhD, FAAPM, FInstP
+Professor of Radiation Oncology, Director,
+Division of Medical Physics, Department of
+Radiation Oncology, UPMC Hillman Cancer Center,
+University of Pittsburgh School of Medicine,
+Pittsburgh, Pennsylvania
+Uzoma K. Iheagwara, MD, PhD
+Resident Physician, UPMC Hillman Cancer Center—
+Radiation Oncology, Pittsburgh, Pennsylvania
+Ronny Kalash, DO
+Resident Physician, UPMC Hillman Cancer
+Center—Radiation Oncology, Pittsburgh,
+Pennsylvania
+Alan J. Katz, MD, JD
+Clinican, Flushing Radiation Oncology, Flushing,
+New York
+Albert C. Koong, MD, PhD
+Professor and Chair, Department of Radiation
+Oncology, The University of Texas MD Anderson
+Cancer Center, Houston, Texas
+Nataliya Kovalchuk, PhD
+Associate Staff and Clinical Assistant Professor,
+Department of Radiation Oncology, Stanford
+University School of Medicine, Stanford,
+California
+Shlomo A. Koyfman, MD
+Assistant Professor, Cleveland Clinic Lerner College
+of Medicine, Section Head of Head and Neck and
+Skin Cancer Radiation, Departments of Radiation
+Oncology and Bioethics, Cleveland Clinic,
+Cleveland, Ohio
+
+Heron_68566_PTR_00_i-xii_FM_08-23-18.indd viii
+
+Charles Kunos, MD, PhD
+Medical Officer, Investigational Drug Branch,
+Cancer Therapy Evaluation Program, Division
+of Cancer Treatment and Diagnosis, National
+Cancer Institute, National Institutes of Health,
+Rockville, Maryland
+Ronald J. Lalonde, PhD, DABR
+Associate Professor, Department of Radiation
+Oncology, Division of Medical Physics,
+UPMC Hillman Cancer Center, Pittsburgh,
+Pennsylvania
+Eric F. Lartigau, MD, PhD
+Professor and General Director, Department of
+Radiation Oncology, Oscar Lambret Comprehensive
+Cancer Center, Lille, France
+ONCOLille and University of Lille, Lille, France
+Tianfang Li, PhD
+Associate Attending, Medical Physics,
+Memorial Sloan Kettering Cancer Center,
+New York, New York
+James D. Luketich, MD
+Henry T. Bahnson Professor and Chair, Department
+of Cardiothoracic Surgery, UPMC, Pittsburgh,
+Pennsylvania
+Alina Mihai, MD, MS
+Consultant Radiation Oncologist, Department of
+Radiation Oncology, Beacon Hospital,
+Dublin, Ireland
+Michael T. Milano, MD, PhD
+Associate Professor, Department of Radiation
+Oncology, University of Rochester School of
+Medicine and Dentistry, Rochester, New York
+Brett Miller, MSc
+Senior Staff Physicist, Department of Radiation
+Oncology, Henry Ford Health System,
+Detroit, Michigan
+Eric D. Miller, MD, PhD
+Assistant Professor, Radiation Oncology, The Ohio
+State University Comprehensive Cancer Center,
+Columbus, Ohio
+Everett J. Moding, MD, PhD
+Resident, Department of Radiation Oncology,
+Stanford University School of Medicine,
+Stanford, California
+Drew Moghanaki, MD, MPH
+Radiation Oncology Service, Hunter Holmes McGuire
+Veterans Affairs Medical Center, Richmond,
+Virginia
+
+22/08/18 10:23 AM
+
+CONTRIBUTORS
+
+Vitali Moiseenko, PhD, FCCPM
+Professor, Department of Radiation Medicine and
+Applied Sciences, University of California
+San Diego, La Jolla, California
+
+ix
+
+Farzan Siddiqui, MD, PhD
+Vice-Chairma
+(Content truncated due to size limit. Use line ranges to read in chunks)

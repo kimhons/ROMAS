@@ -1,0 +1,167 @@
+Strategies for effective physics plan and chart review in radiation therapy:
+Report of AAPM Task Group 275
+        Eric Forda)
+        University of Washington Medical Center, Seattle, WA, USA
+        Leigh Conroy
+        The Princess Margaret Cancer Centre, Toronto, ON, Canada
+        Lei Dong
+        University of Pennsylvania, Philadelphia, PA, USA
+        Luis Fong de Los Santos
+        Mayo Clinic, Rochester, MN, USA
+        Anne Greener
+        Veterans Affairs NJHCS, East Orange, NJ, USA
+
+        Grace Gwe-Ya Kim
+        University of California, San Diego, CA, USA
+
+        Jennifer Johnson
+        Landauer Medical Physics, Houston, TX, USA
+        Perry Johnson
+        University of Miami, Miami, FL, USA
+        James G. Mechalakos
+        Memorial Sloan-Kettering Cancer Center, Manhattan, NY, USA
+        Brian Napolitano
+        Massachusetts General Hospital, Boston, MA, USA
+        Stephanie Parker
+        Wake Forest Baptist Health, High Point, NC, USA
+
+        Deborah Schoﬁeld
+        Saint Vincent Hospital, Worcester, MA, USA
+
+        Koren Smith
+        Mary Bird Perkin Cancer Center, Baton Rouge, LA, USA
+        Ellen Yorke
+        Memorial Sloan-Kettering Cancer Center, Manhattan, NY, USA
+        Michelle Wells
+        Piedmont Cancer, Atlanta, GA, USA
+        (Received 9 August 2019; revised 3 January 2020; accepted for publication 8 January 2020;
+        published 15 April 2020)
+        Background: While the review of radiotherapy treatment plans and charts by a medical physicist is a
+        key component of safe, high-quality care, very few specific recommendations currently exist for this task.
+        Aims: The goal of TG-275 is to provide practical, evidence-based recommendations on physics plan
+        and chart review for radiation therapy. While this report is aimed mainly at medical physicists, others
+        may benefit including dosimetrists, radiation therapists, physicians and other professionals interested
+        in quality management.
+        Methods: The scope of the report includes photon/electron external beam radiotherapy (EBRT), pro-
+        ton radiotherapy, as well as high-dose rate (HDR) brachytherapy for gynecological applications (cur-
+        rently the highest volume brachytherapy service in most practices). The following review time points
+        are considered: initial review prior to treatment, weekly review, and end-of-treatment review. The
+        Task Group takes a risk-informed approach to developing recommendations. A failure mode and
+        effects analysis was performed to determine the highest-risk aspects of each process. In the case of
+        photon/electron EBRT, a survey of all American Association of Physicists in Medicine (AAPM)
+        members was also conducted to determine current practices. A draft of this report was provided to
+        the full AAPM membership for comment through a 3-week open-comment period, and the report
+        was revised in response to these comments.
+
+e236   Med. Phys. 47 (6), June 2020   0094-2405/2020/47(6)/e236/37    © 2020 American Association of Physicists in Medicine   e236
+                                                                                                                                                    24734209, 2020, 6, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14030, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+e237        Ford et al.: TG275: Plan and chart review                                                                                       e237
+
+
+           Results: The highest-risk failure modes included 112 failure modes in photon/electron EBRT initial
+           review, 55 in weekly and end-of-treatment review, 24 for initial review specific to proton therapy, and
+           48 in HDR brachytherapy. A 103-question survey on current practices was released to all AAPM
+           members who self-reported as working in the radiation oncology field. The response rate was 33%.
+           The survey data and risk data were used to inform recommendations.
+           Discussion: Tables of recommended checks are presented and recommendations for best practice are
+           discussed. Suggestions to software vendors are also provided.
+           Conclusions: TG-275 provides specific recommendations for physics plan and chart review which
+           should enhance the safety and quality of care for patients receiving radiation treatments. © 2020
+           American Association of Physicists in Medicine [https://doi.org/10.1002/mp.14030]
+
+           Key words: plan review, quality assurance, TG275
+
+Table of Contents                                                              in the United States. Physics plan and chart reviews rely
+                                                                               heavily on human inspection and there is some evidence of
+1. Introduction                                                                gaps in performance. A study by Gopan et al.4 suggested
+    1.A. Charges of the Task Group                                             that only 38% of errors that were potentially detectable on
+2. Background                                                                  physics plan and chart review were actually identified in
+   2.A. Definition of terms                                                    the review procedure. Similarly, a 2018 study of RO-ILS
+       2.A.1. Physics plan and chart review                                    data from Ezzell et al.5 identified three common error path-
+   2.B. Data on physics plan/chart review                                      ways, and showed that 25% to 37% of errors passed
+   2.C. Summary of society-level recommendations                               through normal checks. Some of this may be driven by
+   2.D. A review of automation and tools to support review                     workload stressors. Using a workload indicator developed
+3. Survey of current practice for plan/chart review                            by NASA, Mazur et al.6 found that medical physicists have
+4. Risk analysis                                                               the highest workload indicators among all the professional
+    4.A. Risk analysis methods using FMEA                                      groups in radiation oncology.
+   4.B. Collection of failure modes and validation against national database      Based on the above considerations, plan and chart review
+   4.C. Scoring failure modes                                                  is a critical safety step and a key part of the medical physi-
+   4.D. FMEA results and cross-correlation with survey                         cist’s professional duties. There is, however, very little litera-
+5. Recommendations for physics plan/chart review                               ture or guidance on the topic. The most relevant AAPM
+   5.A. Photon/electron EBRT initial plan/chart review                         report, TG-40,2 dates to 1994 and workflow and technology
+       5.A.1. Practice recommendations for photon/electron EBRT initial        have changed in the years since. The goal of TG-275, there-
+              plan/chart review                                                fore, is to provide practical, evidence-based recommendations
+   5.B. Photon/electron EBRT weekly chart review                               on physics plan and chart review and thereby enhance the
+       5.B.1. Practice recommendations for photon/electron EBRT weekly         safety and quality of care for patients receiving radiation
+              and end-of-treatment (EOT) review                                treatments.
+   5.C. Proton radiotherapy initial plan/chart review                             In developing these recommendations for physics plan and
+   5.D. HDR gynecology brachytherapy plan/chart review                         chart review the Task Group has taken a risk-informed
+   5.E. Suggestions to software vendors                                        approach, namely, analyzing the potential risks in the process
+6. Limitations of this report                                                  of care for the development of recommendations. This risk-
+7. Key recommendations                                                         based approach is supported by AAPM TG-100.7 As a result,
+8. Conclusions                                                                 this report differs from most previous Task Group reports
+Supporting information                                                         which have relied solely on consensus opinion to develop rec-
+                                                                               ommendations. A draft of this report was provided to the full
+                                                                               AAPM membership for comment through a 2-week open-
+                                                                               comment period, and the report was revised in response to
+1. INTRODUCTION                                                                these comments.
+
+   The review of radiotherapy treatment plans and charts
+by a qualified medical physicist is a key component to                         1.A. Charges of the Task Group
+ensuring safe, high-quality care. This is potentially one of                      Charges of the Task Group were as follows:
+the most effective safety barriers for identifying errors and
+quality gaps.1 It is called for in numerous society-level rec-                    1. Review existing data and recommendations that sup-
+ommendations [e.g., American Association of Physicists in                            port the use of physics plan and chart review and to
+Medicine (AAPM) TG-40,2 ACR-ASTRO Guidelines3]. It                                   review the current recommendations on the qualifica-
+is also a reimbursable activity in many healthcare systems                           tions for performing these.
+
+
+Medical Physics, 47 (6), June 2020
+                                                                                                                                        24734209, 2020, 6, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14030, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+e238     Ford et al.: TG275: Plan and chart review                                                                              e238
+
+
+   2. Provide survey information on current practices in the       accuracy of calculations, image guidance requests and their
+      community with respect to physics plan and chart             consistency with department procedure and best practices,
+      review.                                                      plan quality, and proper consideration of technically related
+   3. Provide risk-based recommendations for the effective         clinical factors. Some aspects of plan/chart review clearly lie
+      use of the following physics reviews: initial plan and       outside the purview of the medical physicist. Examples
+      chart check, weekly chart check, and end-of-treatment        include clinicians’ consideration of the utilization of other
+      chart check.                                                 treatment modalities (e.g., chemotherapy, surgery) and the
+   4. Provide recommendations to software vendors for sys-         review of diagnosis or pathology. Such items are either
+      tems design and operations that best facilitate physics      beyond the scope of medical physics and/or are not possible
+      plan and chart review.                                       to review at the time of plan/chart review. These are high-
+                                                                   lighted in this report as they appear.
+    This Task Group considers external beam radiotherapy              This report considers three aspects of physics plan/chart
+(EBRT) with photons and electrons, and also proton radio-          review: (a) initial review, that is, prior to the start of a
+therapy. External beam radiotherapy encompasses all dose           patient’s treatment, (b) weekly review during the course of
+fractionation regimens and common treatment delivery meth-         treatment, and (c) end-of-treatment review performed upon
+ods including three-dimensional conformal radiation therapy        completion of the treatment course. While the charges of this
+(3DCRT), electron beams, proton beams, intensity modulated         Task Group focus narrowly on the plan and chart review pro-
+radiation therapy (IMRT), volumetric modulated arc therapy         cess, there are opportunities to improve quality assurance
+(VMAT), image-guided radiation therapy (IGRT), stereotac-          (QA) processes throughout the treatment planning process
+tic radiosurgery (SRS), and stereotactic body radiation ther-      and these are highlighted and discussed at various points in
+apy (SBRT). The Task Group also considered brachytherapy           this report. This forms one of the key recommendations of
+but limits recommendations to HDR gynecological applica-           this report (Section 7): “Practices should work to incorporate
+tions, which currently is the highest volume service in most       physics reviews as early in the workflow as possible and not
+practices. The report includes physics plan and chart review       rely solely on review at the end of treatment planning”.
+at three time points: initial, weekly, and end-of-treatment           This report makes reference to the “oncology information
+review. This report extends TG-40 Section 6 parts B and C          system” (OIS) which is a general term that includes the treat-
+(which apply to physics plan and chart review) similar to the      ment management system, parts of the treatment delivery sys-
+way in which other sections of TG-40 have been refined and         tem (i.e., record & verify system), and the oncology-specific
+extended (Section 2 by TG-142,8 Section 3 by TG-53,9 and           electronic medical record (EMR). The latter includes both
+Section 5 by TG-5910).                                             radiation oncology (RO)-specific systems (e.g., Aria or
+    This report is intended mainly for medical physicists in       Mosaiq) and also enterprise-wide systems (e.g., EPIC or Cer-
+clinical practice or training. The report may also be useful for   ner). This terminology is consistent with that outlined by the
+dosimetrists, radiation therapists, physicians and other profes-   AAPM Work Group on Information Technology.11
+sionals who are involved in the review of plans and charts, as
+well as those interested in quality management.
+                                                                   2.B. Data on physics plan/chart review
+    Disclaimer: The recommendations of this task group
+should not be used to establish regulations. These recommen-           The physics plan/chart review is an important responsibil-
+dations are guidelines for qualified medical physicists            ity of the therapeutic medical physicist and is routinely per-
+(QMPs) and others to use and appropriately interpret for their     formed in the clinical setting. In the U.S., there are related
+individual institution and clinical setting. Each institution      reimbursement charges, especially Current Procedural Termi-
+may have site-specific or state-mandated needs and require-        nology (CPT) Code 77336, which is one of only two CPT
+ments which may modify their usage of these recomm
+(Content truncated due to size limit. Use line ranges to read in chunks)

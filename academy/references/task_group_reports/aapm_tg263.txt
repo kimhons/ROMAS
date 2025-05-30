@@ -1,0 +1,205 @@
+               AAPM REPORT NO. 263
+
+
+
+
+Standardizing Nomenclatures
+   in Radiation Oncology
+
+               The Report of AAPM
+                 Task Group 263
+                        January 2018
+
+
+
+
+ DISCLAIMER: This publication is based on sources
+ and information believed to be reliable, but the
+ AAPM, the authors, and the editors disclaim any war-
+ ranty or liability based on or relating to the contents of
+ this publication.
+
+
+ The AAPM does not endorse any products, manufac-
+ turers, or suppliers. Nothing in this publication should
+ be interpreted as implying such endorsement.
+
+
+
+
+       © 2018 by American Association of Physicists in Medicine
+This page intentionally left blank.
+                                     Standardizing Nomenclatures
+                                        in Radiation Oncology
+
+                              The Report of AAPM Task Group 263
+
+
+Charles S. Mayo, Chair                       Susan L. Richardson                             Thomas J. Fitzgerald
+University of Michigan,                      Swedish Medical Center,                         University of Massachusetts,
+Ann Arbor, Michigan                          Seattle, Washington                             Worcester, Massachusetts
+Jean M. Moran, Vice Chair                    Timothy Ritter                                  Andre L. Dekker
+University of Michigan,                      Hunter Holmes McGuire VA Medical                Department of Radiation Oncology
+Ann Arbor, Michigan                          Center, Richmond, Virginia                      (MAASTRO), GROW School for Oncology
+                                                                                             and Developmental Biology, Maastricht
+Walter Bosch                                 Tomasz Morgas                                   University Medical Centre+, Maastricht,
+Washington University, St. Louis, Missouri   Varian Medical Systems,                         The Netherlands
+                                             Palo Alto, California
+Ying Xiao                                                                                    Theodore Hong
+University of Pennsylvania,                  Stella Flampouri                                Massachusetts General Hospital,
+Philadelphia, Pennsylvania                   University of Florida, Jacksonville, Florida    Boston, Massachusetts
+Todd McNutt                                  Lakshmi Santanam                                Rishabh Kapoor
+                                             Washington University, St. Louis, Missouri      Virginia Commonwealth University,
+Johns Hopkins University,
+Baltimore, Maryland                          Joseph A. Moore                                 Richmond, Virginia
+                                             Johns Hopkins University,                       Beth Lansing
+Richard Popple                               Baltimore, Maryland
+University of Alabama at Birmingham,                                                         Elekta Corporation, St. Louis, Missouri
+Birmingham, Alabama                          Thomas G. Purdie                                Shruti Jolly
+                                             The Princess Margaret Cancer Center,
+Jeff Michalski                               Toronto, ON, Canada
+                                                                                             University of Michigan,
+Washington University, St. Louis, Missouri                                                   Ann Arbor, Michigan
+                                             Robert Miller                                   Mary E. Napolitano
+Mary Feng                                    Mayo Clinic, Jacksonville, Florida
+University of California San Francisco,                                                      Consultant, Suwanee, Georgia
+San Francisco, California                    Coen Hurkmans                                   James Percy
+                                             Catharina Hospital, Department of Radiation
+Lawrence B. Marks                            Oncology, Eindhoven, The Netherlands            Elekta Corporation, St. Louis, Missouri
+University of North Carolina,                                                                Mark S. Rose
+Chapel Hill, North Carolina                  Judy Adams
+                                             Massachusetts General Hospital,                 Sun Nuclear, Melbourne, Florida
+Clifton D. Fuller                            Boston, Massachusetts                           Salim Siddiqui
+MD Anderson Cancer Center,                                                                   Henry Ford Health System,
+Houston, Texas                               Qing-Rong Jackie Wu
+                                             Duke University, Durham, North Carolina         Detroit, Michigan
+Ellen Yorke                                                                                  Christof Schadt
+Memorial Sloan Kettering Cancer Center,      Colleen J. Fox
+                                             Dartmouth-Hitchcock Medical Center,             Brain Lab, Chicago, Illinois
+New York, New York
+                                             Lebanon, New Hampshire                          William E. Simon
+Jatinder Palta                               Ramon Alfredo Siochi                            Sun Nuclear Corporation,
+Virginia Commonwealth University,                                                            Melbourne, Florida
+                                             West Virginia University,
+Richmond, Virginia
+                                             Morgantown, West Virginia
+                                                                                             William L. Straube
+Peter E. Gabriel                             Norman L. Brown                                 Washington University, St. Louis, Missouri
+University of Pennsylvania,                  Baptist Medical Center, Jacksonville, Florida
+Philadelphia, Pennsylvania                                                                   Sara T. St. James
+                                             Wilko Verbakel                                  University of Washington,
+Andrea Molineu                               VU University Medical Center,                   Seattle, Washington
+MD Anderson Cancer Center,                   Amsterdam, Netherlands
+Houston, Texas                                                                               Kenneth Ulin
+                                             Yves Archambault                                University of Massachusetts,
+Martha M. Matuszak                           Varian Medical Systems,                         Worcester, Massachusetts
+University of Michigan,                      Palo Alto, California
+Ann Arbor, Michigan                                                                          Sue S. Yom
+                                             Steven J. Chmura                                University of California San Francisco,
+Elizabeth Covington                          University of Chicago, Chicago, Illinois        San Francisco, California
+Birmingham, Alabama
+                                             Don G. Eagle                                    Torunn Yock
+Kathryn Masi                                 Northwest Medical Physics Center,               Massachusetts General Hospital,
+Karmanos Cancer Center, Detroit, Michigan    Lynnwood, Washington                            Boston, Massachusetts
+DISCLAIMER: This publication is based on sources and information believed to be reliable,
+     but the AAPM, the authors, and the publisher disclaim any warranty or liability
+                based on or relating to the contents of this publication.
+
+  The AAPM does not endorse any products, manufacturers, or suppliers. Nothing in this
+          publication should be interpreted as implying such endorsement.
+
+
+
+
+                               ISBN: 978-1-936366-61-3
+                                  ISSN: 0271-7344
+
+
+               © 2018 by American Association of Physicists in Medicine
+
+                                   All rights reserved
+
+
+
+
+                                      Published by
+
+                     American Association of Physicists in Medicine
+                                  1631 Prince Street
+                                Alexandria, VA 22314
+                                                 THE REPORT OF AAPM TASK GROUP 263:
+                                               Standardizing Nomenclatures in Radiation Oncology
+
+
+
+
+                                                                        Contents
+
+1.    Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.    Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+      2.1      Data Pooling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+      2.2      Facilitating Communication During Routine Care . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+      2.3      Automatic Data Extraction and Exchange. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+      2.4      Challenges Despite Some Progress . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3.    Task Group Initiation and Membership . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.    Initial Evaluation of Current Nomenclature Practices . . . . . . . . . . . . . . . . . . . . 9
+      4.1      Dose and Volume Units . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+      4.2      Non-Target Structure Nomenclature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+      4.3      Nomenclature for Target Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+      4.4      Derived and Planning Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+      4.5      Vendor and DICOM Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5.    Related Standards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+      5.1      Foundational Model of Anatomy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+      5.2      SNOMED CT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+      5.3      DICOM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+               5.3.1 DICOM Structure Interpreted Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+               5.3.2 DICOM Dose and Imaging Information Specification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+               5.3.3 Other Considerations for DICOM Dose and Imaging Specification . . . . . . . . . . . . . . . . . . . . . 15
+6.    Color Specification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+7.    Recommendations for Non-Target Structure Nomenclature. . . . . . . . . . . . . . 16
+      7.1      Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+      7.2      Guiding Principles for Non-Target Nomenclature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+      7.3      Structure Nomenclature List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+8.    Recommendations for Target Structure Nomenclature . . . . . . . . . . . . . . . . . . 20
+      8.1      Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+      8.2      Guiding Principles for Target Nomenclature. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+9.    Recommendations for Dose Volume Histogram Metrics . . . . . . . . . . . . . . . . . 23
+      9.1      Approach . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+      9.2      Guidelines for DVH Curve Metrics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+10. Recommendations for Distinguishing Metrics of Segmented vs
+    Non-Segmented Target Structures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+11. Recommendations to Vendors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+12. Nomenclature Pilot Study Design and Results. . . . . . . . . . . . . . . . . . . . . . . . . . 30
+      12.1 Pilot Study Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+      12.2 Pilot Study Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+13.   Recommendations for Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+14.   Recommendations for Clinical Trial Study Groups . . . . . . . . . . . . . . . . . . . . . . 33
+15.   Recommendations for Working Group to Succeed Task Group. . . . . . . . . . . . 33
+16.   Summary of Key Take-Home Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+17.   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+18.   References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+
+                                                                                  5
+                                 THE REPORT OF AAPM TASK GROUP 263:
+                               Standardizing Nomenclatures in Radiation Oncology
+
+
+
+
+1. Introduction
+The radiation oncology community can benefit from standardized nomenclatures applied to targets,
+normal tissue structures, and treatment planning concepts and metrics. Such conformity enhances
+safety and quality efforts within and between clinics for routine ongoing practice, and it enables data
+pooling for outcomes research, registries, and clinical trials. Standardization is a vital precursor to the
+development of scalable uses of scripting for quality assurance and treatment plan evaluation3,22,23.
+Increased clarity and consistency through standardizing nomenclatures in these areas would provide
+broad benefits.
+    The charge of AAPM Task Group 263 is to provide nomenclature guidelines in radiation oncology
+for use in clinical trials, data-pooling initiatives, population-based studies, and routine clinical care by
+standardizing:
+    1. structure names across image processing and treatment planning system platforms;
+    2. nomenclature for dosimetric data (e.g., dose/volume histogram [DVH]-based metrics);
+    3. templates for clinical trial groups and users of an initial subset of software platforms to facili-
+       tate adoption of the standards
+(Content truncated due to size limit. Use line ranges to read in chunks)

@@ -1,0 +1,183 @@
+Tolerance limits and methodologies for IMRT measurement-based veriﬁcation
+QA: Recommendations of AAPM Task Group No. 218
+        Moyed Miftena)
+        Department of Radiation Oncology, University of Colorado School of Medicine, Aurora, CO, USA
+        Arthur Olch
+        Department of Radiation Oncology, University of Southern California and Radiation Oncology Program, Childrens Hospital of Los
+        Angeles, Los Angeles, CA, USA
+        Dimitris Mihailidis
+        Department of Radiation Oncology, University of Pennsylvania, Perelman Center for Advanced Medicine, Philadelphia, PA, USA
+        Jean Moran
+        Department of Radiation Oncology, University of Michigan, Ann Arbor, MI, USA
+
+        Todd Pawlicki
+        Department of Radiation Oncology, University of California San Diego, La Jolla, CA, USA
+        Andrea Molineu
+        Radiological Physics Center, UT MD Anderson Cancer Center, Houston, TX, USA
+        Harold Li
+        Department of Radiation Oncology, Washington University, St. Louis, MO, USA
+        Krishni Wijesooriya
+        Department of Radiation Oncology, University of Virginia, Charlottesville, VA, USA
+        Jie Shi
+        Sun Nuclear Corporation, Melbourne, FL, USA
+
+        Ping Xia
+        Department of Radiation Oncology, The Cleveland Clinic, Cleveland, OH, USA
+
+        Nikos Papanikolaou
+        Department of Medical Physics, University of Texas Health Sciences Center, San Antonio, TX, USA
+        Daniel A. Low
+        Department of Radiation Oncology, University of California Los Angeles, Los Angeles, CA, USA
+        (Received 7 July 2017; revised 10 December 2017; accepted for publication 11 January 2018;
+        published 23 March 2018)
+        Purpose: Patient-specific IMRT QA measurements are important components of processes designed
+        to identify discrepancies between calculated and delivered radiation doses. Discrepancy tolerance
+        limits are neither well defined nor consistently applied across centers. The AAPM TG-218 report
+        provides a comprehensive review aimed at improving the understanding and consistency of these
+        processes as well as recommendations for methodologies and tolerance limits in patient-specific
+        IMRT QA.
+        Methods: The performance of the dose difference/distance-to-agreement (DTA) and c dose distribu-
+        tion comparison metrics are investigated. Measurement methods are reviewed and followed by a dis-
+        cussion of the pros and cons of each. Methodologies for absolute dose verification are discussed and
+        new IMRT QA verification tools are presented. Literature on the expected or achievable agreement
+        between measurements and calculations for different types of planning and delivery systems are
+        reviewed and analyzed. Tests of vendor implementations of the c verification algorithm employing
+        benchmark cases are presented.
+        Results: Operational shortcomings that can reduce the c tool accuracy and subsequent effec-
+        tiveness for IMRT QA are described. Practical considerations including spatial resolution, nor-
+        malization, dose threshold, and data interpretation are discussed. Published data on IMRT QA
+        and the clinical experience of the group members are used to develop guidelines and recom-
+        mendations on tolerance and action limits for IMRT QA. Steps to check failed IMRT QA
+        plans are outlined.
+        Conclusion: Recommendations on delivery methods, data interpretation, dose normalization, the
+        use of c analysis routines and choice of tolerance limits for IMRT QA are made with focus on detect-
+        ing differences between calculated and measured doses via the use of robust analysis methods and an
+
+e53   Med. Phys. 45 (4), April 2018    0094-2405/2018/45(4)/e53/31       © 2018 American Association of Physicists in Medicine    e53
+                                                                                                                                                         24734209, 2018, 4, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.12810, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+e54       Miften et al.: Tolerances and Methodologies for IMRT QA                                                                                  e54
+
+
+           in-depth understanding of IMRT verification metrics. The recommendations are intended to improve
+           the IMRT QA process and establish consistent, and comparable IMRT QA criteria among institu-
+           tions. © 2018 American Association of Physicists in Medicine [https://doi.org/10.1002/mp.12810]
+
+           Key words: c, DTA, IMRT QA, tolerance limits
+
+
+TABLE OF CONTENTS                                                            7. PROCESS-BASED TOLERANCE AND ACTION LIMITS
+                                                                             8. RECOMMENDATIONS
+                                                                                8.A. IMRT QA, tolerance limits, and action limits
+1. INTRODUCTION
+                                                                                8.B. Course of actions to check and evaluate failed or marginal IMRT
+   1.A. Background and importance                                                 QA results
+   1.B. Uncertainties in the IMRT planning and delivery process                   8.B.1. Setup and Beam
+   1.C. Tolerances and action limits                                              8.B.2. IMRT QA software
+2. DOSE DIFFERENCE, DTA, c ANALYSIS AND VERIFICATION                              8.B.3. Multileaf Collimator (MLC)
+METRICS
+                                                                                  8.B.4. Treatment planning system (TPS)
+   2.A. Challenges for comparing dose distributions
+                                                                             9. CONCLUSIONS
+   2.B. Dose difference test
+                                                                             ACKNOWLEGMENTS
+   2.C. DTA test
+                                                                             REFERENCES
+   2.D. Composite test
+   2.E. c test
+   2.F. Other tools
+   2.G. Practical considerations
+                                                                             1. INTRODUCTION
+      2.G.1. Normalization
+      2.G.2. Spatial resolution                                              1.A. Background and importance
+      2.G.3. Interpretation
+                                                                                 The idea of conformal radiotherapy using intensity modula-
+3. REVIEW OF MEASUREMENT METHODS
+                                                                             tion was presented in the early 1990s1–3 with delivery systems
+   3.A. True composite (TC)
+                                                                             first contemplated and shortly thereafter developed.4,5 By the
+      3.A.1. Advantages and disadvantages
+                                                                             mid 1990s, reports of the first clinical experience with intensity
+   3.B. Perpendicular field-by-field (PFF)
+                                                                             modulated radiation therapy (IMRT) were published6,7 with the
+     3.B.1. Advantages and disadvantages
+                                                                             commissioning and quality assurance (QA) of such systems
+   3.C. Perpendicular composite (PC)
+                                                                             published simultaneously.8,9 IMRT delivery techniques can be
+      3.C.1. Advantages and disadvantages
+                                                                             divided into two broad categories, fixed and moving gantry.
+   3.D. Method selection
+                                                                             Fixed-gantry IMRT delivery employs step-and-shoot (or seg-
+4. REVIEW OF METHODOLOGIES FOR ABSOLUTE DOSE
+                                                                             mental), sliding window (dynamic), or compensator-based
+VERIFICATION
+                                                                             methods. Moving gantry IMRT delivery includes spiral or
+   4.A. Single-point (small-averaged volume) method
+                                                                             sequential tomotherapy4,10 and volumetric modulated arc ther-
+   4.B. 2D methods
+                                                                             apy (VMAT). The tomotherapy technique uses specialized bin-
+   4.C. 3D methods
+                                                                             ary multileaf collimators (MLCs), with only open and closed
+   4.D. Comparison of single-point, 2D, and 3D methods
+                                                                             positions. VMAT requires dynamic MLC delivery along with
+   4.E. Reconstruction methods
+                                                                             continuously variable or quantized dose rate and gantry
+      4.E.1. Forward calculation algorithm
+                                                                             motion.11–13 IMRT dose distributions are typically much more
+      4.E.2. Plan dose perturbation
+                                                                             heterogeneous than those of three-dimensional (3D) plans,
+      4.E.3. 3D reconstruction in phantom
+                                                                             employing complex fields that incorporate different degrees of
+     4.E.4. Per-fraction patient transmission-based QA
+                                                                             modulation. Since the inception of IMRT, procedures for the
+5. REVIEW OF REPORTED IMRT MEASURED VS. CALCULATED
+AGREEMENT                                                                    delivery system and patient-specific IMRT plan QA have
+   5.A. Delivery methods                                                     emerged10 based on measurement and calculation techniques
+      5.A.1. Fixed-gantry IMRT                                               including independent monitor unit (MU) calculations for
+      5.A.2. Volumetric modulated arc radiotherapy                           IMRT.14 IMRT QA verification is an important process
+      5.A.3. Flattening filter free IMRT                                     employed to check the accuracy of IMRT plan dose calculations
+     5.A.4. Tomotherapy                                                      and to detect clinically relevant errors in the radiation delivery,
+   5.B. Considerations when using the c test passing rates for evaluation    thereby ensuring the safety of patients and fidelity of treatment.
+   5.C. Passing rates for given tolerances and corresponding action limits       Several components must be addressed when clinically
+6. VENDOR SURVEY AND ALGORITHM TESTING                                       implementing IMRT such as acceptance and commissioning
+   6.A. Vendor survey                                                        of the delivery device and treatment planning system (TPS),
+   6.B. Testing of vendors algorithms                                        and development and implementation of a comprehensive
+                                                                             IMRT QA program. An early American Association of
+
+
+Medical Physics, 45 (4), April 2018
+                                                                                                                                      24734209, 2018, 4, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.12810, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+e55     Miften et al.: Tolerances and Methodologies for IMRT QA                                                                e55
+
+
+Physicists in Medicine (AAPM) report on IMRT clinical                  To review commonly used measurement methods: com-
+implementation described delivery systems and pretreatment              posite of all beams using the actual treatment parameters,
+QA.15 In 2009, additional details concerning IMRT commis-               perpendicular composite, and perpendicular field-by-
+sioning were addressed including tests and sample accuracy              field. Discuss pros and cons of each method.
+results for different IMRT planning and delivery systems.16 In         To review single-point (small-averaged volume), 1D
+2011, strengths and weaknesses of different dosimetric tech-            and 2D analysis methodologies for absolute dose verifi-
+niques and the acquisition of accurate data for commissioning           cation with ion chamber and 2D detector arrays, mainly
+patient-specific measurements were addressed.17 A compre-               performed with dose differences comparison, distance-
+hensive White Paper on safety considerations in IMRT was                to-agreement (DTA) comparison between measured
+also published, which clearly specified that pretreatment vali-         and calculated dose distributions, and a combination of
+dations were necessary18 for patient safety, but the goal of the        these two metrics (c method).
+White Paper was not to explicitly address how that validation          To investigate the dose difference/DTA and c verifica-
+should be done. Other possibilities besides measurements                tion metrics, their use and vendor-implementation vari-
+have been published including, independent computer calcu-              ability, including the choice of various parameters used
+lations, check-sum approaches, and log file analysis.14,19–24           to perform the IMRT QA analysis.
+Several professional organizations [AAPM, American Col-
+lege of Radiology (ACR), American Society for Radiation               The objective of this report is to address these charges.
+Oncology (ASTRO)]15,16,18,25 have strongly recommended             The report provides recommendations on tolerance limits and
+patient-specific IMRT QA be employed as part of the clinical       measurement methods. Specifically, various measurement
+IMRT process. A series of New York Times articles high-            methods are reviewed and discussed. The dose difference/
+lighted to the general public the hazard to patients when          DTA and c verification metrics are examined in-depth. Data
+patient-specific IMRT QA was not performed after a change          on the expected or achievable agreement between measure-
+to a patient’s treatment plan was made.26,27                       ments and calculations for different types of planning and
+    While the value of patient-specific IMRT QA has been           delivery systems are reviewed. Results from a test suite devel-
+debated among physicists,19,28–30 especially whether compu-        oped by TG-218 to evaluate vendors’ dose comparison soft-
+tational methods can replace physical measurements, mea-           ware under well-regulated conditions are presented.
+surement-based patient-specific IMRT QA methods are                Recommendations on the use of c analysis routines and
+widely used and are the core element of most IMRT QA pro-          choice of tolerance limits are made.
+grams. In many centers, a QA measurement is routinely per-
+formed after a patient’s IMRT plan is created and approved
+                                                                   1.B. Uncertainties 
+(Content truncated due to size limit. Use line ranges to read in chunks)

@@ -1,0 +1,153 @@
+QA for helical tomotherapy: Report of the AAPM Task Group 148a…
+        Katja M. Langenb兲
+        Department of Radiation Oncology, M. D. Anderson Cancer Center Orlando, Orlando, Florida 32806
+        Niko Papanikolaou
+        Department of Radiation Oncology, Cancer Therapy and Research Center, University of Texas Health
+        Science Center at San Antonio, San Antonio, Texas 78229
+        John Balog
+        Mohawk Valley Medical Physics, Rome, New York 13440
+        Richard Crilly
+        Department of Radiation Medicine, Oregon Health and Science University, Portland, Oregon 97239
+        David Followill
+        Section of Outreach Physics, University of Texas M. D. Anderson Cancer Center, Houston, Texas 77030
+        S. Murty Goddu
+        Department of Radiation Oncology, Washington University School of Medicine, St. Louis, Missouri 63110
+        Walter Grant III
+        Department of Radiology/Section of Radiation Oncology, Baylor College of Medicine, Methodist Hospital,
+        Houston, Texas 77030
+        Gustavo Olivera
+        TomoTherapy, Inc., Madison, Wisconsin 53717 and Department of Medical Physics,
+        University of Wisconsin, Madison, Wisconsin 53706
+        Chester R. Ramsey
+        Thompson Cancer Survival Center, Knoxville, Tennessee 37916
+        Chengyu Shi
+        Department of Radiation Oncology, Cancer Therapy and Research Center, University of Texas Health
+        Science Center at San Antonio, San Antonio, Texas 78229
+        共Received 9 February 2010; revised 27 April 2010; accepted for publication 15 June 2010;
+        published 20 August 2010兲
+        Helical tomotherapy is a relatively new modality with integrated treatment planning and delivery
+        hardware for radiation therapy treatments. In view of the uniqueness of the hardware design of the
+        helical tomotherapy unit and its implications in routine quality assurance, the Therapy Physics
+        Committee of the American Association of Physicists in Medicine commissioned Task Group 148
+        to review this modality and make recommendations for quality assurance related methodologies.
+        The specific objectives of this Task Group are: 共a兲 To discuss quality assurance techniques, fre-
+        quencies, and tolerances and 共b兲 discuss dosimetric verification techniques applicable to this unit.
+        This report summarizes the findings of the Task Group and aims to provide the practicing clinical
+        medical physicist with the insight into the technology that is necessary to establish an independent
+        and comprehensive quality assurance program for a helical tomotherapy unit. The emphasis of the
+        report is to describe the rationale for the proposed QA program and to provide example tests that
+        can be performed, drawing from the collective experience of the task group members and the
+        published literature. It is expected that as technology continues to evolve, so will the test procedures
+        that may be used in the future to perform comprehensive quality assurance for helical tomotherapy
+        units. © 2010 American Association of Physicists in Medicine. 关DOI: 10.1118/1.3462971兴
+
+        Key words: helical tomotherapy, quality assurance
+
+        We dedicate this task group report to the memory of Sam Jeswani. Sam was a great enthusiast of
+        the tomotherapy technology and a tireless customer champion. Sam was the Director of Customer
+        Relations at TomoTherapy, Inc. and a friend to many of us. Sam died during the terrorist attacks in
+        Mumbai in November 2008.
+
+
+
+4817   Med. Phys. 37 „9…, September 2010         0094-2405/2010/37„9…/4817/37/$30.00        © 2010 Am. Assoc. Phys. Med.   4817
+                                                                                                                                                          24734209, 2010, 9, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.3462971, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+4818         Langen et al.: TG-148                                                                                                                4818
+
+
+TABLE OF CONTENTS                                                                     I. INTRODUCTION
+
+                                                                                      Task Group Report 40 outlines a comprehensive quality as-
+I. INTRODUCTION. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4818           surance 共QA兲 program in radiation oncology that applies to
+II. GLOSSARY AND ABBREVIATIONS. . . . . . . . . . . 4819                              any external beam radiation therapy equipment.1 A code of
+III. SYSTEM OVERVIEW. . . . . . . . . . . . . . . . . . . . . . . 4820                practice specific to radiotherapy accelerators is provided by
+                                                                                      Task Group Report 45.2 Both reports are comprehensive in
+IV. SYSTEM SPECIFIC ACCEPTANCE AND
+                                                                                      nature and supply fundamental guidelines to the medical
+     COMMISSIONING ASPECTS. . . . . . . . . . . . . . . . 4821
+                                                                                      physics community.
+V. TREATMENT DELIVERY FOR HELICAL                                                         With the introduction of new technology into the field of
+    TOMOTHERAPY. . . . . . . . . . . . . . . . . . . . . . . . . . . 4822             radiation oncology, a need arises to provide guidelines that
+    V.A. Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4822     are tailored to these newer treatment modalities. The quality
+      V.A.1. Unique aspects of helical tomotherapy                                    assurance of newer technologies is addressed in Task Group
+             treatment delivery. . . . . . . . . . . . . . . . . . . . 4822           Report 142.3 While TG-142 provides the foundation for QA
+    V.B. Periodic quality assurance. . . . . . . . . . . . . . . . 4823               guidelines of newer technologies, there are several commer-
+      V.B.1. Mechanical alignments. . . . . . . . . . . . . . . . 4823                cially available technologies that are sufficiently different
+      V.B.2. Beam parameters. . . . . . . . . . . . . . . . . . . . . 4826            from C-arm type accelerators and require a unique set of QA
+      V.B.3. Synchrony tests. . . . . . . . . . . . . . . . . . . . . . 4830          recommendations. One such technology is helical tomo-
+      V.B.4. Miscellaneous aspects. . . . . . . . . . . . . . . . . 4830              therapy. It is therefore the intent of this Task Group Report to
+      V.B.5. Calibration. . . . . . . . . . . . . . . . . . . . . . . . . . 4831      provide QA guidelines for helical tomotherapy that, while
+VI. TREATMENT IMAGING FOR HELICAL                                                     based on TG-142 guidelines, are specifically adapted to this
+     TOMOTHERAPY. . . . . . . . . . . . . . . . . . . . . . . . . . 4834              technology.
+   VI.A. Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4834         There are a fair number of the TG-142 QA recommenda-
+    VI.A.1. Unique aspects of megavoltage CT                                          tions that can be directly applied to helical tomotherapy 共e.g.,
+             imaging. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4835    output constancy兲. Whenever possible, guidelines from TG-
+   VI.B. Periodic quality assurance. . . . . . . . . . . . . . . . 4835               142 and other relevant task group reports have been adopted
+     VI.B.1. Spatial/geometry tests. . . . . . . . . . . . . . . . . 4835             in this report. However, several traditional QA recommenda-
+     VI.B.2. Image quality tests. . . . . . . . . . . . . . . . . . . . 4837          tions are not applicable 共e.g., light field tests兲 to helical to-
+     VI.B.3. MVCT dosimetry. . . . . . . . . . . . . . . . . . . . . 4838             motherapy. On the other hand, important aspects of the to-
+     VI.B.4. Image export for analysis. . . . . . . . . . . . . . 4839                motherapy treatment modality are not tested with traditional
+VII. TREATMENT PLANNING FOR HELICAL                                                   QA tests. This Task Group Report provides a comprehensive
+      TOMOTHERAPY. . . . . . . . . . . . . . . . . . . . . . . . . . 4839             set of recommendations on all aspects of the helical tomo-
+  VII.A. Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . 4839     therapy system that should be tested and the respective rec-
+   VII.A.1. Unique aspects of helical tomotherapy                                     ommended test frequencies. References to existing Task
+             treatment planning. . . . . . . . . . . . . . . . . . . . 4839           Group Reports are made throughout this report where appro-
+  VII.B. Periodic quality assurance. . . . . . . . . . . . . . . . 4840               priate. General QA guidelines such as the establishment of a
+                                                                                      departmental comprehensive QA program, as described in
+    VII.B.1. Geometric validation tests. . . . . . . . . . . . . . 4840
+                                                                                      TG-40 are not discussed in this report.
+    VII.B.2. Dosimetric validation tests. . . . . . . . . . . . . 4841
+                                                                                          Helical tomotherapy is an intensity modulated radiation
+    VII.B.3. Clinical treatment plan QA. . . . . . . . . . . . . 4841
+                                                                                      therapy 共IMRT兲 delivery technique that was developed at the
+  VII.C. MVCT-based treatment planning. . . . . . . . . . . 4845
+                                                                                      University of Wisconsin-Madison and was later commercial-
+VIII. SUMMARY AND RECOMMENDATIONS. . . . 4845                                         ized by TomoTherapy, Inc. of Madison, Wisconsin.4 Tomo-
+VIII.A. Daily. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4845   Therapy, Inc. is the only vendor that markets and manufac-
+ VIII.B. Monthly. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4845    tures treatment units that use this delivery process.
+ VIII.C. Quarterly. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4845    Procedures and recommendations discussed in this report are
+VIII.D. Annual. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4845    therefore specific to TomoTherapy’s treatment units. Tomo-
+ VIII.E. Major component replacement. . . . . . . . . . . . . 4845                    Therapy units combine IMRT treatment delivery and mega-
+APPENDIX A: WORKSHEET A: HELICAL                                                      voltage computed tomography 共MVCT兲 imaging capabili-
+TOMOTHERAPY PHOTON BEAM                                                               ties. The units were introduced into clinical routine in 2003.
+CALIBRATION. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4851         Currently, more than 280 units have been installed world-
+APPENDIX B: NOTE ON CONTROL XML FILES                                                 wide. It is anticipated that additional Tomotherapy-specific
+AND CONTROL SINOGRAMS. . . . . . . . . . . . . . . . . . 4851                         treatment techniques will be developed in the future. Static
+                                                                                      gantry angle and dynamic y-jaw modes are currently under
+APPENDIX C: RADIATION SAFETY. . . . . . . . . . . . . 4851
+                                                                                      development. These techniques are not considered in this
+APPENDIX D: EXAMPLE OF DAILY TEST                                                     report. Quality assurance procedures specific to these tech-
+PROCEDURES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4851        niques will have to be developed once those techniques be-
+APPENDIX E: PATIENT ARCHIVES. . . . . . . . . . . . . 4851                            come commercially available.
+APPENDIX F: TREATMENT PLANNING TIPS. . . . 4851                                           In this Task Group Report, an overview of the Tomo-
+
+Medical Physics, Vol. 37, No. 9, September 2010
+                                                                                                                                                      24734209, 2010, 9, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1118/1.3462971, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+4819        Langen et al.: TG-148                                                                                                              4819
+
+
+
+
+                                                                                          FIG. 2. The coordinate system used by TomoTherapy.
+
+
+FIG. 1. Top row: Drawing and picture of a front view of the vendor supplied
+Virtual Water™ phantom. Each of the black circles 共e.g., arrow 1兲 contains a     anatomy is typically a phantom. The DQA plan can then be
+Virtual Water™ plug that can be removed 共arrow 2兲 for ion chamber inser-
+tion. The picture of the front view shows the phantom with a film inserted in    delivered and the measured dose in the phantom can be com-
+the coronal plane and an ion chamber located above the film plane. Lower         pared to the calculated dose for quality assurance.
+row: Drawing and picture of the back view of the phantom. There are 20               Field width/slice width: The longitudinal extent 共i.e., in
+holes for insertion of test plugs. All holes can be filled with Virtual Water™   y-direction兲 of the fan beam is frequently referred to as field
+plugs or with a set of density calibration plugs as shown in the photo.
+Resolution and ion chamber plugs are also available.                             width in the literature. In this document, we follow the nor-
+                                                                                 mal diagnostic radiology convention and use the term “slice
+                                                                                 width” to refer to the longitudinal extent of the treatment
+Therapy system and its unique aspects is provided. Delivery,                     field.
+imaging, and treatment planning quality assurance are dis-                           Helical tomotherapy: The specific delivery technique.
+cussed in three chapters of this report. Quality assurance as-                       Modulation factor: Longest leaf opening time in a plan
+pects are summarized according to their recommended fre-                         divided by the average opening time of all nonzero leaf
+quency in Sec. VIII. The Appendix contains a collection of                       opening times.
+useful discussions that we hope will be of interest to the                           MVCT: Megavoltage computed tomography.
+practicing medical physicist.                                                        Output: The TomoTherapy plans are based on time rather
+                                                                                 than on mon
+(Content truncated due to size limit. Use line ranges to read in chunks)

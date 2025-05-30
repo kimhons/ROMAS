@@ -1,0 +1,321 @@
+The report of Task Group 100 of the AAPM: Application of risk
+analysis methods to radiation therapy quality management
+M. Saiful Huqa)
+Department of Radiation Oncology, University of Pittsburgh Cancer Institute and UPMC CancerCenter,
+Pittsburgh, Pennsylvania 15232
+
+Benedick A. Fraass
+Department of Radiation Oncology, Cedars-Sinai Medical Center, Los Angeles, California 90048
+
+Peter B. Dunscombe
+Department of Oncology, University of Calgary, Calgary T2N 1N4, Canada
+
+John P. Gibbons, Jr.
+Ochsner Health System, New Orleans, Louisiana 70121
+
+Geoffrey S. Ibbott
+Department of Radiation Physics, UT MD Anderson Cancer Center, Houston, Texas 77030
+
+Arno J. Mundt
+Department of Radiation Medicine and Applied Sciences, University of California San Diego, San Diego,
+California 92093-0843
+
+Sasa Mutic
+Department of Radiation Oncology, Washington University School of Medicine, St. Louis, Missouri 63110
+
+Jatinder R. Palta
+Department of Radiation Oncology, Virginia Commonwealth University, P.O. Box 980058, Richmond, Virginia
+23298
+
+Frank Rath
+Department of Engineering Professional Development, University of Wisconsin, Madison, Wisconsin 53706
+
+Bruce R. Thomadsen
+Department of Medical Physics, University of Wisconsin, Madison, Wisconsin 53705-2275
+
+Jeffrey F. Williamson
+Department of Radiation Oncology, Virginia Commonwealth University, Richmond, Virginia 23298-0058
+
+Ellen D. Yorke
+Department of Medical Physics, Memorial Sloan-Kettering Center, New York, New York 10065
+
+(Received 13 May 2015; revised 13 March 2016; accepted for publication 14 March 2016;
+published 15 June 2016)
+The increasing complexity of modern radiation therapy planning and delivery challenges traditional
+prescriptive quality management (QM) methods, such as many of those included in guidelines
+published by organizations such as the AAPM, ASTRO, ACR, ESTRO, and IAEA. These prescriptive
+guidelines have traditionally focused on monitoring all aspects of the functional performance of
+radiotherapy (RT) equipment by comparing parameters against tolerances set at strict but achievable
+values. Many errors that occur in radiation oncology are not due to failures in devices and software;
+rather they are failures in workflow and process. A systematic understanding of the likelihood and
+clinical impact of possible failures throughout a course of radiotherapy is needed to direct limit QM
+resources efficiently to produce maximum safety and quality of patient care. Task Group 100 of
+the AAPM has taken a broad view of these issues and has developed a framework for designing
+QM activities, based on estimates of the probability of identified failures and their clinical outcome
+through the RT planning and delivery process. The Task Group has chosen a specific radiotherapy
+process required for “intensity modulated radiation therapy (IMRT)” as a case study. The goal of
+this work is to apply modern risk-based analysis techniques to this complex RT process in order
+to demonstrate to the RT community that such techniques may help identify more effective and
+efficient ways to enhance the safety and quality of our treatment processes. The task group generated
+by consensus an example quality management program strategy for the IMRT process performed
+at the institution of one of the authors. This report describes the methodology and nomenclature
+developed, presents the process maps, FMEAs, fault trees, and QM programs developed, and makes
+suggestions on how this information could be used in the clinic. The development and implementation
+
+4209
+
+Med. Phys. 43 (7), July 2016
+
+0094-2405/2016/43(7)/4209/54/$30.00
+
+© 2016 Am. Assoc. Phys. Med.
+
+4209
+
+4210
+
+Huq et al.: TG 100 report
+
+4210
+
+of risk-assessment techniques will make radiation therapy safer and more efficient. C 2016 American
+Association of Physicists in Medicine. [http://dx.doi.org/10.1118/1.4947547]
+Key words: process mapping, FMEA, FTA, risk-based-QM program
+TABLE OF CONTENTS
+1 PREFACE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4211
+1.A Guide to readers and regulators on use of
+the Task Group-100 report . . . . . . . . . . . . . . . . 4211
+1.A.1 Developing prospective approaches
+to radiotherapy quality management. 4211
+1.A.2 Reading and using the TG-100
+report . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4212
+1.A.3 Suggestions for regulators and
+regulations related to prospective
+radiotherapy quality management
+programs based on TG-100
+recommendations . . . . . . . . . . . . . . . . . 4212
+1.A.4 Important guidance in following the
+methodology in this report . . . . . . . . . 4213
+1.A.5 Highlighted recommendations to
+the AAPM to facilitate the use of
+the TG-100 methodology . . . . . . . . . . 4213
+2 CHARGE AND SCOPE OF THE REPORT . . . . . . . 4213
+3 PROBLEMS WITH TRADITIONAL
+APPROACHES TO QUALITY MANAGEMENT
+IN RADIATION THERAPY . . . . . . . . . . . . . . . . . . . . 4214
+3.A Need to address the treatment processes
+comprehensively . . . . . . . . . . . . . . . . . . . . . . . . . 4214
+3.B Excessive demand on physics resources . . . . 4214
+3.C Difficulty in developing a QM protocol that
+covers all permutations in clinical practice . . 4215
+3.D Delays in establishing accepted QM
+protocols for emerging technologies and
+associated processes . . . . . . . . . . . . . . . . . . . . . . 4215
+4 QUALITY AND SAFETY: AN OVERVIEW . . . . . 4215
+4.A Quality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4215
+4.B Quality management: Components,
+functions, and tools . . . . . . . . . . . . . . . . . . . . . . 4216
+4.C Reactive approaches to safety . . . . . . . . . . . . . 4217
+4.D Prospective approaches to safety . . . . . . . . . . . 4217
+5 TG-100 RISK ANALYSIS METHODOLOGY . . . . 4218
+5.A Process mapping . . . . . . . . . . . . . . . . . . . . . . . . . 4218
+5.B Failure modes and effects analysis . . . . . . . . . 4218
+5.C Fault tree analysis . . . . . . . . . . . . . . . . . . . . . . . . 4222
+6 TG-100 METHODOLOGY FOR DESIGNING
+QUALITY MANAGEMENT PROGRAMS IN
+RADIATION THERAPY . . . . . . . . . . . . . . . . . . . . . . . 4223
+6.A Establishing the goals of the QM program . . 4223
+6.B Prioritizing the potential failure modes
+based on RPN and severity functions . . . . . . . 4224
+6.C Marking the riskiest and most severe steps
+in the process . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4224
+6.D Marking the same highest ranked steps on
+the fault tree . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4224
+Medical Physics, Vol. 43, No. 7, July 2016
+
+6.E Selecting QM intervention placement . . . . . . 4224
+6.F Selection of appropriate quality
+management tools . . . . . . . . . . . . . . . . . . . . . . . . 4224
+7 COMPARISON WITH PREVIOUS WORK . . . . . . 4226
+8 RECOMMENDATIONS FOR APPLYING RISK
+ANALYSES IN RADIATION THERAPY . . . . . . . . 4228
+8.A To individual clinics . . . . . . . . . . . . . . . . . . . . . . 4228
+8.B To AAPM and other organizations . . . . . . . . . 4231
+8.C Future research and development . . . . . . . . . . 4232
+8.C.1 Assessment of FMEA/FTA
+generality and optimal
+implementation in individual clinics. 4232
+8.C.2 Sensitivity, error propagation, and
+process control studies . . . . . . . . . . . . . 4232
+8.C.3 Observational studies and risk
+analysis validation . . . . . . . . . . . . . . . . . 4233
+8.C.4 Incident reporting and taxonomic
+analyses . . . . . . . . . . . . . . . . . . . . . . . . . . 4233
+9 EXAMPLE APPLICATION OF TG-100
+METHODOLOGY TO IMRT . . . . . . . . . . . . . . . . . . . 4234
+9.A Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4234
+9.B TG-100 risk analysis of a generic IMRT
+clinical process . . . . . . . . . . . . . . . . . . . . . . . . . . 4234
+9.B.1 IMRT process mapping . . . . . . . . . . . . 4234
+9.B.2 IMRT failure modes and effects
+analysis . . . . . . . . . . . . . . . . . . . . . . . . . . 4236
+9.B.2.a Assignment of O, S, and D
+values. . . . . . . . . . . . . . . . . . . . 4236
+9.B.2.b Method of analysis. . . . . . . . 4236
+9.B.2.c Results. . . . . . . . . . . . . . . . . . . 4237
+9.B.3 IMRT Fault Tree Analysis (FTA) . . . 4239
+9.B.3.a General features of the
+fault tree derived from the
+TG-100 FMEA. . . . . . . . . . . . 4239
+9.B.3.b Simple example of FTA
+guidance in QM design. . . . 4240
+9.B.3.c Suggested use of FTA. . . . . . 4241
+9.C Risk-informed design of IMRT QM
+programs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4242
+9.C.1 Discussion of top ranked failure
+modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4242
+9.C.2 Failure mode #1 . . . . . . . . . . . . . . . . . . . 4242
+9.C.3 Failure mode #2 . . . . . . . . . . . . . . . . . . . 4243
+9.C.4 Failure mode #3 . . . . . . . . . . . . . . . . . . . 4244
+9.C.4.a Example method for
+determination of
+tolerances and frequencies
+for QA tests of Linac
+output. . . . . . . . . . . . . . . . . . . . 4245
+
+4211
+
+Huq et al.: TG 100 report
+
+9.C.4.b Other dosimetric and
+geometric performance
+endpoints. . . . . . . . . . . . . . . . . 4246
+9.D Additional observations from the TG-100
+analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4247
+9.D.1 Failure mode #11. . . . . . . . . . . . . . . . .. 4247
+9.D.2 Failure mode #14. . . . . . . . . . . . . . . . .. 4249
+9.D.3 Failure mode #24. . . . . . . . . . . . . . . . .. 4250
+9.D.4 Failure mode #32. . . . . . . . . . . . . . . . .. 4251
+9.D.5 Failure mode #153 . . . . . . . . . . . . . . . . 4251
+9.E Quality management program components . 4252
+9.F Summary and conclusions: IMRT example . 4253
+10 CONCLUSIONS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4254
+ACKNOWLEDGMENTS . . . . . . . . . . . . . . . . . . . . . . . 4254
+APPENDIX A: PRACTICAL GUIDES TO
+PERFORMING FMEA, FTA . . . . . . . . . . . . . . . . . . . . 4254
+1 Guidelines for applying risk assessment,
+industrial quality management tools, and
+techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4254
+a Performing a process analysis and
+risk assessment . . . . . . . . . . . . . . . . . . . 4254
+APPENDIX B: AN INTRODUCTORY
+EXERCISE FOR PROCESS MAPPING, FMEA,
+FTA, AND QM DESIGN FOR IMRT
+TREATMENT PLANNING . . . . . . . . . . . . . . . . . . . . . 4256
+1 Process mapping . . . . . . . . . . . . . . . . . . . . . . . . . 4256
+a Learning objective . . . . . . . . . . . . . . . . 4256
+b Exercise . . . . . . . . . . . . . . . . . . . . . . . . . . 4256
+2 Failure modes and effects analysis . . . . . . . . . 4256
+a Exercise objectives . . . . . . . . . . . . . . . . 4256
+b Exercise overview . . . . . . . . . . . . . . . . . 4256
+3 Fault tree analysis . . . . . . . . . . . . . . . . . . . . . . . . 4258
+a Exercise objectives . . . . . . . . . . . . . . . . 4258
+b Exercise overview . . . . . . . . . . . . . . . . . 4258
+4 Quality management design . . . . . . . . . . . . . . . 4258
+a Exercise objectives . . . . . . . . . . . . . . . . 4258
+b Exercise overview . . . . . . . . . . . . . . . . . 4258
+
+1. PREFACE
+1.A. Guide to readers and regulators on use
+of the Task Group-100 report
+
+This report of task group (TG) 100 on application of risk analysis methods to radiation therapy quality management (QM)
+is very different from most AAPM task group reports and
+therefore should be read and used in a different way than most
+task group reports. This preface addresses those differences by
+describing the general goals of the report, suggesting ways to
+read and use the report, and making comments on the use of the
+TG-100 report by regulators and regulations. The importance
+of reading and understanding the preface to this report cannot
+be overemphasized because the concepts and application of
+these concepts differ in important ways from previous task
+group reports and use of the methodology contrary to the principles discussed in this preface could lead to greater hazard
+rather than increased quality and safety.
+Medical Physics, Vol. 43, No. 7, July 2016
+
+4211
+
+1.A.1. Developing prospective approaches
+to radiotherapy quality management
+
+Prescriptive approaches to technical quality management
+have served cancer patients well over the hundred-year history
+of radiotherapy. With a cancer incidence rate in excess of
+1.6 × 106 per year in North America and estimated radiotherapy utilization rates of 50% for new cases and 20% for
+retreatment, approximately a million courses of radiotherapy
+are delivered per year in the USA. The vast majority of
+these are delivered safely and with considerable benefit to the
+patient. However, as a community, we must continue to search
+for ways to improve the quality and safety of the treatments
+we offer. Traditionally, quality improvement in our specialty
+has been driven largely by new technological advances, and
+safety improvement has been driven by reactive responses
+to past system failures. Clearly there is a synchronization
+problem here. The strategies presented in this TG-100 report
+provide a mechanism to enhance quality and safety, both for
+new as well as for established technologies and processes. It
+is imperative that we explore such a paradigm shift at this
+time, when expectations from patients as well as providers
+are rising while available resources are falling.
+Prescriptive approaches to technical quality management,
+such as those promulgated by the AAPM and other professional organizations, will continue to play a role in the future.
+The development of these cornerstone documents has been
+based on the consensus opinion of experts in the field. However, with the adoption of prospective quality management
+techniques (techniques for designing safe clinical workflows
+in advance of their use) proposed by TG 100, such as failure
+modes and effects analysis (FMEA), we can envisage a
+future in which such technical quality management documents
+are informed by a more rigorous, although still subjective,
+analysis of the technology involved and of the causes and
+consequences of suboptimal performance. Familiarity with
+the prospective error management techniques discussed in this
+report will facilitate the transition to quality control protocols
+that are weighted towards those tests or workflows that may
+be more effective in preserving the safety of the patient and
+will potentially enhance clinical outcomes.
+This report presents a change in approach. Until recently,
+the emphasis in radiotherapy quality management, particularly
+by the Medical Physics community, has been on the technical
+performance of radiotherapy equipment. In recent years,
+however, there has been increasing recognition that a major
+source of quality and safety impairment arises from weakness
+or variability in radiotherapy processes. Whereas, for example,
+there are a limited number of linear accelerator designs,
+there is very little standardization of processes between
+radiotherapy clinics. The high degree of commonality between
+Linac designs lends itself to the development of more or less
+generic machine quality control protocols, which, therefore,
+can be prescriptive. The wide variability in processes requires
+a much higher degree of customization that has to be carried
+out by those with intimate knowledge of the processes
+themselves. The techniques described in this document
+constitute a structured methodology for analyzing clinical
+
+4212
+
+Huq et al.: TG 100 report
+
+processes and for developing clinic- and site–specific quality
+management programs that more effectively and efficiently
+address work practices in individual clinics. Process mapping,
+failure modes and effects analysis, and fault tree analysis
+will assume more central roles in workflow design as we
+strive for greater safety and enhanced quality through the
+optimization of clinical processes. In other highly technical
+and highly regulated industries, such as nuclear power,
+prospective analyses, including these three techniques, has
+been an important component of facility design and operation.
+Technology in radiotherapy is advancing at a pace that
+shows no sign of abating. Profession-wide, consensus-driven
+approache
+(Content truncated due to size limit. Use line ranges to read in chunks)

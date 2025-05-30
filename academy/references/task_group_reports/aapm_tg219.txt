@@ -1,0 +1,178 @@
+Received: 19 April 2021     | Revised: 25 May 2021 | Accepted: 21 June 2021
+DOI: 10.1002/mp.15069
+
+
+AAPM SCIENTIFIC REPORT
+
+
+
+
+Report of AAPM Task Group 219 on independent
+calculation- based dose/MU verification for IMRT
+
+Timothy C. Zhu1 | Sotiris Stathakis2 | Jennifer R. Clark3 | Wenzheng Feng4 |
+Dietmar Georg5 | Shannon M. Holmes6 | Stephen F. Kry7 |
+Chang- Ming Charlie Ma8 | Moyed Miften9 | Dimitris Mihailidis1 |
+Jean M. Moran10 | Niko Papanikolaou2 | Bjorn Poppe11 | Ying Xiao1
+1
+ Department of Radiation Oncology, University of Pennsylvania, Philadelphia, PA, USA
+2
+    Department of Radiation Oncology, UTHSCSA, San Antonio, TX, USA
+3
+    Sun Nuclear Corporation, Melbourne, FL, USA
+4
+    Department of Radiation Oncology, Columbia University, New York, NY, USA
+5
+    Department of Radiation Oncology, Medical University Vienna, Vienna, Austria
+6
+    Standard Imaging, Middleton, WI, USA
+7
+    IROC, UT MD Anderson Cancer Center, Houston, TX, USA
+8
+    Department of Radiation Oncology, Fox Chase Cancer Center, Philadelphia, PA, USA
+9
+    Department of Radiation Oncology, University of Colorado Denver, Aurora, CO, USA
+10
+     Department of Medical Physics, Memorial Sloan Kettering Cancer Center, New York, NY, USA
+11
+    Pius Hospital & Carl von Ossietzky University, Oldenburg, Germany
+
+
+
+Correspondence                                  Abstract
+Timothy C. Zhu, University of
+Pennsylvania, Philadelphia, PA, USA.            Independent verification of the dose per monitor unit (MU) to deliver the prescribed
+Email: Timothy.Zhu@pennmedicine.
+upenn.edu
+                                                dose to a patient has been a mainstay of radiation oncology quality assurance
+Sotiris Stathakis, Mays Cancer Center
+                                                (QA). We discuss the role of secondary dose/MU calculation programs as part
+- MD Anderson Cancer Center, San                of a comprehensive QA program. This report provides guidelines on calculation-
+Antonio, TX, USA.
+Email: Stathakis@uthscsa.edu                    based dose/MU verification for intensity modulated radiation therapy (IMRT) or
+                                                volumetric modulated arc therapy (VMAT) provided by various modalities. We
+                                                provide a review of various algorithms for “independent/second check” of moni-
+                                                tor unit calculations for IMRT/VMAT. The report makes recommendations on the
+                                                clinical implementation of secondary dose/MU calculation programs; on commis-
+                                                sioning and acceptance of various commercially available secondary dose/MU
+                                                calculation programs; on benchmark QA and periodic QA; and on clinically rea-
+                                                sonable action levels for agreement of secondary dose/MU calculation programs.
+
+
+Abbreviations: A(d), Attenuation function as a function of depth d; BEV, Beam's eye view; C/S, Convolution/Superposition; D, Absorbed dose; dmax, Depth of
+maximum dose; Dp, Primary dose, that is, dose from charged particles released from the photon's first interaction in the patient; Ds, Scatter dose, that is, dose
+from charged particles released from the photon's second or later interactions in the patient; DLG, Dosimetric leaf gap; DTA, Distance-to- agreement; DVH,
+Dose–volume histogram; GBBS, Grid- Based Boltzmann Solver; IMRT, Intensity modulated radiation therapy; f, Source-to- detector distance; fMU, Fractional
+MU; K, Collision kerma (Kd for direct beam, Kair for kerma in air, Kh for headscatter component); ks, Scatter polyenergetic point- spread kernel; MCI, Modified
+Clarkson Integration; MU, Monitor unit; OAR, Off- axis ratio; POAR, Primary off- axis ratio; PDD, Percentage depth dose; ROI, Region of interest; s, Projected
+field size at point of interest; SAD, Source-to- axial distance, usually 100 cm; SPD, Source-to- point distance; SSD, Source-to- skin distance; SDD, Source-to-
+detector distance; Sc, In- air output ratio; Scp, (In-water) output ratio; SPR, Scatter-to- primary dose ratio; SF, Dose scatter factor, equals 1+SPR; Sp, Phantom
+scatter factor; TPS, Treatment planning system; TMR, Tissue- maximum ratio; TPR, Tissue- phantom ratio; x, y, Lateral positions relative to central axis of
+radiation source; VMAT, Volumetric arc therapy; z, Distance from the source to the point of interest.
+
+© 2021 American Association of Physicists in Medicine
+
+e808     wileyonlinelibrary.com/journal/mp		
+Medical Physics. 2021;00:1–22.                                                                                                                                 |
+                                                                                                                              Medical Physics. 2021;48:e808–e829.
+                                                                                                                          wileyonlinelibrary.com/journal/mp    1
+                                                                                                            REPORT
+                                                REPORT OF AAPM TASK GROUP 219 ON INDEPENDENT CALCULATION- BASED     OF AAPM TASK
+                                                                                                                DOSE/
+                                                               |
+
+
+
+
+                                                                                                                                                          24734209, 2021, 10, Downloaded from https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15069, Wiley Online Library on [03/05/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+2 |
+AAPM SCIENTIFIC REPORT                                     2                                 MU VERIFICATION FOR e809
+                                                                                                                 IMRT
+
+
+
+1 | STATE M ENT O F TH E PRO BLE M                          1verification
+                                                                  | STATE     M ENT
+                                                                          program was O F TH Eused
+                                                                                      generally PRO forBLE  M
+                                                                                                       the ma-                                          verifica
+A N D TG CH A RG ES                                         Ajority
+                                                               ND ofTG    CH  A RG ES
+                                                                        IMRT/VMAT treatment plans although ap-                                          jority
+                                                              proximately 31% of responders did not use dose/MU                                         proxim
+An independent check of dose/monitor units has been         An    independent
+                                                              verification      softwarecheckfor   of VMAT
+                                                                                                       dose/monitor
+                                                                                                                  treatment   units   hasat
+                                                                                                                                  plans       been
+                                                                                                                                                that    verifica
+and continue to be an important part of quality assur-      and     continue      to   be    an    important
+                                                              time. The most common commercial system reported       part  of   quality     assur-      time. T
+ance (QA) for patient treatment plans. AAPM Report          ance
+                                                              in the(QA)survey for patient
+                                                                                     was RadCalc  treatment         plans. Tyler,
+                                                                                                              (Lifeline,       AAPMTX).   ReportThe     in the
+Task Group 71 reports on the formalism for calculat-        Task      Group      71
+                                                              most common treatment   reports        on    the   formalism
+                                                                                                           planning       system  for   calculat-
+                                                                                                                                       (TPS)     re-    most c
+                                                                                         1
+ing monitor units.1 AAPM Task Group 114 reports on          ing    monitor
+                                                              ported     in the units.
+                                                                                    survey  AAPM wasTask   EclipseGroup       114 reports
+                                                                                                                        (Varian,      Palo Alto, on     ported
+methods and requirements for verification of data for       methods
+                                                              CA). Thisand         requirements
+                                                                              is not     to be considered   for verification        of data for
+                                                                                                                       as an endorsement                CA). T
+                                                                                                                   2
+conformal external beam plans.2 The need for mon-           conformal         external       beam
+                                                              of these products. The most common passing plans.       The     need     for mon- rate    of the
+itor unit verification programs was identified early in     itor
+                                                              criteria for dose/MU verification software wasearly
+                                                                   unit   verification        programs           was     identified         5% forin    criteria
+the adoption of IMRT treatment planning and delivery        the    adoption       of  IMRT       treatment
+                                                              IMRT (51%)3 and “None Specified” for VMAT (34%), al-  planning     and     delivery       IMRT (
+techniques.3 Several different types of programs were       techniques.
+                                                              though 30% Several  of VMATdifferent
+                                                                                                 responders    typesused of programs
+                                                                                                                               5% as passing  were      though
+developed ranging from confirmation of dose at a sin-       developed
+                                                              rate. More than 50% of users used a single pointsin-
+                                                                              ranging       from      confirmation         of  dose     at  a     for   rate. M
+gle point in a simple phantom geometry to calculation       gle
+                                                              theirpoint   in a simple
+                                                                      calculations         andphantom
+                                                                                                 only 6% geometry
+                                                                                                                used three-     todimensional
+                                                                                                                                    calculation         their ca
+of dose at a single point while taking patient anatomy      of   dose
+                                                              (3D)       at a single
+                                                                      volumetric             point
+                                                                                          dose      in while
+                                                                                                         the 2012takingsurvey.
+                                                                                                                            patientAdditional
+                                                                                                                                        anatomy         (3D) v
+and geometry into consideration. While these programs       and    geometry        into    consideration.
+                                                              measurements (typically the MLC dosimetric leaf gap   While    these    programs          measu
+have been in use for some time, guidance was lacking        have
+                                                              (DLG)  been     in use for some
+                                                                        measurements)               weretime,alsoguidance
+                                                                                                                     required was  during lacking
+                                                                                                                                              com-      (DLG)
+in how to commission such technologies as well as their     inmissioning.
+                                                                how to commission               such      technologies
+                                                                                 The most common IMRT dose/MU verifi-         as   well  as   their     missio
+role as part of an IMRT QA program as was noted in the      role   as  part    of an    IMRT      QA      program
+                                                              cation calculation algorithm represented by software      as  was    noted     in the     cation
+ASTRO white paper entitled “Safety Considerations for       ASTRO
+                                                              in use4,5 at the time was a “factor- based calculation for
+                                                                         white     paper      entitled      “Safety     Considerations            al-   in use
+IMRT”.4,5                                                   IMRT”.
+                                                              gorithm.” Note that the clinical practice has changed,                                    gorithm
+   This task group was charged with: (a) Reviewing               This
+                                                              with   moretaskwidespread
+                                                                                 group wasuse          charged
+                                                                                                            of VMAT    with:
+                                              
+(Content truncated due to size limit. Use line ranges to read in chunks)

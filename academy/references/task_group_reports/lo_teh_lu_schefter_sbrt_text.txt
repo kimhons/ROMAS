@@ -1,0 +1,293 @@
+Medical Radiology
+Radiation Oncology
+
+Series Editors
+Luther W. Brady
+Hans-Peter Heilmann
+Michael Molls
+Carsten Nieder
+
+For further volumes:
+http://www.springer.com/series/4353
+
+Simon S. Lo • Bin S. Teh
+Jiade J. Lu • Tracey E. Schefter
+Editors
+
+Stereotactic Body
+Radiation Therapy
+
+123
+
+Editors
+Simon S. Lo
+Department of Radiation Oncology
+University Hospitals Seidman Cancer
+Center
+Case Comprehensive Cancer Center
+Case Western Reserve University
+Cleveland, OH
+USA
+Bin S. Teh
+Department of Radiation Oncology
+Weill Cornell Medical College
+The Methodist Hospital Cancer
+Center and Research Institute
+Houston, TX
+USA
+
+Jiade J. Lu
+Department of Radiation Oncology
+National University Cancer Institute of
+Singapore (NCIS)
+National University of Singapore
+Singapore
+Tracey E. Schefter
+Department of Radiation Oncology
+University of Colorado
+Aurora, CO
+USA
+
+ISSN 0942-5373
+ISBN 978-3-642-25604-2
+ISBN 978-3-642-25605-9
+DOI 10.1007/978-3-642-25605-9
+
+(eBook)
+
+Springer Heidelberg New York Dordrecht London
+Library of Congress Control Number: 2012947064
+Ó Springer-Verlag Berlin Heidelberg 2012
+This work is subject to copyright. All rights are reserved, whether the whole or part of the material is
+concerned, specifically the rights of translation, reprinting, reuse of illustrations, recitation, broadcasting,
+reproduction on microfilm or in any other way, and storage in data banks. Duplication of this publication
+or parts thereof is permitted only under the provisions of the German Copyright Law of September 9,
+1965, in its current version, and permission for use must always be obtained from Springer. Violations are
+liable to prosecution under the German Copyright Law.
+The use of general descriptive names, registered names, trademarks, etc. in this publication does not
+imply, even in the absence of a specific statement, that such names are exempt from the relevant
+protective laws and regulations and therefore free for general use.
+Product liability: The publishers cannot guarantee the accuracy of any information about dosage and
+application contained in this book. In every individual case the user must check such information by
+consulting the relevant literature.
+Printed on acid-free paper
+Springer is part of Springer Science+Business Media (www.springer.com)
+
+To my parents, my wife, and my children for their support and
+encouragement in this project
+Simon S. Lo, M.D.
+Dedicated to the support and love from my mother, wife, daughter,
+and siblings. The chapter on renal cell carcinoma is a special
+dedication to my late father who passed away from renal cell
+carcinoma. He had great impact on my life and career and motivated
+both my brother and I to pursue research and contribute to the
+advances in the field of renal cell carcinoma
+Bin S. Teh, M.D.
+To my family for their support and encouragement in this project and
+many others
+Jiade J. Lu, M.D.
+In loving memory of my mother who lost her short battle with breast
+cancer in 1986. Her spirit lives within me
+Tracey E. Schefter, M.D.
+
+Foreword
+
+Stereotactic Radiosurgery
+In 1980, the National Cancer Institute on the advice of the Committee for
+Radiation Oncology Studies proposed an investigation into the feasibility for
+the dynamic treatment planning and dynamic treatment delivery which would
+allow for the tumor to be in the ﬁeld of treatment throughout the entire course
+of the treatment program accommodating for motion of the tumor with respiration or motion of the patient during treatment. A number of institutions in
+the United States were involved in this project but the ultimate result indicated
+that the technology and computer programs were not adequate to deal with the
+issue.
+As a consequence of the work being done by Professor Mort Kligerman at
+the Los Alamos Pi-Meson project, various devices for immobilization were
+developed allowing a much more sophisticated technology for immobilization
+than had existed before and these were rapidly incorporated into clinical
+practice. This allowed for the development of three-dimensional conformal
+treatment programs, leading ultimately to the development of the intensity
+modulated radiation therapy in the early 1990s to image guided radiation
+therapy in the later 1990s, and ultimately to linear accelerator-based stereotactic radiation therapy technologies, and then to the CyberKnife.
+The stereotactic body radiosurgery procedures allowed for focusing on the
+tumor throughout the entire course of treatment accommodating for motion
+and breathing with the machine operating in synchrony with the table. Without
+question, this represented a dramatic advance in terms of the potential for
+improvement in control rates for tumors based on the evolution of technology
+and imaging studies, and the ability to fuse these imaging studies to more
+precisely deﬁne the tumor but also with the reduction in side effects relative to
+the treatment program itself.
+The results from the stereotactic body radiosurgery programs are now
+becoming more widely available, clearly indicating that this is a dramatic step
+forward in terms of allowing for maximum control of the tumor with minimum
+in the way of complication.
+
+vii
+
+viii
+
+Foreword
+
+The present volume deals in a most effective fashion with all the issues that
+are mandated by stereotactic body radiosurgery. It is a document that needs to
+be on the shelf of every radiation oncologist in the world because of the clarity,
+the comprehensive character, and the signiﬁcance of the data being presented.
+7 June 2012
+
+Luther W. Brady
+Hans-Peter Heilmann
+Michael Molls
+Carsten Nieder
+
+Foreword
+
+The Desperate Role of Clinical Science in the Implementation
+of Stereotactic Body Radiation Therapy/Stereotactic Ablative
+Radiotherapy
+Most physicians have extensive undergraduate training in science and speciﬁcally
+the scientiﬁc method. They also have training in art, history, languages, and other
+liberal arts intended to give them balance and social conscience. Subsequent
+medical training is almost purely in the realm of science aside from the occasional
+class in humanities like courses for developing interviewing skills. Success in the
+science courses in medical school allows future physicians to choose from the best
+residencies and fellowships to train for their life’s craft. After more than a decade
+of medical training and hard work, they reach the point where they are competent
+to care for patients...and then, oddly, they abruptly abandon the scientiﬁc
+method. Instead, they champion non-scientiﬁc attributes like strong will, emotional fervor, and parochial (even religious) zeal relating to their specialty.
+Indeed, the physician products of the most competitive residency programs are
+frequently the worst of the anti-science contingency. They continue to work hard
+and hone their skills, but unbiased scientiﬁc growth is stiﬂed.
+The science of clinical practice that too many physicians abandon is called
+clinical science or the science of determining the best management options for
+our patients. It is a well developed, serious, and critically important science in
+that it is the best pathway to prudent change. Ongoing patient suffering is the
+obvious motivation for this change. How could the medical community not be
+motivated to change? Patients suffer from their commonly poor health status,
+and they will potentially suffer from the course of diseases that they will
+develop. Clinical science allows us to make a valid comparison between the
+status quo and the various prospects for a changing evaluation or management.
+What a shame it is that clinical science and the scientiﬁc method play such a
+small role in day-to-day clinical operations where so few patients will ever be
+offered a clinical trial as a diagnostic or therapeutic option.
+Stereotactic ablative radiotherapy (SABR), also known as stereotactic body
+radiation therapy (SBRT), was ﬁrst introduced in the mid-1990s and constituted
+a dramatic change in the way radiation had been previously delivered in both
+conduct and biology. It primarily exploited modern technological innovations to
+achieve geometric avoidance of high dose to normal tissues. Importantly, though,
+was the use of oligofractionated (i.e., few fractions) radiation delivery that would
+
+ix
+
+x
+
+undoubtedly result in biological effects very different from conventionally
+fractionated radiation. This different biology constituted a potential for a
+dramatic change in outcome. While change in therapy outcome for deadly
+cancers, like lung cancer, should have been welcomed, it also put a veil of
+uncertainty over the use of stereotactic radiation in regard to informing patients
+about risks and beneﬁts.
+When there is potential for a positive change in the outcome of a previously
+dismal disease with simultaneous uncertainty about toxicity, the only rational
+course is to apply a legitimate clinical science approach. This involves forming a
+hypothesis, deﬁning a clinical model, devising an experiment (i.e., a clinical
+trial), testing the hypothesis under controlled circumstances, collecting data,
+and reporting the results. The earliest implementation of SABR in the clinic was
+mostly uncontrolled, similar to the implementation of too many innovations in
+radiation oncology. These early reports were both compelling and, frankly,
+frightening. More historical use of such large dose per fraction radiotherapy
+brought disaster than promise for patients. Early investigators recognized two
+important caveats surrounding stereotactic radiotherapy: (1) Patients deserved
+the utmost protection from risk and (2) The potentially paradigm changing
+therapy was at risk of being marginalized if the level of evidence was low. Both
+of these caveats are best addressed with legitimate clinical testing using validated clinical science.
+Early investigators of SABR from across the world met at any chance to
+share ideas. A series of clinical trials were developed and performed using
+variations of the technology, dosing, and patient selection. Despite the differences, the biology was strikingly similar such that outcomes could be systematically assessed. Phase I and II trials were performed selecting patients who
+were properly consented to understand the uncertainties associated with the
+therapy. Fortunately, the outcomes have been overall positive. Hence, the
+impetus for new textbooks on the subject.
+As a case in point, the Indiana University experience in early lung cancer
+demonstrates the strength of the scientiﬁc approach. The clinical model chosen
+for investigation by the researchers was early lung cancer in patients too frail
+for standard surgical resection. The technique for radiation delivery was deﬁned
+and used consistently. A logistically attractive 3-fraction regimen was chosen
+for comprehensive study. Initially, a phase I dose escalation study was performed trying to hone in on the optimal dose. Patients were consented with full
+disclosure that such treatments could lead to previously unobserved toxicity. To
+the surprise of all associated with the experiment, dose was escalated to strikingly high dose levels (24 Gy per fraction times 3 fractions, total 72 Gy) before
+dose limiting toxicity was ﬁnally observed. This dose dramatically exceeded the
+‘‘expectations’’ of the researcher via any logical predictions. Patients enjoyed
+very high levels of tumor control at the tolerable high dose levels. In reality,
+without the framework of a scientiﬁcally valid clinical approach, patients would
+not have been treated at the dose levels affording such impressive tumor
+eradication. Clinical science literally saved patients both in this trial and future
+trials from dying of lung cancer via treatment with inadequate dose.
+The lessons of clinical science from the Indiana experience goes farther. The
+phase I study described above was underpowered with regard to patient
+subgroups. It enrolled any medically inoperable patient with early lung cancer
+
+Foreword
+
+Foreword
+
+xi
+
+irrespective of the location of the tumor in the lung. By design, a small number
+of patients were enrolled to each level of a broad range of dose levels. In the
+subsequent phase II study, a larger (more statistically powered) group of
+patients was enrolled to the highest tolerable dose level. In the phase II study, a
+subtle but important reality was observed that patients with centrally located
+tumors had higher risk of severe toxicity as compared to patients with
+peripheral tumors. This distinction was critical in both selecting appropriate
+patients for the most potent form of the therapy as well as protecting those at
+high risk of harm. Again, this important distinction was afforded by an
+appreciation of valid clinical science.
+The value of legitimate clinical science does not go unnoticed. The best
+journals now require that key elements to the scientiﬁc method of discovery,
+like statistical power and data safety monitoring, be conveyed in order to
+publish. Retrospective reports, so ﬂawed in their approach to reaching valid
+conclusions, will increasingly be rejected for publication by good journals.
+Ideally, as technologies used in stereotactic radiotherapy delivery are improved
+or initially introduced, investigators will perform valid testing in patients to
+draw conclusions about the value of the new therapy. The same goes for using
+chemical and biological modulators in conjunction with potent stereotactic
+radiation.
+More than most radiotherapy innovations, the implementation of SABR has
+followed a clinically scientiﬁc approach. Even only 15 years after the ﬁrst
+extracranial stereotactic radiation treatments, it is clear that the impact will be
+paradigm changing. Phase III trials possibly changing the standard of care are
+underway. Unfortunately, they are in danger of failing from problems of
+accrual. Why? Recall the ﬁrst two paragraphs of this preface describing the
+‘‘anti-science’’ perspective of too many clinicians. Nonetheless, we hope that the
+success of the therapy will continue as it is implemented in new organ systems
+and body sites. Yet hope, as any clinical scientist will tell you, must give way to
+prudent evaluations, evidence gathering, and, ultimately, appreciation of
+reality.
+Dallas, TX, USA
+
+Robert D. Timmerman
+
+Foreword
+
+SBRT: Present and Future Directions
+Stereotactic body radiation therapy (SBRT) is a ﬁeld in its formative years
+with very promising early results. For example, as reported by Timmerman and
+colleagues (JAMA 17:1070–1076, 2010), for inoperable early stage lung cancer,
+a 3-year primary tumor control rate of 90.6% was reported which prior to the
+advent of SBRT was unheard of. This book on SBRT edited by Drs. Lo, Teh,
+Lu, and Schefter is an important comprehensive book that informs practitioners, researchers, trainees, and students, and allied health professionals of
+the potential beneﬁts to patients of applying SBRT to a variety of tumor types,
+both in the primary and metastatic setting through proper patient selection. The
+risk of harms to patients is also present, since much larger fraction sizes are
+utilized with few opportunities to make corrections although fortunately there
+is a heightened awareness of the importance of safety, and efforts to improve
+safety processes and technologies are constantly ongoing. A PubMed search in
+2011 reveals approximately 400 publications in the literature. It is expected that
+this number will exponentially increase as investigators in oncology continue to
+become more focused on minimizing ‘‘collateral damage’’ in the patient through
+the use of customized systemic targeted agents, and minimally invasive surgeries. How to integrate these innovate therapies with SBRT will certainly be
+the subject of future publications. While normal tissue tolerances have been
+fairly well-deﬁned for radiation therapy given in conventional fractionation,
+data are sorely lacking at this point in time on normal tissue complication
+probabilities to organs at risk when subjected to SBRT-type fractionation
+regimens. As such, much work remains to 
+(Content truncated due to size limit. Use line ranges to read in chunks)
